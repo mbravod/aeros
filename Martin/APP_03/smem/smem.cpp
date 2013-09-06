@@ -1,0 +1,3358 @@
+// Archivo DLL principal.
+int main0(int pars);
+# define _SECURE_SCL 0
+// Archivo DLL principal.
+#include <math.h>
+#include <windows.h>
+#include <fstream>
+#include <stdio.h>
+#include <cstdlib>
+#include <iostream>
+//Librerias auxiliares
+
+
+//Fin de Librerias Auxiliares
+
+using namespace std;
+
+LPVOID lpvMem = NULL;      // pointer to shared memory
+HANDLE hMapObject = NULL;  // handle to file mapping
+HANDLE hMapObjectx = NULL;  // handle to file mapping
+
+__declspec(dllexport) int __cdecl execute() ;
+__declspec(dllexport) void __cdecl load() ;
+int MEMPILES =16;       //indice de pila entero //4 vacios //4 cur // 4 cur sent
+int MEMFLOAT= 1024*4*24 ;    //define una memoria con capacidad de 1000 flotantes
+int MEMINT=  1024*4*24  ;     //define una memoria con capacidad de 1000 enteros
+
+
+
+int TOTMEM;
+int posPILE;
+int posPILEF;
+//calcula las variables de offset
+
+int OFFSET_MEMFLOAT;
+int OFFSET_MEMINT;
+int OFFSET_MEMMODDATA;
+
+#include <fstream>
+
+
+void init(){
+	//RESERVAMOS UNOS BYTES INTERNOS JEJEJ
+OFFSET_MEMFLOAT= 16;
+OFFSET_MEMINT= 16;//tienen la misma direccion
+OFFSET_MEMMODDATA=OFFSET_MEMFLOAT+MEMFLOAT;
+TOTMEM= OFFSET_MEMMODDATA+MEMFLOAT+1024;
+
+}
+
+
+float af;
+float *bf;
+int a;
+int *b;
+int *c;
+int *p;
+int p0;
+
+
+
+
+ void SetFloat(float ax,int pos) 
+{
+p0=(int)int (int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
+c=(int *) p0;
+bf =(float *) c;
+    *bf=ax;    
+} 
+  
+
+
+void SetRaw(unsigned char a,int pos) 
+{
+   
+unsigned char  *b;
+int p0;
+p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
+b=(unsigned char *)p0;
+*b=a;     
+} 
+
+
+ unsigned char GetRaw(int pos) 
+{ 
+unsigned char a;
+unsigned char *b;
+int *c;
+int p0;
+p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
+c=(int *) p0;
+b =(unsigned char *) c;
+a=  *b;
+return a;
+}
+
+
+ float  GetFloat(int pos) 
+{ 
+p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
+c=(int *) p0;
+bf =(float *) c;
+af=  *bf;
+return af;
+}
+
+
+
+
+int  GetInt(int pos) 
+{ 
+p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
+c=(int *) p0;
+b =(int *) c;
+a=  *b;
+return a;
+}
+
+
+void  SetInt(int a,int pos) 
+{
+p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
+c=(int *) p0;
+b =(int *) c;
+    *b=a;    
+} 
+
+
+
+
+
+
+// funciones de inicializacion de memoria y acceso a memoria compartida
+
+
+//----------Definiciones de Control de errores----------------
+FARPROC lpfnGetADD ;
+FARPROC lpfnGetADD2 ;
+FARPROC lpfnGetADD3 ;
+typedef  void (__stdcall * pICDLLFUNC00)();//(char *); 
+   pICDLLFUNC00 TRACE; 
+typedef  void (__stdcall * pICDLLFUNC01)(EXCEPTION_POINTERS* pExp, DWORD dwExpCode);//(char *); 
+   pICDLLFUNC01 TRACE2; 
+typedef  void (__stdcall * pICDLLFUNC02)(char ID[]);//(char *); 
+   pICDLLFUNC02 MYID; 
+
+bool fInit;  
+BOOL fIgnore; 
+
+__declspec(dllexport) void __cdecl load() 
+{ 
+init();
+    printf ("\n Programa APP_03");
+     hMapObject = CreateFileMapping( 
+                    INVALID_HANDLE_VALUE ,  // Permite crear FileMapping
+                    NULL,                   // Sin Atributos de seguridad
+                    PAGE_READWRITE,         // Todos pueden leer y escribir
+                    0,                      // Tamano: 64-bits Superiores
+                    TOTMEM,                 // Tamano: 64-bits Inferiores
+                    TEXT("PROCESS_INTEROP_MEM")); // Nombre del archivo virtual
+     if (hMapObject == NULL) 
+        printf ("\n Falla de inicializacion...Sin memoria");
+     fInit = (GetLastError() != ERROR_ALREADY_EXISTS);
+     if (fInit==true){  
+   
+         printf ("\n Este programa se iniciado como MASTER de la memoria compartida");
+   
+     }
+     else{
+        printf ("\n Este programa se iniciado como cliente de la memoria compartida");
+        }
+     lpvMem = MapViewOfFile(hMapObject,// Obtencion del puntero a la memoria compartida
+                            FILE_MAP_ALL_ACCESS, // Acceso sin restriciones
+                            0,              // leer todo
+                            0,              // 
+                            0);             // 
+     if (lpvMem == NULL) 
+         printf ("\n No se creo apuntador");            
+     printf ("\n Listo para acceder a la memoria ",TOTMEM);
+
+// INICIA LA MEMORIA COMPARTIDA
+p0=(int)lpvMem+4;
+c=(int *) p0;
+b =(int *) c;
+*b=0;//posPILE; 
+p0=(int)lpvMem+8;
+c=(int *) p0;
+b =(int *) c;
+*b=0;//posPILEF; 
+
+
+//carga el debugger
+
+HINSTANCE hGetProcIDDLL2 = LoadLibrary(L"kernel.dll"); 
+if (!hGetProcIDDLL2  ){
+	cout<<"No se encontro el dll solicitado: kernel.dll";
+}
+lpfnGetADD = GetProcAddress(HMODULE (hGetProcIDDLL2),"?CALLSTACK@@YAHXZ");    
+TRACE = pICDLLFUNC00(lpfnGetADD) ;
+lpfnGetADD2 = GetProcAddress(HMODULE (hGetProcIDDLL2),"?ExpFilter@@YGJPAU_EXCEPTION_POINTERS@@K@Z");    
+TRACE2 = pICDLLFUNC01(lpfnGetADD2) ;
+lpfnGetADD3 = GetProcAddress(HMODULE (hGetProcIDDLL2),"?NAME@@YAHQAD@Z");    
+MYID = pICDLLFUNC02(lpfnGetADD3) ;
+MYID("LOADED ON SITE DEBUGGER IN APP_03 ");
+cout<<"\n******************************\nCargando On Site Debugger ...";
+
+
+}
+
+
+
+
+
+//----------Fin Funciones Virtuales (Permiten debugger)-------
+#pragma unmanaged
+
+//----------**************STACK TRACE**************-----------
+   LONG WINAPI ExpFilterO(EXCEPTION_POINTERS* pExp, DWORD dwExpCode)
+{
+	cout<<"Aplicacion Interrumpida - On Site Debugger en Diagnostico";
+	TRACE2(pExp, dwExpCode);
+	return EXCEPTION_EXECUTE_HANDLER;
+}
+//-------**************Entrada de Main**************----------
+__declspec(dllexport) int __cdecl execute(int pars) 
+
+{
+__try
+{
+	
+///////////////////////////////////////////////FIN Funiones de Genericas De Control //////////////////////
+	int su;
+	su=main0(pars);          ////cambiar por la funcion main local
+	return su;
+///////////////////////////////////////////////Funiones de control de errores//////////////////////
+}
+__except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
+{
+	
+	system("pause");
+	return -1;
+}
+}
+
+
+//----------FIN DE FUNCIONES DE DEBUGGER----------------------
+
+//Aquí se declaran todas las variables del programa
+
+double Time_cycle;
+double Time_factor;
+double Print_iter;
+int Counter;
+
+///////////////////////////ALARMAS////////////////////////////////////////
+
+//VARIABLES HOJA 272//
+       
+       
+int N1N10_RTD_TE64030_LATCH_OR;
+float N1N10_RTD_TE64030_AI_RTD_L;
+float OUT_A_SW_VENT_TE64030LOG_A_IN_1;
+int N1N10_RTD_TE64031_LATCH_OR;
+float N1N10_RTD_TE64031_AI_RTD_L; 
+float OUT_A_SW_VENT_TE64031LOG_A_IN_1;
+int N1N10_RTD_TE64032_LATCH_OR;
+float N1N10_RTD_TE64032_AI_RTD_L; 
+float OUT_A_SW_VENT_TE64032LOG_A_IN_1;
+int N1N10_RTD_TE64033_LATCH_OR;
+float N1N10_RTD_TE64033_AI_RTD_L;
+float OUT_A_SW_VENT_TE64033LOG_A_IN_1;
+int N1N10_RTD_TE6450_LATCH_OR;
+float N1N10_RTD_TE6450_AI_RTD_L; 
+float OUT_A_SW_VENT_TE6450LOG_A_IN_1;
+int N1N10_RTD_TE6499_LATCH_OR;
+float N1N10_RTD_TE6499_AI_RTD_L;
+float OUT_A_SW_VENT_TE6499LOG_A_IN_1;
+double OUT_SUB_VENT_AIRTMP_DF_IN=0.0;
+float OUT_ABS_VENT_AIRTMPCMPR_IN_1;
+int OUT_A_CMPR_VENT_AIRTMPDIFM_IN_2;
+int FALSE_VENT_AIRTMPDIFM;
+int OUT_AND_VENT_AIRDIFFALM_IN; 
+int CORE_DIGITAL_PWR_UP;
+int ALARM_RESET;
+float VENT_TE64030;
+int IO_FLT_TE64030VST;
+float VENT_TE64031;
+int IO_FLT_TE64031VST;
+float VENT_TE64032;
+int IO_FLT_TE64032VST;
+float VENT_TE64033;
+int IO_FLT_TE64033VST;
+float VENT_AIRFILTAVG_TC_MON; 
+float VENT_AIRAVERAGE_IN; 
+float VENT_AIR_AVG_C_IN; 
+int OUT_A_CMPR_VENT_T0_GT_10;
+int OUT_A_CMPR_VENT_T0_LT_32_IN;
+
+
+//VARIABLES HOJA 274//
+
+float OUT_A_SW_VENT_INLETT2LSS_IN_1;
+float OUT_A_SW_VENT_INLETT2LSS_IN_2;
+float OUT_A_SW_VENT_INLETT2LSS_IN_3;
+float OUT_A_SW_VENT_INLETT2LSS_IN_4;
+float CORE_ANALOG_T2SEL; 
+float OUT_LSS_BUS_VENT_INLETT2LSS;
+int OUT_A_CMPR_VENT_ICEALM_SW_NO;
+int OUT_A_CMPR_VENT_INLET_LT43_IN;
+int GENERATOR_GEN_BKRCLS;
+int VENT_ANTI_ICE;
+int OUT_AND_VENT_ICE_DLY_TRIGGER;
+int OUT_A_CMPR_VENT_MOT68330OR_IN_1;
+int OUT_OR_VENT_MOT68330_IN;
+int DLY_VENT_DAMPER_SW_CTRL;
+int out_DLY_VENT_DAMPER_SW_CTRL[5];
+double TP_DLY_VENT_DAMPER_SW_CTRL=5;
+float OUT_A_SW_VENT_DMPR_RATE_IN;
+float VENT_DAMPER_SW_NO;
+float VENT_ZV64181_IN;
+float OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2;
+float VENT_T2SEL;
+float OUT_SUB_VENT_T2_T0_CMP_IN_2;
+int VENT_ICEALM_MSK_IN_3;
+int out_DLY_VENT_ICEALM_MSK_IN_3[5];
+double TP_VENT_ICEALM_MSK_IN_3=5;
+int OUT_A_CMPR_VENT_ICEALM_MSK_IN_1;
+int OUT_AND_VENT_ICESYS_ALM_IN;
+float OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1;
+float OUT_LSS_BUS_VENT_CONDAIR_SW_NO;
+int FALSE_VENT_CONDAIR_SW;
+float OUT_A_SW_VENT_ICINGLOG_A_IN_2;
+int TRUE_VENT_ICEALM_SW;
+int OUT_B_SW_VENT_ICING_IN;
+int VENT_ICEALM_SW_NC;      
+int ice1;
+int ice2;
+//VARIABLES HOJA 275//
+
+int VENT_G_FNA_TMR; 
+int VENT_G_FNB_TMR; 
+int VENT_T_FNA_TMR; 
+int VENT_T_FNB_TMR;
+int VENT_ENCLPRG; 
+int VENT_PRGFLDLY;
+int VENT_PSTCLDNTMR;
+int SHUTDOWN_COOLAIRTMR;
+int SFC_STEP_SYNC_COOL;
+int VENT_G_POSTDLY;
+float VENT_G_FAN_ATM_IN;
+float VENT_G_FAN_BTM_IN;
+float VENT_T_FAN_ATM_IN;
+float VENT_T_FAN_BTM_IN;
+float VENT_ENCL_PRGTM_IN;
+float VENT_PRGFLTMR_IN;
+float VENT_PSTVNET_T_IN;
+float VENT_PSTCLDN_T_IN;
+float SFC_TIMER_SYNCCL_T_IN;
+float VENT_PSTVNET_G_IN;
+int OUT_I_CMPR_VENT_PSTCLDNON_IN;
+float VENT_TE6421LAG;
+int N2N5_RTD_TE6421;
+float VENT_TE6422LAG;
+int N2N5_RTD_TE6422;
+float VENT_TE6423LAG;
+int N2N5_RTD_TE6423;
+float VENT_TE6424LAG;
+int N2N5_RTD_TE6424;
+float VENT_TE6425LAG;
+int N2N5_RTD_TE6425;
+float VENT_TE6426LAG;
+int N2N5_RTD_TE6426;
+float OUT_TC_MON_VENT_STATOR_TMP;
+int OUT_A_CMPR_VENT_GFANS_OFF_IN_1;
+int OUT_A_CMPR_VENT_GFANS_OFF_IN_2;
+int OUT_A_CMPR_VENT_STATORGT14;       
+
+//VARIABLES HOJA 276//
+
+
+int DLY_AUX_SKID_MASKFANON1;
+int out_DLY_AUX_SKID_MASKFANON1[5];
+double TP_DLY_AUX_SKID_MASKFANON1=5;
+int AUX_SKID_TE64028LOG_B_OUT_1;
+int OUT_AND_AUX_SKID_MOT64026_IN;
+int AUX_SKID_TE64028LOG_B_OUT_2;
+int OUT_AND_AUX_SKID_MOT64027_IN;
+int AUX_SKID_TE64028LOG_B_OUT_3;
+int OUT_OR_AUX_SKID_DLY_OFF_TRIGGER;
+int DLY_AUX_SKID_SOV64083_IN;
+int out_DLY_AUX_SKID_SOV64083_IN[5];
+double TP_DLY_AUX_SKID_SOV64083_IN=60;
+int FALSE_AUX_SKID_TE64028VST;
+int NFALSE_AUX_SKID_TE64028VST;      
+
+
+//VARIABLES HOJA 277//
+
+int FALSE_GENERATOR_UTIL_SW;
+int TRUE_GENERATOR_UTIL_SW; 
+int GENERATOR_UTIL_BKRCL; 
+int OUT_GENERATOR_UTIL_SW_B_SW;
+int OUT_GENERATOR_PSS_ONENBL_AND;
+
+//VARIABLES HOJA 278//
+
+int N3N42_BI_UTIL_CLSD;
+int FALSE_GENERATOR_GSO21_OPIN;
+int OUT_GENERATOR_UTILITY_AND;
+int A1_A12_BI2_K229;
+int FALSE_GENERATOR_CMD_ISOC;
+int FALSE_GENERATOR_STP_SYNCIN;
+int OUT_GENERATOR_DROOP_AND;
+int FALSE_GENERATOR_SEL_DROOP;
+int A1_A12_BI1_K67; 
+int OUT_GENERATOR_SEL_DROOP_B_SW;
+int GENERATOR_DROOP;
+int OUT_GENERATOR_NSDROOP_AND; 
+int SHUTDOWN_CDLO;
+int GENERATOR_ISOCH;
+int OUT_GENERATOR_NSISOCH_AND; 
+int A1_A12_BI1_BRKR_FAIL; 
+int NA1_A12_BI1_BRKR_FAIL; 
+int N3N39_BI_RTRGRNDFLT; 
+int SPEED_SW_NSDGT3590;
+int OUT_GENERATOR_RTRGNDMSK_AND; 
+int N3N39_BI_DIODE_FAIL; 
+int NN3N39_BI_DIODE_FAIL; 
+int N3N39_BI_AVR_FAULT; 
+int NN3N39_BI_AVR_FAULT; 
+int N3N40_BI_CUST_86T; 
+int NN3N40_BI_CUST_86T; 
+
+//VARIABLES HOJA 279//
+
+int N3N42_BI_IGPS52GTRP_BI_L;
+int NN3N42_BI_IGPS52GTRP_BI_L;
+int N3N42_BI_IGPSFLTALM_BI_L;
+int NN3N42_BI_IGPSFLTALM_BI_L;
+int TRUE_GENERATOR_IGPSFDLT12;
+int TRUE_GENERATOR_IGPSFDLT12_NO;
+int N3N42_BI_IGPSFAIL_BI_L;
+int OUT_B_SW_GENERATOR_N_IGPSFAIL_IN;
+int NOUT_B_SW_GENERATOR_N_IGPSFAIL_IN;
+int N3N39_BI_GEN_EX_LIM_BI_L;
+int OUT_AND_GENERATOR_GEN_EX_LIM_IN;
+int N3N42_BI_GEN_86TRPL_BI_L;
+int NN3N42_BI_GEN_86TRPL_BI_L;
+int A1_A12_BI1_TRIP_86_BIO_BI;
+int NA1_A12_BI1_TRIP_86_BIO_BI;
+int N3N39_BI_AVR_SUMALM_BI_L_NOT;
+int SPEED_SW_NSDGT3240;
+int OUT_AND_GENERATOR_AVRALM_DLY_TRIGGER;
+int DLY_GENERATOR_AVR_ALARM_IN;
+int out_DLY_GENERATOR_AVR_ALARM_IN[5];
+double TP_DLY_GENERATOR_AVR_ALARM_IN=5;
+int SFC_STEP_RST_AND_ST;
+int OUT_OR_GENERATOR_AVR_NOT_ON;
+int OUT_OR_GENERATOR_AVR_SDOFF_RST;
+int LATCH_GENERATOR_RESET85PCT_IN_3[5];
+int out_LATCH_GENERATOR_RESET85PCT_IN_3[5];
+int SHUTDOWN_ANY_SD;
+int SPEED_SW_NSDLT3060;
+int GENERATOR_GEN_BKROPN;
+int OUT_AND_GENERATOR_AVR_OFF_IN_1;
+int OUT_AND_GENERATOR_AVR_OFF_IN_2;
+int SHUTDOWN_SD_CORE;
+int SHUTDOWN_SDN_CORE;
+int OUT_OR_GENERATOR_AVR_OFF_Z_FEEDBACK;
+int LATCH_R_GENERATOR_COND_OR85_IN_1[5];
+int out_LATCH_R_GENERATOR_COND_OR85_IN_1[5];
+int GENERATOR_AVR_ON_RST;
+int GENERATOR_CONDENSING;
+int OUT_OR_GENERATOR_EXCTR_ON_IN;
+int out_LATCH1_GENERATOR_EAX_ALM_IN; 
+int DLY_GENERATOR_MASK_2_IN_1;
+int out_DLY_GENERATOR_MASK_2_IN_1[5];
+double TP_DLY_GENERATOR_MASK_2_IN_1=5;
+int GENERATOR_EXCTR_ON;
+int N3N39_BI_EXCIT_ALM_BI_L;
+int OUT_AND_GENERATOR_EXCIT_ALM_IN;
+float N3N18_AI_EAX_AI_420_L;
+int OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2;
+int OUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER;
+int DLY_GENERATOR_EAXALMLAT_IN_1;
+int out_DLY_GENERATOR_EAXALMLAT_IN_1[5];
+double TP_DLY_GENERATOR_EAXALMLAT_IN_1=2;
+
+//VARIABLES HOJA 280//
+
+int CORE_DIGITAL_FUELOFF;
+int SHUTDOWN_STEPIDLE;
+int GENERATOR_GEN86TRIPL;
+int GENERATOR_GEN86TRIPR;
+int SHUTDOWN_DMINTONS;
+int SFC_STEP_NORM_3_SFC_STEP;
+int ALARM_HMI_STI;
+int GENERATOR_STP_2_SYNC;
+int SPEED_SW_NSDLT3420; 
+int OUT_OR_GENERATOR_BKR_OK_RST;
+int SHUTDOWN_NO_SHTDNS;
+int OUT_AND_GENERATOR_BKR_OK_TRIGGER;
+int LATCH_GENERATOR_K85_IN[5];
+int out_LATCH_GENERATOR_K85_IN[5];
+int N3N42_BI_AUTO_SYNC_BI_L;
+int SFC_TIMER_WARMUP_DN;
+int SFC_STEP_READY2SYNC_SFC_STEP;
+int OUT_AND_GENERATOR_SYNC_ENABL_IN;
+int GENERATOR_EXCIT_ALM;
+int GENERATOR_GEN_EX_LIM;
+int GENERATOR_DIODE_FAIL;
+int GENERATOR_AVR_ALARM;
+int GENERATOR_AVR_FAULT;     
+int OUT_OR_GENERATOR_EX_SUMMARY_IN;
+int TRUE_GENERATOR_NOTLSH6834;
+int NTRUE_GENERATOR_NOTLSH6834;
+float GENERATOR_TE6432=0.0;
+int OUT_A_CMPR_GENERATOR_TE6432_H_IN;
+float GENERATOR_TE6433=0.0;  
+int OUT_A_CMPR_GENERATOR_TE6433_H_IN;      
+
+
+//VARIABLES HOJA 281//
+
+int IFACE_SPRINT_C_H2ORAISE;
+float OUT_A_SW_IFACE_CORE_Z_SPRDMSEQ_IN;
+int SPRINT_LP_ON_3_SFC_STEP;
+int SPRINT_HP_2_LP_1_SFC_STEP;
+int SPRINT_HP_2_LP_2_SFC_STEP;
+int SPRINT_HP_2_LP_3_SFC_STEP;
+int SPRINT_LP_OFF_1_SFC_STEP;
+int SPRINT_HP_ON_3_SFC_STEP;
+int SPRINT_LP_2_HP_1_SFC_STEP;
+int SPRINT_LP_2_HP_2_SFC_STEP;
+int SPRINT_LP_2_HP_3_SFC_STEP;
+int SPRINT_LP_2_HP_4_SFC_STEP;
+int SPRINT_LP_2_HP_5_SFC_STEP;
+int SPRINT_HP_OFF_1_SFC_STEP;
+int OUT_OR_IFACE_CORE_Z_SPRINTON_IN;
+
+//VARIABLES HOJA 282//
+
+int FALSE_SPRINT_OPTION;
+int OUT_ZMINUS1_B_SPRINT_OPTION_IN_2;
+int OUT_AND_SPRINT_ENBL_RST;
+int OUT_T_FF_SPRINT_SPRINTEN_IN_1;
+int OUT_AND_SPRINT_SPRINTEN_IN_2;
+int OUT_AND_SPRINT_SPRINTENBL_IN;
+int SPRINT_SPRINTENBL;
+int NSPRINT_SPRINTENBL;
+int CORE_ALM_SPRT1_SPRSDALM1;
+int CORE_ALM_SPRT2_SPRSDALM2;
+int CORE_ALM_SPRT3_SPRSDALM3;
+int OUT_NOR_SPRINT_READY_EN_IN_10;
+int IFACE_SPRINT_BRNSPRNTOK;
+int IFACE_SPRINT_T2SPRNTOK;
+int IFACE_SPRINT_DWBSPRNTOK;
+int IFACE_SPRINT_P8THGOOD;
+int IFACE_SPRINT_P8THEGOOD;
+int IFACE_SPRINT_NSDREFSPRT;
+int IFACE_SPRINT_LIQDMDOK;
+int TRUE_SPRINT_FUELSYSRDY;
+int IFACE_SPRINT_PS3SPROK;
+int FALSE_SPRINT_SIM_SPRT;
+int SPRINT_ALLOWTEST;
+int OUT_AND_SPRINT_SPRT_READY_T_COND_4;
+int FALSE_SPRINT_SIM_SPRAY;
+int OUT_AND_SPRINT_SPRT_READY_T_COND_5; 
+
+//VARIABLES HOJA 283//
+
+int SPRINT_HP_ON_2_SFC_STEP;
+int SPRINT_LP_ON_2SFC_STEP;
+int OUT_OR_SPRINT_FILL_DLY_TRIGGER;
+int FALSE_SPRINT_TEST_TIMER;
+float OUT_A_SW_SPRINT_FILL_DLY_DLY_TIME;
+float SPRINT_PT62234;
+int OUT_A_CMPR_SPRINT_FILL_DN_IN_2;
+int out_DLY_SPRINT_FILL_DN_IN_1;
+int OUT_OR_SPRINT_LP_ON_2_T_COND_3;
+int SPRINT_HP_OFF_2_SFC_STEP;
+int OUT_OR_SPRINT_DRNHPTMR_Z_FEEDBACK;
+int SPRINT_LP_OFF_2_SFC_STEP;
+int OUT_OR_SPRINT_LP_E_Z_FEEDBACK;
+int SPRINT_LP_OFF_3_SFC_STEP;
+int SPRINT_OFF_1_SFC_STEP;
+int OUT_OR_SPRINT_EVAC_Z_FEEDBACK;
+int SPRINT_LP_OFF_5_SFC_STEP;
+int SPRINT_OFF_2_SFC_STEP;
+int OUT_OR_SPRINT_LP_PRGT_Z_FEEDBACK;
+int SPRINT_OFF_4_SFC_STEP;
+int OUT_OR_SPRINT_JIMMY_SW2_NC;
+int FALSE_SPRINT_JIMMY_SPRT;
+int OUT_B_SW_SPRINT_HP_PRGT_Z_FEEDBACK;
+int SPRINT_MASK_PURGE;
+int SPRINT_LP_OFF_4_SFC_STEP;
+int OUT_OR_SPRINT_LP_PRG_Z_FEEDBACK;
+float SPRINT_TIMERS_IN_1;
+int SPRINT_TMR_CNVT_IN_2;
+float SPRINT_TIMERS_IN_2;
+int SPRINT_TMR_CNVT_IN_3;
+float SPRINT_TIMERS_IN_3;
+int SPRINT_TMR_CNVT_IN_4;
+float SPRINT_TIMERS_IN_4;
+int SPRINT_TMR_CNVT_IN_5;
+float SPRINT_TIMERS_IN_5;
+int SPRINT_TMR_CNVT_IN_6;
+float SPRINT_TIMERS_IN_6;
+int SPRINT_TMR_CNVT_IN_7;
+float SPRINT_TIMERS_IN_7;
+int SPRINT_TMR_CNVT_IN_8;
+float SPRINT_TIMERS_IN_8;
+int SPRINT_TMR_CNVT_IN_9;
+float SPRINT_TIMERS_IN_9;
+float SPRINT_TMR_ANGL;
+int SPRINT_TMR_ANGL_IN_1;      
+
+//VARIABLES HOJA 284//
+
+int IFACE_SPRINT_C_LPSPRTEN;
+int SPRINT_HP_SPRNTOK;
+int OUT_AND_SPRINT_SPRT_READY_T_COND_2; 
+int SPRINT_C_LPSPRTEN;
+int OUT_AND_SPRINT_SPRT_READY_T_COND_3; 
+int SPRINT_LP_OFF_2_TRAN_2;
+int SPRINT_LP_OFF_3_TRAN_2;
+int SPRINT_LP_OFF_4_TRAN_2;
+int SPRINT_LP_OFF_5_TRAN_2;
+int SPRINT_HP_OFF_2_TRAN_2;
+int SPRINT_OFF_1_TRAN_2;
+int SPRINT_OFF_2_TRAN_2;
+int SPRINT_OFF_3_TRAN_2;
+int SPRINT_OFF_4_TRAN_2; 
+int OUT_OR_SPRINT_LP_ON_1_SF_SEL_2;
+int SPRINT_SDLATCHLP;
+int SPRINT_SPRT_OFF;
+int SPRINT_OFF_MASK;
+int SPRINT_TNK_VACSW;
+int OUT_OR_SPRINT_TRANSOFF_IN_1;
+int SPRINT_NOTTEST;
+int OUT_AND_SPRINT_HP_2_LP_1_T_COND_1; 
+int SPRINT_LP_2_HP_1_TRAN_2;
+int SPRINT_LP_2_HP_2_TRAN_2;
+int SPRINT_LP_2_HP_3_TRAN_2;
+int SPRINT_LP_2_HP_4_TRAN_2;
+int SPRINT_LP_2_HP_5_TRAN_2;
+int SPRINT_HP_ON_3_TRAN_2;
+int SPRINT_LP_OFF_1_TRAN_2;
+int SPRINT_HP_OFF_1_TRAN_2;
+int OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1; 
+int SPRINT_NOTREADY_TRAN_1;
+int OUT_S1_ET1_SPRINT_ACTIVE_IN_1; 
+int SPRINT_TRANSOFF;
+int SPRINT_SIM_SPRT;
+int SPRINT_SIM_SPRAY;
+int SPRINT_SPRT_READY_TRAN_5;
+int OUT_S1_ET2_SPRINT_ACTIVE_IN_2; 
+int TRUE_SPRINT_PSL_OK;  
+int SPRINT_HP_ON_2_TRAN_2;
+int OUT_S1_ET3_SPRINT_FILL_OR_IN_2;  
+int OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2; 
+int SPRINT_N_LPSPRTEN;
+int SPRINT_H2OXFRDONE;
+int OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3; 
+int SPRINT_DLY_HPHLD;
+int OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4; 
+int SPRINT_FILL_DN;
+int SPRINT_DRAINHP_TM;
+int OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1; 
+int FIN_DE_PROCESO;       
+
+//VARIABLES HOJA 285//
+
+int FALSE_SPRINT_HP_SPRNTOK;
+int OUT_AND_SPRINT_TRANS_OFF_IN_4;
+int SPRINT_LP_OFF_2_TRAN_1;
+int SPRINT_LP_OFF_3_TRAN_1;
+int SPRINT_LP_OFF_4_TRAN_1;
+int SPRINT_LP_OFF_5_TRAN_1;
+int SPRINT_HP_OFF_2_TRAN_1;
+int SPRINT_OFF_1_TRAN_1;
+int SPRINT_OFF_2_TRAN_1;
+int SPRINT_OFF_3_TRAN_1;
+int SPRINT_OFF_4_TRAN_1;
+int OUT_OR_SPRINT_HP_ON_1_SF_SEL_3;
+int SPRINT_LP_ON_3_TRAN_2;
+int SPRINT_HP_2_LP_1_TRAN_2;
+int SPRINT_HP_2_LP_2_TRAN_2;
+int SPRINT_HP_2_LP_3_TRAN_2;
+int SPRINT_LP_OFF_1_TRAN_1;
+int SPRINT_HP_OFF_1_TRAN_1;
+int OUT_OR_SPRINT_LP_2_HP_1_SF_SEL_1;
+int SPRINT_JIMMY_SPRT;
+int SPRINT_EVAC_TMR;
+int TRUE_SPRINT_EVAC_SW1;
+int OUT_B_SW_SPRINT_LP_2_HP_3_T_COND_3;
+
+//VARIABLES HOJA 286//
+ 
+int SPRINT_HP_2_LP_1_TRAN_1;
+int SPRINT_HP_2_LP_2_TRAN_1;
+int SPRINT_HP_2_LP_3_TRAN_1;
+int SPRINT_LP_ON_1_TRAN_1;
+int SPRINT_LP_ON_2_TRAN_1;
+int SPRINT_LP_ON_3_TRAN_1;
+int OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1;
+int FUEL_SYS_GAS100;
+int OUT_OR_SPRINT_LP_XFR_WT_T_COND_1;
+int SPRINT_LP_2_HP_1_TRAN_1;
+int SPRINT_LP_2_HP_2_TRAN_1;
+int SPRINT_LP_2_HP_3_TRAN_1;
+int SPRINT_LP_2_HP_4_TRAN_1;
+int SPRINT_LP_2_HP_5_TRAN_1;
+int SPRINT_HP_ON_3_TRAN_1;
+int OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1;
+int SPRINT_HP_ON_1_TRAN_1;
+int SPRINT_HP_ON_2_TRAN_1;
+int OUT_OR_SPRINT_OFF_1_SF_SEL_2;
+int SPRINT_HP_PRG_TMR;
+int FALSE_SPRINT_TRAN_4_OR;
+int OUT_OR_SPRINT_OFF_4_T_COND_3;
+int FALSE_SPRINT_NOT_RUNNIN;
+int OUT_AND_SPRINT_JIMMY_SW2_NO;
+int SPRINT_OFF_3_SFC_STEP;
+int SPRINT_NOTREADY_SFC_STEP;
+int OUT_OR_SPRINT_SPRINT_OUT_IN;
+int SPRINT_SEL_SPRINT;
+int SPRINT_SEL_SPRAY;
+int SPRINT_RAMP_DOWN_P_LIM_1;
+int SPRINT_DLY_LPEHLD;
+int TRUE_EVACUATE_LP_SPRINT_MANIFOLD;
+int SPRINT_DLY_LPPHLD;
+int SPRINT_LP_PRG_TMR;
+int SPRINT_LP_OFF_5_TRAN_3;
+int SPRINT_HP_OFF_2_TRAN_3;
+int SPRINT_EVAC_SW1;
+int SPRINT_GAS_OR_LIQ;
+int SPRINT_DN_PRG_TMR;
+int SPRINT_SPRT_READY_TRAN_1;
+int OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5;
+int OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2;
+int OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2;
+int OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1;
+int OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2;
+int OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2;
+int OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12;
+int OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2;
+int OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3;
+int OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2;
+int OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3;
+int OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK;
+int OUT_S3_ET5_SPRINT_PURGE_HP_IN_2;
+int OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3;
+
+//VARIABLES HOJA 287//
+
+int FALSE_SPRINT_TEST_SPRT;
+int SFC_STEP_OUTOFOP;
+int OUT_SPRINT_ALLOWTEST_AND;
+int NOUT_SPRINT_ALLOWTEST_AND;
+int SPRINT_SPRT_READY;
+int SPRINT_NOTREADY;
+int SPRINT_LP_ON_1;
+int SPRINT_LP_OFF_1;
+int SPRINT_LP_OFF_3;
+int SPRINT_LP_OFF_5;
+int SPRINT_HP_ON_1;
+int SPRINT_HP_OFF_1;
+int SPRINT_HP_OFF_2;
+int SPRINT_OFF_1;
+int SPRINT_OFF_2;
+int SPRINT_OFF_3;
+int OUT_SPRINT_ACT_OR_INI_NOR;
+
+//VARIABLES HOJA 288//
+
+int HMI_BO_BW_V_125;
+int FALSE_SPRINT_DEC_OR;
+int OUT_OR_SPRINT_LOWER_AND_IN_2;
+int IFACE_CORE_Z_MANMODE;
+int OUT_AND_SPRINT_MAN_RAMP_P_SEL_2;
+int HMI_BO_BW_V_126;
+int FALSE_SPRINT_INC_OR;
+int OUT_OR_SPRINT_RAISE_AND_IN_2;
+int OUT_AND_SPRINT_MAN_RAMP_P_SEL_3;
+int SFC_STEP_OUTOFOP_SFC_STEP;
+int FALSE_SPRINT_MAN_STRK;
+int OUT_AND_SPRINT_CNTL_SW_CTRL;
+int OUT_I_SW_SPRINT_CNTRL_OUT_SEL;
+int SPRINT_ACT_OR_INI;
+float OUT_A_SW_SPRINT_MINFLOW_IN_1;
+float OUT_A_SW_SPRINT_FLOW_LIM_IN_2;
+float SPRINT_H2ODMDSW_NC;
+float OUT_A_SW_SPRINT_SPRINT_PID_DB_SP;
+int OUT_O_SHOT_SPRINT_DOWN_OR_IN_1;
+int OUT_OR_SPRINT_SPRT_DOWN_IN;
+
+///////////////////////////////////////////////////////////////////////////
+
+
+
+//funcion de entrada de ejecucion  
+ int main0(int pars) 
+{ 
+//ejemplo de ejecucion...genera la raiz cuadrada
+int i=0;
+for (i=5000;i<10000;i++)
+{
+///////////////////////////////ALARMAS//////////////////////////////////////
+	//variables a imprimir//  
+
+//AQUI EMPIEZA MI IMPRESION DE VARIABLES//
+
+       //IMPRESIÒN DE VARIABLES HOJA 272//
+       /*
+       printf("\nN1N10_RTD_TE64030_LATCH_OR=%d",N1N10_RTD_TE64030_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE64030LOG_A_IN_1=%f",OUT_A_SW_VENT_TE64030LOG_A_IN_1);
+       printf("\nN1N10_RTD_TE64031_LATCH_OR=%d",N1N10_RTD_TE64031_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE64031LOG_A_IN_1=%f",OUT_A_SW_VENT_TE64031LOG_A_IN_1);
+       printf("\nN1N10_RTD_TE64032_LATCH_OR=%d",N1N10_RTD_TE64032_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE64032LOG_A_IN_1=%f",OUT_A_SW_VENT_TE64032LOG_A_IN_1);
+       printf("\nN1N10_RTD_TE64033_LATCH_OR=%d",N1N10_RTD_TE64033_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE64033LOG_A_IN_1=%f",OUT_A_SW_VENT_TE64033LOG_A_IN_1);
+       printf("\nN1N10_RTD_TE6450_LATCH_OR=%d",N1N10_RTD_TE6450_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE6450LOG_A_IN_1=%f",OUT_A_SW_VENT_TE6450LOG_A_IN_1);
+       printf("\nN1N10_RTD_TE6499_LATCH_OR=%d",N1N10_RTD_TE6499_LATCH_OR);
+       printf("\nOUT_A_SW_VENT_TE6499LOG_A_IN_1=%f",OUT_A_SW_VENT_TE6499LOG_A_IN_1);
+       printf("\nOUT_SUB_VENT_AIRTMP_DF_IN=%f",OUT_SUB_VENT_AIRTMP_DF_IN);
+       printf("\nOUT_ABS_VENT_AIRTMPCMPR_IN_1=%f",OUT_ABS_VENT_AIRTMPCMPR_IN_1);
+       printf("\nOUT_A_CMPR_VENT_AIRTMPDIFM_IN_2=%d",OUT_A_CMPR_VENT_AIRTMPDIFM_IN_2);
+       printf("\n*FALSE_VENT_AIRTMPDIFM=%d",FALSE_VENT_AIRTMPDIFM);
+       printf("\nOUT_AND_VENT_AIRDIFFALM_IN=%d",OUT_AND_VENT_AIRDIFFALM_IN);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 273//
+
+       printf("\nVENT_AIRAVERAGE_IN=%f",VENT_AIRAVERAGE_IN);
+       printf("\nVENT_AIR_AVG_C_IN=%f",VENT_AIR_AVG_C_IN);
+       printf("\nOUT_A_CMPR_VENT_T0_GT_10=%d",OUT_A_CMPR_VENT_T0_GT_10);             
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 274//
+       
+       printf("\nIO_FLT_TE64030VST=%d",IO_FLT_TE64030VST);
+       printf("\nOUT_A_SW_VENT_INLETT2LSS_IN_1=%f",OUT_A_SW_VENT_INLETT2LSS_IN_1);
+       printf("\nIO_FLT_TE64031VST=%d",IO_FLT_TE64031VST);
+       printf("\nOUT_A_SW_VENT_INLETT2LSS_IN_2=%f",OUT_A_SW_VENT_INLETT2LSS_IN_2);
+       printf("\nIO_FLT_TE64032VST=%d",IO_FLT_TE64032VST);
+       printf("\nOUT_A_SW_VENT_INLETT2LSS_IN_3=%f",OUT_A_SW_VENT_INLETT2LSS_IN_3);
+       printf("\nIO_FLT_TE64033VST=%d",IO_FLT_TE64033VST);
+       printf("\nOUT_A_SW_VENT_INLETT2LSS_IN_4=%f",OUT_A_SW_VENT_INLETT2LSS_IN_4);
+       printf("\nOUT_LSS_BUS_VENT_INLETT2LSS=%f",OUT_LSS_BUS_VENT_INLETT2LSS);
+       printf("\nOUT_A_CMPR_VENT_ICEALM_SW_NO=%d",OUT_A_CMPR_VENT_ICEALM_SW_NO);
+       printf("\nOUT_A_CMPR_VENT_INLET_LT43_IN=%d",OUT_A_CMPR_VENT_INLET_LT43_IN);
+       printf("\nGENERATOR_GEN_BKRCLS=%d",GENERATOR_GEN_BKRCLS);
+       printf("\nVENT_ANTI_ICE=%d",VENT_ANTI_ICE);
+       printf("\nOUT_AND_VENT_ICE_DLY_TRIGGER=%d",OUT_AND_VENT_ICE_DLY_TRIGGER);
+       printf("\nOUT_OR_VENT_MOT68330_IN=%d",OUT_OR_VENT_MOT68330_IN);       
+       printf("\nout_DLY_VENT_DAMPER_SW_CTRL=%d",out_DLY_VENT_DAMPER_SW_CTRL[1]);
+       printf("\nOUT_A_SW_VENT_DMPR_RATE_IN=%f",OUT_A_SW_VENT_DMPR_RATE_IN);
+       printf("\nVENT_DAMPER_SW_NO=%f",VENT_DAMPER_SW_NO);
+       printf("\nVENT_ZV64181_IN=%f",VENT_ZV64181_IN);
+       printf("\nOUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=%f",OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2);
+       printf("\nVENT_T2SEL=%f",VENT_T2SEL);
+       printf("\nOUT_SUB_VENT_T2_T0_CMP_IN_2=%f",OUT_SUB_VENT_T2_T0_CMP_IN_2);
+       printf("\nout_DLY_VENT_ICEALM_MSK_IN_3=%d",out_DLY_VENT_ICEALM_MSK_IN_3[1]);
+       printf("\nOUT_A_CMPR_VENT_ICEALM_MSK_IN_1=%f",OUT_A_CMPR_VENT_ICEALM_MSK_IN_1);
+       printf("\nOUT_AND_VENT_ICESYS_ALM_IN=%d",OUT_AND_VENT_ICESYS_ALM_IN);
+       printf("\nOUT_LSS_BUS_VENT_ICINGLOG_A_IN_1=%f",OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1);
+       printf("\nOUT_LSS_BUS_VENT_CONDAIR_SW_NO=%f",OUT_LSS_BUS_VENT_CONDAIR_SW_NO);
+       printf("\n*FALSE_VENT_CONDAIR_SW=%d",FALSE_VENT_CONDAIR_SW);
+       printf("\nOUT_A_SW_VENT_ICINGLOG_A_IN_2=%f",OUT_A_SW_VENT_ICINGLOG_A_IN_2);
+       printf("\nTRUE_VENT_ICEALM_SW=%d",TRUE_VENT_ICEALM_SW);
+       printf("\nVENT_ICEALM_SW_NC=%f",VENT_ICEALM_SW_NC);
+       printf("\nOUT_B_SW_VENT_ICING_IN=%d",OUT_B_SW_VENT_ICING_IN);
+       
+       
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 275//
+       
+       printf("\nVENT_G_FNA_TMR=%d",VENT_G_FNA_TMR);
+       printf("\nVENT_G_FNB_TMR=%d",VENT_G_FNB_TMR);
+       printf("\nVENT_T_FNA_TMR=%d",VENT_T_FNA_TMR);
+       printf("\nVENT_T_FNB_TMR=%d",VENT_T_FNB_TMR);
+       printf("\nVENT_ENCLPRG=%d",VENT_ENCLPRG);
+       printf("\nVENT_PRGFLDLY=%d",VENT_PRGFLDLY);
+       printf("\nVENT_PSTCLDNTMR=%d",VENT_PSTCLDNTMR);
+       printf("\nSHUTDOWN_COOLAIRTMR=%d",SHUTDOWN_COOLAIRTMR);
+       printf("\nSFC_STEP_SYNC_COOL=%d",SFC_STEP_SYNC_COOL);
+       printf("\nVENT_G_POSTDLY=%d",VENT_G_POSTDLY);
+       printf("\nVENT_G_FAN_ATM_IN=%f",VENT_G_FAN_ATM_IN);
+       printf("\nVENT_G_FAN_BTM_IN=%f",VENT_G_FAN_BTM_IN);
+       printf("\nVENT_T_FAN_ATM_IN=%f",VENT_T_FAN_ATM_IN);
+       printf("\nVENT_T_FAN_BTM_IN=%f",VENT_T_FAN_BTM_IN);
+       printf("\nVENT_ENCL_PRGTM_IN=%f",VENT_ENCL_PRGTM_IN);
+       printf("\nVENT_PRGFLTMR_IN=%f",VENT_PRGFLTMR_IN);
+       printf("\nVENT_PSTVNET_T_IN=%f",VENT_PSTVNET_T_IN);
+       printf("\nVENT_PSTCLDN_T_IN=%f",VENT_PSTCLDN_T_IN);
+       printf("\nSFC_TIMER_SYNCCL_T_IN=%f",SFC_TIMER_SYNCCL_T_IN);
+       printf("\nVENT_PSTVNET_G_IN=%f",VENT_PSTVNET_G_IN);
+       printf("\nOUT_TC_MON_VENT_STATOR_TMP=%d",OUT_TC_MON_VENT_STATOR_TMP);
+       printf("\nOUT_I_CMPR_VENT_PSTCLDNON_IN=%d",OUT_I_CMPR_VENT_PSTCLDNON_IN);
+       printf("\nOUT_A_CMPR_VENT_GFANS_OFF_IN_1=%d",OUT_A_CMPR_VENT_GFANS_OFF_IN_1);
+       printf("\nVENT_AIRFILTAVG_TC_MON=%f",VENT_AIRFILTAVG_TC_MON);
+       printf("\nOUT_A_CMPR_VENT_GFANS_OFF_IN_2=%d",OUT_A_CMPR_VENT_GFANS_OFF_IN_2);
+       printf("\nOUT_A_CMPR_VENT_STATORGT14=%d",OUT_A_CMPR_VENT_STATORGT14);            
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 276//
+       
+       printf("\nFALSE_AUX_SKID_TE64028VST=%d",FALSE_AUX_SKID_TE64028VST);
+       printf("\nout_DLY_AUX_SKID_MASKFANON1 %d",out_DLY_AUX_SKID_MASKFANON1[1]);
+       printf("\nAUX_SKID_TE64028LOG_B_OUT_1=%d",AUX_SKID_TE64028LOG_B_OUT_1);
+       printf("\nOUT_AND_AUX_SKID_MOT64026_IN=%d",OUT_AND_AUX_SKID_MOT64026_IN);
+       printf("\nAUX_SKID_TE64028LOG_B_OUT_2=%d",AUX_SKID_TE64028LOG_B_OUT_2);
+       printf("\nAUX_SKID_TE64028LOG_B_OUT_3=%d",AUX_SKID_TE64028LOG_B_OUT_3);
+       printf("\nOUT_AND_AUX_SKID_MOT64027_IN=%d",OUT_AND_AUX_SKID_MOT64027_IN);
+       printf("\nOUT_OR_AUX_SKID_DLY_OFF_TRIGGER=%d",OUT_OR_AUX_SKID_DLY_OFF_TRIGGER); 
+       printf("\nout_DLY_AUX_SKID_SOV64083_IN %d",out_DLY_AUX_SKID_SOV64083_IN[1]);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 277//
+
+       printf("\n*FALSE_GENERATOR_UTIL_SW=%d",FALSE_GENERATOR_UTIL_SW);
+       printf("\nOUT_GENERATOR_UTIL_SW_B_SW=%d",OUT_GENERATOR_UTIL_SW_B_SW);
+	   printf("\nGENERATOR_GEN_BKRCLS=%d",GENERATOR_GEN_BKRCLS);
+	   printf("\nOUT_GENERATOR_PSS_ONENBL_AND=%d",OUT_GENERATOR_PSS_ONENBL_AND);
+	   //////////////////////////////////////////////////////////////////////////
+
+	   //IMPRESIÒN DE VARIABLES HOJA 278//
+
+	   printf("\nN3N42_BI_UTIL_CLSD=%d",N3N42_BI_UTIL_CLSD);
+	   printf("\nFALSE_GENERATOR_GSO21_OPIN=%d",FALSE_GENERATOR_GSO21_OPIN);
+	   printf("\nOUT_GENERATOR_UTILITY_AND=%d",OUT_GENERATOR_UTILITY_AND);
+	   printf("\nA1_A12_BI2_K229=%d",A1_A12_BI2_K229);
+	   printf("\nFALSE_GENERATOR_CMD_ISOC=%d",FALSE_GENERATOR_CMD_ISOC);
+	   printf("\nFALSE_GENERATOR_STP_SYNCIN=%d",FALSE_GENERATOR_STP_SYNCIN);
+	   printf("\nOUT_GENERATOR_DROOP_AND=%d",OUT_GENERATOR_DROOP_AND);
+	   printf("\n*FALSE_GENERATOR_SEL_DROOP=%d",FALSE_GENERATOR_SEL_DROOP);
+	   printf("\nOUT_GENERATOR_SEL_DROOP_B_SW=%d",OUT_GENERATOR_SEL_DROOP_B_SW);
+	   printf("\nSHUTDOWN_CDLO=%d",SHUTDOWN_CDLO);
+	   printf("\nGENERATOR_DROOP=%d",GENERATOR_DROOP);
+	   printf("\nGENERATOR_ISOCH=%d",GENERATOR_ISOCH);
+	   printf("\nOUT_GENERATOR_NSDROOP_AND=%d",OUT_GENERATOR_NSDROOP_AND);
+	   printf("\nOUT_GENERATOR_NSISOCH_AND=%d",OUT_GENERATOR_NSISOCH_AND);
+	   printf("\nNA1_A12_BI1_BRKR_FAIL=%d",NA1_A12_BI1_BRKR_FAIL);
+	   printf("\nN3N39_BI_RTRGRNDFLT=%d",N3N39_BI_RTRGRNDFLT);
+	   printf("\nSPEED_SW_NSDGT3590=%d",SPEED_SW_NSDGT3590);
+	   printf("\nOUT_GENERATOR_RTRGNDMSK_AND=%d",OUT_GENERATOR_RTRGNDMSK_AND);
+	   printf("\nNN3N39_BI_DIODE_FAIL=%d",NN3N39_BI_DIODE_FAIL);
+       printf("\nNN3N39_BI_AVR_FAULT=%d",NN3N39_BI_AVR_FAULT);
+       printf("\nNN3N40_BI_CUST_86T=%d",NN3N40_BI_CUST_86T);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 279//
+
+       printf("\nN3N42_BI_IGPS52GTRP_BI_L=%d",N3N42_BI_IGPS52GTRP_BI_L);
+       printf("\nNN3N42_BI_IGPS52GTRP_BI_L=%d",NN3N42_BI_IGPS52GTRP_BI_L);
+       printf("\nN3N42_BI_IGPSFLTALM_BI_L=%d",N3N42_BI_IGPSFLTALM_BI_L);
+       printf("\nNN3N42_BI_IGPSFLTALM_BI_L=%d",NN3N42_BI_IGPSFLTALM_BI_L);
+       printf("\nTRUE_GENERATOR_IGPSFDLT12=%d",TRUE_GENERATOR_IGPSFDLT12);
+       printf("\nOUT_B_SW_GENERATOR_N_IGPSFAIL_IN=%d",OUT_B_SW_GENERATOR_N_IGPSFAIL_IN);
+       printf("\nNOUT_B_SW_GENERATOR_N_IGPSFAIL_IN=%d",NOUT_B_SW_GENERATOR_N_IGPSFAIL_IN);
+       printf("\nSPEED_SW_NSDGT3590=%d",SPEED_SW_NSDGT3590);
+       printf("\nN3N39_BI_GEN_EX_LIM_BI_L=%d",N3N39_BI_GEN_EX_LIM_BI_L);
+       printf("\nOUT_AND_GENERATOR_GEN_EX_LIM_IN=%d",OUT_AND_GENERATOR_GEN_EX_LIM_IN);
+       printf("\nN3N42_BI_GEN_86TRPL_BI_L=%d",N3N42_BI_GEN_86TRPL_BI_L);
+       printf("\nNN3N42_BI_GEN_86TRPL_BI_L=%d",NN3N42_BI_GEN_86TRPL_BI_L);
+       printf("\nA1_A12_BI1_TRIP_86_BIO_BI=%d",A1_A12_BI1_TRIP_86_BIO_BI);
+       printf("\nNA1_A12_BI1_TRIP_86_BIO_BI=%d",NA1_A12_BI1_TRIP_86_BIO_BI);
+       printf("\nN3N39_BI_AVR_SUMALM_BI_L_NOT=%d",N3N39_BI_AVR_SUMALM_BI_L_NOT);
+       printf("\nSPEED_SW_NSDGT3240=%d",SPEED_SW_NSDGT3240);
+       printf("\nOUT_AND_GENERATOR_AVRALM_DLY_TRIGGER=%d",OUT_AND_GENERATOR_AVRALM_DLY_TRIGGER);
+       printf("\nout_DLY_GENERATOR_AVR_ALARM_IN %d",out_DLY_GENERATOR_AVR_ALARM_IN[1]);
+       printf("\nSFC_STEP_RST_AND_ST=%d",SFC_STEP_RST_AND_ST);
+       printf("\nOUT_OR_GENERATOR_AVR_NOT_ON=%d",OUT_OR_GENERATOR_AVR_NOT_ON);
+       printf("\nOUT_OR_GENERATOR_AVR_SDOFF_RST=%d",OUT_OR_GENERATOR_AVR_SDOFF_RST);
+       printf("\nSHUTDOWN_ANY_SD=%d",SHUTDOWN_ANY_SD);
+       printf("\nout_LATCH_GENERATOR_RESET85PCT_IN_3=%d",out_LATCH_GENERATOR_RESET85PCT_IN_3[1]);
+       printf("\nSPEED_SW_NSDLT3060=%d",SPEED_SW_NSDLT3060);
+       printf("\nGENERATOR_GEN_BKROPN=%d",GENERATOR_GEN_BKROPN);
+       printf("\nOUT_AND_GENERATOR_AVR_OFF_IN_1=%d",OUT_AND_GENERATOR_AVR_OFF_IN_1);
+       printf("\nSHUTDOWN_SD_CORE=%d",SHUTDOWN_SD_CORE);
+       printf("\nSHUTDOWN_SDN_CORE=%d",SHUTDOWN_SDN_CORE);
+       printf("\nOUT_OR_GENERATOR_AVR_OFF_Z_FEEDBACK=%d",OUT_OR_GENERATOR_AVR_OFF_Z_FEEDBACK);
+       printf("\nGENERATOR_AVR_ON_RST=%d",GENERATOR_AVR_ON_RST);
+       printf("\nout_LATCH_R_GENERATOR_COND_OR85_IN_1 %d",out_LATCH_R_GENERATOR_COND_OR85_IN_1[1]);
+       printf("\nGENERATOR_CONDENSING=%d",GENERATOR_CONDENSING);
+       printf("\nOUT_OR_GENERATOR_EXCTR_ON_IN=%d",OUT_OR_GENERATOR_EXCTR_ON_IN);
+       printf("\nout_DLY_GENERATOR_MASK_2_IN_1=%d",out_DLY_GENERATOR_MASK_2_IN_1[1]);
+       printf("\nGENERATOR_EXCTR_ON=%d",GENERATOR_EXCTR_ON);
+       printf("\nN3N39_BI_EXCIT_ALM_BI_L=%d",N3N39_BI_EXCIT_ALM_BI_L);
+       printf("\nOUT_AND_GENERATOR_EXCIT_ALM_IN=%d",OUT_AND_GENERATOR_EXCIT_ALM_IN);
+       printf("\nN3N18_AI_EAX_AI_420_L=%f",N3N18_AI_EAX_AI_420_L);
+       printf("\OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2=%d",OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2);
+       printf("\nOUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER=%d",OUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER);
+       printf("\nout_DLY_GENERATOR_EAXALMLAT_IN_1=%d",out_DLY_GENERATOR_EAXALMLAT_IN_1[1]);     
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 280//
+       
+       printf("\nCORE_DIGITAL_FUELOFF=%d",CORE_DIGITAL_FUELOFF);     
+       printf("\nSHUTDOWN_SD_CORE=%d",SHUTDOWN_SD_CORE);     
+       printf("\nSHUTDOWN_SDN_CORE=%d",SHUTDOWN_SDN_CORE);     
+       printf("\nSHUTDOWN_STEPIDLE=%d",SHUTDOWN_STEPIDLE);     
+       printf("\nGENERATOR_GEN86TRIPL=%d",GENERATOR_GEN86TRIPL);     
+       printf("\nGENERATOR_GEN86TRIPR=%d",GENERATOR_GEN86TRIPR);     
+       printf("\nSHUTDOWN_DMINTONS=%d",SHUTDOWN_DMINTONS);     
+       printf("\nSFC_STEP_NORM_3_SFC_STEP=%d",SFC_STEP_NORM_3_SFC_STEP);     
+       printf("\nALARM_HMI_STI=%d",ALARM_HMI_STI);     
+       printf("\nGENERATOR_STP_2_SYNC=%d",GENERATOR_STP_2_SYNC);     
+       printf("\nSPEED_SW_NSDLT3420=%d",SPEED_SW_NSDLT3420);
+       printf("\nOUT_OR_GENERATOR_BKR_OK_RST=%d",OUT_OR_GENERATOR_BKR_OK_RST);
+       printf("\nSHUTDOWN_NO_SHTDNS=%d",SHUTDOWN_NO_SHTDNS);
+       printf("\nSPEED_SW_NSDGT3590=%d",SPEED_SW_NSDGT3590);
+       printf("\nOUT_AND_GENERATOR_BKR_OK_TRIGGER=%d",OUT_AND_GENERATOR_BKR_OK_TRIGGER);
+       printf("\nout_LATCH_GENERATOR_K85_IN %d",out_LATCH_GENERATOR_K85_IN[1]);
+       printf("\nN3N42_BI_AUTO_SYNC_BI_L=%d",N3N42_BI_AUTO_SYNC_BI_L);
+       printf("\nSFC_TIMER_WARMUP_DN=%d",SFC_TIMER_WARMUP_DN);
+       printf("\nSFC_STEP_READY2SYNC_SFC_STEP=%d",SFC_STEP_READY2SYNC_SFC_STEP);
+       printf("\nOUT_AND_GENERATOR_SYNC_ENABL_IN=%d",OUT_AND_GENERATOR_SYNC_ENABL_IN);
+       printf("\nGENERATOR_EXCIT_ALM=%d",GENERATOR_EXCIT_ALM);
+       printf("\nGENERATOR_GEN_EX_LIM=%d",GENERATOR_GEN_EX_LIM);
+       printf("\nGENERATOR_DIODE_FAIL=%d",GENERATOR_DIODE_FAIL);
+       printf("\nGENERATOR_AVR_ALARM=%d",GENERATOR_AVR_ALARM);
+       printf("\nGENERATOR_AVR_FAULT=%d",GENERATOR_AVR_FAULT);
+       printf("\nOUT_OR_GENERATOR_EX_SUMMARY_IN=%d",OUT_OR_GENERATOR_EX_SUMMARY_IN);
+       printf("\nTRUE_GENERATOR_NOTLSH6834=%d",TRUE_GENERATOR_NOTLSH6834);
+       printf("\nNTRUE_GENERATOR_NOTLSH6834=%d",NTRUE_GENERATOR_NOTLSH6834);
+       printf("\nGENERATOR_TE6432=%f",GENERATOR_TE6432);
+       printf("\nOUT_A_CMPR_GENERATOR_TE6432_H_IN=%d",OUT_A_CMPR_GENERATOR_TE6432_H_IN);
+       printf("\nGENERATOR_TE6433=%f",GENERATOR_TE6433);
+       printf("\nOUT_A_CMPR_GENERATOR_TE6433_H_IN=%d",OUT_A_CMPR_GENERATOR_TE6433_H_IN);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 281//
+              
+       printf("\nIFACE_SPRINT_C_H2ORAISE=%d",IFACE_SPRINT_C_H2ORAISE);
+       printf("\nOUT_A_SW_IFACE_CORE_Z_SPRDMSEQ_IN=%f",OUT_A_SW_IFACE_CORE_Z_SPRDMSEQ_IN);
+       printf("\nSPRINT_LP_ON_3_SFC_STEP=%d",SPRINT_LP_ON_3_SFC_STEP);
+       printf("\nSPRINT_HP_2_LP_1_SFC_STEP=%d",SPRINT_HP_2_LP_1_SFC_STEP);
+       printf("\nSPRINT_HP_2_LP_2_SFC_STEP=%d",SPRINT_HP_2_LP_2_SFC_STEP);
+       printf("\nSPRINT_HP_2_LP_3_SFC_STEP=%d",SPRINT_HP_2_LP_3_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_1_SFC_STEP=%d",SPRINT_LP_OFF_1_SFC_STEP);
+       printf("\nSPRINT_HP_ON_3_SFC_STEP=%d",SPRINT_HP_ON_3_SFC_STEP);
+       printf("\nSPRINT_LP_2_HP_1_SFC_STEP=%d",SPRINT_LP_2_HP_1_SFC_STEP);
+       printf("\nSPRINT_LP_2_HP_2_SFC_STEP=%d",SPRINT_LP_2_HP_2_SFC_STEP);
+       printf("\nSPRINT_LP_2_HP_3_SFC_STEP=%d",SPRINT_LP_2_HP_3_SFC_STEP);
+       printf("\nSPRINT_LP_2_HP_4_SFC_STEP=%d",SPRINT_LP_2_HP_4_SFC_STEP);
+       printf("\nSPRINT_LP_2_HP_5_SFC_STEP=%d",SPRINT_LP_2_HP_5_SFC_STEP);
+       printf("\nSPRINT_HP_OFF_1_SFC_STEP=%d",SPRINT_HP_OFF_1_SFC_STEP);
+       printf("\nOUT_OR_IFACE_CORE_Z_SPRINTON_IN=%d",OUT_OR_IFACE_CORE_Z_SPRINTON_IN);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 282//
+       
+       printf("\nFALSE_SPRINT_OPTION=%d",FALSE_SPRINT_OPTION);
+       printf("\nOUT_ZMINUS1_B_SPRINT_OPTION_IN_2=%d",OUT_ZMINUS1_B_SPRINT_OPTION_IN_2);
+       printf("\nOUT_AND_SPRINT_ENBL_RST=%d",OUT_AND_SPRINT_ENBL_RST);
+       printf("\nOUT_T_FF_SPRINT_SPRINTEN_IN_1=%d",OUT_T_FF_SPRINT_SPRINTEN_IN_1);
+       printf("\nOUT_AND_SPRINT_SPRINTEN_IN_2=%d",OUT_AND_SPRINT_SPRINTEN_IN_2);
+       printf("\nOUT_AND_SPRINT_SPRINTENBL_IN=%d",OUT_AND_SPRINT_SPRINTENBL_IN);
+       printf("\nSPRINT_SPRINTENBL=%d",SPRINT_SPRINTENBL);
+       printf("\nNSPRINT_SPRINTENBL=%d",NSPRINT_SPRINTENBL);
+       printf("\nCORE_ALM_SPRT1_SPRSDALM1=%d",CORE_ALM_SPRT1_SPRSDALM1);
+       printf("\nCORE_ALM_SPRT2_SPRSDALM2=%d",CORE_ALM_SPRT2_SPRSDALM2);
+       printf("\nCORE_ALM_SPRT3_SPRSDALM3=%d",CORE_ALM_SPRT3_SPRSDALM3);
+       printf("\nOUT_NOR_SPRINT_READY_EN_IN_10=%d",OUT_NOR_SPRINT_READY_EN_IN_10);
+       printf("\nIFACE_SPRINT_BRNSPRNTOK=%d",IFACE_SPRINT_BRNSPRNTOK);
+       printf("\nIFACE_SPRINT_T2SPRNTOK=%d",IFACE_SPRINT_T2SPRNTOK);
+       printf("\nIFACE_SPRINT_DWBSPRNTOK=%d",IFACE_SPRINT_DWBSPRNTOK);
+       printf("\nIFACE_SPRINT_P8THGOOD=%d",IFACE_SPRINT_P8THGOOD);
+       printf("\nIFACE_SPRINT_P8THEGOOD=%d",IFACE_SPRINT_P8THEGOOD);
+       printf("\nIFACE_SPRINT_NSDREFSPRT=%d",IFACE_SPRINT_NSDREFSPRT);
+       printf("\nIFACE_SPRINT_LIQDMDOK=%d",IFACE_SPRINT_LIQDMDOK);
+       printf("\nTRUE_SPRINT_FUELSYSRDY=%d",TRUE_SPRINT_FUELSYSRDY);
+       printf("\nIFACE_SPRINT_PS3SPROK=%d",IFACE_SPRINT_PS3SPROK);
+       printf("\nOUT_AND_SPRINT_SPRINTEN_IN_2=%d",OUT_AND_SPRINT_SPRINTEN_IN_2);
+       printf("\nFALSE_SPRINT_SIM_SPRT=%d",FALSE_SPRINT_SIM_SPRT);
+       printf("\nSPRINT_ALLOWTEST=%d",SPRINT_ALLOWTEST);
+       printf("\nOUT_AND_SPRINT_SPRT_READY_T_COND_4=%d",OUT_AND_SPRINT_SPRT_READY_T_COND_4);
+       printf("\nFALSE_SPRINT_SIM_SPRAY=%d",FALSE_SPRINT_SIM_SPRAY);
+       printf("\nOUT_AND_SPRINT_SPRT_READY_T_COND_5=%d",OUT_AND_SPRINT_SPRT_READY_T_COND_5);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 283//
+       
+       printf("\nSPRINT_HP_ON_2_SFC_STEP=%d",SPRINT_HP_ON_2_SFC_STEP);
+       printf("\nSPRINT_LP_ON_2SFC_STEP=%d",SPRINT_LP_ON_2SFC_STEP);
+       printf("\nOUT_OR_SPRINT_FILL_DLY_TRIGGER=%d",OUT_OR_SPRINT_FILL_DLY_TRIGGER);
+       printf("\nFALSE_SPRINT_TEST_TIMER=%d",FALSE_SPRINT_TEST_TIMER);
+       printf("\nOUT_A_SW_SPRINT_FILL_DLY_DLY_TIME=%f",OUT_A_SW_SPRINT_FILL_DLY_DLY_TIME);       
+       printf("\nSPRINT_PT62234=%f",SPRINT_PT62234);
+       printf("\nOUT_A_CMPR_SPRINT_FILL_DN_IN_2=%d",OUT_A_CMPR_SPRINT_FILL_DN_IN_2);
+       printf("\nOUT_OR_SPRINT_LP_ON_2_T_COND_3=%d",OUT_OR_SPRINT_LP_ON_2_T_COND_3);
+       printf("\nSPRINT_HP_2_LP_3_SFC_STEP=%d",SPRINT_HP_2_LP_3_SFC_STEP);
+       printf("\nSPRINT_HP_OFF_2_SFC_STEP=%d",SPRINT_HP_OFF_2_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_DRNHPTMR_Z_FEEDBACK=%d",OUT_OR_SPRINT_DRNHPTMR_Z_FEEDBACK);
+       printf("\nSPRINT_LP_2_HP_2_SFC_STEP=%d",SPRINT_LP_2_HP_2_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_2_SFC_STEP=%d",SPRINT_LP_OFF_2_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_LP_E_Z_FEEDBACK=%d",OUT_OR_SPRINT_LP_E_Z_FEEDBACK);
+       printf("\nSPRINT_LP_2_HP_3_SFC_STEP=%d",SPRINT_LP_2_HP_3_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_3_SFC_STEP=%d",SPRINT_LP_OFF_3_SFC_STEP);
+       printf("\nSPRINT_OFF_1_SFC_STEP=%d",SPRINT_OFF_1_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_EVAC_Z_FEEDBACK=%d",OUT_OR_SPRINT_EVAC_Z_FEEDBACK);
+       printf("\nSPRINT_LP_2_HP_5_SFC_STEP=%d",SPRINT_LP_2_HP_5_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_5_SFC_STEP=%d",SPRINT_LP_OFF_5_SFC_STEP);
+       printf("\nSPRINT_OFF_2_SFC_STEP=%d",SPRINT_OFF_2_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_LP_PRGT_Z_FEEDBACK=%d",OUT_OR_SPRINT_LP_PRGT_Z_FEEDBACK);
+       printf("\nSPRINT_OFF_4_SFC_STEP=%d",SPRINT_OFF_4_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_JIMMY_SW2_NC=%d",OUT_OR_SPRINT_JIMMY_SW2_NC);
+       printf("\nFALSE_SPRINT_JIMMY_SPRT=%d",FALSE_SPRINT_JIMMY_SPRT);
+       printf("\nSPRINT_MASK_PURGE=%d",SPRINT_MASK_PURGE);
+       printf("\nOUT_B_SW_SPRINT_HP_PRGT_Z_FEEDBACK=%d",OUT_B_SW_SPRINT_HP_PRGT_Z_FEEDBACK);
+       printf("\nSPRINT_LP_2_HP_4_SFC_STEP=%d",SPRINT_LP_2_HP_4_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_4_SFC_STEP=%d",SPRINT_LP_OFF_4_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_LP_PRG_Z_FEEDBACK=%d",OUT_OR_SPRINT_LP_PRG_Z_FEEDBACK);
+       printf("\nSPRINT_TIMERS_IN_1=%f",SPRINT_TIMERS_IN_1);
+       printf("\nSPRINT_TIMERS_IN_2=%f",SPRINT_TIMERS_IN_2);
+       printf("\nSPRINT_TIMERS_IN_3=%f",SPRINT_TIMERS_IN_3);
+       printf("\nSPRINT_TIMERS_IN_4=%f",SPRINT_TIMERS_IN_4);
+       printf("\nSPRINT_TIMERS_IN_5=%f",SPRINT_TIMERS_IN_5);
+       printf("\nSPRINT_TIMERS_IN_6=%f",SPRINT_TIMERS_IN_6);
+       printf("\nSPRINT_TIMERS_IN_7=%f",SPRINT_TIMERS_IN_7);
+       printf("\nSPRINT_TIMERS_IN_8=%f",SPRINT_TIMERS_IN_8);
+       printf("\nSPRINT_TIMERS_IN_9=%f",SPRINT_TIMERS_IN_9);
+       printf("\nSPRINT_TMR_ANGL=%f",SPRINT_TMR_ANGL);
+       printf("\nSPRINT_TMR_ANGL_IN_1=%d",SPRINT_TMR_ANGL_IN_1);
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 284//
+       
+       printf("\nIFACE_SPRINT_C_LPSPRTEN=%d",IFACE_SPRINT_C_LPSPRTEN);
+       printf("\nSPRINT_SPRINTENBL=%d",SPRINT_SPRINTENBL);
+       printf("\nSPRINT_HP_SPRNTOK=%d",SPRINT_HP_SPRNTOK);
+       printf("\nOUT_AND_SPRINT_SPRT_READY_T_COND_2=%d",OUT_AND_SPRINT_SPRT_READY_T_COND_2);
+       printf("\nSPRINT_C_LPSPRTEN=%d",SPRINT_C_LPSPRTEN);
+       printf("\nSPRINT_SPRINTENBL=%d",SPRINT_SPRINTENBL);
+       printf("\nOUT_AND_SPRINT_SPRT_READY_T_COND_3=%d",OUT_AND_SPRINT_SPRT_READY_T_COND_3);
+       printf("\nSPRINT_LP_OFF_2_TRAN_2=%d",SPRINT_LP_OFF_2_TRAN_2);
+       printf("\nSPRINT_LP_OFF_3_TRAN_2=%d",SPRINT_LP_OFF_3_TRAN_2);
+       printf("\nSPRINT_LP_OFF_4_TRAN_2=%d",SPRINT_LP_OFF_4_TRAN_2);
+       printf("\nSPRINT_LP_OFF_5_TRAN_2=%d",SPRINT_LP_OFF_5_TRAN_2);
+       printf("\nSPRINT_HP_OFF_2_TRAN_2=%d",SPRINT_HP_OFF_2_TRAN_2);
+       printf("\nSPRINT_OFF_1_TRAN_2=%d",SPRINT_OFF_1_TRAN_2);
+       printf("\nSPRINT_OFF_2_TRAN_2=%d",SPRINT_OFF_2_TRAN_2);
+       printf("\nSPRINT_OFF_3_TRAN_2=%d",SPRINT_OFF_3_TRAN_2);
+       printf("\nSPRINT_OFF_4_TRAN_2=%d",SPRINT_OFF_4_TRAN_2);
+       printf("\nOUT_OR_SPRINT_LP_ON_1_SF_SEL_2=%d",OUT_OR_SPRINT_LP_ON_1_SF_SEL_2);
+       printf("\nSPRINT_SDLATCHLP=%d",SPRINT_SDLATCHLP);
+       printf("\nCORE_DIGITAL_FUELOFF=%d",CORE_DIGITAL_FUELOFF);
+       printf("\nSPRINT_SPRT_OFF=%d",SPRINT_SPRT_OFF);
+       printf("\nSPRINT_OFF_MASK=%d",SPRINT_OFF_MASK);
+       printf("\nSPRINT_TNK_VACSW=%d",SPRINT_TNK_VACSW);
+       printf("\nCORE_ALM_SPRT1_SPRSDALM1=%d",CORE_ALM_SPRT1_SPRSDALM1);
+       printf("\nCORE_ALM_SPRT2_SPRSDALM2=%d",CORE_ALM_SPRT2_SPRSDALM2);
+       printf("\nCORE_ALM_SPRT3_SPRSDALM3=%d",CORE_ALM_SPRT3_SPRSDALM3);
+       printf("\nOUT_OR_SPRINT_TRANSOFF_IN_1=%d",OUT_OR_SPRINT_TRANSOFF_IN_1);
+       printf("\nSPRINT_NOTTEST=%d",SPRINT_NOTTEST);
+       printf("\nOUT_AND_SPRINT_HP_2_LP_1_T_COND_1=%d",OUT_AND_SPRINT_HP_2_LP_1_T_COND_1);
+       printf("\nSPRINT_LP_2_HP_1_TRAN_2=%d",SPRINT_LP_2_HP_1_TRAN_2);
+       printf("\nSPRINT_LP_2_HP_2_TRAN_2=%d",SPRINT_LP_2_HP_2_TRAN_2);
+       printf("\nSPRINT_LP_2_HP_3_TRAN_2=%d",SPRINT_LP_2_HP_3_TRAN_2);
+       printf("\nSPRINT_LP_2_HP_4_TRAN_2=%d",SPRINT_LP_2_HP_4_TRAN_2);
+       printf("\nSPRINT_LP_2_HP_5_TRAN_2=%d",SPRINT_LP_2_HP_5_TRAN_2);
+       printf("\nSPRINT_HP_ON_3_TRAN_2=%d",SPRINT_HP_ON_3_TRAN_2);
+       printf("\nSPRINT_LP_OFF_1_TRAN_2=%d",SPRINT_LP_OFF_1_TRAN_2);
+       printf("\nSPRINT_HP_OFF_1_TRAN_2=%d",SPRINT_HP_OFF_1_TRAN_2);
+       printf("\nOUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1=%d",OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1);
+       printf("\nSPRINT_NOTREADY_TRAN_1=%d",SPRINT_NOTREADY_TRAN_1);
+       printf("\nSPRINT_TRANSOFF=%d",SPRINT_TRANSOFF);
+       printf("\nSPRINT_SIM_SPRT=%d",SPRINT_SIM_SPRT);
+       printf("\nSPRINT_SIM_SPRAY=%d",SPRINT_SIM_SPRAY);
+       printf("\nSPRINT_SPRT_READY_TRAN_5=%d",SPRINT_SPRT_READY_TRAN_5);
+       printf("\nTRUE_SPRINT_PSL_OK=%d",TRUE_SPRINT_PSL_OK);
+       printf("\nSPRINT_HP_ON_2_TRAN_2=%d",SPRINT_HP_ON_2_TRAN_2);
+       printf("\nSPRINT_N_LPSPRTEN=%d",SPRINT_N_LPSPRTEN);
+       printf("\nSPRINT_H2OXFRDONE=%d",SPRINT_H2OXFRDONE);
+       printf("\nSPRINT_DLY_HPHLD=%d",SPRINT_DLY_HPHLD);
+       printf("\nSPRINT_FILL_DN=%d",SPRINT_FILL_DN);
+       printf("\nSPRINT_DRAINHP_TM=%d",SPRINT_DRAINHP_TM);
+       printf("\nOUT_S1_ET1_SPRINT_ACTIVE_IN_1=%d",OUT_S1_ET1_SPRINT_ACTIVE_IN_1);
+       printf("\nOUT_S1_ET2_SPRINT_ACTIVE_IN_2=%d",OUT_S1_ET2_SPRINT_ACTIVE_IN_2);
+       printf("\nOUT_S1_ET3_SPRINT_FILL_OR_IN_2=%d",OUT_S1_ET3_SPRINT_FILL_OR_IN_2);
+       printf("\nOUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=%d",OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2);
+       printf("\nOUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=%d",OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3);
+       printf("\nOUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4=%d",OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4);
+       printf("\nOUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1=%d",OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1);
+       printf("\nFIN_DE_PROCESO=%d",FIN_DE_PROCESO);                                            
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 285//
+       
+       printf("\nSPRINT_N_LPSPRTEN=%d",SPRINT_N_LPSPRTEN);
+       printf("\nFALSE_SPRINT_HP_SPRNTOK=%d",FALSE_SPRINT_HP_SPRNTOK);
+       printf("\nOUT_AND_SPRINT_TRANS_OFF_IN_4=%d",OUT_AND_SPRINT_TRANS_OFF_IN_4);
+       
+       printf("\nSPRINT_LP_OFF_2_TRAN_1=%d",SPRINT_LP_OFF_2_TRAN_1);
+       printf("\nSPRINT_LP_OFF_3_TRAN_1=%d",SPRINT_LP_OFF_3_TRAN_1);
+       printf("\nSPRINT_LP_OFF_4_TRAN_1=%d",SPRINT_LP_OFF_4_TRAN_1);
+       printf("\nSPRINT_LP_OFF_5_TRAN_1=%d",SPRINT_LP_OFF_5_TRAN_1);
+       printf("\nSPRINT_HP_OFF_2_TRAN_1=%d",SPRINT_HP_OFF_2_TRAN_1);
+       printf("\nSPRINT_OFF_1_TRAN_1=%d",SPRINT_OFF_1_TRAN_1);
+       printf("\nSPRINT_OFF_2_TRAN_1=%d",SPRINT_OFF_2_TRAN_1);
+       printf("\nSPRINT_OFF_3_TRAN_1=%d",SPRINT_OFF_3_TRAN_1);
+       printf("\nSPRINT_OFF_4_TRAN_1=%d",SPRINT_OFF_4_TRAN_1);
+       printf("\nOUT_OR_SPRINT_HP_ON_1_SF_SEL_3=%d",OUT_OR_SPRINT_HP_ON_1_SF_SEL_3);
+       printf("\nSPRINT_LP_ON_3_TRAN_2=%d",SPRINT_LP_ON_3_TRAN_2);
+       printf("\nSPRINT_HP_2_LP_1_TRAN_2=%d",SPRINT_HP_2_LP_1_TRAN_2);
+       printf("\nSPRINT_HP_2_LP_2_TRAN_2=%d",SPRINT_HP_2_LP_2_TRAN_2);
+       printf("\nSPRINT_HP_2_LP_3_TRAN_2=%d",SPRINT_HP_2_LP_3_TRAN_2);
+       printf("\nSPRINT_LP_OFF_1_TRAN_1=%d",SPRINT_LP_OFF_1_TRAN_1);
+       printf("\nSPRINT_HP_OFF_1_TRAN_1=%d",SPRINT_HP_OFF_1_TRAN_1);
+       printf("\nOUT_OR_SPRINT_LP_2_HP_1_SF_SEL_1=%d",OUT_OR_SPRINT_LP_2_HP_1_SF_SEL_1);
+       printf("\nSPRINT_JIMMY_SPRT=%d",SPRINT_JIMMY_SPRT);
+       printf("\nOUT_B_SW_SPRINT_LP_2_HP_3_T_COND_3=%d",OUT_B_SW_SPRINT_LP_2_HP_3_T_COND_3);*/
+       //////////////////////////////////////////////////////////////////////////
+       
+       //IMPRESIÒN DE VARIABLES HOJA 286//
+       
+       printf("\nSPRINT_HP_2_LP_1_TRAN_1=%d",SPRINT_HP_2_LP_1_TRAN_1);
+       printf("\nSPRINT_HP_2_LP_2_TRAN_1=%d",SPRINT_HP_2_LP_2_TRAN_1);
+       printf("\nSPRINT_HP_2_LP_3_TRAN_1=%d",SPRINT_HP_2_LP_3_TRAN_1);
+       printf("\nSPRINT_LP_ON_1_TRAN_1=%d",SPRINT_LP_ON_1_TRAN_1);
+       printf("\nSPRINT_LP_ON_2_TRAN_1=%d",SPRINT_LP_ON_2_TRAN_1);
+       printf("\nSPRINT_LP_ON_3_TRAN_1=%d",SPRINT_LP_ON_3_TRAN_1);
+       printf("\nOUT_OR_SPRINT_LP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1);
+       printf("\nFUEL_SYS_GAS100=%d",FUEL_SYS_GAS100);
+       printf("\nCORE_DIGITAL_FUELOFF=%d",CORE_DIGITAL_FUELOFF);
+       printf("\nOUT_OR_SPRINT_LP_XFR_WT_T_COND_1=%d",OUT_OR_SPRINT_LP_XFR_WT_T_COND_1);
+       printf("\nSPRINT_LP_2_HP_1_TRAN_1=%d",SPRINT_LP_2_HP_1_TRAN_1);
+       printf("\nSPRINT_LP_2_HP_2_TRAN_1=%d",SPRINT_LP_2_HP_2_TRAN_1);
+       printf("\nSPRINT_LP_2_HP_3_TRAN_1=%d",SPRINT_LP_2_HP_3_TRAN_1);
+       printf("\nSPRINT_LP_2_HP_4_TRAN_1=%d",SPRINT_LP_2_HP_4_TRAN_1);
+       printf("\nSPRINT_LP_2_HP_5_TRAN_1=%d",SPRINT_LP_2_HP_5_TRAN_1);
+       printf("\nSPRINT_HP_ON_3_TRAN_1=%d",SPRINT_HP_ON_3_TRAN_1);
+       printf("\nOUT_OR_SPRINT_HP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1);
+       printf("\nSPRINT_HP_ON_1_TRAN_1=%d",SPRINT_HP_ON_1_TRAN_1);
+       printf("\nSPRINT_HP_ON_2_TRAN_1=%d",SPRINT_HP_ON_2_TRAN_1);
+       printf("\nOUT_OR_SPRINT_OFF_1_SF_SEL_2=%d",OUT_OR_SPRINT_OFF_1_SF_SEL_2);
+       printf("\nSPRINT_HP_PRG_TMR=%d",SPRINT_HP_PRG_TMR);
+       printf("\nFALSE_SPRINT_TRAN_4_OR=%d",FALSE_SPRINT_TRAN_4_OR);
+       printf("\nOUT_OR_SPRINT_OFF_4_T_COND_3=%d",OUT_OR_SPRINT_OFF_4_T_COND_3);
+       printf("\nSPRINT_OFF_4_SFC_STEP=%d",SPRINT_OFF_4_SFC_STEP);
+       printf("\nFALSE_SPRINT_NOT_RUNNIN=%d",FALSE_SPRINT_NOT_RUNNIN);
+       printf("\nOUT_AND_SPRINT_JIMMY_SW2_NO=%d",OUT_AND_SPRINT_JIMMY_SW2_NO);
+       printf("\nSPRINT_HP_OFF_2_SFC_STEP=%d",SPRINT_HP_OFF_2_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_3_SFC_STEP=%d",SPRINT_LP_OFF_3_SFC_STEP);
+       printf("\nSPRINT_LP_OFF_5_SFC_STEP=%d",SPRINT_LP_OFF_5_SFC_STEP);
+       printf("\nSPRINT_OFF_1_SFC_STEP=%d",SPRINT_OFF_1_SFC_STEP);
+       printf("\nSPRINT_OFF_2_SFC_STEP=%d",SPRINT_OFF_2_SFC_STEP);
+       printf("\nSPRINT_OFF_3_SFC_STEP=%d",SPRINT_OFF_3_SFC_STEP);
+       printf("\nSPRINT_MASK_PURGE=%d",SPRINT_MASK_PURGE);       
+       printf("\nSPRINT_NOTREADY_SFC_STEP=%d",SPRINT_NOTREADY_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_SPRINT_OUT_IN=%d",OUT_OR_SPRINT_SPRINT_OUT_IN);
+       printf("\nSPRINT_SEL_SPRINT=%d",SPRINT_SEL_SPRINT);
+       printf("\nSPRINT_SEL_SPRAY=%d",SPRINT_SEL_SPRAY);
+       printf("\nSPRINT_RAMP_DOWN_P_LIM_1=%d",SPRINT_RAMP_DOWN_P_LIM_1);
+       printf("\nSPRINT_DLY_LPEHLD=%d",SPRINT_DLY_LPEHLD);
+       printf("\nTRUE_EVACUATE_LP_SPRINT_MANIFOLD=%d",TRUE_EVACUATE_LP_SPRINT_MANIFOLD);
+       printf("\nSPRINT_DLY_LPPHLD=%d",SPRINT_DLY_LPPHLD);
+       printf("\nSPRINT_LP_PRG_TMR=%d",SPRINT_LP_PRG_TMR);
+       printf("\nSPRINT_LP_OFF_5_TRAN_3=%d",SPRINT_LP_OFF_5_TRAN_3);
+       printf("\nSPRINT_DRAINHP_TM=%d",SPRINT_DRAINHP_TM);
+       printf("\nSPRINT_HP_OFF_2_TRAN_3=%d",SPRINT_HP_OFF_2_TRAN_3);
+       printf("\nSPRINT_EVAC_SW1=%d",SPRINT_EVAC_SW1);
+       printf("\nSPRINT_GAS_OR_LIQ=%d",SPRINT_GAS_OR_LIQ);
+       printf("\nSPRINT_DN_PRG_TMR=%d",SPRINT_DN_PRG_TMR);
+       printf("\nSPRINT_SPRT_READY_TRAN_1=%d",SPRINT_SPRT_READY_TRAN_1);
+       printf("\nSPRINT_TRANSOFF=%d",SPRINT_TRANSOFF);
+       printf("\nOUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=%d",OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5);
+       printf("\nOUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=%d",OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2);
+       printf("\nOUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=%d",OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2);
+       printf("\nOUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=%d",OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1);
+       printf("\nOUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=%d",OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2);
+       printf("\nOUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2=%d",OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2);
+       printf("\nOUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=%d",OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12);
+       printf("\nOUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2=%d",OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2);
+       printf("\nOUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=%d",OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3);
+       printf("\nOUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=%d",OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2);
+       printf("\nOUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=%d",OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3);
+       printf("\nOUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=%d",OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK);
+       printf("\nOUT_S3_ET5_SPRINT_PURGE_HP_IN_2=%d",OUT_S3_ET5_SPRINT_PURGE_HP_IN_2);
+       printf("\nOUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3=%d",OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3);
+       //////////////////////////////////////////////////////////////////////////
+       
+	   //IMPRESIÒN DE VARIABLES HOJA 287//
+/*
+	   printf("\nFALSE_SPRINT_TEST_SPRT=%d",FALSE_SPRINT_TEST_SPRT);
+	   printf("\nSFC_STEP_OUTOFOP=%d",SFC_STEP_OUTOFOP);
+	   printf("\nOUT_SPRINT_ALLOWTEST_AND=%d",OUT_SPRINT_ALLOWTEST_AND);
+       printf("\nNOUT_SPRINT_ALLOWTEST_AND=%d",NOUT_SPRINT_ALLOWTEST_AND);
+	   printf("\nSPRINT_SPRT_READY=%d",SPRINT_SPRT_READY);
+	   printf("\nSPRINT_NOTREADY=%d",SPRINT_NOTREADY);
+	   printf("\nSPRINT_LP_ON_1=%d",SPRINT_LP_ON_1);
+	   printf("\nSPRINT_LP_OFF_1=%d",SPRINT_LP_OFF_1);
+	   printf("\nSPRINT_LP_OFF_3=%d",SPRINT_LP_OFF_3);
+	   printf("\nSPRINT_LP_OFF_5=%d",SPRINT_LP_OFF_5);
+	   printf("\nSPRINT_HP_ON_1=%d",SPRINT_HP_ON_1);
+	   printf("\nSPRINT_HP_OFF_1=%d",SPRINT_HP_OFF_1);
+	   printf("\nSPRINT_HP_OFF_2=%d",SPRINT_HP_OFF_2);
+	   printf("\nSPRINT_OFF_1=%d",SPRINT_OFF_1);
+	   printf("\nSPRINT_OFF_2=%d",SPRINT_OFF_2);
+	   printf("\nSPRINT_OFF_3=%d",SPRINT_OFF_3);
+	   printf("\nSPRINT_MASK_PURGE=%d",SPRINT_MASK_PURGE);
+	   printf("\nOUT_SPRINT_ACT_OR_INI_NOR=%d",OUT_SPRINT_ACT_OR_INI_NOR); 
+	   //////////////////////////////////////////////////////////////////////////
+	   
+	   //IMPRESIÒN DE VARIABLES HOJA 288//
+       
+       printf("\nHMI_BO_BW_V_125=%d",HMI_BO_BW_V_125);
+       printf("\nFALSE_SPRINT_DEC_OR=%d",FALSE_SPRINT_DEC_OR);
+       printf("\nOUT_OR_SPRINT_LOWER_AND_IN_2=%d",OUT_OR_SPRINT_LOWER_AND_IN_2);
+       printf("\nIFACE_CORE_Z_MANMODE=%d",IFACE_CORE_Z_MANMODE);
+       printf("\nOUT_AND_SPRINT_MAN_RAMP_P_SEL_2=%d",OUT_AND_SPRINT_MAN_RAMP_P_SEL_2);
+       printf("\nHMI_BO_BW_V_126=%d",HMI_BO_BW_V_126);
+       printf("\nFALSE_SPRINT_INC_OR=%d",FALSE_SPRINT_INC_OR);
+       printf("\nOUT_OR_SPRINT_RAISE_AND_IN_2=%d",OUT_OR_SPRINT_RAISE_AND_IN_2);
+       printf("\nOUT_AND_SPRINT_MAN_RAMP_P_SEL_3=%d",OUT_AND_SPRINT_MAN_RAMP_P_SEL_3);
+       printf("\nSFC_STEP_OUTOFOP_SFC_STEP=%d",SFC_STEP_OUTOFOP_SFC_STEP);
+       printf("\nFALSE_SPRINT_MAN_STRK=%d",FALSE_SPRINT_MAN_STRK);
+       printf("\nOUT_AND_SPRINT_CNTL_SW_CTRL=%d",OUT_AND_SPRINT_CNTL_SW_CTRL);
+       printf("\nOUT_I_SW_SPRINT_CNTRL_OUT_SEL=%d",OUT_I_SW_SPRINT_CNTRL_OUT_SEL);
+       printf("\nSPRINT_ACT_OR_INI=%d",SPRINT_ACT_OR_INI);
+       printf("\nOUT_A_SW_SPRINT_MINFLOW_IN_1=%f",OUT_A_SW_SPRINT_MINFLOW_IN_1);
+       printf("\nSPRINT_HP_ON_3_SFC_STEP=%d",SPRINT_HP_ON_3_SFC_STEP);
+       printf("\nOUT_A_SW_SPRINT_FLOW_LIM_IN_2=%f",OUT_A_SW_SPRINT_FLOW_LIM_IN_2);
+       printf("\nSPRINT_ALLOWTEST=%d",SPRINT_ALLOWTEST);
+       printf("\nOUT_A_SW_SPRINT_SPRINT_PID_DB_SP=%f",OUT_A_SW_SPRINT_SPRINT_PID_DB_SP);
+       printf("\nOUT_O_SHOT_SPRINT_DOWN_OR_IN_1=%d",OUT_O_SHOT_SPRINT_DOWN_OR_IN_1);
+       printf("\nSPRINT_NOTREADY_SFC_STEP=%d",SPRINT_NOTREADY_SFC_STEP);
+       printf("\nOUT_OR_SPRINT_SPRT_DOWN_IN=%d",OUT_OR_SPRINT_SPRT_DOWN_IN);
+       //////////////////////////////////////////////////////////////////////////
+*/	   
+	   
+	   
+
+//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+       
+//LLAMADA DE FUNCIONES PARA BLOQUES
+
+//AQUI EMPIEZAN MIS FUNCIONES//
+
+//FUNCIONES HOJA 272 VENTILATION SYSTEM (ALARMS & SHUTDOWNS)//
+
+//SWITCH VENT_TE64030LOG_SW 
+	   if(N1N10_RTD_TE64030_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE64030LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE64030LOG_A_IN_1=N1N10_RTD_TE64030_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-64030 ALM LOGIC(SEC B)
+
+//SWITCH VENT_TE64031LOG_SW
+       if(N1N10_RTD_TE64031_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE64031LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE64031LOG_A_IN_1=N1N10_RTD_TE64031_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-64031 ALM LOGIC(SEC A)
+
+//SWITCH VENT_TE64032LOG_SW
+       if(N1N10_RTD_TE64032_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE64032LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE64032LOG_A_IN_1=N1N10_RTD_TE64032_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-64032 ALM LOGIC(SEC B)
+
+//SWITCH VENT_TE64033LOG_SW
+       if(N1N10_RTD_TE64033_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE64033LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE64033LOG_A_IN_1=N1N10_RTD_TE64033_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-64033 ALM LOGIC(SEC A)
+
+//SWITCH VENT_TE6450LOG_SW
+       if(N1N10_RTD_TE6450_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE6450LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE6450LOG_A_IN_1=N1N10_RTD_TE6450_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-6450 ALM LOGIC(SEC A) Y A UN BLOQUE SUBTRACT "VENT_AIRTMPDIFF"
+
+//SWITCH VENT_TE6499LOG_SW
+       if(N1N10_RTD_TE6499_LATCH_OR==1)
+	   {
+		   OUT_A_SW_VENT_TE6499LOG_A_IN_1=100.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_TE6499LOG_A_IN_1=N1N10_RTD_TE6499_AI_RTD_L;
+	   }//LA SALIDA DEL SWITCH VA A UN CALC_PLUS TE-6499 ALM LOGIC(SEC A) Y A UN BLOQUE SUBTRACT "VENT_AIRTMPDIFF"
+
+//SUBTRACT VENT_AIRTMPDIFF
+       OUT_SUB_VENT_AIRTMP_DF_IN=OUT_A_SW_VENT_TE6450LOG_A_IN_1-OUT_A_SW_VENT_TE6499LOG_A_IN_1;
+//ABSOLUTE VENT_AIRTMP_DF
+       OUT_ABS_VENT_AIRTMPCMPR_IN_1=abs(OUT_SUB_VENT_AIRTMP_DF_IN);
+//A_COMPARE VENT_AIRTMPCMPR
+       if(OUT_ABS_VENT_AIRTMPCMPR_IN_1>5.0)
+	   {
+		   OUT_A_CMPR_VENT_AIRTMPDIFM_IN_2=1;
+	   }
+	   else
+	   {
+		   OUT_A_CMPR_VENT_AIRTMPDIFM_IN_2=0;
+	   }
+//AND VENT_AIRTMPDIFM
+       if(FALSE_VENT_AIRTMPDIFM==1&OUT_A_CMPR_VENT_AIRTMPDIFM_IN_2==1)
+	   {
+		   OUT_AND_VENT_AIRDIFFALM_IN=1;
+	   }
+	   else
+	   {
+		   OUT_AND_VENT_AIRDIFFALM_IN=0;
+	   }
+//ESTA SALIDA VA A BLOQUE BNAME: UNA SALIDA  "ALARM.ALM_LAT.IN_212"(TE-6450 AND TE-6499 DIFFERENCE ALARM)
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 273 VENTILATION SYSTEM (T0)//
+
+       VENT_AIRAVERAGE_IN=(N1N10_RTD_TE64030_AI_RTD_L+N1N10_RTD_TE64031_AI_RTD_L+N1N10_RTD_TE64032_AI_RTD_L+N1N10_RTD_TE64033_AI_RTD_L)/4;
+//FALTA BLOQUE TC_MON VENT_AIRFILTAVG TIENE VARIAS SALIDAS LA QUE ENTRA A LOS BLOQUES SIGUIENTES ES: "VENT.AIRFILTAVG.TC_MON"
+//CALC_PLUS VENT_AIRFILT_FC (TEMP CONVERT) CONVERSION DE TEMPERATURA DE ºC A ºF
+       VENT_AIRAVERAGE_IN=(VENT_AIRFILTAVG_TC_MON*1.8)+32;
+//ESTA SALIDA VA A BLOQUE ANAME CON VARIAS SALIDAS (AIR FILTER AVERAGE TEMP)(DEG F)
+//CALC_PLUS VENT_AIRFIL_C (TEMP CONVERT) CONVERSION DE TEMPERATURA DE ºF A ºC
+       VENT_AIR_AVG_C_IN=(VENT_AIRFILTAVG_TC_MON-32)/1.8;
+//ESTA SALIDA VA A BLOQUE ANAME: UNA SALIDA "A_FORCE_T1_IN"(AIR FILTER AVERAGE TEMP FOR AMS)(DEG C)
+//A_COMPARE VENT_T0_GT10 (HYST=-2.0 , IN_2=10.0)
+       
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_1(La salida se hace verdadero como (IN_1) se hace mayor que o igual a (IN_2) 
+       y la salida se hace falso como (IN_1) se convierte en menos de [(IN_2) - (el valor absoluto de HYSTER)])*/
+       
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_2(La salida pasa falso como (IN_2) se hace mayor que o igual a [(IN_1) + (valor absoluto de HYSTER)] 
+       y la salida se hace verdadero como (IN_2) se convierte en menos de (IN_1)*/
+       
+       //CONDICION_1
+       /*if(VENT_AIRFILTAVG_TC_MON>=10.0){
+                                        OUT_A_CMPR_VENT_T0_GT_10=1; //USE EL NOMBRE DE UNA DE LAS 2 SALIDAS QUE TIENE EL COMPARADOR
+                                        }
+                                        if(VENT_AIRFILTAVG_TC_MON<8.0){
+                                                                       OUT_A_CMPR_VENT_T0_GT_10=0;
+                                                                       }*/
+       //CONDICION_2  
+       if(10.0>=(VENT_AIRFILTAVG_TC_MON+2.0))
+	   {
+		   OUT_A_CMPR_VENT_T0_GT_10=0;
+	   }
+	   else if(10.0<VENT_AIRFILTAVG_TC_MON)
+	   {
+		   OUT_A_CMPR_VENT_T0_GT_10=1;
+	   }
+//EL NÙMERO 9 NO ENTRA EN NINGUNA CONDICION ?¿
+//LA SALIDA VA A UN BLOQUE BNAME: UNA SALIDA "FIN_FAN.FINFAN_ST.IN_2", LA SALIDA TAMBIÈN SE NIEGA CON UN BLOQUE NOT "VENT_T0_LT8" Y VA A UN BNAME: UNA SALIDA FIN_FAN.TEMP_OFF.IN_2
+//A_COMPARE VENT_T0_LT32 (HYST=-2.0 , IN_1=32.0)
+
+      //CONDICION_1
+      if(32.0>=VENT_AIRFILTAVG_TC_MON)
+	  {
+		  OUT_A_CMPR_VENT_T0_LT_32_IN=1;
+	  }
+	  else if(32.0<(VENT_AIRFILTAVG_TC_MON-2.0))
+	  {
+		  OUT_A_CMPR_VENT_T0_LT_32_IN=0;
+	  }
+      //CONDICION_2
+      /*if(VENT_AIRFILTAVG_TC_MON>=34.0){
+                                         OUT_A_CMPR_VENT_T0_LT_32_IN=0;
+                                         }
+                                         if(VENT_AIRFILTAVG_TC_MON<32.0){
+                                                                         OUT_A_CMPR_VENT_T0_LT_32_IN=0;
+                                                                         }*/
+      //LA SALIDA VA A UN BLOQUE BNAME: UNA SALIDA "FIN_FAN.AMB_FRZ.IN_1"
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 274 VENTILATION SYSTEM (ANTI-ICING)//
+
+      //SWITCH VENT_TE64030SW
+       if(IO_FLT_TE64030VST==1)
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_1=500.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_1=VENT_TE64030;
+	   }
+       //SWITCH VENT_TE64031SW
+       if(IO_FLT_TE64031VST==1)
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_2=500.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_2=VENT_TE64031;
+	   }
+       //SWITCH VENT_TE64032SW
+       if(IO_FLT_TE64032VST==1)
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_3=500.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_3=VENT_TE64032;
+	   }
+       //SWITCH VENT_TE64033SW
+       if(IO_FLT_TE64033VST==1)
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_4=500.0;
+	   }
+	   else
+	   {
+		   OUT_A_SW_VENT_INLETT2LSS_IN_4=VENT_TE64033;
+	   }
+      //LSS_BUS VENT_INLETT2LSS (LO_LIM=-40.0 , HI_LIM=500.0)
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0)
+		  { 
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+			  }
+		  }
+	  }
+	  else if(OUT_A_SW_VENT_INLETT2LSS_IN_1<-40)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+				  }
+			  }
+		  }
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+				  }
+			  }
+		  }
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+				  }
+			  }
+		  }
+                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
+                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
+                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+                                                                                                                                                                                                                                         }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
+                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
+                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+                                                                                                                                                                                                                                         }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
+                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
+                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+                                                                                                                                                                                                                                         }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
+                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
+                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+                                                                                                                                                                                                                                         }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(CORE_ANALOG_T2SEL<=500.0){
+                                   if(CORE_ANALOG_T2SEL>=-40.0){ 
+                                   if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+                                                                                                                                                                                                                                       }
+                                   }
+                                   }
+                                   if(CORE_ANALOG_T2SEL<-40){
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                                     OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                                                     }
+                                                             }
+                                                             }
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                                     OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                                                     }
+                                                             }
+                                                             }
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                                     OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                                                     }
+                                                             }
+                                                             }
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                             if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                                                     OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                                                     }
+                                                             }
+                                                             }
+                                   }
+                                   //LA SALIDA DEL LSS_BUS_VENT_INLETT2LSS VA A UN BLOQUE CURVE_2D "VENT_DAMPER_CRV" Y A UN A_COMPARE "VENT_INLET_GT47
+      //A_COMPARE VENT_T2_LT_43 (HYST=-1.5 , IN_1=43.0)
+      
+      /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_1(La salida se hace verdadero como (IN_1) se hace mayor que o igual a (IN_2) 
+       y la salida se hace falso como (IN_1) se convierte en menos de [(IN_2) - (el valor absoluto de HYSTER)])*/
+       
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_2(La salida pasa falso como (IN_2) se hace mayor que o igual a [(IN_1) + (valor absoluto de HYSTER)] 
+       y la salida se hace verdadero como (IN_2) se convierte en menos de (IN_1)*/
+       //CONDICION_1
+       /*if(43.0>=CORE_ANALOG_T2SEL){
+                                   OUT_A_CMPR_VENT_ICEALM_SW_NO=1;
+                                   }
+                                   if(43.0<(CORE_ANALOG_T2SEL-1.5){
+                                                                   OUT_A_CMPR_VENT_ICEALM_SW_NO=0;
+                                                                   }*/
+       //CONDICION_2
+       if(CORE_ANALOG_T2SEL>=44.5){
+                                   OUT_A_CMPR_VENT_ICEALM_SW_NO=0;
+                                   }
+                                   if(CORE_ANALOG_T2SEL<43.0){
+                                                              OUT_A_CMPR_VENT_ICEALM_SW_NO=1;
+                                                              }
+       //A_COMPARE VENT_INLET_GT47 (HYST=*-4.0(-10.0,10.0) , IN_2=*47.0(40.0,50.0))
+       //SE VA A USAR UN VALOR DE HYST=-4.0 Y DE IN_2=47.0 SOLO PARA PRUEBAS, LOS VALORES REALES A COLOCAR SON LOS MENCIONADOS ARRIBA
+       //CONDICION_1
+       /*if(OUT_LSS_BUS_VENT_INLETT2LSS>=47.0){
+                                               OUT_A_CMPR_VENT_INLET_LT43_IN=1;
+                                               }
+                                               if(OUT_LSS_BUS_VENT_INLETT2LSS<43.0){
+                                                                                    OUT_A_CMPR_VENT_INLET_LT43_IN=0;
+                                                                                    }*/
+       //CONDICION_2
+       if(47.0>=(OUT_LSS_BUS_VENT_INLETT2LSS+4.0)){
+                                                  OUT_A_CMPR_VENT_INLET_LT43_IN=0;
+                                                  }
+                                                  if(47.0<OUT_LSS_BUS_VENT_INLETT2LSS){
+                                                                                       OUT_A_CMPR_VENT_INLET_LT43_IN=1;
+                                                                                       }
+       //AND VENT_LOTMP_BRKR
+       if(OUT_A_CMPR_VENT_INLET_LT43_IN==0&GENERATOR_GEN_BKRCLS==1&VENT_ANTI_ICE==1){
+                                                                                     OUT_AND_VENT_ICE_DLY_TRIGGER=1;
+                                                                                     }
+                                                                                     else{
+                                                                                          OUT_AND_VENT_ICE_DLY_TRIGGER=0;
+                                                                                          }
+                                                                                          //LA SALIDA DE LA AND VA A DOS BLOQUES UNA OR Y UN DELAY
+       //OR VENT_MOT68330OR
+       if(OUT_A_CMPR_VENT_MOT68330OR_IN_1==1||OUT_AND_VENT_ICE_DLY_TRIGGER==1){
+                                                                               OUT_OR_VENT_MOT68330_IN=1;
+                                                                               }
+                                                                               else{
+                                                                                    OUT_OR_VENT_MOT68330_IN=0;
+                                                                                    }
+                                                                                    //ESTA OR TIENE DOS SALIDAS DIFERENTES "OUT_OR_VENT_MOT68330_IN" Y "VENT_MOT_DELAY_TRIGGER" Y VAN A UN BLOQUE BNAME SIN SALIDAS (ANTI-ICING BLOWER MOTOR)
+       //DELAY VENT_ICE_DLY (DLY_TIME=*300.0(0.0,3600.0))
+       //PARA PRUEBA SE USARÀ UN TIEMPO DE 5 SEGUNDOS PERO HAY QUE CAMBIARLO POR EL DATO COLOCADO ARRIBA
+       
+       DLY_VENT_DAMPER_SW_CTRL=OUT_AND_VENT_ICE_DLY_TRIGGER;
+       TOND(DLY_VENT_DAMPER_SW_CTRL,TP_DLY_VENT_DAMPER_SW_CTRL,Time_factor,out_DLY_VENT_DAMPER_SW_CTRL);
+       //CURVE_2D VENT_DAMPER_CRV FALTA REALIZARLO
+       
+       //SALIDA DEL CURVE_2D---> "VENT_DAMPER_SW_NO"
+       
+       //SWITCH VENT_DAMPER_SW
+       /*if(out_DLY_VENT_DAMPER_SW_CTRL==1){
+                                          OUT_A_SW_VENT_DMPR_RATE_IN=VENT_DAMPER_SW_NO;
+                                          }
+                                          else{
+                                               OUT_A_SW_VENT_DMPR_RATE_IN=0;
+                                               }*/
+       //RATE_LIMIT VENT_DMPR_RATE FALTA REALIZARLO
+       //LA SALIDA DEL RATE_LIMIT VA A UN BLOQUE ANAME SIN SALIDAS (ANTI-ICING SYSTEM DAMPER) Y A UN A_COMPARE "VENT_DMPR_GT0"
+       
+       //A_COMPARE VENT_DMPR_GT0 (HYST=0 , IN_2=*0.5(0.1,100.0))
+       //SE VA A USAR PARA PRUEBAS UN VALOR DE IN_2=10.0, EL VALOR QUE HAY QUE COLOCAR ES EL QUE SE MENCIONA ARRIBA
+       //CONDICION_1
+       if(VENT_ZV64181_IN>=10.0){
+                                 OUT_A_CMPR_VENT_MOT68330OR_IN_1=1;
+                                 }
+                                 if(VENT_ZV64181_IN<10.0){
+                                                          OUT_A_CMPR_VENT_MOT68330OR_IN_1=0;
+                                                          }
+       //CONDICION_2
+       /*if(10.0>VENT_ZV64181_IN){
+                                OUT_A_CMPR_VENT_MOT68330OR_IN_1=0;
+                                }
+                                if(10.0<VENT_ZV64181_IN){
+                                                         OUT_A_CMPR_VENT_MOT68330OR_IN_1=1;
+                                                         }*/
+       //LSS_BUS VENT_INLET_LSS
+       if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_1<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                               }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
+                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                                                                                                                                                                                       }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<-40){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2){
+                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                                                                                                                 }
+                                                                                     }
+                                                                                     }
+                                               }
+      //SUBTRACT VENT_T2_T0_DIFF 
+      OUT_SUB_VENT_T2_T0_CMP_IN_2=VENT_T2SEL-OUT_LSS_BUS_VENT_T2_T0_DIFF_IN_2;
+      //A_COMPARE VENT_T2_T0_CMP (HYST=*-2.0(-5.0,5.0) , IN_1=10.0)
+      //PARA PRUEBAS SE USARA UNA HYST=-2.0 PERO HAY QUE CAMBIAR EL DATO AL MENCIONADO EN LA DESCRIPCION DEL COMPARADOR
+      /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_1(La salida se hace verdadero como (IN_1) se hace mayor que o igual a (IN_2) 
+       y la salida se hace falso como (IN_1) se convierte en menos de [(IN_2) - (el valor absoluto de HYSTER)])*/
+       
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_2(La salida pasa falso como (IN_2) se hace mayor que o igual a [(IN_1) + (valor absoluto de HYSTER)] 
+       y la salida se hace verdadero como (IN_2) se convierte en menos de (IN_1)*/
+       //CONDICION_1
+       /*if(10.0>=OUT_SUB_VENT_T2_T0_CMP_IN_2){
+                                               OUT_A_CMPR_VENT_ICEALM_MSK_IN_1=1;
+                                               }
+                                               if(10.0<(OUT_SUB_VENT_T2_T0_CMP_IN_2-2.0){
+                                                                                         OUT_A_CMPR_VENT_ICEALM_MSK_IN_1=0;
+                                                                                         }*/
+       //CONDICION_2
+       if(OUT_SUB_VENT_T2_T0_CMP_IN_2>=12.0){
+                                             OUT_A_CMPR_VENT_ICEALM_MSK_IN_1=0;
+                                             }
+                                             if(OUT_SUB_VENT_T2_T0_CMP_IN_2<10.0){
+                                                                                  OUT_A_CMPR_VENT_ICEALM_MSK_IN_1=1;
+                                                                                  }
+       //DELAY VENT_MOT_DELAY (DLY_TIME=*600.0(10.0,1200.0))
+       //PARA PRUEBAS EL DLY_TIME=5 HAY QUE CAMBIAR EL DATO POR EL MENCIONADO EN LA DESCRIPCION
+       
+       VENT_ICEALM_MSK_IN_3=OUT_OR_VENT_MOT68330_IN;
+       TOND(VENT_ICEALM_MSK_IN_3,TP_VENT_ICEALM_MSK_IN_3,Time_factor,out_DLY_VENT_ICEALM_MSK_IN_3);
+       //AND VENT_ICEALM_MSK
+       if(OUT_A_CMPR_VENT_ICEALM_MSK_IN_1==1&&VENT_ANTI_ICE==1&&out_DLY_VENT_ICEALM_MSK_IN_3[1]==1){
+                                                                                               OUT_AND_VENT_ICESYS_ALM_IN=1;
+                                                                                               }
+                                                                                               else{
+                                                                                                    OUT_AND_VENT_ICESYS_ALM_IN=0;
+                                                                                                    }
+                                                                                                    //LA SALIDA VA A UN BLOQUE BNAME SIN SALIDAS (ANTI-ICING SYSTEM FAULT)
+       //LSS_BUS VENT_AMBIENT
+       if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=150.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-200.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4){
+                                                                                                               OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                               }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<-200){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=150.0){
+                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-200.0){ 
+                                                                                                                               OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                                               }
+                                                                                     }
+                                                                                     }
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=150.0){
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-200.0){ 
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3){
+                                                                                                               OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+                                                                                                               }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_4<-200){
+                                                                                      if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=150.0){
+                                                                                      if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-200.0){
+                                                                                                                               OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+                                                                                                                               }
+                                                                                      }
+                                               }
+                                               //LA SALIDA VA A UN BLOQUE CALC_PLUS VENT_ICINGLOG (TE-64033 ALM LOGIC (TURB))
+      //LSS_BUS VENT_CONDITIOND
+      if(OUT_A_SW_VENT_TE6450LOG_A_IN_1<=150.0){
+                                               if(OUT_A_SW_VENT_TE6450LOG_A_IN_1>=-200.0){ 
+                                               if(OUT_A_SW_VENT_TE6450LOG_A_IN_1<OUT_A_SW_VENT_TE6499LOG_A_IN_1){
+                                                                                                                 OUT_LSS_BUS_VENT_CONDAIR_SW_NO=OUT_A_SW_VENT_TE6450LOG_A_IN_1;
+                                                                                                                 }
+                                               }
+                                               }
+                                               if(OUT_A_SW_VENT_TE6450LOG_A_IN_1<-200){
+                                                                                       if(OUT_A_SW_VENT_TE6499LOG_A_IN_1<=150.0){
+                                                                                       if(OUT_A_SW_VENT_TE6499LOG_A_IN_1>=-200.0){ 
+                                                                                                                                   OUT_LSS_BUS_VENT_CONDAIR_SW_NO=OUT_A_SW_VENT_TE6499LOG_A_IN_1;
+                                                                                                                                   }
+                                                                                       }
+                                                                                       }
+                                               
+      if(OUT_A_SW_VENT_TE6499LOG_A_IN_1<=150.0){
+                                                if(OUT_A_SW_VENT_TE6499LOG_A_IN_1>=-200.0){ 
+                                                if(OUT_A_SW_VENT_TE6499LOG_A_IN_1<OUT_A_SW_VENT_TE6450LOG_A_IN_1){
+                                                                                                                  OUT_LSS_BUS_VENT_CONDAIR_SW_NO=OUT_A_SW_VENT_TE6499LOG_A_IN_1;
+                                                                                                                  }
+                                                }
+                                                }
+                                                if(OUT_A_SW_VENT_TE6499LOG_A_IN_1<-200){
+                                                                                        if(OUT_A_SW_VENT_TE6450LOG_A_IN_1<=150.0){
+                                                                                        if(OUT_A_SW_VENT_TE6450LOG_A_IN_1>=-200.0){
+                                                                                                                                   OUT_LSS_BUS_VENT_CONDAIR_SW_NO=OUT_A_SW_VENT_TE6450LOG_A_IN_1;
+                                                                                                                                   }
+                                                                                        }
+                                                                                        }
+      //SWITCH VENT_CONDAIR_SW 
+      if(FALSE_VENT_CONDAIR_SW==1){
+                                   OUT_A_SW_VENT_ICINGLOG_A_IN_2=OUT_LSS_BUS_VENT_CONDAIR_SW_NO;
+                                   }
+                                   else{
+                                        OUT_A_SW_VENT_ICINGLOG_A_IN_2=VENT_T2SEL;
+                                        }
+    if(OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1>30&&OUT_A_SW_VENT_ICINGLOG_A_IN_2<40)
+	{
+		ice1=1;
+	}else{
+		ice1=0;
+	}
+	if(OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1<=30&&(OUT_A_SW_VENT_ICINGLOG_A_IN_2-10)<=OUT_LSS_BUS_VENT_ICINGLOG_A_IN_1)
+	{
+		ice2=1;
+	}else{
+		ice2=0;
+	}
+	if(ice1==1 || ice2==1)
+	{
+		VENT_ICEALM_SW_NC=1;
+	}else{
+		VENT_ICEALM_SW_NC=0;
+	}
+                                         //LA SALIDA VA A UN BLOQUE CALC_PLUS VENT_ICINGLOG (TE-64033 ALM LOGIC (TURB))
+       //CALC_PLUS VENT_ICINGLOG (TE-64033 ALM LOGIC (TURB)) 
+       //SU SALIDA VA A UN BLOQUE B_SW "VENT_ICEALM_SW"
+       
+       //SWITCH VENT_ICEALM_SW
+       if(TRUE_VENT_ICEALM_SW==1){
+                                  OUT_B_SW_VENT_ICING_IN=OUT_A_CMPR_VENT_ICEALM_SW_NO;
+                                  }
+                                  else{
+                                       OUT_B_SW_VENT_ICING_IN=VENT_ICEALM_SW_NC;
+                                       }
+                                       //LA SALIDA DEL SWITCH VA A UN BNAME: CON UNA SALIDA "ALARM.ALM_LAT.IN_11" (ICING ALARM) (USE WHEN CUSTOMER HEATS INLET AIR)
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 275 VENTILATION SYSTEM INTERFACE(TIMERS)//
+
+       //I_TO_AN VENT_FANTIMERS
+       VENT_G_FAN_ATM_IN=(float)VENT_G_FNA_TMR;
+       VENT_G_FAN_BTM_IN=(float)VENT_G_FNB_TMR;
+       VENT_T_FAN_ATM_IN=(float)VENT_T_FNA_TMR;
+       VENT_T_FAN_BTM_IN=(float)VENT_T_FNB_TMR;
+       VENT_ENCL_PRGTM_IN=(float)VENT_ENCLPRG;
+       VENT_PRGFLTMR_IN=(float)VENT_PRGFLDLY;
+       VENT_PSTVNET_T_IN=(float)VENT_PSTCLDNTMR;
+       VENT_PSTCLDN_T_IN=(float)SHUTDOWN_COOLAIRTMR;
+       SFC_TIMER_SYNCCL_T_IN=(float)SFC_STEP_SYNC_COOL;
+       VENT_PSTVNET_G_IN=(float)VENT_G_POSTDLY;
+       //A_TO_T REALIZAR ESTOS BLOQUES QUE TIENEN LOS NOMBRES SIGUIENTES:
+       //VENT_PSTVNET_G
+       //VENT_PSTVNET_T
+       //VENT_PSTCLDN_T
+       
+       //T_TO_HMS REALIZAR ESTOS BLOQUES QUE TIENEN LOS NOMBRES SIGUIENTES:
+       //VENT_PSTVNTGHMS
+       //VENT_PSTVENTHMS
+       //VENT_PSTCLDNHMS
+       
+       //I_COMPARE VENT_PSTVNT_CMP
+       if(SHUTDOWN_COOLAIRTMR>0){
+                                 OUT_I_CMPR_VENT_PSTCLDNON_IN=1;
+                                 }
+                                 else{
+                                      OUT_I_CMPR_VENT_PSTCLDNON_IN=0;
+                                      }
+       //TC_MON VENT_STATOR_TMP FALTA REALIZAR BLOQUE TIENE VARIAS SALIDAS
+       
+       //CALC_PLUS VENT_STATOR_F2C(TEMP CONVERT) FALTA REALIZAR ESTE BLOQUE
+       
+       //A_COMPARE VENT_STTR_LT120 (HYST=-2.0 , IN_1=120.0)
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_1(La salida se hace verdadero como (IN_1) se hace mayor que o igual a (IN_2) 
+       y la salida se hace falso como (IN_1) se convierte en menos de [(IN_2) - (el valor absoluto de HYSTER)])*/
+       
+       /*A_COMPARE CON HISTERESIS NEGATIVA CONDICION_2(La salida pasa falso como (IN_2) se hace mayor que o igual a [(IN_1) + (valor absoluto de HYSTER)] 
+       y la salida se hace verdadero como (IN_2) se convierte en menos de (IN_1)*/
+       //CONDICION_1
+       /*if(120.0>=OUT_TC_MON_VENT_STATOR_TMP){
+                                               OUT_A_CMPR_VENT_GFANS_OFF_IN_1=1;
+                                               }
+                                               if(120.0<(OUT_TC_MON_VENT_STATOR_TMP-2.0){
+                                                                                         OUT_A_CMPR_VENT_GFANS_OFF_IN_1=0;
+                                                                                         }*/
+       //CONDICION_2
+       if(OUT_TC_MON_VENT_STATOR_TMP>=122.0){
+                                             OUT_A_CMPR_VENT_GFANS_OFF_IN_1=0;
+                                             }
+                                             if(OUT_TC_MON_VENT_STATOR_TMP<120.0){
+                                                                                  OUT_A_CMPR_VENT_GFANS_OFF_IN_1=1;
+                                                                                  }
+       //A_COMPARE VENT_STARTLTAMB (HYST=*5.0(-5.0,5.0) , IN_1=VENT_AIRFILTAVG_TC_MON)
+       //PARA PRUEBAS SE VA A A UTILIZAR UNA HISTERESIS=-5.0 PERO HAY QUE CAMBIAR EL DATO POR EL MENCIONADO EN LA DESCRIPCION DEL BLOQUE
+       /*if(VENT_AIRFILTAVG_TC_MON>=OUT_TC_MON_VENT_STATOR_TMP){
+                                                                OUT_A_CMPR_VENT_GFANS_OFF_IN_2=1;
+                                                                }
+                                                                if(VENT_AIRFILTAVG_TC_MON<(OUT_TC_MON_VENT_STATOR_TMP-2.0){
+                                                                                                                           OUT_A_CMPR_VENT_GFANS_OFF_IN_2=0;
+                                                                                                                           }*/
+       //CONDICION_2
+       if(OUT_TC_MON_VENT_STATOR_TMP>=(VENT_AIRFILTAVG_TC_MON+5.0)){
+                                                                    OUT_A_CMPR_VENT_GFANS_OFF_IN_2=0;
+                                                                    }
+                                                                    if(OUT_TC_MON_VENT_STATOR_TMP<VENT_AIRFILTAVG_TC_MON){
+                                                                                                                          OUT_A_CMPR_VENT_GFANS_OFF_IN_2=1;
+                                                                                                                          }
+       //A_COMPARE VENT_STATORGT14 (HYST=0.0 , IN_2=14.0)
+       //CONDICION_1
+       if(OUT_TC_MON_VENT_STATOR_TMP>=14.0){
+                                            OUT_A_CMPR_VENT_STATORGT14=1;
+                                            }
+                                            if(OUT_TC_MON_VENT_STATOR_TMP<14.0){
+                                                                                OUT_A_CMPR_VENT_STATORGT14=0;
+                                                                                }
+       //CONDICION_2
+       /*if(14.0>OUT_TC_MON_VENT_STATOR_TMP){
+                                             OUT_A_CMPR_VENT_STATORGT14=0;
+                                             }
+                                             if(14.0<OUT_TC_MON_VENT_STATOR_TMP){
+                                                                                 OUT_A_CMPR_VENT_STATORGT14=1;
+                                                                                 }*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 276 AUX SKID FAN INTERFACE//
+
+       //NOT AUX_SKID_TE64028OK
+       NFALSE_AUX_SKID_TE64028VST=NOT(FALSE_AUX_SKID_TE64028VST);
+       //CALC_PLUS AUX_SKID_TE64028LOG (LT-6045 CONTROL ALM & SD LOGIC) FALTA REALIZAR ESTE BLOQUE 
+       
+       //DELAY AUX_SKID_DLY_ON
+       DLY_AUX_SKID_MASKFANON1=AUX_SKID_TE64028LOG_B_OUT_3;
+       TOND(DLY_AUX_SKID_MASKFANON1,TP_DLY_AUX_SKID_MASKFANON1,Time_factor,out_DLY_AUX_SKID_MASKFANON1);
+       //ESTE DELAY TIENE 2 SALIDAS
+       //AND AUX_SKID_MASKFANON1
+       if(AUX_SKID_TE64028LOG_B_OUT_1==1&out_DLY_AUX_SKID_MASKFANON1[1]==1){
+                                                                         OUT_AND_AUX_SKID_MOT64026_IN=1;
+                                                                         }
+                                                                         else{
+                                                                              OUT_AND_AUX_SKID_MOT64026_IN=0;
+                                                                              }
+                                                                              //LA SALIDA VA A UN BLOQUE BNAME SIN SALIDAS (AUX SKID ENCLOSURE VENT FAN "A")
+       //AND AUX_SKID_MASKFANON2
+       if(out_DLY_AUX_SKID_MASKFANON1[1]==1&&AUX_SKID_TE64028LOG_B_OUT_2==1){
+                                                                         OUT_AND_AUX_SKID_MOT64027_IN=1;
+                                                                         }
+                                                                         else{
+                                                                              OUT_AND_AUX_SKID_MOT64027_IN=0;
+                                                                              }
+                                                                              //LA SALIDA VA A UN BLOQUE BNAME SIN SALIDAS (AUX SKID ENCLOSURE VENT FAN "B")
+       //OR AUX_SKID_OPNEXHOR
+       if(AUX_SKID_TE64028LOG_B_OUT_1==1||AUX_SKID_TE64028LOG_B_OUT_2==1||AUX_SKID_TE64028LOG_B_OUT_3==1){
+                                                                                                          OUT_OR_AUX_SKID_DLY_OFF_TRIGGER=1;
+                                                                                                          }
+                                                                                                          else{
+                                                                                                               OUT_OR_AUX_SKID_DLY_OFF_TRIGGER=0;
+                                                                                                               }
+       //DELAY AUX_SKID_DLY_OFF
+       DLY_AUX_SKID_SOV64083_IN=OUT_OR_AUX_SKID_DLY_OFF_TRIGGER;
+       TOFD(DLY_AUX_SKID_SOV64083_IN,TP_DLY_AUX_SKID_SOV64083_IN,Time_factor,out_DLY_AUX_SKID_SOV64083_IN);
+       //LA SALIDA DEL DELAY VA A 2 BLOQUES BNAME AMBOS SIN SALIDA CON LOS SIGUIENTES NOMBRES: (AUX SKID EXHAUST AIR DAMPER #1) Y (AUX SKID EXHAUST AIR DAMPER #2)
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 277 GENERATOR LOGIC//
+
+       //SWITCH GENERATOR_UTIL_SW
+       if(FALSE_GENERATOR_UTIL_SW==1){
+                                      OUT_GENERATOR_UTIL_SW_B_SW=GENERATOR_UTIL_BKRCL;
+                                      }
+                                      else{
+                                           OUT_GENERATOR_UTIL_SW_B_SW=TRUE_GENERATOR_UTIL_SW;
+                                           }
+       //AND GENERATOR PSS_ONENBL
+       if(GENERATOR_GEN_BKRCLS==1&OUT_GENERATOR_UTIL_SW_B_SW==1){
+                                                                OUT_GENERATOR_PSS_ONENBL_AND=1;
+                                                                }
+                                                                else{
+                                                                     OUT_GENERATOR_PSS_ONENBL_AND=0;
+                                                                     }
+                                                                     //ESTA SALIDA VA A BLOQUE BNAME: "UNA SALIDA  B_FORCE_K230B_IN(POWER SYSTEM STABILIZER ON)"
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 278 GENERATOR INTERFACE//
+     
+      //AND GENERATOR UTILITY
+      if(N3N42_BI_UTIL_CLSD==1&FALSE_GENERATOR_GSO21_OPIN==0){
+                                                              OUT_GENERATOR_UTILITY_AND=1;
+                                                              }
+                                                              else{
+                                                                   OUT_GENERATOR_UTILITY_AND=0;
+                                                                   }
+     //AND GENERATOR DROOP AND
+     if(OUT_GENERATOR_UTILITY_AND==1&A1_A12_BI2_K229==1&FALSE_GENERATOR_CMD_ISOC==0&FALSE_GENERATOR_STP_SYNCIN==0){
+                                                                                                                   OUT_GENERATOR_DROOP_AND=1;
+                                                                                                                   }
+                                                                                                                   else{
+                                                                                                                        OUT_GENERATOR_DROOP_AND=0;
+                                                                                                                        }
+     //SWITCH GENERATOR_SEL_DROOP
+       if(FALSE_GENERATOR_SEL_DROOP==1){
+                                       OUT_GENERATOR_SEL_DROOP_B_SW=A1_A12_BI1_K67;
+                                       }
+                                       else{
+                                            OUT_GENERATOR_SEL_DROOP_B_SW=OUT_GENERATOR_DROOP_AND;
+                                            }
+                                            //SALIDA DE SWITCH VA A BLOQUE BNAME DE VARIAS SALIDAS (UTILITY & GENERATOR BREAKER CLOSED)
+     //BLOQUE AND GENERATOR_NSDROOP
+     if(SHUTDOWN_CDLO==1&GENERATOR_DROOP==1){
+                                             OUT_GENERATOR_NSDROOP_AND=1;
+                                             }
+                                             else{
+                                                  OUT_GENERATOR_NSDROOP_AND=0;
+                                                  }
+     //BLOQUE AND GENERATOR_NSISOCH
+     if(SHUTDOWN_CDLO==1&GENERATOR_ISOCH==1){
+                                             OUT_GENERATOR_NSISOCH_AND=1;
+                                             }
+                                             else{
+                                                  OUT_GENERATOR_NSISOCH_AND=0;
+                                                  }
+     //BLOQUE NOT GENERATOR_NOT_FAILED
+     //Llamada de funcion para invertir la entrada A1_A12_BI1_BRKR_FAIL
+     NA1_A12_BI1_BRKR_FAIL=NOT(A1_A12_BI1_BRKR_FAIL); 
+     //Salida del inversor VA A BLOQUE BNAME: "UNA SALIDA SHUTDOWN_SD_GEN_IN_1(GENERATOR BREAKER FAILURE)(SD GEN) 
+     //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+     //BLOQUE AND GENERATOR_RTRGNDMSK
+     if(N3N39_BI_RTRGRNDFLT==0&SPEED_SW_NSDGT3590==1){
+                                                      OUT_GENERATOR_RTRGNDMSK_AND=1;
+                                                      }
+                                                      else{
+                                                           OUT_GENERATOR_RTRGNDMSK_AND=0;
+                                                           }
+     //BLOQUE NOT GENERATOR_DIODE_FL
+     //Llamada de funcion para invertir la entrada N3N39_BI_DIODE_FAIL
+     NN3N39_BI_DIODE_FAIL=NOT(N3N39_BI_DIODE_FAIL);
+     //Salida del inversor VA A BLOQUE BNAME CON VARIAS SALIDAS (GEN EXCITER DIODE FAILURE)(ALARM)    
+     //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+     //BLOQUE NOT GENERATOR_N_AVRFAULT
+     //Llamada de funcion para invertir la entrada N3N39_BI_AVR_FAULT
+     NN3N39_BI_AVR_FAULT=NOT(N3N39_BI_AVR_FAULT);
+     //Salida del inversor VA A BLOQUE BNAME CON VARIAS SALIDAS (GEN MAIN AVR FAULT)(ALARM)
+     //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+     //BLOQUE NOT GENERATOR_UTIL86TP
+     //Llamada de funcion para invertir la entrada N3N40_BI_CUST_86T
+     NN3N40_BI_CUST_86T=NOT(N3N40_BI_CUST_86T);
+     //Salida del inversor VA A BLOQUE BNAME: UNA SALIDA "ALARM.ALM_LAT.IN_95"(BUS/UTILITY 86 TRIP)(ALARM)
+     //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 279 GENERATOR INTERFACE//
+
+     //NOT GENERATOR_IGPS52GTNT
+     NN3N42_BI_IGPS52GTRP_BI_L=NOT(N3N42_BI_IGPS52GTRP_BI_L);
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM_ALM_LAT_IN_89" (IGPS (DGP) 52G TRIP)(ALARM)
+     //NOT GENERATOR IGPSFLTANT
+     NN3N42_BI_IGPSFLTALM_BI_L=NOT(N3N42_BI_IGPSFLTALM_BI_L);
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM_ALM_LAT_IN_85" (IGPS (DGP) FAULT ALARM)(ALARM)
+     //SWITCH GENERATOR_IGPSFDLT12
+       if(TRUE_GENERATOR_IGPSFDLT12==1){
+                                        OUT_B_SW_GENERATOR_N_IGPSFAIL_IN=TRUE_GENERATOR_IGPSFDLT12_NO;
+                                        }
+                                        else{
+                                             OUT_B_SW_GENERATOR_N_IGPSFAIL_IN=N3N42_BI_IGPSFAIL_BI_L;
+                                             }
+     //NOT GENERATOR_N_IGPSFAIL
+     NOUT_B_SW_GENERATOR_N_IGPSFAIL_IN=NOT(OUT_B_SW_GENERATOR_N_IGPSFAIL_IN);
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "SHUTDOWN_CDLO_GEN_IN_1" (IGPS (DGP) FAILURE)(CDLO GEN)
+     //AND GENERATOR_MASK_1
+     if(SPEED_SW_NSDGT3590==1&N3N39_BI_GEN_EX_LIM_BI_L==0){
+                                                           OUT_AND_GENERATOR_GEN_EX_LIM_IN=1;
+                                                           }
+                                                           else{
+                                                                OUT_AND_GENERATOR_GEN_EX_LIM_IN=0;
+                                                                }
+                                                                //ESTA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS "GENERATOR.EX_SUM_OR_IN_2"(GEN EXCITATION LIMITER OPERATION)(ALARM)
+     //NOT GENERATOR_N_GEN86LTP
+     NN3N42_BI_GEN_86TRPL_BI_L=NOT(N3N42_BI_GEN_86TRPL_BI_L);
+     //ESTA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS "GENERATOR.TRIP.IN_5"(GEN 86 TRIP LOCAL)(SD GEN)
+     //NOT GENERATOR_N_GEN86RTP
+     NA1_A12_BI1_TRIP_86_BIO_BI=NOT(A1_A12_BI1_TRIP_86_BIO_BI);
+     //ESTA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS "GENERATOR.TRIP.IN_6"(GEN 86 TRIP (REMOTE))(SD GEN)
+     //AND_GENERATOR_AVR_ALMMSK
+     if(N3N39_BI_AVR_SUMALM_BI_L_NOT==1&SPEED_SW_NSDGT3240==1){
+                                                               OUT_AND_GENERATOR_AVRALM_DLY_TRIGGER=1;
+                                                               }
+                                                               else{
+                                                                    OUT_AND_GENERATOR_AVRALM_DLY_TRIGGER=0;
+                                                                    }
+     //DELAY GENERATOR_AVRALM_DLY (DLY_TIME=*0.0(0.0,5.0))
+     //PARA PRUEBAS SE USARÀ UN DLY_TIME=5 PERO HAY QUE CAMBIARLO POR EL DATO MENCIONADO EN LAS CARACTERISTICAS
+     DLY_GENERATOR_AVR_ALARM_IN=OUT_AND_GENERATOR_AVRALM_DLY_TRIGGER;
+     TOND(DLY_GENERATOR_AVR_ALARM_IN,TP_DLY_GENERATOR_AVR_ALARM_IN,Time_factor,out_DLY_GENERATOR_AVR_ALARM_IN);
+     //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "GENERATOR.EX_SUM_OR.IN_4"(GEN AVR SUMMARY ALARM)(ALARM)
+     //OR GENERATOR_AVRSDRST
+     if(SFC_STEP_RST_AND_ST==1||OUT_OR_GENERATOR_AVR_NOT_ON==1){
+                                                                OUT_OR_GENERATOR_AVR_SDOFF_RST=1;
+                                                                }
+                                                                else{
+                                                                     OUT_OR_GENERATOR_AVR_SDOFF_RST=0;
+                                                                     }
+     //LATCH GENERATOR_AVR_SDOFF
+     //Llamada de funcion para el flip-flop LATCH_GENERATOR_RESET85PCT_IN_3 de tipo RS
+     LATCH_GENERATOR_RESET85PCT_IN_3[1]=SHUTDOWN_ANY_SD;
+     LATCH_GENERATOR_RESET85PCT_IN_3[2]=OUT_OR_GENERATOR_AVR_SDOFF_RST;
+     RS(LATCH_GENERATOR_RESET85PCT_IN_3,out_LATCH_GENERATOR_RESET85PCT_IN_3);
+     //AND GENERATOR_RESET85PCT
+     if(SPEED_SW_NSDLT3060==1&GENERATOR_GEN_BKROPN==1&out_LATCH_GENERATOR_RESET85PCT_IN_3[1]==1){
+                                                                                              OUT_AND_GENERATOR_AVR_OFF_IN_1=1;
+                                                                                              }
+                                                                                              else{
+                                                                                                   OUT_AND_GENERATOR_AVR_OFF_IN_1=0;
+                                                                                                   }
+     //AND GENERATOR_AVROFF_1
+     if(out_LATCH1_GENERATOR_EAX_ALM_IN==1&GENERATOR_GEN_BKROPN==1){
+                                                                    OUT_AND_GENERATOR_AVR_OFF_IN_2=1;
+                                                                    }
+                                                                    else{
+                                                                         OUT_AND_GENERATOR_AVR_OFF_IN_2=0;
+                                                                         }
+     //OR GENERATOR_AVR_OFF
+     if(OUT_AND_GENERATOR_AVR_OFF_IN_1==1||OUT_AND_GENERATOR_AVR_OFF_IN_2==1||SHUTDOWN_SD_CORE==1||SHUTDOWN_SDN_CORE==1){
+                                                                                                                         OUT_OR_GENERATOR_AVR_OFF_Z_FEEDBACK=1;
+                                                                                                                         }
+                                                                                                                         else{
+                                                                                                                              OUT_OR_GENERATOR_AVR_OFF_Z_FEEDBACK=0;
+                                                                                                                              }
+     //ZMINUS1_B GENERATOR_AVR_OFF_Z FALTA REALIZAR ESTE BLOQUE VA A LA SALIDA DEL BLOQUE OR ANTERIOR Y ANTES DEL LATCH_R DE ABAJO
+     
+     //LATCH_R GENERATOR_AVR_ON
+     LATCH_R_GENERATOR_COND_OR85_IN_1[1]=SPEED_SW_NSDGT3240;
+     LATCH_R_GENERATOR_COND_OR85_IN_1[2]=GENERATOR_AVR_ON_RST;
+     SR(LATCH_R_GENERATOR_COND_OR85_IN_1,out_LATCH_R_GENERATOR_COND_OR85_IN_1);
+     //OR GENERATOR_COND_OR85
+     if(out_LATCH_R_GENERATOR_COND_OR85_IN_1[1]==1||GENERATOR_CONDENSING==1){
+                                                                          OUT_OR_GENERATOR_EXCTR_ON_IN=1;
+                                                                          }
+                                                                          else{
+                                                                               OUT_OR_GENERATOR_EXCTR_ON_IN=0;
+                                                                               }
+                                                                               //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "B_FORCE.K194.IN" (CNTRL) Y A UN BLOQUE NOT CON UNA SALIDA "GENERATOR_AVRSDRST.IN_2"
+     //DELAY GENERATOR_DLY_85PCT (DLY_TIME=*5.0(0.0,20.0))
+     //PARA PRUEBAS SE VA A USAR UN TIEMPO=5 PERO HAY QUE CAMBIARLO POR EL MENCIONADO EN LA DESCRIPCION
+     DLY_GENERATOR_MASK_2_IN_1=GENERATOR_EXCTR_ON;
+     TOND(DLY_GENERATOR_MASK_2_IN_1,TP_DLY_GENERATOR_MASK_2_IN_1,Time_factor,out_DLY_GENERATOR_MASK_2_IN_1);
+     //AND GENERATOR_MASK_2
+     if(out_DLY_GENERATOR_MASK_2_IN_1[1]==1&N3N39_BI_EXCIT_ALM_BI_L==0){
+                                                                     OUT_AND_GENERATOR_EXCIT_ALM_IN=1;
+                                                                     }
+                                                                     else{
+                                                                          OUT_AND_GENERATOR_EXCIT_ALM_IN=0;
+                                                                          }
+                                                                          //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "GENERATOR_EX_SUM_OR_IN_1" (GEN AVR EXCITATION TRIPPED)(ALARM)
+     //A_COMPARE GENERATOR_EAX_CMP (HYST=0.0 , IN_2=8.0)
+     //CONDICION_1
+     if(N3N18_AI_EAX_AI_420_L>=8.0){
+                                    OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2=1;
+                                    }
+                                    if(N3N18_AI_EAX_AI_420_L<8.0){
+                                                                  OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2=0;
+                                                                  }
+     //CONDICION_2
+     /*if(8.0>N3N18_AI_EAX_AI_420_L){
+                                     OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2=0;
+                                     }
+                                     if(8.0<N3N18_AI_EAX_AI_420_L){
+                                                                   OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2=1;
+                                                                   }*/
+     //AND GENERATOR_MASKEAXAL
+     if(GENERATOR_GEN_BKROPN==1&OUT_A_CMPR_GENERATOR_MASKEAXAL_IN_2==1){
+                                                                        OUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER=1;
+                                                                        }
+                                                                        else{
+                                                                             OUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER=0;
+                                                                             }
+     //DELAY GENERATOR_DLY_EAX_AL (DLY_TIME=2)
+     DLY_GENERATOR_EAXALMLAT_IN_1=OUT_AND_GENERATOR_DLY_EAX_AL_TRIGGER;
+     TOND(DLY_GENERATOR_EAXALMLAT_IN_1,TP_DLY_GENERATOR_EAXALMLAT_IN_1,Time_factor,out_DLY_GENERATOR_EAXALMLAT_IN_1);
+     //LATCH1 GENERATOR_EAXALMLAT FALTA REALIZARLO
+     
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM.ALM_LAT.IN_60" (HIGH EXCITATION CURRENT ALARM)(ALARM)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 280 GENERATOR INTERFACE//
+
+     //OR GENERATOR_TRIP
+     if(CORE_DIGITAL_FUELOFF==1||SHUTDOWN_SD_CORE==1||SHUTDOWN_SDN_CORE==1||SHUTDOWN_STEPIDLE==1||GENERATOR_GEN86TRIPL==1||GENERATOR_GEN86TRIPR==1||SHUTDOWN_DMINTONS==1||SFC_STEP_NORM_3_SFC_STEP==1||ALARM_HMI_STI==1||GENERATOR_STP_2_SYNC==1||SPEED_SW_NSDLT3420==1){
+                                                                                                                                                                                                                                                                         OUT_OR_GENERATOR_BKR_OK_RST=1;
+                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                                         else{
+                                                                                                                                                                                                                                                                              OUT_OR_GENERATOR_BKR_OK_RST=0;
+                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                                              //LA SALIDA VA A UN LATCH Y A UNA AND PASANDO ANTES POR UNA NEGACION
+     //AND GENERATOR_MASKBRKR
+     if(OUT_OR_GENERATOR_BKR_OK_RST==0&SHUTDOWN_NO_SHTDNS==1&SPEED_SW_NSDGT3590==1){
+                                                                                    OUT_AND_GENERATOR_BKR_OK_TRIGGER=1;
+                                                                                    }
+                                                                                    else{
+                                                                                         OUT_AND_GENERATOR_BKR_OK_TRIGGER=0;
+                                                                                         }
+                                                                                         //LA AND TIENE DOS SALIDAS UNA AL BLOQUE LATCH SIGUIENTE Y OTRA "GENERATOR_SYNC_EN_IN_2"
+     //LATCH GENERATOR_BKR_OK
+     LATCH_GENERATOR_K85_IN[1]=OUT_AND_GENERATOR_BKR_OK_TRIGGER;
+     LATCH_GENERATOR_K85_IN[2]=OUT_OR_GENERATOR_BKR_OK_RST;
+     RS(LATCH_GENERATOR_K85_IN,out_LATCH_GENERATOR_K85_IN);
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "B_FORCE_K85_IN"(CIRCUIT BREAKER CONTROL)(CNTRL)
+     //AND GENERATOR_SYNC_EN
+     if(N3N42_BI_AUTO_SYNC_BI_L==1&OUT_AND_GENERATOR_BKR_OK_TRIGGER==1&SFC_TIMER_WARMUP_DN==1&SFC_STEP_READY2SYNC_SFC_STEP==1){
+                                                                                                                               OUT_AND_GENERATOR_SYNC_ENABL_IN=1;
+                                                                                                                               }
+                                                                                                                               else{
+                                                                                                                                    OUT_AND_GENERATOR_SYNC_ENABL_IN=0;
+                                                                                                                                    }
+                                                                                                                                    //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "XNSD_REF.SYNC_ENBLE.IN"(SYNCHRONIZER ENABLE)(CNTRL)
+     //OR GENERATOR_EX_SUM_OR (EXCTIATION SUMMARY ALARM)
+     if(GENERATOR_EXCIT_ALM==1||GENERATOR_GEN_EX_LIM==1||GENERATOR_DIODE_FAIL==1||GENERATOR_AVR_ALARM==1||GENERATOR_AVR_FAULT==1){
+                                                                                                                                  OUT_OR_GENERATOR_EX_SUMMARY_IN=1;
+                                                                                                                                  }
+                                                                                                                                  else{
+                                                                                                                                       OUT_OR_GENERATOR_EX_SUMMARY_IN=0;
+                                                                                                                                       }
+                                                                                                                                       //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "DATA_IO.LCR.BR_V_1910"(EXCTIATION SUMMARY ALARM)(STATUS)
+     //ONE_SHOT GENERATOR_VLT_LWRPLS (DLY_TIME=*0.5(0.1,0.5)) FALTA REALIZARLO
+     
+     //ONE_SHOT GENERATOR_VLT_RSEPLS (DLY_TIME=*0.5(0.1,0.5)) FALTA REALIZARLO
+     
+     //NOT GENERATOR_NOTLSH6834
+     NTRUE_GENERATOR_NOTLSH6834=NOT(TRUE_GENERATOR_NOTLSH6834);
+     //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM.ALM_LAT.IN_255" (LSH6834 GEN COOLER LEAK DETECTORS L)(ALARM)
+     //A_COMPARE GENERATOR_TE6432LOG (HYST=0.0 , IN_2=113.0)
+     //CONDICION_1
+     if(GENERATOR_TE6432>=113.0){
+                                 OUT_A_CMPR_GENERATOR_TE6432_H_IN=1;
+                                 }
+                                 if(GENERATOR_TE6432<113.0){
+                                                            OUT_A_CMPR_GENERATOR_TE6432_H_IN=0;
+                                                            }
+     //CONDICION_2
+     /*if(113.0>GENERATOR_TE6432){
+                                  OUT_A_CMPR_GENERATOR_TE6432_H_IN=0;
+                                  }
+                                  if(113.0<GENERATOR_TE6432){
+                                                             OUT_A_CMPR_GENERATOR_TE6432_H_IN=1;
+                                                             }*/
+                                                             //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM.ALM_LAT.IN_251"(TE6432 GEN AIR INLET TMP (NDE) H)(ALARM)
+     //A_COMPARE GENERATOR_TE6433LOG (HYST=0.0 , IN_2=113.0)
+     //CONDICION_1
+     if(GENERATOR_TE6433>=113.0){
+                                 OUT_A_CMPR_GENERATOR_TE6433_H_IN=1;
+                                 }
+                                 if(GENERATOR_TE6433<113.0){
+                                                            OUT_A_CMPR_GENERATOR_TE6433_H_IN=0;
+                                                            }
+     //CONDICION_2
+     /*if(113.0>GENERATOR_TE6433){
+                                  OUT_A_CMPR_GENERATOR_TE6433_H_IN=0;
+                                  }
+                                  if(113.0<GENERATOR_TE6433){
+                                                             OUT_A_CMPR_GENERATOR_TE6433_H_IN=1;
+                                                             }*/
+                                                             //LA SALIDA VA A UN BLOQUE BNAME CON UNA SALIDA: "ALARM.ALM_LAT.IN_252"(TE6433 GEN AIR INLET TMP (DE) H)(ALARM)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 281 SPRINT SYSTEM (IFACE SPRINT)//
+
+     //SWITCH SPRINT_Z_SPRDMSEQ
+     if(IFACE_SPRINT_C_H2ORAISE==1){
+                                    OUT_A_SW_IFACE_CORE_Z_SPRDMSEQ_IN=20.0;
+                                    }
+                                    else{
+                                         OUT_A_SW_IFACE_CORE_Z_SPRDMSEQ_IN=4.0;
+                                         }
+                                         //LA SALIDA VA A UN BLOQUE ANAME SIN SALIDAS (RAMP INPUT TO CORE)(GPM)
+     //OR IFACE_CORE_ZSPRTONOR
+     if(SPRINT_LP_ON_3_SFC_STEP==1||SPRINT_HP_2_LP_1_SFC_STEP==1||SPRINT_HP_2_LP_2_SFC_STEP==1||SPRINT_HP_2_LP_3_SFC_STEP==1||SPRINT_LP_OFF_1_SFC_STEP==1||SPRINT_HP_ON_3_SFC_STEP==1||SPRINT_LP_2_HP_1_SFC_STEP==1||SPRINT_LP_2_HP_2_SFC_STEP==1||SPRINT_LP_2_HP_3_SFC_STEP==1||SPRINT_LP_2_HP_4_SFC_STEP==1||SPRINT_LP_2_HP_5_SFC_STEP==1||SPRINT_HP_OFF_1_SFC_STEP==1){
+                                                                                                                                                                                                                                                                                                                                                                          OUT_OR_IFACE_CORE_Z_SPRINTON_IN=1;
+                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                                                          else{
+                                                                                                                                                                                                                                                                                                                                                                               OUT_OR_IFACE_CORE_Z_SPRINTON_IN=0;
+                                                                                                                                                                                                                                                                                                                                                                               }
+     //T_FLIP-FLOP SPRINT_MANUAL_FF FALTA REALIZAR ESTE BLOQUE
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 282 SPRINT SYSTEM (RAMP,ENABLE,&PERM BUS)//
+
+     //ONE_SHOT SPRINT_ENBL_OS FALTA REALIZAR ESTE BLOQUE
+     
+     //Z_MINUS1_B SPRINT_DSBL_Z FALTA REALIZAR ESTE BLOQUE
+     
+     //AND SPRINT_OPTION
+     if(FALSE_SPRINT_OPTION==1&OUT_ZMINUS1_B_SPRINT_OPTION_IN_2==1){
+                                                                    OUT_AND_SPRINT_ENBL_RST=1;
+                                                                    }
+                                                                    else{
+                                                                         OUT_AND_SPRINT_ENBL_RST=0;
+                                                                         }
+     //T_FLIPFLOP SPRINT_ENBL FALTA REALIZAR ESTE BLOQUE
+     //CUENTA CON DOS SALIDAS UNA A UNA AND Y OTRA AUN BLOQUE BNAME CON VARIAS SALIDAS: "DATA_IO.LCR.BR_V_1488"(OPERATED SELECTED TO SPRINT)
+     
+     //AND SPRINT_SPRINTEN
+     if(OUT_T_FF_SPRINT_SPRINTEN_IN_1==1&OUT_AND_SPRINT_SPRINTEN_IN_2==1){
+                                                                          OUT_AND_SPRINT_SPRINTENBL_IN=1;
+                                                                          }
+                                                                          else{
+                                                                               OUT_AND_SPRINT_SPRINTENBL_IN=0;
+                                                                               }
+                                                                               //LA SALIDA VA A UN BLOQUE BNAME CON VARIAS SALIDAS: "SPRINT.SPRT_OFF.IN"(SPRINT ENABLE ACTIVE)(CNTRL)
+     //NOT SPRINT_SPRT_OFF
+     NSPRINT_SPRINTENBL=NOT(SPRINT_SPRINTENBL);
+     //EL BLOQUE TIENE VARIAS SALIDAS: "ONLINE_WW.ONLNRUNPMR.IN_4"
+     //NOR SPRINT_NOSPRTSDSS
+     if(CORE_ALM_SPRT1_SPRSDALM1==0||CORE_ALM_SPRT2_SPRSDALM2==0||CORE_ALM_SPRT3_SPRSDALM3==0){
+                                                                                               OUT_NOR_SPRINT_READY_EN_IN_10=1;
+                                                                                               }
+                                                                                               else{
+                                                                                                    OUT_NOR_SPRINT_READY_EN_IN_10=0;
+                                                                                                    }
+     //AND SPRINT_READY_EN (SPRINT PERMISSIVES MET)
+     if(IFACE_SPRINT_BRNSPRNTOK==1&IFACE_SPRINT_T2SPRNTOK==1&IFACE_SPRINT_DWBSPRNTOK==1&IFACE_SPRINT_P8THGOOD==1&IFACE_SPRINT_P8THEGOOD==1&IFACE_SPRINT_NSDREFSPRT==1&IFACE_SPRINT_LIQDMDOK==1&TRUE_SPRINT_FUELSYSRDY==1&IFACE_SPRINT_PS3SPROK==1&OUT_NOR_SPRINT_READY_EN_IN_10==1){
+                                                                                                                                                                                                                                                                                    OUT_AND_SPRINT_SPRINTEN_IN_2=1;
+                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                    else{
+                                                                                                                                                                                                                                                                                         OUT_AND_SPRINT_SPRINTEN_IN_2=0;
+                                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                                                         //ESTA SALIDA VA A UN BLOQUE AND "SPRINT_SPRINTEN" Y A UN BNAME CON VARIAS SALIDAS: "DATA_IO.LCR.BR_V_1495"(SPRINT PERMISSIVES MET)
+     //AND SPRINT_SIM_SPRT
+     if(FALSE_SPRINT_SIM_SPRT==1&SPRINT_ALLOWTEST==1){
+                                                      OUT_AND_SPRINT_SPRT_READY_T_COND_4=1;
+                                                      }
+                                                      else{
+                                                           OUT_AND_SPRINT_SPRT_READY_T_COND_4=0;
+                                                           }
+     //AND SPRINT_SIM_SPRAY
+     if(FALSE_SPRINT_SIM_SPRAY==1&SPRINT_ALLOWTEST==1){
+                                                       OUT_AND_SPRINT_SPRT_READY_T_COND_5=1;
+                                                       }
+                                                       else{
+                                                            OUT_AND_SPRINT_SPRT_READY_T_COND_5=0;
+                                                            }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 283 SPRINT SYSTEM (TIMER VALUES)//
+
+     //OR SPRINT_FILL_OR
+     if(SPRINT_HP_ON_2_SFC_STEP==1||SPRINT_LP_ON_2SFC_STEP==1){
+                                                               OUT_OR_SPRINT_FILL_DLY_TRIGGER=1;
+                                                               }
+                                                               else{
+                                                                    OUT_OR_SPRINT_FILL_DLY_TRIGGER=0;
+                                                                    }
+                                                                    //LA OR TIENE 2 SALIDAS UNA AL DELAY SIGUIENTE Y OTRA AL A_MUX_HSS
+     //SWITCH SPRINT_FILL_TM_SW (NC=*90.0 (0.0, 180.0) , NO=*20.0 (0.0, 180.0))
+     //PARA PRUEBAS SE USARA UN DATO DE NC=90.0 Y NO=20.0 PERO HAY QUE CAMBIARLOS POR LOS DATOS MENSIONADOS EN LA DESCRIPCION
+     if(FALSE_SPRINT_TEST_TIMER==1){
+                                    OUT_A_SW_SPRINT_FILL_DLY_DLY_TIME=20.0;
+                                    }
+                                    else{
+                                         OUT_A_SW_SPRINT_FILL_DLY_DLY_TIME=90.0;
+                                         }
+     //DELAY_SPRINT_FILL_DLY FALTA POR REALIZAR, NO SE COMO ACOPLAR EL SWITCH A LA ENTRADA DE TIEMPO DEL DELAY Y COMO OBTENER EL R_TIME
+     
+     //A_COMPARE SPRINT_P62239GT15 (HYST=0.0 , IN_2=15.0)
+     //CONDICION_1
+     if(SPRINT_PT62234>=15.0){
+                              OUT_A_CMPR_SPRINT_FILL_DN_IN_2=1;
+                              }
+                              if(SPRINT_PT62234<15.0){
+                                                      OUT_A_CMPR_SPRINT_FILL_DN_IN_2=0;
+                                                      }
+     //CONDICION_2
+     /*if(15.0>SPRINT_PT62234){
+                               OUT_A_CMPR_SPRINT_FILL_DN_IN_2=0;
+                               }
+                               if(15.0<SPRINT_PT62234){
+                                                       OUT_A_CMPR_SPRINT_FILL_DN_IN_2=1;
+                                                       }*/
+     //OR SPRINT_FILL_DN
+     if(out_DLY_SPRINT_FILL_DN_IN_1==1||OUT_A_CMPR_SPRINT_FILL_DN_IN_2==1){
+                                                                           OUT_OR_SPRINT_LP_ON_2_T_COND_3=1;
+                                                                           }
+                                                                           else{
+                                                                                OUT_OR_SPRINT_LP_ON_2_T_COND_3=0;
+                                                                                }
+                                                                                //LA COMPUERTA OR TIENE DOS SALIDAS DIFERENTES
+     //ZMINUS1_B SRINT_HP_2_LP__Z FALTA REALIZARLO
+     
+     //DELAY SPRINT_DLY_HPHLD (DLY_TIME=*20.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_DRN_TMR_OR
+     if(SPRINT_HP_2_LP_3_SFC_STEP==1||SPRINT_HP_OFF_2_SFC_STEP==1){
+                                                                   OUT_OR_SPRINT_DRNHPTMR_Z_FEEDBACK=1;
+                                                                   }
+                                                                   else{
+                                                                        OUT_OR_SPRINT_DRNHPTMR_Z_FEEDBACK=0;
+                                                                        }
+     //ZMINUS1_B SRINT_DRNHPTMR_Z FALTA REALIZARLO
+     
+     //DELAY SPRINT_DRAINHP_TM (DLY_TIME=*30.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_LP_E_HLD
+     if(SPRINT_LP_2_HP_2_SFC_STEP==1||SPRINT_LP_OFF_2_SFC_STEP==1){
+                                                                   OUT_OR_SPRINT_LP_E_Z_FEEDBACK=1;
+                                                                   }
+                                                                   else{
+                                                                        OUT_OR_SPRINT_LP_E_Z_FEEDBACK=0;
+                                                                        }
+     //ZMINUS1_B LP_E__Z FALTA REALIZARLO
+     
+     //DELAY SPRINT_DLY_LPEHLD (DLY_TIME=*10.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_EV_TM_OR
+     if(SPRINT_LP_2_HP_3_SFC_STEP==1||SPRINT_LP_OFF_3_SFC_STEP==1||SPRINT_OFF_1_SFC_STEP==1){
+                                                                                             OUT_OR_SPRINT_EVAC_Z_FEEDBACK=1;
+                                                                                             }
+                                                                                             else{
+                                                                                                  OUT_OR_SPRINT_EVAC_Z_FEEDBACK=0;
+                                                                                                  }
+     //ZMINUS1_B EVAC_Z FALTA REALIZARLO
+     
+     //DELAY EVAC_TMR (DLY_TIME=*30.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_LP_PRGT_OR
+     if(SPRINT_LP_2_HP_5_SFC_STEP==1||SPRINT_LP_OFF_5_SFC_STEP==1||SPRINT_OFF_2_SFC_STEP==1){
+                                                                                             OUT_OR_SPRINT_LP_PRGT_Z_FEEDBACK=1;
+                                                                                             }
+                                                                                             else{
+                                                                                                  OUT_OR_SPRINT_LP_PRGT_Z_FEEDBACK=0;
+                                                                                                  }
+     //ZMINUS1_B LP_PRGT_Z FALTA REALIZARLO
+     
+     //DELAY LP_PRG_TMR (DLY_TIME=*30.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //ZMINUS1_B DN_PRGT_Z FALTA REALIZARLO
+     
+     //DELAY DN_PRG_TMR (DLY_TIME=*30.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_JIMMY_SW2
+     if(SPRINT_HP_2_LP_3_SFC_STEP==1||SPRINT_OFF_4_SFC_STEP==1){
+                                                                OUT_OR_SPRINT_JIMMY_SW2_NC=1;
+                                                                }
+                                                                else{
+                                                                     OUT_OR_SPRINT_JIMMY_SW2_NC=0;
+                                                                     }
+     //SWITCH SPRINT_JIMMY_SW2
+     if(FALSE_SPRINT_JIMMY_SPRT==1){
+                                    OUT_B_SW_SPRINT_HP_PRGT_Z_FEEDBACK=SPRINT_MASK_PURGE;
+                                    }
+                                    else{
+                                         OUT_B_SW_SPRINT_HP_PRGT_Z_FEEDBACK=OUT_OR_SPRINT_JIMMY_SW2_NC;
+                                         }
+                                         //EL SWITCH TIENE DOS SALIDAS UNA A UN BLOQUE ZMINUS Y OTRA "SPRINT.JIMMY_SW3.NO"
+     //ZMINUS1_B HP_PRGT_Z FALTA REALIZARLO
+     
+     //DELAY HP_PRG_TMR (DLY_TIME=*30.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //OR SPRINT_LP_PRG_HLD
+     if(SPRINT_LP_2_HP_4_SFC_STEP==1||SPRINT_LP_OFF_4_SFC_STEP==1){
+                                                                   OUT_OR_SPRINT_LP_PRG_Z_FEEDBACK=1;
+                                                                   }
+                                                                   else{
+                                                                        OUT_OR_SPRINT_LP_PRG_Z_FEEDBACK=0;
+                                                                        }
+     //ZMINUS1_B LP_PRG_Z FALTA REALIZARLO
+     
+     //DELAY DLY_LPPHLD (DLY_TIME=*0.0 (0.0, 300.0)) FALTA REALIZARLO TIENE SALIDA EN "DELAY" Y "EN R_TIME"
+     
+     //I_TO_AN SPRINT_TMR_CNVT
+     SPRINT_TIMERS_IN_1=(float)out_DLY_SPRINT_FILL_DN_IN_1;
+     SPRINT_TIMERS_IN_2=(float)SPRINT_TMR_CNVT_IN_2;
+     SPRINT_TIMERS_IN_3=(float)SPRINT_TMR_CNVT_IN_3;
+     SPRINT_TIMERS_IN_4=(float)SPRINT_TMR_CNVT_IN_4;
+     SPRINT_TIMERS_IN_5=(float)SPRINT_TMR_CNVT_IN_5;
+     SPRINT_TIMERS_IN_6=(float)SPRINT_TMR_CNVT_IN_6;
+     SPRINT_TIMERS_IN_7=(float)SPRINT_TMR_CNVT_IN_7;
+     SPRINT_TIMERS_IN_8=(float)SPRINT_TMR_CNVT_IN_8;
+     SPRINT_TIMERS_IN_9=(float)SPRINT_TMR_CNVT_IN_9;
+     //A_MUX_HSS SPRINT_TIMERS FALTA REALIZAR ESTE BLOQUE
+     
+     //I_TO_AN TMR_ANLG
+     SPRINT_TMR_ANGL=(float)SPRINT_TMR_ANGL_IN_1;
+     //EL BLOQUE NO TIENE SALIDAS SE USÒ SU NOMBRE PARA DECLARAR LA VARIABLE
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 284 SPRINT SYSTEM (LP SEQUENCE LOGIC)//
+
+     //AND SPRINT_SEL_SPRINT
+     if(IFACE_SPRINT_C_LPSPRTEN==0&SPRINT_SPRINTENBL==1&SPRINT_HP_SPRNTOK==1){
+                                                                              OUT_AND_SPRINT_SPRT_READY_T_COND_2=1;
+                                                                              }
+                                                                              else{
+                                                                                   OUT_AND_SPRINT_SPRT_READY_T_COND_2=0;
+                                                                                   }
+     //AND SPRINT_SEL_SPRAY
+     if(SPRINT_C_LPSPRTEN==1&SPRINT_SPRINTENBL==1){
+                                                   OUT_AND_SPRINT_SPRT_READY_T_COND_3=1;
+                                                   }
+                                                   else{
+                                                        OUT_AND_SPRINT_SPRT_READY_T_COND_3=0;
+                                                        }
+     //OR SPRINT_BACK_TO_LP
+     if(SPRINT_LP_OFF_2_TRAN_2==1||SPRINT_LP_OFF_3_TRAN_2==1||SPRINT_LP_OFF_4_TRAN_2==1||SPRINT_LP_OFF_5_TRAN_2==1||SPRINT_HP_OFF_2_TRAN_2==1||SPRINT_OFF_1_TRAN_2==1||SPRINT_OFF_2_TRAN_2==1||SPRINT_OFF_3_TRAN_2==1||SPRINT_OFF_4_TRAN_2==1){
+                                                                                                                                                                                                                                               OUT_OR_SPRINT_LP_ON_1_SF_SEL_2=1;
+                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                               else{
+                                                                                                                                                                                                                                                    OUT_OR_SPRINT_LP_ON_1_SF_SEL_2=0;
+                                                                                                                                                                                                                                                    }
+     //OR SPRINT_TRANS_OFF
+     if(SPRINT_SDLATCHLP==1||CORE_DIGITAL_FUELOFF==1||SPRINT_SPRT_OFF==1||SPRINT_OFF_MASK==1||SPRINT_TNK_VACSW==1||CORE_ALM_SPRT1_SPRSDALM1==1||CORE_ALM_SPRT2_SPRSDALM2==1||CORE_ALM_SPRT3_SPRSDALM3==1){
+                                                                                                                                                                                                          OUT_OR_SPRINT_TRANSOFF_IN_1=1;
+                                                                                                                                                                                                          }
+                                                                                                                                                                                                          else{
+                                                                                                                                                                                                               OUT_OR_SPRINT_TRANSOFF_IN_1=0;
+                                                                                                                                                                                                               }
+     //AND SPRINT_TRANSOFF
+     if(OUT_OR_SPRINT_TRANSOFF_IN_1==1&&SPRINT_NOTTEST==1){
+                                                          OUT_AND_SPRINT_HP_2_LP_1_T_COND_1=1;
+                                                          }
+                                                          else{
+                                                               OUT_AND_SPRINT_HP_2_LP_1_T_COND_1=0;
+                                                               }
+     //OR SPRINT_STRT_ESPRT
+     if(SPRINT_LP_2_HP_1_TRAN_2==1||SPRINT_LP_2_HP_2_TRAN_2==1||SPRINT_LP_2_HP_3_TRAN_2==1||SPRINT_LP_2_HP_4_TRAN_2==1||SPRINT_LP_2_HP_5_TRAN_2==1||SPRINT_HP_ON_3_TRAN_2==1||SPRINT_LP_OFF_1_TRAN_2==1||SPRINT_HP_OFF_1_TRAN_2==1){
+                                                                                                                                                                                                                                    OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1=1;
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                    else{
+                                                                                                                                                                                                                                         OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1=0;
+                                                                                                                                                                                                                                         }
+     //GRAFCET LP SPRINT SEQUENCE
+     //SECUENCIA1
+     //ETAPA1 SPRINT SYSTEM READY TO START
+     if(SPRINT_NOTREADY_TRAN_1==1){
+                                  OUT_S1_ET1_SPRINT_ACTIVE_IN_1=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                  }
+                                  else{
+                                       OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                       if(OUT_S1_ET2_SPRINT_ACTIVE_IN_2==1){
+                                                                            OUT_S1_ET1_SPRINT_ACTIVE_IN_1=1;
+                                                                            }                                                                                 
+                                       }
+     //ETAPA2 LP ON SEQ1: ACTIVATE FORWARDING PUMP
+     if(OUT_S1_ET1_SPRINT_ACTIVE_IN_1==1&SPRINT_TRANSOFF==1&OUT_AND_SPRINT_SPRT_READY_T_COND_2==1&OUT_AND_SPRINT_SPRT_READY_T_COND_3==1&SPRINT_SIM_SPRT==1&SPRINT_SIM_SPRAY==1&OUT_OR_SPRINT_LP_ON_1_SF_SEL_2==1&SPRINT_SPRT_READY_TRAN_5==1){
+                                                                                                                                                                                                                                              OUT_S1_ET2_SPRINT_ACTIVE_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                                                                                                                                              OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                              else{
+                                                                                                                                                                                                                                                   OUT_S1_ET2_SPRINT_ACTIVE_IN_2=0;
+                                                                                                                                                                                                                                                   if(OUT_S1_ET3_SPRINT_FILL_OR_IN_2==1){
+                                                                                                                                                                                                                                                                                         OUT_S1_ET2_SPRINT_ACTIVE_IN_2=1;
+                                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                                                         if(SPRINT_NOTREADY_TRAN_1==0){
+                                                                                                                                                                                                                                                                                                                       OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                   }
+     //ETAPA3 LP ON SEQ2: FILL LP SPRINT SYSTEM
+     if(OUT_S1_ET2_SPRINT_ACTIVE_IN_2==1&SPRINT_TRANSOFF==1&TRUE_SPRINT_PSL_OK==1&SPRINT_HP_ON_2_TRAN_2==1){
+                                                                                                            OUT_S1_ET3_SPRINT_FILL_OR_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                            OUT_S1_ET2_SPRINT_ACTIVE_IN_2=0;
+                                                                                                            OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                                                                                            }
+                                                                                                            else{
+                                                                                                                 OUT_S1_ET3_SPRINT_FILL_OR_IN_2=0;
+                                                                                                                 if(SPRINT_TRANSOFF==0||OUT_AND_SPRINT_SPRT_READY_T_COND_2==0||OUT_AND_SPRINT_SPRT_READY_T_COND_3==0||SPRINT_SIM_SPRT==0||SPRINT_SIM_SPRAY==0||OUT_OR_SPRINT_LP_ON_1_SF_SEL_2==0||SPRINT_SPRT_READY_TRAN_5==0){
+                                                                                                                                                                                                                                                                                                                               OUT_S1_ET2_SPRINT_ACTIVE_IN_2=0;
+                                                                                                                                                                                                                                                                                                                               }                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                 }
+     //SECUENCIA2
+     //ETAPA1 HP OFF SEQ1: LP ACTIVE HP WAIT FOR XFER DONE
+     if(OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1==1){
+                                             OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=1;
+                                             }
+                                             else{
+                                                  OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=0;
+                                                  if(OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3==1){
+                                                                                             OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=1;
+                                                                                             }
+                                                  }
+     //ETAPA2 HP OFF SEQ2: LP ACTIVE HOLD TO DRAIN HP
+     if(OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2==1&SPRINT_TRANSOFF==1&SPRINT_N_LPSPRTEN==1&SPRINT_H2OXFRDONE==1){
+                                                                                                             OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                             OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=0;
+                                                                                                             }
+                                                                                                             else{
+                                                                                                                  OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=0;
+                                                                                                                  if(OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4==1){
+                                                                                                                                                             OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=1;
+                                                                                                                                                             }
+                                                                                                                                                             if(OUT_OR_SPRINT_HP_2_LP_1_SF_SEL_1==0){
+                                                                                                                                                                                                     OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=0;
+                                                                                                                                                                                                     }
+                                                                                                                  }
+                                                                                                              
+     //ETAPA3 HP OFF SEQ3: LP ACTIVE DRAINHP/PURGE
+     if(OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3==1&SPRINT_TRANSOFF==1&SPRINT_N_LPSPRTEN==1&SPRINT_DLY_HPHLD==1){
+                                                                                                            OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                            OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=0;
+                                                                                                            OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=0;
+                                                                                                            }
+                                                                                                            else{
+                                                                                                                 OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4=0;
+                                                                                                                 if(SPRINT_TRANSOFF==0||SPRINT_N_LPSPRTEN==0||SPRINT_H2OXFRDONE==0){
+                                                                                                                                                                                    OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=0;
+                                                                                                                                                                                    }
+                                                                                                                                                                                                                              
+                                                                                                                 }                                                                                                     
+     //SECUENCIA3 UNION DE LAS SECUENCIAS
+     //ETAPA FINAL
+     if(OUT_S1_ET3_SPRINT_FILL_OR_IN_2==1&OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4==1&SPRINT_TRANSOFF==1&SPRINT_N_LPSPRTEN==1&SPRINT_FILL_DN==1&SPRINT_DRAINHP_TM==1){
+                                                                                                                                                                 OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                                                                 OUT_S1_ET3_SPRINT_FILL_OR_IN_2=0;
+                                                                                                                                                                 OUT_S2_ET3_IFACE_CORE_ZPRTONOR_IN_4=0;
+                                                                                                                                                                 OUT_S1_ET2_SPRINT_ACTIVE_IN_2=0;
+                                                                                                                                                                 OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                                                                                                                                                 OUT_S2_ET2_IFACE_CORE_ZPRTONOR_IN_3=0;
+                                                                                                                                                                 OUT_S2_ET1_IFACE_CORE_ZPRTONOR_IN_2=0;
+                                                                                                                                                                 }
+                                                                                                                                                                 else{
+                                                                                                                                                                      OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1=0;
+                                                                                                                                                                      if(SPRINT_TRANSOFF==0||SPRINT_N_LPSPRTEN==0||SPRINT_FILL_DN==0||SPRINT_DRAINHP_TM==0){
+                                                                                                                                                                                                                                                            OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1=0;
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                      }
+     //FIN DE PROCESO
+     if(OUT_S3_ETF_IFACE_CORE_ZPRTONOR_IN_1==1&OUT_AND_SPRINT_HP_2_LP_1_T_COND_1==1&SPRINT_N_LPSPRTEN==1){
+                                                                                                          FIN_DE_PROCESO=1;
+                                                                                                          }
+                                                                                                          else{
+                                                                                                               FIN_DE_PROCESO=0;
+                                                                                                               }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 285 SPRINT SYSTEM (HP SEQUENCE LOGIC)//
+
+      //AND SPRINT_OFF_MASK
+      if(SPRINT_N_LPSPRTEN==1&FALSE_SPRINT_HP_SPRNTOK==0){
+                                                          OUT_AND_SPRINT_TRANS_OFF_IN_4=1;
+                                                          }
+                                                          else{
+                                                               OUT_AND_SPRINT_TRANS_OFF_IN_4=0;
+                                                               }
+      //OR SPRINT_BACK_TO_HP
+      if(SPRINT_LP_OFF_2_TRAN_1==1||SPRINT_LP_OFF_3_TRAN_1==1||SPRINT_LP_OFF_4_TRAN_1==1||SPRINT_LP_OFF_5_TRAN_1==1||SPRINT_HP_OFF_2_TRAN_1==1||SPRINT_OFF_1_TRAN_1==1||SPRINT_OFF_2_TRAN_1==1||SPRINT_OFF_3_TRAN_1==1||SPRINT_OFF_4_TRAN_1==1){
+                                                                                                                                                                                                                                                OUT_OR_SPRINT_HP_ON_1_SF_SEL_3=1;
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                else{
+                                                                                                                                                                                                                                                     OUT_OR_SPRINT_HP_ON_1_SF_SEL_3=0;
+                                                                                                                                                                                                                                                     }
+      //OR SPRINT STRT_SPRT
+      if(SPRINT_LP_ON_3_TRAN_2==1||SPRINT_HP_2_LP_1_TRAN_2==1||SPRINT_HP_2_LP_2_TRAN_2==1||SPRINT_HP_2_LP_3_TRAN_2==1||SPRINT_LP_OFF_1_TRAN_1==1||SPRINT_HP_OFF_1_TRAN_1==1){
+                                                                                                                                                                             OUT_OR_SPRINT_LP_2_HP_1_SF_SEL_1=1;
+                                                                                                                                                                             }
+                                                                                                                                                                             else{
+                                                                                                                                                                                  OUT_OR_SPRINT_LP_2_HP_1_SF_SEL_1=0;
+                                                                                                                                                                                  }
+      //SWITCH SPRINT_EVAC_SW1
+      if(SPRINT_JIMMY_SPRT==1){
+                               OUT_B_SW_SPRINT_LP_2_HP_3_T_COND_3=SPRINT_EVAC_TMR;
+                               }
+                               else{
+                                    OUT_B_SW_SPRINT_LP_2_HP_3_T_COND_3=TRUE_SPRINT_EVAC_SW1;
+                                    }
+      //GRAFCET FALTA DE REALIZAR
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 286 SPRINT SYSTEM (SHUTDOWN LOGIC)//
+
+     //OR SPRINT_SPRYRMPOFF
+     if(SPRINT_HP_2_LP_1_TRAN_1==1||SPRINT_HP_2_LP_2_TRAN_1==1||SPRINT_HP_2_LP_3_TRAN_1==1||SPRINT_LP_ON_1_TRAN_1==1||SPRINT_LP_ON_2_TRAN_1==1||SPRINT_LP_ON_3_TRAN_1==1){
+                                                                                                                                                                          OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1=1;
+                                                                                                                                                                          }
+                                                                                                                                                                          else
+                                                                                                                                                                              {
+                                                                                                                                                                              OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1=0;
+                                                                                                                                                                              }
+     //OR SPRINT_GAS_OR_LIQ
+     if(FUEL_SYS_GAS100==1||CORE_DIGITAL_FUELOFF==1){
+                                                     OUT_OR_SPRINT_LP_XFR_WT_T_COND_1=1;
+                                                     }
+                                                     else{
+                                                          OUT_OR_SPRINT_LP_XFR_WT_T_COND_1=0;
+                                                          }
+     //OR SPRINT_SPRTRMPOFF
+     if(SPRINT_LP_2_HP_1_TRAN_1==1||SPRINT_LP_2_HP_2_TRAN_1==1||SPRINT_LP_2_HP_3_TRAN_1==1||SPRINT_LP_2_HP_4_TRAN_1==1||SPRINT_LP_2_HP_5_TRAN_1==1||SPRINT_HP_ON_3_TRAN_1==1){
+                                                                                                                                                                              OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1=1;
+                                                                                                                                                                              }
+                                                                                                                                                                              else{
+                                                                                                                                                                                   OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1=0;
+                                                                                                                                                                                   }
+     //OR SPRNTOFFOR
+     if(SPRINT_HP_ON_1_TRAN_1==1||SPRINT_HP_ON_2_TRAN_1==1){
+                                                            OUT_OR_SPRINT_OFF_1_SF_SEL_2=1;
+                                                            }
+                                                            else{
+                                                                 OUT_OR_SPRINT_OFF_1_SF_SEL_2=0;
+                                                                 }
+     //OR TRAN_4_OR
+     if(SPRINT_HP_PRG_TMR==1||FALSE_SPRINT_TRAN_4_OR==1){
+                                                         OUT_OR_SPRINT_OFF_4_T_COND_3=1;
+                                                         }
+                                                         else{
+                                                              OUT_OR_SPRINT_OFF_4_T_COND_3=0;
+                                                              }
+     //AND SPRINT_MASK_PURGE
+     if(SPRINT_OFF_4_SFC_STEP==1&FALSE_SPRINT_NOT_RUNNIN==0){
+                                                             OUT_AND_SPRINT_JIMMY_SW2_NO=1;
+                                                             }
+                                                             else{
+                                                                  OUT_AND_SPRINT_JIMMY_SW2_NO=0;
+                                                                  }
+                                                                  //EL BLOQUE TIENE VARIAS SALIDAS
+     //OR SPRINT_SPRNT_O_OR
+     if(SPRINT_HP_OFF_2_SFC_STEP==1||SPRINT_LP_OFF_3_SFC_STEP==1||SPRINT_LP_OFF_5_SFC_STEP==1||SPRINT_OFF_1_SFC_STEP==1||SPRINT_OFF_2_SFC_STEP==1||SPRINT_OFF_3_SFC_STEP==1||SPRINT_MASK_PURGE==1||SPRINT_NOTREADY_SFC_STEP==1){
+                                                                                                                                                                                                                                OUT_OR_SPRINT_SPRINT_OUT_IN=1;
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                else{
+                                                                                                                                                                                                                                     OUT_OR_SPRINT_SPRINT_OUT_IN=0;
+                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                     //LA SALIDA VA A UN BLOQUE BNAME SIN SALIDAS (SYSTEM DE-ACTIVATING NO SPRINT WATER INTO TURBINE)
+     //GRAFCET1 //LP OFF DRAIN PATH
+     /*
+     int SPRINT_SEL_SPRINT;
+       int SPRINT_SEL_SPRAY;
+       int SPRINT_RAMP_DOWN_P_LIM_1;
+       int SPRINT_DLY_LPEHLD;
+       int TRUE_EVACUATE_LP_SPRINT_MANIFOLD;
+       int SPRINT_DLY_LPPHLD;
+       int SPRINT_LP_PRG_TMR;
+       
+       int SPRINT_DRAINHP_TM;
+       
+       int SPRINT_EVAC_SW1;
+       
+       int SPRINT_GAS_OR_LIQ;
+       int SPRINT_DN_PRG_TMR;
+       int SPRINT_SPRT_READY_TRAN_1;
+       int SPRINT_TRANSOFF;
+       
+       int OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5;
+       int OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2;
+       int OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2;
+       int OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1;
+       int OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2;
+       int OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2;
+       
+       int OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12;
+       int OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2;
+       
+       int OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3;
+       int OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2;
+       int OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3;
+       int OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK;
+       int OUT_S3_ET5_SPRINT_PURGE_HP_IN_2;
+       int OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3;
+       */
+       
+     //SECUENCIA1
+     //ETAPA1 HOLD FOR SPRAY RAMP DOWN
+     if(OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1==1){
+                                            OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                            }
+                                            else{
+                                                 OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;
+                                                 if(OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2==1){
+                                                                                        OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=1;
+                                                                                        }                                                                                 
+                                            }
+     //ETAPA2 HOLD PRIOR TO LP EVACUATION
+     if(OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_RAMP_DOWN_P_LIM_1==1){
+                                                                                                                      OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                      OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;                                                                                                                                                                                                                                              
+                                                                                                                      }
+                                                                                                                      else{
+                                                                                                                           OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                                                           if(OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2==1){
+                                                                                                                                                                   OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=1;
+                                                                                                                                                                   }
+                                                                                                                                                                   if(OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1==0){
+                                                                                                                                                                                                          OUT_S1_ET1_SPRINT_ACTIVE_IN_1=0;
+                                                                                                                                                                                                          }
+                                                                                                                           }
+     //ETAPA3 EVACUATE LP SPRINT MANIFOLD
+     if(OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_DLY_LPEHLD==1){
+                                                                                                          OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                          OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                                          OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;
+                                                                                                          }
+                                                                                                          else{
+                                                                                                               OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=0;
+                                                                                                               if(OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1==1){
+                                                                                                                                                       OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=1;
+                                                                                                                                                       }
+                                                                                                               if(SPRINT_SEL_SPRINT==0||SPRINT_SEL_SPRAY==0||SPRINT_RAMP_DOWN_P_LIM_1==0){
+                                                                                                                                                                                          OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                                                                                                                          }                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                          }
+     //ETAPA4 WAIT FOR FUEL XFER
+     if(OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&TRUE_EVACUATE_LP_SPRINT_MANIFOLD==1){
+                                                                                                                          OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                          OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=0; 
+                                                                                                                          OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                                                          OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;
+                                                                                                                          }
+                                                                                                                          else{
+                                                                                                                               OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=0;
+                                                                                                                               if(OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2==1){
+                                                                                                                                                                        OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=1;
+                                                                                                                                                                        }
+                                                                                                                               if(SPRINT_SEL_SPRINT==0||SPRINT_SEL_SPRAY==0||SPRINT_DLY_LPEHLD==0){
+                                                                                                                                                                                                   OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=0;
+                                                                                                                                                                                                   } 
+                                                                                                                          }
+     //ETAPA5 HOLD PRIOR TO LP PURGE
+     if(OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1==1&OUT_OR_SPRINT_LP_XFR_WT_T_COND_1==1){
+                                                                                 OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                 OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=0; 
+                                                                                 OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=0; 
+                                                                                 OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                 OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;
+                                                                                 }
+                                                                                 else{
+                                                                                      OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=0;
+                                                                                      if(OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2==1){
+                                                                                                                               OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=1;
+                                                                                                                               }
+                                                                                                                               if(SPRINT_SEL_SPRINT==0||SPRINT_SEL_SPRAY==0||TRUE_EVACUATE_LP_SPRINT_MANIFOLD==0){
+                                                                                                                                                                                                                  OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=0;
+                                                                                                                                                                                                                  }
+                                                                                      }
+     //ETAPA6 PURGE LP SPRINT MANIFOLD
+     if(OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_DLY_LPPHLD==1){
+                                                                                                            OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                            OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=0; 
+                                                                                                            OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=0; 
+                                                                                                            OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=0; 
+                                                                                                            OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=0;
+                                                                                                            OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=0;
+                                                                                                            }
+                                                                                                            else{
+                                                                                                                 OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2=0;
+                                                                                                                 }
+     //GRAFCET2 HP OFF DRAIN PATH//
+     //SECUENCIA2
+     //ETAPA1 HOLD FOR SPRINT RAMP DOWN
+     if(OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1==1){
+                                            OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                            }
+                                            else{
+                                                 OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=0;
+                                                 if(OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2==1){
+                                                                                          OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=1;
+                                                                                          }                                                                                
+                                                 }
+     //ETAPA2 DRAIN HP SPRINT PATH
+     if(OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_RAMP_DOWN_P_LIM_1==1){
+                                                                                                                      OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                      OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=0;                                                                                                                                                                                                                                              
+                                                                                                                      }
+                                                                                                                      else{
+                                                                                                                           OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2=0;
+                                                                                                                           if(OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1==0){
+                                                                                                                                                                  OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=0;
+                                                                                                                                                                  }
+                                                                                                                                                                 
+                                                                                                                           }
+     //GRAFCET3 HP SYSTEM OFF JUMPS HERE//
+     /*
+     int SPRINT_SEL_SPRINT;
+       int SPRINT_SEL_SPRAY;
+       int SPRINT_RAMP_DOWN_P_LIM_1;
+       int SPRINT_DLY_LPEHLD;
+       int TRUE_EVACUATE_LP_SPRINT_MANIFOLD;
+       int SPRINT_DLY_LPPHLD;
+       int SPRINT_LP_PRG_TMR;
+       int SPRINT_LP_OFF_5_TRAN_3;
+       
+       int SPRINT_DRAINHP_TM;
+       
+       int SPRINT_HP_OFF_2_TRAN_3;
+       int SPRINT_EVAC_SW1;
+       
+       int SPRINT_GAS_OR_LIQ;
+       int SPRINT_DN_PRG_TMR;
+       int SPRINT_SPRT_READY_TRAN_1;
+       int SPRINT_TRANSOFF;
+       
+       int OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5;
+       int OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2;
+       int OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2;
+       int OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1;
+       int OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2;
+       int OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2;
+       
+       int OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12;
+       int OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2;
+       
+       int OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3;
+       int OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2;
+       int OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3;
+       int OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK;
+       int OUT_S3_ET5_SPRINT_PURGE_HP_IN_2;
+       int OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3;
+       */
+     //SECUENCIA3
+     //ETAPA1 HOLD FOR SPRAY RAMP DOWN
+     if(SPRINT_HP_OFF_2_TRAN_3==1&OUT_OR_SPRINT_OFF_1_SF_SEL_2==1){
+                                                                   OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                   }
+                                                                   else{
+                                                                        OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                        if(OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2==1){
+                                                                                                                OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=1;
+                                                                                                                }                                                                                 
+                                                                        }
+     //ETAPA2 HOLD PRIOR TO LP EVACUATION
+     if(OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_EVAC_SW1==1){
+                                                                                                        OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                        OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;                                                                                                                                                                                                                                              
+                                                                                                        }
+                                                                                                        else{
+                                                                                                             OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                                                             if(OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3==1){
+                                                                                                                                                      OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=1;
+                                                                                                                                                      }
+                                                                                                                                                      if(SPRINT_HP_OFF_2_TRAN_3==0||OUT_OR_SPRINT_OFF_1_SF_SEL_2==0){
+                                                                                                                                                                                                                     OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                                                                                                                                                                     }
+                                                                                                             }
+     //ETAPA3 EVACUATE LP SPRINT MANIFOLD
+     if(OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2==1&SPRINT_GAS_OR_LIQ==1){
+                                                                  OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                  OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                  OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                  }
+                                                                  else{
+                                                                       OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=0;
+                                                                       if(OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK==1){
+                                                                                                                   OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=1;
+                                                                                                                   }
+                                                                                                                   if(SPRINT_SEL_SPRINT==0||SPRINT_SEL_SPRAY==0||SPRINT_EVAC_SW1==0){
+                                                                                                                                                                                     OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                                                                                                                                     }                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                       }
+     //ETAPA4 WAIT FOR FUEL XFER
+     if(OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_LP_PRG_TMR==1&SPRINT_LP_OFF_5_TRAN_3==1){
+                                                                                                                                      OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                                      OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=0; 
+                                                                                                                                      OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                                                                                      OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                                                                                      }
+                                                                                                                                      else{
+                                                                                                                                           OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=0;
+                                                                                                                                           if(OUT_S3_ET5_SPRINT_PURGE_HP_IN_2==1){
+                                                                                                                                                                                  OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=1;
+                                                                                                                                                                                  }
+                                                                                                                                                                                  if(SPRINT_GAS_OR_LIQ==0){
+                                                                                                                                                                                                           OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=0;
+                                                                                                                                                                                                           } 
+                                                                                                                                           }
+     //ETAPA5 HOLD PRIOR TO LP PURGE
+     if(OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&SPRINT_DN_PRG_TMR==1){
+                                                                                                               OUT_S3_ET5_SPRINT_PURGE_HP_IN_2=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                               OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=0; 
+                                                                                                               OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=0; 
+                                                                                                               OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                                                               OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                                                               }
+                                                                                                               else{
+                                                                                                                    OUT_S3_ET5_SPRINT_PURGE_HP_IN_2=0;
+                                                                                                                    if(OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3==1){
+                                                                                                                                                            OUT_S3_ET5_SPRINT_PURGE_HP_IN_2=1;
+                                                                                                                                                            }
+                                                                                                                                                            if(SPRINT_SEL_SPRINT==0||SPRINT_SEL_SPRAY==0||SPRINT_LP_PRG_TMR==0||SPRINT_LP_OFF_5_TRAN_3==0){
+                                                                                                                                                                                                                                                           OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=0;
+                                                                                                                                                                                                                                                           }
+                                                                                      }
+     //ETAPA6 PURGE LP SPRINT MANIFOLD
+     if(OUT_S3_ET5_SPRINT_PURGE_HP_IN_2==1&SPRINT_SEL_SPRINT==1&SPRINT_SEL_SPRAY==1&OUT_OR_SPRINT_OFF_4_T_COND_3==1&SPRINT_SPRT_READY_TRAN_1==1){
+                                                                                                                                                 OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3=1; //LA ETAPA TIENE VARIAS SALIDAS SE USO UNA DE ELLAS COMO VARIABLE
+                                                                                                                                                 OUT_S3_ET5_SPRINT_PURGE_HP_IN_2=0; 
+                                                                                                                                                 OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=0; 
+                                                                                                                                                 OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=0; 
+                                                                                                                                                 OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=0;
+                                                                                                                                                 OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=0;
+                                                                                                                                                 }
+                                                                                                                                                 else{
+                                                                                                                                                      OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3=0;
+                                                                                                                                                      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 287 SPRINT SYSTEM (SPRINT FULL SYSTEM TEST)//
+
+     //BLOQUE AND SPRINT_ALLOWTEST
+     if(FALSE_SPRINT_TEST_SPRT==1&SFC_STEP_OUTOFOP==1){
+                                                       OUT_SPRINT_ALLOWTEST_AND=1;
+                                                       }
+                                                       else{
+                                                            OUT_SPRINT_ALLOWTEST_AND=0;
+                                                            }
+     //BLOQUE NOT SPRINT_NOTTEST
+     //Llamada de funcion para invertir la entrada OUT_SPRINT_ALLOWTEST_AND
+     NOUT_SPRINT_ALLOWTEST_AND=NOT(OUT_SPRINT_ALLOWTEST_AND);
+     //Salida del inversor UNA SALIDA "SPRINT.TRANSOFF.IN_2
+     //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+     //BLOQUE NOR SPRINT ACT_OR_INI (SPRINT ACTIVE)
+     if(SPRINT_SPRT_READY==1||SPRINT_NOTREADY==1||SPRINT_LP_ON_1==1||SPRINT_LP_OFF_1==1||SPRINT_LP_OFF_3==1||SPRINT_LP_OFF_5==1||SPRINT_HP_ON_1==1||SPRINT_HP_OFF_1==1||SPRINT_HP_OFF_2==1||SPRINT_OFF_1==1||SPRINT_OFF_2==1||SPRINT_OFF_3==1||SPRINT_MASK_PURGE==1){
+                                                                                                                                                                                                                                                                     OUT_SPRINT_ACT_OR_INI_NOR=0;
+                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                                     else{
+                                                                                                                                                                                                                                                                          OUT_SPRINT_ACT_OR_INI_NOR=1;
+                                                                                                                                                                                                                                                                          }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIONES HOJA 288 SPRINT SYSTEM (RAMP AND CONTROL LOGIC)//
+
+     //ZMINUS1_B SPRINT_H20DMD_Z FALTA POR REALIZAR
+     
+     //OR SPRINT_DEC_OR
+     if(HMI_BO_BW_V_125==1||FALSE_SPRINT_DEC_OR==1){
+                                                    OUT_OR_SPRINT_LOWER_AND_IN_2=1;
+                                                    }
+                                                    else{
+                                                         OUT_OR_SPRINT_LOWER_AND_IN_2=0;
+                                                         }
+     //AND SPRINT_LOWER_AND
+     if(IFACE_CORE_Z_MANMODE==1&OUT_OR_SPRINT_LOWER_AND_IN_2==1){
+                                                                 OUT_AND_SPRINT_MAN_RAMP_P_SEL_2=1;
+                                                                 }
+                                                                 else
+                                                                     {
+                                                                      OUT_AND_SPRINT_MAN_RAMP_P_SEL_2=0;
+                                                                      }
+     //OR SPRINT_INC_OR
+     if(HMI_BO_BW_V_126==1||FALSE_SPRINT_INC_OR==1){
+                                                    OUT_OR_SPRINT_RAISE_AND_IN_2=1;
+                                                    }
+                                                    else{
+                                                         OUT_OR_SPRINT_RAISE_AND_IN_2=0;
+                                                         }
+     //AND SPRINT_RAISE_AND
+     if(IFACE_CORE_Z_MANMODE==1&OUT_OR_SPRINT_RAISE_AND_IN_2==1){
+                                                                 OUT_AND_SPRINT_MAN_RAMP_P_SEL_3=1;
+                                                                 }
+                                                                 else{
+                                                                      OUT_AND_SPRINT_MAN_RAMP_P_SEL_3=0;
+                                                                      }
+     //RAMP SPRINT_MAN_RAMP FALTA REALIZAR ESTE BLOQUE
+     
+     //AND SPRINT_MASK_SEL
+     if(SFC_STEP_OUTOFOP_SFC_STEP==1&FALSE_SPRINT_MAN_STRK==1){
+                                                               OUT_AND_SPRINT_CNTL_SW_CTRL=1;
+                                                               }
+                                                               else{
+                                                                    OUT_AND_SPRINT_CNTL_SW_CTRL=0;
+                                                                    }
+     //SWITCH CNTL_SW
+     if(OUT_AND_SPRINT_CNTL_SW_CTRL==1){
+                                        OUT_I_SW_SPRINT_CNTRL_OUT_SEL=1;
+                                        }
+                                        else{
+                                             OUT_I_SW_SPRINT_CNTRL_OUT_SEL=2;
+                                             }
+     //A_MUX_N_1 SPRINT CNTRL_OUT FALTA POR REALIZAR
+     
+     //SWITCH MINFLOW_SW (NC=*5.0 (0.0, 10.0) , NO=*2.0 (0.0, 3.0))
+     //PARA PRUEBAS SE USARA UN NC=5.0 Y UN NO=2.0 PERO HAY QUE CAMBIARLOS POR LOS DATOS MENCIONADOS EN LA DESCRIPCION
+     if(SPRINT_ACT_OR_INI==1){
+                              OUT_A_SW_SPRINT_MINFLOW_IN_1=2.0;
+                              }
+                              else{
+                                   OUT_A_SW_SPRINT_MINFLOW_IN_1=5.0;
+                                   }
+     //LAG_2 SPRINT_FT62231LAG FALTA REALIZAR ESTE BLOQUE
+     
+     //A_MAX SPRINT_MINFLOW FALTA REALIZAR ESTE BLOQUE
+     
+     //SWITCH MAXFLOW_SW (NC=20.0 , NO=8.0)
+     if(SPRINT_HP_ON_3_SFC_STEP==1){
+                                    OUT_A_SW_SPRINT_FLOW_LIM_IN_2=8.0;
+                                    }
+                                    else{
+                                         OUT_A_SW_SPRINT_FLOW_LIM_IN_2=20.0;
+                                         }
+     //A_MIN SPRINT_FLOW_LIM FALTA REALIZAR ESTE BLOQUE
+     
+     //SWITCH H2ODMDSW (NC=SPRINT_H2ODMDSW_NC, NO=*4.0 (0.0, 30.0))
+     //PARA PRUEBAS SE USARA UN NO=4.0 PERO HAY QUE CAMBIARLO POR EL MENCIONADO EN LA DESCRIPCION
+     if(SPRINT_ALLOWTEST==1){
+                             OUT_A_SW_SPRINT_SPRINT_PID_DB_SP=4.0;
+                             }
+                             else{
+                                  OUT_A_SW_SPRINT_SPRINT_PID_DB_SP=SPRINT_H2ODMDSW_NC;
+                                  }
+     //ZMINUS1_B SPRINT_OFF_Z FALTA POR RELAIZAR ESTE BLOQUE
+     
+     //PID_DB SPRINT_PID_DB FALTA POR REALIZARLO
+     
+     //CALCULATE SPRINT_FAST_R_DN FALTA POR RELAIZAR ESTE BLOQUE
+     
+     //CALCULATE SLOW_R_DN FALTA POR RELAIZAR ESTE BLOQUE
+     
+     //A_MIN SPRINT_MIN_BUS FALTA POR RELAIZAR ESTE BLOQUE
+     
+     //RAMP SPRINT_RAMP_DOWN FALTA POR RELAIZAR ESTE BLOQUE
+     
+     //ONE_SHOT SPRINT_DOWN_OS FALTA POR RELAIZAR ESTE BLOQUE
+
+     //OR SPRINT_DOWN_OR
+     if(OUT_O_SHOT_SPRINT_DOWN_OR_IN_1==1||SPRINT_NOTREADY_SFC_STEP==1){
+                                                                        OUT_OR_SPRINT_SPRT_DOWN_IN=1;
+                                                                        }
+                                                                        else{
+                                                                             OUT_OR_SPRINT_SPRT_DOWN_IN=0;
+                                                                             }
+                                                                             //LA SALIDA VA A UN BLOQUE BNAME SIN SALIDAS (SPRINT OFF LINK TO FUEL SYSTEM)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+}
+if (pars==1){
+int p=5/((int)sqrt(1.0f)-1);
+}
+return 1;
+
+}
