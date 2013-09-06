@@ -22,7 +22,7 @@ int MEMPILES =16;       //indice de pila entero //4 vacios //4 cur // 4 cur sent
 int MEMFLOAT= 1024*4*24 ;    //define una memoria con capacidad de 1000 flotantes
 int MEMINT=  1024*4*24  ;     //define una memoria con capacidad de 1000 enteros
 
-
+//Ya estoy bajo control de versiones
 
 int TOTMEM;
 int posPILE;
