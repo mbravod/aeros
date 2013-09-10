@@ -1530,7 +1530,7 @@ for (i=5000;i<10000;i++)
 	  {
 		  if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0)
 		  { 
-			  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL)
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_1 < OUT_A_SW_VENT_INLETT2LSS_IN_2 && OUT_A_SW_VENT_INLETT2LSS_IN_1 < OUT_A_SW_VENT_INLETT2LSS_IN_3 && OUT_A_SW_VENT_INLETT2LSS_IN_1 < OUT_A_SW_VENT_INLETT2LSS_IN_4 && OUT_A_SW_VENT_INLETT2LSS_IN_1 < CORE_ANALOG_T2SEL)
 			  {
 				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
 			  }
@@ -1548,11 +1548,66 @@ for (i=5000;i<10000;i++)
 				  }
 			  }
 		  }
+	  }
+	  else if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0)
+		  { 
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+			  }
+		  }
+	  }
+	  else if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0)
+		  { 
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+			  }
+		  }
+	  }
+	  
+	  if(CORE_ANALOG_T2SEL<=500.0)
+	  {
+		  if(CORE_ANALOG_T2SEL>=-40.0)
+		  { 
+			  if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+			  }
+		  }
+	  }
+
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0)
+		  { 
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+			  }
+		  }
+	  }
+	  else if(OUT_A_SW_VENT_INLETT2LSS_IN_2<-40)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+				  }
+			  }
+		  }
 		  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0)
 		  {
 			  if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0)
 			  { 
-				  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL)
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL)
 				  {
 					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
 				  }
@@ -1562,88 +1617,71 @@ for (i=5000;i<10000;i++)
 		  {
 			  if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0)
 			  { 
-				  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL)
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL)
 				  {
 					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
 				  }
 			  }
 		  }
-                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
-                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
-                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
-                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
-                                                                                                                                                                                                                                         }
-                                                                                     }
-                                                                                     }
-                                               }
-      if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
-                                                                                                                                                                                                                                                                                       }
-                                               }
-                                               }
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_2<-40){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_3&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
-                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
-                                                                                     if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
-                                                                                                                                                                                                                                         OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
-                                                                                                                                                                                                                                         }
-                                                                                     }
-                                                                                     }
-                                               }
-      if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0){
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0){ 
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                                       OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
-                                                                                                                                                                                                                                                                                       }
-                                               }
-                                               }
-                                               if(OUT_A_SW_VENT_INLETT2LSS_IN_3<-40){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0){
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0){ 
-                                                                                     if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL){
-                                                                                                                                                                                                                                                                 OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
-                                                                                                                                                                                                                                                                 }
-                                                                                     }
-                                                                                     }
-                                                                                     if(CORE_ANALOG_T2SEL<=500.0){
-                                                                                     if(CORE_ANALOG_T2SEL>=-40.0){ 
+		  
+		  if(CORE_ANALOG_T2SEL<=500.0)
+		  {
+			  if(CORE_ANALOG_T2SEL>=-40.0)
+			  { 
+				  if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_3&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
+				  }
+			  }
+		  }
+
+      if(OUT_A_SW_VENT_INLETT2LSS_IN_3<=500.0)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_3>=-40.0)
+		  { 
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_3<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_3<CORE_ANALOG_T2SEL)
+			  {
+				  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_3;
+			  }
+		  }
+	  }
+	  
+	  if(OUT_A_SW_VENT_INLETT2LSS_IN_3<-40)
+	  {
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_1>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_1<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_1<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_1;
+				  }
+			  }
+		  }
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_2<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_2>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_2<OUT_A_SW_VENT_INLETT2LSS_IN_4&OUT_A_SW_VENT_INLETT2LSS_IN_2<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_2;
+				  }
+			  }
+		  }
+		  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<=500.0)
+		  {
+			  if(OUT_A_SW_VENT_INLETT2LSS_IN_4>=-40.0)
+			  { 
+				  if(OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_1&OUT_A_SW_VENT_INLETT2LSS_IN_4<OUT_A_SW_VENT_INLETT2LSS_IN_2&OUT_A_SW_VENT_INLETT2LSS_IN_4<CORE_ANALOG_T2SEL)
+				  {
+					  OUT_LSS_BUS_VENT_INLETT2LSS=OUT_A_SW_VENT_INLETT2LSS_IN_4;
+				  }
+			  }
+		  }
+		  if(CORE_ANALOG_T2SEL<=500.0)
+		  {
+			  if(CORE_ANALOG_T2SEL>=-40.0)
+			  { 
                                                                                      if(CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_1&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_2&CORE_ANALOG_T2SEL<OUT_A_SW_VENT_INLETT2LSS_IN_4){
                                                                                                                                                                                                                                          OUT_LSS_BUS_VENT_INLETT2LSS=CORE_ANALOG_T2SEL;
                                                                                                                                                                                                                                          }
