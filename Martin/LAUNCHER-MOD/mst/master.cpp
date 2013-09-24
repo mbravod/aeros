@@ -185,44 +185,6 @@ __try
 	lpfnGetProcessID009 = GetProcAddress(HMODULE (hGetProcIDDLL),"?GetRaw@@YAEH@Z");
 	GetRaw0 = pICFUNC22(lpfnGetProcessID009) ; 
 
-//inicia la carga de direcciones APP's
-printf("\n Cargando App's ...");
-	hGetProcIDDLL_APP_01 = LoadLibrary(L"APP_01.dll"); 
-	if (!hGetProcIDDLL_APP_01  ){
-		printf("No se encontro el dll solicitado: APP_01.dll");
-	}
-
-	
-	lpfnGetProcess_APP_01_ID001 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_01),"?load@@YAXXZ"); 
-	APP_01_LOAD = pICFUNC01_APP_01(lpfnGetProcess_APP_01_ID001) ; 
-	lpfnGetProcess_APP_01_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_01),"?execute@@YAHH@Z");  
-	APP_01_EXECUTE = pICFUNC02_APP_01(lpfnGetProcess_APP_01_ID002) ; 
-
-hGetProcIDDLL_APP_02 = LoadLibrary(L"APP_02.dll"); 
-	if (!hGetProcIDDLL_APP_02  ){
-		printf("No se encontro el dll solicitado: APP_02.dll");
-	}
-
-	
-	lpfnGetProcess_APP_02_ID001 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_02),"?load@@YAXXZ"); 
-	APP_02_LOAD = pICFUNC01_APP_02(lpfnGetProcess_APP_02_ID001) ; 
-	lpfnGetProcess_APP_02_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_02),"?execute@@YAHH@Z");  
-	APP_02_EXECUTE = pICFUNC02_APP_02(lpfnGetProcess_APP_02_ID002) ; 
-
-
-	///app3
-
-	
-hGetProcIDDLL_APP_03 = LoadLibrary(L"APP_03.dll"); 
-	if (!hGetProcIDDLL_APP_03  ){
-		printf("No se encontro el dll solicitado: APP_03.dll");
-	}
-
-	
-	lpfnGetProcess_APP_03_ID001 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_03),"?load@@YAXXZ"); 
-	APP_03_LOAD = pICFUNC01_APP_03(lpfnGetProcess_APP_03_ID001) ; 
-	lpfnGetProcess_APP_03_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_03),"?execute@@YAHH@Z");  
-	APP_03_EXECUTE = pICFUNC02_APP_03(lpfnGetProcess_APP_03_ID002) ; 
 
 	vclient();                  ////////////////////////////////////////////////////////////////////Cambiar en caso necesario
 	cout<<"\n Cliente de memoria iniciado!";
@@ -274,25 +236,26 @@ int main0() {
 //arranca APP_01
 	//APP_01_LOAD();
 //	APP_02_LOAD();
-    APP_03_LOAD();
+   // APP_03_LOAD();
 	int i;
 printf("service ready");
-for (i=0;i<1000;i++){
+//for (i=0;i<1000;i++){
 //APP_01_EXECUTE (0);
 //APP_02_EXECUTE (0);
-APP_03_EXECUTE (0);
-}
+//APP_03_EXECUTE (0);
+//}
 	printf("service ready");
 
 //ahora lee el resultado de la prueba
 	
-	for(i=0;i<10000;i=i+100){
-cout<<i<<"\t"<<vGetSMemvF(i)<<"\t";
-if (i%400==0) {cout <<"\n";}
+	for(i=0;i<10000;i++){
+vSetSMemvI(i+3,i);
 	}
-//system("pause");
+
+system("pause");
 //genera un error en tiempo de ejecucion
 //int p=5/((int)sqrt(1.0f)-1);
 //Cierra el servicio de memoria compartida
-return -1;
+
+	return -1;
 }

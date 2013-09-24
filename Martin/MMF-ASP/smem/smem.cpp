@@ -171,7 +171,7 @@ init();
                     PAGE_READWRITE,         // Todos pueden leer y escribir
                     0,                      // Tamano: 64-bits Superiores
                     TOTMEM,                 // Tamano: 64-bits Inferiores
-                    TEXT("PROCESS_INTEROP_MEM")); // Nombre del archivo virtual
+                    TEXT("ASP_CLIENT")); // Nombre del archivo virtual
      if (hMapObject == NULL) 
         printf ("\n Falla de inicializacion...Sin memoria");
      fInit = (GetLastError() != ERROR_ALREADY_EXISTS);
