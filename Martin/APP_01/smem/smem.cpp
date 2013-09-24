@@ -270,7 +270,7 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
     double UInter=0.0;
     double MasaAceiteInter=0.0;
     double CITempAceiteInter=298.15;
-    double PotMaxVentilador=2237.103;
+    double PotMaxVentilador2237.103;
     double TaoVentilador=0.05;
     double CIPotVentilador=0.0;
     double PotMaxBomba=149140.2;

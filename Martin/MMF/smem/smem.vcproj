@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="APP_03"
+	Name="mmf"
 	ProjectGUID="{280844DF-75BE-45DF-8B72-D0348B031619}"
 	RootNamespace="smem"
 	Keyword="ManagedCProj"
@@ -193,10 +193,6 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
-			<File
-				RelativePath=".\Functions.h"
-				>
-			</File>
 			<File
 				RelativePath=".\smem.cpp"
 				>

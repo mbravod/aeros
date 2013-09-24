@@ -9,7 +9,7 @@ int main0(int pars);
 #include <cstdlib>
 #include <iostream>
 //Librerias auxiliares
-#include "Functions.h"
+#include <Functions.h>
 
 //Fin de Librerias Auxiliares
 
