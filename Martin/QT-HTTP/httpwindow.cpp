@@ -48,9 +48,9 @@ HttpWindow::HttpWindow(QWidget *parent)
     : QDialog(parent)
 {
 #ifndef QT_NO_OPENSSL
-    urlLineEdit = new QLineEdit("http://148.204.35.72/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=3.1415&complete=TRUE");  //check for SSL SUPPORT DJSC
+    urlLineEdit = new QLineEdit("https://cncaoi.com/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=3.1415&complete=FALSE");  //check for SSL SUPPORT DJSC
 #else
-    urlLineEdit = new QLineEdit("http://qt.nokia.com/");
+    urlLineEdit = new QLineEdit("http://cncaoi.com/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=3.1415&complete=FALSE");
 #endif
 
     urlLabel = new QLabel(tr("&URL:"));
@@ -105,9 +105,10 @@ postData.addQueryItem("var_type_upload", "i,i,i,i,i,i,f");
 postData.addQueryItem("var_type_value",  "5,6,7,8,9,0,3.1415");
 QNetworkRequest request(url);
 request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
+
 //networkManager->post(request, postData.encodedQuery());
 
-    reply = qnam.get(QNetworkRequest(url));
+    reply = qnam.post(QNetworkRequest(url),postData.encodedQuery());
     connect(reply, SIGNAL(finished()),
             this, SLOT(httpFinished()));
     connect(reply, SIGNAL(readyRead()),
@@ -126,12 +127,6 @@ void HttpWindow::downloadFile()
         fileName = "index.html";
 
     if (QFile::exists(fileName)) {
-        if (QMessageBox::question(this, tr("HTTP"), 
-                                  tr("There already exists a file called %1 in "
-                                     "the current directory. Overwrite?").arg(fileName),
-                                  QMessageBox::Yes|QMessageBox::No, QMessageBox::No)
-            == QMessageBox::No)
-            return;
         QFile::remove(fileName);
     }
 
