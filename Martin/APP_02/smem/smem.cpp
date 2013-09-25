@@ -417,7 +417,7 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
     double TabChiller;              //Potencia Consumida en el Tablero del Chiller.
     double TabCompAire;             //Potencia Consumida en el Tablero del Compresor de Aire.
     double TabBCI;                  //Potencia Consumida en el Tablero de la Bomba Contra Incendio.
-    double Tiempo;                  //El tiempo del timer;
+//    double Tiempo;                  //El tiempo del timer;
     int OnOffGenerador;             //Señal de Arranque y Paro del Generador de la Unidad.
     int OnOffGeneradorAuxiliar;     //Señal de Arranque y Paro del Generador Auxiliar.
     int OnOffC92BT221A;             //Señal de Apertura y Cierre de la Cuchilla 92BT221A.
@@ -903,7 +903,7 @@ for (i=5000;i<10000;i++){
     MasaCompresor=(PresionAmbiente*VolCompresor)/(R_Aire*TempAmbiente);
     TempAireCompresor=TempOutAire(CIPotComp,(FlujoCompresor*CpAire),TempAmbiente,(MasaCompresor*CvAire*TaoCompresor),CITempAireComp,FallaCompresor);
     TempAireTanque=CITempAireComp;
-    PresionOutComp=((PresionAmbiente*(qPow(((TempAireTanque)/(TempAmbiente)),(3.5*0.48))))/PotMaxCompresor)*CIPotComp;
+    PresionOutComp=((PresionAmbiente*(pow(((TempAireTanque)/(TempAmbiente)),(3.5*0.48))))/PotMaxCompresor)*CIPotComp;
     FlujoOutSecador=FlujoCompresor-(FlujoCompresor*HumedadEspecifica*EficienciaSecador)/(DensidadAgua*0.78);
     
     DensidadAire=(CIPresionTanque)/(R_Aire*CITempAireComp);
@@ -949,9 +949,9 @@ for (i=5000;i<10000;i++){
     }
     else
     {
-        CFAGeneradorU=qSqrt((CIGeneradorUnidadP*I51G1)/(3*VFAGeneradorU));
-        CFBGeneradorU=qSqrt((CIGeneradorUnidadP*I51G1)/(3*VFBGeneradorU));
-        CFCGeneradorU=qSqrt((CIGeneradorUnidadP*I51G1)/(3*VFCGeneradorU));
+        CFAGeneradorU=sqrt((CIGeneradorUnidadP*I51G1)/(3*VFAGeneradorU));
+        CFBGeneradorU=sqrt((CIGeneradorUnidadP*I51G1)/(3*VFBGeneradorU));
+        CFCGeneradorU=sqrt((CIGeneradorUnidadP*I51G1)/(3*VFCGeneradorU));
     }
 
 
@@ -972,7 +972,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CGeneradorAux=qSqrt((PotElectrica*I50ANG1)/CIVGenAux);
+            CGeneradorAux=sqrt((PotElectrica*I50ANG1)/CIVGenAux);
         }
 
     }
@@ -1000,9 +1000,9 @@ for (i=5000;i<10000;i++){
     {
         if(Conexion1T21A==1 || Conexion2T21A==1)
         {
-            CFAT21A=qSqrt((CIGeneradorUnidadP)/(3*VFAT21A));
-            CFBT21A=qSqrt((CIGeneradorUnidadP)/(3*VFBT21A));
-            CFCT21A=qSqrt((CIGeneradorUnidadP)/(3*VFCT21A));
+            CFAT21A=sqrt((CIGeneradorUnidadP)/(3*VFAT21A));
+            CFBT21A=sqrt((CIGeneradorUnidadP)/(3*VFBT21A));
+            CFCT21A=sqrt((CIGeneradorUnidadP)/(3*VFCT21A));
         }
         else
         {
@@ -1024,7 +1024,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFAT20AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFAT20AuxG1));
+            CFAT20AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFAT20AuxG1));
         }
 
         VFBT20AuxG1=(0.178260869)*VFBT21A*I52AuxG1;
@@ -1035,7 +1035,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFBT20AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFBT20AuxG1));
+            CFBT20AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFBT20AuxG1));
         }
 
         VFCT20AuxG1=(0.178260869)*VFCT21A*I52AuxG1;
@@ -1046,7 +1046,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFCT20AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFCT20AuxG1));
+            CFCT20AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T20AuxG1)/(3*VFCT20AuxG1));
         }
 
     }
@@ -1060,7 +1060,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFAT20AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFAT20AuxG1));
+            CFAT20AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFAT20AuxG1));
         }
 
         VFBT20AuxG1=(5.609756098)*CIVGenAux*I501AuxG1*I50ANG1;
@@ -1071,7 +1071,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFBT20AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFBT20AuxG1));
+            CFBT20AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFBT20AuxG1));
         }
 
         VFCT20AuxG1=(5.609756098)*CIVGenAux*I501AuxG1*I50ANG1;
@@ -1082,7 +1082,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFCT20AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFCT20AuxG1));
+            CFCT20AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T20AuxG1)/(3*VFCT20AuxG1));
         }
 
     }
@@ -1106,7 +1106,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFAT00AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFAT00AuxG1));
+            CFAT00AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFAT00AuxG1));
         }
 
         VFBT00AuxG1=(0.11707317)*VFBT20AuxG1;
@@ -1117,7 +1117,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFBT00AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFBT00AuxG1));
+            CFBT00AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFBT00AuxG1));
         }
 
         VFCT00AuxG1=(0.11707317)*VFCT20AuxG1;
@@ -1128,7 +1128,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFCT00AuxG1=qSqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFCT00AuxG1));
+            CFCT00AuxG1=sqrt((CIGeneradorUnidadP*Conexion1T00AuxG1)/(3*VFCT00AuxG1));
         }
 
     }
@@ -1142,7 +1142,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFAT00AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFAT00AuxG1));
+            CFAT00AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFAT00AuxG1));
         }
 
         VFBT00AuxG1=(0.11707317)*CIVGenAux*I50ANG1*I502AuxG1;
@@ -1153,7 +1153,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFBT00AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFBT00AuxG1));
+            CFBT00AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFBT00AuxG1));
         }
 
         VFCT00AuxG1=(0.11707317)*CIVGenAux*I50ANG1*I502AuxG1;
@@ -1164,7 +1164,7 @@ for (i=5000;i<10000;i++){
         }
         else
         {
-            CFCT00AuxG1=qSqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFCT00AuxG1));
+            CFCT00AuxG1=sqrt(((CIPotElec*1000000)*Conexion2T00AuxG1)/(3*VFCT00AuxG1));
         }
 
     }
