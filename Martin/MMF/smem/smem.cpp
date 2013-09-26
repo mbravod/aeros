@@ -11,9 +11,9 @@
 
 using namespace std;
 
-LPVOID lpvMem = NULL;      // pointer to shared memory
-HANDLE hMapObject = NULL;  // handle to file mapping
-HANDLE hMapObjectx = NULL;  // handle to file mapping
+LPVOID MMF_MEMPTR = NULL;      // pointer to shared memory
+HANDLE MMF_SECTION = NULL;  // handle to file mapping
+HANDLE MMF_SECTIONx = NULL;  // handle to file mapping
 
 __declspec(dllexport) void __cdecl clients() ;
 __declspec(dllexport) int __cdecl getQT() ;
@@ -65,7 +65,7 @@ int p0;
 
 __declspec(dllexport) void __cdecl SetFloat(float ax,int pos) 
 {
-p0=(int)int (int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
+p0=(int)int (int(MMF_MEMPTR)+int(OFFSET_MEMFLOAT)+int(pos*4));
 c=(int *) p0;
 bf =(float *) c;
     *bf=ax;    
@@ -78,7 +78,7 @@ __declspec(dllexport) void __cdecl SetRaw(unsigned char a,int pos)
    
 unsigned char  *b;
 int p0;
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
+p0=(int)int(int(MMF_MEMPTR)+int(OFFSET_MEMFLOAT)+int(pos));
 b=(unsigned char *)p0;
 *b=a;     
 } 
@@ -92,7 +92,7 @@ int *c;
 
 int p0;
  
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
+p0=(int)int(int(MMF_MEMPTR)+int(OFFSET_MEMFLOAT)+int(pos));
 c=(int *) p0;
 b =(unsigned char *) c;
       a=  *b;
@@ -103,7 +103,7 @@ return a;
 __declspec(dllexport) float __cdecl GetFloat(int pos) 
 { 
  
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
+p0=(int)int(int(MMF_MEMPTR)+int(OFFSET_MEMFLOAT)+int(pos*4));
 c=(int *) p0;
 bf =(float *) c;
       af=  *bf;
@@ -117,7 +117,7 @@ __declspec(dllexport) int __cdecl GetInt(int pos)
 { 
 
 
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
+p0=(int)int(int(MMF_MEMPTR)+int(OFFSET_MEMINT)+int(pos*4));
 
 c=(int *) p0;
 
@@ -135,7 +135,7 @@ __declspec(dllexport) void __cdecl SetInt(int a,int pos)
    
 
   
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
+p0=(int)int(int(MMF_MEMPTR)+int(OFFSET_MEMINT)+int(pos*4));
 c=(int *) p0;
 b =(int *) c;
     *b=a;    
@@ -157,47 +157,38 @@ bool fInit;
 BOOL fIgnore; 
 __declspec(dllexport) void __cdecl masterend() {
 
- fIgnore = UnmapViewOfFile(lpvMem);  // se finaliza la memoria compartida
- fIgnore = CloseHandle(hMapObject);        
+ fIgnore = UnmapViewOfFile(MMF_MEMPTR);  // se finaliza la memoria compartida
+ fIgnore = CloseHandle(MMF_SECTION);        
 }
 
-__declspec(dllexport) void __cdecl client() 
+__declspec(dllexport) void __cdecl client(int instance) 
 { 
-init();
-    printf ("Accediendo a Memoria compartida V 36 KB");
-     hMapObject = CreateFileMapping( 
-                    INVALID_HANDLE_VALUE ,  // Permite crear FileMapping
-                    NULL,                   // Sin Atributos de seguridad
-                    PAGE_READWRITE,         // Todos pueden leer y escribir
-                    0,                      // Tamano: 64-bits Superiores
-                    TOTMEM,                 // Tamano: 64-bits Inferiores
-                    TEXT("PROCESS_INTEROP_MEM")); // Nombre del archivo virtual
-     if (hMapObject == NULL) 
+    init();
+wchar_t sinstance[250];
+swprintf(sinstance,L"Global\\PROCESS_INTEROP_MEM_%d",instance);
+
+    printf ("\nAccediendo al servicio MMF mem_size 0x%x bytes @%d",TOTMEM,instance);
+     MMF_SECTION = CreateFileMapping(INVALID_HANDLE_VALUE ,NULL,PAGE_READWRITE, 0,TOTMEM, sinstance); // Nombre del archivo virtual
+     if (MMF_SECTION == NULL) 
         printf ("\n Falla de inicializacion...Sin memoria");
      fInit = (GetLastError() != ERROR_ALREADY_EXISTS);
      if (fInit==true){  
-   
-         printf ("\n Este programa se iniciado como MASTER de la memoria compartida");
-   
+         printf ("\n Este programa se iniciado como ADMIN de MMF");
      }
      else{
-        printf ("\n Este programa se iniciado como cliente de la memoria compartida");
+        printf ("\n Este programa se iniciado como USER de MMF");
         }
-     lpvMem = MapViewOfFile(hMapObject,// Obtencion del puntero a la memoria compartida
-                            FILE_MAP_ALL_ACCESS, // Acceso sin restriciones
-                            0,              // leer todo
-                            0,              // 
-                            0);             // 
-     if (lpvMem == NULL) 
+     MMF_MEMPTR = MapViewOfFile(MMF_SECTION, FILE_MAP_ALL_ACCESS, 0, 0,   0);             // 
+     if (MMF_MEMPTR == NULL) 
          printf ("\n No se creo apuntador");            
-     printf ("\n Listo para acceder a la memoria ",TOTMEM);
+     printf ("\n Inicializion de Servicio...Lista ",TOTMEM);
 
 // INICIA LA MEMORIA COMPARTIDA
-p0=(int)lpvMem+4;
+p0=(int)MMF_MEMPTR+4;
 c=(int *) p0;
 b =(int *) c;
 *b=0;//posPILE; 
-p0=(int)lpvMem+8;
+p0=(int)MMF_MEMPTR+8;
 c=(int *) p0;
 b =(int *) c;
 *b=0;//posPILEF; 
@@ -210,7 +201,7 @@ float __stdcall  GetFloatvb(int pos,int ax)
 { 
 	pos=pos-ax+1;
 //	Sleep(1);
-	client();
+	client(0);
 	//Sleep(1);
 float a;
 float *b;
@@ -221,7 +212,7 @@ int p0;
 
 
 // fin de proteccion  
-p0=(int)lpvMem+OFFSET_MEMFLOAT+pos*4;
+p0=(int)MMF_MEMPTR+OFFSET_MEMFLOAT+pos*4;
 
 c=(int *) p0;
 
@@ -239,7 +230,7 @@ int __stdcall GetIntvb(int pos,int ax)
 { 
 	pos=pos-ax+1;
 	//Sleep(1);
-	client();
+	client(0);
 	//Sleep(1);
 
 int a;
@@ -250,7 +241,7 @@ int p0;
 //verifica el candado
 
 // fin de proteccion  
-p0=(int)lpvMem+OFFSET_MEMINT+pos*4;
+p0=(int)MMF_MEMPTR+OFFSET_MEMINT+pos*4;
 
 c=(int *) p0;
 

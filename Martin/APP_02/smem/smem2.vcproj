@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="mmf"
-	ProjectGUID="{280844DF-75BE-45DF-8B72-D0348B031619}"
+	Name="APP_02"
+	ProjectGUID="{57F3ED4D-5AE7-4C92-97FA-64D818651BCF}"
 	RootNamespace="smem"
 	Keyword="ManagedCProj"
 	TargetFrameworkVersion="196613"

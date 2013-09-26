@@ -9,124 +9,12 @@ int main0(int pars);
 #include <cstdlib>
 #include <iostream>
 //Librerias auxiliares
-#include <Functions.h>
+#include "..\\..\\mmf.h"
+#include "Functions.h"
 
 //Fin de Librerias Auxiliares
 
 using namespace std;
-
-LPVOID lpvMem = NULL;      // pointer to shared memory
-HANDLE hMapObject = NULL;  // handle to file mapping
-HANDLE hMapObjectx = NULL;  // handle to file mapping
-
-__declspec(dllexport) int __cdecl execute() ;
-__declspec(dllexport) void __cdecl load() ;
-int MEMPILES =16;       //indice de pila entero //4 vacios //4 cur // 4 cur sent
-int MEMFLOAT= 1024*4*24 ;    //define una memoria con capacidad de 1000 flotantes
-int MEMINT=  1024*4*24  ;     //define una memoria con capacidad de 1000 enteros
-
-
-
-int TOTMEM;
-int posPILE;
-int posPILEF;
-//calcula las variables de offset
-
-int OFFSET_MEMFLOAT;
-int OFFSET_MEMINT;
-int OFFSET_MEMMODDATA;
-
-#include <fstream>
-
-
-void init(){
-	//RESERVAMOS UNOS BYTES INTERNOS JEJEJ
-OFFSET_MEMFLOAT= 16;
-OFFSET_MEMINT= 16;//tienen la misma direccion
-OFFSET_MEMMODDATA=OFFSET_MEMFLOAT+MEMFLOAT;
-TOTMEM= OFFSET_MEMMODDATA+MEMFLOAT+1024;
-
-}
-
-
-float af;
-float *bf;
-int a;
-int *b;
-int *c;
-int *p;
-int p0;
-
-
-
-
- void SetFloat(float ax,int pos) 
-{
-p0=(int)int (int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
-c=(int *) p0;
-bf =(float *) c;
-    *bf=ax;    
-} 
-  
-
-
-void SetRaw(unsigned char a,int pos) 
-{
-   
-unsigned char  *b;
-int p0;
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
-b=(unsigned char *)p0;
-*b=a;     
-} 
-
-
- unsigned char GetRaw(int pos) 
-{ 
-unsigned char a;
-unsigned char *b;
-int *c;
-int p0;
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos));
-c=(int *) p0;
-b =(unsigned char *) c;
-a=  *b;
-return a;
-}
-
-
- float  GetFloat(int pos) 
-{ 
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMFLOAT)+int(pos*4));
-c=(int *) p0;
-bf =(float *) c;
-af=  *bf;
-return af;
-}
-
-
-
-
-int  GetInt(int pos) 
-{ 
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
-c=(int *) p0;
-b =(int *) c;
-a=  *b;
-return a;
-}
-
-
-void  SetInt(int a,int pos) 
-{
-p0=(int)int(int(lpvMem)+int(OFFSET_MEMINT)+int(pos*4));
-c=(int *) p0;
-b =(int *) c;
-    *b=a;    
-} 
-
-
-
 
 
 
@@ -144,50 +32,11 @@ typedef  void (__stdcall * pICDLLFUNC01)(EXCEPTION_POINTERS* pExp, DWORD dwExpCo
 typedef  void (__stdcall * pICDLLFUNC02)(char ID[]);//(char *); 
    pICDLLFUNC02 MYID; 
 
-bool fInit;  
-BOOL fIgnore; 
 
-__declspec(dllexport) void __cdecl load() 
+
+__declspec(dllexport) void __cdecl load(int instance) 
 { 
-init();
-    printf ("\n Programa APP_03");
-     hMapObject = CreateFileMapping( 
-                    INVALID_HANDLE_VALUE ,  // Permite crear FileMapping
-                    NULL,                   // Sin Atributos de seguridad
-                    PAGE_READWRITE,         // Todos pueden leer y escribir
-                    0,                      // Tamano: 64-bits Superiores
-                    TOTMEM,                 // Tamano: 64-bits Inferiores
-                    TEXT("PROCESS_INTEROP_MEM")); // Nombre del archivo virtual
-     if (hMapObject == NULL) 
-        printf ("\n Falla de inicializacion...Sin memoria");
-     fInit = (GetLastError() != ERROR_ALREADY_EXISTS);
-     if (fInit==true){  
-   
-         printf ("\n Este programa se iniciado como MASTER de la memoria compartida");
-   
-     }
-     else{
-        printf ("\n Este programa se iniciado como cliente de la memoria compartida");
-        }
-     lpvMem = MapViewOfFile(hMapObject,// Obtencion del puntero a la memoria compartida
-                            FILE_MAP_ALL_ACCESS, // Acceso sin restriciones
-                            0,              // leer todo
-                            0,              // 
-                            0);             // 
-     if (lpvMem == NULL) 
-         printf ("\n No se creo apuntador");            
-     printf ("\n Listo para acceder a la memoria ",TOTMEM);
-
-// INICIA LA MEMORIA COMPARTIDA
-p0=(int)lpvMem+4;
-c=(int *) p0;
-b =(int *) c;
-*b=0;//posPILE; 
-p0=(int)lpvMem+8;
-c=(int *) p0;
-b =(int *) c;
-*b=0;//posPILEF; 
-
+initmmf("APP 03",instance);
 
 //carga el debugger
 
