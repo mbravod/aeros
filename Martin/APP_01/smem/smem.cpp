@@ -270,7 +270,7 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
     double UInter=0.0;
     double MasaAceiteInter=0.0;
     double CITempAceiteInter=298.15;
-    double PotMaxVentilador2237.103;
+    double PotMaxVentilador=2237.103;
     double TaoVentilador=0.05;
     double CIPotVentilador=0.0;
     double PotMaxBomba=149140.2;
@@ -322,6 +322,8 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
     double Tiempo=0.0;
     double DensidadAceite=880.0;
 
+	double Patm=101300;
+
     int FallaVent=1;
     int FallaBomb=1;
     int OnOffVentilador=0;
@@ -337,6 +339,134 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
 
 ///////////////////////COMBUSTION///////////////////////////////////////////
 
+
+////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////CONTROL///////////////////////////////////////////
+
+	int FALSE_CLUTCH_Y;//IF CLUTCH TUNE TRUE
+int CORE_DIGITAL_FUELON;
+int SFC_STEP_RST_AND_ST;//SHUTDOWN RESTART
+int OUT_RESTRTMASK;
+int SFC_STEP_AUXFAN_DLY;//UNIT RUNNING 
+int OUT_CLRPMPOR;
+int SPEED_SW_COASTDOWN;//ZERO SPEED INPUT 
+int HYD_STRT_NOT_PMPON;
+int OUT_CLUTCHOFF;
+int FALSE_SEL_OFF;//SELECT SYSTEM OFF
+int OUT_MASK_ON;
+int LATCH_DE1364LAT;
+int ALARM_RESET;
+int HYD_STRT_LSLL1601SD;
+int FALSE_PROB_LAT;
+int LATCH1_PROB_LAT;
+int OUT_PMP_OFF;
+int HYD_STRT_DE1364A;//SALIDA HYDR STAR CLUTCH LUBE/COOLER PUMP-START-STOP SALIDA A PLC
+int HYD_STRT_TRIPPED;
+int SFC_STEP_CRNKTMRDN;//COOLDOWN CRANK TIMER DONE
+int SPEED_SW_N25GT4600;
+int SHUTDOWN_FOURHRLOK;//FOUR HOUR LOCK OUT
+int SHUTDOWN_SDN_CORE;//SHUTDOWN NO MOTOR INPUT (ESN)
+int SFC_STEP_CRANKSTOP;//CRANK ABORT 
+int SFC_STEP_ES_1;//STOP MOTOR BEFORE MOTOR 
+int SFC_STEP_WWCRANK_11;
+int OUT_KILL_PUMP;
+int HYD_STRT_CNK_SEQPRM;//SALIDA (INTLK) STOP ANY CRANK STARTER NOT READY 
+int LATCH_STRT_LATCH;
+int TRUE_MASK_PMP;
+int OUT_MASK_PMP;
+int OUT_OUT_AND_STRT_MASK_PMP[5];
+double TP_out_AND_STRT_MASK_PMP=10;
+int Nout_AND_STRT_MASK_PMP;
+int Nout_out_AND_STRT_MASK_PMP;
+int out_SFC_STEP_AUXFAN_DLY[5];
+double TP_SFC_STEP_AUXFAN_DLY=10;
+int HYD_STRT_DLY_SD;
+int out_HYD_STRT_DLY_SD[5];
+double TP_HYD_STRT_DLY_SD=10;
+int HYD_STRT_MOT1615;
+int out_HYD_STRT_MOT1615[5];//"HYDRAULIC STARTER PUMP" SALIDA A PLC
+double TP_HYD_STRT_MOT1615=12;
+//SHEET 221
+
+int CORE_DIGITAL_RESET;
+int HYD_STRT_PSLL1605SD;
+int HYD_STRT_PDSH1600SD;
+int LATCH1_TRIPPED;
+int HYD_STRT_NOTSTART;
+int OUT_ST_A_OFFOR;
+int SFC_STEP_STRTR_SPD;
+double NC_OFFSPDSEL;
+double NO_OFFSPDSEL;
+double OUT_OFFSPDSEL;
+int SFC_STEP_LO_SPD_OR;
+int HYD_STRT_PUMPONDLY;
+int OUT_MASK_1;
+int SFC_STEP_HI_SPD_OR;
+int OUT_MASK_2;
+int FUEL_SYS_GAS100;
+double NC_CSTSPD_SW;
+double NO_CSTSPD_SW;
+double OUT_CSTSPD_SW;
+int SFC_STEP_HIEST_SEL;
+int OUT_MASK_3;
+double CORE_ANALOG_N25SEL;
+int TRUE_LIQ_GAS_2;
+double NO_LIQ_GAS_2;
+double NC_LIQ_GAS_2;
+double OUT_LIQ_GAS_2;
+int OUT_N25COMP1;
+int OUT_N25COMP2;
+int HYD_STRT_MOV_UP_Z;
+int LT_N25COMP1;
+int GT_N25COMP1;
+int LT_N25COMP2;
+int GT_N25COMP2;
+int OUT_RATE_SEL1;
+int OUT_RATE_SEL2;
+int OUT_RATE_SEL3;
+int HYD_STRT_MASK1;
+int HYD_STRT_MASK3;
+int OUT_FAIL_OR;
+int SPEED_SW_N25LT1200;
+int SPEED_SW_N25LT1700;
+int OUT_FLSPD_SW;
+int HYD_STRT_STRT_LATCH;
+int A1_A04_MPU_N25_MAX;
+int OUT_N25LT200;
+int FALSE_N25LO_MASK;
+int OUT_N25LO_MASK;
+int OUT_N25LT_DEL;
+int SHUTDOWN_SD_RESET;
+int OUT_FAILTOACC;
+int FL_DEL_TMR;//
+int out_FL_DEL_TMR[5];
+double TP_FL_DEL_TMR=20;
+int CRANK_TMR;
+int out_CRANK_TMR[5];
+double TP_CRANK_TMR=30;
+int HYD_STRT_STRT_FAIL1;//N25 LT 1200 20 SEC
+//SHEET 222
+int N1N34_BI_LSLL1601;//"START SKID HYD RESERVOIR OIL LEVEL LO" ENTRADA PLC Y SALIDA
+int N3N41_BI_HYD_ST_AUX;//"START SKID MOTOR STARTER AUX CONTACT" ENTRADA PLC
+int N1N34_BI_TSH1602;//"START SKID HYD RESERVOIR OIL TEMP HI" ENTRADA PLC mayor 180°f
+int N1N34_BI_TSH1603;//"START SKID HYD RESERVOIR OIL TEMP LO" ENTRADA PLC
+int N1N34_BI_PDSHH1600;//"START SKID HYD PUMP VACUUM DELTA P HI" ENTRADA PLC
+int N1N34_BI_PSLL1605;//"START SKID HYUD PUMP PRESSURE LO" ENTRADA PLC
+int SFC_STEP_START_INIT;
+int SFC_STEP_CRANKING;
+int HYD_STRT_LSLL1601AL;//START SKID HYD RESERVOIR OIL LEVEL LO
+int HYD_STRT_AUXCNTFLT;//START SKID MOTOR STARTER AUX CONTACT ALM
+int HYD_STRT_AUXCONTDLY;
+int out_HYD_STRT_AUXCONTDLY[5];
+double TP_HYD_STRT_AUXCONTDLY=5;
+int HYD_STRT_PDSHH1600D;
+int out_HYD_STRT_PDSHH1600D[5];
+double TP_HYD_STRT_PDSHH1600D=5;
+int HYD_STRT_MOT1615DLY;
+int out_HYD_STRT_MOT1615DLY[5];
+double TP_HYD_STRT_MOT1615DLY=13;
+int HYD_STRT_STRTORCRNK;
 
 ////////////////////////////////////////////////////////////////////////////
 
@@ -700,7 +830,7 @@ for (i=0;i<5000;i++){
 	}
     PotenciaBomba=PotBomba(out_HYD_STRT_MOT1615[1],PotMaxBomba,TaoBomba,CIPotBomba,FallaBomb)*N1N34_BI_PDSHH1600;
     PresionBombS=(2413165.052609/PotMaxBomba)*CIPotBomba;
-	if(FlujoBombS>0.03 && PresionBombaS<1723689.323292)
+	if(FlujoBombS>0.03 && PresionBombS<1723689.323292)
 	{
 		N1N34_BI_PSLL1605=1;
 	}
@@ -713,7 +843,7 @@ for (i=0;i<5000;i++){
     FlujoBombP=((0.0454249/PotMaxBomba)*CIPotBomba)*Variador;
     FlujoOutTanque=FlujoBombS;
     Nivel_Tanque=NivelTanque(FlujoInTanque,FlujoOutTanque,LargoTanque,AnchoTanque,CINivelTanque);
-	if(CInivelTanque<0.1524)
+	if(CINivelTanque<0.1524)
 	{
 		N1N34_BI_LSLL1601=1;
 	}
@@ -749,7 +879,7 @@ for (i=0;i<5000;i++){
 ///////***********************PROBLEMAS EN EL INTERCAMBIADOR!!!***************************************///////////////
         TempAceiteIntercambiador=TempAceiteInter(UInter,TempAmbiente,(0.333116666*CpAceite),371.6,(0.333116666*CpAceite),(0.333116666*CpAceite),CITempAceiteInter);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        qDebug()<<UInter<<TempAmbiente<<(0.333116666*CpAceite)<<CpAceite<<CITempAceiteAH<<(0.333116666*CpAceite)<<CpAceite<<MasaAceiteInter<<CpAceite<<CITempAceiteInter;
+        //qDebug()<<UInter<<TempAmbiente<<(0.333116666*CpAceite)<<CpAceite<<CITempAceiteAH<<(0.333116666*CpAceite)<<CpAceite<<MasaAceiteInter<<CpAceite<<CITempAceiteInter;
 
     }
 ///////////////////////////////////////////////////////////////////////////////////////////
