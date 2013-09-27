@@ -13,7 +13,7 @@ int main0();
 #include <strsafe.h>
 using namespace std;
 #include <Winbase.h >
-
+int GLOBAL_INSTANCE;
 //----------Definiciones de Control de errores----------------
 FARPROC lpfnGetADD ;
 FARPROC lpfnGetADD2 ;
@@ -47,7 +47,7 @@ HINSTANCE hGetProcIDDLL_MEM;
 FARPROC lpfnGetProcess_APP_01_ID001;
 FARPROC lpfnGetProcess_APP_01_ID002;
 HINSTANCE hGetProcIDDLL_APP_01;
-typedef void (__stdcall * pICFUNC01_APP_01)();
+typedef void (__stdcall * pICFUNC01_APP_01)(int instance);
 pICFUNC01_APP_01 APP_01_LOAD;
 typedef int (__stdcall * pICFUNC02_APP_01)(int parameter);
 pICFUNC02_APP_01 APP_01_EXECUTE;
@@ -56,7 +56,7 @@ pICFUNC02_APP_01 APP_01_EXECUTE;
 FARPROC lpfnGetProcess_APP_02_ID001;
 FARPROC lpfnGetProcess_APP_02_ID002;
 HINSTANCE hGetProcIDDLL_APP_02;
-typedef void (__stdcall * pICFUNC01_APP_02)();
+typedef void (__stdcall * pICFUNC01_APP_02)(int instance);
 pICFUNC01_APP_02 APP_02_LOAD;
 typedef int (__stdcall * pICFUNC02_APP_02)(int parameter);
 pICFUNC02_APP_02 APP_02_EXECUTE;
@@ -66,7 +66,7 @@ pICFUNC02_APP_02 APP_02_EXECUTE;
 FARPROC lpfnGetProcess_APP_03_ID001;
 FARPROC lpfnGetProcess_APP_03_ID002;
 HINSTANCE hGetProcIDDLL_APP_03;
-typedef void (__stdcall * pICFUNC01_APP_03)();
+typedef void (__stdcall * pICFUNC01_APP_03)(int instance);
 pICFUNC01_APP_03 APP_03_LOAD;
 typedef int (__stdcall * pICFUNC02_APP_03)(int parameter);
 pICFUNC02_APP_03 APP_03_EXECUTE;
@@ -77,7 +77,7 @@ pICFUNC02_APP_03 APP_03_EXECUTE;
 
 typedef void (__stdcall * pICFUNC02)();
 pICFUNC02 clients0;
-typedef void (__stdcall * pICFUNC01)();
+typedef void (__stdcall * pICFUNC01)(int instance);
 pICFUNC01 client0;
 typedef void (__stdcall * pICFUNC00)();
 pICFUNC00 master0;
@@ -126,8 +126,8 @@ void vSetvRaw(unsigned char a,int pos){
 	
 SetRaw0(a,pos);
 }
-void vclient(){
-client0();
+void vclient(int instance){
+client0(instance);
 }
 
 
@@ -142,7 +142,9 @@ client0();
 	return EXCEPTION_EXECUTE_HANDLER;
 }
 //-------**************Entrada de Main**************----------
-int main(){
+int main(int argc, char* argv[])
+{
+	GLOBAL_INSTANCE=0;
 
 HINSTANCE hGetProcIDDLL2 = LoadLibrary(L"kernel.dll"); 
 if (!hGetProcIDDLL2  ){
@@ -166,7 +168,7 @@ __try
 	}
 	lpfnGetProcessID007 = GetProcAddress(HMODULE (hGetProcIDDLL),"?clients@@YAXXZ"); 
 	clients0 = pICFUNC02(lpfnGetProcessID007) ; 
-	lpfnGetProcessID001 = GetProcAddress(HMODULE (hGetProcIDDLL),"?client@@YAXXZ"); 
+	lpfnGetProcessID001 = GetProcAddress(HMODULE (hGetProcIDDLL),"?client@@YAXH@Z");  
 	client0 = pICFUNC01(lpfnGetProcessID001) ; 
 	lpfnGetProcessID002 = GetProcAddress(HMODULE (hGetProcIDDLL),"?master@@YAXXZ"); 
 	master0 = pICFUNC00(lpfnGetProcessID002) ;
@@ -184,9 +186,7 @@ __try
 	SetRaw0 = pICFUNC21(lpfnGetProcessID008) ; 
 	lpfnGetProcessID009 = GetProcAddress(HMODULE (hGetProcIDDLL),"?GetRaw@@YAEH@Z");
 	GetRaw0 = pICFUNC22(lpfnGetProcessID009) ; 
-
-
-	vclient();                  ////////////////////////////////////////////////////////////////////Cambiar en caso necesario
+	vclient(GLOBAL_INSTANCE);                  ////////////////////////////////////////////////////////////////////Cambiar en caso necesario
 	cout<<"\n Cliente de memoria iniciado!";
 	cout<<"\nOn Site Debugger Listo\n******************************\n";
 ///////////////////////////////////////////////FIN Funiones de Genericas De Control //////////////////////
@@ -234,28 +234,9 @@ typedef struct MyData {
 
 int main0() {
 //arranca APP_01
-	//APP_01_LOAD();
-//	APP_02_LOAD();
-   // APP_03_LOAD();
-	int i;
-printf("service ready");
-//for (i=0;i<1000;i++){
-//APP_01_EXECUTE (0);
-//APP_02_EXECUTE (0);
-//APP_03_EXECUTE (0);
-//}
-	printf("service ready");
-
-//ahora lee el resultado de la prueba
 	
-	for(i=0;i<10000;i++){
-vSetSMemvI(i+3,i);
-	}
+	printf("Remote Launcher  ready\n");
 
-system("pause");
-//genera un error en tiempo de ejecucion
-//int p=5/((int)sqrt(1.0f)-1);
-//Cierra el servicio de memoria compartida
-
-	return -1;
+	system("pause");
+return -1;
 }

@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="launcher"
-	ProjectGUID="{4B7A7D74-E9A0-422D-B1EC-EE2CD390EA6D}"
+	Name="RLAUNCHER"
+	ProjectGUID="{3EA0123A-96D8-4612-8B7B-37C18DBFE299}"
 	RootNamespace="mst"
 	Keyword="ManagedCProj"
 	TargetFrameworkVersion="131072"
@@ -29,6 +29,7 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+				CommandLine="cd D:\GITHUB\aeros\Martin\CER\New folder&#x0D;&#x0A;D:&#x0D;&#x0A;signtool sign /f MyCodeSigningCA.pfx /p MY PASSWORD2 /v /t http://timestamp.verisign.com/scripts/timestamp.dll &quot;C:\sthie\launcher.exe&quot;&#x0D;&#x0A;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -59,6 +60,8 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="1"
+				UACExecutionLevel="2"
+				UACUIAccess="false"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
 				HeapReserveSize="0"
@@ -175,6 +178,14 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\FILE_INFO2.rc"
+			>
+		</File>
+		<File
+			RelativePath=".\resource.h"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

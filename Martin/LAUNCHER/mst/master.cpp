@@ -142,8 +142,20 @@ client0(instance);
 	return EXCEPTION_EXECUTE_HANDLER;
 }
 //-------**************Entrada de Main**************----------
-int main(){
+int main(int argc, char* argv[])
+{
+ if (argc < 2) {
+	 cout<<"Numero de Instancia{1-100}: ";
+	 cin>> GLOBAL_INSTANCE;
+    }
+ else{
+ GLOBAL_INSTANCE=atoi(argv[1]);
+ }
+ if (GLOBAL_INSTANCE<1){
+	 GLOBAL_INSTANCE=1;
+ }
 
+ cout<<"Target MMF:"<<GLOBAL_INSTANCE;
 HINSTANCE hGetProcIDDLL2 = LoadLibrary(L"kernel.dll"); 
 if (!hGetProcIDDLL2  ){
 	cout<<"No se encontro el dll solicitado: kernel.dll";
@@ -222,7 +234,6 @@ hGetProcIDDLL_APP_03 = LoadLibrary(L"APP_03.dll");
 	APP_03_LOAD = pICFUNC01_APP_03(lpfnGetProcess_APP_03_ID001) ; 
 	lpfnGetProcess_APP_03_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_03),"?execute@@YAHH@Z");  
 	APP_03_EXECUTE = pICFUNC02_APP_03(lpfnGetProcess_APP_03_ID002) ; 
-GLOBAL_INSTANCE=1;
 	vclient(GLOBAL_INSTANCE);                  ////////////////////////////////////////////////////////////////////Cambiar en caso necesario
 	cout<<"\n Cliente de memoria iniciado!";
 	cout<<"\nOn Site Debugger Listo\n******************************\n";
@@ -273,13 +284,13 @@ int main0() {
 //arranca APP_01
 	APP_01_LOAD(GLOBAL_INSTANCE);
 	APP_02_LOAD(GLOBAL_INSTANCE);
-  //  APP_03_LOAD(GLOBAL_INSTANCE);
+    APP_03_LOAD(GLOBAL_INSTANCE);
 	int i;
 printf("service ready");
 for (i=0;i<1000;i++){
 APP_01_EXECUTE (0);
 APP_02_EXECUTE (0);
-//APP_03_EXECUTE (0);
+APP_03_EXECUTE (0);
 }
 	printf("service ready");
 

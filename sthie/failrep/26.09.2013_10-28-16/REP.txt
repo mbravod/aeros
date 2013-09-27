@@ -1,0 +1,32 @@
+------------REPORTE DE FALLA------------
+Version del Sistema: 6.2.9200 () 0x100-0x1
+02B7EE2C ((Nom Mod no disponible)): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+02B7EC57 ((Nom Mod no disponible)): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A021B5C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A038F8A (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A109962 (mscorwks): (Nom Arch no disponible): CorExeMain
+5A109B1A (mscorwks): (Nom Arch no disponible): CorExeMain
+5A109C3E (mscorwks): (Nom Arch no disponible): CorExeMain
+d:\github\aeros\martin\launcher\mst\master.cpp (275): main0
+d:\github\aeros\martin\launcher\mst\master.cpp (232): main
+f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c (582): __tmainCRTStartup
+f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c (399): mainCRTStartup
+00FDAD8F ((Nom Mod no disponible)): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A021B5C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A038F8A (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A04560C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A04563F (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A04565D (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+5A0D8EFC (mscorwks): (Nom Arch no disponible): NGenCreateNGenWorker
+5A105C0E (mscorwks): (Nom Arch no disponible): CorExitProcess
+5A10612B (mscorwks): (Nom Arch no disponible): CorExitProcess
+5A106315 (mscorwks): (Nom Arch no disponible): CorExeMain
+5A106245 (mscorwks): (Nom Arch no disponible): CorExeMain
+5DB9F5A3 (mscoreei): (Nom Arch no disponible): CorExeMain
+5E757F16 (MSCOREE): (Nom Arch no disponible): CreateConfigStream
+5E754DE3 (MSCOREE): (Nom Arch no disponible): CorExeMain
+76FCBF39 (ntdll): (Nom Arch no disponible): RtlInitializeExceptionChain
+76FCBF0C (ntdll): (Nom Arch no disponible): RtlInitializeExceptionChain
+
+*****DESCRIPCION DEL ERROR****** 
+EXCEPTION_ACCESS_VIOLATION

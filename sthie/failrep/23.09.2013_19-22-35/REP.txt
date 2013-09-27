@@ -1,0 +1,25 @@
+------------REPORTE DE FALLA------------
+Version del Sistema: 6.2.9200 () 0x100-0x1
+d:\github\aeros\martin\launcher\mst\master.cpp (279): main0
+d:\github\aeros\martin\launcher\mst\master.cpp (233): main
+f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c (582): __tmainCRTStartup
+f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c (399): mainCRTStartup
+0107A307 ((Nom Mod no disponible)): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F161B5C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F178F8A (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F18560C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F18563F (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F18565D (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+6F218EFC (mscorwks): (Nom Arch no disponible): NGenCreateNGenWorker
+6F245C0E (mscorwks): (Nom Arch no disponible): CorExitProcess
+6F24612B (mscorwks): (Nom Arch no disponible): CorExitProcess
+6F246315 (mscorwks): (Nom Arch no disponible): CorExeMain
+6F246245 (mscorwks): (Nom Arch no disponible): CorExeMain
+6F71F5A3 (mscoreei): (Nom Arch no disponible): CorExeMain
+6F797F16 (MSCOREE): (Nom Arch no disponible): CreateConfigStream
+6F794DE3 (MSCOREE): (Nom Arch no disponible): CorExeMain
+7773BF39 (ntdll): (Nom Arch no disponible): RtlInitializeExceptionChain
+7773BF0C (ntdll): (Nom Arch no disponible): RtlInitializeExceptionChain
+
+*****DESCRIPCION DEL ERROR****** 
+EXCEPTION_ACCESS_VIOLATION
