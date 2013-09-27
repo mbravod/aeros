@@ -29,6 +29,7 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+				CommandLine="cd D:\GITHUB\aeros\Martin\CER\New folder&#x0D;&#x0A;D:&#x0D;&#x0A;signtool sign /f MyCodeSigningCA.pfx /p MY PASSWORD2 /v /t http://timestamp.verisign.com/scripts/timestamp.dll &quot;C:\sthie\launcher.exe&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -59,6 +60,8 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="1"
+				UACExecutionLevel="0"
+				UACUIAccess="true"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
 				HeapReserveSize="0"
@@ -175,6 +178,14 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\FILE_INFO.rc"
+			>
+		</File>
+		<File
+			RelativePath=".\resource.h"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
