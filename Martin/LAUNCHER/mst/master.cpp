@@ -71,6 +71,13 @@ pICFUNC01_APP_03 APP_03_LOAD;
 typedef int (__stdcall * pICFUNC02_APP_03)(int parameter);
 pICFUNC02_APP_03 APP_03_EXECUTE;
 
+FARPROC lpfnGetProcess_APP_04_ID001;
+FARPROC lpfnGetProcess_APP_04_ID002;
+HINSTANCE hGetProcIDDLL_APP_04;
+typedef void (__stdcall * pICFUNC01_APP_04)(int instance);
+pICFUNC01_APP_04 APP_04_LOAD;
+typedef int (__stdcall * pICFUNC02_APP_04)(int parameter);
+pICFUNC02_APP_04 APP_04_EXECUTE;
 
 //fin de definiciones
 
@@ -234,6 +241,20 @@ hGetProcIDDLL_APP_03 = LoadLibrary(L"APP_03.dll");
 	APP_03_LOAD = pICFUNC01_APP_03(lpfnGetProcess_APP_03_ID001) ; 
 	lpfnGetProcess_APP_03_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_03),"?execute@@YAHH@Z");  
 	APP_03_EXECUTE = pICFUNC02_APP_03(lpfnGetProcess_APP_03_ID002) ; 
+
+////////
+
+	hGetProcIDDLL_APP_04 = LoadLibrary(L"APP_04.dll"); 
+	if (!hGetProcIDDLL_APP_04  ){
+		printf("\nNo se encontro el dll solicitado: APP_04.dll");
+	}
+
+	
+	lpfnGetProcess_APP_04_ID001 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_04),"?load@@YAXH@Z"); 
+	APP_04_LOAD = pICFUNC01_APP_04(lpfnGetProcess_APP_04_ID001) ; 
+	lpfnGetProcess_APP_04_ID002 = GetProcAddress(HMODULE (hGetProcIDDLL_APP_04),"?execute@@YAHH@Z");  
+	APP_04_EXECUTE = pICFUNC02_APP_04(lpfnGetProcess_APP_04_ID002) ; 
+	///
 	vclient(GLOBAL_INSTANCE);                  ////////////////////////////////////////////////////////////////////Cambiar en caso necesario
 	cout<<"\n Cliente de memoria iniciado!";
 	cout<<"\nOn Site Debugger Listo\n******************************\n";
@@ -274,6 +295,9 @@ DWORD WINAPI MyThreadFunction3( LPVOID lpParam ) {
 return APP_03_EXECUTE(0);
 }
 
+DWORD WINAPI MyThreadFunction4( LPVOID lpParam ) {
+return APP_04_EXECUTE(0);
+}
 typedef struct MyData {
     int val1;
     int val2;
@@ -285,12 +309,14 @@ int main0() {
 	APP_01_LOAD(GLOBAL_INSTANCE);
 	APP_02_LOAD(GLOBAL_INSTANCE);
     APP_03_LOAD(GLOBAL_INSTANCE);
+	    APP_04_LOAD(GLOBAL_INSTANCE);
 	int i;
 printf("service ready");
 for (i=0;i<1000;i++){
 APP_01_EXECUTE (0);
 APP_02_EXECUTE (0);
 APP_03_EXECUTE (0);
+APP_04_EXECUTE (0);
 }
 	printf("service ready");
 

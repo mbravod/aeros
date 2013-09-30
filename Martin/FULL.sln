@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mmf", "MMF\smem\mmf.vcproj"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RLAUNCHER", "LAUNCHER-MOD\mst\RESIDENT_LAUNCHER.vcproj", "{3EA0123A-96D8-4612-8B7B-37C18DBFE299}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APP_04", "APP_04\smem\smem4.vcproj", "{31A29C1C-1DCE-4403-B15F-58D92029F0CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{3EA0123A-96D8-4612-8B7B-37C18DBFE299}.Debug|Win32.Build.0 = Debug|Win32
 		{3EA0123A-96D8-4612-8B7B-37C18DBFE299}.Release|Win32.ActiveCfg = Release|Win32
 		{3EA0123A-96D8-4612-8B7B-37C18DBFE299}.Release|Win32.Build.0 = Release|Win32
+		{31A29C1C-1DCE-4403-B15F-58D92029F0CA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31A29C1C-1DCE-4403-B15F-58D92029F0CA}.Debug|Win32.Build.0 = Debug|Win32
+		{31A29C1C-1DCE-4403-B15F-58D92029F0CA}.Release|Win32.ActiveCfg = Release|Win32
+		{31A29C1C-1DCE-4403-B15F-58D92029F0CA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
