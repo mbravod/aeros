@@ -103,6 +103,7 @@ void HttpWindow::startRequest(QUrl url)
 postData.addQueryItem("var_upload"     , "1,2,3,4,5,6,7");
 postData.addQueryItem("var_type_upload", "i,i,i,i,i,i,f");
 postData.addQueryItem("var_type_value",  "5,6,7,8,9,0,3.1415");
+postData.addQueryItem("sql_query",  "5,6,7,8,9,0,3.1415");
 QNetworkRequest request(url);
 request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
 

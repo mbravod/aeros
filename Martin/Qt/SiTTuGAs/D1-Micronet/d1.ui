@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>D1</class>
+ <widget class="QWidget" name="D1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>D1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(136, 136, 136);</string>
+  </property>
+  <widget class="QLabel" name="lbIMGFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>664</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/D1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_1">
+   <property name="geometry">
+    <rect>
+     <x>79</x>
+     <y>63</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>04</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>62</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>05</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_4">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>06</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_5">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>07</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_6">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>08</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_7">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>09</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_8">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_9">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_10">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_11">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>CPU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_12">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>MPU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_13">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>SIO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_14">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Al</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_15">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Al</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_16">
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>DO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_17">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>ACT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_18">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>ACT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_19">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>EXP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_20">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>315</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Dl</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_21">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>365</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_22">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>365</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>02</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_23">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>365</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>04</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_24">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>365</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>05</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_25">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>365</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>06</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_26">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>365</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_27">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>EXP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_28">
+   <property name="geometry">
+    <rect>
+     <x>118</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Dl</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_29">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Al</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_30">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Al</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_31">
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>DVR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbInd_32">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>617</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>LN</string>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_1">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>490</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>490</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>490</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>490</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_5">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_7">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_8">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_9">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_10">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_11">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_12">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_13">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>193</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_14">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>396</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_15">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>421</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_16">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>444</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_17">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>470</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="WCuadrado_18">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>496</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SQUARE</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Grey</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRed_1">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>480</y>
+     <width>190</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>RED DE CÓMPUTO 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRed_2">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>513</y>
+     <width>190</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>RED DE CÓMPUTO 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRed_3">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>548</y>
+     <width>190</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>RED DE CÓMPUTO 3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRed_4">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>620</y>
+     <width>143</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>647</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_2">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_3">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_5">
+   <property name="geometry">
+    <rect>
+     <x>318</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_6">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_7">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_8">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_9">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_10">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_11">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_12">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>50</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_13">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_14">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_15">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_16">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_17">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_18">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_19">
+   <property name="geometry">
+    <rect>
+     <x>318</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_20">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_21">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_22">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_23">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btind1_24">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>350</y>
+     <width>36</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbIMGFondo</zorder>
+  <zorder>btind1_20</zorder>
+  <zorder>btind1_17</zorder>
+  <zorder>btind1_23</zorder>
+  <zorder>btind1_16</zorder>
+  <zorder>btind1_21</zorder>
+  <zorder>btind1_22</zorder>
+  <zorder>btind1_15</zorder>
+  <zorder>btind1_24</zorder>
+  <zorder>btind1_18</zorder>
+  <zorder>btind1_19</zorder>
+  <zorder>btind1_13</zorder>
+  <zorder>btind1_14</zorder>
+  <zorder>btind1_12</zorder>
+  <zorder>btind1_9</zorder>
+  <zorder>btind1_10</zorder>
+  <zorder>btind1_11</zorder>
+  <zorder>btind1_6</zorder>
+  <zorder>btind1_8</zorder>
+  <zorder>btind1_7</zorder>
+  <zorder>btind1_5</zorder>
+  <zorder>btind1_3</zorder>
+  <zorder>btind1_4</zorder>
+  <zorder>btind1_2</zorder>
+  <zorder>btind1</zorder>
+  <zorder>lbInd_1</zorder>
+  <zorder>lbInd_2</zorder>
+  <zorder>lbInd_3</zorder>
+  <zorder>lbInd_4</zorder>
+  <zorder>lbInd_5</zorder>
+  <zorder>lbInd_6</zorder>
+  <zorder>lbInd_7</zorder>
+  <zorder>lbInd_8</zorder>
+  <zorder>lbInd_9</zorder>
+  <zorder>lbInd_10</zorder>
+  <zorder>lbInd_11</zorder>
+  <zorder>lbInd_12</zorder>
+  <zorder>lbInd_13</zorder>
+  <zorder>lbInd_14</zorder>
+  <zorder>lbInd_15</zorder>
+  <zorder>lbInd_16</zorder>
+  <zorder>lbInd_17</zorder>
+  <zorder>lbInd_18</zorder>
+  <zorder>lbInd_19</zorder>
+  <zorder>lbInd_20</zorder>
+  <zorder>lbInd_21</zorder>
+  <zorder>lbInd_22</zorder>
+  <zorder>lbInd_23</zorder>
+  <zorder>lbInd_24</zorder>
+  <zorder>lbInd_25</zorder>
+  <zorder>lbInd_26</zorder>
+  <zorder>lbInd_27</zorder>
+  <zorder>lbInd_28</zorder>
+  <zorder>lbInd_29</zorder>
+  <zorder>lbInd_30</zorder>
+  <zorder>lbInd_31</zorder>
+  <zorder>lbInd_32</zorder>
+  <zorder>WCuadrado_1</zorder>
+  <zorder>WCuadrado_2</zorder>
+  <zorder>WCuadrado_3</zorder>
+  <zorder>WCuadrado_4</zorder>
+  <zorder>WCuadrado_5</zorder>
+  <zorder>WCuadrado_7</zorder>
+  <zorder>WCuadrado_8</zorder>
+  <zorder>WCuadrado_9</zorder>
+  <zorder>WCuadrado_10</zorder>
+  <zorder>WCuadrado_11</zorder>
+  <zorder>WCuadrado_12</zorder>
+  <zorder>WCuadrado_13</zorder>
+  <zorder>WCuadrado_14</zorder>
+  <zorder>WCuadrado_15</zorder>
+  <zorder>WCuadrado_16</zorder>
+  <zorder>WCuadrado_17</zorder>
+  <zorder>WCuadrado_18</zorder>
+  <zorder>btnRed_1</zorder>
+  <zorder>btnRed_2</zorder>
+  <zorder>btnRed_3</zorder>
+  <zorder>btnRed_4</zorder>
+  <zorder>lbUnit3</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

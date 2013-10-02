@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QWidget" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>209</width>
+     <height>179</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>131</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>PRINCIPAL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>37</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A1     GENERALIDADES TURBINA PRINCIPAL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>58</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A2    GENERADOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>76</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A3    SECUENCIA DE ARRANQUE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A4_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>96</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A4    SECUENCIA PARA PARO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A5_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>115</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A5    PERMISOS DE ARRANQUE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_A6_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>135</y>
+      <width>195</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>A6    PERMISOS DE ROTACIÓN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>251</y>
+     <width>801</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>260</y>
+     <width>20</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_12">
+   <property name="geometry">
+    <rect>
+     <x>502</x>
+     <y>201</y>
+     <width>20</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_8">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>260</y>
+     <width>20</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_9">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>260</y>
+     <width>20</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_10">
+   <property name="geometry">
+    <rect>
+     <x>675</x>
+     <y>260</y>
+     <width>20</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_11">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>260</y>
+     <width>20</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>196</x>
+     <y>290</y>
+     <width>167</width>
+     <height>157</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>131</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>MONITOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_C1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>C1   REGULADOR DE CONTROL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_C2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>C2  TEMP. ENTRADAS PT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_C3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>C3  TEMPS. BOBINADO ESTATOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_C4_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>98</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>C4  VIBRACIONES</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_C5_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>C5  DATOS DE OPERACIÓN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>396</x>
+     <y>290</y>
+     <width>219</width>
+     <height>269</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>131</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>UTILERÍA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>39</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D1   GENERALIDADES DE MICRONET</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D2  GENERALIDADES DE LINKNET</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D3  GENERALIDADES DE LINKNET</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D4_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>98</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>D4  GENERALIDADES DE ACONDICIONAMIENTO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D5_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D5  REPORTE DE DATOS DE LA TURBINA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D6_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>136</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D6  REPORTE DE DATOS DE LA TURBINA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D7_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>155</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D7  REPORTE DE DATOS DE GENERADOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D8_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>175</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D8  MAPEO COMBUSTOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_D9_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>195</y>
+      <width>208</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>D9  CALIBRACIÓN DEL IMPULSOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_6">
+   <property name="geometry">
+    <rect>
+     <x>804</x>
+     <y>290</y>
+     <width>192</width>
+     <height>156</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>147</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>140</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>RESUMEN DE ALARMAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_F1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>180</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>F1   RESUMEN  DE ALARMAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_F2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>180</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>F2  DETENCION NORM/DESACEL. A MIN.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_F3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>180</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>F3  DESACEL A MIN./PASO A RALENTÍ.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_F4_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>98</y>
+      <width>180</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>F4  APAGADOS DE EMERGENCIA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_F5_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>180</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>F5  APAGADOS DE EMERGENCIA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>290</y>
+     <width>156</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>131</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>TENDENCIAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_E1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>143</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>E1   DATOS DE LA TURBINA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_E2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>143</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>E2  DATOS DEL COMB. Y AGUA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_E3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>79</y>
+      <width>143</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>E3  DATOS DEL ACEITE LUB.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>290</y>
+     <width>168</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>131</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>SISTEMAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B8_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>175</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B8  VÁLVULAS DE ETAPAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B9_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>195</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B9  CARCASA DE TURBINA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B1_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B1   ACEITE LUB. DE GEN. 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B11_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>235</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B11  CARCASA DE GENERADOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B2_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>61</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B2  ACEITE LUB. DE GEN. 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B12_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>253</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B12  PROTECCIÓN CONTRA FUEGO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_B13_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>273</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B13  --DISPONIBLE--</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B14_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>293</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B14  LAVADO CON AGUA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B10_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>215</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B10  --DISPONIBLE--</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B7_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>155</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B7 SISTEMA DE COMBUSTIBLE 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B5_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B5  GENERALIDADES DE LA TURB.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B6_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>135</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B6  SISTEMA DE COMBUSTIBLE 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B3_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B3  ACEITE LUB. DE TURBINA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabelClick" name="lb_B4_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>98</y>
+      <width>158</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>B4  MOTOR HIDR. DE ARRANQUE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="BackGround">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>663</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/BackGround.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>BackGround</zorder>
+  <zorder>frame</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_7</zorder>
+  <zorder>line_12</zorder>
+  <zorder>line_8</zorder>
+  <zorder>line_9</zorder>
+  <zorder>line_10</zorder>
+  <zorder>line_11</zorder>
+  <zorder>frame_3</zorder>
+  <zorder>frame_4</zorder>
+  <zorder>frame_6</zorder>
+  <zorder>frame_5</zorder>
+  <zorder>frame_2</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QLabelClick</class>
+   <extends>QLabel</extends>
+   <header>Componets/qlabelclick.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

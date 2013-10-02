@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WPresDescC</class>
+ <widget class="QWidget" name="WPresDescC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>175</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WPresDescC</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbPreDESCT">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>3</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>PRES DESCARGA COMP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESCT_1">
+   <property name="geometry">
+    <rect>
+     <x>38</x>
+     <y>31</y>
+     <width>52</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>PT6804</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESC_1">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>31</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>10.90</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESCU_1">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>31</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>PSIA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESCU_2">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>43</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>PSIA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESC_2">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>43</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>11.30</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDESCT_2">
+   <property name="geometry">
+    <rect>
+     <x>38</x>
+     <y>43</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>PT6814</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>frame</zorder>
+  <zorder>lbPreDESCT</zorder>
+  <zorder>lbDESCT_1</zorder>
+  <zorder>lbDESC_1</zorder>
+  <zorder>lbDESCU_1</zorder>
+  <zorder>lbDESCU_2</zorder>
+  <zorder>lbDESC_2</zorder>
+  <zorder>lbDESCT_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

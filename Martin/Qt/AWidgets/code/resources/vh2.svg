@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="svg9493" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docbase="/datas/Projs/Cliparts Stocker/led" sodipodi:docname="led_circle_blue.svg" sodipodi:version="0.32" inkscape:export-xdpi="90.000000" inkscape:export-ydpi="90.000000" inkscape:version="0.42" inkscape:export-filename="/datas/Projs/Cliparts Stocker/led/led_circle_blue.png" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<metadata>
+	
+		<rdf:RDF  xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<cc:Work  rdf:about="">
+			<dc:title>LED Circle (Blue)</dc:title>
+			<dc:description>jean.victor.balin@gmail.com</dc:description>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>led</rdf:li>
+					<rdf:li>shape</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<dc:publisher>
+				<cc:Agent  rdf:about="http://www.openclipart.org/">
+					<dc:title>Open Clip Art Library</dc:title>
+				</cc:Agent>
+			</dc:publisher>
+			<dc:creator>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:creator>
+			<dc:rights>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:rights>
+			<dc:date>2005-08-21</dc:date>
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<cc:license  rdf:resource="http://web.resource.org/cc/PublicDomain"></cc:license>
+			<dc:language>en</dc:language>
+		</cc:Work>
+		<cc:License  rdf:about="http://web.resource.org/cc/PublicDomain">
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Reproduction"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Distribution"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks"></cc:permits>
+		</cc:License>
+	</rdf:RDF>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="100.592" width="244.913" x="541.431" y="-35.758" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="valvulas">
+	<g id="vh2Red">
+		<g>
+			<polygon fill="#FF0000" points="3.56,22.04 24.95,34.43 3.56,46.81 			"/>
+			<polygon fill="#FF0000" points="24.95,34.43 46.33,22.04 46.33,46.81 			"/>
+			<path fill="#FF0000" d="M40.111,17.63c0,0-6.771,0-15.12,0c-8.35,0-15.12,0-15.12,0c0-7.97,6.77-14.44,15.12-14.44
+				C33.34,3.19,40.111,9.66,40.111,17.63z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M24.99,3.19c8.35,0,15.12,6.47,15.12,14.44"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M9.87,17.63c0-7.97,6.77-14.44,15.12-14.44"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M9.87,17.63c0,0,6.77,0,15.12,0c8.35,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="3.56" y1="46.81" x2="3.56" y2="22.04"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="3.56,22.04 24.95,34.43 46.33,46.81 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="46.33" y1="46.81" x2="46.33" y2="22.04"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="46.33,22.04 24.95,34.43 3.56,46.81 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="24.99" y1="17.63" x2="24.99" y2="34.39"/>
+		</g>
+	</g>
+	<g id="vh2Green">
+		<g>
+			<polygon fill="#00FF00" points="74.343,34.426 74.383,34.396 95.723,22.036 95.723,46.815 			"/>
+			<polygon fill="#00FF00" points="52.953,46.815 52.953,22.036 74.343,34.426 			"/>
+			<path fill="#00FF00" d="M89.503,17.636c0,0-6.77,0-15.12,0c-8.35,0-15.12,0-15.12,0c0-7.98,6.771-14.45,15.12-14.45
+				C82.734,3.186,89.503,9.656,89.503,17.636z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M74.383,3.186c8.351,0,15.12,6.47,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M59.263,17.636c0-7.98,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M59.263,17.636c0,0,6.771,0,15.12,0c8.351,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="52.953" y1="46.815" x2="52.953" y2="22.036"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="52.953,22.036 74.343,34.426 95.723,46.815 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="95.723" y1="46.815" x2="95.723" y2="22.036"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="95.723,22.036 74.383,34.396 74.343,34.426 
+				52.953,46.815 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="74.383" y1="17.636" x2="74.383" y2="34.396"/>
+		</g>
+	</g>
+	<g id="vh2Blue">
+		<g>
+			<polygon fill="#0000FF" points="123.784,34.395 145.124,22.035 145.124,46.814 123.744,34.425 			"/>
+			<path fill="#0000FF" d="M138.905,17.635c0,0-6.771,0-15.12,0s-15.12,0-15.12,0c0-7.98,6.771-14.45,15.12-14.45
+				S138.905,9.655,138.905,17.635z"/>
+			<polygon fill="#0000FF" points="123.744,34.425 102.355,46.814 102.355,22.035 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M123.784,3.185c8.35,0,15.12,6.47,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M108.664,17.635c0-7.98,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M108.664,17.635c0,0,6.771,0,15.12,0s15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="102.355" y1="46.814" x2="102.355" y2="22.035"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="102.355,22.035 123.744,34.425 145.124,46.814 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="145.124" y1="46.814" x2="145.124" y2="22.035"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="145.124,22.035 123.784,34.395 123.744,34.425 
+				102.355,46.814 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="123.784" y1="17.635" x2="123.784" y2="34.395"/>
+		</g>
+	</g>
+	<g id="vh2White">
+		<g>
+			<polygon fill="#FFFFFF" points="151.743,22.038 173.133,34.428 151.743,46.817 			"/>
+			<polygon fill="#FFFFFF" points="173.173,34.397 194.513,22.038 194.513,46.817 173.133,34.428 			"/>
+			<path fill="#FFFFFF" d="M173.173,17.638c-8.35,0-15.12,0-15.12,0c0-7.98,6.771-14.45,15.12-14.45c8.351,0,15.12,6.47,15.12,14.45
+				C188.293,17.638,181.524,17.638,173.173,17.638z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M173.173,3.188c8.351,0,15.12,6.47,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M158.053,17.638c0-7.98,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M158.053,17.638c0,0,6.771,0,15.12,0c8.351,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="151.743" y1="46.817" x2="151.743" y2="22.038"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="151.743,22.038 173.133,34.428 194.513,46.817 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="194.513" y1="46.817" x2="194.513" y2="22.038"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="194.513,22.038 173.173,34.397 173.133,34.428 
+				151.743,46.817 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="173.173" y1="17.638" x2="173.173" y2="34.397"/>
+		</g>
+	</g>
+	<g id="vh2Grey">
+		<g>
+			<path fill="#848484" d="M237.694,17.638c0,0-6.771,0-15.12,0c-8.351,0-15.12,0-15.12,0c0-7.98,6.77-14.45,15.12-14.45
+				C230.923,3.188,237.694,9.658,237.694,17.638z"/>
+			<polygon fill="#848484" points="243.913,46.817 222.533,34.428 222.573,34.397 243.913,22.038 			"/>
+			<polygon fill="#848484" points="222.533,34.428 201.143,46.817 201.143,22.038 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M222.573,3.188c8.35,0,15.12,6.47,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M207.453,17.638c0-7.98,6.77-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M207.453,17.638c0,0,6.77,0,15.12,0c8.35,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="201.143" y1="46.817" x2="201.143" y2="22.038"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="201.143,22.038 222.533,34.428 243.913,46.817 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="243.913" y1="46.817" x2="243.913" y2="22.038"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="243.913,22.038 222.573,34.397 222.533,34.428 
+				201.143,46.817 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="222.573" y1="17.638" x2="222.573" y2="34.397"/>
+		</g>
+	</g>
+	<g id="vh2Yellow">
+		<g>
+			<path fill="#FFFF00" d="M21.431,59.15c8.35,0,15.12,6.47,15.12,14.439c0,0-6.771,0-15.12,0c-8.35,0-15.12,0-15.12,0
+				C6.311,65.62,13.081,59.15,21.431,59.15z"/>
+			<polygon fill="#FFFF00" points="21.391,90.39 42.771,78 42.771,102.77 			"/>
+			<polygon fill="#FFFF00" points="21.391,90.39 0.001,102.77 0.001,78 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M21.431,59.15c8.35,0,15.12,6.47,15.12,14.439"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M6.311,73.59c0-7.97,6.77-14.439,15.12-14.439"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M6.311,73.59c0,0,6.77,0,15.12,0c8.35,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="0.001" y1="102.77" x2="0.001" y2="78"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="0.001,78 21.391,90.39 42.771,102.77 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="42.771" y1="102.77" x2="42.771" y2="78"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="42.771,78 21.391,90.39 0.001,102.77 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="21.431" y1="73.59" x2="21.431" y2="90.35"/>
+		</g>
+	</g>
+	<g id="vh2Purple">
+		<g>
+			<path fill="#FF00FF" d="M70.823,59.146c8.351,0,15.12,6.47,15.12,14.45c0,0-6.77,0-15.12,0c-8.35,0-15.12,0-15.12,0
+				C55.703,65.615,62.474,59.146,70.823,59.146z"/>
+			<polygon fill="#FF00FF" points="70.783,90.386 70.823,90.355 92.163,77.995 92.163,102.775 			"/>
+			<polygon fill="#FF00FF" points="70.783,90.386 49.394,102.775 49.394,77.995 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M70.823,59.146c8.351,0,15.12,6.47,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M55.703,73.596c0-7.98,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M55.703,73.596c0,0,6.771,0,15.12,0c8.351,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="49.394" y1="102.775" x2="49.394" y2="77.995"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="49.394,77.995 70.783,90.386 92.163,102.775 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="92.163" y1="102.775" x2="92.163" y2="77.995"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="92.163,77.995 70.823,90.355 70.783,90.386 
+				49.394,102.775 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="70.823" y1="73.596" x2="70.823" y2="90.355"/>
+		</g>
+	</g>
+	<g id="vh2Brown">
+		<g>
+			<path fill="#724806" d="M120.225,59.145c8.35,0,15.12,6.471,15.12,14.45c0,0-6.771,0-15.12,0s-15.12,0-15.12,0
+				C105.105,65.615,111.875,59.145,120.225,59.145z"/>
+			<polygon fill="#724806" points="120.185,90.385 120.225,90.354 141.565,77.995 141.565,102.774 			"/>
+			<polygon fill="#724806" points="120.185,90.385 98.795,102.774 98.795,77.995 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M120.225,59.145c8.35,0,15.12,6.471,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M105.105,73.595c0-7.979,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M105.105,73.595c0,0,6.771,0,15.12,0s15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="98.795" y1="102.774" x2="98.795" y2="77.995"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="98.795,77.995 120.185,90.385 141.565,102.774 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="141.565" y1="102.774" x2="141.565" y2="77.995"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="141.565,77.995 120.225,90.354 120.185,90.385 
+				98.795,102.774 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="120.225" y1="73.595" x2="120.225" y2="90.354"/>
+		</g>
+	</g>
+	<g id="vh2Orange">
+		<g>
+			<path fill="#FF7D03" d="M169.614,59.147c8.351,0,15.12,6.471,15.12,14.45c0,0-6.77,0-15.12,0c-8.35,0-15.12,0-15.12,0
+				C154.493,65.618,161.264,59.147,169.614,59.147z"/>
+			<polygon fill="#FF7D03" points="169.573,90.388 169.614,90.357 190.953,77.998 190.953,102.777 			"/>
+			<polygon fill="#FF7D03" points="169.573,90.388 148.184,102.777 148.184,77.998 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M169.614,59.147c8.351,0,15.12,6.471,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M154.493,73.598c0-7.979,6.771-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M154.493,73.598c0,0,6.771,0,15.12,0c8.351,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="148.184" y1="102.777" x2="148.184" y2="77.998"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="148.184,77.998 169.573,90.388 190.953,102.777 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="190.953" y1="102.777" x2="190.953" y2="77.998"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="190.953,77.998 169.614,90.357 169.573,90.388 
+				148.184,102.777 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="169.614" y1="73.598" x2="169.614" y2="90.357"/>
+		</g>
+	</g>
+	<g id="vh2Black">
+		<g>
+			<path fill="#020202" d="M234.134,73.598c0,0-6.771,0-15.12,0c-8.351,0-15.12,0-15.12,0c0-7.979,6.77-14.45,15.12-14.45
+				C227.364,59.147,234.134,65.618,234.134,73.598z"/>
+			<polygon fill="#020202" points="240.354,102.777 218.974,90.388 219.014,90.357 240.354,77.998 			"/>
+			<polygon fill="#020202" points="218.974,90.388 197.583,102.777 197.583,77.998 			"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M219.014,59.147c8.35,0,15.12,6.471,15.12,14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M203.894,73.598c0-7.979,6.77-14.45,15.12-14.45"/>
+			<path fill="none" stroke="#000000" stroke-linecap="round" d="M203.894,73.598c0,0,6.77,0,15.12,0c8.35,0,15.12,0,15.12,0"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="197.583" y1="102.777" x2="197.583" y2="77.998"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="197.583,77.998 218.974,90.388 240.354,102.777 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="240.354" y1="102.777" x2="240.354" y2="77.998"/>
+			<polyline fill="none" stroke="#000000" stroke-linecap="round" points="240.354,77.998 219.014,90.357 218.974,90.388 
+				197.583,102.777 			"/>
+			<line fill="none" stroke="#000000" stroke-linecap="round" x1="219.014" y1="73.598" x2="219.014" y2="90.357"/>
+		</g>
+	</g>
+</g>
+</svg>

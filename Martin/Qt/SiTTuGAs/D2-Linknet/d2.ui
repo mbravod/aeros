@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>D2</class>
+ <widget class="QWidget" name="D2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/D2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>MicroNET</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>639</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>650</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod1">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE6</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod7">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE7</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod8">
+   <property name="geometry">
+    <rect>
+     <x>416</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE8</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod31">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE31</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod19">
+   <property name="geometry">
+    <rect>
+     <x>741</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE19</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod10">
+   <property name="geometry">
+    <rect>
+     <x>523</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE10</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod11">
+   <property name="geometry">
+    <rect>
+     <x>631</x>
+     <y>210</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE11</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod13">
+   <property name="geometry">
+    <rect>
+     <x>531</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE13</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod5">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE5</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod12">
+   <property name="geometry">
+    <rect>
+     <x>419</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE12</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod3">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE3</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE4</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod32">
+   <property name="geometry">
+    <rect>
+     <x>752</x>
+     <y>602</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE32</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod33">
+   <property name="geometry">
+    <rect>
+     <x>861</x>
+     <y>403</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE33</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod34">
+   <property name="geometry">
+    <rect>
+     <x>749</x>
+     <y>403</y>
+     <width>47</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NODE34</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>433</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>RED DE CÓMPUTO 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>42</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>RED DE CÓMPUTO 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod3_2">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod19_2">
+   <property name="geometry">
+    <rect>
+     <x>741</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod34_2">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>274</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+D1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod13_2">
+   <property name="geometry">
+    <rect>
+     <x>531</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+A1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod31_2">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+D1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod5_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod33_2">
+   <property name="geometry">
+    <rect>
+     <x>861</x>
+     <y>274</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+D1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod8_2">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod32_2">
+   <property name="geometry">
+    <rect>
+     <x>753</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+D1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod1_2">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+A1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod7_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod11_2">
+   <property name="geometry">
+    <rect>
+     <x>631</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod6_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod4_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod10_2">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>82</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+RTD</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btNod12_2">
+   <property name="geometry">
+    <rect>
+     <x>419</x>
+     <y>473</y>
+     <width>47</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LNET
+A1</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>151</width>
+     <height>179</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>100</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

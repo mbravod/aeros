@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>D4</class>
+ <widget class="QWidget" name="D4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>D4</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>64</y>
+     <width>882</width>
+     <height>544</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>441</width>
+      <height>544</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="QLabel" name="lbSupT">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>5</y>
+       <width>440</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="text">
+      <string>SUPERVISIÓN DE ESTADO</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCtrlT">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>368</y>
+       <width>440</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>CONTROL REGISTRO DE DATOS MICRONET</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbContT">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>39</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+color: rgb(0, 0, 126);</string>
+     </property>
+     <property name="text">
+      <string>CONTADORES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDesaT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>59</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DESACEL A CARGA MINIMA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDesa">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>58</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTiemT">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>251</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+color: rgb(0, 0, 126);</string>
+     </property>
+     <property name="text">
+      <string>TIEMPO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDetT_2">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>82</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDetT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>82</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DETENCIONES NORMALES </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPaso">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>106</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPasoT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>106</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PASOS A RALENTÍ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbApaSin">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>130</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbApaSinT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>130</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>APAGADOS DE EMRGENCIA SIN MOTOR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbApaConT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>155</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>APAGADOS DE EMRGENCIA CON MOTOR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbApaCon">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>155</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbArra">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>179</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbArraT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>179</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ARRANQUES CON GAS</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbInt">
+     <property name="geometry">
+      <rect>
+       <x>363</x>
+       <y>203</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbIntT">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>203</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>INTENTO DE ARRANQUES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPs3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>320</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPs3T">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>319</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PS3 CONTROL DE RELLENO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbt48E">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>296</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>3566</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbT3ET">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>271</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>T3 ENTRADA BASE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbT3E">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>272</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>75</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbt48ET">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>295</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>T48 ENTRADA BASE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPs3_2">
+     <property name="geometry">
+      <rect>
+       <x>406</x>
+       <y>320</y>
+       <width>30</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbt48E_2">
+     <property name="geometry">
+      <rect>
+       <x>406</x>
+       <y>296</y>
+       <width>30</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbT3E_2">
+     <property name="geometry">
+      <rect>
+       <x>406</x>
+       <y>272</y>
+       <width>30</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cbInic">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>411</y>
+       <width>301</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>INICIAR RECOLECCIÓN DATOS EN REGISTRO </string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cbAlto">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>435</y>
+       <width>291</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ALTO RECOLECCIÓN DATOS EN REGISTRO </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbColeT">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>422</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>COLECCIONA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMemllT">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>451</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>MEMORIA INTERMEDIA LLENA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>296</y>
+       <width>12</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>320</y>
+       <width>12</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>272</y>
+       <width>12</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>441</width>
+      <height>544</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>343</y>
+       <width>318</width>
+       <height>174</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(128, 128, 128);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <widget class="QLabel" name="lbIfixT">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>317</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(192, 192, 192);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>iFIX DYNAMICS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbifixT">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>43</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>iFIX DYNAMICS MISSION CONTROL</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbRegT">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>107</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>REGISTRO DE EVENTOS iFIX</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btReg">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>124</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>REGISTRO DE EVENTOS</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btMiss">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>61</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>MISSION CONTROL</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>40</y>
+       <width>318</width>
+       <height>287</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(128, 128, 128);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <widget class="QLabel" name="lbMicroT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>33</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>MICROPANEL</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbSoftT">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>2</y>
+        <width>317</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(192, 192, 192);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>SOFTWARE WOODWARD</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbCtrlAssT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>95</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>CONTROL ASSISTANT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbLogT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>158</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>LÓGICA DE ESCALERA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbGapT">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>222</y>
+        <width>310</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 126);</string>
+      </property>
+      <property name="text">
+       <string>GAP DE SÓLO LECTURA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btGap">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>239</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>GAP</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btLog">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>175</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>LÓGICA DE ESCALERA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btCtrlAss">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>114</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>CONTROL ASSISTANT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btMicro">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>154</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(212, 208, 200);</string>
+      </property>
+      <property name="text">
+       <string>MICROPANEL</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="lbUtilT">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>5</y>
+       <width>440</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>UTILERÍA</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>647</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbIMGFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/D4.png</pixmap>
+   </property>
+  </widget>
+  <zorder>lbIMGFondo</zorder>
+  <zorder>frame</zorder>
+  <zorder>lbUnit3</zorder>
+  <zorder>btnIMPPant</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>B2</class>
+ <widget class="QWidget" name="B2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbBack">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="bombaAlj">
+   <property name="geometry">
+    <rect>
+     <x>217</x>
+     <y>450</y>
+     <width>101</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>1</number>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::BOMBATD</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="indBomAlj">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>413</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>MOT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6031</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind95F">
+   <property name="geometry">
+    <rect>
+     <x>466</x>
+     <y>330</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6056</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>118.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind20Psig">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>138</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree180</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>60021</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind77f">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>119</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6025</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind93f">
+   <property name="geometry">
+    <rect>
+     <x>472</x>
+     <y>510</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6057</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>-111.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind0_4psig">
+   <property name="geometry">
+    <rect>
+     <x>618</x>
+     <y>60</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6026A</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind1_7psig">
+   <property name="geometry">
+    <rect>
+     <x>698</x>
+     <y>60</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6026B</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="indCierGraD">
+   <property name="geometry">
+    <rect>
+     <x>687</x>
+     <y>193</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>LS</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6042</string>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind97f">
+   <property name="geometry">
+    <rect>
+     <x>637</x>
+     <y>510</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree180</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6035</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="indExtImp101f">
+   <property name="geometry">
+    <rect>
+     <x>668</x>
+     <y>423</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree180</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6023</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="indExtImp95f">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>423</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6021</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="ind87f">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>511</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="intID">
+    <number>-1</number>
+   </property>
+   <property name="isUpdateable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6036</string>
+   </property>
+   <property name="LineAngle" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="indCierGraI">
+   <property name="geometry">
+    <rect>
+     <x>385</x>
+     <y>194</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="Value">
+    <number>2</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>LS</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6041</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbSumAceT">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>51</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>SUMINISTRO ACEITE  LUB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbPsigT">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>133</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>20PSIG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb77fT">
+   <property name="geometry">
+    <rect>
+     <x>449</x>
+     <y>112</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>77°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb0_4psigT">
+   <property name="geometry">
+    <rect>
+     <x>637</x>
+     <y>55</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>0.4PSIG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb1_0PsigT">
+   <property name="geometry">
+    <rect>
+     <x>686</x>
+     <y>35</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>1.0PSIG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb1_7psigT">
+   <property name="geometry">
+    <rect>
+     <x>718</x>
+     <y>55</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>1.7PSIG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbCierGraIT">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>209</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>CIERRE GRADUAL 
+ TANQUES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbCierGraDT">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>209</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>CIERRE GRADUAL 
+ TANQUES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb95FT">
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>322</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>95°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesFluT">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>504</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DESAGÜES
+P/FLUIDO DE ELEVACIÓN</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesAceT">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>565</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DESAGÜE ACEITE DEL GENERADOR</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbBomAljT">
+   <property name="geometry">
+    <rect>
+     <x>209</x>
+     <y>412</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>BOMBA DE ALJIBE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbExtImp95fT">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>400</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>EXTREMO IMPULSOR
+                       95°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb87fT">
+   <property name="geometry">
+    <rect>
+     <x>386</x>
+     <y>506</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>87°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb93fT">
+   <property name="geometry">
+    <rect>
+     <x>521</x>
+     <y>531</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>93°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb97f">
+   <property name="geometry">
+    <rect>
+     <x>649</x>
+     <y>502</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>97°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbExtExc101fT">
+   <property name="geometry">
+    <rect>
+     <x>646</x>
+     <y>394</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>EXTREMO  EXCITADOR
+101°F</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbGenT">
+   <property name="geometry">
+    <rect>
+     <x>489</x>
+     <y>440</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>GENERADOR</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbGenU">
+   <property name="geometry">
+    <rect>
+     <x>536</x>
+     <y>458</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>MW</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbGen">
+   <property name="geometry">
+    <rect>
+     <x>486</x>
+     <y>457</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFlech_1">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>180</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/Resources/PNG/B1/flechadiagonal_abajo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFlech_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>180</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/Resources/PNG/B1/flechadiagonal_derecha.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>647</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="pgr_2">
+   <property name="geometry">
+    <rect>
+     <x>704</x>
+     <y>270</y>
+     <width>31</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+ border: 1px solid black;
+ padding: 0px;
+ background: rgb(215, 215, 215);
+ }
+
+QProgressBar::chunk {
+ background: rgb(170, 54, 0);
+ border: 0px solid black;
+ }</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="pgr_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>270</y>
+     <width>31</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+ border: 1px solid black;
+ padding: 0px;
+ background: rgb(215, 215, 215);
+ }
+
+QProgressBar::chunk {
+ background: rgb(170, 54, 0);
+ border: 0px solid black;
+ }</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AInstrumentIndicator</class>
+   <extends>QWidget</extends>
+   <header>ainstrumentindicator.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WBalanceI</class>
+ <widget class="QWidget" name="WBalanceI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>175</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="lbtbvohms">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>128</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvbU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>80</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvselT">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>48</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVSEL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvselU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>48</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvsel">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>48</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvma">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>112</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbva">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>64</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvmaT">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>112</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVMA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvmaU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>112</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>MA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvdmdT">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>32</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVDMD</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvohmsT">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>128</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVOHMS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvohmsU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>128</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>OHMS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvdmdU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>32</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvb">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>80</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvdmd">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>32</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvaU">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>64</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvaT">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>64</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbtbvbT">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TBVB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <widget class="QLabel" name="lbbalnceiT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>7</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>BALANCE IMPULSO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>1502</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>lbtbvohms</zorder>
+  <zorder>lbtbvbU</zorder>
+  <zorder>lbtbvselT</zorder>
+  <zorder>lbtbvselU</zorder>
+  <zorder>lbtbvsel</zorder>
+  <zorder>lbtbvma</zorder>
+  <zorder>lbtbva</zorder>
+  <zorder>lbtbvmaT</zorder>
+  <zorder>lbtbvmaU</zorder>
+  <zorder>lbtbvdmdT</zorder>
+  <zorder>lbtbvohmsT</zorder>
+  <zorder>lbtbvohmsU</zorder>
+  <zorder>lbtbvdmdU</zorder>
+  <zorder>lbtbvb</zorder>
+  <zorder>lbtbvdmd</zorder>
+  <zorder>lbtbvaU</zorder>
+  <zorder>lbtbvaT</zorder>
+  <zorder>lbtbvbT</zorder>
+  <zorder>frame</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

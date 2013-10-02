@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="svg9493" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" sodipodi:docbase="/datas/Projs/Cliparts Stocker/led" sodipodi:docname="led_circle_blue.svg" sodipodi:version="0.32" inkscape:export-xdpi="90.000000" inkscape:export-ydpi="90.000000" inkscape:version="0.42" inkscape:export-filename="/datas/Projs/Cliparts Stocker/led/led_circle_blue.png" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<metadata>
+	
+		<rdf:RDF  xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<cc:Work  rdf:about="">
+			<dc:title>LED Circle (Blue)</dc:title>
+			<dc:description>jean.victor.balin@gmail.com</dc:description>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>led</rdf:li>
+					<rdf:li>shape</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<dc:publisher>
+				<cc:Agent  rdf:about="http://www.openclipart.org/">
+					<dc:title>Open Clip Art Library</dc:title>
+				</cc:Agent>
+			</dc:publisher>
+			<dc:creator>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:creator>
+			<dc:rights>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:rights>
+			<dc:date>2005-08-21</dc:date>
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<cc:license  rdf:resource="http://web.resource.org/cc/PublicDomain"></cc:license>
+			<dc:language>en</dc:language>
+		</cc:Work>
+		<cc:License  rdf:about="http://web.resource.org/cc/PublicDomain">
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Reproduction"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Distribution"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks"></cc:permits>
+		</cc:License>
+	</rdf:RDF>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  x="539.048" y="-39.647" width="274.348" height="107.667" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="square">
+	<g id="squareRed">
+		<rect x="0" fill="#FF0019" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareGreen">
+		<rect x="54.146" fill="#00FF00" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareBlue">
+		<rect x="109.292" fill="#0000FF" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareWhite">
+		<rect x="165.292" fill="#FFFFFF" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareGrey">
+		<rect x="220.012" fill="#848484" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareBlack">
+		
+			<rect x="220.966" y="56.667" fill="#020202" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareOrange">
+		
+			<rect x="166.246" y="56.667" fill="#FF7D03" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareBrown">
+		
+			<rect x="110.246" y="56.666" fill="#724806" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squarePurple">
+		
+			<rect x="54.64" y="56.667" fill="#FF00FF" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+	<g id="squareYellow">
+		
+			<rect x="-2.382" y="56.666" fill="#FFFF00" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50"/>
+	</g>
+</g>
+</svg>

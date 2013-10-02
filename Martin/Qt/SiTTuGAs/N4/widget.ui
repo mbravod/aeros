@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QLabel" name="lbLinea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frameLinea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>68</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbLineaT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>52</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LINEA 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTG1T">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>45</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TG1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frameVariable">
+   <property name="geometry">
+    <rect>
+     <x>109</x>
+     <y>93</y>
+     <width>263</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbEncabezadoT">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>7</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>VARIABLE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frameEtiq">
+   <property name="geometry">
+    <rect>
+     <x>371</x>
+     <y>93</y>
+     <width>180</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbEtiqT">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>7</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ETIQUETA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>93</y>
+     <width>139</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbLecT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>111</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LECTURAS DE
+ ANALIZADORES</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>688</x>
+     <y>93</y>
+     <width>142</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbUnidT">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>7</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>UNIDADES</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbCemsT">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>6</y>
+     <width>69</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CEMS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>109</x>
+     <y>154</y>
+     <width>719</width>
+     <height>296</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">borde: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>263</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbLectNoxT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>LECTURA DEL ANALIZADOR DE NOX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>0</y>
+      <width>183</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsNoxT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_EO_NOX_PPM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>0</y>
+      <width>139</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbNox">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>0</y>
+      <width>140</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lBNoxU">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ppm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>17</y>
+      <width>263</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_9">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>17</y>
+      <width>183</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_10">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>17</y>
+      <width>139</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <zorder>lbLinea</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_17">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>17</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_18">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>37</y>
+      <width>183</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_27">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>37</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_28">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>37</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_29">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>37</y>
+      <width>139</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_30">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>55</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_31">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>55</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_32">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>56</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_33">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>56</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_34">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>74</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCoU">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ppm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_35">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>74</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCo">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_36">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>74</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsCoT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_EO_CO_PPM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_37">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>74</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbLectCoT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>LECTURA DEL ANALIZADOR DE CO</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_38">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_39">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>111</y>
+      <width>263</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_41">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>92</y>
+      <width>263</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_42">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>130</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_66">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>111</y>
+      <width>183</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_67">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>92</y>
+      <width>183</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_68">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>130</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_95">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>111</y>
+      <width>139</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_96">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>92</y>
+      <width>139</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_97">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>130</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_127">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>111</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_128">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>92</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_129">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>149</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbO2U">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ppm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_131">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>149</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbO2">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_132">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>149</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsO2T">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_EO_O2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_133">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>206</y>
+      <width>263</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_134">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>168</y>
+      <width>263</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_135">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>188</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_138">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>205</y>
+      <width>183</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_178">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>187</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_179">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>168</y>
+      <width>183</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_180">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>205</y>
+      <width>139</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_181">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>187</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_182">
+    <property name="geometry">
+     <rect>
+      <x>443</x>
+      <y>168</y>
+      <width>139</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_183">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>260</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_184">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>240</y>
+      <width>139</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_185">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>222</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_186">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>278</y>
+      <width>139</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_187">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>206</y>
+      <width>140</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_188">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>168</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_189">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>188</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_190">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_191">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>222</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_192">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>241</y>
+      <width>140</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_193">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>278</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_194">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>222</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsEroMantT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_ERO_CEM_MAINT</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_195">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>222</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsMantT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS EN MODO DE MANTENIMIENTO</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_196">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>241</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsEroTroubleT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_ERO_CEM_TROUBLE</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_197">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>241</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbAlarmCemsT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ALARMA GENERAL DEL CEMS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_198">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>278</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbFallasCalibT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FALLA EN CALIBRACION</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <zorder>lbFallasCalibT</zorder>
+    <zorder>lbCemsMantT</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_199">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>263</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsCalibT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS EN MODO DE CALIBRACION</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_200">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>278</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsEroCalT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_ERO_CAL_FAIL</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_201">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>260</y>
+      <width>183</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbCemsEroIncalT">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CEMS_ERO_INCAL</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_130">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>149</y>
+      <width>263</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbLectO2T">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>LECTURA DEL ANALIZADOR DE O2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btTurbinaMant">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>500</y>
+     <width>88</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>5</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>TURBINA EN
+ MANTENIMIENTO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btResetCems">
+   <property name="geometry">
+    <rect>
+     <x>197</x>
+     <y>500</y>
+     <width>88</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>5</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>RESET CEMS
+ COMMS </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btImpPant">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>630</y>
+     <width>133</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

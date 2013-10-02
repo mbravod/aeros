@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/default">
+        <file>resources/train_digits.svg</file>
+        <file>resources/cirled.svg</file>
+        <file>resources/vh2.svg</file>
+        <file>resources/valcuad2.svg</file>
+        <file>resources/valcuad3.svg</file>
+        <file>resources/valele2.svg</file>
+        <file>resources/valsimp3.svg</file>
+        <file>resources/valsimp4.svg</file>
+        <file>resources/agitador.svg</file>
+        <file>resources/bombata.svg</file>
+        <file>resources/inter.svg</file>
+        <file>resources/interm.svg</file>
+        <file>resources/bombatb.svg</file>
+        <file>resources/bombatc.svg</file>
+        <file>resources/bombatd.svg</file>
+        <file>resources/square.svg</file>
+        <file>resources/cirline.svg</file>
+        <file>resources/bombate.svg</file>
+        <file>resources/spring.svg</file>
+        <file>resources/regta.svg</file>
+        <file>resources/telem.svg</file>
+        <file>resources/asptb.svg</file>
+        <file>resources/aspta.svg</file>
+        <file>resources/flame.svg</file>
+    </qresource>
+</RCC>
