@@ -1819,9 +1819,7 @@ double TP_SFC_STEP_SYNC_COOL=60;//Parametrizacion del timer (seg.)
  int main0(int pars) 
 { 
 //ejemplo de ejecucion...genera la raiz cuadrada
-int i=0;
-for (i=5000;i<10000;i++)
-{
+
 
 	NEVADA_COMM_BR_V_10_6=0;
 	DATA_IO_LCR_BR_V_1595=0;
@@ -10503,7 +10501,7 @@ SFC_STEP_SYNC_COOL=SFC_STEP_NORM_4;
    printf("\nout_SFC_STEP_SYNC_COOL %d",out_SFC_STEP_SYNC_COOL[1]);
 
 ////////////////////////////////////////////////////////////////////////////////////																		
-}
+
 if (pars==1){
 int p=5/((int)sqrt(1.0f)-1);
 }

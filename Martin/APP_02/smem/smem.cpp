@@ -629,8 +629,7 @@ double PosicionCuchilla(int segnal, double ValMax, double Tao, double CI, int Fa
  int main0(int pars) 
 { 
 //ejemplo de ejecucion...genera la raiz cuadrada
-int i=0;
-for (i=5000;i<10000;i++){
+
 //SetFloat(sqrt((float)i),i);
 
 //Región para llamar todas las funciones de los programas.
@@ -1132,7 +1131,7 @@ for (i=5000;i<10000;i++){
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-}
+
 if (pars==1){
 int p=5/((int)sqrt(1.0f)-1);
 }

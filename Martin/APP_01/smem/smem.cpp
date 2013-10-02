@@ -624,8 +624,7 @@ double Saturacion(double Segnal, double LInf, double LSup)
  int main0(int pars) 
 { 
 //ejemplo de ejecucion...genera la raiz cuadrada
-int i=0;
-for (i=0;i<5000;i++){
+
 //SetFloat(sqrt((float)i),i);
 
 //Región para llamar todas las funciones de los programas.
@@ -810,7 +809,7 @@ for (i=0;i<5000;i++){
 
 ////////////////////////////////////////////////////////////////////////////
 
-}
+
 if (pars==1){
 int p=5/((int)sqrt(1.0f)-1);
 }
