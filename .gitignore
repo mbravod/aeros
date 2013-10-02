@@ -38,7 +38,7 @@ local.properties
 
 # User-specific files
 *.suo
-*.user
+#*.user
 *.sln.docstates
 
 # Build results
@@ -148,7 +148,7 @@ ClientBin/
 *~
 *.dbmdl
 *.[Pp]ublish.xml
-*.pfx
+#*.pfx
 *.publishsettings
 
 # RIA/Silverlight projects
