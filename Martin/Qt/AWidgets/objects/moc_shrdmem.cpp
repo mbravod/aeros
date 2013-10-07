@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'shrdmem.h'
 **
-** Created: Mon 7. Oct 13:33:00 2013
+** Created: Mon 7. Oct 13:08:35 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
 **
 ** WARNING! All changes made in this file will be lost!

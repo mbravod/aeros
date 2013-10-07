@@ -11,6 +11,7 @@ class ANumIndicator : public AWMultEstateWidget
 
 public:
     ANumIndicator(QWidget *parent = 0);
+    void Update();
 private:
     void init();
 protected:

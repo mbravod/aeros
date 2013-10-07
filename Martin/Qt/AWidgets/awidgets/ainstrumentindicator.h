@@ -25,6 +25,7 @@ public:
     double LineAngle()const{return m_lineAngle;}
     void SetLineAngle(double i);
 
+    void Update();
     //QColor ColorState()const{return m_colorState;}
     //void SetColorState(QColor c);
 

@@ -19,6 +19,7 @@ public:
     void setOrientation(AWOrientation);
 
     virtual void Update();
+
 private:
     void init();
 protected:

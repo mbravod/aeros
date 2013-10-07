@@ -20,6 +20,6 @@ void AWMultEstateWidget::setOrientation(AWOrientation i){
     update();
 }
 void AWMultEstateWidget::Update(){
-    if(m_ShrdMem==NULL || !isUpdateable())return;
-    setValue(m_ShrdMem->getI(0));
+    //if(m_ShrdMem==NULL || !isUpdateable())return;
+    //setValue(m_ShrdMem->getI(0));
 }

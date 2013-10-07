@@ -19,6 +19,6 @@ void AWAnalogicWidget::setOrientation(AWOrientation i){
 }
 
 void AWAnalogicWidget::Update(){
-    if(m_ShrdMem==NULL || !isUpdateable())return;
-    setValue(m_ShrdMem->getF(0));
+    //if(m_ShrdMem==NULL || !isUpdateable())return;
+    //setValue(m_ShrdMem->getF(0));
 }

@@ -26,6 +26,9 @@ public:
 
     EColors OffColor(){return m_OffColor;}
     void setOffColor(EColors);
+
+    void Update();
+
 private:
     void init();
     QStringList eTypeList;

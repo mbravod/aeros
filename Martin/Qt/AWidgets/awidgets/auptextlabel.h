@@ -8,19 +8,20 @@
 class AUpTextLabel : public AWAnalogicWidget
 {
     Q_OBJECT
-    Q_PROPERTY(QString LabelText READ LabelText WRITE setText);
-    Q_PROPERTY(QFrame::Shape FrameShape READ FrameShape WRITE setFrameShape);
-    Q_PROPERTY(QFrame::Shadow FrameShadow READ FrameShadow WRITE setFrameShadow);
-    Q_PROPERTY(int LineWidth READ LineWidth WRITE setLineWidth);
-    Q_PROPERTY(QFont Font READ Font WRITE setFont);
+    Q_PROPERTY(QString LabelText READ LabelText WRITE setText)
+    Q_PROPERTY(QFrame::Shape FrameShape READ FrameShape WRITE setFrameShape)
+    Q_PROPERTY(QFrame::Shadow FrameShadow READ FrameShadow WRITE setFrameShadow)
+    Q_PROPERTY(int LineWidth READ LineWidth WRITE setLineWidth)
+    Q_PROPERTY(QFont Font READ Font WRITE setFont)
 
-    Q_PROPERTY(QString StrOnState READ StrOnState WRITE setStrOnState);
-    Q_PROPERTY(QString StrOffState READ StrOffState WRITE setStrOffState);
+    Q_PROPERTY(QString StrOnState READ StrOnState WRITE setStrOnState)
+    Q_PROPERTY(QString StrOffState READ StrOffState WRITE setStrOffState)
 
-    Q_PROPERTY(int Presicion READ Presicion WRITE setPresicion);
+    Q_PROPERTY(int Presicion READ Presicion WRITE setPresicion)
 
-    Q_ENUMS(AWAlignment);
-    Q_PROPERTY(AWAlignment Alignment READ Alignment WRITE setAlignment);
+    Q_ENUMS(AWAlignment)
+    Q_PROPERTY(AWAlignment Alignment READ Alignment WRITE setAlignment)
+
 public:
 
     enum AWAlignment{AlignLeft=0,AlignCenter,AlignRight};
@@ -51,6 +52,8 @@ public:
 
     void setAlignment(AWAlignment i);
     AWAlignment Alignment()const{return flagAlign;}
+
+    void Update();
 
 
 public slots:

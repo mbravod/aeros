@@ -12,6 +12,8 @@ public:
     AWAnalogicLevel(QWidget *parent = 0);
     QColor ValColor()const{return m_valColor;}
     void setValColor(QColor c);
+    void Update();
+
 private:
     void init();
 protected:

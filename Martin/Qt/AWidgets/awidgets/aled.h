@@ -9,6 +9,7 @@ class ALed : public AWMultEstateWidget
 
 public:
     ALed(QWidget *parent = 0);
+    void Update();
 private:
      void init();
 protected:
