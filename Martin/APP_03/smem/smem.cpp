@@ -3763,7 +3763,7 @@ double TP_SFC_STEP_SYNC_COOL=60;//Parametrizacion del timer (seg.)
 	
 ///////////////////////////ALARMAS_VIBRACIÓN////////////////////////////////////////
 
-	printf(" ");
+	//printf(" ");
 
 
 //variables a imprimir//  
@@ -3777,17 +3777,17 @@ printf("\n NEVADA_KEYMASK2_IN_2 %d",NEVADA_KEYMASK2_IN_2);
 printf("\n ALARM_ALM_LAT_IN_173 %d",ALARM_ALM_LAT_IN_173);     
 printf("\n ALARM_ALM_LAT_IN_174 %d",ALARM_ALM_LAT_IN_174);     
 */
-printf("\n ALARM_ALM_LAT_IN_183 %d",ALARM_ALM_LAT_IN_183);      
-printf("\n ALARM_ALM_LAT_IN_184 %d",ALARM_ALM_LAT_IN_184);   
-printf("\n BENTLY_CRF_LO_VAL_IN_1 %d",BENTLY_CRF_LO_VAL_IN_1);    
-printf("\n BENTLY_CRF_LO_VAL_IN_2 %d",BENTLY_CRF_LO_VAL_IN_2);    
-printf("\n BENTLY_CRF_HI_VAL_IN_2 %d",BENTLY_CRF_HI_VAL_IN_2);    
-printf("\n BENTLY_CRF_HI_VAL_IN_3 %d",BENTLY_CRF_HI_VAL_IN_3);    
-printf("\n BENTLY_M25MXVSN25_GT %d",BENTLY_M25MXVSN25_GT);    
-printf("\n BENTLY_M25MXVSN25_EQ %d",BENTLY_M25MXVSN25_EQ);    
-printf("\n BENTLY_M25MXVSN25_LT %d",BENTLY_M25MXVSN25_LT);    
-printf("\n OUT_BENTLY_CRF_LO_VAL %d",OUT_BENTLY_CRF_LO_VAL);               
-printf("\n B_FORCE_SAR_82_IN %d",B_FORCE_SAR_82_IN);    
+//printf("\n ALARM_ALM_LAT_IN_183 %d",ALARM_ALM_LAT_IN_183);      
+//printf("\n ALARM_ALM_LAT_IN_184 %d",ALARM_ALM_LAT_IN_184);   
+//printf("\n BENTLY_CRF_LO_VAL_IN_1 %d",BENTLY_CRF_LO_VAL_IN_1);    
+//printf("\n BENTLY_CRF_LO_VAL_IN_2 %d",BENTLY_CRF_LO_VAL_IN_2);    
+//printf("\n BENTLY_CRF_HI_VAL_IN_2 %d",BENTLY_CRF_HI_VAL_IN_2);    
+//printf("\n BENTLY_CRF_HI_VAL_IN_3 %d",BENTLY_CRF_HI_VAL_IN_3);    
+//printf("\n BENTLY_M25MXVSN25_GT %d",BENTLY_M25MXVSN25_GT);    
+//printf("\n BENTLY_M25MXVSN25_EQ %d",BENTLY_M25MXVSN25_EQ);    
+//printf("\n BENTLY_M25MXVSN25_LT %d",BENTLY_M25MXVSN25_LT);    
+//printf("\n OUT_BENTLY_CRF_LO_VAL %d",OUT_BENTLY_CRF_LO_VAL);               
+//printf("\n B_FORCE_SAR_82_IN %d",B_FORCE_SAR_82_IN);    
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -3817,7 +3817,7 @@ NEVADA_CH_FAIL_AL_IN=0;
 //Llamada de funcion para el timer SHUTDOWN_DM_IN_1 de tipo TOND
    SHUTDOWN_DM_IN_1=NEVADA_CH_FAIL_AL_IN;
    TOND(SHUTDOWN_DM_IN_1,TP_SHUTDOWN_DM_IN_1,Time_factor,out_SHUTDOWN_DM_IN_1);
-   printf("\nout_SHUTDOWN_DM_IN_1 %d",out_SHUTDOWN_DM_IN_1[1]);
+   //printf("\nout_SHUTDOWN_DM_IN_1 %d",out_SHUTDOWN_DM_IN_1[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //NEVADA_XNSDENBL
  if (CORE_ANALOG_N2ROTOR>500)
@@ -3910,7 +3910,7 @@ ALARM_ALM_LAT_IN_184=0;
 //Llamada de funcion para el timer SHUTDOWN_DM_GEN_IN_13 de tipo TOND
 SHUTDOWN_DM_GEN_IN_13=NEVADA_COMM_BR_V_1_45;
    TOND(SHUTDOWN_DM_GEN_IN_13,TP_SHUTDOWN_DM_GEN_IN_13,Time_factor,out_SHUTDOWN_DM_GEN_IN_13);
-   printf("\nout_SHUTDOWN_DM_GEN_IN_13 %d",out_SHUTDOWN_DM_GEN_IN_13[1]);
+   //printf("\nout_SHUTDOWN_DM_GEN_IN_13 %d",out_SHUTDOWN_DM_GEN_IN_13[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
@@ -4013,18 +4013,18 @@ else
 
 ///////////////////////////////ARRANQUE HIRÁULICO///////////////////////////////////
 
- printf(" ");
+ //printf(" ");
 	 //Funcion para imprimir
-   PRINTING(Print_iter,Time_factor,&Counter);
-   printf("\nLATCH_DE1364LAT= %d",LATCH_DE1364LAT);
-   printf("\nLATCH1_PROB_LAT= %d",LATCH1_PROB_LAT);
-   printf("\nHYD_STRT_DE1364A= %d",HYD_STRT_DE1364A);
-   printf("\nSFC_STEP_AUXFAN_DLY= %d",out_SFC_STEP_AUXFAN_DLY[1]);
-   printf("\nLATCH_STRT_LATCH= %d",LATCH_STRT_LATCH);
-   printf("\nout_HYD_STRT_DLY_SD %d",out_HYD_STRT_DLY_SD[1]);
-   printf("\nout_HYD_STRT_MOT1615 %d",out_HYD_STRT_MOT1615[1]);
-   printf("\nout_FL_DEL_TMR %d",out_FL_DEL_TMR[1]);
-   printf("\nout_CRANK_TMR %d",out_CRANK_TMR[1]);
+   //PRINTING(Print_iter,Time_factor,&Counter);
+   //printf("\nLATCH_DE1364LAT= %d",LATCH_DE1364LAT);
+   //printf("\nLATCH1_PROB_LAT= %d",LATCH1_PROB_LAT);
+   //printf("\nHYD_STRT_DE1364A= %d",HYD_STRT_DE1364A);
+   //printf("\nSFC_STEP_AUXFAN_DLY= %d",out_SFC_STEP_AUXFAN_DLY[1]);
+   //printf("\nLATCH_STRT_LATCH= %d",LATCH_STRT_LATCH);
+   //printf("\nout_HYD_STRT_DLY_SD %d",out_HYD_STRT_DLY_SD[1]);
+   //printf("\nout_HYD_STRT_MOT1615 %d",out_HYD_STRT_MOT1615[1]);
+   //printf("\nout_FL_DEL_TMR %d",out_FL_DEL_TMR[1]);
+   //printf("\nout_CRANK_TMR %d",out_CRANK_TMR[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //LLAMADA DE FUNCIONES PARA BLOQUES
@@ -4300,32 +4300,32 @@ if(N1N34_BI_LSLL1601==0&& HYD_STRT_STRTORCRNK==1){
    }else{
 	   HYD_STRT_PSLL1605SD=0;
    }
-   printf(" ");
+  // printf(" ");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////DISPARO_ALARMAS//////////////////////////////////////
 
-   printf(" ");
+   //printf(" ");
 
 
 //variables a imprimir//  
-	 printf("\n SPRINT_ALARM_IN_1 %d",SPRINT_ALARM_IN_1);
-printf("\n SPRINT_ALARM_IN_2 %d",SPRINT_ALARM_IN_2); 
-printf("\n SPRINT_FTENA_MASK_IN_1 %d",SPRINT_FTENA_MASK_IN_1); 
-printf("\n   SPRINT_FT62231CMP %d",  SPRINT_FT62231CMP); 
+	 //printf("\n SPRINT_ALARM_IN_1 %d",SPRINT_ALARM_IN_1);
+//printf("\n SPRINT_ALARM_IN_2 %d",SPRINT_ALARM_IN_2); 
+//printf("\n SPRINT_FTENA_MASK_IN_1 %d",SPRINT_FTENA_MASK_IN_1); 
+//printf("\n   SPRINT_FT62231CMP %d",  SPRINT_FT62231CMP); 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //LLAMADA DE FUNCIONES PARA BLOQUES
 //declaracion de variables pag_291
 
 //Llamada de funcion para invertir la entrada FALSE_SPRINT_PDSH62233
    NFALSE_SPRINT_PDSH62233=NOT(FALSE_SPRINT_PDSH62233);
-   printf("\nNFALSE_SPRINT_PDSH62233 %d",NFALSE_SPRINT_PDSH62233);
+   //printf("\nNFALSE_SPRINT_PDSH62233 %d",NFALSE_SPRINT_PDSH62233);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SPRINT_PMPDLYON de tipo TOND
 SPRINT_PMPDLYON=SPRINT_MOT62226;
    TOND(SPRINT_PMPDLYON,TP_SPRINT_PMPDLYON,Time_factor,out_SPRINT_PMPDLYON);
-   printf("\nout_SPRINT_PMPDLYON %d",out_SPRINT_PMPDLYON[1]);
+   //printf("\nout_SPRINT_PMPDLYON %d",out_SPRINT_PMPDLYON[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SPRINT MSK62233_AND
@@ -4372,33 +4372,33 @@ else
 //Llamada de funcion para el timer SPRINTDLY62270AL de tipo TOND
    SPRINTDLY62270AL=SPRINT_FT62270CMP;
    TOND(SPRINTDLY62270AL,TP_SPRINTDLY62270AL,Time_factor,out_SPRINTDLY62270AL);
-   printf("\nout_SPRINTDLY62270AL %d",out_SPRINTDLY62270AL[1]);
+   //printf("\nout_SPRINTDLY62270AL %d",out_SPRINTDLY62270AL[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SPRINTDLY62270SD de tipo TOND
    SPRINTDLY62270SD=SPRINT_FT62270CMP;
    TOND(SPRINTDLY62270SD,TP_SPRINTDLY62270SD,Time_factor,out_SPRINTDLY62270SD);
-   printf("\nout_SPRINTDLY62270SD %d",out_SPRINTDLY62270SD[1]);
+   //printf("\nout_SPRINTDLY62270SD %d",out_SPRINTDLY62270SD[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SPRINTDLY6231ALM de tipo TOND
    SPRINTDLY6231ALM=SPRINT_FT62231CMP;
    TOND(SPRINTDLY6231ALM,TP_SPRINTDLY6231ALM,Time_factor,out_SPRINTDLY6231ALM);
-   printf("\nout_SPRINTDLY6231ALM %d",out_SPRINTDLY6231ALM[1]);
+   //printf("\nout_SPRINTDLY6231ALM %d",out_SPRINTDLY6231ALM[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SPRINTDLY6231SD de tipo TOND
    SPRINTDLY6231SD=SPRINT_FT62231CMP;
    TOND(SPRINTDLY6231SD,TP_SPRINTDLY6231SD,Time_factor,out_SPRINTDLY6231SD);
-   printf("\nout_SPRINTDLY6231SD %d",out_SPRINTDLY6231SD[1]);
+   //printf("\nout_SPRINTDLY6231SD %d",out_SPRINTDLY6231SD[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //Llamada de funcion para el timer SPRINT_FLOW_DLY1 de tipo TOND
 SPRINT_FLOW_DLY1=SPRINT_FT62234LOG;
    TOND(SPRINT_FLOW_DLY1,TP_SPRINT_FLOW_DLY1,Time_factor,out_SPRINT_FLOW_DLY1);
-   printf("\nout_SPRINT_FLOW_DLY1 %d",out_SPRINT_FLOW_DLY1[1]);
+   //printf("\nout_SPRINT_FLOW_DLY1 %d",out_SPRINT_FLOW_DLY1[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SPRINT_FLOW_DLY2 de tipo TOND
 SPRINT_FLOW_DLY2=SPRINT_FT62234LOG;
    TOND(SPRINT_FLOW_DLY2,TP_SPRINT_FLOW_DLY2,Time_factor,out_SPRINT_FLOW_DLY2);
-   printf("\nout_SPRINT_FLOW_DLY2 %d",out_SPRINT_FLOW_DLY2[1]);
+   //printf("\nout_SPRINT_FLOW_DLY2 %d",out_SPRINT_FLOW_DLY2[1]);
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -4444,16 +4444,16 @@ printf("\n   HOLD_PRIOR_TO_LP_PURGE %d",HOLD_PRIOR_TO_LP_PURGE);
 printf("\n   OUT_PURGE_LP_SPRINT_MANIFOLD %d",OUT_PURGE_LP_SPRINT_MANIFOLD);
 printf("\n   PURGE_LP_SPRINT_MANIFOLD %d",PURGE_LP_SPRINT_MANIFOLD);
 */
-printf("\n   SPRINT_HP_OFF_1_SF_SEL_1 %d",SPRINT_HP_OFF_1_SF_SEL_1);
-printf("\n   OUT_HOLD_FOR_SPRINT_RAMP_DOWN %d",OUT_HOLD_FOR_SPRINT_RAMP_DOWN);
-printf("\n   HOLD_FOR_SPRINT_RAMP_DOWN %d",HOLD_FOR_SPRINT_RAMP_DOWN);
+//printf("\n   SPRINT_HP_OFF_1_SF_SEL_1 %d",SPRINT_HP_OFF_1_SF_SEL_1);
+//printf("\n   OUT_HOLD_FOR_SPRINT_RAMP_DOWN %d",OUT_HOLD_FOR_SPRINT_RAMP_DOWN);
+//printf("\n   HOLD_FOR_SPRINT_RAMP_DOWN %d",HOLD_FOR_SPRINT_RAMP_DOWN);
 
-printf("\n   OUT_DRAIN_HP_SPRINT_PATH %d",OUT_DRAIN_HP_SPRINT_PATH);
-printf("\n   DRAIN_HP_SPRINT_PATH %d",DRAIN_HP_SPRINT_PATH);
+//printf("\n   OUT_DRAIN_HP_SPRINT_PATH %d",OUT_DRAIN_HP_SPRINT_PATH);
+//printf("\n   DRAIN_HP_SPRINT_PATH %d",DRAIN_HP_SPRINT_PATH);
 
-  printf("\n   SPRINT_JIMMY_SW2_NO %d",SPRINT_JIMMY_SW2_NO);
-printf("\n   SPRINT_SPRINT_OUT %d",SPRINT_SPRINT_OUT);
- printf("\n   OUT_SPRINT_OK_TO_XFR %d",OUT_SPRINT_OK_TO_XFR); 
+  //printf("\n   SPRINT_JIMMY_SW2_NO %d",SPRINT_JIMMY_SW2_NO);
+//printf("\n   SPRINT_SPRINT_OUT %d",SPRINT_SPRINT_OUT);
+ //printf("\n   OUT_SPRINT_OK_TO_XFR %d",OUT_SPRINT_OK_TO_XFR); 
   
   
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -4624,7 +4624,7 @@ if(NFALSE_SPRINT_NOTOFF==0)
 
 //Llamada de funcion para invertir la entrada FALSE_SPRINT_NOTOFF
   NFALSE_SPRINT_NOTOFF=NOT(FALSE_SPRINT_NOTOFF);
-  printf("\nNFALSE_SPRINT_NOTOFF %d",NFALSE_SPRINT_NOTOFF);
+  //printf("\nNFALSE_SPRINT_NOTOFF %d",NFALSE_SPRINT_NOTOFF);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SPRINT_SPRYRMPOFF
@@ -4843,7 +4843,7 @@ if(SPRINT_SEL_SPRINT==1&&SPRINT_SEL_SPRAY==1&&SPRINT_DRAINHP_TM==1)
 
 //Llamada de funcion para invertir la entrada FALSE_SPRINT_NOT_RUNNIN
   NFALSE_SPRINT_NOT_RUNNIN=NOT(FALSE_SPRINT_NOT_RUNNIN);
-  printf("\nNFALSE_SPRINT_NOT_RUNNIN %d",NFALSE_SPRINT_NOT_RUNNIN);
+  //printf("\nNFALSE_SPRINT_NOT_RUNNIN %d",NFALSE_SPRINT_NOT_RUNNIN);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
@@ -4878,7 +4878,7 @@ OUT_SPRINT_OK_TO_XFR=0;
 
 ////////////////////////////////ALARMAS/////////////////////////////////////////////
 
-	printf(" ");
+	//printf(" ");
 
 
 //variables a imprimir//  
@@ -5293,70 +5293,70 @@ OUT_SPRINT_OK_TO_XFR=0;
        
        //IMPRESIÒN DE VARIABLES HOJA 286//
        
-       printf("\nSPRINT_HP_2_LP_1_TRAN_1=%d",SPRINT_HP_2_LP_1_TRAN_1);
-       printf("\nSPRINT_HP_2_LP_2_TRAN_1=%d",SPRINT_HP_2_LP_2_TRAN_1);
-       printf("\nSPRINT_HP_2_LP_3_TRAN_1=%d",SPRINT_HP_2_LP_3_TRAN_1);
-       printf("\nSPRINT_LP_ON_1_TRAN_1=%d",SPRINT_LP_ON_1_TRAN_1);
-       printf("\nSPRINT_LP_ON_2_TRAN_1=%d",SPRINT_LP_ON_2_TRAN_1);
-       printf("\nSPRINT_LP_ON_3_TRAN_1=%d",SPRINT_LP_ON_3_TRAN_1);
-       printf("\nOUT_OR_SPRINT_LP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1);
-       printf("\nFUEL_SYS_GAS100=%d",FUEL_SYS_GAS100);
-       printf("\nCORE_DIGITAL_FUELOFF=%d",CORE_DIGITAL_FUELOFF);
-       printf("\nOUT_OR_SPRINT_LP_XFR_WT_T_COND_1=%d",OUT_OR_SPRINT_LP_XFR_WT_T_COND_1);
-       printf("\nSPRINT_LP_2_HP_1_TRAN_1=%d",SPRINT_LP_2_HP_1_TRAN_1);
-       printf("\nSPRINT_LP_2_HP_2_TRAN_1=%d",SPRINT_LP_2_HP_2_TRAN_1);
-       printf("\nSPRINT_LP_2_HP_3_TRAN_1=%d",SPRINT_LP_2_HP_3_TRAN_1);
-       printf("\nSPRINT_LP_2_HP_4_TRAN_1=%d",SPRINT_LP_2_HP_4_TRAN_1);
-       printf("\nSPRINT_LP_2_HP_5_TRAN_1=%d",SPRINT_LP_2_HP_5_TRAN_1);
-       printf("\nSPRINT_HP_ON_3_TRAN_1=%d",SPRINT_HP_ON_3_TRAN_1);
-       printf("\nOUT_OR_SPRINT_HP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1);
-       printf("\nSPRINT_HP_ON_1_TRAN_1=%d",SPRINT_HP_ON_1_TRAN_1);
-       printf("\nSPRINT_HP_ON_2_TRAN_1=%d",SPRINT_HP_ON_2_TRAN_1);
-       printf("\nOUT_OR_SPRINT_OFF_1_SF_SEL_2=%d",OUT_OR_SPRINT_OFF_1_SF_SEL_2);
-       printf("\nSPRINT_HP_PRG_TMR=%d",SPRINT_HP_PRG_TMR);
-       printf("\nFALSE_SPRINT_TRAN_4_OR=%d",FALSE_SPRINT_TRAN_4_OR);
-       printf("\nOUT_OR_SPRINT_OFF_4_T_COND_3=%d",OUT_OR_SPRINT_OFF_4_T_COND_3);
-       printf("\nSPRINT_OFF_4_SFC_STEP=%d",SPRINT_OFF_4_SFC_STEP);
-       printf("\nFALSE_SPRINT_NOT_RUNNIN=%d",FALSE_SPRINT_NOT_RUNNIN);
-       printf("\nOUT_AND_SPRINT_JIMMY_SW2_NO=%d",OUT_AND_SPRINT_JIMMY_SW2_NO);
-       printf("\nSPRINT_HP_OFF_2_SFC_STEP=%d",SPRINT_HP_OFF_2_SFC_STEP);
-       printf("\nSPRINT_LP_OFF_3_SFC_STEP=%d",SPRINT_LP_OFF_3_SFC_STEP);
-       printf("\nSPRINT_LP_OFF_5_SFC_STEP=%d",SPRINT_LP_OFF_5_SFC_STEP);
-       printf("\nSPRINT_OFF_1_SFC_STEP=%d",SPRINT_OFF_1_SFC_STEP);
-       printf("\nSPRINT_OFF_2_SFC_STEP=%d",SPRINT_OFF_2_SFC_STEP);
-       printf("\nSPRINT_OFF_3_SFC_STEP=%d",SPRINT_OFF_3_SFC_STEP);
-       printf("\nSPRINT_MASK_PURGE=%d",SPRINT_MASK_PURGE);       
-       printf("\nSPRINT_NOTREADY_SFC_STEP=%d",SPRINT_NOTREADY_SFC_STEP);
-       printf("\nOUT_OR_SPRINT_SPRINT_OUT_IN=%d",OUT_OR_SPRINT_SPRINT_OUT_IN);
-       printf("\nSPRINT_SEL_SPRINT=%d",SPRINT_SEL_SPRINT);
-       printf("\nSPRINT_SEL_SPRAY=%d",SPRINT_SEL_SPRAY);
-       printf("\nSPRINT_RAMP_DOWN_P_LIM_1=%d",SPRINT_RAMP_DOWN_P_LIM_1);
-       printf("\nSPRINT_DLY_LPEHLD=%d",SPRINT_DLY_LPEHLD);
-       printf("\nTRUE_EVACUATE_LP_SPRINT_MANIFOLD=%d",TRUE_EVACUATE_LP_SPRINT_MANIFOLD);
-       printf("\nSPRINT_DLY_LPPHLD=%d",SPRINT_DLY_LPPHLD);
-       printf("\nSPRINT_LP_PRG_TMR=%d",SPRINT_LP_PRG_TMR);
-       printf("\nSPRINT_LP_OFF_5_TRAN_3=%d",SPRINT_LP_OFF_5_TRAN_3);
-       printf("\nSPRINT_DRAINHP_TM=%d",SPRINT_DRAINHP_TM);
-       printf("\nSPRINT_HP_OFF_2_TRAN_3=%d",SPRINT_HP_OFF_2_TRAN_3);
-       printf("\nSPRINT_EVAC_SW1=%d",SPRINT_EVAC_SW1);
-       printf("\nSPRINT_GAS_OR_LIQ=%d",SPRINT_GAS_OR_LIQ);
-       printf("\nSPRINT_DN_PRG_TMR=%d",SPRINT_DN_PRG_TMR);
-       printf("\nSPRINT_SPRT_READY_TRAN_1=%d",SPRINT_SPRT_READY_TRAN_1);
-       printf("\nSPRINT_TRANSOFF=%d",SPRINT_TRANSOFF);
-       printf("\nOUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=%d",OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5);
-       printf("\nOUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=%d",OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2);
-       printf("\nOUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=%d",OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2);
-       printf("\nOUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=%d",OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1);
-       printf("\nOUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=%d",OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2);
-       printf("\nOUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2=%d",OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2);
-       printf("\nOUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=%d",OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12);
-       printf("\nOUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2=%d",OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2);
-       printf("\nOUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=%d",OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3);
-       printf("\nOUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=%d",OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2);
-       printf("\nOUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=%d",OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3);
-       printf("\nOUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=%d",OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK);
-       printf("\nOUT_S3_ET5_SPRINT_PURGE_HP_IN_2=%d",OUT_S3_ET5_SPRINT_PURGE_HP_IN_2);
-       printf("\nOUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3=%d",OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3);
+       //printf("\nSPRINT_HP_2_LP_1_TRAN_1=%d",SPRINT_HP_2_LP_1_TRAN_1);
+       //printf("\nSPRINT_HP_2_LP_2_TRAN_1=%d",SPRINT_HP_2_LP_2_TRAN_1);
+       //printf("\nSPRINT_HP_2_LP_3_TRAN_1=%d",SPRINT_HP_2_LP_3_TRAN_1);
+       //printf("\nSPRINT_LP_ON_1_TRAN_1=%d",SPRINT_LP_ON_1_TRAN_1);
+       //printf("\nSPRINT_LP_ON_2_TRAN_1=%d",SPRINT_LP_ON_2_TRAN_1);
+       //printf("\nSPRINT_LP_ON_3_TRAN_1=%d",SPRINT_LP_ON_3_TRAN_1);
+       //printf("\nOUT_OR_SPRINT_LP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_LP_OFF_1_SF_SEL_1);
+       //printf("\nFUEL_SYS_GAS100=%d",FUEL_SYS_GAS100);
+       //printf("\nCORE_DIGITAL_FUELOFF=%d",CORE_DIGITAL_FUELOFF);
+       //printf("\nOUT_OR_SPRINT_LP_XFR_WT_T_COND_1=%d",OUT_OR_SPRINT_LP_XFR_WT_T_COND_1);
+       //printf("\nSPRINT_LP_2_HP_1_TRAN_1=%d",SPRINT_LP_2_HP_1_TRAN_1);
+       //printf("\nSPRINT_LP_2_HP_2_TRAN_1=%d",SPRINT_LP_2_HP_2_TRAN_1);
+       //printf("\nSPRINT_LP_2_HP_3_TRAN_1=%d",SPRINT_LP_2_HP_3_TRAN_1);
+       //printf("\nSPRINT_LP_2_HP_4_TRAN_1=%d",SPRINT_LP_2_HP_4_TRAN_1);
+       //printf("\nSPRINT_LP_2_HP_5_TRAN_1=%d",SPRINT_LP_2_HP_5_TRAN_1);
+       //printf("\nSPRINT_HP_ON_3_TRAN_1=%d",SPRINT_HP_ON_3_TRAN_1);
+       //printf("\nOUT_OR_SPRINT_HP_OFF_1_SF_SEL_1=%d",OUT_OR_SPRINT_HP_OFF_1_SF_SEL_1);
+       //printf("\nSPRINT_HP_ON_1_TRAN_1=%d",SPRINT_HP_ON_1_TRAN_1);
+       //printf("\nSPRINT_HP_ON_2_TRAN_1=%d",SPRINT_HP_ON_2_TRAN_1);
+       //printf("\nOUT_OR_SPRINT_OFF_1_SF_SEL_2=%d",OUT_OR_SPRINT_OFF_1_SF_SEL_2);
+       //printf("\nSPRINT_HP_PRG_TMR=%d",SPRINT_HP_PRG_TMR);
+       //printf("\nFALSE_SPRINT_TRAN_4_OR=%d",FALSE_SPRINT_TRAN_4_OR);
+       //printf("\nOUT_OR_SPRINT_OFF_4_T_COND_3=%d",OUT_OR_SPRINT_OFF_4_T_COND_3);
+       //printf("\nSPRINT_OFF_4_SFC_STEP=%d",SPRINT_OFF_4_SFC_STEP);
+       //printf("\nFALSE_SPRINT_NOT_RUNNIN=%d",FALSE_SPRINT_NOT_RUNNIN);
+       //printf("\nOUT_AND_SPRINT_JIMMY_SW2_NO=%d",OUT_AND_SPRINT_JIMMY_SW2_NO);
+       //printf("\nSPRINT_HP_OFF_2_SFC_STEP=%d",SPRINT_HP_OFF_2_SFC_STEP);
+       //printf("\nSPRINT_LP_OFF_3_SFC_STEP=%d",SPRINT_LP_OFF_3_SFC_STEP);
+       //printf("\nSPRINT_LP_OFF_5_SFC_STEP=%d",SPRINT_LP_OFF_5_SFC_STEP);
+       //printf("\nSPRINT_OFF_1_SFC_STEP=%d",SPRINT_OFF_1_SFC_STEP);
+       //printf("\nSPRINT_OFF_2_SFC_STEP=%d",SPRINT_OFF_2_SFC_STEP);
+       //printf("\nSPRINT_OFF_3_SFC_STEP=%d",SPRINT_OFF_3_SFC_STEP);
+       //printf("\nSPRINT_MASK_PURGE=%d",SPRINT_MASK_PURGE);       
+       //printf("\nSPRINT_NOTREADY_SFC_STEP=%d",SPRINT_NOTREADY_SFC_STEP);
+       //printf("\nOUT_OR_SPRINT_SPRINT_OUT_IN=%d",OUT_OR_SPRINT_SPRINT_OUT_IN);
+       //printf("\nSPRINT_SEL_SPRINT=%d",SPRINT_SEL_SPRINT);
+       //printf("\nSPRINT_SEL_SPRAY=%d",SPRINT_SEL_SPRAY);
+       //printf("\nSPRINT_RAMP_DOWN_P_LIM_1=%d",SPRINT_RAMP_DOWN_P_LIM_1);
+       //printf("\nSPRINT_DLY_LPEHLD=%d",SPRINT_DLY_LPEHLD);
+       //printf("\nTRUE_EVACUATE_LP_SPRINT_MANIFOLD=%d",TRUE_EVACUATE_LP_SPRINT_MANIFOLD);
+       //printf("\nSPRINT_DLY_LPPHLD=%d",SPRINT_DLY_LPPHLD);
+       //printf("\nSPRINT_LP_PRG_TMR=%d",SPRINT_LP_PRG_TMR);
+       //printf("\nSPRINT_LP_OFF_5_TRAN_3=%d",SPRINT_LP_OFF_5_TRAN_3);
+       //printf("\nSPRINT_DRAINHP_TM=%d",SPRINT_DRAINHP_TM);
+       //printf("\nSPRINT_HP_OFF_2_TRAN_3=%d",SPRINT_HP_OFF_2_TRAN_3);
+       //printf("\nSPRINT_EVAC_SW1=%d",SPRINT_EVAC_SW1);
+       //printf("\nSPRINT_GAS_OR_LIQ=%d",SPRINT_GAS_OR_LIQ);
+       //printf("\nSPRINT_DN_PRG_TMR=%d",SPRINT_DN_PRG_TMR);
+       //printf("\nSPRINT_SPRT_READY_TRAN_1=%d",SPRINT_SPRT_READY_TRAN_1);
+       //printf("\nSPRINT_TRANSOFF=%d",SPRINT_TRANSOFF);
+       //printf("\nOUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5=%d",OUT_S1_ET1_IFACE_CORE_ZSPRTONOR_IN_5);
+       //printf("\nOUT_S1_ET2_SPRINT_LP_E_HLD_IN_2=%d",OUT_S1_ET2_SPRINT_LP_E_HLD_IN_2);
+       //printf("\nOUT_S1_ET3_SPRINT_EV_TM_OR_IN_2=%d",OUT_S1_ET3_SPRINT_EV_TM_OR_IN_2);
+       //printf("\nOUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1=%d",OUT_S1_ET4_SPRINT_OK_TO_XFR_IN_1);
+       //printf("\nOUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2=%d",OUT_S1_ET5_SPRINT_LP_PRG_HLD_IN_2);
+       //printf("\nOUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2=%d",OUT_S1_ET6_SPRINT_LP_PRGT_OR_IN_2);
+       //printf("\nOUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12=%d",OUT_S2_ET1_IFACE_CORE_ZSPRTONOR_IN_12);
+       //printf("\nOUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2=%d",OUT_S2_ET2_SPRINT_DRN_TMR_OR_IN_2);
+       //printf("\nOUT_S3_ET1_SPRINT_EV_TM_OR_IN_3=%d",OUT_S3_ET1_SPRINT_EV_TM_OR_IN_3);
+       //printf("\nOUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2=%d",OUT_S3_ET2_SPRINT_OK_TO_XFR_IN_2);
+       //printf("\nOUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3=%d",OUT_S3_ET3_SPRINT_LP_PRGT_OR_IN_3);
+       //printf("\nOUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK=%d",OUT_S3_ET4_SPRINT_DN_PRGT_Z_FEEDBACK);
+      // printf("\nOUT_S3_ET5_SPRINT_PURGE_HP_IN_2=%d",OUT_S3_ET5_SPRINT_PURGE_HP_IN_2);
+       //printf("\nOUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3=%d",OUT_S3_ET6_SPRINT_OK_TO_XFR_IN_3);
        //////////////////////////////////////////////////////////////////////////
        
 	   //IMPRESIÒN DE VARIABLES HOJA 287//
@@ -7260,27 +7260,27 @@ OUT_SPRINT_OK_TO_XFR=0;
 
 
 
- printf(" ");
+// printf(" ");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////FUEL SYSTEM///////////////////////////////////////////////
 
-  printf(" ");
+  //printf(" ");
    
   
 
 
 //printf("\n         TLO_TLUB_GT100_B_NAME %d",  TLO_TLUB_GT100_B_NAME);
 
-printf("\n    FUEL_READY_TO_START__AND_XFER     %d",  FUEL_READY_TO_START__AND_XFER);
-printf("\n     WAIT_FOR_PURGE_TIMER_DONE    %d",   WAIT_FOR_PURGE_TIMER_DONE);
-printf("\n    ACCEL_TO_LITE_OFF   %d",   ACCEL_TO_LITE_OFF);
-printf("\n    VERIFY_FUEL_VALVE_AT_MIN_POSITIN   %d",   VERIFY_FUEL_VALVE_AT_MIN_POSITIN);
-printf("\n   ACTIVATE_IGNITORS  %d",  ACTIVATE_IGNITORS);
-printf("\n   OPN_VNT_SOV6208  %d",  OPN_VNT_SOV6208);
-printf("\n   WAIT_FOR_LITE_OFF  %d",  WAIT_FOR_LITE_OFF);
-printf("\n   DE_ACTIVATE_GAS_FUEL  %d",  DE_ACTIVATE_GAS_FUEL);
+//printf("\n    FUEL_READY_TO_START__AND_XFER     %d",  FUEL_READY_TO_START__AND_XFER);
+//printf("\n     WAIT_FOR_PURGE_TIMER_DONE    %d",   WAIT_FOR_PURGE_TIMER_DONE);
+//printf("\n    ACCEL_TO_LITE_OFF   %d",   ACCEL_TO_LITE_OFF);
+//printf("\n    VERIFY_FUEL_VALVE_AT_MIN_POSITIN   %d",   VERIFY_FUEL_VALVE_AT_MIN_POSITIN);
+//printf("\n   ACTIVATE_IGNITORS  %d",  ACTIVATE_IGNITORS);
+//printf("\n   OPN_VNT_SOV6208  %d",  OPN_VNT_SOV6208);
+//printf("\n   WAIT_FOR_LITE_OFF  %d",  WAIT_FOR_LITE_OFF);
+//printf("\n   DE_ACTIVATE_GAS_FUEL  %d",  DE_ACTIVATE_GAS_FUEL);
   
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -7405,13 +7405,13 @@ if(FUEL_SYS_DACTGAS==1){
 
 
 
-   printf(" ");
+  // printf(" ");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////TURBINE OIL//////////////////////////////////////////
 
-   printf(" ");
+   //printf(" ");
 
 //Llamada de funcion para el timer TLO_SD1_A_DLY de tipo TOND
 TLO_SD1_A_DLY=TLO_PLBLT15ENA_AND;
@@ -7456,25 +7456,25 @@ TLO_PDSHH6119D_DELAY=TLO_PDSHH6119N_NOT;
 
         
         
-   printf(" ");
+   //printf(" ");
 
 //Funcion para imprimir
 // SEÑALES DE SALIDA DEL PRESION DE ACEITE LUBRICANTE  
 //******************************************************************************
    // TRANSMISOR DE PRESION PT-6121A
 //LUBE LO LO PRESS (XN25>7.8K RPM)
-printf("\n TLO_PT6121ASD1_B_NAME %d", TLO_PT6121ASD1_B_NAME);
+//printf("\n TLO_PT6121ASD1_B_NAME %d", TLO_PT6121ASD1_B_NAME);
 //LUBE LO LO PRESS (4.5<XN25>7.8K RPM)
-printf("\n TLO_PT6121ASD2_B_NAME %d", TLO_PT6121ASD2_B_NAME);
+//printf("\n TLO_PT6121ASD2_B_NAME %d", TLO_PT6121ASD2_B_NAME);
    // TRANSMISOR DE PRESION PT-6121B
 //LUBE LO LO PRESS (XN25>7.8K RPM) DESACELERACION LENTA
-printf("\n TLO_PT6121BSD1_B_NAME %d", TLO_PT6121BSD1_B_NAME);                                                                               
+//printf("\n TLO_PT6121BSD1_B_NAME %d", TLO_PT6121BSD1_B_NAME);                                                                               
 //LUBE LO LO PRESS (4.5<XN25>7.8K RPM) DISPARO RAPIDO SIN MOTORIZACION
-printf("\n TLO_PT6121BSD2_B_NAME %d", TLO_PT6121BSD2_B_NAME);   
+//printf("\n TLO_PT6121BSD2_B_NAME %d", TLO_PT6121BSD2_B_NAME);   
 //******************************************************************************  
   
 //IMPRESION DEL TRANSMISOT PT-6121 SELECCION, FALLA Y DIFERENCIA
-printf("\n PLUBSEL %d", PLUBSEL);
+/*printf("\n PLUBSEL %d", PLUBSEL);
 printf("\n PLUB_AB_SENSORS_HI_DIFFERENCE %d", PLUB_AB_SENSORS_HI_DIFFERENCE);
 printf("\n PLUB_AB_SENSORS_FAILED %d", PLUB_AB_SENSORS_FAILED);
 printf("\n TURB_LUBE_OIL_BOTH_SNSR_FLT %d", TURB_LUBE_OIL_BOTH_SNSR_FLT);
@@ -7507,7 +7507,7 @@ printf("\n      TLO_PSCVMASK_AND %d", TLO_PSCVMASK_AND);
    printf("\n         TLO_PDSH6118AL_B_NAME %d", TLO_PDSH6118AL_B_NAME);
    printf("\n         TLO_PDSHH6119S_B_NAME %d", TLO_PDSHH6119S_B_NAME);
    printf("\n         TLO_TLUB_GT100_B_NAME %d",  TLO_TLUB_GT100_B_NAME);
-   printf("\n		  out_TLO_XN25DLY %d",out_TLO_XN25DLY[1]);
+   printf("\n		  out_TLO_XN25DLY %d",out_TLO_XN25DLY[1]);*/
   
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -7767,14 +7767,14 @@ if(TLO_TLUBSEL_A_NAME<=100 && TLO_TLUBSEL_A_NAME>=-5){
 
 
 
-   printf(" ");
+   //printf(" ");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////PERMISIVOS////////////////////////////////////////////
 
-    printf(" ");
-     printf("\nout_FASTSTRTL %d",out_FASTSTRTL[1]);
+    //printf(" ");
+     //printf("\nout_FASTSTRTL %d",out_FASTSTRTL[1]);
 	//VARIABLES DE SALIDA SHEET 203
 //STATOR TEMP GT68(STATOR_PRM)
 if(VENT_TE6421LALM==0||VENT_TE6421LALM==0||VENT_TE6421LALM==0||VENT_TE6421LALM==0||VENT_TE6421LALM==0||VENT_TE6421LALM==0)
@@ -8378,7 +8378,7 @@ if(SFC_STEP_RUNNING==0&&
 
 ///////////////////////////////RECONOCIMIENTO_DISPAROS//////////////////////////////
 
-  printf(" ");
+  //printf(" ");
 
 //Funcion para imprimir
  /* printf("\n B_SW_RESET ACKN= %d",LOC_REM_LOCAL);
@@ -8469,7 +8469,7 @@ printf("\n N3N41_BI_LOC_STOP=%d",N3N41_BI_LOC_STOP);
 printf("\n SHUTDOWN_NS_LAT_IN_1=%d",SHUTDOWN_NS_LAT_IN_1);
 
 */
-printf("\n SHUTDOWN_ACC_AND_1_IN_1=%d",SHUTDOWN_ACC_AND_1_IN_1);
+/*printf("\n SHUTDOWN_ACC_AND_1_IN_1=%d",SHUTDOWN_ACC_AND_1_IN_1);
 printf("\n SHUTDOWN_ACC_AND_1_IN_2=%d",SHUTDOWN_ACC_AND_1_IN_2);
 printf("\n SHUTDOWN_BP_AND_1_IN_1=%d",SHUTDOWN_BP_AND_1_IN_1);
 printf("\n SHUTDOWN_ACC_AND_3_IN_2=%d",SHUTDOWN_ACC_AND_3_IN_2);
@@ -8485,7 +8485,7 @@ printf("\n SHUTDOWN_ACC_6_DLY_TRIGGER=%d",SHUTDOWN_ACC_6_DLY_TRIGGER);
 printf("\n SHUTDOWN_LTMP_AND_IN_3=%d",SHUTDOWN_LTMP_AND_IN_3);
 printf("\n SHUTDOWN_LTMP_DLY_TRIGGER=%d",SHUTDOWN_LTMP_DLY_TRIGGER);
 printf("\n SHUTDOWN_LTMP_DLY_TRIGGER=%d",SHUTDOWN_LTMP_DLY_TRIGGER);
-printf("\n ALARM_ALM_LAT_IN_86=%d",ALARM_ALM_LAT_IN_86);
+printf("\n ALARM_ALM_LAT_IN_86=%d",ALARM_ALM_LAT_IN_86);*/
 
 
 
@@ -8536,12 +8536,12 @@ if (LOC_REM_LOCAL==1)
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para invertir la entrada OUT_OR_RESETACKN
   NOUT_OR_RESETACKN=NOT(OUT_OR_RESETACKN);
-  printf("\nNOUT_OR_RESETACKN %d",NOUT_OR_RESETACKN);
+  //printf("\nNOUT_OR_RESETACKN %d",NOUT_OR_RESETACKN);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer DLYALMACK de tipo TOND
   DLYALMACK=NOUT_OR_RESETACKN;
   TOND(DLYALMACK,TP_DLYALMACK,Time_factor,out_DLYALMACK);
-  printf("\nout_DLYALMACK %d",out_DLYALMACK[1]);
+  //printf("\nout_DLYALMACK %d",out_DLYALMACK[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
    if(out_DLYALMACK[1]==1|| OUT_ORACKN_OR==1)
    {
@@ -8678,7 +8678,7 @@ if  (ALARM_HMIDMRST_OR==1)
 //Llamada de funcion para el timer CORE_DIGITAL_N25CTRL de tipo TOND
 CORE_DIGITAL_N25CTRL=1;
   TOND(CORE_DIGITAL_N25CTRL,TP_CORE_DIGITAL_N25CTRL,Time_factor,out_CORE_DIGITAL_N25CTRL);
-  printf("\nout_CORE_DIGITAL_N25CTRL %d",out_CORE_DIGITAL_N25CTRL[1]);
+  //printf("\nout_CORE_DIGITAL_N25CTRL %d",out_CORE_DIGITAL_N25CTRL[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //LLAMADA DE FUNCION OR SHUTDOWN
 
@@ -8850,7 +8850,7 @@ else
 //Llamada de funcion para el timer SHUTDOWNDLY1150 de tipo TOFD
   SHUTDOWNDLY1150=SHUTDOWN_DLY1150_TRIGGER;
   TOFD(SHUTDOWNDLY1150,TP_SHUTDOWNDLY1150,Time_factor,out_SHUTDOWNDLY1150);
-  printf("\nout_SHUTDOWNDLY1150 %d",out_SHUTDOWNDLY1150[1]);
+  //printf("\nout_SHUTDOWNDLY1150 %d",out_SHUTDOWNDLY1150[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //SHUTDOWN FRLCKOVRDE;
 
@@ -8866,7 +8866,7 @@ SHUTDOWN_T48GT1150L_TRIGGER=0;
 
 SHUTDOWN_RUN_AGAIN=SPEED_SW_N25GT4600;
   TOND(SHUTDOWN_RUN_AGAIN,TP_SHUTDOWN_RUN_AGAIN,Time_factor,out_SHUTDOWN_RUN_AGAIN);
-  printf("\nout_SHUTDOWN_RUN_AGAIN %d",out_SHUTDOWN_RUN_AGAIN[1]);
+  //printf("\nout_SHUTDOWN_RUN_AGAIN %d",out_SHUTDOWN_RUN_AGAIN[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //SHUTDOWN FUEL ON;
 if(CORE_DIGITAL_FUEL_ON==1 && out_SHUTDOWN_RUN_AGAIN[1]==1)
@@ -8899,7 +8899,7 @@ if  (SHUTDOWN_T48GT1150L_RST==1)
         }
 //Llamada de funcion para invertir la entrada SFC_TIMER_HOT_COOLDN_CTRL
   NSFC_TIMER_HOT_COOLDN_CTRL=NOT(SFC_TIMER_HOT_COOLDN_CTRL);
-  printf("\nNSFC_TIMER_HOT_COOLDN_CTRL %d",NSFC_TIMER_HOT_COOLDN_CTRL);
+  //printf("\nNSFC_TIMER_HOT_COOLDN_CTRL %d",NSFC_TIMER_HOT_COOLDN_CTRL);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // SHUTDOWN MASK4STRT
@@ -8915,7 +8915,7 @@ SHUTDOWN_TRPFRMPWR_TRIGGER=0;
 
 //Llamada de funcion para invertir la entrada SHUTDOWN_LOCKLOOP
   NSHUTDOWN_LOCKLOOP=NOT(SHUTDOWN_LOCKLOOP);
-  printf("\nNSHUTDOWN_LOCKLOOP %d",NSHUTDOWN_LOCKLOOP);
+  //printf("\nNSHUTDOWN_LOCKLOOP %d",NSHUTDOWN_LOCKLOOP);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // SHUTDOWN STPTMR AND
@@ -8965,13 +8965,13 @@ if  (SHUTDOWN_TRPFRMPWR_RST==1)
 //Llamada de funcion para el timer SHUTDOWN_TENMINCLR de tipo TOND
 SHUTDOWN_TENMINCLR=SHUTDOWN_EIGHTMNCLR_CTRL;
   TOND(SHUTDOWN_TENMINCLR,TP_SHUTDOWN_TENMINCLR,Time_factor,out_SHUTDOWN_TENMINCLR);
-  printf("\nout_SHUTDOWN_TENMINCLR %d",out_SHUTDOWN_TENMINCLR[1]);
+ // printf("\nout_SHUTDOWN_TENMINCLR %d",out_SHUTDOWN_TENMINCLR[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
 //Llamada de funcion para invertir la entrada SHUTDOWN_FOURHRLOK
   NSHUTDOWN_FOURHRLOK=NOT(SHUTDOWN_FOURHRLOK);
-  printf("\nNSHUTDOWN_FOURHRLOK %d",NSHUTDOWN_FOURHRLOK);
+  //printf("\nNSHUTDOWN_FOURHRLOK %d",NSHUTDOWN_FOURHRLOK);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 // SHUTDOWN MASK_1 AND
 
@@ -9077,7 +9077,7 @@ if  (ALARM_RESET_LATCH==1)
         }
 //Llamada de funcion para invertir la entrada SHUTDOWN_CHOP_FUEL_IN
   NSHUTDOWN_CHOP_FUEL_IN=NOT(SHUTDOWN_CHOP_FUEL_IN);
-  printf("\nNSHUTDOWN_CHOP_FUEL_IN %d",NSHUTDOWN_CHOP_FUEL_IN);
+  //printf("\nNSHUTDOWN_CHOP_FUEL_IN %d",NSHUTDOWN_CHOP_FUEL_IN);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // SHUTDOWN NSTP UTLOP AND
@@ -9112,13 +9112,13 @@ SHUTDOWN_MINLDOS_TRIGGER=0;
 }
 //Llamada de funcion para invertir la entrada SHUTDOWN_LTMINLD
   NSHUTDOWN_LTMINLD=NOT(SHUTDOWN_LTMINLD);
-  printf("\nNSHUTDOWN_LTMINLD %d",NSHUTDOWN_LTMINLD);
+  //printf("\nNSHUTDOWN_LTMINLD %d",NSHUTDOWN_LTMINLD);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //Llamada de funcion para el timer SHUTDOWN_MINLDOS de tipo TOND
 SHUTDOWN_MINLDOS=SHUTDOWN_MINLDOS_TRIGGER;
   TOND(SHUTDOWN_MINLDOS,TP_SHUTDOWN_MINLDOS,Time_factor,out_SHUTDOWN_MINLDOS);
-  printf("\nout_SHUTDOWN_MINLDOS %d",out_SHUTDOWN_MINLDOS[1]);
+  //printf("\nout_SHUTDOWN_MINLDOS %d",out_SHUTDOWN_MINLDOS[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //SHUTDOWN RSTREFLAT OR
 
@@ -9212,7 +9212,7 @@ SHUTDOWN_CLDNTMR_TRIGGER=0;
 //Llamada de funcion para el timer SHUTDOWN_CLDNTMR de tipo TOND
   SHUTDOWN_CLDNTMR=SHUTDOWN_CLDNTMR_TRIGGER;
   TOND(SHUTDOWN_CLDNTMR,TP_SHUTDOWN_CLDNTMR,Time_factor,out_SHUTDOWN_CLDNTMR);
-  printf("\nout_SHUTDOWN_CLDNTMR %d",out_SHUTDOWN_CLDNTMR[1]);
+  //printf("\nout_SHUTDOWN_CLDNTMR %d",out_SHUTDOWN_CLDNTMR[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SHUTDOWN_MINLD OR
@@ -9237,7 +9237,7 @@ SHUTDOWN_DMINTIMER_TRIGGER=0;
 //Llamada de funcion para el timer SHUTDOWN_DMINTIMER de tipo TOND
 SHUTDOWN_DMINTIMER=SHUTDOWN_DMINTIMER_TRIGGER;
   TOND(SHUTDOWN_DMINTIMER,TP_SHUTDOWN_DMINTIMER,Time_factor,out_SHUTDOWN_DMINTIMER);
-  printf("\nout_SHUTDOWN_DMINTIMER %d",out_SHUTDOWN_DMINTIMER[1]);
+  //printf("\nout_SHUTDOWN_DMINTIMER %d",out_SHUTDOWN_DMINTIMER[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // SHUTDOWN R64_MULTIPLY
@@ -9271,11 +9271,11 @@ if (SHUTDOWN_ONLINE==0)
 
 //Llamada de funcion para invertir la entrada A1_A12_BI1_CRIT_PATH
   NA1_A12_BI1_CRIT_PATH=NOT(A1_A12_BI1_CRIT_PATH);
-  printf("\nNA1_A12_BI1_CRIT_PATH %d",NA1_A12_BI1_CRIT_PATH);
+  //printf("\nNA1_A12_BI1_CRIT_PATH %d",NA1_A12_BI1_CRIT_PATH);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para invertir la entrada A1_A12_BI1_SD_FUEL
   NA1_A12_BI1_SD_FUEL=NOT(A1_A12_BI1_SD_FUEL);
-  printf("\nNA1_A12_BI1_SD_FUEL %d",NA1_A12_BI1_SD_FUEL);
+  //printf("\nNA1_A12_BI1_SD_FUEL %d",NA1_A12_BI1_SD_FUEL);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //A1_A12_BI1_CRIT_PATH
 if (NA1_A12_BI1_CRIT_PATH==1)
@@ -9351,13 +9351,13 @@ if (TRUE_SHUTDOWN_MUYFM_PLSE==0&&A1_A01_CPU_VIB_SD_SEL==1&&FALSE_A1_A01_CPU_VIB_
 //Llamada de funcion para el timer SHUTDOWN_COOLAIRTMR de tipo TOND
 SHUTDOWN_COOLAIRTMR=SPEED_SW_GENCSTDOWN;
   TOND(SHUTDOWN_COOLAIRTMR,TP_SHUTDOWN_COOLAIRTMR,Time_factor,out_SHUTDOWN_COOLAIRTMR);
-  printf("\nout_SHUTDOWN_COOLAIRTMR %d",out_SHUTDOWN_COOLAIRTMR[1]);
+  //printf("\nout_SHUTDOWN_COOLAIRTMR %d",out_SHUTDOWN_COOLAIRTMR[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 SHUTDOWN_CLTMR_DONE_IN=out_SHUTDOWN_COOLAIRTMR[1]; 
 //Llamada de funcion para invertir la entrada SHUTDOWN_CLTMR_DONE_IN
   NSHUTDOWN_CLTMR_DONE_IN=NOT(SHUTDOWN_CLTMR_DONE_IN);
-  printf("\nNSHUTDOWN_CLTMR_DONE_IN %d",NSHUTDOWN_CLTMR_DONE_IN);
+  //printf("\nNSHUTDOWN_CLTMR_DONE_IN %d",NSHUTDOWN_CLTMR_DONE_IN);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 if(CORE_DIGITAL_FUELOFF==1&&SFC_STEP_NOTSTARTIN==1&&NSHUTDOWN_CLTMR_DONE_IN==1)
@@ -9379,7 +9379,7 @@ B_FORCE_CRITPATHSD_IN=0;
 }
 //Llamada de funcion para invertir la entrada B_FORCE_CRITPATHSD_IN
   NB_FORCE_CRITPATHSD_IN=NOT(B_FORCE_CRITPATHSD_IN);
-  printf("\nNB_FORCE_CRITPATHSD_IN %d",NB_FORCE_CRITPATHSD_IN);
+  //printf("\nNB_FORCE_CRITPATHSD_IN %d",NB_FORCE_CRITPATHSD_IN);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SHUTDOWN_STOP_SW
@@ -9533,32 +9533,32 @@ SHUTDOWN_N256050DLY_TRIGGER=0;
 //Llamada de funcion para el timer SHUTDOWN_ACC_2_DLY de tipo TOND
 SHUTDOWN_ACC_2_DLY=SHUTDOWN_ACC_2_DLY_TRIGGER;
   TOND(SHUTDOWN_ACC_2_DLY,TP_SHUTDOWN_ACC_2_DLY,Time_factor,out_SHUTDOWN_ACC_2_DLY);
-  printf("\nout_SHUTDOWN_ACC_2_DLY %d",out_SHUTDOWN_ACC_2_DLY[1]);
+  //printf("\nout_SHUTDOWN_ACC_2_DLY %d",out_SHUTDOWN_ACC_2_DLY[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SHUTDOWN_ACC_AND_1 de tipo TOND
 SHUTDOWN_ACC_AND_1=SHUTDOWN_STRDLY_TRIGGER;
   TOND(SHUTDOWN_ACC_AND_1,TP_SHUTDOWN_ACC_AND_1,Time_factor,out_SHUTDOWN_ACC_AND_1);
-  printf("\nout_SHUTDOWN_ACC_AND_1 %d",out_SHUTDOWN_ACC_AND_1[1]);
+  //printf("\nout_SHUTDOWN_ACC_AND_1 %d",out_SHUTDOWN_ACC_AND_1[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SHUTDOWN_BP_AND_1 de tipo TOND
   SHUTDOWN_BP_AND_1=SHUTDOWN_BPDLY_TRIGGER;
   TOND(SHUTDOWN_BP_AND_1,TP_SHUTDOWN_BP_AND_1,Time_factor,out_SHUTDOWN_BP_AND_1);
-  printf("\nout_SHUTDOWN_BP_AND_1 %d",out_SHUTDOWN_BP_AND_1[1]);
+ // printf("\nout_SHUTDOWN_BP_AND_1 %d",out_SHUTDOWN_BP_AND_1[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SHUTDOWN_ACC_AND_3 de tipo TOND
   SHUTDOWN_ACC_AND_3=SHUTDOWN_N25LT46DLY_TRIGGER;
   TOND(SHUTDOWN_ACC_AND_3,TP_SHUTDOWN_ACC_AND_3,Time_factor,out_SHUTDOWN_ACC_AND_3);
-  printf("\nout_SHUTDOWN_ACC_AND_3 %d",out_SHUTDOWN_ACC_AND_3[1]);
+  //printf("\nout_SHUTDOWN_ACC_AND_3 %d",out_SHUTDOWN_ACC_AND_3[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SHUTDOWN_ACC_AND_4 de tipo TOND
   SHUTDOWN_ACC_AND_4=SHUTDOWN_N256050DLY_TRIGGER;
   TOND(SHUTDOWN_ACC_AND_4,TP_SHUTDOWN_ACC_AND_4,Time_factor,out_SHUTDOWN_ACC_AND_4);
-  printf("\nout_SHUTDOWN_ACC_AND_4 %d",out_SHUTDOWN_ACC_AND_4[1]);
+  //printf("\nout_SHUTDOWN_ACC_AND_4 %d",out_SHUTDOWN_ACC_AND_4[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //Llamada de funcion para invertir la entrada SHUTDOWN_COREREACHD
   NSHUTDOWN_COREREACHD=NOT(SHUTDOWN_COREREACHD);
-  printf("\nNSHUTDOWN_COREREACHD %d",NSHUTDOWN_COREREACHD);
+  //printf("\nNSHUTDOWN_COREREACHD %d",NSHUTDOWN_COREREACHD);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SHUTDOWN_ACC_AND_5
@@ -9584,12 +9584,12 @@ SHUTDOWN_ACC_6_DLY_TRIGGER=0;
 //Llamada de funcion para el timer SHUTDOWN_ACC_AND_5 de tipo TOND
   SHUTDOWN_ACC_AND_5=SHUTDOWN_ACC_5_DLY_TRIGGER;
   TOND(SHUTDOWN_ACC_AND_5,TP_SHUTDOWN_ACC_AND_5,Time_factor,out_SHUTDOWN_ACC_AND_5);
-  printf("\nout_SHUTDOWN_ACC_AND_5 %d",out_SHUTDOWN_ACC_AND_5[1]);
+  //printf("\nout_SHUTDOWN_ACC_AND_5 %d",out_SHUTDOWN_ACC_AND_5[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SHUTDOWN_ACC_AND_6 de tipo TOND
   SHUTDOWN_ACC_AND_6=SHUTDOWN_ACC_6_DLY_TRIGGER;
   TOND(SHUTDOWN_ACC_AND_6,TP_SHUTDOWN_ACC_AND_6,Time_factor,out_SHUTDOWN_ACC_AND_6);
-  printf("\nout_SHUTDOWN_ACC_AND_6 %d",out_SHUTDOWN_ACC_AND_6[1]);
+  //printf("\nout_SHUTDOWN_ACC_AND_6 %d",out_SHUTDOWN_ACC_AND_6[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SHUTDOWN_XNSDLT1250
@@ -9616,7 +9616,7 @@ SHUTDOWN_LTMP_DLY_TRIGGER=0;
 //Llamada de funcion para el timer SHUTDOWN_SD_IN_9 de tipo TOND
   SHUTDOWN_SD_IN_9=SHUTDOWN_LTMP_DLY_TRIGGER;
   TOND(SHUTDOWN_SD_IN_9,TP_SHUTDOWN_SD_IN_9,Time_factor,out_SHUTDOWN_SD_IN_9);
-  printf("\nout_SHUTDOWN_SD_IN_9 %d",out_SHUTDOWN_SD_IN_9[1]);
+  //printf("\nout_SHUTDOWN_SD_IN_9 %d",out_SHUTDOWN_SD_IN_9[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 //SHUTDOWN_MASKTLB90_AND
@@ -9634,8 +9634,8 @@ ALARM_ALM_LAT_IN_86=0;
 
 ///////////////////////////////SECUENCIA DE ARRANQUE////////////////////////////////
 
-printf(" ");
-	 printf("\nSFC_STEP_OUTOFOP=%d",SFC_STEP_OUTOFOP);
+//printf(" ");
+	 //printf("\nSFC_STEP_OUTOFOP=%d",SFC_STEP_OUTOFOP);
        /*printf("\nSFC_STEP_OUTOFOP_T_COND_1=%d",SFC_STEP_OUTOFOP_T_COND_1);
        printf("\nSFC_STEP_WW_ENBL_TRIGGER=%d",SFC_STEP_WW_ENBL_TRIGGER);
        printf("\nSFC_STEP_WW_ENBL_RST=%d",SFC_STEP_WW_ENBL_RST);
@@ -9650,7 +9650,7 @@ printf(" ");
        printf("\nSFC_STEP_START_OR=%d",SFC_STEP_START_OR);
        printf("\nSFC_STEP_NSEL_NOSD=%d",SFC_STEP_NSEL_NOSD);
        printf("\nSFC_STEP_OUTOFOP_T_COND_5=%d",SFC_STEP_OUTOFOP_T_COND_5);
-       */printf("\nSFC_STEP_SFC_S_INIT=%d",SFC_STEP_SFC_S_INIT);
+       *///printf("\nSFC_STEP_SFC_S_INIT=%d",SFC_STEP_SFC_S_INIT);
        /*printf("\nSFC_STEP_START_INIT=%d",SFC_STEP_START_INIT);
        printf("\nGLUB_HICNKACTIV=%d",GLUB_HICNKACTIV);
        printf("\nENGMODE_CRANKING=%d",ENGMODE_CRANKING);
@@ -9668,7 +9668,7 @@ printf(" ");
        printf("\nout_SFC_STEP_SRTFL_DLY=%d",out_SFC_STEP_SRTFL_DLY[1]);
        printf("\nout_SFC_STEP_STR_FAIL=%d",out_SFC_STEP_STR_FAIL[1]);*/
    //VARIABLES HOJA 210
-   printf("\nSFC_STEP_VENT=%d",SFC_STEP_VENT);
+   /*printf("\nSFC_STEP_VENT=%d",SFC_STEP_VENT);
    printf("\nSFC_STEP_GLUB=%d",SFC_STEP_GLUB);
    printf("\nSFC_STEP_HYD_STRT=%d",SFC_STEP_HYD_STRT);
    printf("\nSFC_STEP_HI_SPDSEL1=%d",SFC_STEP_HI_SPDSEL1);
@@ -9683,7 +9683,7 @@ printf(" ");
    printf("\nSFC_STEP_READY2SYNC=%d",SFC_STEP_READY2SYNC);
    printf("\nSFC_STEP_UNITONLINE=%d",SFC_STEP_UNITONLINE);
    printf("\nOUT_MW_ENBWTR=%d",OUT_MW_ENBWTR);
-   printf("\nSFC_STEP_WATER_INJ=%d",SFC_STEP_WATER_INJ);
+   printf("\nSFC_STEP_WATER_INJ=%d",SFC_STEP_WATER_INJ);*/
    //LLAMADA DE FUNCIONES PARA BLOQUES
 
 //AQUI EMPIEZAN MIS FUNCIONES//
@@ -9822,7 +9822,7 @@ printf(" ");
 	   //Llamada de funcion para el timer SFC_STEP_STARTINILP de tipo TOND
        SFC_STEP_STARTINILP=out_SFC_STEP_RUN_OR_IN_1[1];
        TOND(SFC_STEP_STARTINILP,TP_SFC_STEP_STARTINILP,Time_factor,out_SFC_STEP_STARTINILP);
-       printf("\nout_SFC_STEP_STARTINILP %d",out_SFC_STEP_STARTINILP[1]);
+       //printf("\nout_SFC_STEP_STARTINILP %d",out_SFC_STEP_STARTINILP[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
        
@@ -9844,7 +9844,7 @@ printf(" ");
        //Llamada de funcion para el timer Z_MINUS_RUNNINGLP de tipo TOND
        Z_MINUS_RUNNINGLP=SFC_STEP_RUNNINGLP;
        TOND(Z_MINUS_RUNNINGLP,TP_Z_MINUS_RUNNINGLP,Time_factor,out_Z_MINUS_RUNNINGLP);
-       printf("\nout_Z_MINUS_RUNNINGLP %d",out_Z_MINUS_RUNNINGLP[1]);
+       //printf("\nout_Z_MINUS_RUNNINGLP %d",out_Z_MINUS_RUNNINGLP[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
        
@@ -9852,7 +9852,7 @@ printf(" ");
 	   //Llamada de funcion para el timer SFC_STEP_SDRESETDLY de tipo TOND
        SFC_STEP_SDRESETDLY=out_Z_MINUS_RUNNINGLP[1];
        TOND(SFC_STEP_SDRESETDLY,TP_SFC_STEP_SDRESETDLY,Time_factor,out_SFC_STEP_SDRESETDLY);
-       printf("\nout_SFC_STEP_SDRESETDLY %d",out_SFC_STEP_SDRESETDLY[1]);
+       //printf("\nout_SFC_STEP_SDRESETDLY %d",out_SFC_STEP_SDRESETDLY[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
        
@@ -10060,17 +10060,17 @@ if(SFC_STEP_UNITONLINE==1&SHUTDOWN_SDN_CORE==1&SHUTDOWN_SD_CORE==1&SHUTDOWN_STEP
                                SFC_STEP_WARMUP=0;
                                }
       }*/
- printf(" ");
+ //printf(" ");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////SECUENCIA DE PARO NORMAL///////////////////////////////
 
- printf(" ");
+// printf(" ");
 
 	//Funcion para imprimir
      
-printf("\n AND_SFC_STEP_NORM_1_SFC_STEP %d", AND_SFC_STEP_NORM_1_SFC_STEP);
+/*printf("\n AND_SFC_STEP_NORM_1_SFC_STEP %d", AND_SFC_STEP_NORM_1_SFC_STEP);
 printf("\n OUT_RAMP_TO_NPT_MIN_LOAD %d",OUT_RAMP_TO_NPT_MIN_LOAD);
 printf("\n RAMP_TO_NPT_MIN_LOAD %d",RAMP_TO_NPT_MIN_LOAD);  
 printf("\n OUT_DEACTIVE_WATER_SYSTEM %d",OUT_DEACTIVE_WATER_SYSTEM);    
@@ -10090,7 +10090,7 @@ printf("\n SFC_STEP_NORM_3_SF_SEL_2 %d", SFC_STEP_NORM_3_SF_SEL_2);
 printf("\n SFC_STEP_CNK_STPOR2_IN_2 %d",SFC_STEP_CNK_STPOR2_IN_2);
 printf("\n SFC_STEP_RST_START_IN_2%d",SFC_STEP_RST_START_IN_2);  
 
-printf("\n SFC_STEP_NSTOESTMR_TRIGGER %d",SFC_STEP_NSTOESTMR_TRIGGER);    
+printf("\n SFC_STEP_NSTOESTMR_TRIGGER %d",SFC_STEP_NSTOESTMR_TRIGGER); */   
 
    
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -10493,12 +10493,12 @@ SFC_STEP_NSTOESTMR_TRIGGER=1;
 //Llamada de funcion para el timer SHUTDOWN_SI_IN_1 de tipo TOND
 SHUTDOWN_SI_IN_1=SFC_STEP_NSTOESTMR_TRIGGER;
    TOND(SHUTDOWN_SI_IN_1,TP_SHUTDOWN_SI_IN_1,Time_factor,out_SHUTDOWN_SI_IN_1);
-   printf("\nout_SHUTDOWN_SI_IN_1 %d",out_SHUTDOWN_SI_IN_1[1]);
+   //printf("\nout_SHUTDOWN_SI_IN_1 %d",out_SHUTDOWN_SI_IN_1[1]);
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //Llamada de funcion para el timer SFC_STEP_SYNC_COOL de tipo TOND
 SFC_STEP_SYNC_COOL=SFC_STEP_NORM_4;
    TOND(SFC_STEP_SYNC_COOL,TP_SFC_STEP_SYNC_COOL,Time_factor,out_SFC_STEP_SYNC_COOL);
-   printf("\nout_SFC_STEP_SYNC_COOL %d",out_SFC_STEP_SYNC_COOL[1]);
+   //printf("\nout_SFC_STEP_SYNC_COOL %d",out_SFC_STEP_SYNC_COOL[1]);
 
 ////////////////////////////////////////////////////////////////////////////////////																		
 
