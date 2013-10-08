@@ -43,11 +43,29 @@ void AInstrumentIndicator::AWPaintEvent(){
     pen.setWidthF(1.0);
     p.setPen(pen);
 
-    if(m_value>=0 && m_value<=6)
+    switch(value){
+        case 0://Caso normal - validamos que este dentro del rango de seleccion
+                 if(m_value>=0 && m_value<=6){
+                    p.setBrush(m_colorList.at(m_value));
+                }
+                else{
+                    p.setBrush(m_colorList.at(6));
+                }
+                break;
+        case 1://Caso alarma - validamos que este dentro del rango de seleccion
+                if(m_value>=0 && m_value<=6){
+                    p.setBrush(m_colorList.at(m_value));
+                }
+                else{
+                    p.setBrush(m_colorList.at(6));
+                }
+                break;
+    }
+    /*if(m_value>=0 && m_value<=6)
         p.setBrush(m_colorList.at(m_value));
     else
         p.setBrush(m_colorList.at(6));
-
+    */
 
     p.save();
 
@@ -82,6 +100,7 @@ void AInstrumentIndicator::SetDownLabel(QString s){
     update();
 }
 
+
 void AInstrumentIndicator::SetLineAngle(double i){
     this->m_lineAngle=i;
     update();
@@ -101,6 +120,10 @@ void AInstrumentIndicator::Update()
     }
     //Logica para definir atributos y comportamiento del widget
     value = m_ShrdMem->getI(indice);
+
+    tipo = 0; //Widget estatico *(no tiene dinamica) actua como bandera [on/off]
+
+    update();
 }
 
 /*void AInstrumentIndicator::SetColorState(QColor c){

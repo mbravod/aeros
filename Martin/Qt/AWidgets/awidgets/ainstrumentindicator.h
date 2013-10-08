@@ -22,6 +22,7 @@ public:
     QString DownLabel()const{return DownLabelTxT;}
     void SetDownLabel(QString s);
 
+
     double LineAngle()const{return m_lineAngle;}
     void SetLineAngle(double i);
 

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'awmultiobjectplugin.h'
 **
-** Created: Sun 29. Sep 16:28:02 2013
+** Created: Mon 7. Oct 19:16:57 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
