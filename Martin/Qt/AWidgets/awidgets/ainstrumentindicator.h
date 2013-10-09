@@ -4,6 +4,8 @@
 #include "awmultestatewidget.h"
 #include <QColor>
 #include <QList>
+#include <QDebug>
+#include <QMouseEvent>
 
 class AInstrumentIndicator : public AWMultEstateWidget
 {
@@ -35,10 +37,17 @@ private:
 protected:
     void AWPaintEvent();
 
+    void mousePressEvent( QMouseEvent *);
     QString UpLabelTxT;
     QString DownLabelTxT;
     double m_lineAngle;
     QList <QColor> m_colorList;
+
+public slots:
+    void emiteIdentificador(QString id);
+signals:
+    void emiteId(QString id);
+    void recibeId(QString id);
 };
 
 #endif

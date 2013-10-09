@@ -1,10 +1,10 @@
 #include <QtGui/QApplication>
-#include "mi_prueba.h"
+#include "principal.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Mi_Prueba w;
+    Principal w;
     w.show();
     
     return a.exec();

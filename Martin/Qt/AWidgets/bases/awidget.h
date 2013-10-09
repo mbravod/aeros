@@ -2,6 +2,7 @@
 #define AWIDGET_H
 
 #include <QWidget>
+
 #include "../SharedMemory/shrdmem.h"
 //#include "SharedMemory/shrdmem.h"   //or "shrdmem.h"
 //#include "shrdmem.h"
@@ -56,6 +57,9 @@ protected:
         bool m_isUpdateable;
         void paintEvent(QPaintEvent *);
         virtual void AWPaintEvent();
+        //void mousePressEvent( QMouseEvent *);
+        //virtual void AWPressEvent();
+
 
 public slots:
 

@@ -40,6 +40,8 @@ protected:
     int alarma;
     //AWState m_state;
 
+
+
 };
 
 #endif // AWMULTESTATEWIDGET_H

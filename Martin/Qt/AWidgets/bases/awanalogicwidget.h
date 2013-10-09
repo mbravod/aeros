@@ -27,6 +27,8 @@ protected:
     double m_value;
 
 
+
+
 };
 
 #endif // AWANALOGICWIDGET_H

@@ -1,33 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Mi_Prueba</class>
- <widget class="QMainWindow" name="Mi_Prueba">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>673</width>
-    <height>450</height>
+    <width>660</width>
+    <height>543</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Mi_Prueba</string>
+   <string>Principal</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aceptar</string>
+    </property>
+   </widget>
    <widget class="AInstrumentIndicator" name="aInstrumentIndicator">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>50</y>
+      <x>140</x>
+      <y>40</y>
       <width>70</width>
       <height>70</height>
      </rect>
+    </property>
+    <property name="indice">
+     <number>0</number>
+    </property>
+    <property name="value">
+     <number>2</number>
     </property>
     <property name="Normal" stdset="0">
      <number>2</number>
     </property>
     <property name="Alarma">
-     <number>0</number>
+     <number>6</number>
     </property>
    </widget>
   </widget>
@@ -36,7 +55,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>673</width>
+     <width>660</width>
      <height>21</height>
     </rect>
    </property>

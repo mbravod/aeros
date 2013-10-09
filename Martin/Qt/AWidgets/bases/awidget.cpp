@@ -7,6 +7,10 @@ AWidget::AWidget(QWidget *parent) :
     this->m_strid="null";
     this->m_intid=-1;
     this->m_isUpdateable = false;
+    this->id = "null";
+    this->tipo = -1;
+    //this->value = -1;
+    this->indice = -1;
 }
 
 void AWidget::setStrID(QString id){
@@ -45,22 +49,26 @@ int AWidget::getValue()
 void AWidget::setId(QString id)
 {
     this->id = id;
+    update();
 }
 
 void AWidget::setIndice(int indice)
 {
     this->indice = indice;
+    update();
 }
 
 
 void AWidget::setTipo(int tipo)
 {
     this->tipo = tipo;
+    update();
 }
 
 void AWidget::setValue(int value)
 {
     this->value = value;
+    update();
 }
 
 void AWidget::paintEvent(QPaintEvent *){
@@ -75,3 +83,13 @@ void AWidget::AWPaintEvent(){
     //Sin codigo se reimplementa en widget checkBox *(es quien lo utiliza)
 
 }
+/*
+void AWidget::mousePressEvent(QMouseEvent *)
+{
+    AWPressEvent();
+}
+
+void AWidget::AWPressEvent()
+{
+}
+*/

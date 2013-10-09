@@ -8,6 +8,7 @@ AInstrumentIndicator::AInstrumentIndicator(QWidget *parent) :
     AWMultEstateWidget(parent)
 {
     init();
+    connect(this,SIGNAL(emiteId(QString)),this,SLOT(emiteIdentificador(QString)));
 }
 
 void AInstrumentIndicator::init(){
@@ -15,12 +16,14 @@ void AInstrumentIndicator::init(){
     this->m_lineAngle=0;
     this->UpLabelTxT="XXX";
     this->DownLabelTxT="YYY";
+
     m_colorList.append(Qt::red);
     m_colorList.append(Qt::green);
     m_colorList.append(Qt::white);
     m_colorList.append(Qt::gray);
     m_colorList.append(Qt::blue);
     m_colorList.append(Qt::cyan);
+    m_colorList.append(Qt::yellow);
     m_colorList.append(Qt::black);
 }
 #define txtHeight 15
@@ -45,19 +48,19 @@ void AInstrumentIndicator::AWPaintEvent(){
 
     switch(value){
         case 0://Caso normal - validamos que este dentro del rango de seleccion
-                 if(m_value>=0 && m_value<=6){
+                 if(m_value>=0 && m_value<=7){
                     p.setBrush(m_colorList.at(m_value));
                 }
                 else{
-                    p.setBrush(m_colorList.at(6));
+                    p.setBrush(m_colorList.at(7));
                 }
                 break;
         case 1://Caso alarma - validamos que este dentro del rango de seleccion
-                if(m_value>=0 && m_value<=6){
-                    p.setBrush(m_colorList.at(m_value));
+                if(alarma>=0 && alarma<=7){
+                    p.setBrush(m_colorList.at(alarma));
                 }
                 else{
-                    p.setBrush(m_colorList.at(6));
+                    p.setBrush(m_colorList.at(7));
                 }
                 break;
     }
@@ -71,12 +74,12 @@ void AInstrumentIndicator::AWPaintEvent(){
 
     p.translate(width/ 2, height / 2);
     p.rotate(m_orientation);
-
+    /*
     if(width>height)
         p.drawLine(0,0,width*cos(m_lineAngle*conv),width*sin(m_lineAngle*conv));
     else
         p.drawLine(0,0,height*cos(m_lineAngle*conv),height*sin(m_lineAngle*conv));
-
+    */
     p.restore();
 
     p.drawEllipse(outSpace,outSpace,width-2*outSpace,height-2*outSpace);
@@ -90,6 +93,19 @@ void AInstrumentIndicator::AWPaintEvent(){
 
 
 }
+
+void AInstrumentIndicator::mousePressEvent(QMouseEvent *)
+{
+    emiteId(id);
+    qDebug()<< "Clicked";
+}
+
+
+void AInstrumentIndicator::emiteIdentificador(QString id)
+{
+    recibeId(id);
+}
+
 
 void AInstrumentIndicator::SetUpLabel(QString s){
     this->UpLabelTxT=s;
