@@ -7,7 +7,7 @@ class AWMultEstateWidget : public AWidget
 {
     Q_OBJECT
     //Estas macros pueden ir sin punto y coma... verificar
-    Q_PROPERTY (int Normal READ Value WRITE setValue)
+    Q_PROPERTY (int Normal READ getValueNormal WRITE setValueNormal)
     Q_PROPERTY (int Alarma READ getAlarma WRITE setAlarma)
     Q_ENUMS(AWOrientation)
     Q_ENUMS(AWState)
@@ -20,8 +20,8 @@ public:
     enum AWOrientation{Degree0=0,Degree90=90,Degree180=180,Degree270=270};
     enum AWState{Apagado=0,Encendido,TransicionOn,TransicionOff,Error1,Error2,Error3};
 
-    int Value()const{return m_value;}
-    void setValue(int);
+    int getValueNormal()const{return normal;}
+    void setValueNormal(int opt);
 
     int getAlarma()const{return alarma;}
     void setAlarma(int);
@@ -36,8 +36,8 @@ private:
     void init();
 protected:
     AWOrientation m_orientation;
-    int m_value;
     int alarma;
+    int normal;
     //AWState m_state;
 
 

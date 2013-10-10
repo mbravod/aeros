@@ -12,8 +12,8 @@ void AWMultiObject::init(){
 
     m_SVGrenderer= NULL;
 
-    this->m_OffColor = Red;
-    this->m_OnColor = Green;
+    this->m_OffColor = Green;
+    this->m_OnColor = Red;
     this->m_eType = VH2;
 
     eTypeList<<"vh2"<<"cirled"<<"valcuad2"<<"valcuad3"<<"valsimp3"<<"valsimp4"<<"valele2"<<"agitador"<<"inter"<<"interm"<<"bombata"<<"bombatb"<<"bombatc"<<"bombatd"<<"bombate"<<"regta"<<"spring"<<"cirline"<<"telem"<<"square"<<"aspta"<<"asptb"<<"flame";
@@ -46,16 +46,16 @@ void AWMultiObject::AWPaintEvent(){
     QString s;
     s=eTypeList[m_eType];
 
-    switch(m_value){
-    case 0:
-        s.append(eColorList[m_OffColor]);
-        break;
-    case 1:
-        s.append(eColorList[m_OnColor]);
-        break;
-    default:
-        s.append(eColorList[m_OffColor]);//Cambiar
-        break;
+    switch(value){
+        case 0:
+            s.append(eColorList[m_OffColor]); //Color verde
+            break;
+        case 1:
+            s.append(eColorList[m_OnColor]); //Color rojo
+            break;
+        default:
+            s.append("Black");//No se sabe "Negro"
+            break;
     }
 
     float a = side-(2*OFFSET);
@@ -87,9 +87,9 @@ void AWMultiObject::Update()
 {
     if(m_ShrdMem == NULL)
         return;
-    if(!this->parentWidget()->isVisible())  //Verificar metodo para saber si
+    if(!isUpdateable())  //Verificar metodo para saber si
         return;                // la ventana que contiene el widget es "visible" (para el usuario)
-    if(indice< 0){
+    if(indice < 0){
         indice = m_ShrdMem->getVar(id);
         if(indice < 0){
             return;
@@ -97,6 +97,9 @@ void AWMultiObject::Update()
     }
     //Logica para definir atributos y comportamiento del widget
     value = m_ShrdMem->getI(indice);
+    update();
+
+
 }
 
 bool AWMultiObject::loadSvgFile(QString filePath){

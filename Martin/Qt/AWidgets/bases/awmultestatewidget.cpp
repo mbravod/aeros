@@ -5,15 +5,17 @@ AWMultEstateWidget::AWMultEstateWidget(QWidget *parent):
 {
     init();
 }
-void AWMultEstateWidget::init(){
-    m_value=0;
-    m_orientation = Degree0;
-    alarma = 0;
-}
 
-void AWMultEstateWidget::setValue(int i){
-    this->m_value = i;
+void AWMultEstateWidget::setValueNormal(int opt)
+{
+    this->normal = opt;
     update();
+}
+void AWMultEstateWidget::init(){
+    value = -1;
+    m_orientation = Degree0;
+    alarma = 0; //Rojo por defecto
+    normal = 2; //Blanco por defecto
 }
 
 void AWMultEstateWidget::setAlarma(int x)

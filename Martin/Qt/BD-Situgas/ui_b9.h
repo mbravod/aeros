@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b9.ui'
 **
-** Created: Sun 29. Sep 18:02:05 2013
+** Created: Wed 9. Oct 20:10:13 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -21,6 +21,7 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 #include "ainstrumentindicator.h"
+#include "awidget.h"
 #include "awmultiobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -167,99 +168,99 @@ public:
         aInstrumentIndicator = new AInstrumentIndicator(B9);
         aInstrumentIndicator->setObjectName(QString::fromUtf8("aInstrumentIndicator"));
         aInstrumentIndicator->setGeometry(QRect(0, 370, 60, 60));
-        aInstrumentIndicator->setValue(2);
+        aInstrumentIndicator->setProperty("Value", QVariant(2));
         aInstrumentIndicator_2 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_2->setObjectName(QString::fromUtf8("aInstrumentIndicator_2"));
         aInstrumentIndicator_2->setGeometry(QRect(39, 341, 60, 60));
-        aInstrumentIndicator_2->setValue(2);
+        aInstrumentIndicator_2->setProperty("Value", QVariant(2));
         aInstrumentIndicator_3 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_3->setObjectName(QString::fromUtf8("aInstrumentIndicator_3"));
         aInstrumentIndicator_3->setGeometry(QRect(39, 283, 60, 60));
-        aInstrumentIndicator_3->setValue(2);
+        aInstrumentIndicator_3->setProperty("Value", QVariant(2));
         aInstrumentIndicator_4 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_4->setObjectName(QString::fromUtf8("aInstrumentIndicator_4"));
         aInstrumentIndicator_4->setGeometry(QRect(40, 130, 60, 60));
-        aInstrumentIndicator_4->setValue(2);
+        aInstrumentIndicator_4->setProperty("Value", QVariant(2));
         aInstrumentIndicator_5 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_5->setObjectName(QString::fromUtf8("aInstrumentIndicator_5"));
         aInstrumentIndicator_5->setGeometry(QRect(39, 66, 60, 60));
-        aInstrumentIndicator_5->setValue(2);
+        aInstrumentIndicator_5->setProperty("Value", QVariant(2));
         aInstrumentIndicator_6 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_6->setObjectName(QString::fromUtf8("aInstrumentIndicator_6"));
         aInstrumentIndicator_6->setGeometry(QRect(0, 37, 60, 60));
-        aInstrumentIndicator_6->setValue(2);
+        aInstrumentIndicator_6->setProperty("Value", QVariant(2));
         aInstrumentIndicator_7 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_7->setObjectName(QString::fromUtf8("aInstrumentIndicator_7"));
         aInstrumentIndicator_7->setGeometry(QRect(261, 282, 60, 60));
-        aInstrumentIndicator_7->setValue(2);
         aInstrumentIndicator_7->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_7->setProperty("Value", QVariant(2));
         aInstrumentIndicator_8 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_8->setObjectName(QString::fromUtf8("aInstrumentIndicator_8"));
         aInstrumentIndicator_8->setGeometry(QRect(261, 128, 60, 60));
-        aInstrumentIndicator_8->setValue(2);
         aInstrumentIndicator_8->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_8->setProperty("Value", QVariant(2));
         aInstrumentIndicator_9 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_9->setObjectName(QString::fromUtf8("aInstrumentIndicator_9"));
         aInstrumentIndicator_9->setGeometry(QRect(310, 98, 60, 60));
-        aInstrumentIndicator_9->setValue(2);
         aInstrumentIndicator_9->setOrientation(AWMultEstateWidget::Degree90);
+        aInstrumentIndicator_9->setProperty("Value", QVariant(2));
         aInstrumentIndicator_10 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_10->setObjectName(QString::fromUtf8("aInstrumentIndicator_10"));
         aInstrumentIndicator_10->setGeometry(QRect(310, 57, 60, 60));
-        aInstrumentIndicator_10->setValue(2);
         aInstrumentIndicator_10->setOrientation(AWMultEstateWidget::Degree90);
+        aInstrumentIndicator_10->setProperty("Value", QVariant(41));
         aInstrumentIndicator_11 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_11->setObjectName(QString::fromUtf8("aInstrumentIndicator_11"));
         aInstrumentIndicator_11->setGeometry(QRect(397, 106, 60, 60));
-        aInstrumentIndicator_11->setValue(2);
         aInstrumentIndicator_11->setOrientation(AWMultEstateWidget::Degree90);
+        aInstrumentIndicator_11->setProperty("Value", QVariant(2));
         aInstrumentIndicator_12 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_12->setObjectName(QString::fromUtf8("aInstrumentIndicator_12"));
         aInstrumentIndicator_12->setGeometry(QRect(205, 411, 60, 60));
-        aInstrumentIndicator_12->setValue(2);
+        aInstrumentIndicator_12->setProperty("Value", QVariant(2));
         aInstrumentIndicator_13 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_13->setObjectName(QString::fromUtf8("aInstrumentIndicator_13"));
         aInstrumentIndicator_13->setGeometry(QRect(257, 412, 60, 60));
-        aInstrumentIndicator_13->setValue(2);
+        aInstrumentIndicator_13->setProperty("Value", QVariant(2));
         aInstrumentIndicator_14 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_14->setObjectName(QString::fromUtf8("aInstrumentIndicator_14"));
         aInstrumentIndicator_14->setGeometry(QRect(462, 607, 60, 60));
-        aInstrumentIndicator_14->setValue(2);
+        aInstrumentIndicator_14->setProperty("Value", QVariant(2));
         aInstrumentIndicator_15 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_15->setObjectName(QString::fromUtf8("aInstrumentIndicator_15"));
         aInstrumentIndicator_15->setGeometry(QRect(683, 562, 60, 60));
-        aInstrumentIndicator_15->setValue(2);
         aInstrumentIndicator_15->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_15->setProperty("Value", QVariant(2));
         aInstrumentIndicator_16 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_16->setObjectName(QString::fromUtf8("aInstrumentIndicator_16"));
         aInstrumentIndicator_16->setGeometry(QRect(967, 565, 60, 60));
-        aInstrumentIndicator_16->setValue(2);
         aInstrumentIndicator_16->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_16->setProperty("Value", QVariant(2));
         aInstrumentIndicator_17 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_17->setObjectName(QString::fromUtf8("aInstrumentIndicator_17"));
         aInstrumentIndicator_17->setGeometry(QRect(878, 398, 60, 60));
-        aInstrumentIndicator_17->setValue(2);
         aInstrumentIndicator_17->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_17->setProperty("Value", QVariant(2));
         aInstrumentIndicator_18 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_18->setObjectName(QString::fromUtf8("aInstrumentIndicator_18"));
         aInstrumentIndicator_18->setGeometry(QRect(913, 303, 60, 60));
-        aInstrumentIndicator_18->setValue(2);
         aInstrumentIndicator_18->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_18->setProperty("Value", QVariant(2));
         aInstrumentIndicator_19 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_19->setObjectName(QString::fromUtf8("aInstrumentIndicator_19"));
         aInstrumentIndicator_19->setGeometry(QRect(913, 258, 60, 60));
-        aInstrumentIndicator_19->setValue(2);
         aInstrumentIndicator_19->setOrientation(AWMultEstateWidget::Degree180);
+        aInstrumentIndicator_19->setProperty("Value", QVariant(2));
         aInstrumentIndicator_20 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_20->setObjectName(QString::fromUtf8("aInstrumentIndicator_20"));
         aInstrumentIndicator_20->setGeometry(QRect(738, 304, 60, 60));
-        aInstrumentIndicator_20->setValue(2);
         aInstrumentIndicator_20->setOrientation(AWMultEstateWidget::Degree0);
+        aInstrumentIndicator_20->setProperty("Value", QVariant(2));
         aInstrumentIndicator_21 = new AInstrumentIndicator(B9);
         aInstrumentIndicator_21->setObjectName(QString::fromUtf8("aInstrumentIndicator_21"));
         aInstrumentIndicator_21->setGeometry(QRect(738, 260, 60, 60));
-        aInstrumentIndicator_21->setValue(2);
         aInstrumentIndicator_21->setOrientation(AWMultEstateWidget::Degree0);
+        aInstrumentIndicator_21->setProperty("Value", QVariant(2));
         frame_2 = new QFrame(B9);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setGeometry(QRect(10, 210, 71, 51));

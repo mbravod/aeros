@@ -9,7 +9,7 @@ AWidget::AWidget(QWidget *parent) :
     this->m_isUpdateable = false;
     this->id = "null";
     this->tipo = -1;
-    //this->value = -1;
+    this->value = -1;
     this->indice = -1;
 }
 

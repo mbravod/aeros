@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b14.ui'
 **
-** Created: Sun 29. Sep 18:02:05 2013
+** Created: Wed 9. Oct 20:10:07 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -300,6 +300,8 @@ public:
         aASPA_1 = new AWMultiObject(B14);
         aASPA_1->setObjectName(QString::fromUtf8("aASPA_1"));
         aASPA_1->setGeometry(QRect(-1, 60, 251, 211));
+        aASPA_1->setProperty("isUpdateable", QVariant(false));
+        aASPA_1->setValue(0);
         aASPA_1->setElementType(AWMultiObject::ASPTA);
         aValvula_1 = new AWMultiObject(B14);
         aValvula_1->setObjectName(QString::fromUtf8("aValvula_1"));

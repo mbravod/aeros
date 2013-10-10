@@ -11,7 +11,7 @@ void ALed::Update()
 {
     if(m_ShrdMem == NULL)
         return;
-    if(!this->parentWidget()->isVisible())  //Verificar metodo para saber si
+    if(!isUpdateable())  //Verificar metodo para saber si
         return;                // la ventana que contiene el widget es "visible" (para el usuario)
     if(indice< 0){
         indice = m_ShrdMem->getVar(id);

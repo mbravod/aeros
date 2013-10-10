@@ -48,8 +48,8 @@ void AInstrumentIndicator::AWPaintEvent(){
 
     switch(value){
         case 0://Caso normal - validamos que este dentro del rango de seleccion
-                 if(m_value>=0 && m_value<=7){
-                    p.setBrush(m_colorList.at(m_value));
+                 if(normal>=0 && normal<=7){
+                    p.setBrush(m_colorList.at(normal));
                 }
                 else{
                     p.setBrush(m_colorList.at(7));
@@ -63,6 +63,8 @@ void AInstrumentIndicator::AWPaintEvent(){
                     p.setBrush(m_colorList.at(7));
                 }
                 break;
+        default://Consideramos un estado más para prevenir posibles cambios
+                p.setBrush(m_colorList.at(7));
     }
     /*if(m_value>=0 && m_value<=6)
         p.setBrush(m_colorList.at(m_value));
@@ -126,7 +128,7 @@ void AInstrumentIndicator::Update()
 {
     if(m_ShrdMem == NULL)
         return;
-    if(!this->parentWidget()->isVisible())  //Verificar metodo para saber si
+    if(!isUpdateable())  //Verificar metodo para saber si
         return;                // la ventana que contiene el widget es "visible" (para el usuario)
     if(indice< 0){
         indice = m_ShrdMem->getVar(id);

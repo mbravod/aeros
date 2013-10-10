@@ -14,7 +14,7 @@
    <string>Principal</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btnAlarma">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -24,29 +24,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>Aceptar</string>
+     <string>Estado Alarma</string>
     </property>
    </widget>
-   <widget class="AInstrumentIndicator" name="aInstrumentIndicator">
+   <widget class="QPushButton" name="btnNormal">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>40</y>
-      <width>70</width>
-      <height>70</height>
+      <x>10</x>
+      <y>360</y>
+      <width>151</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="indice">
-     <number>0</number>
-    </property>
-    <property name="value">
-     <number>2</number>
-    </property>
-    <property name="Normal" stdset="0">
-     <number>2</number>
-    </property>
-    <property name="Alarma">
-     <number>6</number>
+    <property name="text">
+     <string>Normal</string>
     </property>
    </widget>
   </widget>
@@ -71,18 +62,6 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <customwidgets>
-  <customwidget>
-   <class>AInstrumentIndicator</class>
-   <extends>AWidget</extends>
-   <header>ainstrumentindicator.h</header>
-  </customwidget>
-  <customwidget>
-   <class>AWidget</class>
-   <extends>QWidget</extends>
-   <header>awidget.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

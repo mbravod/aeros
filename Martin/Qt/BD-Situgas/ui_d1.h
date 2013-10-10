@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'd1.ui'
 **
-** Created: Mon 23. Sep 20:33:27 2013
+** Created: Wed 9. Oct 20:10:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,7 +18,6 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
-#include "awidget.h"
 #include "awmultiobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -81,6 +80,30 @@ public:
     QPushButton *btnRed_3;
     QPushButton *btnRed_4;
     QLabel *lbUnit3;
+    QPushButton *btind1;
+    QPushButton *btind1_2;
+    QPushButton *btind1_3;
+    QPushButton *btind1_4;
+    QPushButton *btind1_5;
+    QPushButton *btind1_6;
+    QPushButton *btind1_7;
+    QPushButton *btind1_8;
+    QPushButton *btind1_9;
+    QPushButton *btind1_10;
+    QPushButton *btind1_11;
+    QPushButton *btind1_12;
+    QPushButton *btind1_13;
+    QPushButton *btind1_14;
+    QPushButton *btind1_15;
+    QPushButton *btind1_16;
+    QPushButton *btind1_17;
+    QPushButton *btind1_18;
+    QPushButton *btind1_19;
+    QPushButton *btind1_20;
+    QPushButton *btind1_21;
+    QPushButton *btind1_22;
+    QPushButton *btind1_23;
+    QPushButton *btind1_24;
 
     void setupUi(QWidget *D1)
     {
@@ -90,12 +113,12 @@ public:
         D1->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 136, 136);"));
         lbIMGFondo = new QLabel(D1);
         lbIMGFondo->setObjectName(QString::fromUtf8("lbIMGFondo"));
-        lbIMGFondo->setGeometry(QRect(0, 0, 1024, 662));
-        lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8("../../../../Users/User/Desktop/D1.png")));
+        lbIMGFondo->setGeometry(QRect(0, 0, 1024, 664));
+        lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/D1.png")));
         lbIMGFondo->setScaledContents(true);
         lbInd_1 = new QLabel(D1);
         lbInd_1->setObjectName(QString::fromUtf8("lbInd_1"));
-        lbInd_1->setGeometry(QRect(80, 62, 21, 21));
+        lbInd_1->setGeometry(QRect(79, 63, 21, 21));
         QFont font;
         font.setFamily(QString::fromUtf8("Verdana"));
         font.setPointSize(10);
@@ -392,6 +415,181 @@ public:
         lbUnit3->setGeometry(QRect(837, 647, 190, 15));
         lbUnit3->setFont(font2);
         lbUnit3->setStyleSheet(QString::fromUtf8("background-color: rgb(175, 175, 175);"));
+        btind1 = new QPushButton(D1);
+        btind1->setObjectName(QString::fromUtf8("btind1"));
+        btind1->setGeometry(QRect(69, 50, 36, 301));
+        btind1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_2 = new QPushButton(D1);
+        btind1_2->setObjectName(QString::fromUtf8("btind1_2"));
+        btind1_2->setGeometry(QRect(104, 50, 36, 301));
+        btind1_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_3 = new QPushButton(D1);
+        btind1_3->setObjectName(QString::fromUtf8("btind1_3"));
+        btind1_3->setGeometry(QRect(175, 50, 36, 301));
+        btind1_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_4 = new QPushButton(D1);
+        btind1_4->setObjectName(QString::fromUtf8("btind1_4"));
+        btind1_4->setGeometry(QRect(140, 50, 36, 301));
+        btind1_4->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_5 = new QPushButton(D1);
+        btind1_5->setObjectName(QString::fromUtf8("btind1_5"));
+        btind1_5->setGeometry(QRect(318, 50, 36, 301));
+        btind1_5->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_6 = new QPushButton(D1);
+        btind1_6->setObjectName(QString::fromUtf8("btind1_6"));
+        btind1_6->setGeometry(QRect(211, 50, 36, 301));
+        btind1_6->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_7 = new QPushButton(D1);
+        btind1_7->setObjectName(QString::fromUtf8("btind1_7"));
+        btind1_7->setGeometry(QRect(283, 50, 36, 301));
+        btind1_7->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_8 = new QPushButton(D1);
+        btind1_8->setObjectName(QString::fromUtf8("btind1_8"));
+        btind1_8->setGeometry(QRect(247, 50, 36, 301));
+        btind1_8->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_9 = new QPushButton(D1);
+        btind1_9->setObjectName(QString::fromUtf8("btind1_9"));
+        btind1_9->setGeometry(QRect(460, 50, 36, 301));
+        btind1_9->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_10 = new QPushButton(D1);
+        btind1_10->setObjectName(QString::fromUtf8("btind1_10"));
+        btind1_10->setGeometry(QRect(354, 50, 36, 301));
+        btind1_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_11 = new QPushButton(D1);
+        btind1_11->setObjectName(QString::fromUtf8("btind1_11"));
+        btind1_11->setGeometry(QRect(425, 50, 36, 301));
+        btind1_11->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_12 = new QPushButton(D1);
+        btind1_12->setObjectName(QString::fromUtf8("btind1_12"));
+        btind1_12->setGeometry(QRect(389, 50, 36, 301));
+        btind1_12->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_13 = new QPushButton(D1);
+        btind1_13->setObjectName(QString::fromUtf8("btind1_13"));
+        btind1_13->setGeometry(QRect(460, 350, 36, 301));
+        btind1_13->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_14 = new QPushButton(D1);
+        btind1_14->setObjectName(QString::fromUtf8("btind1_14"));
+        btind1_14->setGeometry(QRect(104, 350, 36, 301));
+        btind1_14->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_15 = new QPushButton(D1);
+        btind1_15->setObjectName(QString::fromUtf8("btind1_15"));
+        btind1_15->setGeometry(QRect(69, 350, 36, 301));
+        btind1_15->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_16 = new QPushButton(D1);
+        btind1_16->setObjectName(QString::fromUtf8("btind1_16"));
+        btind1_16->setGeometry(QRect(211, 350, 36, 301));
+        btind1_16->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_17 = new QPushButton(D1);
+        btind1_17->setObjectName(QString::fromUtf8("btind1_17"));
+        btind1_17->setGeometry(QRect(425, 350, 36, 301));
+        btind1_17->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_18 = new QPushButton(D1);
+        btind1_18->setObjectName(QString::fromUtf8("btind1_18"));
+        btind1_18->setGeometry(QRect(283, 350, 36, 301));
+        btind1_18->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_19 = new QPushButton(D1);
+        btind1_19->setObjectName(QString::fromUtf8("btind1_19"));
+        btind1_19->setGeometry(QRect(318, 350, 36, 301));
+        btind1_19->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_20 = new QPushButton(D1);
+        btind1_20->setObjectName(QString::fromUtf8("btind1_20"));
+        btind1_20->setGeometry(QRect(354, 350, 36, 301));
+        btind1_20->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_21 = new QPushButton(D1);
+        btind1_21->setObjectName(QString::fromUtf8("btind1_21"));
+        btind1_21->setGeometry(QRect(140, 350, 36, 301));
+        btind1_21->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_22 = new QPushButton(D1);
+        btind1_22->setObjectName(QString::fromUtf8("btind1_22"));
+        btind1_22->setGeometry(QRect(175, 350, 36, 301));
+        btind1_22->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_23 = new QPushButton(D1);
+        btind1_23->setObjectName(QString::fromUtf8("btind1_23"));
+        btind1_23->setGeometry(QRect(247, 350, 36, 301));
+        btind1_23->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        btind1_24 = new QPushButton(D1);
+        btind1_24->setObjectName(QString::fromUtf8("btind1_24"));
+        btind1_24->setGeometry(QRect(389, 350, 36, 301));
+        btind1_24->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        lbIMGFondo->raise();
+        btind1_20->raise();
+        btind1_17->raise();
+        btind1_23->raise();
+        btind1_16->raise();
+        btind1_21->raise();
+        btind1_22->raise();
+        btind1_15->raise();
+        btind1_24->raise();
+        btind1_18->raise();
+        btind1_19->raise();
+        btind1_13->raise();
+        btind1_14->raise();
+        btind1_12->raise();
+        btind1_9->raise();
+        btind1_10->raise();
+        btind1_11->raise();
+        btind1_6->raise();
+        btind1_8->raise();
+        btind1_7->raise();
+        btind1_5->raise();
+        btind1_3->raise();
+        btind1_4->raise();
+        btind1_2->raise();
+        btind1->raise();
+        lbInd_1->raise();
+        lbInd_2->raise();
+        lbInd_3->raise();
+        lbInd_4->raise();
+        lbInd_5->raise();
+        lbInd_6->raise();
+        lbInd_7->raise();
+        lbInd_8->raise();
+        lbInd_9->raise();
+        lbInd_10->raise();
+        lbInd_11->raise();
+        lbInd_12->raise();
+        lbInd_13->raise();
+        lbInd_14->raise();
+        lbInd_15->raise();
+        lbInd_16->raise();
+        lbInd_17->raise();
+        lbInd_18->raise();
+        lbInd_19->raise();
+        lbInd_20->raise();
+        lbInd_21->raise();
+        lbInd_22->raise();
+        lbInd_23->raise();
+        lbInd_24->raise();
+        lbInd_25->raise();
+        lbInd_26->raise();
+        lbInd_27->raise();
+        lbInd_28->raise();
+        lbInd_29->raise();
+        lbInd_30->raise();
+        lbInd_31->raise();
+        lbInd_32->raise();
+        WCuadrado_1->raise();
+        WCuadrado_2->raise();
+        WCuadrado_3->raise();
+        WCuadrado_4->raise();
+        WCuadrado_5->raise();
+        WCuadrado_7->raise();
+        WCuadrado_8->raise();
+        WCuadrado_9->raise();
+        WCuadrado_10->raise();
+        WCuadrado_11->raise();
+        WCuadrado_12->raise();
+        WCuadrado_13->raise();
+        WCuadrado_14->raise();
+        WCuadrado_15->raise();
+        WCuadrado_16->raise();
+        WCuadrado_17->raise();
+        WCuadrado_18->raise();
+        btnRed_1->raise();
+        btnRed_2->raise();
+        btnRed_3->raise();
+        btnRed_4->raise();
+        lbUnit3->raise();
 
         retranslateUi(D1);
 
@@ -439,6 +637,30 @@ public:
         btnRed_3->setText(QApplication::translate("D1", "RED DE C\303\223MPUTO 3", 0, QApplication::UnicodeUTF8));
         btnRed_4->setText(QApplication::translate("D1", "IMP PANT", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("D1", "    UNIT3", 0, QApplication::UnicodeUTF8));
+        btind1->setText(QString());
+        btind1_2->setText(QString());
+        btind1_3->setText(QString());
+        btind1_4->setText(QString());
+        btind1_5->setText(QString());
+        btind1_6->setText(QString());
+        btind1_7->setText(QString());
+        btind1_8->setText(QString());
+        btind1_9->setText(QString());
+        btind1_10->setText(QString());
+        btind1_11->setText(QString());
+        btind1_12->setText(QString());
+        btind1_13->setText(QString());
+        btind1_14->setText(QString());
+        btind1_15->setText(QString());
+        btind1_16->setText(QString());
+        btind1_17->setText(QString());
+        btind1_18->setText(QString());
+        btind1_19->setText(QString());
+        btind1_20->setText(QString());
+        btind1_21->setText(QString());
+        btind1_22->setText(QString());
+        btind1_23->setText(QString());
+        btind1_24->setText(QString());
     } // retranslateUi
 
 };

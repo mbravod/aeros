@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'principal.ui'
 **
-** Created: Tue 8. Oct 21:10:44 2013
+** Created: Wed 9. Oct 12:07:45 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -50,7 +50,7 @@ public:
         aInstrumentIndicator->setObjectName(QString::fromUtf8("aInstrumentIndicator"));
         aInstrumentIndicator->setGeometry(QRect(140, 40, 70, 70));
         aInstrumentIndicator->setIndice(0);
-        aInstrumentIndicator->setValue(2);
+        aInstrumentIndicator->setValue(1);
         aInstrumentIndicator->setProperty("Normal", QVariant(2));
         aInstrumentIndicator->setAlarma(6);
         Principal->setCentralWidget(centralWidget);

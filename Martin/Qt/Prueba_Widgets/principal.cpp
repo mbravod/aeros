@@ -6,7 +6,8 @@ Principal::Principal(QWidget *parent) :
     ui(new Ui::Principal)
 {
     ui->setupUi(this);
-    connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(conectaBoton()));
+    connect(ui->btnAlarma,SIGNAL(clicked()),this,SLOT(conectaAlarma()));
+    connect(ui->btnNormal,SIGNAL(clicked()),this,SLOT(conectaNormal()));
     connect(ui->aInstrumentIndicator,SIGNAL(recibeId(QString)),this,SLOT(referencia(QString)));
 }
 
@@ -16,10 +17,14 @@ Principal::~Principal()
 }
 
 
-void Principal::conectaBoton(){
-    //ui->aInstrumentIndicator->setValue(1);
+void Principal::conectaAlarma(){
+    ui->aInstrumentIndicator->setValue(1);
     //
     update();
+}
+
+void Principal::conectaNormal()
+{
 }
 
 void Principal::referencia(QString id)

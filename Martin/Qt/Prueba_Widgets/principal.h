@@ -20,7 +20,8 @@ private:
     Ui::Principal *ui;
 
 public slots:
-    void conectaBoton();
+    void conectaAlarma();
+    void conectaNormal();
     void referencia(QString id);
 
 };

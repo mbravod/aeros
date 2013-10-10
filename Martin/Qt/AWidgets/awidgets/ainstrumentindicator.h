@@ -35,8 +35,8 @@ public:
 private:
     void init();
 protected:
-    void AWPaintEvent();
 
+    void AWPaintEvent();
     void mousePressEvent( QMouseEvent *);
     QString UpLabelTxT;
     QString DownLabelTxT;
