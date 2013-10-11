@@ -312,7 +312,7 @@ int main0() {
 	    APP_04_LOAD(GLOBAL_INSTANCE);
 	int i;
 printf("service ready");
-for (i=0;i<1000;i++){
+for (i=0;i<10000;i++){
 APP_01_EXECUTE (0);
 APP_02_EXECUTE (0);
 APP_03_EXECUTE (0);
