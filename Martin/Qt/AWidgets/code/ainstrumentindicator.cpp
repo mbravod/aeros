@@ -38,7 +38,8 @@ void AInstrumentIndicator::AWPaintEvent(){
     int side = this->height();
     p.scale(side/100.0,side/100.0);
 
-    double width = 100.0 * this->width()/this->height(), height = 100.0;
+    double width = 100.0 * this->width()/this->height();
+    double height = 100.0;
 
     QPen pen = p.pen();
 

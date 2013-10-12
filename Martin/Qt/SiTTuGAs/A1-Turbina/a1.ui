@@ -676,14 +676,11 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
-    <property name="Value">
-     <number>0</number>
-    </property>
-    <property name="Orientation">
-     <enum>AWMultEstateWidget::Degree270</enum>
-    </property>
     <property name="ElementType">
      <enum>AWMultiObject::VALCUAD2</enum>
+    </property>
+    <property name="Value" stdset="0">
+     <number>0</number>
     </property>
    </widget>
    <widget class="AWMultiObject" name="aWMultiObject_4">
@@ -1405,9 +1402,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
-    <property name="Value">
-     <number>0</number>
-    </property>
     <property name="ElementType">
      <enum>AWMultiObject::BOMBATE</enum>
     </property>
@@ -1416,6 +1410,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="OffColor">
      <enum>AWMultiObject::Black</enum>
+    </property>
+    <property name="Value" stdset="0">
+     <number>0</number>
     </property>
    </widget>
    <widget class="AUpTextLabel" name="leGEN_AVR_10">
@@ -6583,9 +6580,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <height>71</height>
      </rect>
     </property>
-    <property name="Value">
-     <number>0</number>
-    </property>
     <property name="ElementType">
      <enum>AWMultiObject::FLAME</enum>
     </property>
@@ -6593,7 +6587,10 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <enum>AWMultiObject::Red</enum>
     </property>
     <property name="OffColor">
-     <enum>AWMultiObject::Red</enum>
+     <enum>AWMultiObject::Green</enum>
+    </property>
+    <property name="Value" stdset="0">
+     <number>-3</number>
     </property>
    </widget>
    <widget class="AWMultiObject" name="a_Flama2">
@@ -6725,13 +6722,18 @@ alternate-background-color: rgb(255, 0, 0);</string>
  <customwidgets>
   <customwidget>
    <class>AUpTextLabel</class>
-   <extends></extends>
+   <extends>AWidget</extends>
    <header>auptextlabel.h</header>
   </customwidget>
   <customwidget>
    <class>AWMultiObject</class>
-   <extends></extends>
+   <extends>AWidget</extends>
    <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AWidget</class>
+   <extends>QWidget</extends>
+   <header>awidget.h</header>
   </customwidget>
  </customwidgets>
  <resources>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a1.ui'
 **
-** Created: Wed 9. Oct 20:10:06 2013
+** Created: Wed 9. Oct 20:34:36 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -22,6 +22,7 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 #include "auptextlabel.h"
+#include "awidget.h"
 #include "awmultiobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -463,9 +464,8 @@ public:
         aWMultiObject_3->setObjectName(QString::fromUtf8("aWMultiObject_3"));
         aWMultiObject_3->setGeometry(QRect(70, 26, 45, 45));
         aWMultiObject_3->setProperty("isUpdateable", QVariant(true));
-        aWMultiObject_3->setValue(0);
-        aWMultiObject_3->setOrientation(AWMultEstateWidget::Degree270);
         aWMultiObject_3->setElementType(AWMultiObject::VALCUAD2);
+        aWMultiObject_3->setProperty("Value", QVariant(0));
         aWMultiObject_4 = new AWMultiObject(frame);
         aWMultiObject_4->setObjectName(QString::fromUtf8("aWMultiObject_4"));
         aWMultiObject_4->setGeometry(QRect(182, 12, 45, 45));
@@ -664,10 +664,10 @@ public:
         aWMultiObject_9->setGeometry(QRect(496, 274, 40, 40));
         aWMultiObject_9->setIntID(-1);
         aWMultiObject_9->setProperty("isUpdateable", QVariant(true));
-        aWMultiObject_9->setValue(0);
         aWMultiObject_9->setElementType(AWMultiObject::BOMBATE);
         aWMultiObject_9->setOnColor(AWMultiObject::Green);
         aWMultiObject_9->setOffColor(AWMultiObject::Black);
+        aWMultiObject_9->setProperty("Value", QVariant(0));
         leGEN_AVR_10 = new AUpTextLabel(frame);
         leGEN_AVR_10->setObjectName(QString::fromUtf8("leGEN_AVR_10"));
         leGEN_AVR_10->setGeometry(QRect(266, 118, 27, 25));
@@ -1926,10 +1926,10 @@ public:
         a_Flama_1 = new AWMultiObject(frame);
         a_Flama_1->setObjectName(QString::fromUtf8("a_Flama_1"));
         a_Flama_1->setGeometry(QRect(490, 130, 81, 71));
-        a_Flama_1->setValue(0);
         a_Flama_1->setElementType(AWMultiObject::FLAME);
         a_Flama_1->setOnColor(AWMultiObject::Red);
-        a_Flama_1->setOffColor(AWMultiObject::Red);
+        a_Flama_1->setOffColor(AWMultiObject::Green);
+        a_Flama_1->setProperty("Value", QVariant(-3));
         a_Flama2 = new AWMultiObject(frame);
         a_Flama2->setObjectName(QString::fromUtf8("a_Flama2"));
         a_Flama2->setGeometry(QRect(490, 170, 81, 71));

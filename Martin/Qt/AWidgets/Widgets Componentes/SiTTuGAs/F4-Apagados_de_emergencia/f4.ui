@@ -1,0 +1,3389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>F4</class>
+ <widget class="QWidget" name="F4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128,128, 128);</string>
+  </property>
+  <widget class="QLabel" name="lbIMGFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/F4.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>841</x>
+     <y>650</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbValDES">
+   <property name="geometry">
+    <rect>
+     <x>407</x>
+     <y>622</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>SIN APAGADOS</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frAux_2">
+   <property name="geometry">
+    <rect>
+     <x>397</x>
+     <y>617</y>
+     <width>466</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAux_1">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>599</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>Nº</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbApagado">
+   <property name="geometry">
+    <rect>
+     <x>142</x>
+     <y>585</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;PRIMER&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;APAGADO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frTitulo_9">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>592</y>
+     <width>561</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frAux">
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>617</y>
+     <width>63</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAux_2">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>599</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>Descripción</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbValNUM">
+   <property name="geometry">
+    <rect>
+     <x>347</x>
+     <y>622</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>640</y>
+     <width>134</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="fr_1">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>53</y>
+     <width>341</width>
+     <height>528</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QFrame" name="frTitulo_1">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>333</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTitulo_1">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>5</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>APAGADO DE EMERGENCIA (NÚCLEO)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_1">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>36</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:LÓGICA SEGUNDO ANILLO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_1">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>29</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_2">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>55</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:T3 A&amp;B SENSORES FALLARON</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_2">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>48</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_3">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>74</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:N2/NSD A&amp;B SENSORES FALLARON</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_3">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>68</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_4">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>94</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:PS3 A&amp;B SENSORES ALTA DIF</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_4">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>86</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_5">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>105</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_5">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>112</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:PS3 A&amp;B SENSORES FALLARON</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_6">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>125</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_6">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>131</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:DETECTORES LLAMA A&amp;B FALLARON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_7">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>150</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:APAGADO DE LLAMA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_7">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>144</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_8">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>164</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_8">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>170</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SOBRE VEL ROTOR AP</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_9">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>182</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_9">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>190</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SOBRE VEL ROTOR BP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_10">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>209</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:T48 BAJA TEMP</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_10">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>202</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_11">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>228</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:T48 SOBRE TEMP D/ARRANQUE</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_11">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>220</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_12">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>240</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_12">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>248</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_13">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>266</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:T48 SOBRE TEMP MODO B</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_13">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>260</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_14">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>280</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_14">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>286</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVP SOLUCIONADOR A/B ALTA DIF</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_15">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>305</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVP SOLUCIONADOR A/B FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_15">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>300</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_16">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>320</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_16">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>325</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVP DEMANDA VS RETROAL ERR</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_17">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>340</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_17">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>345</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVP IMPULSOR FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_18">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>358</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_18">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>365</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVl RESOLVEDOR A/B AL DIF</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_19">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>378</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_19">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>385</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVl SOLUCIONADOR A/B FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_58">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>403</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVl DEMANDA VS RETROAL ERR</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_58">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>398</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_59">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>424</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVl IMPULSOR FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_59">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>416</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_60">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>435</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_60">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>442</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVO RESLVEDOR A/B AL DIF</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_61">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>455</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_61">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>462</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVO SOLUCIONADOR A/B FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_62">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>480</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVO DEMANDA VS RETROAL ERR</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_62">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>473</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_63">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>495</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_63">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>500</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:FMVO IMPULSOR FALLÓ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="fr_2">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>53</y>
+     <width>341</width>
+     <height>528</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QFrame" name="frTitulo_5">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>333</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTitulo_5">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>5</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>DETENCIONES NORMALES</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frTitulo_6">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>335</y>
+      <width>333</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTitulo_6">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>337</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>APAGADO DE EMERGENCIA (2º ANILLO)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_39">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>36</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:INR FMV S/N DESIGUAL</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_39">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>29</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_40">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>55</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:OTR FMV S/N DESIGUAL</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_40">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>48</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_41">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>74</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GMVP IMPULSOR COMÚN FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_41">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>68</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_42">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>94</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GMVI IMPULSOR COMÚN FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_42">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>86</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_43">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>105</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_43">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>112</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GMVO IMPULSOR COMÚN FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_44">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>126</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_44">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>131</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GP1 PRES PILOR SUMIN GAS ALTA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_45">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>151</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GP1 PRES INTER SUMIN GAS ALTA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_45">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>144</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_46">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>164</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_46">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>170</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:GP1 PRES EXTERN SUMIN GAS ALTA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_47">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>183</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_47">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>190</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_48">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>209</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_48">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>202</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_49">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>228</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_49">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>220</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_50">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>240</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_50">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>246</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_51">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>268</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_51">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>260</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_52">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>280</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_52">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>286</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_53">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>306</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SD_FMS REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_53">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>300</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_54">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>360</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_54">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>365</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:XNSD FALLO EN SEPARARSE</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_55">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>378</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_55">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>385</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:XN25 FALLÓ EN HACER NÚCLEO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_56">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>398</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_56">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>403</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:FALLÓ EN ENCENDER</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_57">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>417</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_57">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>422</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:XN25 FALLA DE ACC A 6050</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_64">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>435</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_64">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>441</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:POS VALV DESAGÜE COMBUSTOR</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="fr_3">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>53</y>
+     <width>341</width>
+     <height>528</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QFrame" name="frTitulo_7">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>333</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTitulo_7">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>2</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>APAGADO DE EMERGENCIA (2º ANILLO)</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frTitulo_8">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>318</y>
+      <width>333</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTitulo_8">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>320</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>APAGADO DE EMERGENCIA SIN MOTOR (NÚCLEO)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_65">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>31</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:ACEITE LUB TURBINA BAJA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_65">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>25</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_66">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>51</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:XN25 FALLA DE ACC A 4600</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_66">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>45</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_67">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>70</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:N1N33 FALLA NODO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_67">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>64</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_68">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>90</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:N1N34 FALLA NODO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_68">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>83</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_69">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>139</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_69">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>128</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:PRES COMB GAS ALTA ALTA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_70">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>160</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_70">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>148</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:VALV BLOCK NO ABIERTO AL ARRANCAR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_71">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>168</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:INTERRUPTOR GENERADOR FALLA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_71">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>121</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_72">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>198</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_72">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>188</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:GEN 86 ACTIVADO LOCAL</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_73">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>237</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_73">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>205</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:GEN 86 ACTIVADO (REMOTO)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_74">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>385</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:N2 SOBRE VELO BLOQUEO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_74">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>180</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_75">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>244</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:N3N42 FALLA NODO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_75">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>256</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_76">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>339</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_76">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>263</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:ESD DE GCP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_77">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>345</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:LÓGICO SEGUNDO ANILLO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_77">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>358</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_78">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>378</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_78">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>365</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:BP FLECHA FALLA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_79">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>403</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:N25 A&amp;B SENSORES FALLARON</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_79">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>396</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_80">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>455</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_80">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>462</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:PS2 CALADA DETECTADA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_81">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>525</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_81">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>532</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:XN25 FALLÓ EN HACER NÚCLEO</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_82">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>545</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_82">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>550</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SEC:FALLÓ EN ENCENDER</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_83">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>415</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_83">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>423</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:PRES ACEITe LUB BAJA</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_84">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>435</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_84">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>441</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:PLUB SENSOR FALLÓ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTexto_85">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>480</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NÚCLEO:SDN_NÚCLEO REFACCIÓN</string>
+    </property>
+   </widget>
+   <widget class="AWMultiObject" name="aLet_85">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>475</y>
+      <width>25</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="ElementType">
+     <enum>AWMultiObject::CIRLED</enum>
+    </property>
+    <property name="OnColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+    <property name="OffColor">
+     <enum>AWMultiObject::Grey</enum>
+    </property>
+   </widget>
+  </widget>
+  <zorder>lbIMGFondo</zorder>
+  <zorder>lbUnit3</zorder>
+  <zorder>lbApagado</zorder>
+  <zorder>frTitulo_9</zorder>
+  <zorder>frAux</zorder>
+  <zorder>lbAux_2</zorder>
+  <zorder>lbValNUM</zorder>
+  <zorder>btnIMPPant</zorder>
+  <zorder>frAux_2</zorder>
+  <zorder>lbValDES</zorder>
+  <zorder>lbAux_1</zorder>
+  <zorder>fr_1</zorder>
+  <zorder>fr_2</zorder>
+  <zorder>fr_3</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>AWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AWidget</class>
+   <extends>QWidget</extends>
+   <header>awidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

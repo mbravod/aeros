@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>B8</class>
+ <widget class="QWidget" name="B8">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(128, 128, 128, 128);</string>
+  </property>
+  <widget class="QLabel" name="lbIMGFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B8.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_0">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>50</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_1">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>100</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_2">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>278</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_3">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>355</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_4">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>433</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_5">
+   <property name="geometry">
+    <rect>
+     <x>855</x>
+     <y>567</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_6">
+   <property name="geometry">
+    <rect>
+     <x>855</x>
+     <y>425</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_7">
+   <property name="geometry">
+    <rect>
+     <x>855</x>
+     <y>350</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_8">
+   <property name="geometry">
+    <rect>
+     <x>859</x>
+     <y>275</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_9">
+   <property name="geometry">
+    <rect>
+     <x>856</x>
+     <y>100</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aValvula_10">
+   <property name="geometry">
+    <rect>
+     <x>856</x>
+     <y>50</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALCUAD2</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>633</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>649</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_0">
+   <property name="geometry">
+    <rect>
+     <x>392</x>
+     <y>338</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>DEMANDA DEL QUEMADOR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_1">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>354</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>MODO QUEMADOR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_2">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>370</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>B (PILOTO)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbValor_0">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>340</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>65</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 11</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>118</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 10</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>290</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 9</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_6">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>219</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>ENCENDEDOR 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>370</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 8</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>445</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 7</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_9">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>495</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>ENCENDEDOR 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_10">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>440</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 5</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_11">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>365</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_12">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>290</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_13">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>115</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_14">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>65</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_15">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>575</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>VÁL PRE 6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_16">
+   <property name="geometry">
+    <rect>
+     <x>315</x>
+     <y>625</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>ENCENDIDO MANUAL HABILITADO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant_2">
+   <property name="geometry">
+    <rect>
+     <x>524</x>
+     <y>619</y>
+     <width>108</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>HAB/DESHAB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_17">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>535</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>MÚLTIPLE A (EXTERNO)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_18">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>560</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>MÚLTIPLE B (PILOTO)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_19">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>585</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(151, 0, 226);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>MÚLTIPLE C (INTERNO)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTexto_20">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>608</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(78,46, 28);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>SUMINISTRO DE GAS AUXILIAR</string>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>330</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador7">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>260</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador8">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>190</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador9">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>130</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador10">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>70</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador11">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>50</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador12">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>70</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador13">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>130</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador14">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>200</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador1">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>270</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>350</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador3">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>410</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>450</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador5">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>450</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Ventilador" name="ventilador6">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>410</y>
+     <width>61</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Ventilador</class>
+   <extends>QWidget</extends>
+   <header>ventilador.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
