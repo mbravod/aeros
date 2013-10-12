@@ -7,16 +7,16 @@ CONFIG += release \
             staticlib
 TEMPLATE = lib
 
-INCLUDEPATH += ../../SiTTuGAs/SharedMemory
-INCLUDEPATH += ../../SiTTuGAs/Sittugas
+INCLUDEPATH += ../../../../SiTTuGAs/SharedMemory
+INCLUDEPATH += ../../../../SiTTuGAs/Sittugas
 
 INSTALLS += staticlib
 
 HEADERS += \
     Base.h  \
-    ../../SiTTuGAs/SharedMemory/shrdmem.h
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.h
 
 
 SOURCES += \
     Base.cpp\
-    ../../SiTTuGAs/SharedMemory/shrdmem.cpp
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.cpp

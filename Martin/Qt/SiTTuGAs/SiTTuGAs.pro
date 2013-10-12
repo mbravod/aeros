@@ -9,10 +9,13 @@ INCLUDEPATH += ../awidgets/bases
 #Para los nuevos widgets que se crearon
 INCLUDEPATH += ../awidgets/EWidgets/ewidgets
 INCLUDEPATH += ../awidgets/bases/EWidgets/base
+INCLUDEPATH += ../awidgets/bases/Widgets Componentes/Componentes/Base
+INCLUDEPATH += ../awidgets/bases/Widgets Componentes/Componentes/Header
 
 win32-g++:{
 LIBS += ../BD-Widgets/libawidgets.a
 LIBS += ../BD-Widgets/libbases.a
+
 #Elementos de los widgets generados
 #LIBS += ../BD-Widgets/BD-EWidgets Falta generar esta isntancia en el widget personalizado
 #LIBS += ../BD-Widgets/libbases.a Falta generar esta isntancia en el widget personalizado
@@ -24,6 +27,10 @@ LIBS += ../BD-Widgets/bases.lib
 #Elementos necesarios para la compilacion con MSVC
 LIBS += ../BD-Widgets/BD-EWidgets/ewidgets.lib
 LIBS += ../BD-Widgets/BD-EWidgets/base.lib
+#Librerias de los nuevos elementos de la interfaz
+LIBS += ../BD-Widgets/BD-Componentes/Base.lib
+LIBS += ../BD-Widgets/BD-Componentes/Header.lib
+
 }
 
 SOURCES += main.cpp\

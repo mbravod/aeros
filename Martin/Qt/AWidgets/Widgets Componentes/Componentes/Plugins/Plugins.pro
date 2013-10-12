@@ -37,14 +37,14 @@ HEADERS += \
     wcheckboxplugin.h \
     wlabelplugin.h \
     wlineeditplugin.h \
-    ../../SiTTuGAs/SharedMemory/shrdmem.h
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.h
 
 SOURCES += \
     componentes.cpp \
     wcheckboxplugin.cpp \
     wlineeditplugin.cpp \
     wlabelplugin.cpp \
-    ../../SiTTuGAs/SharedMemory/shrdmem.cpp
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.cpp
 
 
 RESOURCES += \

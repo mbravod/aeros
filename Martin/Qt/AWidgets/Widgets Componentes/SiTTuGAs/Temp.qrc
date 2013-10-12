@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>Temp/C4.png</file>
-        <file>Temp/B14.png</file>
-        <file>Temp/lamina_07.svg</file>
-        <file>Temp/B11.png</file>
-        <file>Temp/lamina_07.png</file>
-    </qresource>
-</RCC>

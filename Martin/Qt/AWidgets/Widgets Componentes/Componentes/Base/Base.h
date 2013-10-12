@@ -5,7 +5,7 @@
 #include <QString>
 
 //Posiblemente cambiar esta referencia una vez que se defina el nombre
-#include "../SharedMemory/shrdmem.h"
+#include "../../../../SharedMemory/shrdmem.h"
 
 class Base : public QWidget
 {

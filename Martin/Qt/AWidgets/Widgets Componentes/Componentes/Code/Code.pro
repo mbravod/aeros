@@ -29,13 +29,13 @@ TEMPLATE = lib
 SOURCES += \
     wcheckbox.cpp \
     wlabel.cpp \
-    ../../SiTTuGAs/SharedMemory/shrdmem.cpp \
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.cpp \
     wlineedit.cpp
 
 HEADERS += \
     ../Header/wcheckbox.h \
     ../Header/wlabel.h \
-    ../../SiTTuGAs/SharedMemory/shrdmem.h \
+    ../../../../SiTTuGAs/SharedMemory/shrdmem.h \
     ../Header/wlineedit.h
 
 RESOURCES += \

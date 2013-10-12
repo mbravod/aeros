@@ -1877,6 +1877,45 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="WCheckBox" name="wCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>Mi check box</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="wLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>120</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mi linea de texto</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+  </widget>
   <zorder>BackGround</zorder>
   <zorder>frame</zorder>
   <zorder>line_2</zorder>
@@ -1891,8 +1930,20 @@
   <zorder>frame_6</zorder>
   <zorder>frame_5</zorder>
   <zorder>frame_2</zorder>
+  <zorder>wCheckBox</zorder>
+  <zorder>wLabel</zorder>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WCheckBox</class>
+   <extends>QWidget</extends>
+   <header>wcheckbox.h</header>
+  </customwidget>
   <customwidget>
    <class>QLabelClick</class>
    <extends>QLabel</extends>
