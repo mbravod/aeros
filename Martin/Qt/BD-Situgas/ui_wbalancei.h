@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wbalancei.ui'
 **
-** Created: Sat 12. Oct 21:52:08 2013
+** Created: Sun 13. Oct 12:25:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -178,6 +178,7 @@ public:
         font1.setBold(true);
         font1.setWeight(75);
         btCerrar->setFont(font1);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbFondo->raise();
         lbtbvohms->raise();
         lbtbvbU->raise();

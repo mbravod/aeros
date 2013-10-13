@@ -6,6 +6,12 @@ WNivel2::WNivel2(QWidget *parent) :
     ui(new Ui::WNivel2)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WNivel2::~WNivel2()
@@ -13,7 +19,23 @@ WNivel2::~WNivel2()
     delete ui;
 }
 
+void WNivel2::cerrar()
+{
+    this->close();
+}
+void WNivel2::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wnivel2);
+    }
+}
 
+void WNivel2::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WNivel2::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
@@ -111,3 +133,6 @@ QString WNivel2::getLbIP()
 {
     return ui->lbIP->text();
 }
+
+
+*/

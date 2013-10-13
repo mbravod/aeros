@@ -11,6 +11,8 @@ WVelN25::WVelN25(QWidget *parent) :
     setMouseTracking( false );
     //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
     connect(this,SIGNAL(clicked(int)),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 
 
 }
@@ -18,6 +20,15 @@ WVelN25::WVelN25(QWidget *parent) :
 WVelN25::~WVelN25()
 {
     delete ui;
+}
+void WVelN25::idWindow(int id)
+{
+    emit id;
+}
+
+void WVelN25::cerrar()
+{
+    this->close();
 }
 
 void WVelN25::mousePressEvent( QMouseEvent *event )
@@ -29,7 +40,7 @@ void WVelN25::mousePressEvent( QMouseEvent *event )
     }
 }
 
-
+/*
 void WVelN25::setLbN25T_1(QString s)
 {
     ui->lbN25T_1->setText(s);
@@ -100,10 +111,7 @@ QString WVelN25::getLbN25T_1()
 {
     return ui->lbN25T_1->text();
 }
+*/
 
-void WVelN25::idWindow(int id)
-{
-    emit id;
-}
 
 

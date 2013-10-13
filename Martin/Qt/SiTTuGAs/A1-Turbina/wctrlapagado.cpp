@@ -6,11 +6,35 @@ WCtrlApagado::WCtrlApagado(QWidget *parent) :
     ui(new Ui::WCtrlApagado)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btcerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WCtrlApagado::~WCtrlApagado()
 {
     delete ui;
+
+}
+
+void WCtrlApagado::cerrar()
+{
+    this->close();
+}
+void WCtrlApagado::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wctrlapagado);
+    }
+}
+
+void WCtrlApagado::idWindow(int id)
+{
+    emit id;
 }
 /*
 void WCtrlApagado::setLbIP(QString s)

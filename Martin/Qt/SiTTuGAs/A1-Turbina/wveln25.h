@@ -47,6 +47,7 @@ private:
 
 public slots:
     void idWindow(int id);
+    void cerrar();
 
 signals:
     void clicked (int id);

@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wprescompb 12
 
 namespace Ui {
     class WPresCompB;
@@ -40,7 +42,14 @@ public:
     QString getLbP25T_2();
     QString getLbP25T_1();
     QString getLbPreP25T();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WPresCompB *ui;
 };

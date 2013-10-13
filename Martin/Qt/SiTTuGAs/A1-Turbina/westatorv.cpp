@@ -6,12 +6,35 @@ WEstatorV::WEstatorV(QWidget *parent) :
     ui(new Ui::WEstatorV)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WEstatorV::~WEstatorV()
 {
     delete ui;
 }
+void WEstatorV::cerrar()
+{
+    this->close();
+}
+void WEstatorV::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(westatorv);
+    }
+}
+
+void WEstatorV::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WEstatorV::setLbVsva(QString s)
 {
     ui->lbVsva->setText(s);
@@ -72,3 +95,5 @@ void WEstatorV::setLbVsvselU(QString s)
     ui->lbVsvselU->setText(s);
     update();
 }
+*/
+

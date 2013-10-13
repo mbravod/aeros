@@ -6,11 +6,34 @@ WCtrlArranque::WCtrlArranque(QWidget *parent) :
     ui(new Ui::WCtrlArranque)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WCtrlArranque::~WCtrlArranque()
 {
     delete ui;
+}
+
+void WCtrlArranque::cerrar()
+{
+    this->close();
+}
+void WCtrlArranque::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wctrlarranque);
+    }
+}
+
+void WCtrlArranque::idWindow(int id)
+{
+    emit id;
 }
 
 /*

@@ -2,6 +2,19 @@
 #define WPURGAV_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wpurgav 14
+#define wrotorturb 15
+#define wstg8bld 16
+#define wtempadm 17
+#define wtempcompa1 18
+#define wtempcompa2 19
+#define wtempcompb 20
+#define wtempespera 21
+#define wveln25 22 //Listo
+#define wvelnsd 23 //Listo
+#define wvigb 24
+#define wvoltctrl 25
 
 namespace Ui {
     class WPurgaV;
@@ -27,7 +40,14 @@ public:
     void setLbVsvMaU(QString s);
     void setLbtbvohmsU(QString s);
     void setLbVsvselU(QString s);
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WPurgaV *ui;
 };

@@ -3,6 +3,17 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wstg8bld 16
+#define wtempadm 17
+#define wtempcompa1 18
+#define wtempcompa2 19
+#define wtempcompb 20
+#define wtempespera 21
+#define wveln25 22 //Listo
+#define wvelnsd 23 //Listo
+#define wvigb 24
+#define wvoltctrl 25
 
 namespace Ui {
     class WSTG8BLD;
@@ -76,6 +87,14 @@ public:
     QString getLbSTGBT_1();
     QString getLbSTGBT();
 
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WSTG8BLD *ui;
 };

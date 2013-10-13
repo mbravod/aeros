@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpurgav.ui'
 **
-** Created: Sat 12. Oct 21:51:59 2013
+** Created: Sun 13. Oct 12:37:47 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,9 +14,9 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -33,8 +33,6 @@ public:
     QLabel *lbVbvOhms;
     QLabel *lbVbvBU;
     QLabel *lbVbvOhmsU;
-    QFrame *frame;
-    QLabel *lbPugaVarT;
     QLabel *lbVbvselT;
     QLabel *lbVbvselU;
     QLabel *lbVbvMaT;
@@ -45,6 +43,7 @@ public:
     QLabel *lbVbva;
     QLabel *lbVbvMaU;
     QLabel *lbFondo;
+    QPushButton *btCerrar;
 
     void setupUi(QWidget *WPurgaV)
     {
@@ -99,26 +98,6 @@ public:
         lbVbvOhmsU->setObjectName(QString::fromUtf8("lbVbvOhmsU"));
         lbVbvOhmsU->setGeometry(QRect(127, 126, 41, 16));
         lbVbvOhmsU->setFont(font);
-        frame = new QFrame(WPurgaV);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(1, -1, 173, 31));
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
-        frame->setFrameShape(QFrame::Box);
-        frame->setFrameShadow(QFrame::Sunken);
-        frame->setLineWidth(2);
-        lbPugaVarT = new QLabel(frame);
-        lbPugaVarT->setObjectName(QString::fromUtf8("lbPugaVarT"));
-        lbPugaVarT->setGeometry(QRect(10, 7, 151, 20));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Verdana"));
-        font1.setPointSize(9);
-        font1.setBold(true);
-        font1.setWeight(75);
-        lbPugaVarT->setFont(font1);
-        lbPugaVarT->setFrameShape(QFrame::NoFrame);
-        lbPugaVarT->setFrameShadow(QFrame::Plain);
-        lbPugaVarT->setLineWidth(1);
-        lbPugaVarT->setAlignment(Qt::AlignCenter);
         lbVbvselT = new QLabel(WPurgaV);
         lbVbvselT->setObjectName(QString::fromUtf8("lbVbvselT"));
         lbVbvselT->setGeometry(QRect(20, 46, 46, 13));
@@ -166,6 +145,15 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        btCerrar = new QPushButton(WPurgaV);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(1, 1, 173, 31));
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        font1.setWeight(75);
+        btCerrar->setFont(font1);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbFondo->raise();
         lbVbvBT->raise();
         lbVbvsel->raise();
@@ -176,7 +164,6 @@ public:
         lbVbvOhms->raise();
         lbVbvBU->raise();
         lbVbvOhmsU->raise();
-        frame->raise();
         lbVbvselT->raise();
         lbVbvselU->raise();
         lbVbvMaT->raise();
@@ -186,6 +173,7 @@ public:
         lbVbvaT->raise();
         lbVbva->raise();
         lbVbvMaU->raise();
+        btCerrar->raise();
 
         retranslateUi(WPurgaV);
 
@@ -204,7 +192,6 @@ public:
         lbVbvOhms->setText(QString());
         lbVbvBU->setText(QApplication::translate("WPurgaV", "%", 0, QApplication::UnicodeUTF8));
         lbVbvOhmsU->setText(QApplication::translate("WPurgaV", "OHMS", 0, QApplication::UnicodeUTF8));
-        lbPugaVarT->setText(QApplication::translate("WPurgaV", "PURGA VARIABLE", 0, QApplication::UnicodeUTF8));
         lbVbvselT->setText(QApplication::translate("WPurgaV", "VBVSEL", 0, QApplication::UnicodeUTF8));
         lbVbvselU->setText(QApplication::translate("WPurgaV", "%", 0, QApplication::UnicodeUTF8));
         lbVbvMaT->setText(QApplication::translate("WPurgaV", "VBVMA", 0, QApplication::UnicodeUTF8));
@@ -215,6 +202,7 @@ public:
         lbVbva->setText(QString());
         lbVbvMaU->setText(QApplication::translate("WPurgaV", "MA", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
+        btCerrar->setText(QApplication::translate("WPurgaV", "PURGA VARIABLE", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

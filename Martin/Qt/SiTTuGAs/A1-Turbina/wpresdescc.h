@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wpresdescc 13
 
 namespace Ui {
     class WPresDescC;
@@ -37,6 +39,14 @@ public:
     QString getLbDESCT_2();
     QString getLbDESCT_1();
     QString getLbPreDESCT();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WPresDescC *ui;
 };

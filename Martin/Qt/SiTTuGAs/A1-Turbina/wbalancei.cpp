@@ -6,7 +6,12 @@ WBalanceI::WBalanceI(QWidget *parent) :
     ui(new Ui::WBalanceI)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
     connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WBalanceI::~WBalanceI()
@@ -14,6 +19,25 @@ WBalanceI::~WBalanceI()
     delete ui;
 }
 
+void WBalanceI::idWindow(int id)
+{
+    emit id;
+}
+
+void WBalanceI::cerrar()
+{
+    this->close();
+}
+
+
+void WBalanceI::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wbalancei);
+    }
+}
+/*
 void WBalanceI::setLbtbva(QString s)
 {
     ui->lbtbva->setText(s);
@@ -74,17 +98,4 @@ void WBalanceI::setLbtbvselU(QString s)
     ui->lbtbvselU->setText(s);
     update();
 }
-
-void WBalanceI::idWindow(int id)
-{
-    emit id;
-}
-
-
-void WBalanceI::mousePressEvent(QMouseEvent *event)
-{
-    //Validamos click izquierdo
-    if(event->button() == Qt::LeftButton){
-        emit clicked(wbalancei);
-    }
-}
+*/

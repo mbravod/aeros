@@ -28,49 +28,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(128, 128, 128);</string>
   </property>
-  <widget class="QLabel" name="lbPreP25T">
-   <property name="geometry">
-    <rect>
-     <x>11</x>
-     <y>5</y>
-     <width>161</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Verdana</family>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="text">
-    <string>PRES COMPRESOR P25</string>
-   </property>
-  </widget>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>175</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Sunken</enum>
-   </property>
-  </widget>
   <widget class="QLabel" name="lbP25T_1">
    <property name="geometry">
     <rect>
@@ -231,15 +188,37 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>PRES COMPRESOR P25</string>
+   </property>
+  </widget>
   <zorder>lbFondo</zorder>
-  <zorder>frame</zorder>
-  <zorder>lbPreP25T</zorder>
   <zorder>lbP25T_1</zorder>
   <zorder>lbP25_1</zorder>
   <zorder>lbP25U_1</zorder>
   <zorder>lbP25U_2</zorder>
   <zorder>lbP25_2</zorder>
   <zorder>lbP25T_2</zorder>
+  <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

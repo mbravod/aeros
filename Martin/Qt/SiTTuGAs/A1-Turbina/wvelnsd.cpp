@@ -10,6 +10,8 @@ WVelNSD::WVelNSD(QWidget *parent) :
     setMouseTracking( false );
     //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
     connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 
 }
 
@@ -18,6 +20,23 @@ WVelNSD::~WVelNSD()
     delete ui;
 }
 
+void WVelNSD::idWindow(int id)
+{
+    emit id;
+}
+
+void WVelNSD::cerrar()
+{
+    this->close();
+}
+
+void WVelNSD::mousePressEvent(QMouseEvent *event)
+{
+    if(event->button() == Qt::LeftButton){
+            emit clicked(wvelnsd);
+    }
+}
+/*
 void WVelNSD::setLbVelNSDT(QString s)
 {
     ui->lbVelNSDT->setText(s);
@@ -100,15 +119,4 @@ QString WVelNSD::getLbVelNSDT()
 {
     return ui->lbVelNSDT->text();
 }
-
-void WVelNSD::idWindow(int id)
-{
-    emit id;
-}
-
-void WVelNSD::mousePressEvent(QMouseEvent *event)
-{
-    if(event->button() == Qt::LeftButton){
-            emit clicked(wvelnsd);
-    }
-}
+*/

@@ -2,6 +2,9 @@
 #define WROTORTURB_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wrotorturb 15
+
 
 namespace Ui {
     class WRotorTurb;
@@ -33,7 +36,14 @@ public:
     QString setLbVelU();
     QString setLbRefU();
     QString setLbEmicionU();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WRotorTurb *ui;
 };

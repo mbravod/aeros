@@ -6,6 +6,12 @@ WPresCompB::WPresCompB(QWidget *parent) :
     ui(new Ui::WPresCompB)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WPresCompB::~WPresCompB()
@@ -13,6 +19,23 @@ WPresCompB::~WPresCompB()
     delete ui;
 }
 
+void WPresCompB::cerrar()
+{
+    this->close();
+}
+void WPresCompB::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wprescompb);
+    }
+}
+
+void WPresCompB::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WPresCompB::setLbPreP25T(QString s)
 {
     ui->lbPreP25T->setText(s);
@@ -92,3 +115,4 @@ QString WPresCompB::getLbPreP25T()
 {
     return ui->lbPreP25T->text();
 }
+*/

@@ -6,12 +6,36 @@ WPurgaV::WPurgaV(QWidget *parent) :
     ui(new Ui::WPurgaV)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WPurgaV::~WPurgaV()
 {
     delete ui;
 }
+
+void WPurgaV::cerrar()
+{
+    this->close();
+}
+void WPurgaV::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wpurgav);
+    }
+}
+
+void WPurgaV::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WPurgaV::setLbVsva(QString s)
 {
     ui->lbVbva->setText(s);
@@ -72,3 +96,4 @@ void WPurgaV::setLbVsvselU(QString s)
     ui->lbVbvselU->setText(s);
     update();
 }
+*/

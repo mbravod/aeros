@@ -2,6 +2,9 @@
 #define WCTRLARRANQUE_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wctrlarranque 5
+
 
 namespace Ui {
     class WCtrlArranque;
@@ -24,7 +27,14 @@ public:
     QString getLbpermturbina();
     QString getLeArranque();
     QString getLeDetecion();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WCtrlArranque *ui;
 };

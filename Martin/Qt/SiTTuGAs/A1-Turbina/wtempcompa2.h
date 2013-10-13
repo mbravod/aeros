@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wtempcompa2 19
+
 
 namespace Ui {
     class WTempCompA2;
@@ -60,7 +63,14 @@ public:
     QString getLbCOMA2T_2();
     QString getLbCOMA2T_1();
     QString getLbTemCOMA2T();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WTempCompA2 *ui;
 };

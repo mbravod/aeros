@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'westatorv.ui'
 **
-** Created: Sat 12. Oct 21:52:03 2013
+** Created: Sun 13. Oct 12:37:48 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,9 +14,9 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -34,8 +34,6 @@ public:
     QLabel *lbVsvb;
     QLabel *lbVsvMaU;
     QLabel *lbVsvaU;
-    QFrame *frame;
-    QLabel *lbEstVarT;
     QLabel *lbVsvOhmsT;
     QLabel *lbVsvselT;
     QLabel *lbVsvsel;
@@ -45,6 +43,7 @@ public:
     QLabel *lbVsvdmdT;
     QLabel *lbVsvaT;
     QLabel *lbFondo;
+    QPushButton *btCerrar;
 
     void setupUi(QWidget *WEstatorV)
     {
@@ -104,26 +103,6 @@ public:
         lbVsvaU->setObjectName(QString::fromUtf8("lbVsvaU"));
         lbVsvaU->setGeometry(QRect(127, 70, 21, 16));
         lbVsvaU->setFont(font);
-        frame = new QFrame(WEstatorV);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(0, 0, 173, 29));
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
-        frame->setFrameShape(QFrame::Box);
-        frame->setFrameShadow(QFrame::Sunken);
-        frame->setLineWidth(2);
-        lbEstVarT = new QLabel(frame);
-        lbEstVarT->setObjectName(QString::fromUtf8("lbEstVarT"));
-        lbEstVarT->setGeometry(QRect(10, 5, 151, 20));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Verdana"));
-        font1.setPointSize(9);
-        font1.setBold(true);
-        font1.setWeight(75);
-        lbEstVarT->setFont(font1);
-        lbEstVarT->setFrameShape(QFrame::NoFrame);
-        lbEstVarT->setFrameShadow(QFrame::Plain);
-        lbEstVarT->setLineWidth(1);
-        lbEstVarT->setAlignment(Qt::AlignCenter);
         lbVsvOhmsT = new QLabel(WEstatorV);
         lbVsvOhmsT->setObjectName(QString::fromUtf8("lbVsvOhmsT"));
         lbVsvOhmsT->setGeometry(QRect(5, 126, 61, 16));
@@ -166,6 +145,15 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        btCerrar = new QPushButton(WEstatorV);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(1, 1, 173, 31));
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        font1.setWeight(75);
+        btCerrar->setFont(font1);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbFondo->raise();
         lbVsvdmd->raise();
         lbVsvOhms->raise();
@@ -177,7 +165,6 @@ public:
         lbVsvb->raise();
         lbVsvMaU->raise();
         lbVsvaU->raise();
-        frame->raise();
         lbVsvOhmsT->raise();
         lbVsvselT->raise();
         lbVsvsel->raise();
@@ -186,6 +173,7 @@ public:
         lbVsvselU->raise();
         lbVsvdmdT->raise();
         lbVsvaT->raise();
+        btCerrar->raise();
 
         retranslateUi(WEstatorV);
 
@@ -205,7 +193,6 @@ public:
         lbVsvb->setText(QString());
         lbVsvMaU->setText(QApplication::translate("WEstatorV", "MA", 0, QApplication::UnicodeUTF8));
         lbVsvaU->setText(QApplication::translate("WEstatorV", "%", 0, QApplication::UnicodeUTF8));
-        lbEstVarT->setText(QApplication::translate("WEstatorV", "ESTAROR VARIABLE", 0, QApplication::UnicodeUTF8));
         lbVsvOhmsT->setText(QApplication::translate("WEstatorV", "VSVOHMS", 0, QApplication::UnicodeUTF8));
         lbVsvselT->setText(QApplication::translate("WEstatorV", "VSVSEL", 0, QApplication::UnicodeUTF8));
         lbVsvsel->setText(QString());
@@ -215,6 +202,7 @@ public:
         lbVsvdmdT->setText(QApplication::translate("WEstatorV", "VSVDMD", 0, QApplication::UnicodeUTF8));
         lbVsvaT->setText(QApplication::translate("WEstatorV", "VSVA", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
+        btCerrar->setText(QApplication::translate("WEstatorV", "ESTAROR VARIABLE", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

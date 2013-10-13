@@ -30,11 +30,13 @@ public:
     void setLbtbvselU(QString s);
 
 
+
 private:
     Ui::WBalanceI *ui;
 
 public slots:
     void idWindow(int id);
+    void cerrar();
 
 
 signals:

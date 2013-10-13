@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvigb.ui'
 **
-** Created: Sat 12. Oct 21:51:51 2013
+** Created: Sun 13. Oct 12:37:47 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,9 +14,9 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -39,12 +39,11 @@ public:
     QLabel *lbVIGVU_6;
     QLabel *lbVIGVT_1;
     QLabel *lbVIGVT_4;
-    QLabel *lbVIGVT;
     QLabel *lbVIGVT_2;
     QLabel *lbVIGV_3;
     QLabel *lbVIGVU_5;
-    QFrame *frame;
     QLabel *lbFondo;
+    QPushButton *btCerrar;
 
     void setupUi(QWidget *WVIGB)
     {
@@ -140,16 +139,6 @@ public:
         lbVIGVT_4->setGeometry(QRect(44, 75, 35, 16));
         lbVIGVT_4->setFont(font);
         lbVIGVT_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbVIGVT = new QLabel(WVIGB);
-        lbVIGVT->setObjectName(QString::fromUtf8("lbVIGVT"));
-        lbVIGVT->setGeometry(QRect(60, 5, 71, 16));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Verdana"));
-        font2.setPointSize(9);
-        font2.setBold(true);
-        font2.setWeight(75);
-        lbVIGVT->setFont(font2);
-        lbVIGVT->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbVIGVT_2 = new QLabel(WVIGB);
         lbVIGVT_2->setObjectName(QString::fromUtf8("lbVIGVT_2"));
         lbVIGVT_2->setGeometry(QRect(25, 45, 51, 16));
@@ -166,18 +155,20 @@ public:
         lbVIGVU_5->setGeometry(QRect(135, 105, 21, 16));
         lbVIGVU_5->setFont(font1);
         lbVIGVU_5->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        frame = new QFrame(WVIGB);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(0, 0, 175, 29));
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
-        frame->setFrameShape(QFrame::Box);
-        frame->setFrameShadow(QFrame::Sunken);
         lbFondo = new QLabel(WVIGB);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        btCerrar = new QPushButton(WVIGB);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(1, 1, 173, 31));
+        QFont font2;
+        font2.setPointSize(10);
+        font2.setBold(true);
+        font2.setWeight(75);
+        btCerrar->setFont(font2);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbFondo->raise();
-        frame->raise();
         lbVIGVT_3->raise();
         lbVIGV_2->raise();
         lbVIGV_4->raise();
@@ -193,10 +184,10 @@ public:
         lbVIGVU_6->raise();
         lbVIGVT_1->raise();
         lbVIGVT_4->raise();
-        lbVIGVT->raise();
         lbVIGVT_2->raise();
         lbVIGV_3->raise();
         lbVIGVU_5->raise();
+        btCerrar->raise();
 
         retranslateUi(WVIGB);
 
@@ -221,11 +212,11 @@ public:
         lbVIGVU_6->setText(QApplication::translate("WVIGB", "OHMS", 0, QApplication::UnicodeUTF8));
         lbVIGVT_1->setText(QApplication::translate("WVIGB", "IGVDMD", 0, QApplication::UnicodeUTF8));
         lbVIGVT_4->setText(QApplication::translate("WVIGB", "IGVB", 0, QApplication::UnicodeUTF8));
-        lbVIGVT->setText(QApplication::translate("WVIGB", "VIGV", 0, QApplication::UnicodeUTF8));
         lbVIGVT_2->setText(QApplication::translate("WVIGB", "IGVSEL", 0, QApplication::UnicodeUTF8));
         lbVIGV_3->setText(QApplication::translate("WVIGB", "41.30", 0, QApplication::UnicodeUTF8));
         lbVIGVU_5->setText(QApplication::translate("WVIGB", "MA", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
+        btCerrar->setText(QApplication::translate("WVIGB", "VIGV", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

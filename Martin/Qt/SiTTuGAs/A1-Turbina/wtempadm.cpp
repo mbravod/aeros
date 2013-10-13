@@ -6,6 +6,12 @@ WTempADM::WTempADM(QWidget *parent) :
     ui(new Ui::WTempADM)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WTempADM::~WTempADM()
@@ -13,7 +19,23 @@ WTempADM::~WTempADM()
     delete ui;
 }
 
+void WTempADM::cerrar()
+{
+    this->close();
+}
+void WTempADM::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wtempadm);
+    }
+}
 
+void WTempADM::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WTempADM::setLbTemADMT(QString s)
 {
     ui->lbTemADMT->setText(s);
@@ -97,4 +119,4 @@ QString WTempADM::getLbADMT_1()
 QString WTempADM::getLbTemADMT()
 {
     return ui->lbTemADMT->text();
-}
+}*/

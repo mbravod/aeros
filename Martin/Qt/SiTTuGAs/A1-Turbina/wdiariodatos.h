@@ -2,6 +2,9 @@
 #define WDIARIODATOS_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wdiariodatos 8
+
 
 namespace Ui {
     class WDiarioDatos;
@@ -21,7 +24,14 @@ public:
     QString getLbIP();
     QString getLeInicio();
     QString getLeAlto();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WDiarioDatos *ui;
 };

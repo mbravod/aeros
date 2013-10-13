@@ -2,6 +2,8 @@
 #define WCTRLLAVAGUA_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wctrllavagua 7
 
 namespace Ui {
     class WCtrlLavAgua;
@@ -23,7 +25,14 @@ public:
     QString getLbPermLav();
     QString getLbDeLinea();
     QString getLbEnLinea();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WCtrlLavAgua *ui;
 };

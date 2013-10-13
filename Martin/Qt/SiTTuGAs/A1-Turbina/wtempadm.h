@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wtempadm 17
 
 namespace Ui {
     class WTempADM;
@@ -37,7 +39,14 @@ public:
     QString getLbADMT_2();
     QString getLbADMT_1();
     QString getLbTemADMT();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WTempADM *ui;
 };

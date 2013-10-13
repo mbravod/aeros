@@ -166,6 +166,8 @@ void A1::sltWVoltCtrl(){
         eWVoltCtrl->setGeometry(293,2,175,150);
         eWVoltCtrl->show();
         ctrVen[wvoltctrl] = true;
+        connect(eWVoltCtrl,SIGNAL(clicked(int)),this,SLOT(sltWVoltCtrl_Select(int)));
+
     }// Indicamos que ventana se ha seleccionado
 
 }
@@ -176,105 +178,154 @@ void A1::sltWVelNSD_Select(int id)
     moving = true;
 }
 
-void A1::sltWApagEmer_Select(int name)
+void A1::sltWApagEmer_Select(int id)
 {
-
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWBalanceI_Select(int name)
+void A1::sltWBalanceI_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCDPBLD_Select(int name)
+void A1::sltWCDPBLD_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCrakCtrl_Select(int name)
+void A1::sltWCrakCtrl_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCtrlApagado_Select(int name)
+void A1::sltWCtrlApagado_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCtrlArranque_Select(int name)
+void A1::sltWCtrlArranque_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCtrlCarga_Select(int name)
+void A1::sltWCtrlCarga_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWCtrlLavAgua_Select(int name)
+void A1::sltWCtrlLavAgua_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWDiarioDatos_Select(int name)
+void A1::sltWDiarioDatos_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWEstatorV_Select(int name)
+void A1::sltWEstatorV_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWNivel2_Select(int name)
+void A1::sltWNivel2_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWPresBalance_Select(int name)
+void A1::sltWPresBalance_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWPresCompB_Select(int name)
+void A1::sltWPresCompB_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWPresDescC_Select(int name)
+void A1::sltWPresDescC_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWPurgaV_Select(int name)
+void A1::sltWPurgaV_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWRotorTurb_Select(int name)
+void A1::sltWRotorTurb_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWSTG8BLD_Select(int name)
+void A1::sltWSTG8BLD_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWTempADM_Select(int name)
+void A1::sltWTempADM_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWTempCompA1_Select(int name)
+void A1::sltWTempCompA1_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWTempCompA2_Select(int name)
+void A1::sltWTempCompA2_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWTempCompB_Select(int name)
+void A1::sltWTempCompB_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWTempEspera_Select(int name)
+void A1::sltWTempEspera_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWVelN25_Select(int name)
+void A1::sltWVelN25_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWVIGB_Select(int name)
+void A1::sltWVIGB_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
-void A1::sltWVoltCtrl_Select(int name)
+void A1::sltWVoltCtrl_Select(int id)
 {
+    Id = id;
+    moving = true;
 }
 
 void A1::sltWVIGB(){

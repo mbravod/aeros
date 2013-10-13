@@ -34,55 +34,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(128, 128, 128);</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>175</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Sunken</enum>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
-   </property>
-   <property name="midLineWidth">
-    <number>0</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbVelN25T">
-   <property name="geometry">
-    <rect>
-     <x>35</x>
-     <y>2</y>
-     <width>115</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Verdana</family>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="text">
-    <string>VELOCIDAD N25</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="lbN25T_1">
    <property name="geometry">
     <rect>
@@ -243,15 +194,37 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>VELOCIDAD N25</string>
+   </property>
+  </widget>
   <zorder>lbFondo</zorder>
-  <zorder>frame</zorder>
-  <zorder>lbVelN25T</zorder>
   <zorder>lbN25T_1</zorder>
   <zorder>lbN25T_2</zorder>
   <zorder>lbN25_2</zorder>
   <zorder>lbN25_1</zorder>
   <zorder>lbN25U_1</zorder>
   <zorder>lbN25U_2</zorder>
+  <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -6,6 +6,12 @@ WSTG8BLD::WSTG8BLD(QWidget *parent) :
     ui(new Ui::WSTG8BLD)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WSTG8BLD::~WSTG8BLD()
@@ -13,6 +19,23 @@ WSTG8BLD::~WSTG8BLD()
     delete ui;
 }
 
+void WSTG8BLD::cerrar()
+{
+    this->close();
+}
+void WSTG8BLD::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wstg8bld);
+    }
+}
+
+void WSTG8BLD::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WSTG8BLD::setLbSTGBT(QString s)
 {
     ui->lbSTGBT->setText(s);
@@ -259,4 +282,4 @@ QString WSTG8BLD::getLbSTGBT_1()
 QString WSTG8BLD::getLbSTGBT()
 {
     return ui->lbSTGBT->text();
-}
+}*/

@@ -2,6 +2,9 @@
 #define WCTRLCARGA_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wctrlcarga 6
+
 
 namespace Ui {
     class WCtrlCarga;
@@ -27,7 +30,14 @@ public:
     QString setLeConf();
     QString setLeDemanda();
     QString setLeReal();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WCtrlCarga *ui;
 };

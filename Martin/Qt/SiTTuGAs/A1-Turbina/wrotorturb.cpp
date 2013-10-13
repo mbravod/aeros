@@ -6,18 +6,41 @@ WRotorTurb::WRotorTurb(QWidget *parent) :
     ui(new Ui::WRotorTurb)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WRotorTurb::~WRotorTurb()
 {
     delete ui;
 }
-void WRotorTurb::setLbIP(QString s)
+
+void WRotorTurb::cerrar()
+{
+    this->close();
+}
+void WRotorTurb::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wrotorturb);
+    }
+}
+
+void WRotorTurb::idWindow(int id)
+{
+    emit id;
+}
+/*void WRotorTurb::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
     update();
 }
-/*void WRotorTurb::setLeOper(QString s)
+void WRotorTurb::setLeOper(QString s)
 {
     ui->leOper->setText(s);
     update();
@@ -26,7 +49,7 @@ void WRotorTurb::setLeCntr(QString s)
 {
     ui->->leCntr->setText(s);
     update();
-}*/
+}
 void WRotorTurb::setLbVel(QString s)
 {
     ui->lbVel->setText(s);
@@ -69,7 +92,7 @@ QString WRotorTurb::getLbIP()
 QString WRotorTurb::setLeCntr()
 {
     return ui->leCntr->text();
-}*/
+}
 QString WRotorTurb::setLbVel()
 {
     return ui->lbVel->text();
@@ -93,4 +116,4 @@ QString WRotorTurb::setLbRefU()
 QString WRotorTurb::setLbEmicionU()
 {
     return ui->lbEmicionU->text();
-}
+}*/

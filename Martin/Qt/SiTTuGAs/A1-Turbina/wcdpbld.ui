@@ -496,6 +496,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
    <property name="text">
     <string>CDP BLD</string>
    </property>

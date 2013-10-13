@@ -28,49 +28,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(128, 128, 128);</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>175</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Sunken</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbSTGBT">
-   <property name="geometry">
-    <rect>
-     <x>55</x>
-     <y>6</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Verdana</family>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="text">
-    <string>STG8 BLD</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="lbSTGBT_1">
    <property name="geometry">
     <rect>
@@ -519,9 +476,30 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>STG8 BLD</string>
+   </property>
+  </widget>
   <zorder>lbFondo</zorder>
-  <zorder>frame</zorder>
-  <zorder>lbSTGBT</zorder>
   <zorder>lbSTGBT_1</zorder>
   <zorder>lbSTGB_1</zorder>
   <zorder>lbSTGBU_1</zorder>
@@ -540,6 +518,7 @@
   <zorder>lbSTGBU_6</zorder>
   <zorder>lbSTGBT_6</zorder>
   <zorder>lbSTGB_6</zorder>
+  <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

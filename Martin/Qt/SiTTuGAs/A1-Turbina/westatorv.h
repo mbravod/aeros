@@ -2,6 +2,9 @@
 #define WESTATORV_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define westatorv 9
+
 
 namespace Ui {
     class WEstatorV;
@@ -27,7 +30,14 @@ public:
     void setLbVsvMaU(QString s);
     void setLbVsvOhmsU(QString s);
     void setLbVsvselU(QString s);
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WEstatorV *ui;
 };

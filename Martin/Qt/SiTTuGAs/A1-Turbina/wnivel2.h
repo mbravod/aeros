@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wnivel2 10
+
 
 namespace Ui {
     class WNivel2;
@@ -43,6 +46,14 @@ public:
     QString getLbAceCT();
     QString getLbNivGTGT();
     QString getLbIP();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WNivel2 *ui;
 };

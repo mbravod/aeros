@@ -1,8 +1,10 @@
 #ifndef WAPAGEMER_H
 #define WAPAGEMER_H
+#include <QWidget>
 #include <QMouseEvent>
 #define wapagemer 0
-#include <QWidget>
+
+
 
 namespace Ui {
     class WApagEmer;
@@ -28,6 +30,7 @@ private:
 
 public slots:
     void idWindow(int id);
+    void cerrar();
 
 
 signals:

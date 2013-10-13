@@ -2,7 +2,9 @@
 #define WCRAKCTRL_H
 
 #include <QWidget>
+#include <QMouseEvent>
 
+#define wcrakctrl 3
 namespace Ui {
     class WCrakCtrl;
 }
@@ -22,6 +24,14 @@ public:
     QString getLehighspd();
     QString getLeStop();
     QString getLbIP();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 
 
 private:

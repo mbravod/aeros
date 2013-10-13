@@ -223,61 +223,6 @@
     <string>OHMS</string>
    </property>
   </widget>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>-1</y>
-     <width>173</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(192, 192, 192);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Sunken</enum>
-   </property>
-   <property name="lineWidth">
-    <number>2</number>
-   </property>
-   <widget class="QLabel" name="lbPugaVarT">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>7</y>
-      <width>151</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="text">
-     <string>PURGA VARIABLE</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-  </widget>
   <widget class="QLabel" name="lbVbvselT">
    <property name="geometry">
     <rect>
@@ -495,6 +440,29 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>PURGA VARIABLE</string>
+   </property>
+  </widget>
   <zorder>lbFondo</zorder>
   <zorder>lbVbvBT</zorder>
   <zorder>lbVbvsel</zorder>
@@ -505,7 +473,6 @@
   <zorder>lbVbvOhms</zorder>
   <zorder>lbVbvBU</zorder>
   <zorder>lbVbvOhmsU</zorder>
-  <zorder>frame</zorder>
   <zorder>lbVbvselT</zorder>
   <zorder>lbVbvselU</zorder>
   <zorder>lbVbvMaT</zorder>
@@ -515,6 +482,7 @@
   <zorder>lbVbvaT</zorder>
   <zorder>lbVbva</zorder>
   <zorder>lbVbvMaU</zorder>
+  <zorder>btCerrar</zorder>
  </widget>
  <resources/>
  <connections/>

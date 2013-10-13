@@ -2,6 +2,8 @@
 #define WVOLTCTRL_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#define wvoltctrl 25
 
 namespace Ui {
     class WVoltCtrl;
@@ -18,6 +20,14 @@ public:
     void setLeRetroa(QString s);
     QString getLbIP();
     QString getLeRetroa();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 
 private:
     Ui::WVoltCtrl *ui;

@@ -6,12 +6,36 @@ WTempCompA1::WTempCompA1(QWidget *parent) :
     ui(new Ui::WTempCompA1)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WTempCompA1::~WTempCompA1()
 {
     delete ui;
 }
+
+void WTempCompA1::cerrar()
+{
+    this->close();
+}
+void WTempCompA1::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wtempcompa1);
+    }
+}
+
+void WTempCompA1::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WTempCompA1::setLbTemCOMAT(QString s)
 {
     ui->lbTemCOMAT->setText(s);
@@ -92,4 +116,4 @@ QString WTempCompA1::getLbCOMAT_1()
 QString WTempCompA1::getLbTemCOMAT()
 {
     return ui->lbTemCOMAT->text();
-}
+}*/

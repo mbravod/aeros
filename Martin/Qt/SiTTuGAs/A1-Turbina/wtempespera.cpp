@@ -6,12 +6,36 @@ WTempEspera::WTempEspera(QWidget *parent) :
     ui(new Ui::WTempEspera)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WTempEspera::~WTempEspera()
 {
     delete ui;
 }
+
+void WTempEspera::cerrar()
+{
+    this->close();
+}
+void WTempEspera::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wtempespera);
+    }
+}
+
+void WTempEspera::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WTempEspera::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
@@ -41,5 +65,4 @@ QString WTempEspera::getLeRetro()
 {
     return ui->leRetro->text();
 }
-
-
+*/

@@ -6,6 +6,12 @@ WVIGB::WVIGB(QWidget *parent) :
     ui(new Ui::WVIGB)
 {
     ui->setupUi(this);
+    //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
+    setMouseTracking( false );
+    //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
+    connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
+
 }
 
 WVIGB::~WVIGB()
@@ -13,6 +19,23 @@ WVIGB::~WVIGB()
     delete ui;
 }
 
+void WVIGB::cerrar()
+{
+    this->close();
+}
+void WVIGB::mousePressEvent(QMouseEvent *event)
+{
+    //Validamos click izquierdo
+    if(event->button() == Qt::LeftButton){
+        emit clicked(wvigb);
+    }
+}
+
+void WVIGB::idWindow(int id)
+{
+    emit id;
+}
+/*
 void WVIGB::setLbVIGVT(QString s)
 {
     ui->lbVIGVT->setText(s);
@@ -228,4 +251,4 @@ QString WVIGB::getLbVIGVT_1()
 QString WVIGB::getLbVIGVT()
 {
     return ui->lbVIGVT->text();
-}
+}*/

@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wpresbalance 11
+
 namespace Ui {
     class WPresBalance;
 }
@@ -36,8 +39,14 @@ public:
     QString getLbBALIT_2();
     QString getLbBALIT_1();
     QString getLbPreBALIT();
+public slots:
+    void idWindow(int id);
+    void cerrar();
 
-
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
 private:
     Ui::WPresBalance *ui;
 };

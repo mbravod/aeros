@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+#define wvigb 24
 
 namespace Ui {
     class WVIGB;
@@ -73,6 +75,15 @@ public:
     QString getLbVIGVT_2();
     QString getLbVIGVT_1();
     QString getLbVIGVT();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+
+protected:
+    void mousePressEvent(QMouseEvent *);
 
 private:
     Ui::WVIGB *ui;

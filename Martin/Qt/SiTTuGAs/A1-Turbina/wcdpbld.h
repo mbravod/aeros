@@ -3,6 +3,10 @@
 
 #include <QWidget>
 #include <QString>
+#include <QMouseEvent>
+
+#define wcdpbld 2
+
 namespace Ui {
     class WCDPBLD;
 }
@@ -73,6 +77,16 @@ public:
     QString getLbCDPBT_2();
     QString getLbCDPBT_1();
     QString getLbCDPBT();
+public slots:
+    void idWindow(int id);
+    void cerrar();
+
+signals:
+    void clicked (int id);
+protected:
+    void mousePressEvent(QMouseEvent *);
+
+
 private:
     Ui::WCDPBLD *ui;
 };
