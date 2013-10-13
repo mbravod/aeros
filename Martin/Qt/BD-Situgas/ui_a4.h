@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a4.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:17 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,12 +14,12 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wcheckbox.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,13 +33,13 @@ public:
     QLabel *lbPrdT;
     QLabel *lbPas1_1T;
     QLabel *lbEdo1_1;
-    QCheckBox *cbRampa;
-    QCheckBox *cbInteruptor;
-    QCheckBox *cbCronCiclo;
+    WCheckBox *cbRampa;
+    WCheckBox *cbInteruptor;
+    WCheckBox *cbCronCiclo;
     QFrame *frame_14;
     QLabel *lbsecT;
     QLabel *lbPas1_2T;
-    QCheckBox *cbDesacel;
+    WCheckBox *cbDesacel;
     QLabel *lbEdo1_2;
     QLabel *lbCronCicloHrs;
     QLabel *label_3;
@@ -49,26 +49,26 @@ public:
     QLabel *lbApaT;
     QLabel *lbPas2_1T;
     QLabel *lbEdo2_1;
-    QCheckBox *cbEsperarNuc;
-    QCheckBox *cbIniciar;
+    WCheckBox *cbEsperarNuc;
+    WCheckBox *cbIniciar;
     QLabel *lbIniciarCrono;
     QFrame *frame_11;
     QFrame *frame_12;
     QLabel *lbApaET;
     QFrame *frame_13;
     QLabel *lbImpT;
-    QCheckBox *cbEsperarVel;
+    WCheckBox *cbEsperarVel;
     QLabel *lbPas3_1T;
-    QCheckBox *cbApagado;
+    WCheckBox *cbApagado;
     QLabel *lbEdo3_1;
     QLabel *lbPas3_2T;
-    QCheckBox *checkBox_19;
+    WCheckBox *checkBox_19;
     QLabel *lbEdo3_2;
-    QCheckBox *cbEsperarIni;
-    QCheckBox *cbSelec;
-    QCheckBox *cbEsperarN25;
-    QCheckBox *cbListo;
-    QCheckBox *cbEsperarXn25;
+    WCheckBox *cbEsperarIni;
+    WCheckBox *cbSelec;
+    WCheckBox *cbEsperarN25;
+    WCheckBox *cbListo;
+    WCheckBox *cbEsperarXn25;
     QLabel *lbHrs;
     QLabel *label_4;
     QLabel *lbMin;
@@ -144,21 +144,21 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdo1_1->setPalette(palette1);
         lbEdo1_1->setFont(font2);
-        cbRampa = new QCheckBox(frame_7);
+        cbRampa = new WCheckBox(frame_7);
         cbRampa->setObjectName(QString::fromUtf8("cbRampa"));
-        cbRampa->setGeometry(QRect(20, 50, 310, 31));
+        cbRampa->setGeometry(QRect(20, 50, 201, 16));
         cbRampa->setFont(font2);
-        cbRampa->setIconSize(QSize(24, 24));
-        cbInteruptor = new QCheckBox(frame_7);
+        cbRampa->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbInteruptor = new WCheckBox(frame_7);
         cbInteruptor->setObjectName(QString::fromUtf8("cbInteruptor"));
-        cbInteruptor->setGeometry(QRect(20, 70, 310, 31));
+        cbInteruptor->setGeometry(QRect(20, 70, 189, 16));
         cbInteruptor->setFont(font2);
-        cbInteruptor->setIconSize(QSize(24, 24));
-        cbCronCiclo = new QCheckBox(frame_7);
+        cbInteruptor->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbCronCiclo = new WCheckBox(frame_7);
         cbCronCiclo->setObjectName(QString::fromUtf8("cbCronCiclo"));
-        cbCronCiclo->setGeometry(QRect(20, 90, 241, 31));
+        cbCronCiclo->setGeometry(QRect(20, 90, 261, 16));
         cbCronCiclo->setFont(font2);
-        cbCronCiclo->setIconSize(QSize(24, 24));
+        cbCronCiclo->setProperty("iconSize", QVariant(QSize(24, 24)));
         frame_14 = new QFrame(frame_7);
         frame_14->setObjectName(QString::fromUtf8("frame_14"));
         frame_14->setGeometry(QRect(5, 160, 332, 22));
@@ -179,11 +179,11 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbPas1_2T->setPalette(palette2);
         lbPas1_2T->setFont(font2);
-        cbDesacel = new QCheckBox(frame_7);
+        cbDesacel = new WCheckBox(frame_7);
         cbDesacel->setObjectName(QString::fromUtf8("cbDesacel"));
-        cbDesacel->setGeometry(QRect(20, 200, 310, 31));
+        cbDesacel->setGeometry(QRect(20, 200, 235, 16));
         cbDesacel->setFont(font2);
-        cbDesacel->setIconSize(QSize(24, 24));
+        cbDesacel->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbEdo1_2 = new QLabel(frame_7);
         lbEdo1_2->setObjectName(QString::fromUtf8("lbEdo1_2"));
         lbEdo1_2->setGeometry(QRect(280, 185, 55, 20));
@@ -246,16 +246,16 @@ public:
         palette5.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdo2_1->setPalette(palette5);
         lbEdo2_1->setFont(font2);
-        cbEsperarNuc = new QCheckBox(frame_9);
+        cbEsperarNuc = new WCheckBox(frame_9);
         cbEsperarNuc->setObjectName(QString::fromUtf8("cbEsperarNuc"));
-        cbEsperarNuc->setGeometry(QRect(20, 40, 310, 31));
+        cbEsperarNuc->setGeometry(QRect(20, 50, 211, 16));
         cbEsperarNuc->setFont(font2);
-        cbEsperarNuc->setIconSize(QSize(24, 24));
-        cbIniciar = new QCheckBox(frame_9);
+        cbEsperarNuc->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbIniciar = new WCheckBox(frame_9);
         cbIniciar->setObjectName(QString::fromUtf8("cbIniciar"));
-        cbIniciar->setGeometry(QRect(20, 60, 261, 31));
+        cbIniciar->setGeometry(QRect(20, 70, 281, 16));
         cbIniciar->setFont(font2);
-        cbIniciar->setIconSize(QSize(24, 24));
+        cbIniciar->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbIniciarCrono = new QLabel(frame_9);
         lbIniciarCrono->setObjectName(QString::fromUtf8("lbIniciarCrono"));
         lbIniciarCrono->setGeometry(QRect(300, 60, 26, 31));
@@ -289,11 +289,11 @@ public:
         lbImpT->setGeometry(QRect(7, 4, 318, 15));
         lbImpT->setFont(font1);
         lbImpT->setAlignment(Qt::AlignCenter);
-        cbEsperarVel = new QCheckBox(frame_11);
+        cbEsperarVel = new WCheckBox(frame_11);
         cbEsperarVel->setObjectName(QString::fromUtf8("cbEsperarVel"));
-        cbEsperarVel->setGeometry(QRect(20, 60, 310, 31));
+        cbEsperarVel->setGeometry(QRect(20, 70, 302, 16));
         cbEsperarVel->setFont(font2);
-        cbEsperarVel->setIconSize(QSize(24, 24));
+        cbEsperarVel->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbPas3_1T = new QLabel(frame_11);
         lbPas3_1T->setObjectName(QString::fromUtf8("lbPas3_1T"));
         lbPas3_1T->setGeometry(QRect(40, 30, 171, 21));
@@ -303,11 +303,11 @@ public:
         palette6.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbPas3_1T->setPalette(palette6);
         lbPas3_1T->setFont(font2);
-        cbApagado = new QCheckBox(frame_11);
+        cbApagado = new WCheckBox(frame_11);
         cbApagado->setObjectName(QString::fromUtf8("cbApagado"));
-        cbApagado->setGeometry(QRect(20, 40, 331, 31));
+        cbApagado->setGeometry(QRect(20, 50, 211, 16));
         cbApagado->setFont(font2);
-        cbApagado->setIconSize(QSize(24, 24));
+        cbApagado->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbEdo3_1 = new QLabel(frame_11);
         lbEdo3_1->setObjectName(QString::fromUtf8("lbEdo3_1"));
         lbEdo3_1->setGeometry(QRect(280, 30, 71, 20));
@@ -326,11 +326,11 @@ public:
         palette8.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbPas3_2T->setPalette(palette8);
         lbPas3_2T->setFont(font2);
-        checkBox_19 = new QCheckBox(frame_11);
+        checkBox_19 = new WCheckBox(frame_11);
         checkBox_19->setObjectName(QString::fromUtf8("checkBox_19"));
-        checkBox_19->setGeometry(QRect(20, 220, 310, 31));
+        checkBox_19->setGeometry(QRect(20, 220, 251, 16));
         checkBox_19->setFont(font2);
-        checkBox_19->setIconSize(QSize(24, 24));
+        checkBox_19->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbEdo3_2 = new QLabel(frame_11);
         lbEdo3_2->setObjectName(QString::fromUtf8("lbEdo3_2"));
         lbEdo3_2->setGeometry(QRect(280, 185, 71, 20));
@@ -340,35 +340,35 @@ public:
         palette9.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdo3_2->setPalette(palette9);
         lbEdo3_2->setFont(font2);
-        cbEsperarIni = new QCheckBox(frame_11);
+        cbEsperarIni = new WCheckBox(frame_11);
         cbEsperarIni->setObjectName(QString::fromUtf8("cbEsperarIni"));
-        cbEsperarIni->setGeometry(QRect(20, 280, 310, 31));
+        cbEsperarIni->setGeometry(QRect(20, 280, 244, 16));
         cbEsperarIni->setFont(font2);
-        cbEsperarIni->setIconSize(QSize(24, 24));
-        cbSelec = new QCheckBox(frame_11);
+        cbEsperarIni->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbSelec = new WCheckBox(frame_11);
         cbSelec->setObjectName(QString::fromUtf8("cbSelec"));
-        cbSelec->setGeometry(QRect(20, 240, 310, 31));
+        cbSelec->setGeometry(QRect(20, 240, 191, 16));
         cbSelec->setFont(font2);
-        cbSelec->setIconSize(QSize(24, 24));
-        cbEsperarN25 = new QCheckBox(frame_11);
+        cbSelec->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbEsperarN25 = new WCheckBox(frame_11);
         cbEsperarN25->setObjectName(QString::fromUtf8("cbEsperarN25"));
-        cbEsperarN25->setGeometry(QRect(20, 200, 310, 31));
+        cbEsperarN25->setGeometry(QRect(20, 200, 281, 16));
         cbEsperarN25->setFont(font2);
-        cbEsperarN25->setIconSize(QSize(24, 24));
-        cbListo = new QCheckBox(frame_11);
+        cbEsperarN25->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbListo = new WCheckBox(frame_11);
         cbListo->setObjectName(QString::fromUtf8("cbListo"));
-        cbListo->setGeometry(QRect(20, 300, 310, 31));
+        cbListo->setGeometry(QRect(20, 300, 254, 16));
         cbListo->setFont(font2);
-        cbListo->setIconSize(QSize(24, 24));
-        cbEsperarXn25 = new QCheckBox(frame_11);
+        cbListo->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbEsperarXn25 = new WCheckBox(frame_11);
         cbEsperarXn25->setObjectName(QString::fromUtf8("cbEsperarXn25"));
-        cbEsperarXn25->setGeometry(QRect(20, 260, 310, 31));
+        cbEsperarXn25->setGeometry(QRect(20, 260, 311, 16));
         QFont font4;
         font4.setPointSize(8);
         font4.setBold(true);
         font4.setWeight(75);
         cbEsperarXn25->setFont(font4);
-        cbEsperarXn25->setIconSize(QSize(24, 24));
+        cbEsperarXn25->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbHrs = new QLabel(frame_11);
         lbHrs->setObjectName(QString::fromUtf8("lbHrs"));
         lbHrs->setGeometry(QRect(265, 320, 26, 31));

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wcrakctrl.ui'
 **
-** Created: Sat 12. Oct 11:06:20 2013
+** Created: Sat 12. Oct 21:52:06 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,11 +32,11 @@ public:
     QPushButton *bthighspd;
     QPushButton *btstop;
     QPushButton *btcrankperm;
-    QLabel *lbcrankperm;
+    WLabel *lbcrankperm;
     QFrame *frame_2;
     QLabel *lbIP;
-    QLineEdit *lehighspd;
-    QLineEdit *leStop;
+    WLabel *lehighspd;
+    WLabel *leStop;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WCrakCtrl)
@@ -89,15 +89,15 @@ public:
         btcrankperm->setObjectName(QString::fromUtf8("btcrankperm"));
         btcrankperm->setGeometry(QRect(10, 60, 81, 23));
         btcrankperm->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
-        lbcrankperm = new QLabel(WCrakCtrl);
+        lbcrankperm = new WLabel(WCrakCtrl);
         lbcrankperm->setObjectName(QString::fromUtf8("lbcrankperm"));
         lbcrankperm->setGeometry(QRect(100, 60, 81, 21));
+        lbcrankperm->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         QFont font2;
         font2.setPointSize(11);
         font2.setBold(true);
         font2.setWeight(75);
         lbcrankperm->setFont(font2);
-        lbcrankperm->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         frame_2 = new QFrame(WCrakCtrl);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setGeometry(QRect(0, 0, 241, 16));
@@ -112,16 +112,26 @@ public:
         font3.setPointSize(5);
         lbIP->setFont(font3);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        lehighspd = new QLineEdit(WCrakCtrl);
+        lehighspd = new WLabel(WCrakCtrl);
         lehighspd->setObjectName(QString::fromUtf8("lehighspd"));
         lehighspd->setGeometry(QRect(50, 161, 101, 25));
-        lehighspd->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 255, 0);"));
-        leStop = new QLineEdit(WCrakCtrl);
+        lehighspd->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
+        lehighspd->setProperty("Fondo_Inicial", QVariant(WLabel::Verde));
+        lehighspd->setProperty("Texto_A", QVariant(WLabel::a_SinColor));
+        lehighspd->setProperty("Fondo_A", QVariant(WLabel::A_SinColor));
+        lehighspd->setProperty("Texto_B", QVariant(WLabel::b_SinColor));
+        lehighspd->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        lehighspd->setProperty("Alineacion", QVariant(WLabel::Centro));
+        leStop = new WLabel(WCrakCtrl);
         leStop->setObjectName(QString::fromUtf8("leStop"));
         leStop->setGeometry(QRect(50, 226, 101, 25));
-        leStop->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 255, 0);"));
+        leStop->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
+        leStop->setProperty("Fondo_Inicial", QVariant(WLabel::Verde));
+        leStop->setProperty("Texto_A", QVariant(WLabel::a_SinColor));
+        leStop->setProperty("Fondo_A", QVariant(WLabel::A_SinColor));
+        leStop->setProperty("Texto_B", QVariant(WLabel::b_SinColor));
+        leStop->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        leStop->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WCrakCtrl);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));
@@ -157,6 +167,8 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_CrkCtrl.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lehighspd->setText(QString());
+        leStop->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi
 

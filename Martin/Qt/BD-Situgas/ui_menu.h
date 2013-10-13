@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'menu.ui'
 **
-** Created: Sat 12. Oct 11:06:09 2013
+** Created: Sat 12. Oct 22:36:36 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -19,8 +19,6 @@
 #include <QtGui/QLabel>
 #include <QtGui/QWidget>
 #include "Componets/qlabelclick.h"
-#include "wcheckbox.h"
-#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -89,8 +87,6 @@ public:
     QLabelClick *lb_B3_1;
     QLabelClick *lb_B4_1;
     QLabel *BackGround;
-    WCheckBox *wCheckBox;
-    WLabel *wLabel;
 
     void setupUi(QWidget *Menu)
     {
@@ -523,19 +519,6 @@ public:
         BackGround->setGeometry(QRect(0, 0, 1024, 663));
         BackGround->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/BackGround.png")));
         BackGround->setScaledContents(true);
-        wCheckBox = new WCheckBox(Menu);
-        wCheckBox->setObjectName(QString::fromUtf8("wCheckBox"));
-        wCheckBox->setGeometry(QRect(50, 50, 251, 16));
-        wCheckBox->setValue(1);
-        QFont font3;
-        font3.setPointSize(12);
-        font3.setBold(true);
-        font3.setWeight(75);
-        wCheckBox->setFont(font3);
-        wLabel = new WLabel(Menu);
-        wLabel->setObjectName(QString::fromUtf8("wLabel"));
-        wLabel->setGeometry(QRect(50, 120, 221, 16));
-        wLabel->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         BackGround->raise();
         frame->raise();
         line_2->raise();
@@ -550,8 +533,6 @@ public:
         frame_6->raise();
         frame_5->raise();
         frame_2->raise();
-        wCheckBox->raise();
-        wLabel->raise();
 
         retranslateUi(Menu);
 
@@ -610,8 +591,6 @@ public:
         lb_B3_1->setText(QApplication::translate("Menu", "B3  ACEITE LUB. DE TURBINA", 0, QApplication::UnicodeUTF8));
         lb_B4_1->setText(QApplication::translate("Menu", "B4  MOTOR HIDR. DE ARRANQUE", 0, QApplication::UnicodeUTF8));
         BackGround->setText(QString());
-        wCheckBox->setText(QApplication::translate("Menu", "Mi check box", 0, QApplication::UnicodeUTF8));
-        wLabel->setText(QApplication::translate("Menu", "Mi linea de texto", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

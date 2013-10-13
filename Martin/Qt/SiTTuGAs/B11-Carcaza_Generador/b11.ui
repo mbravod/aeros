@@ -40,6 +40,9 @@
    <property name="text">
     <string/>
    </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B11.png</pixmap>
+   </property>
    <property name="scaledContents">
     <bool>false</bool>
    </property>
@@ -98,9 +101,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -112,6 +112,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_23">
@@ -126,9 +129,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -140,6 +140,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_22">
@@ -154,9 +157,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -168,6 +168,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_21">
@@ -182,9 +185,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -196,6 +196,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_25">
@@ -210,9 +213,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -224,6 +224,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_26">
@@ -238,9 +241,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -252,6 +252,9 @@
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_30">
@@ -266,9 +269,6 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -281,6 +281,9 @@
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
    </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorMOT_13">
    <property name="geometry">
@@ -291,14 +294,14 @@
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="UpLabel" stdset="0">
     <string>MOT</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>64 13</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorMOT_16">
@@ -310,9 +313,6 @@
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -321,6 +321,9 @@
    </property>
    <property name="DownLabel" stdset="0">
     <string>64 16</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorFSL_10">
@@ -332,9 +335,6 @@
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -343,6 +343,9 @@
    </property>
    <property name="DownLabel" stdset="0">
     <string>64 10</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorFSL_09">
@@ -354,9 +357,6 @@
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -365,6 +365,9 @@
    </property>
    <property name="DownLabel" stdset="0">
     <string>6409</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="QPushButton" name="btnVenGEN">
@@ -590,9 +593,6 @@ p, li { white-space: pre-wrap; }
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -605,6 +605,9 @@ p, li { white-space: pre-wrap; }
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
    </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorHE_50">
    <property name="geometry">
@@ -615,9 +618,6 @@ p, li { white-space: pre-wrap; }
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -626,6 +626,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="DownLabel" stdset="0">
     <string>64050</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorHE_3">
@@ -637,9 +640,6 @@ p, li { white-space: pre-wrap; }
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -648,6 +648,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="DownLabel" stdset="0">
     <string>6892/3</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_31">
@@ -662,9 +665,6 @@ p, li { white-space: pre-wrap; }
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -677,6 +677,9 @@ p, li { white-space: pre-wrap; }
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
    </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicadorHE_51">
    <property name="geometry">
@@ -687,14 +690,14 @@ p, li { white-space: pre-wrap; }
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="UpLabel" stdset="0">
     <string>HE</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>64051</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="WIndicatorTE_2">
@@ -709,9 +712,6 @@ p, li { white-space: pre-wrap; }
    <property name="styleSheet">
     <string notr="true">background-color: rgb(85, 255, 0);</string>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -723,6 +723,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="LineAngle" stdset="0">
     <double>0.000000000000000</double>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="QLabel" name="lbGen_1">
@@ -1300,25 +1303,22 @@ p, li { white-space: pre-wrap; }
  <customwidgets>
   <customwidget>
    <class>AInstrumentIndicator</class>
-   <extends>AWidget</extends>
+   <extends>QWidget</extends>
    <header>ainstrumentindicator.h</header>
   </customwidget>
   <customwidget>
    <class>AWMultiObject</class>
-   <extends>AWidget</extends>
+   <extends>QWidget</extends>
    <header>awmultiobject.h</header>
   </customwidget>
   <customwidget>
    <class>AWAnalogicLevel</class>
-   <extends>AWidget</extends>
+   <extends>QWidget</extends>
    <header>awanalogiclevel.h</header>
   </customwidget>
-  <customwidget>
-   <class>AWidget</class>
-   <extends>QWidget</extends>
-   <header>awidget.h</header>
-  </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

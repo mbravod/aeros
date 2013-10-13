@@ -12,6 +12,8 @@ WCrakCtrl::~WCrakCtrl()
 {
     delete ui;
 }
+
+/*
 void WCrakCtrl::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
@@ -49,3 +51,4 @@ QString WCrakCtrl::getLeStop()
 {
     return ui->leStop->text();
 }
+*/

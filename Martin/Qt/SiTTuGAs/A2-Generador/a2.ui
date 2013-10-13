@@ -63,7 +63,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leFrec">
+  <widget class="WLabel" name="leFrec">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -84,13 +84,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVCET">
@@ -157,7 +166,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leAmp_B">
+  <widget class="WLabel" name="leAmp_B">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -178,13 +187,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leMV_BT">
@@ -225,7 +243,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVolt_BC">
+  <widget class="WLabel" name="leVolt_BC">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -246,13 +264,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVA_AT">
@@ -521,7 +548,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVA_A">
+  <widget class="WLabel" name="leVA_A">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -542,13 +569,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVA_TotalesT">
@@ -729,7 +765,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMV_Total">
+  <widget class="WLabel" name="leMV_Total">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -750,13 +786,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leMV_CT">
@@ -835,7 +880,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMWH">
+  <widget class="WLabel" name="leMWH">
    <property name="geometry">
     <rect>
      <x>829</x>
@@ -856,13 +901,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leFrecBU">
@@ -903,7 +957,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leFP">
+  <widget class="WLabel" name="leFP">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -924,13 +978,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ABU">
@@ -1090,7 +1153,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leFrecB">
+  <widget class="WLabel" name="leFrecB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1111,13 +1174,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lb52uT">
@@ -1158,7 +1230,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMV_B">
+  <widget class="WLabel" name="leMV_B">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1179,16 +1251,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMV_C">
+  <widget class="WLabel" name="leMV_C">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1209,16 +1290,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVoltB">
+  <widget class="WLabel" name="leVoltB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1239,16 +1329,34 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="tipo">
+    <number>-1</number>
+   </property>
+   <property name="indice">
+    <number>-1</number>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="text">
+    <string> </string>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVCE">
+  <widget class="WLabel" name="leVCE">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1269,16 +1377,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMV_A">
+  <widget class="WLabel" name="leMV_A">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1299,13 +1416,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_BU">
@@ -1346,7 +1472,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVolt_AC">
+  <widget class="WLabel" name="leVolt_AC">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1367,16 +1493,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVA_Totales">
+  <widget class="WLabel" name="leVA_Totales">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1397,13 +1532,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ACT">
@@ -1558,7 +1702,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVA_B">
+  <widget class="WLabel" name="leVA_B">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1579,16 +1723,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVat_Total">
+  <widget class="WLabel" name="leVat_Total">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1609,13 +1762,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVat_TotalU">
@@ -1656,7 +1818,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leAmp_C">
+  <widget class="WLabel" name="leAmp_C">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1677,13 +1839,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_AT">
@@ -1762,7 +1933,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVA_C">
+  <widget class="WLabel" name="leVA_C">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1783,13 +1954,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leAVRT">
@@ -1894,7 +2074,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leACE">
+  <widget class="WLabel" name="leACE">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1915,16 +2095,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leAVR">
+  <widget class="WLabel" name="leAVR">
    <property name="geometry">
     <rect>
      <x>656</x>
@@ -1945,16 +2134,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVat_B">
+  <widget class="WLabel" name="leVat_B">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1975,13 +2173,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCerrado2">
@@ -2065,7 +2272,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVolt_AB">
+  <widget class="WLabel" name="leVolt_AB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2086,13 +2293,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ACU">
@@ -2133,7 +2349,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leAmp_A">
+  <widget class="WLabel" name="leAmp_A">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -2154,13 +2370,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_CU">
@@ -2467,7 +2692,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVat_A">
+  <widget class="WLabel" name="leVat_A">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2488,13 +2713,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVat_CT">
@@ -2649,7 +2883,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leVat_C">
+  <widget class="WLabel" name="leVat_C">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2670,13 +2904,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="leVCEU">
@@ -2793,7 +3036,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leMVH">
+  <widget class="WLabel" name="leMVH">
    <property name="geometry">
     <rect>
      <x>829</x>
@@ -2814,13 +3057,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Blanco</enum>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lb522T">
@@ -3308,7 +3560,17 @@
   <zorder>lbUnit3</zorder>
   <zorder>btnIMPPant</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
+  <include location="../Resources.qrc"/>
+  <include location="../Resources.qrc"/>
+  <include location="../Resources.qrc"/>
   <include location="../Resources.qrc"/>
  </resources>
  <connections/>

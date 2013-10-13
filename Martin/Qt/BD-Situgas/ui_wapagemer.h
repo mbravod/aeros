@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wapagemer.ui'
 **
-** Created: Sat 12. Oct 11:06:21 2013
+** Created: Sat 12. Oct 21:52:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,7 +32,7 @@ public:
     QPushButton *btcde;
     QFrame *frame_2;
     QLabel *lbIP;
-    QLineEdit *leCde;
+    WLabel *leCde;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WApagEmer)
@@ -95,14 +95,17 @@ public:
         font2.setPointSize(5);
         lbIP->setFont(font2);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        leCde = new QLineEdit(WApagEmer);
+        leCde = new WLabel(WApagEmer);
         leCde->setObjectName(QString::fromUtf8("leCde"));
         leCde->setGeometry(QRect(19, 142, 162, 23));
-        QFont font3;
-        font3.setPointSize(9);
-        leCde->setFont(font3);
         leCde->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
 "background-color: rgb(0, 0, 0);"));
+        QFont font3;
+        font3.setPointSize(9);
+        font3.setBold(true);
+        font3.setWeight(75);
+        leCde->setFont(font3);
+        leCde->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WApagEmer);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));

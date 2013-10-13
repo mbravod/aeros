@@ -37,9 +37,6 @@
      <height>65</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -48,6 +45,9 @@
    </property>
    <property name="DownLabel" stdset="0">
     <string>68326B</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aBomba_1">
@@ -308,9 +308,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>3</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -319,6 +316,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6033</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_3">
@@ -330,9 +330,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -341,6 +338,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6016</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_6">
@@ -352,9 +352,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -363,6 +360,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6017</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_8">
@@ -374,9 +374,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -385,6 +382,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>68326A</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_11">
@@ -396,9 +396,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -407,6 +404,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6015</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_12">
@@ -418,9 +418,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -429,6 +426,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6045</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="QLabel" name="lbGenerador">
@@ -464,9 +464,6 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -475,6 +472,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>68327B</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_15">
@@ -486,9 +486,6 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -497,6 +494,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>68327A</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aWMultiObject">
@@ -650,9 +650,6 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -661,6 +658,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6020</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_5">
@@ -672,9 +672,6 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -683,6 +680,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6043</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_7">
@@ -694,9 +694,6 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -705,6 +702,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6005</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="QFrame" name="frame_9">
@@ -1574,8 +1574,30 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B1.png</pixmap>
+   </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aBomba_2">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>328</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::BOMBATB</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Brown</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
    </property>
   </widget>
   <zorder>lbIMGFondo</zorder>
@@ -1637,6 +1659,7 @@ QProgressBar::chunk {
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
   <zorder>progressBar_2</zorder>
+  <zorder>aBomba_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -1650,6 +1673,8 @@ QProgressBar::chunk {
    <header>awmultiobject.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

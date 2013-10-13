@@ -21,10 +21,43 @@ A1::A1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
     this->title = "GENERAL TURBINA PRINCIPAL";
     this->clave= "A1";
 
-    //Conectamos ventanas emergentes -Esto es una prueba-
-    connect(ui->btnImprScr,SIGNAL(clicked()),this,SLOT(sltWVelN25()));
-    connect(ui->btnGEN_N25,SIGNAL(clicked()),this,SLOT(sltWVelNSD()));
-    //connect(ui->btnGEN_N25)
+
+    /*10/10/13*/
+    connect(ui->btnGEN_N25,SIGNAL(clicked()),this,SLOT(sltWVelN25()));
+    connect(ui->btn_GEN_AVR,SIGNAL(clicked()),this,SLOT(sltWVelNSD()));
+    connect(ui->btn_GEN_T2,SIGNAL(clicked()),this,SLOT(sltWTempADM()));
+    connect(ui->btn_GEN_T48,SIGNAL(clicked()),this,SLOT(sltWTempCompA2()));
+    connect(ui->btn_GEN_PTB,SIGNAL(clicked()),this,SLOT(sltWPresBalance()));
+    connect(ui->btn_GEN_AVR_T25,SIGNAL(clicked()),this,SLOT(sltWTempCompA1()));
+    connect(ui->btn_GEN_AVR_T3S,SIGNAL(clicked()),this,SLOT(sltWTempCompA1()));
+    connect(ui->btn_leGEN_AVR_PS3,SIGNAL(clicked()),this,SLOT(sltWPresDescC()));
+    connect(ui->btn_GEN_AVR_P25,SIGNAL(clicked()),this,SLOT(sltWPresCompB()));
+
+    connect(ui->btnCT01,SIGNAL(clicked()),this,SLOT(sltWCtrlArranque()));
+    connect(ui->btnCT02,SIGNAL(clicked()),this,SLOT(sltWCtrlApagado()));
+    connect(ui->btnCT03,SIGNAL(clicked()),this,SLOT(sltWRotorTurb()));
+    connect(ui->btnCT04,SIGNAL(clicked()),this,SLOT(sltWCtrlCarga()));
+    connect(ui->btnCT05,SIGNAL(clicked()),this,SLOT(sltWVelN25()));//VERIFICAR CUAL ES
+    connect(ui->btnCT06,SIGNAL(clicked()),this,SLOT(sltWCtrlLavAgua()));//VERIFICAR CUAL ES
+    connect(ui->btnCT07,SIGNAL(clicked()),this,SLOT(sltWVoltCtrl()));//VERIFICAR CUAL ES
+    connect(ui->btnCT08,SIGNAL(clicked()),this,SLOT(sltWApagEmer()));//VERIFICAR CUAL ES
+    connect(ui->btnCT09,SIGNAL(clicked()),this,SLOT(sltWVelN25()));//VERIFICAR CUAL ES
+    connect(ui->btnCT10,SIGNAL(clicked()),this,SLOT(sltWDiarioDatos()));//VERIFICAR CUAL ES
+    connect(ui->btnCT11,SIGNAL(clicked()),this,SLOT(sltWVelN25()));//VERIFICAR CUAL ES
+    connect(ui->btIGV,SIGNAL(clicked()),this,SLOT(sltWVIGB()));
+    connect(ui->btVBV,SIGNAL(clicked()),this,SLOT(sltWPurgaV()));
+    connect(ui->btVSV,SIGNAL(clicked()),this,SLOT(sltWEstatorV()));
+    connect(ui->btST8,SIGNAL(clicked()),this,SLOT(sltWSTG8BLD()));
+    connect(ui->btCDP,SIGNAL(clicked()),this,SLOT(sltWCDPBLD()));
+    connect(ui->btTBV,SIGNAL(clicked()),this,SLOT(sltWBalanceI()));
+    connect(ui->btCroSec,SIGNAL(clicked()),this,SLOT(sltIrA3()));
+    connect(ui->btnMOPA,SIGNAL(clicked()),this,SLOT(sltIrF1()));
+    connect(ui->btArraHid,SIGNAL(clicked()),this,SLOT(sltIrB4()));
+    connect(ui->btGenerador,SIGNAL(clicked()),this,SLOT(sltIrB11()));
+
+
+
+
     //Falta conectar la señal que permita cerrar cada ventana emergente
     //Cuando se implemente esta conexion es ahi donde se deshabilita la bandera "active"
 
@@ -126,7 +159,6 @@ A1::~A1()
 
 
 
-
 void A1::sltWVoltCtrl(){
     //Validamos que no se genere mas de una instancia de la sub-ventana
     if(ctrVen[wvoltctrl] == false){
@@ -161,7 +193,7 @@ void A1::sltWCrakCtrl_Select(int name)
 {
 }
 
-void A1::slteWCtrlApagado_Select(int name)
+void A1::sltWCtrlApagado_Select(int name)
 {
 }
 
@@ -284,6 +316,8 @@ void A1::sltWTempEspera(){
         eWTempEspera->setGeometry(293,2,175,150);
         eWTempEspera->show();
         ctrVen[wtempespera] = true;
+        connect(eWTempEspera,SIGNAL(clicked(int)),this,SLOT(sltWTempEspera_Select(int)));
+
     }
 }
 
@@ -441,7 +475,7 @@ void A1::sltWCtrlArranque(){
     }
 }
 
-void A1::slteWCtrlApagado(){
+void A1::sltWCtrlApagado(){
     if(ctrVen[wctrlapagado] == false){
         eWCtrlApagado = new WCtrlApagado(this);
         eWCtrlApagado->setGeometry(293,2,175,150);
@@ -485,7 +519,27 @@ void A1::sltWApagEmer(){
         eWApagEmer->show();
         ctrVen[wapagemer] = true;
     }
+}void A1::sltIrA3()
+{
+    qDebug()<<"ir a a3";
+    emit (irA(3));//el 3 es el nuemero definido para la A3
 }
+void A1::sltIrB4()
+{
+    qDebug()<<"ir a b4";
+    emit (irA(10));//el 10 es el nuemero definido para la B4
+}
+void A1::sltIrB11()
+{
+    qDebug()<<"ir a b11";
+    emit (irA(16));//el 16 es el nuemero definido para la B11
+}
+void A1::sltIrF1()
+{
+    qDebug()<<"ir a f1";
+    emit (irA(36));//el 36 es el nuemero definido para la F1
+}
+
 
 
 void A1::mouseMoveEvent(QMouseEvent *e)

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b3.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:18 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -23,7 +23,6 @@
 #include <QtGui/QWidget>
 #include "ainstrumentindicator.h"
 #include "awanalogiclevel.h"
-#include "awidget.h"
 #include "awmultiobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -1337,7 +1336,7 @@ public:
         lb_VST_Unit_6_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         lbIMGFondo = new QLabel(B3);
         lbIMGFondo->setObjectName(QString::fromUtf8("lbIMGFondo"));
-        lbIMGFondo->setGeometry(QRect(0, 0, 1024, 662));
+        lbIMGFondo->setGeometry(QRect(0, 22, 1024, 662));
         lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/B3.png")));
         lbIMGFondo->setScaledContents(true);
         btnIMPPant = new QPushButton(B3);
@@ -1505,93 +1504,93 @@ public:
         aIndicador_0 = new AInstrumentIndicator(B3);
         aIndicador_0->setObjectName(QString::fromUtf8("aIndicador_0"));
         aIndicador_0->setGeometry(QRect(170, 150, 70, 70));
-        aIndicador_0->setValue(2);
         aIndicador_0->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_0->setProperty("Value", QVariant(2));
         aIndicador_1 = new AInstrumentIndicator(B3);
         aIndicador_1->setObjectName(QString::fromUtf8("aIndicador_1"));
         aIndicador_1->setGeometry(QRect(227, 150, 70, 70));
-        aIndicador_1->setValue(2);
         aIndicador_1->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_1->setProperty("Value", QVariant(2));
         aIndicador_2 = new AInstrumentIndicator(B3);
         aIndicador_2->setObjectName(QString::fromUtf8("aIndicador_2"));
         aIndicador_2->setGeometry(QRect(67, 357, 70, 70));
-        aIndicador_2->setValue(2);
         aIndicador_2->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_2->setProperty("Value", QVariant(2));
         aIndicador_3 = new AInstrumentIndicator(B3);
         aIndicador_3->setObjectName(QString::fromUtf8("aIndicador_3"));
         aIndicador_3->setGeometry(QRect(67, 400, 70, 70));
-        aIndicador_3->setValue(2);
         aIndicador_3->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_3->setProperty("Value", QVariant(2));
         aIndicador_4 = new AInstrumentIndicator(B3);
         aIndicador_4->setObjectName(QString::fromUtf8("aIndicador_4"));
         aIndicador_4->setGeometry(QRect(52, 313, 70, 70));
-        aIndicador_4->setValue(3);
         aIndicador_4->setOrientation(AWMultEstateWidget::Degree180);
+        aIndicador_4->setProperty("Value", QVariant(3));
         aIndicador_5 = new AInstrumentIndicator(B3);
         aIndicador_5->setObjectName(QString::fromUtf8("aIndicador_5"));
         aIndicador_5->setGeometry(QRect(185, 360, 70, 70));
-        aIndicador_5->setValue(2);
         aIndicador_5->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_5->setProperty("Value", QVariant(2));
         aIndicador_6 = new AInstrumentIndicator(B3);
         aIndicador_6->setObjectName(QString::fromUtf8("aIndicador_6"));
         aIndicador_6->setGeometry(QRect(260, 360, 70, 70));
-        aIndicador_6->setValue(2);
         aIndicador_6->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_6->setProperty("Value", QVariant(2));
         aIndicador_7 = new AInstrumentIndicator(B3);
         aIndicador_7->setObjectName(QString::fromUtf8("aIndicador_7"));
         aIndicador_7->setGeometry(QRect(550, 370, 70, 70));
-        aIndicador_7->setValue(2);
         aIndicador_7->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_7->setProperty("Value", QVariant(2));
         aIndicador_8 = new AInstrumentIndicator(B3);
         aIndicador_8->setObjectName(QString::fromUtf8("aIndicador_8"));
         aIndicador_8->setGeometry(QRect(612, 374, 70, 70));
-        aIndicador_8->setValue(2);
         aIndicador_8->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_8->setProperty("Value", QVariant(2));
         aIndicador_9 = new AInstrumentIndicator(B3);
         aIndicador_9->setObjectName(QString::fromUtf8("aIndicador_9"));
         aIndicador_9->setGeometry(QRect(665, 375, 70, 70));
-        aIndicador_9->setValue(2);
         aIndicador_9->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_9->setProperty("Value", QVariant(2));
         aIndicador_10 = new AInstrumentIndicator(B3);
         aIndicador_10->setObjectName(QString::fromUtf8("aIndicador_10"));
         aIndicador_10->setGeometry(QRect(500, 270, 70, 70));
-        aIndicador_10->setValue(2);
         aIndicador_10->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_10->setProperty("Value", QVariant(2));
         aIndicador_11 = new AInstrumentIndicator(B3);
         aIndicador_11->setObjectName(QString::fromUtf8("aIndicador_11"));
         aIndicador_11->setGeometry(QRect(460, 510, 70, 70));
-        aIndicador_11->setValue(2);
         aIndicador_11->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_11->setProperty("Value", QVariant(2));
         aIndicador_12 = new AInstrumentIndicator(B3);
         aIndicador_12->setObjectName(QString::fromUtf8("aIndicador_12"));
         aIndicador_12->setGeometry(QRect(627, 490, 70, 70));
-        aIndicador_12->setValue(2);
         aIndicador_12->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_12->setProperty("Value", QVariant(2));
         aIndicador_13 = new AInstrumentIndicator(B3);
         aIndicador_13->setObjectName(QString::fromUtf8("aIndicador_13"));
         aIndicador_13->setGeometry(QRect(307, 573, 70, 70));
-        aIndicador_13->setValue(2);
         aIndicador_13->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_13->setProperty("Value", QVariant(2));
         aIndicador_14 = new AInstrumentIndicator(B3);
         aIndicador_14->setObjectName(QString::fromUtf8("aIndicador_14"));
         aIndicador_14->setGeometry(QRect(260, 572, 70, 70));
-        aIndicador_14->setValue(2);
         aIndicador_14->setOrientation(AWMultEstateWidget::Degree270);
+        aIndicador_14->setProperty("Value", QVariant(2));
         aIndicador_15 = new AInstrumentIndicator(B3);
         aIndicador_15->setObjectName(QString::fromUtf8("aIndicador_15"));
         aIndicador_15->setGeometry(QRect(857, 490, 70, 70));
-        aIndicador_15->setValue(2);
         aIndicador_15->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_15->setProperty("Value", QVariant(2));
         aIndicador_16 = new AInstrumentIndicator(B3);
         aIndicador_16->setObjectName(QString::fromUtf8("aIndicador_16"));
         aIndicador_16->setGeometry(QRect(865, 300, 70, 70));
-        aIndicador_16->setValue(2);
         aIndicador_16->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_16->setProperty("Value", QVariant(2));
         aIndicador_17 = new AInstrumentIndicator(B3);
         aIndicador_17->setObjectName(QString::fromUtf8("aIndicador_17"));
         aIndicador_17->setGeometry(QRect(867, 253, 70, 70));
-        aIndicador_17->setValue(2);
         aIndicador_17->setOrientation(AWMultEstateWidget::Degree0);
+        aIndicador_17->setProperty("Value", QVariant(2));
         aWAnalogicLevel = new AWAnalogicLevel(B3);
         aWAnalogicLevel->setObjectName(QString::fromUtf8("aWAnalogicLevel"));
         aWAnalogicLevel->setGeometry(QRect(852, 308, 95, 137));
@@ -1750,13 +1749,13 @@ public:
         aIndicador_18 = new AInstrumentIndicator(B3);
         aIndicador_18->setObjectName(QString::fromUtf8("aIndicador_18"));
         aIndicador_18->setGeometry(QRect(260, 440, 70, 70));
-        aIndicador_18->setValue(2);
         aIndicador_18->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_18->setProperty("Value", QVariant(2));
         aIndicador_19 = new AInstrumentIndicator(B3);
         aIndicador_19->setObjectName(QString::fromUtf8("aIndicador_19"));
         aIndicador_19->setGeometry(QRect(310, 440, 70, 70));
-        aIndicador_19->setValue(2);
         aIndicador_19->setOrientation(AWMultEstateWidget::Degree90);
+        aIndicador_19->setProperty("Value", QVariant(2));
         progressBar = new QProgressBar(B3);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
         progressBar->setGeometry(QRect(48, 235, 258, 93));

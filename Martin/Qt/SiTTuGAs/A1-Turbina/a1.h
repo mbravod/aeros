@@ -81,7 +81,7 @@ class A1 : public Pantallas
         void sltWBalanceI();
         void sltWCDPBLD();
         void sltWCrakCtrl();
-        void slteWCtrlApagado();
+        void sltWCtrlApagado();
         void sltWCtrlArranque();
         void sltWCtrlCarga();
         void sltWCtrlLavAgua();
@@ -104,13 +104,14 @@ class A1 : public Pantallas
         void sltWVIGB();
         void sltWVoltCtrl();
 
+
         //Slot para validar la eleccion de la ventana
         void sltWVelNSD_Select(int id);
         void sltWApagEmer_Select(int id);
         void sltWBalanceI_Select(int id);
         void sltWCDPBLD_Select(int id);
         void sltWCrakCtrl_Select(int id);
-        void slteWCtrlApagado_Select(int id);
+        void sltWCtrlApagado_Select(int id);
         void sltWCtrlArranque_Select(int id);
         void sltWCtrlCarga_Select(int id);
         void sltWCtrlLavAgua_Select(int id);
@@ -131,6 +132,12 @@ class A1 : public Pantallas
         void sltWVelN25_Select(int id);
         void sltWVIGB_Select(int id);
         void sltWVoltCtrl_Select(int id);
+
+
+        void sltIrA3();
+        void sltIrF1();
+        void sltIrB4();
+        void sltIrB11();
 
 
 
@@ -167,7 +174,10 @@ class A1 : public Pantallas
         WVIGB *eWVIGB;
         WVoltCtrl *eWVoltCtrl;
         int Id;
+        bool active;
         bool ctrVen[25];
+signals:
+    void irA(int );
 
 protected:
     void mouseMoveEvent( QMouseEvent *);

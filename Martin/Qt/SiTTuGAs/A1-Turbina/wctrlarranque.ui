@@ -106,7 +106,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="lbpermturbina">
+  <widget class="WLabel" name="lbpermturbina">
    <property name="geometry">
     <rect>
      <x>127</x>
@@ -115,20 +115,20 @@
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(21, 234, 21);</string>
    </property>
    <property name="text">
     <string>OK</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="btCerrar">
@@ -284,7 +284,7 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
   </widget>
-  <widget class="QLineEdit" name="leArranque">
+  <widget class="WLabel" name="leArranque">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -301,7 +301,7 @@ background-color: rgb(0, 0, 0);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leDetecion">
+  <widget class="WLabel" name="leDetecion">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -313,6 +313,9 @@ background-color: rgb(0, 0, 0);</string>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 0);
 background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string> </string>
    </property>
   </widget>
   <widget class="QLabel" name="lbFondo">
@@ -342,6 +345,13 @@ background-color: rgb(0, 0, 0);</string>
   <zorder>leArranque</zorder>
   <zorder>leDetecion</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

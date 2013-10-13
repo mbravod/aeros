@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b4.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:19 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -91,8 +91,8 @@ public:
         interm->setObjectName(QString::fromUtf8("interm"));
         interm->setGeometry(QRect(127, 349, 89, 84));
         interm->setFont(font);
-        interm->setValue(1);
         interm->setElementType(AWMultiObject::INTERM);
+        interm->setProperty("Value", QVariant(1));
         frame = new QFrame(B4);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setGeometry(QRect(78, 531, 281, 81));
@@ -126,8 +126,8 @@ public:
         resorte->setObjectName(QString::fromUtf8("resorte"));
         resorte->setGeometry(QRect(0, 37, 57, 54));
         resorte->setFont(font);
-        resorte->setValue(1);
         resorte->setElementType(AWMultiObject::SPRING);
+        resorte->setProperty("Value", QVariant(1));
         frame_2 = new QFrame(B4);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setGeometry(QRect(20, 120, 231, 111));
@@ -195,63 +195,63 @@ public:
         infCuatro->setObjectName(QString::fromUtf8("infCuatro"));
         infCuatro->setGeometry(QRect(367, 528, 61, 61));
         infCuatro->setFont(font);
-        infCuatro->setValue(2);
         infCuatro->setOrientation(AWMultEstateWidget::Degree180);
+        infCuatro->setProperty("Value", QVariant(2));
         infUno = new AInstrumentIndicator(B4);
         infUno->setObjectName(QString::fromUtf8("infUno"));
         infUno->setGeometry(QRect(9, 529, 61, 61));
         infUno->setFont(font);
-        infUno->setValue(2);
         infUno->setOrientation(AWMultEstateWidget::Degree0);
+        infUno->setProperty("Value", QVariant(2));
         infDos = new AInstrumentIndicator(B4);
         infDos->setObjectName(QString::fromUtf8("infDos"));
         infDos->setGeometry(QRect(9, 567, 61, 61));
         infDos->setFont(font);
-        infDos->setValue(2);
         infDos->setOrientation(AWMultEstateWidget::Degree0);
+        infDos->setProperty("Value", QVariant(2));
         infTres = new AInstrumentIndicator(B4);
         infTres->setObjectName(QString::fromUtf8("infTres"));
         infTres->setGeometry(QRect(229, 289, 61, 61));
         infTres->setFont(font);
-        infTres->setValue(2);
         infTres->setOrientation(AWMultEstateWidget::Degree0);
+        infTres->setProperty("Value", QVariant(2));
         infOcho = new AInstrumentIndicator(B4);
         infOcho->setObjectName(QString::fromUtf8("infOcho"));
         infOcho->setGeometry(QRect(578, 134, 61, 61));
         infOcho->setFont(font);
         infOcho->setIntID(0);
-        infOcho->setValue(2);
         infOcho->setOrientation(AWMultEstateWidget::Degree180);
+        infOcho->setProperty("Value", QVariant(2));
         infCinco = new AInstrumentIndicator(B4);
         infCinco->setObjectName(QString::fromUtf8("infCinco"));
         infCinco->setGeometry(QRect(411, 136, 61, 61));
         infCinco->setFont(font);
-        infCinco->setValue(2);
         infCinco->setOrientation(AWMultEstateWidget::Degree90);
+        infCinco->setProperty("Value", QVariant(2));
         infSeis = new AInstrumentIndicator(B4);
         infSeis->setObjectName(QString::fromUtf8("infSeis"));
         infSeis->setGeometry(QRect(501, 212, 61, 61));
         infSeis->setFont(font);
-        infSeis->setValue(2);
         infSeis->setOrientation(AWMultEstateWidget::Degree0);
+        infSeis->setProperty("Value", QVariant(2));
         infSiete = new AInstrumentIndicator(B4);
         infSiete->setObjectName(QString::fromUtf8("infSiete"));
-        infSiete->setGeometry(QRect(516, 337, 61, 61));
+        infSiete->setGeometry(QRect(502, 337, 61, 61));
         infSiete->setFont(font);
-        infSiete->setValue(2);
         infSiete->setOrientation(AWMultEstateWidget::Degree90);
+        infSiete->setProperty("Value", QVariant(2));
         inf82f = new AInstrumentIndicator(B4);
         inf82f->setObjectName(QString::fromUtf8("inf82f"));
         inf82f->setGeometry(QRect(946, 130, 61, 61));
         inf82f->setFont(font);
-        inf82f->setValue(2);
         inf82f->setOrientation(AWMultEstateWidget::Degree90);
+        inf82f->setProperty("Value", QVariant(2));
         ind83f = new AInstrumentIndicator(B4);
         ind83f->setObjectName(QString::fromUtf8("ind83f"));
         ind83f->setGeometry(QRect(886, 129, 61, 61));
         ind83f->setFont(font);
-        ind83f->setValue(2);
         ind83f->setOrientation(AWMultEstateWidget::Degree90);
+        ind83f->setProperty("Value", QVariant(2));
         aWAnalogicLevel = new AWAnalogicLevel(B4);
         aWAnalogicLevel->setObjectName(QString::fromUtf8("aWAnalogicLevel"));
         aWAnalogicLevel->setGeometry(QRect(936, 256, 21, 21));

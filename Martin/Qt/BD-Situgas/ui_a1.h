@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a1.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:14 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,6 +14,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QCommandLinkButton>
 #include <QtGui/QFrame>
 #include <QtGui/QGridLayout>
 #include <QtGui/QHBoxLayout>
@@ -22,7 +23,6 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 #include "auptextlabel.h"
-#include "awidget.h"
 #include "awmultiobject.h"
 
 QT_BEGIN_NAMESPACE
@@ -284,10 +284,19 @@ public:
     AUpTextLabel *leGEN_AVR_137;
     AUpTextLabel *leGEN_AVR_138;
     AUpTextLabel *leGEN_AVR_139;
+    QCommandLinkButton *btCroSec;
     QLabel *BackGround;
     AWMultiObject *a_Flama_1;
     AWMultiObject *a_Flama2;
     AWMultiObject *a_Flama3;
+    QCommandLinkButton *btGenerador;
+    QCommandLinkButton *btST8;
+    QCommandLinkButton *btCDP;
+    QCommandLinkButton *btIGV;
+    QCommandLinkButton *btVBV;
+    QCommandLinkButton *btVSV;
+    QCommandLinkButton *btArraHid;
+    QCommandLinkButton *btTBV;
     QLabel *lbUnit3;
 
     void setupUi(QWidget *A1)
@@ -464,8 +473,9 @@ public:
         aWMultiObject_3->setObjectName(QString::fromUtf8("aWMultiObject_3"));
         aWMultiObject_3->setGeometry(QRect(70, 26, 45, 45));
         aWMultiObject_3->setProperty("isUpdateable", QVariant(true));
+        aWMultiObject_3->setValue(0);
+        aWMultiObject_3->setOrientation(AWMultEstateWidget::Degree270);
         aWMultiObject_3->setElementType(AWMultiObject::VALCUAD2);
-        aWMultiObject_3->setProperty("Value", QVariant(0));
         aWMultiObject_4 = new AWMultiObject(frame);
         aWMultiObject_4->setObjectName(QString::fromUtf8("aWMultiObject_4"));
         aWMultiObject_4->setGeometry(QRect(182, 12, 45, 45));
@@ -664,10 +674,10 @@ public:
         aWMultiObject_9->setGeometry(QRect(496, 274, 40, 40));
         aWMultiObject_9->setIntID(-1);
         aWMultiObject_9->setProperty("isUpdateable", QVariant(true));
+        aWMultiObject_9->setValue(0);
         aWMultiObject_9->setElementType(AWMultiObject::BOMBATE);
         aWMultiObject_9->setOnColor(AWMultiObject::Green);
         aWMultiObject_9->setOffColor(AWMultiObject::Black);
-        aWMultiObject_9->setProperty("Value", QVariant(0));
         leGEN_AVR_10 = new AUpTextLabel(frame);
         leGEN_AVR_10->setObjectName(QString::fromUtf8("leGEN_AVR_10"));
         leGEN_AVR_10->setGeometry(QRect(266, 118, 27, 25));
@@ -1701,7 +1711,7 @@ public:
         leGEN_AVR_110->setPresicion(1);
         leGEN_AVR_111 = new AUpTextLabel(Compresor_LP_7);
         leGEN_AVR_111->setObjectName(QString::fromUtf8("leGEN_AVR_111"));
-        leGEN_AVR_111->setGeometry(QRect(16, 66, 189, 16));
+        leGEN_AVR_111->setGeometry(QRect(10, 70, 189, 16));
         leGEN_AVR_111->setLayoutDirection(Qt::LeftToRight);
         leGEN_AVR_111->setOrientation(AWAnalogicWidget::Degree0);
         leGEN_AVR_111->setFont(font4);
@@ -1916,6 +1926,13 @@ public:
         leGEN_AVR_139->setOrientation(AWAnalogicWidget::Degree0);
         leGEN_AVR_139->setFont(font4);
         leGEN_AVR_139->setAlignment(AUpTextLabel::AlignRight);
+        btCroSec = new QCommandLinkButton(Compresor_LP_7);
+        btCroSec->setObjectName(QString::fromUtf8("btCroSec"));
+        btCroSec->setGeometry(QRect(0, 0, 281, 341));
+        btCroSec->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Resources/PNG/Extras/transparente.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btCroSec->setIcon(icon);
         BackGround = new QLabel(frame);
         BackGround->setObjectName(QString::fromUtf8("BackGround"));
         BackGround->setGeometry(QRect(0, 0, 1024, 662));
@@ -1926,10 +1943,10 @@ public:
         a_Flama_1 = new AWMultiObject(frame);
         a_Flama_1->setObjectName(QString::fromUtf8("a_Flama_1"));
         a_Flama_1->setGeometry(QRect(490, 130, 81, 71));
+        a_Flama_1->setValue(0);
         a_Flama_1->setElementType(AWMultiObject::FLAME);
         a_Flama_1->setOnColor(AWMultiObject::Red);
-        a_Flama_1->setOffColor(AWMultiObject::Green);
-        a_Flama_1->setProperty("Value", QVariant(-3));
+        a_Flama_1->setOffColor(AWMultiObject::Red);
         a_Flama2 = new AWMultiObject(frame);
         a_Flama2->setObjectName(QString::fromUtf8("a_Flama2"));
         a_Flama2->setGeometry(QRect(490, 170, 81, 71));
@@ -1938,6 +1955,46 @@ public:
         a_Flama3->setObjectName(QString::fromUtf8("a_Flama3"));
         a_Flama3->setGeometry(QRect(490, 210, 81, 71));
         a_Flama3->setElementType(AWMultiObject::FLAME);
+        btGenerador = new QCommandLinkButton(frame);
+        btGenerador->setObjectName(QString::fromUtf8("btGenerador"));
+        btGenerador->setGeometry(QRect(60, 140, 131, 136));
+        btGenerador->setStyleSheet(QString::fromUtf8(""));
+        btGenerador->setIcon(icon);
+        btST8 = new QCommandLinkButton(frame);
+        btST8->setObjectName(QString::fromUtf8("btST8"));
+        btST8->setGeometry(QRect(301, 128, 41, 31));
+        btST8->setStyleSheet(QString::fromUtf8(""));
+        btST8->setIcon(icon);
+        btCDP = new QCommandLinkButton(frame);
+        btCDP->setObjectName(QString::fromUtf8("btCDP"));
+        btCDP->setGeometry(QRect(368, 110, 31, 31));
+        btCDP->setStyleSheet(QString::fromUtf8(""));
+        btCDP->setIcon(icon);
+        btIGV = new QCommandLinkButton(frame);
+        btIGV->setObjectName(QString::fromUtf8("btIGV"));
+        btIGV->setGeometry(QRect(250, 140, 21, 141));
+        btIGV->setStyleSheet(QString::fromUtf8(""));
+        btIGV->setIcon(icon);
+        btVBV = new QCommandLinkButton(frame);
+        btVBV->setObjectName(QString::fromUtf8("btVBV"));
+        btVBV->setGeometry(QRect(330, 167, 21, 81));
+        btVBV->setStyleSheet(QString::fromUtf8(""));
+        btVBV->setIcon(icon);
+        btVSV = new QCommandLinkButton(frame);
+        btVSV->setObjectName(QString::fromUtf8("btVSV"));
+        btVSV->setGeometry(QRect(380, 160, 21, 101));
+        btVSV->setStyleSheet(QString::fromUtf8(""));
+        btVSV->setIcon(icon);
+        btArraHid = new QCommandLinkButton(frame);
+        btArraHid->setObjectName(QString::fromUtf8("btArraHid"));
+        btArraHid->setGeometry(QRect(310, 270, 51, 31));
+        btArraHid->setStyleSheet(QString::fromUtf8(""));
+        btArraHid->setIcon(icon);
+        btTBV = new QCommandLinkButton(frame);
+        btTBV->setObjectName(QString::fromUtf8("btTBV"));
+        btTBV->setGeometry(QRect(500, 280, 31, 31));
+        btTBV->setStyleSheet(QString::fromUtf8(""));
+        btTBV->setIcon(icon);
         BackGround->raise();
         Contro_Turbina->raise();
         btnImprScr->raise();
@@ -2014,6 +2071,14 @@ public:
         a_Flama_1->raise();
         a_Flama2->raise();
         a_Flama3->raise();
+        btGenerador->raise();
+        btST8->raise();
+        btCDP->raise();
+        btIGV->raise();
+        btVBV->raise();
+        btVSV->raise();
+        btArraHid->raise();
+        btTBV->raise();
         lbUnit3 = new QLabel(A1);
         lbUnit3->setObjectName(QString::fromUtf8("lbUnit3"));
         lbUnit3->setGeometry(QRect(833, 647, 190, 15));
@@ -2036,7 +2101,7 @@ public:
         leGEN_AVR_33->setProperty("StringState", QVariant(QApplication::translate("A1", "FUNCIONANDO", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_32->setProperty("LabelText", QVariant(QApplication::translate("A1", "CONTROL DE TURBINA", 0, QApplication::UnicodeUTF8)));
         btnCT01->setText(QApplication::translate("A1", "INICIO/ALTO", 0, QApplication::UnicodeUTF8));
-        btnCT02->setText(QApplication::translate("A1", "APAGDO/FUNCION", 0, QApplication::UnicodeUTF8));
+        btnCT02->setText(QApplication::translate("A1", "APAGADO/FUNCION", 0, QApplication::UnicodeUTF8));
         btnCT03->setText(QApplication::translate("A1", "CONTROL DE VELOCIDAD", 0, QApplication::UnicodeUTF8));
         btnCT04->setText(QApplication::translate("A1", "CONTROL DE MW", 0, QApplication::UnicodeUTF8));
         btnCT07->setText(QApplication::translate("A1", "VOLTAJE CONTROL", 0, QApplication::UnicodeUTF8));
@@ -2087,8 +2152,8 @@ public:
         leGEN_AVR_4->setProperty("LabelText", QVariant(QApplication::translate("A1", "VBV", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_6->setProperty("LabelText", QVariant(QApplication::translate("A1", "TBV", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_8->setProperty("LabelText", QVariant(QApplication::translate("A1", "VSV", 0, QApplication::UnicodeUTF8)));
-        leGEN_AVR_10->setProperty("LabelText", QVariant(QApplication::translate("A1", "VSV", 0, QApplication::UnicodeUTF8)));
-        leGEN_AVR_11->setProperty("LabelText", QVariant(QApplication::translate("A1", "VSV", 0, QApplication::UnicodeUTF8)));
+        leGEN_AVR_10->setProperty("LabelText", QVariant(QApplication::translate("A1", "ST8", 0, QApplication::UnicodeUTF8)));
+        leGEN_AVR_11->setProperty("LabelText", QVariant(QApplication::translate("A1", "CDP", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_12->setProperty("LabelText", QVariant(QApplication::translate("A1", "Demanda", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_13->setProperty("LabelText", QVariant(QApplication::translate("A1", "Arrancador", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_14->setProperty("LabelText", QVariant(QApplication::translate("A1", "HID", 0, QApplication::UnicodeUTF8)));
@@ -2208,7 +2273,16 @@ public:
         leGEN_AVR_137->setProperty("LabelText", QVariant(QApplication::translate("A1", "CANDADO DE CUATRO HORAS", 0, QApplication::UnicodeUTF8)));
         leGEN_AVR_138->setProperty("LabelText", QVariant(QString()));
         leGEN_AVR_139->setProperty("LabelText", QVariant(QApplication::translate("A1", "FALLA DE TARJETA AERO 44", 0, QApplication::UnicodeUTF8)));
+        btCroSec->setText(QString());
         BackGround->setText(QString());
+        btGenerador->setText(QString());
+        btST8->setText(QString());
+        btCDP->setText(QString());
+        btIGV->setText(QString());
+        btVBV->setText(QString());
+        btVSV->setText(QString());
+        btArraHid->setText(QString());
+        btTBV->setText(QString());
         lbUnit3->setText(QApplication::translate("A1", "    UNIT3", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

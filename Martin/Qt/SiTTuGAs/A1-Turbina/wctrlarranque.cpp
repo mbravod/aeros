@@ -12,6 +12,8 @@ WCtrlArranque::~WCtrlArranque()
 {
     delete ui;
 }
+
+/*
 void WCtrlArranque::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
@@ -49,3 +51,4 @@ QString WCtrlArranque::getLeDetecion()
 {
     return ui->leDetecion->text();
 }
+*/

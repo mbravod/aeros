@@ -9,6 +9,7 @@ WApagEmer::WApagEmer(QWidget *parent) :
     setMouseTracking( false );
     //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
     connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
+    connect(ui->btcerrar,SIGNAL(clicked()),this,SLOT(cerrar()))
 }
 
 WApagEmer::~WApagEmer()
@@ -39,6 +40,11 @@ QString WApagEmer::getLbIP()
 void WApagEmer::idWindow(int id)
 {
     emit id;
+}
+
+void WApagEmer::cerrar()
+{
+
 }
 
 

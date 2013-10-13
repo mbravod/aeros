@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wbalancei.ui'
 **
-** Created: Sat 12. Oct 11:06:21 2013
+** Created: Sat 12. Oct 21:52:08 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,37 +14,36 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
+#include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
 class Ui_WBalanceI
 {
 public:
-    QLabel *lbtbvohms;
-    QLabel *lbtbvbU;
-    QLabel *lbtbvselT;
-    QLabel *lbtbvselU;
-    QLabel *lbtbvsel;
-    QLabel *lbtbvma;
-    QLabel *lbtbva;
-    QLabel *lbtbvmaT;
-    QLabel *lbtbvmaU;
-    QLabel *lbtbvdmdT;
-    QLabel *lbtbvohmsT;
-    QLabel *lbtbvohmsU;
-    QLabel *lbtbvdmdU;
-    QLabel *lbtbvb;
-    QLabel *lbtbvdmd;
-    QLabel *lbtbvaU;
-    QLabel *lbtbvaT;
-    QLabel *lbtbvbT;
-    QFrame *frame;
-    QLabel *lbbalnceiT;
-    QLabel *lbFondo;
+    WLabel *lbtbvohms;
+    WLabel *lbtbvbU;
+    WLabel *lbtbvselT;
+    WLabel *lbtbvselU;
+    WLabel *lbtbvsel;
+    WLabel *lbtbvma;
+    WLabel *lbtbva;
+    WLabel *lbtbvmaT;
+    WLabel *lbtbvmaU;
+    WLabel *lbtbvdmdT;
+    WLabel *lbtbvohmsT;
+    WLabel *lbtbvohmsU;
+    WLabel *lbtbvdmdU;
+    WLabel *lbtbvb;
+    WLabel *lbtbvdmd;
+    WLabel *lbtbvaU;
+    WLabel *lbtbvaT;
+    WLabel *lbtbvbT;
+    WLabel *lbFondo;
+    QPushButton *btCerrar;
 
     void setupUi(QWidget *WBalanceI)
     {
@@ -54,7 +53,7 @@ public:
         WBalanceI->setMinimumSize(QSize(175, 150));
         WBalanceI->setMaximumSize(QSize(175, 150));
         WBalanceI->setStyleSheet(QString::fromUtf8(""));
-        lbtbvohms = new QLabel(WBalanceI);
+        lbtbvohms = new WLabel(WBalanceI);
         lbtbvohms->setObjectName(QString::fromUtf8("lbtbvohms"));
         lbtbvohms->setGeometry(QRect(72, 128, 46, 13));
         QFont font;
@@ -62,110 +61,123 @@ public:
         font.setBold(true);
         font.setWeight(75);
         lbtbvohms->setFont(font);
-        lbtbvohms->setAlignment(Qt::AlignCenter);
-        lbtbvbU = new QLabel(WBalanceI);
+        lbtbvohms->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvohms->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbvbU = new WLabel(WBalanceI);
         lbtbvbU->setObjectName(QString::fromUtf8("lbtbvbU"));
         lbtbvbU->setGeometry(QRect(127, 80, 21, 16));
         lbtbvbU->setFont(font);
-        lbtbvselT = new QLabel(WBalanceI);
+        lbtbvbU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvbU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvselT = new WLabel(WBalanceI);
         lbtbvselT->setObjectName(QString::fromUtf8("lbtbvselT"));
         lbtbvselT->setGeometry(QRect(20, 48, 46, 13));
         lbtbvselT->setFont(font);
-        lbtbvselT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbtbvselU = new QLabel(WBalanceI);
+        lbtbvselT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvselT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvselU = new WLabel(WBalanceI);
         lbtbvselU->setObjectName(QString::fromUtf8("lbtbvselU"));
         lbtbvselU->setGeometry(QRect(127, 48, 21, 16));
         lbtbvselU->setFont(font);
-        lbtbvsel = new QLabel(WBalanceI);
+        lbtbvselU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvselU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvsel = new WLabel(WBalanceI);
         lbtbvsel->setObjectName(QString::fromUtf8("lbtbvsel"));
         lbtbvsel->setGeometry(QRect(72, 48, 46, 13));
         lbtbvsel->setFont(font);
-        lbtbvsel->setAlignment(Qt::AlignCenter);
-        lbtbvma = new QLabel(WBalanceI);
+        lbtbvsel->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvsel->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbvma = new WLabel(WBalanceI);
         lbtbvma->setObjectName(QString::fromUtf8("lbtbvma"));
         lbtbvma->setGeometry(QRect(72, 112, 46, 13));
         lbtbvma->setFont(font);
-        lbtbvma->setAlignment(Qt::AlignCenter);
-        lbtbva = new QLabel(WBalanceI);
+        lbtbvma->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvma->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbva = new WLabel(WBalanceI);
         lbtbva->setObjectName(QString::fromUtf8("lbtbva"));
         lbtbva->setGeometry(QRect(72, 64, 46, 13));
         lbtbva->setFont(font);
-        lbtbva->setAlignment(Qt::AlignCenter);
-        lbtbvmaT = new QLabel(WBalanceI);
+        lbtbva->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbva->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbvmaT = new WLabel(WBalanceI);
         lbtbvmaT->setObjectName(QString::fromUtf8("lbtbvmaT"));
         lbtbvmaT->setGeometry(QRect(20, 112, 46, 13));
         lbtbvmaT->setFont(font);
-        lbtbvmaT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbtbvmaU = new QLabel(WBalanceI);
+        lbtbvmaT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvmaT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvmaU = new WLabel(WBalanceI);
         lbtbvmaU->setObjectName(QString::fromUtf8("lbtbvmaU"));
         lbtbvmaU->setGeometry(QRect(127, 112, 41, 16));
         lbtbvmaU->setFont(font);
-        lbtbvdmdT = new QLabel(WBalanceI);
+        lbtbvmaU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvmaU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvdmdT = new WLabel(WBalanceI);
         lbtbvdmdT->setObjectName(QString::fromUtf8("lbtbvdmdT"));
         lbtbvdmdT->setGeometry(QRect(20, 32, 46, 13));
         lbtbvdmdT->setFont(font);
-        lbtbvdmdT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbtbvohmsT = new QLabel(WBalanceI);
+        lbtbvdmdT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvdmdT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvohmsT = new WLabel(WBalanceI);
         lbtbvohmsT->setObjectName(QString::fromUtf8("lbtbvohmsT"));
         lbtbvohmsT->setGeometry(QRect(5, 128, 61, 16));
         lbtbvohmsT->setFont(font);
-        lbtbvohmsT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbtbvohmsU = new QLabel(WBalanceI);
+        lbtbvohmsT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvohmsT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvohmsU = new WLabel(WBalanceI);
         lbtbvohmsU->setObjectName(QString::fromUtf8("lbtbvohmsU"));
         lbtbvohmsU->setGeometry(QRect(127, 128, 41, 16));
         lbtbvohmsU->setFont(font);
-        lbtbvdmdU = new QLabel(WBalanceI);
+        lbtbvohmsU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvohmsU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvdmdU = new WLabel(WBalanceI);
         lbtbvdmdU->setObjectName(QString::fromUtf8("lbtbvdmdU"));
         lbtbvdmdU->setGeometry(QRect(127, 32, 21, 16));
         lbtbvdmdU->setFont(font);
-        lbtbvb = new QLabel(WBalanceI);
+        lbtbvdmdU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvdmdU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvb = new WLabel(WBalanceI);
         lbtbvb->setObjectName(QString::fromUtf8("lbtbvb"));
         lbtbvb->setGeometry(QRect(72, 80, 46, 13));
         lbtbvb->setFont(font);
-        lbtbvb->setAlignment(Qt::AlignCenter);
-        lbtbvdmd = new QLabel(WBalanceI);
+        lbtbvb->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvb->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbvdmd = new WLabel(WBalanceI);
         lbtbvdmd->setObjectName(QString::fromUtf8("lbtbvdmd"));
         lbtbvdmd->setGeometry(QRect(72, 32, 46, 13));
         lbtbvdmd->setFont(font);
-        lbtbvdmd->setAlignment(Qt::AlignCenter);
-        lbtbvaU = new QLabel(WBalanceI);
+        lbtbvdmd->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvdmd->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbtbvaU = new WLabel(WBalanceI);
         lbtbvaU->setObjectName(QString::fromUtf8("lbtbvaU"));
         lbtbvaU->setGeometry(QRect(127, 64, 21, 16));
         lbtbvaU->setFont(font);
-        lbtbvaT = new QLabel(WBalanceI);
+        lbtbvaU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvaU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvaT = new WLabel(WBalanceI);
         lbtbvaT->setObjectName(QString::fromUtf8("lbtbvaT"));
         lbtbvaT->setGeometry(QRect(20, 64, 46, 13));
         lbtbvaT->setFont(font);
-        lbtbvaT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbtbvbT = new QLabel(WBalanceI);
+        lbtbvaT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvaT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbtbvbT = new WLabel(WBalanceI);
         lbtbvbT->setObjectName(QString::fromUtf8("lbtbvbT"));
         lbtbvbT->setGeometry(QRect(20, 80, 46, 13));
         lbtbvbT->setFont(font);
-        lbtbvbT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        frame = new QFrame(WBalanceI);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(0, 0, 173, 31));
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
-        frame->setFrameShape(QFrame::Box);
-        frame->setFrameShadow(QFrame::Sunken);
-        frame->setLineWidth(2);
-        lbbalnceiT = new QLabel(frame);
-        lbbalnceiT->setObjectName(QString::fromUtf8("lbbalnceiT"));
-        lbbalnceiT->setGeometry(QRect(10, 7, 151, 20));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Verdana"));
-        font1.setPointSize(9);
-        font1.setBold(true);
-        font1.setWeight(75);
-        lbbalnceiT->setFont(font1);
-        lbbalnceiT->setFrameShape(QFrame::NoFrame);
-        lbbalnceiT->setFrameShadow(QFrame::Plain);
-        lbbalnceiT->setLineWidth(1);
-        lbbalnceiT->setAlignment(Qt::AlignCenter);
-        lbFondo = new QLabel(WBalanceI);
+        lbtbvbT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbtbvbT->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbFondo = new WLabel(WBalanceI);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 1502));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        btCerrar = new QPushButton(WBalanceI);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(2, 0, 173, 31));
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        font1.setWeight(75);
+        btCerrar->setFont(font1);
         lbFondo->raise();
         lbtbvohms->raise();
         lbtbvbU->raise();
@@ -185,7 +197,7 @@ public:
         lbtbvaU->raise();
         lbtbvaT->raise();
         lbtbvbT->raise();
-        frame->raise();
+        btCerrar->raise();
 
         retranslateUi(WBalanceI);
 
@@ -213,8 +225,8 @@ public:
         lbtbvaU->setText(QApplication::translate("WBalanceI", "%", 0, QApplication::UnicodeUTF8));
         lbtbvaT->setText(QApplication::translate("WBalanceI", "TBVA", 0, QApplication::UnicodeUTF8));
         lbtbvbT->setText(QApplication::translate("WBalanceI", "TBVB", 0, QApplication::UnicodeUTF8));
-        lbbalnceiT->setText(QApplication::translate("WBalanceI", "BALANCE IMPULSO", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
+        btCerrar->setText(QApplication::translate("WBalanceI", "BALANCE IMPULSO", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -240,40 +240,43 @@
       <string>ESTADO</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbRampa">
+    <widget class="WCheckBox" name="cbRampa">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>50</y>
-       <width>310</width>
-       <height>31</height>
+       <width>201</width>
+       <height>16</height>
       </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
      </property>
      <property name="text">
       <string>RAMPA NPT A CARGA MIN</string>
      </property>
-     <property name="iconSize">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbInteruptor">
+    <widget class="WCheckBox" name="cbInteruptor">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>70</y>
-       <width>310</width>
-       <height>31</height>
+       <width>189</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>INTERRUPTOR ABIERTO</string>
      </property>
      <property name="font">
       <font>
@@ -282,24 +285,24 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>INTERRUPTOR ABIERTO</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbCronCiclo">
+    <widget class="WCheckBox" name="cbCronCiclo">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>90</y>
-       <width>241</width>
-       <height>31</height>
+       <width>261</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>CRON CICLO ENFRIAMIENTO ACTIVO</string>
      </property>
      <property name="font">
       <font>
@@ -308,10 +311,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>CRON CICLO ENFRIAMIENTO ACTIVO</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -417,14 +417,17 @@
       <string>PASO DE SECUENCIA</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbDesacel">
+    <widget class="WCheckBox" name="cbDesacel">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>200</y>
-       <width>310</width>
-       <height>31</height>
+       <width>235</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>DESACEL A CARGA MIN ACTIVO</string>
      </property>
      <property name="font">
       <font>
@@ -433,10 +436,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>DESACEL A CARGA MIN ACTIVO</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -741,14 +741,17 @@
       <string>ESTADO</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbEsperarNuc">
+    <widget class="WCheckBox" name="cbEsperarNuc">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
-       <width>310</width>
-       <height>31</height>
+       <y>50</y>
+       <width>211</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>ESPERAR NÚCLEO RALENTÍ</string>
      </property>
      <property name="font">
       <font>
@@ -757,24 +760,24 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>ESPERAR NÚCLEO RALENTÍ</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbIniciar">
+    <widget class="WCheckBox" name="cbIniciar">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>60</y>
-       <width>261</width>
-       <height>31</height>
+       <y>70</y>
+       <width>281</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>INICIAR CRONO DE 10 SEG A REESTAB</string>
      </property>
      <property name="font">
       <font>
@@ -783,10 +786,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>INICIAR CRONO DE 10 SEG A REESTAB</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -918,14 +918,17 @@
       </property>
      </widget>
     </widget>
-    <widget class="QCheckBox" name="cbEsperarVel">
+    <widget class="WCheckBox" name="cbEsperarVel">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>60</y>
-       <width>310</width>
-       <height>31</height>
+       <y>70</y>
+       <width>302</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>ESPERAR QUE VEL BAJE ANTES DE MOTOR</string>
      </property>
      <property name="font">
       <font>
@@ -934,10 +937,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>ESPERAR QUE VEL BAJE ANTES DE MOTOR</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -1001,14 +1001,17 @@
       <string>PASO DE SECUENCIA</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbApagado">
+    <widget class="WCheckBox" name="cbApagado">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
-       <width>331</width>
-       <height>31</height>
+       <y>50</y>
+       <width>211</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>APAGADO DE EMERGENCIA</string>
      </property>
      <property name="font">
       <font>
@@ -1017,10 +1020,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>APAGADO DE EMERGENCIA</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -1141,14 +1141,17 @@
       <string>PASO DE SECUENCIA</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_19">
+    <widget class="WCheckBox" name="checkBox_19">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>220</y>
-       <width>310</width>
-       <height>31</height>
+       <width>251</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
      </property>
      <property name="font">
       <font>
@@ -1157,10 +1160,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -1224,92 +1224,95 @@
       <string>ESTADO</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbEsperarIni">
+    <widget class="WCheckBox" name="cbEsperarIni">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>280</y>
-       <width>310</width>
-       <height>31</height>
+       <width>244</width>
+       <height>16</height>
       </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
      </property>
      <property name="text">
       <string>INICIAR CRONO ROTACIÓN ENFR</string>
      </property>
-     <property name="iconSize">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbSelec">
+    <widget class="WCheckBox" name="cbSelec">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>240</y>
-       <width>310</width>
-       <height>31</height>
+       <width>191</width>
+       <height>16</height>
       </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
      </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD</string>
      </property>
-     <property name="iconSize">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbEsperarN25">
+    <widget class="WCheckBox" name="cbEsperarN25">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>200</y>
-       <width>310</width>
-       <height>31</height>
+       <width>281</width>
+       <height>16</height>
       </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
      </property>
      <property name="text">
       <string>ESPERAR QUE N25 ABAJO DE 300 RPM</string>
      </property>
-     <property name="iconSize">
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbListo">
+    <widget class="WCheckBox" name="cbListo">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>300</y>
-       <width>310</width>
-       <height>31</height>
+       <width>254</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>LISTO PARA ARRANQUE CALIENTE</string>
      </property>
      <property name="font">
       <font>
@@ -1318,24 +1321,24 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>LISTO PARA ARRANQUE CALIENTE</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
       </size>
      </property>
     </widget>
-    <widget class="QCheckBox" name="cbEsperarXn25">
+    <widget class="WCheckBox" name="cbEsperarXn25">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>260</y>
-       <width>310</width>
-       <height>31</height>
+       <width>311</width>
+       <height>16</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM</string>
      </property>
      <property name="font">
       <font>
@@ -1344,10 +1347,7 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM</string>
-     </property>
-     <property name="iconSize">
+     <property name="iconSize" stdset="0">
       <size>
        <width>24</width>
        <height>24</height>
@@ -1479,6 +1479,13 @@
    <zorder>lbUnit3</zorder>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WCheckBox</class>
+   <extends>QWidget</extends>
+   <header>wcheckbox.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../Resources.qrc"/>
  </resources>

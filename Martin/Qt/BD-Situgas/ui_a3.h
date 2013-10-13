@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a3.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:16 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,12 +14,12 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wcheckbox.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,20 +33,20 @@ public:
     QLabel *lbSecT;
     QLabel *lbPasT;
     QLabel *lbEdoT;
-    QCheckBox *cbUniFue;
-    QCheckBox *cbPurga;
-    QCheckBox *cbVrif;
-    QCheckBox *cbActAHidr;
-    QCheckBox *cbSelAltArr;
-    QCheckBox *cbActCron;
-    QCheckBox *cbActALue;
-    QCheckBox *cbLuzApg;
-    QCheckBox *cbVelMax;
-    QCheckBox *cbAcel;
-    QCheckBox *cbInicCro;
-    QCheckBox *cbEsp;
-    QCheckBox *cbList;
-    QCheckBox *cbUniLin;
+    WCheckBox *cbUniFue;
+    WCheckBox *cbPurga;
+    WCheckBox *cbVrif;
+    WCheckBox *cbActAHidr;
+    WCheckBox *cbSelAltArr;
+    WCheckBox *cbActCron;
+    WCheckBox *cbActALue;
+    WCheckBox *cbLuzApg;
+    WCheckBox *cbVelMax;
+    WCheckBox *cbAcel;
+    WCheckBox *cbInicCro;
+    WCheckBox *cbEsp;
+    WCheckBox *cbList;
+    WCheckBox *cbUniLin;
     QLabel *lbPurgaEdo;
     QLabel *label_2;
     QLabel *lbInicCroHrs;
@@ -60,10 +60,10 @@ public:
     QLabel *lbRotT;
     QLabel *lbPasT_2;
     QLabel *lbEdoT_2;
-    QCheckBox *cbActBom;
-    QCheckBox *cbActSis;
-    QCheckBox *cbActAHid;
-    QCheckBox *cbSelAltVel;
+    WCheckBox *cbActBom;
+    WCheckBox *cbActSis;
+    WCheckBox *cbActAHid;
+    WCheckBox *cbSelAltVel;
     QLabel *lbMin;
     QLabel *lhHrs;
     QLabel *label_5;
@@ -135,80 +135,80 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdoT->setPalette(palette1);
         lbEdoT->setFont(font);
-        cbUniFue = new QCheckBox(frame_7);
+        cbUniFue = new WCheckBox(frame_7);
         cbUniFue->setObjectName(QString::fromUtf8("cbUniFue"));
-        cbUniFue->setGeometry(QRect(20, 40, 310, 31));
+        cbUniFue->setGeometry(QRect(20, 50, 211, 16));
         QFont font1;
         font1.setPointSize(8);
         font1.setBold(true);
         font1.setWeight(75);
         cbUniFue->setFont(font1);
-        cbUniFue->setIconSize(QSize(24, 24));
-        cbPurga = new QCheckBox(frame_7);
+        cbUniFue->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbPurga = new WCheckBox(frame_7);
         cbPurga->setObjectName(QString::fromUtf8("cbPurga"));
-        cbPurga->setGeometry(QRect(20, 60, 241, 31));
+        cbPurga->setGeometry(QRect(20, 70, 201, 16));
         cbPurga->setFont(font1);
-        cbPurga->setIconSize(QSize(24, 24));
-        cbVrif = new QCheckBox(frame_7);
+        cbPurga->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbVrif = new WCheckBox(frame_7);
         cbVrif->setObjectName(QString::fromUtf8("cbVrif"));
-        cbVrif->setGeometry(QRect(20, 80, 310, 31));
+        cbVrif->setGeometry(QRect(20, 90, 306, 16));
         cbVrif->setFont(font1);
-        cbVrif->setIconSize(QSize(24, 24));
-        cbActAHidr = new QCheckBox(frame_7);
+        cbVrif->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbActAHidr = new WCheckBox(frame_7);
         cbActAHidr->setObjectName(QString::fromUtf8("cbActAHidr"));
-        cbActAHidr->setGeometry(QRect(20, 100, 310, 31));
+        cbActAHidr->setGeometry(QRect(20, 110, 233, 16));
         cbActAHidr->setFont(font1);
-        cbActAHidr->setIconSize(QSize(24, 24));
-        cbSelAltArr = new QCheckBox(frame_7);
+        cbActAHidr->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbSelAltArr = new WCheckBox(frame_7);
         cbSelAltArr->setObjectName(QString::fromUtf8("cbSelAltArr"));
-        cbSelAltArr->setGeometry(QRect(20, 120, 310, 31));
+        cbSelAltArr->setGeometry(QRect(20, 130, 272, 16));
         cbSelAltArr->setFont(font1);
-        cbSelAltArr->setIconSize(QSize(24, 24));
-        cbActCron = new QCheckBox(frame_7);
+        cbSelAltArr->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbActCron = new WCheckBox(frame_7);
         cbActCron->setObjectName(QString::fromUtf8("cbActCron"));
-        cbActCron->setGeometry(QRect(20, 140, 211, 31));
+        cbActCron->setGeometry(QRect(20, 150, 231, 16));
         cbActCron->setFont(font1);
-        cbActCron->setIconSize(QSize(24, 24));
-        cbActALue = new QCheckBox(frame_7);
+        cbActCron->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbActALue = new WCheckBox(frame_7);
         cbActALue->setObjectName(QString::fromUtf8("cbActALue"));
-        cbActALue->setGeometry(QRect(20, 160, 310, 31));
+        cbActALue->setGeometry(QRect(20, 170, 301, 16));
         cbActALue->setFont(font1);
-        cbActALue->setIconSize(QSize(24, 24));
-        cbLuzApg = new QCheckBox(frame_7);
+        cbActALue->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbLuzApg = new WCheckBox(frame_7);
         cbLuzApg->setObjectName(QString::fromUtf8("cbLuzApg"));
-        cbLuzApg->setGeometry(QRect(20, 180, 310, 31));
+        cbLuzApg->setGeometry(QRect(20, 190, 303, 16));
         cbLuzApg->setFont(font1);
-        cbLuzApg->setIconSize(QSize(24, 24));
-        cbVelMax = new QCheckBox(frame_7);
+        cbLuzApg->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbVelMax = new WCheckBox(frame_7);
         cbVelMax->setObjectName(QString::fromUtf8("cbVelMax"));
-        cbVelMax->setGeometry(QRect(20, 260, 310, 31));
+        cbVelMax->setGeometry(QRect(20, 270, 225, 16));
         cbVelMax->setFont(font1);
-        cbVelMax->setIconSize(QSize(24, 24));
-        cbAcel = new QCheckBox(frame_7);
+        cbVelMax->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbAcel = new WCheckBox(frame_7);
         cbAcel->setObjectName(QString::fromUtf8("cbAcel"));
-        cbAcel->setGeometry(QRect(20, 220, 310, 31));
+        cbAcel->setGeometry(QRect(20, 230, 192, 16));
         cbAcel->setFont(font1);
-        cbAcel->setIconSize(QSize(24, 24));
-        cbInicCro = new QCheckBox(frame_7);
+        cbAcel->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbInicCro = new WCheckBox(frame_7);
         cbInicCro->setObjectName(QString::fromUtf8("cbInicCro"));
-        cbInicCro->setGeometry(QRect(20, 239, 221, 31));
+        cbInicCro->setGeometry(QRect(20, 249, 246, 16));
         cbInicCro->setFont(font1);
-        cbInicCro->setIconSize(QSize(24, 24));
-        cbEsp = new QCheckBox(frame_7);
+        cbInicCro->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbEsp = new WCheckBox(frame_7);
         cbEsp->setObjectName(QString::fromUtf8("cbEsp"));
-        cbEsp->setGeometry(QRect(20, 200, 310, 31));
+        cbEsp->setGeometry(QRect(20, 210, 278, 16));
         cbEsp->setFont(font1);
-        cbEsp->setIconSize(QSize(24, 24));
-        cbList = new QCheckBox(frame_7);
+        cbEsp->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbList = new WCheckBox(frame_7);
         cbList->setObjectName(QString::fromUtf8("cbList"));
-        cbList->setGeometry(QRect(20, 280, 310, 31));
+        cbList->setGeometry(QRect(20, 290, 245, 16));
         cbList->setFont(font1);
-        cbList->setIconSize(QSize(24, 24));
-        cbUniLin = new QCheckBox(frame_7);
+        cbList->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbUniLin = new WCheckBox(frame_7);
         cbUniLin->setObjectName(QString::fromUtf8("cbUniLin"));
-        cbUniLin->setGeometry(QRect(20, 300, 310, 31));
+        cbUniLin->setGeometry(QRect(20, 310, 141, 16));
         cbUniLin->setFont(font1);
-        cbUniLin->setIconSize(QSize(24, 24));
+        cbUniLin->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbPurgaEdo = new QLabel(frame_7);
         lbPurgaEdo->setObjectName(QString::fromUtf8("lbPurgaEdo"));
         lbPurgaEdo->setGeometry(QRect(297, 60, 26, 31));
@@ -287,26 +287,26 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdoT_2->setPalette(palette3);
         lbEdoT_2->setFont(font);
-        cbActBom = new QCheckBox(frame_9);
+        cbActBom = new WCheckBox(frame_9);
         cbActBom->setObjectName(QString::fromUtf8("cbActBom"));
-        cbActBom->setGeometry(QRect(20, 80, 312, 31));
+        cbActBom->setGeometry(QRect(20, 90, 226, 16));
         cbActBom->setFont(font1);
-        cbActBom->setIconSize(QSize(24, 24));
-        cbActSis = new QCheckBox(frame_9);
+        cbActBom->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbActSis = new WCheckBox(frame_9);
         cbActSis->setObjectName(QString::fromUtf8("cbActSis"));
-        cbActSis->setGeometry(QRect(20, 40, 312, 31));
+        cbActSis->setGeometry(QRect(20, 50, 301, 16));
         cbActSis->setFont(font1);
-        cbActSis->setIconSize(QSize(24, 24));
-        cbActAHid = new QCheckBox(frame_9);
+        cbActSis->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbActAHid = new WCheckBox(frame_9);
         cbActAHid->setObjectName(QString::fromUtf8("cbActAHid"));
-        cbActAHid->setGeometry(QRect(20, 60, 312, 31));
+        cbActAHid->setGeometry(QRect(20, 70, 237, 16));
         cbActAHid->setFont(font1);
-        cbActAHid->setIconSize(QSize(24, 24));
-        cbSelAltVel = new QCheckBox(frame_9);
+        cbActAHid->setProperty("iconSize", QVariant(QSize(24, 24)));
+        cbSelAltVel = new WCheckBox(frame_9);
         cbSelAltVel->setObjectName(QString::fromUtf8("cbSelAltVel"));
-        cbSelAltVel->setGeometry(QRect(20, 100, 312, 31));
+        cbSelAltVel->setGeometry(QRect(20, 110, 223, 16));
         cbSelAltVel->setFont(font1);
-        cbSelAltVel->setIconSize(QSize(24, 24));
+        cbSelAltVel->setProperty("iconSize", QVariant(QSize(24, 24)));
         lbMin = new QLabel(frame_9);
         lbMin->setObjectName(QString::fromUtf8("lbMin"));
         lbMin->setGeometry(QRect(305, 120, 26, 31));

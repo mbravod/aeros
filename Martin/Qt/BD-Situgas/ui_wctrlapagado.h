@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlapagado.ui'
 **
-** Created: Sat 12. Oct 11:06:20 2013
+** Created: Sat 12. Oct 21:52:06 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -30,7 +30,7 @@ public:
     QLabel *lbctrlapagfunT;
     QPushButton *btcerrar;
     QPushButton *btapagfunc;
-    QLineEdit *leApagFun;
+    WLabel *leApagFun;
     QFrame *frame_2;
     QLabel *lbIP;
     QLabel *lbFondo;
@@ -84,15 +84,16 @@ public:
         btapagfunc->setAutoDefault(false);
         btapagfunc->setDefault(false);
         btapagfunc->setFlat(false);
-        leApagFun = new QLineEdit(WCtrlApagado);
+        leApagFun = new WLabel(WCtrlApagado);
         leApagFun->setObjectName(QString::fromUtf8("leApagFun"));
         leApagFun->setGeometry(QRect(48, 121, 103, 24));
+        leApagFun->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
+"background-color: rgb(0, 0, 0);"));
         QFont font2;
         font2.setBold(true);
         font2.setWeight(75);
         leApagFun->setFont(font2);
-        leApagFun->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
-"background-color: rgb(0, 0, 0);"));
+        leApagFun->setProperty("Alineacion", QVariant(WLabel::Centro));
         frame_2 = new QFrame(WCtrlApagado);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setGeometry(QRect(0, 0, 241, 16));

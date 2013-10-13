@@ -12,6 +12,7 @@ WCtrlApagado::~WCtrlApagado()
 {
     delete ui;
 }
+/*
 void WCtrlApagado::setLbIP(QString s)
 {
     ui->lbIP->setText(s);
@@ -32,3 +33,4 @@ QString WCtrlApagado::getLeApagFun()
 {
     return ui->leApagFun->text();
 }
+*/

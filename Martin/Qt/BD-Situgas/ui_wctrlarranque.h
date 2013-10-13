@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlarranque.ui'
 **
-** Created: Sat 12. Oct 11:06:20 2013
+** Created: Sat 12. Oct 21:52:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -29,14 +29,14 @@ public:
     QFrame *frame;
     QLabel *lbctrlarranDetT;
     QLabel *lbpermturbinaT;
-    QLabel *lbpermturbina;
+    WLabel *lbpermturbina;
     QPushButton *btCerrar;
     QPushButton *btDetencion;
     QPushButton *btArranque;
     QFrame *frame_2;
     QLabel *lbIP;
-    QLineEdit *leArranque;
-    QLineEdit *leDetecion;
+    WLabel *leArranque;
+    WLabel *leDetecion;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WCtrlArranque)
@@ -71,12 +71,12 @@ public:
         lbpermturbinaT->setFont(font);
         lbpermturbinaT->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         lbpermturbinaT->setAlignment(Qt::AlignCenter);
-        lbpermturbina = new QLabel(WCtrlArranque);
+        lbpermturbina = new WLabel(WCtrlArranque);
         lbpermturbina->setObjectName(QString::fromUtf8("lbpermturbina"));
         lbpermturbina->setGeometry(QRect(127, 56, 61, 21));
-        lbpermturbina->setFont(font);
         lbpermturbina->setStyleSheet(QString::fromUtf8("color: rgb(21, 234, 21);"));
-        lbpermturbina->setAlignment(Qt::AlignCenter);
+        lbpermturbina->setFont(font);
+        lbpermturbina->setProperty("Alineacion", QVariant(WLabel::Centro));
         btCerrar = new QPushButton(WCtrlArranque);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(59, 290, 83, 33));
@@ -120,12 +120,12 @@ public:
         lbIP->setFont(font2);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);\n"
 "color: rgb(255, 255, 255);"));
-        leArranque = new QLineEdit(WCtrlArranque);
+        leArranque = new WLabel(WCtrlArranque);
         leArranque->setObjectName(QString::fromUtf8("leArranque"));
         leArranque->setGeometry(QRect(50, 138, 101, 26));
         leArranque->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
 "background-color: rgb(0, 0, 0);"));
-        leDetecion = new QLineEdit(WCtrlArranque);
+        leDetecion = new WLabel(WCtrlArranque);
         leDetecion->setObjectName(QString::fromUtf8("leDetecion"));
         leDetecion->setGeometry(QRect(50, 223, 101, 26));
         leDetecion->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
@@ -168,6 +168,7 @@ public:
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">FP_STAR.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         leArranque->setText(QString());
+        leDetecion->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi
 

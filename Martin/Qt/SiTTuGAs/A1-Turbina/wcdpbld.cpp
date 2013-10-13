@@ -12,8 +12,8 @@ WCDPBLD::~WCDPBLD()
 {
     delete ui;
 }
-
-
+/**/
+/*
 void WCDPBLD::setLbCDPBT(QString s)
 {
     ui->lbCDPBT->setText(s);
@@ -228,3 +228,4 @@ QString WCDPBLD::getLbCDPBT()
 {
     return ui->lbCDPBT->text();
 }
+*/

@@ -63,11 +63,11 @@
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>1</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTERM</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>1</number>
    </property>
   </widget>
   <widget class="QFrame" name="frame">
@@ -153,11 +153,11 @@ border:0px solidblack;
       <family>Verdana</family>
      </font>
     </property>
-    <property name="Value">
-     <number>1</number>
-    </property>
     <property name="ElementType">
      <enum>AWMultiObject::SPRING</enum>
+    </property>
+    <property name="Value" stdset="0">
+     <number>1</number>
     </property>
    </widget>
   </widget>
@@ -402,9 +402,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -413,6 +410,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1603</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infUno">
@@ -429,9 +429,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -440,6 +437,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1601</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infDos">
@@ -456,9 +456,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -467,6 +464,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1610</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infTres">
@@ -483,9 +483,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -494,6 +491,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1600</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infOcho">
@@ -513,9 +513,6 @@ NIVEL DEL TANQUE - OK</string>
    <property name="intID">
     <number>0</number>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -524,6 +521,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1619</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infCinco">
@@ -540,9 +540,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -551,6 +548,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1615</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infSeis">
@@ -567,9 +567,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -579,11 +576,14 @@ NIVEL DEL TANQUE - OK</string>
    <property name="DownLabel" stdset="0">
     <string>1605</string>
    </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
   </widget>
   <widget class="AInstrumentIndicator" name="infSiete">
    <property name="geometry">
     <rect>
-     <x>516</x>
+     <x>502</x>
      <y>337</y>
      <width>61</width>
      <height>61</height>
@@ -594,9 +594,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -605,6 +602,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1602</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="inf82f">
@@ -621,9 +621,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -632,6 +629,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1663A1</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="ind83f">
@@ -648,9 +648,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="Value">
-    <number>2</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -659,6 +656,9 @@ NIVEL DEL TANQUE - OK</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>1663A2</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
    </property>
   </widget>
   <widget class="AWAnalogicLevel" name="aWAnalogicLevel">

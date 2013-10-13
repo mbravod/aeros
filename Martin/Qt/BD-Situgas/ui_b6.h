@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b6.ui'
 **
-** Created: Sat 12. Oct 11:06:08 2013
+** Created: Sat 12. Oct 21:51:19 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -80,7 +80,6 @@ public:
     QLabel *label_34;
     QLabel *lb_Unit_0;
     QLabel *lb_Lect_0;
-    QLabel *lbFlech_2;
     QLabel *lbUnit3;
     QPushButton *btnIMPPant;
 
@@ -365,103 +364,103 @@ public:
         inf_1 = new AInstrumentIndicator(B6);
         inf_1->setObjectName(QString::fromUtf8("inf_1"));
         inf_1->setGeometry(QRect(10, 433, 61, 61));
-        inf_1->setValue(2);
         inf_1->setOrientation(AWMultEstateWidget::Degree270);
+        inf_1->setProperty("Value", QVariant(2));
         inf_2 = new AInstrumentIndicator(B6);
         inf_2->setObjectName(QString::fromUtf8("inf_2"));
         inf_2->setGeometry(QRect(76, 433, 61, 61));
-        inf_2->setValue(2);
         inf_2->setOrientation(AWMultEstateWidget::Degree270);
+        inf_2->setProperty("Value", QVariant(2));
         inf_4 = new AInstrumentIndicator(B6);
         inf_4->setObjectName(QString::fromUtf8("inf_4"));
         inf_4->setGeometry(QRect(140, 433, 61, 61));
-        inf_4->setValue(2);
         inf_4->setOrientation(AWMultEstateWidget::Degree270);
+        inf_4->setProperty("Value", QVariant(2));
         inf_6 = new AInstrumentIndicator(B6);
         inf_6->setObjectName(QString::fromUtf8("inf_6"));
         inf_6->setGeometry(QRect(236, 433, 61, 61));
-        inf_6->setValue(2);
         inf_6->setOrientation(AWMultEstateWidget::Degree270);
+        inf_6->setProperty("Value", QVariant(2));
         inf_8 = new AInstrumentIndicator(B6);
         inf_8->setObjectName(QString::fromUtf8("inf_8"));
         inf_8->setGeometry(QRect(297, 333, 61, 61));
-        inf_8->setValue(2);
         inf_8->setOrientation(AWMultEstateWidget::Degree270);
+        inf_8->setProperty("Value", QVariant(2));
         inf_7 = new AInstrumentIndicator(B6);
         inf_7->setObjectName(QString::fromUtf8("inf_7"));
         inf_7->setGeometry(QRect(267, 50, 61, 61));
-        inf_7->setValue(2);
         inf_7->setOrientation(AWMultEstateWidget::Degree90);
+        inf_7->setProperty("Value", QVariant(2));
         inf_9 = new AInstrumentIndicator(B6);
         inf_9->setObjectName(QString::fromUtf8("inf_9"));
         inf_9->setGeometry(QRect(338, 50, 61, 61));
-        inf_9->setValue(2);
         inf_9->setOrientation(AWMultEstateWidget::Degree90);
+        inf_9->setProperty("Value", QVariant(2));
         inf_3 = new AInstrumentIndicator(B6);
         inf_3->setObjectName(QString::fromUtf8("inf_3"));
         inf_3->setGeometry(QRect(95, 186, 61, 61));
-        inf_3->setValue(2);
         inf_3->setOrientation(AWMultEstateWidget::Degree90);
+        inf_3->setProperty("Value", QVariant(2));
         inf_5 = new AInstrumentIndicator(B6);
         inf_5->setObjectName(QString::fromUtf8("inf_5"));
         inf_5->setGeometry(QRect(234, 172, 61, 61));
-        inf_5->setValue(2);
         inf_5->setOrientation(AWMultEstateWidget::Degree180);
+        inf_5->setProperty("Value", QVariant(2));
         inf_10 = new AInstrumentIndicator(B6);
         inf_10->setObjectName(QString::fromUtf8("inf_10"));
         inf_10->setGeometry(QRect(348, 156, 61, 61));
-        inf_10->setValue(2);
         inf_10->setOrientation(AWMultEstateWidget::Degree90);
         inf_10->setProperty("LineAngle", QVariant(-44));
+        inf_10->setProperty("Value", QVariant(2));
         inf_11 = new AInstrumentIndicator(B6);
         inf_11->setObjectName(QString::fromUtf8("inf_11"));
         inf_11->setGeometry(QRect(449, 191, 61, 61));
         inf_11->setIntID(0);
-        inf_11->setValue(2);
         inf_11->setOrientation(AWMultEstateWidget::Degree90);
         inf_11->setProperty("LineAngle", QVariant(32));
+        inf_11->setProperty("Value", QVariant(2));
         inf_15 = new AInstrumentIndicator(B6);
         inf_15->setObjectName(QString::fromUtf8("inf_15"));
         inf_15->setGeometry(QRect(740, 190, 61, 61));
         inf_15->setIntID(0);
-        inf_15->setValue(2);
         inf_15->setOrientation(AWMultEstateWidget::Degree0);
         inf_15->setProperty("LineAngle", QVariant(119));
+        inf_15->setProperty("Value", QVariant(2));
         inf_12 = new AInstrumentIndicator(B6);
         inf_12->setObjectName(QString::fromUtf8("inf_12"));
         inf_12->setGeometry(QRect(591, 173, 61, 61));
-        inf_12->setValue(2);
         inf_12->setOrientation(AWMultEstateWidget::Degree180);
+        inf_12->setProperty("Value", QVariant(2));
         inf_13 = new AInstrumentIndicator(B6);
         inf_13->setObjectName(QString::fromUtf8("inf_13"));
         inf_13->setGeometry(QRect(641, 157, 61, 61));
-        inf_13->setValue(2);
         inf_13->setOrientation(AWMultEstateWidget::Degree0);
         inf_13->setProperty("LineAngle", QVariant(46));
+        inf_13->setProperty("Value", QVariant(2));
         inf_16 = new AInstrumentIndicator(B6);
         inf_16->setObjectName(QString::fromUtf8("inf_16"));
         inf_16->setGeometry(QRect(750, 520, 61, 61));
         inf_16->setIntID(0);
-        inf_16->setValue(2);
         inf_16->setOrientation(AWMultEstateWidget::Degree0);
         inf_16->setProperty("LineAngle", QVariant(119));
+        inf_16->setProperty("Value", QVariant(2));
         inf_14 = new AInstrumentIndicator(B6);
         inf_14->setObjectName(QString::fromUtf8("inf_14"));
         inf_14->setGeometry(QRect(649, 486, 61, 61));
         inf_14->setIntID(0);
-        inf_14->setValue(2);
         inf_14->setOrientation(AWMultEstateWidget::Degree0);
         inf_14->setProperty("LineAngle", QVariant(46));
+        inf_14->setProperty("Value", QVariant(2));
         inf_17 = new AInstrumentIndicator(B6);
         inf_17->setObjectName(QString::fromUtf8("inf_17"));
         inf_17->setGeometry(QRect(814, 135, 61, 61));
-        inf_17->setValue(2);
         inf_17->setOrientation(AWMultEstateWidget::Degree90);
+        inf_17->setProperty("Value", QVariant(2));
         inf_18 = new AInstrumentIndicator(B6);
         inf_18->setObjectName(QString::fromUtf8("inf_18"));
         inf_18->setGeometry(QRect(875, 135, 61, 61));
-        inf_18->setValue(2);
         inf_18->setOrientation(AWMultEstateWidget::Degree90);
+        inf_18->setProperty("Value", QVariant(2));
         label_34 = new QLabel(B6);
         label_34->setObjectName(QString::fromUtf8("label_34"));
         label_34->setGeometry(QRect(673, 364, 161, 51));
@@ -488,11 +487,6 @@ public:
         lb_Lect_0->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         lb_Lect_0->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbFlech_2 = new QLabel(B6);
-        lbFlech_2->setObjectName(QString::fromUtf8("lbFlech_2"));
-        lbFlech_2->setGeometry(QRect(740, 470, 31, 31));
-        lbFlech_2->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/B1/flechadiagonal_derecha.png")));
-        lbFlech_2->setScaledContents(true);
         lbUnit3 = new QLabel(B6);
         lbUnit3->setObjectName(QString::fromUtf8("lbUnit3"));
         lbUnit3->setGeometry(QRect(833, 647, 190, 15));
@@ -560,7 +554,6 @@ public:
         label_34->raise();
         lb_Unit_0->raise();
         lb_Lect_0->raise();
-        lbFlech_2->raise();
         lbUnit3->raise();
         btnIMPPant->raise();
 
@@ -636,7 +629,6 @@ public:
 "GASES EXHAUSTOS", 0, QApplication::UnicodeUTF8));
         lb_Unit_0->setText(QApplication::translate("B6", "BTU/LB", 0, QApplication::UnicodeUTF8));
         lb_Lect_0->setText(QString());
-        lbFlech_2->setText(QString());
         lbUnit3->setText(QApplication::translate("B6", "    UNIT3", 0, QApplication::UnicodeUTF8));
         btnIMPPant->setText(QApplication::translate("B6", "IMP PANT", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
