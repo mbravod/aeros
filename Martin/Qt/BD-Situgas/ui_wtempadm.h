@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempadm.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:48 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,10 +26,10 @@ class Ui_WTempADM
 {
 public:
     QLabel *lbADMT_1;
-    QLabel *lbADM_1;
+    WLabel *lbADM_1;
     QLabel *lbADMU_1;
     QLabel *lbADMU_2;
-    QLabel *lbADM_2;
+    WLabel *lbADM_2;
     QLabel *lbADMT_2;
     QLabel *lbFondo;
     QPushButton *btCerrar;
@@ -50,10 +51,11 @@ public:
         font.setBold(true);
         font.setWeight(75);
         lbADMT_1->setFont(font);
-        lbADM_1 = new QLabel(WTempADM);
+        lbADM_1 = new WLabel(WTempADM);
         lbADM_1->setObjectName(QString::fromUtf8("lbADM_1"));
         lbADM_1->setGeometry(QRect(94, 31, 41, 16));
         lbADM_1->setFont(font);
+        lbADM_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbADMU_1 = new QLabel(WTempADM);
         lbADMU_1->setObjectName(QString::fromUtf8("lbADMU_1"));
         lbADMU_1->setGeometry(QRect(135, 31, 21, 16));
@@ -62,10 +64,11 @@ public:
         lbADMU_2->setObjectName(QString::fromUtf8("lbADMU_2"));
         lbADMU_2->setGeometry(QRect(135, 45, 21, 16));
         lbADMU_2->setFont(font);
-        lbADM_2 = new QLabel(WTempADM);
+        lbADM_2 = new WLabel(WTempADM);
         lbADM_2->setObjectName(QString::fromUtf8("lbADM_2"));
         lbADM_2->setGeometry(QRect(94, 45, 41, 16));
         lbADM_2->setFont(font);
+        lbADM_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbADMT_2 = new QLabel(WTempADM);
         lbADMT_2->setObjectName(QString::fromUtf8("lbADMT_2"));
         lbADMT_2->setGeometry(QRect(30, 45, 61, 16));

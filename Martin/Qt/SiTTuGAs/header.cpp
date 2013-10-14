@@ -6,6 +6,7 @@ Header::Header(QWidget *parent) :
     ui(new Ui::Header)
 {
     ui->setupUi(this);
+    //ui->lbModo->setText("hola");
 }
 
 Header::~Header()

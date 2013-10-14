@@ -49,7 +49,7 @@
     <string>TE6843</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_1">
+  <widget class="WLabel" name="lbCOMB_1">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -57,6 +57,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>106.00</string>
    </property>
    <property name="font">
     <font>
@@ -66,8 +69,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>106.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBU_1">
@@ -91,7 +94,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_2">
+  <widget class="WLabel" name="lbCOMB_2">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -99,6 +102,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>98.00</string>
    </property>
    <property name="font">
     <font>
@@ -108,8 +114,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>98.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBT_2">
@@ -196,7 +202,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_3">
+  <widget class="WLabel" name="lbCOMB_3">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -204,6 +210,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>91.00</string>
    </property>
    <property name="font">
     <font>
@@ -213,8 +222,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>91.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBT_4">
@@ -259,7 +268,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_4">
+  <widget class="WLabel" name="lbCOMB_4">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -267,6 +276,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>92.00</string>
    </property>
    <property name="font">
     <font>
@@ -276,8 +288,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>92.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBT_5">
@@ -301,7 +313,7 @@
     <string>TE6847</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_5">
+  <widget class="WLabel" name="lbCOMB_5">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -309,6 +321,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>88.00</string>
    </property>
    <property name="font">
     <font>
@@ -318,8 +333,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>88.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBU_5">
@@ -385,7 +400,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_6">
+  <widget class="WLabel" name="lbCOMB_6">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -393,6 +408,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>90.00</string>
    </property>
    <property name="font">
     <font>
@@ -402,8 +420,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>90.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBT_7">
@@ -448,7 +466,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_7">
+  <widget class="WLabel" name="lbCOMB_7">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -456,6 +474,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>95.00</string>
    </property>
    <property name="font">
     <font>
@@ -465,8 +486,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>95.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBT_8">
@@ -490,7 +511,7 @@
     <string>TE6850</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCOMB_8">
+  <widget class="WLabel" name="lbCOMB_8">
    <property name="geometry">
     <rect>
      <x>88</x>
@@ -498,6 +519,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>105.00</string>
    </property>
    <property name="font">
     <font>
@@ -507,8 +531,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>105.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbCOMBU_8">
@@ -599,6 +623,13 @@
   <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

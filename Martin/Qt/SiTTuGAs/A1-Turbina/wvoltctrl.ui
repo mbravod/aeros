@@ -194,7 +194,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leRetroa">
+  <widget class="WLabel" name="leRetroa">
    <property name="geometry">
     <rect>
      <x>64</x>
@@ -206,6 +206,12 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string> </string>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QFrame" name="frame_5">
@@ -280,6 +286,13 @@ p, li { white-space: pre-wrap; }
   <zorder>leRetroa</zorder>
   <zorder>frame_5</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

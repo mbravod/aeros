@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wprescompb.ui'
 **
-** Created: Sun 13. Oct 12:37:48 2013
+** Created: Sun 13. Oct 17:33:55 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,10 +26,10 @@ class Ui_WPresCompB
 {
 public:
     QLabel *lbP25T_1;
-    QLabel *lbP25_1;
+    WLabel *lbP25_1;
     QLabel *lbP25U_1;
     QLabel *lbP25U_2;
-    QLabel *lbP25_2;
+    WLabel *lbP25_2;
     QLabel *lbP25T_2;
     QLabel *lbFondo;
     QPushButton *btCerrar;
@@ -51,11 +52,12 @@ public:
         font.setWeight(75);
         lbP25T_1->setFont(font);
         lbP25T_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbP25_1 = new QLabel(WPresCompB);
+        lbP25_1 = new WLabel(WPresCompB);
         lbP25_1->setObjectName(QString::fromUtf8("lbP25_1"));
         lbP25_1->setGeometry(QRect(94, 31, 41, 16));
-        lbP25_1->setFont(font);
         lbP25_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbP25_1->setFont(font);
+        lbP25_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbP25U_1 = new QLabel(WPresCompB);
         lbP25U_1->setObjectName(QString::fromUtf8("lbP25U_1"));
         lbP25U_1->setGeometry(QRect(135, 31, 31, 16));
@@ -66,11 +68,12 @@ public:
         lbP25U_2->setGeometry(QRect(135, 46, 31, 16));
         lbP25U_2->setFont(font);
         lbP25U_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbP25_2 = new QLabel(WPresCompB);
+        lbP25_2 = new WLabel(WPresCompB);
         lbP25_2->setObjectName(QString::fromUtf8("lbP25_2"));
         lbP25_2->setGeometry(QRect(94, 46, 41, 16));
-        lbP25_2->setFont(font);
         lbP25_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbP25_2->setFont(font);
+        lbP25_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbP25T_2 = new QLabel(WPresCompB);
         lbP25T_2->setObjectName(QString::fromUtf8("lbP25T_2"));
         lbP25T_2->setGeometry(QRect(30, 46, 60, 15));

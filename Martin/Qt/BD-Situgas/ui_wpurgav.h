@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpurgav.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:51 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,12 +26,12 @@ class Ui_WPurgaV
 {
 public:
     QLabel *lbVbvBT;
-    QLabel *lbVbvsel;
+    WLabel *lbVbvsel;
     QLabel *lbVbvaU;
-    QLabel *lbVbvB;
-    QLabel *lbVbvMa;
+    WLabel *lbVbvB;
+    WLabel *lbVbvMa;
     QLabel *lbVbvdmdU;
-    QLabel *lbVbvOhms;
+    WLabel *lbVbvOhms;
     QLabel *lbVbvBU;
     QLabel *lbVbvOhmsU;
     QLabel *lbVbvselT;
@@ -38,9 +39,9 @@ public:
     QLabel *lbVbvMaT;
     QLabel *lbVbvOhmsT;
     QLabel *lbVbvdmdT;
-    QLabel *lbVbvdmd;
+    WLabel *lbVbvdmd;
     QLabel *lbVbvaT;
-    QLabel *lbVbva;
+    WLabel *lbVbva;
     QLabel *lbVbvMaU;
     QLabel *lbFondo;
     QPushButton *btCerrar;
@@ -62,34 +63,38 @@ public:
         font.setWeight(75);
         lbVbvBT->setFont(font);
         lbVbvBT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbVbvsel = new QLabel(WPurgaV);
+        lbVbvsel = new WLabel(WPurgaV);
         lbVbvsel->setObjectName(QString::fromUtf8("lbVbvsel"));
         lbVbvsel->setGeometry(QRect(72, 46, 46, 13));
         lbVbvsel->setFont(font);
-        lbVbvsel->setAlignment(Qt::AlignCenter);
+        lbVbvsel->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvsel->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvaU = new QLabel(WPurgaV);
         lbVbvaU->setObjectName(QString::fromUtf8("lbVbvaU"));
         lbVbvaU->setGeometry(QRect(127, 62, 21, 16));
         lbVbvaU->setFont(font);
-        lbVbvB = new QLabel(WPurgaV);
+        lbVbvB = new WLabel(WPurgaV);
         lbVbvB->setObjectName(QString::fromUtf8("lbVbvB"));
         lbVbvB->setGeometry(QRect(72, 78, 46, 13));
         lbVbvB->setFont(font);
-        lbVbvB->setAlignment(Qt::AlignCenter);
-        lbVbvMa = new QLabel(WPurgaV);
+        lbVbvB->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvB->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbVbvMa = new WLabel(WPurgaV);
         lbVbvMa->setObjectName(QString::fromUtf8("lbVbvMa"));
         lbVbvMa->setGeometry(QRect(72, 110, 46, 13));
         lbVbvMa->setFont(font);
-        lbVbvMa->setAlignment(Qt::AlignCenter);
+        lbVbvMa->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvMa->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvdmdU = new QLabel(WPurgaV);
         lbVbvdmdU->setObjectName(QString::fromUtf8("lbVbvdmdU"));
         lbVbvdmdU->setGeometry(QRect(127, 30, 21, 16));
         lbVbvdmdU->setFont(font);
-        lbVbvOhms = new QLabel(WPurgaV);
+        lbVbvOhms = new WLabel(WPurgaV);
         lbVbvOhms->setObjectName(QString::fromUtf8("lbVbvOhms"));
         lbVbvOhms->setGeometry(QRect(72, 126, 46, 13));
         lbVbvOhms->setFont(font);
-        lbVbvOhms->setAlignment(Qt::AlignCenter);
+        lbVbvOhms->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvOhms->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvBU = new QLabel(WPurgaV);
         lbVbvBU->setObjectName(QString::fromUtf8("lbVbvBU"));
         lbVbvBU->setGeometry(QRect(127, 78, 21, 16));
@@ -122,21 +127,23 @@ public:
         lbVbvdmdT->setGeometry(QRect(20, 30, 46, 13));
         lbVbvdmdT->setFont(font);
         lbVbvdmdT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbVbvdmd = new QLabel(WPurgaV);
+        lbVbvdmd = new WLabel(WPurgaV);
         lbVbvdmd->setObjectName(QString::fromUtf8("lbVbvdmd"));
         lbVbvdmd->setGeometry(QRect(72, 30, 46, 13));
         lbVbvdmd->setFont(font);
-        lbVbvdmd->setAlignment(Qt::AlignCenter);
+        lbVbvdmd->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvdmd->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvaT = new QLabel(WPurgaV);
         lbVbvaT->setObjectName(QString::fromUtf8("lbVbvaT"));
         lbVbvaT->setGeometry(QRect(20, 62, 46, 13));
         lbVbvaT->setFont(font);
         lbVbvaT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbVbva = new QLabel(WPurgaV);
+        lbVbva = new WLabel(WPurgaV);
         lbVbva->setObjectName(QString::fromUtf8("lbVbva"));
         lbVbva->setGeometry(QRect(72, 62, 46, 13));
         lbVbva->setFont(font);
-        lbVbva->setAlignment(Qt::AlignCenter);
+        lbVbva->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbva->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvMaU = new QLabel(WPurgaV);
         lbVbvMaU->setObjectName(QString::fromUtf8("lbVbvMaU"));
         lbVbvMaU->setGeometry(QRect(127, 110, 41, 16));

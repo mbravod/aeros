@@ -92,7 +92,7 @@
     <string>IMP PANT</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="WLabel" name="label">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -101,18 +101,18 @@
      <height>12</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(198, 198, 198);</string>
+   </property>
+   <property name="text">
+    <string>UNIT3</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(198, 198, 198);</string>
-   </property>
-   <property name="text">
-    <string>UNIT3</string>
    </property>
   </widget>
   <widget class="QFrame" name="frTitulo_9">
@@ -140,7 +140,7 @@
     <number>0</number>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_1">
+  <widget class="WLabel" name="lbVAL_1">
    <property name="geometry">
     <rect>
      <x>83</x>
@@ -149,13 +149,6 @@
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -163,68 +156,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
-  </widget>
-  <widget class="QLabel" name="lbFlecha_2">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>122</y>
-     <width>51</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_der.png</pixmap>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
-  <widget class="QLabel" name="lbFlecha_6">
-   <property name="geometry">
-    <rect>
-     <x>75</x>
-     <y>562</y>
-     <width>37</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbFlecha_7">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>520</y>
-     <width>37</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lbUnidad_2">
+  <widget class="WLabel" name="lbUnidad_2">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -233,13 +173,6 @@ color: rgba(255, 255, 255, 0);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -247,8 +180,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_3">
+  <widget class="WLabel" name="lbVAL_3">
    <property name="geometry">
     <rect>
      <x>327</x>
@@ -257,13 +197,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -271,11 +204,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>0.0</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_5">
+  <widget class="WLabel" name="lbVAL_5">
    <property name="geometry">
     <rect>
      <x>860</x>
@@ -284,19 +221,19 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>SUMINISTRO LUB</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_2">
@@ -431,14 +368,20 @@ color: rgb(255, 255, 255);</string>
     <number>2</number>
    </property>
   </widget>
-  <widget class="QLabel" name="lbGenerador">
+  <widget class="WLabel" name="lbGenerador">
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>340</y>
+     <y>330</y>
      <width>141</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>BOMBA MECÁNICA</string>
    </property>
    <property name="font">
     <font>
@@ -447,12 +390,6 @@ color: rgb(255, 255, 255);</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string>BOMBA MECÁNICA</string>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_14">
@@ -518,7 +455,7 @@ color: rgb(255, 255, 255);</string>
     <enum>AWMultiObject::Green</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_12">
+  <widget class="WLabel" name="lbVAL_12">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -527,13 +464,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -541,18 +471,28 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>0.0</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
-  <widget class="QLabel" name="lbGenerador_2">
+  <widget class="WLabel" name="lbGenerador_2">
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>425</y>
+     <y>430</y>
      <width>191</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>BOMBA PRINCIPAL DE LA CA</string>
    </property>
    <property name="font">
     <font>
@@ -562,14 +502,8 @@ color: rgb(255, 255, 255);</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string>BOMBA PRINCIPAL DE LA CA</string>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_13">
+  <widget class="WLabel" name="lbVAL_13">
    <property name="geometry">
     <rect>
      <x>780</x>
@@ -578,13 +512,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -592,8 +519,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>DESAGÜE ACEITE DEL GEN</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_14">
+  <widget class="WLabel" name="lbVAL_14">
    <property name="geometry">
     <rect>
      <x>825</x>
@@ -602,13 +536,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -616,8 +543,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>DESAGÜE P/FLUIDO</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_15">
+  <widget class="WLabel" name="lbVAL_15">
    <property name="geometry">
     <rect>
      <x>850</x>
@@ -626,19 +560,19 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>DE ELEVACIÓN</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_4">
@@ -767,7 +701,7 @@ background-color: none;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="lbGenerador_3">
+   <widget class="WLabel" name="lbGenerador_3">
     <property name="geometry">
      <rect>
       <x>35</x>
@@ -775,6 +709,12 @@ background-color: none;</string>
       <width>191</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SELECCIÓN VENT REFRIG</string>
     </property>
     <property name="font">
      <font>
@@ -784,14 +724,8 @@ background-color: none;</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>SELECCIÓN VENT REFRIG</string>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbVAL_6">
+   <widget class="WLabel" name="lbVAL_6">
     <property name="geometry">
      <rect>
       <x>15</x>
@@ -800,13 +734,6 @@ background-color: none;</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -814,8 +741,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>VENT B EN ESPERA</string>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
-   <widget class="QLabel" name="lbVAL_7">
+   <widget class="WLabel" name="lbVAL_7">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -824,13 +758,6 @@ color: rgb(255, 255, 255);</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(220, 220, 0);</string>
@@ -838,8 +765,15 @@ color: rgb(220, 220, 0);</string>
     <property name="text">
      <string>VENT A EN SERVICIO</string>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
-   <widget class="QLabel" name="lbVAL_8">
+   <widget class="WLabel" name="lbVAL_8">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -848,13 +782,6 @@ color: rgb(220, 220, 0);</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -862,11 +789,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>6495.5</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
-   <widget class="QLabel" name="lbVAL_9">
+   <widget class="WLabel" name="lbVAL_9">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -875,13 +806,6 @@ color: rgb(255, 255, 255);</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -889,11 +813,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>5082.1</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
-   <widget class="QLabel" name="lbUnidad_4">
+   <widget class="WLabel" name="lbUnidad_4">
     <property name="geometry">
      <rect>
       <x>183</x>
@@ -902,13 +830,6 @@ color: rgb(255, 255, 255);</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -916,11 +837,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>HRS OP</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
-   <widget class="QLabel" name="lbUnidad_5">
+   <widget class="WLabel" name="lbUnidad_5">
     <property name="geometry">
      <rect>
       <x>183</x>
@@ -929,13 +854,6 @@ color: rgb(255, 255, 255);</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -943,12 +861,16 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>HRS OP</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="lbUnidad_3">
+  <widget class="WLabel" name="lbUnidad_3">
    <property name="geometry">
     <rect>
      <x>897</x>
@@ -957,13 +879,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -971,8 +886,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>%</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_4">
+  <widget class="WLabel" name="lbVAL_4">
    <property name="geometry">
     <rect>
      <x>855</x>
@@ -981,13 +903,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -995,11 +910,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>81.9</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVAL_18">
+  <widget class="WLabel" name="lbVAL_18">
    <property name="geometry">
     <rect>
      <x>545</x>
@@ -1008,19 +927,19 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>SEPARADOR AIRE/ACEITE</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aVAL_4">
@@ -1080,7 +999,7 @@ color: rgb(255, 255, 255);</string>
     <enum>AWMultiObject::Blue</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbTexto_19">
+  <widget class="WLabel" name="lbTexto_19">
    <property name="geometry">
     <rect>
      <x>655</x>
@@ -1089,13 +1008,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -1103,8 +1015,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>RESPIRADERO</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbTexto_20">
+  <widget class="WLabel" name="lbTexto_20">
    <property name="geometry">
     <rect>
      <x>660</x>
@@ -1113,13 +1032,6 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -1127,8 +1039,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>DE TANQUE</string>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
   </widget>
-  <widget class="QLabel" name="lbTexto_21">
+  <widget class="WLabel" name="lbTexto_21">
    <property name="geometry">
     <rect>
      <x>640</x>
@@ -1137,19 +1056,19 @@ color: rgb(255, 255, 255);</string>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>A LA ATMÓSFERA</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
   </widget>
   <widget class="QFrame" name="frame_10">
@@ -1174,7 +1093,7 @@ background-color: none;</string>
    <property name="lineWidth">
     <number>1</number>
    </property>
-   <widget class="QLabel" name="lbVAL_16">
+   <widget class="WLabel" name="lbVAL_16">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1183,19 +1102,19 @@ background-color: none;</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>VERIF CRONÓ BOM PRINCIPAL : 0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
     </property>
    </widget>
   </widget>
@@ -1221,7 +1140,7 @@ background-color: none;</string>
    <property name="lineWidth">
     <number>1</number>
    </property>
-   <widget class="QLabel" name="lbVAL_17">
+   <widget class="WLabel" name="lbVAL_17">
     <property name="geometry">
      <rect>
       <x>43</x>
@@ -1230,13 +1149,6 @@ background-color: none;</string>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
@@ -1244,9 +1156,16 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>MOT6033 HRS OP 150.9</string>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="lbUnit3">
+  <widget class="WLabel" name="lbUnit3">
    <property name="geometry">
     <rect>
      <x>834</x>
@@ -1255,17 +1174,17 @@ color: rgb(255, 255, 255);</string>
      <height>15</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(175, 175, 175);</string>
    </property>
    <property name="text">
     <string>    UNIT3</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QProgressBar" name="progressBar">
@@ -1322,140 +1241,7 @@ QProgressBar::chunk {
     <enum>AWMultiObject::SPRING</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>190</y>
-     <width>21</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_arriba.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>145</x>
-     <y>280</y>
-     <width>21</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_arriba.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>235</y>
-     <width>51</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>940</x>
-     <y>253</y>
-     <width>51</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>940</x>
-     <y>273</y>
-     <width>51</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>960</x>
-     <y>130</y>
-     <width>51</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_der.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>287</x>
-     <y>250</y>
-     <width>21</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/flecha_blanca_arriba.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="WLabel" name="label_9">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -1470,11 +1256,11 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/flechadiagonal_arriba.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="WLabel" name="label_10">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -1489,11 +1275,11 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/flechadiagonal_arriba.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="WLabel" name="label_11">
    <property name="geometry">
     <rect>
      <x>732</x>
@@ -1508,11 +1294,11 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
+  <widget class="WLabel" name="label_12">
    <property name="geometry">
     <rect>
      <x>731</x>
@@ -1527,7 +1313,7 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
@@ -1553,7 +1339,7 @@ QProgressBar::chunk {
  }</string>
    </property>
    <property name="value">
-    <number>24</number>
+    <number>100</number>
    </property>
    <property name="textVisible">
     <bool>false</bool>
@@ -1601,13 +1387,12 @@ QProgressBar::chunk {
    </property>
   </widget>
   <zorder>lbIMGFondo</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>progressBar_2</zorder>
   <zorder>aIndicador_1</zorder>
   <zorder>frTitulo_9</zorder>
   <zorder>label</zorder>
   <zorder>lbVAL_1</zorder>
-  <zorder>lbFlecha_2</zorder>
-  <zorder>lbFlecha_6</zorder>
-  <zorder>lbFlecha_7</zorder>
   <zorder>lbUnidad_2</zorder>
   <zorder>lbVAL_3</zorder>
   <zorder>lbVAL_5</zorder>
@@ -1644,21 +1429,12 @@ QProgressBar::chunk {
   <zorder>frame_10</zorder>
   <zorder>frame_11</zorder>
   <zorder>lbUnit3</zorder>
-  <zorder>progressBar</zorder>
   <zorder>aWMultiObject_2</zorder>
   <zorder>aWMultiObject_3</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_7</zorder>
-  <zorder>label_8</zorder>
   <zorder>label_9</zorder>
-  <zorder>label_3</zorder>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
-  <zorder>progressBar_2</zorder>
   <zorder>aBomba_2</zorder>
  </widget>
  <customwidgets>
@@ -1671,6 +1447,11 @@ QProgressBar::chunk {
    <class>AWMultiObject</class>
    <extends>QWidget</extends>
    <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
   </customwidget>
  </customwidgets>
  <resources>

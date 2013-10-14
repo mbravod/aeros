@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempcompa2.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:46 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,17 +26,17 @@ class Ui_WTempCompA2
 {
 public:
     QLabel *lbCOMA2T_1;
-    QLabel *lbCOMA2_1;
+    WLabel *lbCOMA2_1;
     QLabel *lbCOMA2U_1;
     QLabel *lbCOMA2U_2;
     QLabel *lbCOMA2T_2;
-    QLabel *lbCOMA2_2;
+    WLabel *lbCOMA2_2;
     QLabel *lbCOMA2T_3;
-    QLabel *lbCOMA2_3;
+    WLabel *lbCOMA2_3;
     QLabel *lbCOMA2U_3;
     QLabel *lbCOMA2T_4;
     QLabel *lbCOMA2U_4;
-    QLabel *lbCOMA2_4;
+    WLabel *lbCOMA2_4;
     QLabel *lbFondo;
     QPushButton *btCerrar;
 
@@ -57,11 +58,12 @@ public:
         font.setWeight(75);
         lbCOMA2T_1->setFont(font);
         lbCOMA2T_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbCOMA2_1 = new QLabel(WTempCompA2);
+        lbCOMA2_1 = new WLabel(WTempCompA2);
         lbCOMA2_1->setObjectName(QString::fromUtf8("lbCOMA2_1"));
         lbCOMA2_1->setGeometry(QRect(92, 29, 41, 20));
-        lbCOMA2_1->setFont(font);
         lbCOMA2_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbCOMA2_1->setFont(font);
+        lbCOMA2_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMA2U_1 = new QLabel(WTempCompA2);
         lbCOMA2U_1->setObjectName(QString::fromUtf8("lbCOMA2U_1"));
         lbCOMA2U_1->setGeometry(QRect(135, 29, 21, 20));
@@ -77,21 +79,23 @@ public:
         lbCOMA2T_2->setGeometry(QRect(20, 44, 65, 20));
         lbCOMA2T_2->setFont(font);
         lbCOMA2T_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbCOMA2_2 = new QLabel(WTempCompA2);
+        lbCOMA2_2 = new WLabel(WTempCompA2);
         lbCOMA2_2->setObjectName(QString::fromUtf8("lbCOMA2_2"));
         lbCOMA2_2->setGeometry(QRect(92, 44, 41, 20));
-        lbCOMA2_2->setFont(font);
         lbCOMA2_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbCOMA2_2->setFont(font);
+        lbCOMA2_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMA2T_3 = new QLabel(WTempCompA2);
         lbCOMA2T_3->setObjectName(QString::fromUtf8("lbCOMA2T_3"));
         lbCOMA2T_3->setGeometry(QRect(20, 59, 65, 20));
         lbCOMA2T_3->setFont(font);
         lbCOMA2T_3->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbCOMA2_3 = new QLabel(WTempCompA2);
+        lbCOMA2_3 = new WLabel(WTempCompA2);
         lbCOMA2_3->setObjectName(QString::fromUtf8("lbCOMA2_3"));
         lbCOMA2_3->setGeometry(QRect(92, 59, 41, 20));
-        lbCOMA2_3->setFont(font);
         lbCOMA2_3->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbCOMA2_3->setFont(font);
+        lbCOMA2_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMA2U_3 = new QLabel(WTempCompA2);
         lbCOMA2U_3->setObjectName(QString::fromUtf8("lbCOMA2U_3"));
         lbCOMA2U_3->setGeometry(QRect(135, 59, 21, 20));
@@ -107,11 +111,12 @@ public:
         lbCOMA2U_4->setGeometry(QRect(135, 74, 21, 20));
         lbCOMA2U_4->setFont(font);
         lbCOMA2U_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbCOMA2_4 = new QLabel(WTempCompA2);
+        lbCOMA2_4 = new WLabel(WTempCompA2);
         lbCOMA2_4->setObjectName(QString::fromUtf8("lbCOMA2_4"));
         lbCOMA2_4->setGeometry(QRect(92, 74, 41, 20));
-        lbCOMA2_4->setFont(font);
         lbCOMA2_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbCOMA2_4->setFont(font);
+        lbCOMA2_4->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WTempCompA2);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));

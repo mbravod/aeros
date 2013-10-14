@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wstg8bld.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:49 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,23 +26,23 @@ class Ui_WSTG8BLD
 {
 public:
     QLabel *lbSTGBT_1;
-    QLabel *lbSTGB_1;
+    WLabel *lbSTGB_1;
     QLabel *lbSTGBU_1;
     QLabel *lbSTGBU_2;
     QLabel *lbSTGBT_2;
-    QLabel *lbSTGB_2;
+    WLabel *lbSTGB_2;
     QLabel *lbSTGBU_3;
-    QLabel *lbSTGB_3;
+    WLabel *lbSTGB_3;
     QLabel *lbSTGBT_3;
     QLabel *lbSTGBU_4;
     QLabel *lbSTGBT_4;
-    QLabel *lbSTGB_4;
+    WLabel *lbSTGB_4;
     QLabel *lbSTGBT_5;
-    QLabel *lbSTGB_5;
+    WLabel *lbSTGB_5;
     QLabel *lbSTGBU_5;
     QLabel *lbSTGBU_6;
     QLabel *lbSTGBT_6;
-    QLabel *lbSTGB_6;
+    WLabel *lbSTGB_6;
     QLabel *lbFondo;
     QPushButton *btCerrar;
 
@@ -63,11 +64,12 @@ public:
         font.setWeight(75);
         lbSTGBT_1->setFont(font);
         lbSTGBT_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_1 = new QLabel(WSTG8BLD);
+        lbSTGB_1 = new WLabel(WSTG8BLD);
         lbSTGB_1->setObjectName(QString::fromUtf8("lbSTGB_1"));
         lbSTGB_1->setGeometry(QRect(93, 32, 41, 16));
-        lbSTGB_1->setFont(font);
         lbSTGB_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_1->setFont(font);
+        lbSTGB_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbSTGBU_1 = new QLabel(WSTG8BLD);
         lbSTGBU_1->setObjectName(QString::fromUtf8("lbSTGBU_1"));
         lbSTGBU_1->setGeometry(QRect(135, 32, 21, 16));
@@ -83,21 +85,23 @@ public:
         lbSTGBT_2->setGeometry(QRect(30, 47, 51, 16));
         lbSTGBT_2->setFont(font);
         lbSTGBT_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_2 = new QLabel(WSTG8BLD);
+        lbSTGB_2 = new WLabel(WSTG8BLD);
         lbSTGB_2->setObjectName(QString::fromUtf8("lbSTGB_2"));
         lbSTGB_2->setGeometry(QRect(93, 47, 41, 16));
-        lbSTGB_2->setFont(font);
         lbSTGB_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_2->setFont(font);
+        lbSTGB_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbSTGBU_3 = new QLabel(WSTG8BLD);
         lbSTGBU_3->setObjectName(QString::fromUtf8("lbSTGBU_3"));
         lbSTGBU_3->setGeometry(QRect(135, 60, 21, 16));
         lbSTGBU_3->setFont(font);
         lbSTGBU_3->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_3 = new QLabel(WSTG8BLD);
+        lbSTGB_3 = new WLabel(WSTG8BLD);
         lbSTGB_3->setObjectName(QString::fromUtf8("lbSTGB_3"));
         lbSTGB_3->setGeometry(QRect(93, 60, 41, 16));
-        lbSTGB_3->setFont(font);
         lbSTGB_3->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_3->setFont(font);
+        lbSTGB_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbSTGBT_3 = new QLabel(WSTG8BLD);
         lbSTGBT_3->setObjectName(QString::fromUtf8("lbSTGBT_3"));
         lbSTGBT_3->setGeometry(QRect(45, 60, 41, 20));
@@ -113,21 +117,23 @@ public:
         lbSTGBT_4->setGeometry(QRect(45, 75, 41, 20));
         lbSTGBT_4->setFont(font);
         lbSTGBT_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_4 = new QLabel(WSTG8BLD);
+        lbSTGB_4 = new WLabel(WSTG8BLD);
         lbSTGB_4->setObjectName(QString::fromUtf8("lbSTGB_4"));
         lbSTGB_4->setGeometry(QRect(93, 75, 41, 16));
-        lbSTGB_4->setFont(font);
         lbSTGB_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_4->setFont(font);
+        lbSTGB_4->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbSTGBT_5 = new QLabel(WSTG8BLD);
         lbSTGBT_5->setObjectName(QString::fromUtf8("lbSTGBT_5"));
         lbSTGBT_5->setGeometry(QRect(38, 108, 51, 16));
         lbSTGBT_5->setFont(font);
         lbSTGBT_5->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_5 = new QLabel(WSTG8BLD);
+        lbSTGB_5 = new WLabel(WSTG8BLD);
         lbSTGB_5->setObjectName(QString::fromUtf8("lbSTGB_5"));
         lbSTGB_5->setGeometry(QRect(93, 108, 41, 16));
-        lbSTGB_5->setFont(font);
         lbSTGB_5->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_5->setFont(font);
+        lbSTGB_5->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbSTGBU_5 = new QLabel(WSTG8BLD);
         lbSTGBU_5->setObjectName(QString::fromUtf8("lbSTGBU_5"));
         lbSTGBU_5->setGeometry(QRect(135, 108, 21, 16));
@@ -143,11 +149,12 @@ public:
         lbSTGBT_6->setGeometry(QRect(20, 120, 61, 20));
         lbSTGBT_6->setFont(font);
         lbSTGBT_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbSTGB_6 = new QLabel(WSTG8BLD);
+        lbSTGB_6 = new WLabel(WSTG8BLD);
         lbSTGB_6->setObjectName(QString::fromUtf8("lbSTGB_6"));
         lbSTGB_6->setGeometry(QRect(93, 120, 41, 16));
-        lbSTGB_6->setFont(font);
         lbSTGB_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGB_6->setFont(font);
+        lbSTGB_6->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WSTG8BLD);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));

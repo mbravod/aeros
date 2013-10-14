@@ -49,7 +49,7 @@
     <string>TE6821A</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbADM_1">
+  <widget class="WLabel" name="lbADM_1">
    <property name="geometry">
     <rect>
      <x>94</x>
@@ -57,6 +57,9 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>65.00</string>
    </property>
    <property name="font">
     <font>
@@ -66,8 +69,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>65.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbADMU_1">
@@ -112,7 +115,7 @@
     <string>ºF</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbADM_2">
+  <widget class="WLabel" name="lbADM_2">
    <property name="geometry">
     <rect>
      <x>94</x>
@@ -120,6 +123,9 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>65.00</string>
    </property>
    <property name="font">
     <font>
@@ -129,8 +135,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>65.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbADMT_2">
@@ -203,6 +209,13 @@
   <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

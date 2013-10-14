@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wdiariodatos.ui'
 **
-** Created: Sat 12. Oct 21:52:03 2013
+** Created: Sun 13. Oct 17:33:59 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,8 +33,8 @@ public:
     QPushButton *btAlto;
     QFrame *frame_2;
     QLabel *lbIP;
-    QLineEdit *leAlto;
-    QLineEdit *leInicio;
+    WLabel *leAlto;
+    WLabel *leInicio;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WDiarioDatos)
@@ -105,24 +105,24 @@ public:
         font2.setPointSize(5);
         lbIP->setFont(font2);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        leAlto = new QLineEdit(WDiarioDatos);
+        leAlto = new WLabel(WDiarioDatos);
         leAlto->setObjectName(QString::fromUtf8("leAlto"));
         leAlto->setGeometry(QRect(36, 186, 128, 24));
+        leAlto->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
+"color: rgb(0, 195, 0);"));
         QFont font3;
         font3.setPointSize(9);
         font3.setBold(true);
         font3.setWeight(75);
         leAlto->setFont(font3);
-        leAlto->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
-"color: rgb(0, 195, 0);"));
-        leAlto->setAlignment(Qt::AlignCenter);
-        leInicio = new QLineEdit(WDiarioDatos);
+        leAlto->setProperty("Alineacion", QVariant(WLabel::Centro));
+        leInicio = new WLabel(WDiarioDatos);
         leInicio->setObjectName(QString::fromUtf8("leInicio"));
         leInicio->setGeometry(QRect(34, 110, 128, 24));
-        leInicio->setFont(font3);
         leInicio->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color: rgb(0, 195, 0);"));
-        leInicio->setAlignment(Qt::AlignCenter);
+        leInicio->setFont(font3);
+        leInicio->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WDiarioDatos);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));

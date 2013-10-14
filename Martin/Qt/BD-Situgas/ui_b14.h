@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b14.ui'
 **
-** Created: Sat 12. Oct 21:51:20 2013
+** Created: Sun 13. Oct 18:46:18 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -291,7 +291,8 @@ public:
         lbIMGFondo = new QLabel(B14);
         lbIMGFondo->setObjectName(QString::fromUtf8("lbIMGFondo"));
         lbIMGFondo->setGeometry(QRect(0, 0, 1024, 662));
-        lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8("../Resources/PNG/B14.png")));
+        lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/B14.png")));
+        lbIMGFondo->setScaledContents(true);
         aBomba_1 = new AWMultiObject(B14);
         aBomba_1->setObjectName(QString::fromUtf8("aBomba_1"));
         aBomba_1->setGeometry(QRect(638, 322, 93, 123));
@@ -484,7 +485,7 @@ public:
         font3.setBold(true);
         font3.setWeight(75);
         pushButton->setFont(font3);
-        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 255, 200);"));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
         lbFlecha_1 = new QLabel(B14);
         lbFlecha_1->setObjectName(QString::fromUtf8("lbFlecha_1"));
         lbFlecha_1->setGeometry(QRect(250, 165, 46, 13));

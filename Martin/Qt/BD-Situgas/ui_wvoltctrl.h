@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvoltctrl.ui'
 **
-** Created: Sat 12. Oct 21:51:51 2013
+** Created: Sun 13. Oct 17:33:39 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,7 +32,7 @@ public:
     QPushButton *btAumentar;
     QPushButton *btDisminuir;
     QPushButton *btCerrar;
-    QLineEdit *leRetroa;
+    WLabel *leRetroa;
     QFrame *frame_5;
     QLabel *lbIP;
     QLabel *lbFondo;
@@ -104,11 +104,12 @@ public:
         btCerrar->setAutoDefault(false);
         btCerrar->setDefault(false);
         btCerrar->setFlat(false);
-        leRetroa = new QLineEdit(WVoltCtrl);
+        leRetroa = new WLabel(WVoltCtrl);
         leRetroa->setObjectName(QString::fromUtf8("leRetroa"));
         leRetroa->setGeometry(QRect(64, 80, 73, 25));
         leRetroa->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);"));
+        leRetroa->setProperty("Alineacion", QVariant(WLabel::Centro));
         frame_5 = new QFrame(WVoltCtrl);
         frame_5->setObjectName(QString::fromUtf8("frame_5"));
         frame_5->setGeometry(QRect(0, 0, 241, 16));
@@ -150,6 +151,7 @@ public:
         btDisminuir->setText(QApplication::translate("WVoltCtrl", "DISMINIUIR", 0, QApplication::UnicodeUTF8));
         btCerrar->setText(QApplication::translate("WVoltCtrl", "CERRAR", 0, QApplication::UnicodeUTF8));
         btCerrar->setShortcut(QString());
+        leRetroa->setText(QString());
         lbIP->setText(QApplication::translate("WVoltCtrl", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

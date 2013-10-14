@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempespera.ui'
 **
-** Created: Sat 12. Oct 21:51:54 2013
+** Created: Sun 13. Oct 17:33:44 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -34,8 +34,8 @@ public:
     QPushButton *btConfirmar;
     QFrame *frame_5;
     QLabel *lbIP;
-    QLineEdit *leRetro;
-    QLineEdit *leDemanda;
+    WLabel *leRetro;
+    WLabel *leDemanda;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WTempEspera)
@@ -111,16 +111,16 @@ public:
         font3.setPointSize(5);
         lbIP->setFont(font3);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        leRetro = new QLineEdit(WTempEspera);
+        leRetro = new WLabel(WTempEspera);
         leRetro->setObjectName(QString::fromUtf8("leRetro"));
         leRetro->setGeometry(QRect(94, 89, 74, 22));
         leRetro->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        leRetro->setAlignment(Qt::AlignCenter);
-        leDemanda = new QLineEdit(WTempEspera);
+        leRetro->setProperty("Alineacion", QVariant(WLabel::Centro));
+        leDemanda = new WLabel(WTempEspera);
         leDemanda->setObjectName(QString::fromUtf8("leDemanda"));
         leDemanda->setGeometry(QRect(94, 59, 74, 22));
         leDemanda->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 255);"));
-        leDemanda->setAlignment(Qt::AlignCenter);
+        leDemanda->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WTempEspera);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'header.ui'
 **
-** Created: Sat 12. Oct 21:51:37 2013
+** Created: Sun 13. Oct 18:20:47 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -27,19 +28,19 @@ public:
     QFrame *frame;
     QLabel *lbRegT;
     QLabel *lbMotorT;
-    QLabel *lbReg;
-    QLabel *lbReg_2;
+    WLabel *lbReg;
+    WLabel *lbReg_2;
     QLabel *lbVelNSDT;
     QLabel *lbVelN25T;
-    QLabel *lbVelN25;
+    WLabel *lbVelN25;
     QLabel *lbVelN25U;
-    QLabel *lbVelNSD;
+    WLabel *lbVelNSD;
     QLabel *lbVelNSDU;
     QLabel *lbPotUnitT_2;
     QLabel *lbPotUnitT;
-    QLabel *lbPotUnit;
+    WLabel *lbPotUnit;
     QLabel *lbModoQT;
-    QLabel *lbModo;
+    WLabel *lbModo;
 
     void setupUi(QWidget *Header)
     {
@@ -73,20 +74,22 @@ public:
         lbMotorT->setMaximumSize(QSize(101, 16));
         lbMotorT->setFont(font);
         lbMotorT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbReg = new QLabel(frame);
+        lbReg = new WLabel(frame);
         lbReg->setObjectName(QString::fromUtf8("lbReg"));
         lbReg->setGeometry(QRect(120, 0, 250, 16));
         lbReg->setMinimumSize(QSize(250, 16));
         lbReg->setMaximumSize(QSize(250, 16));
-        lbReg->setFont(font);
         lbReg->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbReg_2 = new QLabel(frame);
+        lbReg->setFont(font);
+        lbReg->setProperty("Alineacion", QVariant(WLabel::Izquierda));
+        lbReg_2 = new WLabel(frame);
         lbReg_2->setObjectName(QString::fromUtf8("lbReg_2"));
         lbReg_2->setGeometry(QRect(120, 20, 250, 16));
         lbReg_2->setMinimumSize(QSize(250, 16));
         lbReg_2->setMaximumSize(QSize(250, 16));
-        lbReg_2->setFont(font);
         lbReg_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbReg_2->setFont(font);
+        lbReg_2->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbVelNSDT = new QLabel(frame);
         lbVelNSDT->setObjectName(QString::fromUtf8("lbVelNSDT"));
         lbVelNSDT->setGeometry(QRect(435, 20, 120, 16));
@@ -101,24 +104,24 @@ public:
         lbVelN25T->setMaximumSize(QSize(120, 16));
         lbVelN25T->setFont(font);
         lbVelN25T->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbVelN25 = new QLabel(frame);
+        lbVelN25 = new WLabel(frame);
         lbVelN25->setObjectName(QString::fromUtf8("lbVelN25"));
         lbVelN25->setGeometry(QRect(555, 0, 40, 16));
-        lbVelN25->setFont(font);
         lbVelN25->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbVelN25->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lbVelN25->setFont(font);
+        lbVelN25->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbVelN25U = new QLabel(frame);
         lbVelN25U->setObjectName(QString::fromUtf8("lbVelN25U"));
         lbVelN25U->setGeometry(QRect(600, 0, 41, 16));
         lbVelN25U->setFont(font);
         lbVelN25U->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbVelN25U->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-        lbVelNSD = new QLabel(frame);
+        lbVelNSD = new WLabel(frame);
         lbVelNSD->setObjectName(QString::fromUtf8("lbVelNSD"));
         lbVelNSD->setGeometry(QRect(555, 20, 40, 16));
-        lbVelNSD->setFont(font);
         lbVelNSD->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbVelNSD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lbVelNSD->setFont(font);
+        lbVelNSD->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbVelNSDU = new QLabel(frame);
         lbVelNSDU->setObjectName(QString::fromUtf8("lbVelNSDU"));
         lbVelNSDU->setGeometry(QRect(600, 20, 41, 16));
@@ -136,22 +139,23 @@ public:
         lbPotUnitT->setGeometry(QRect(704, 0, 181, 16));
         lbPotUnitT->setFont(font);
         lbPotUnitT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbPotUnit = new QLabel(frame);
+        lbPotUnit = new WLabel(frame);
         lbPotUnit->setObjectName(QString::fromUtf8("lbPotUnit"));
         lbPotUnit->setGeometry(QRect(895, 0, 40, 16));
-        lbPotUnit->setFont(font);
         lbPotUnit->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbPotUnit->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lbPotUnit->setFont(font);
+        lbPotUnit->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbModoQT = new QLabel(frame);
         lbModoQT->setObjectName(QString::fromUtf8("lbModoQT"));
         lbModoQT->setGeometry(QRect(701, 20, 131, 16));
         lbModoQT->setFont(font);
         lbModoQT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        lbModo = new QLabel(frame);
+        lbModo = new WLabel(frame);
         lbModo->setObjectName(QString::fromUtf8("lbModo"));
         lbModo->setGeometry(QRect(850, 20, 115, 16));
-        lbModo->setFont(font);
         lbModo->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbModo->setFont(font);
+        lbModo->setProperty("Alineacion", QVariant(WLabel::Izquierda));
 
         retranslateUi(Header);
 

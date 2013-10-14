@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wrotorturb.ui'
 **
-** Created: Sat 12. Oct 21:51:59 2013
+** Created: Sun 13. Oct 17:33:50 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,10 +17,10 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QProgressBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -52,18 +52,18 @@ public:
     QLabel *lbRefT;
     QLabel *lbEmicionT;
     QFrame *frame_2;
-    QLabel *lbVel;
+    WLabel *lbVel;
     QLabel *lbVelU;
     QFrame *frame_3;
-    QLabel *lbRef;
+    WLabel *lbRef;
     QLabel *lbRefU;
     QFrame *frame_4;
-    QLabel *lbEmicion;
+    WLabel *lbEmicion;
     QLabel *lbEmicionU;
     QFrame *frame_5;
     QLabel *lbIP;
-    QLineEdit *leOper;
-    QLineEdit *leCntr;
+    WLabel *leOper;
+    WLabel *leCntr;
     QLabel *lbFondo;
 
     void setupUi(QWidget *WRotorTurb)
@@ -232,10 +232,9 @@ public:
         frame_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
-        lbVel = new QLabel(frame_2);
+        lbVel = new WLabel(frame_2);
         lbVel->setObjectName(QString::fromUtf8("lbVel"));
         lbVel->setGeometry(QRect(0, 0, 41, 16));
-        lbVel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbVelU = new QLabel(frame_2);
         lbVelU->setObjectName(QString::fromUtf8("lbVelU"));
         lbVelU->setGeometry(QRect(50, 0, 31, 14));
@@ -246,10 +245,9 @@ public:
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
-        lbRef = new QLabel(frame_3);
+        lbRef = new WLabel(frame_3);
         lbRef->setObjectName(QString::fromUtf8("lbRef"));
         lbRef->setGeometry(QRect(0, 0, 41, 16));
-        lbRef->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbRefU = new QLabel(frame_3);
         lbRefU->setObjectName(QString::fromUtf8("lbRefU"));
         lbRefU->setGeometry(QRect(50, 0, 31, 14));
@@ -260,10 +258,9 @@ public:
         frame_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
-        lbEmicion = new QLabel(frame_4);
+        lbEmicion = new WLabel(frame_4);
         lbEmicion->setObjectName(QString::fromUtf8("lbEmicion"));
         lbEmicion->setGeometry(QRect(0, 0, 41, 16));
-        lbEmicion->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbEmicionU = new QLabel(frame_4);
         lbEmicionU->setObjectName(QString::fromUtf8("lbEmicionU"));
         lbEmicionU->setGeometry(QRect(50, 0, 31, 14));
@@ -282,18 +279,17 @@ public:
         font4.setPointSize(5);
         lbIP->setFont(font4);
         lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        leOper = new QLineEdit(WRotorTurb);
+        leOper = new WLabel(WRotorTurb);
         leOper->setObjectName(QString::fromUtf8("leOper"));
         leOper->setGeometry(QRect(100, 170, 81, 16));
         leOper->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 0);"));
-        leOper->setAlignment(Qt::AlignCenter);
-        leCntr = new QLineEdit(WRotorTurb);
+        leOper->setProperty("Alineacion", QVariant(WLabel::Centro));
+        leCntr = new WLabel(WRotorTurb);
         leCntr->setObjectName(QString::fromUtf8("leCntr"));
         leCntr->setGeometry(QRect(100, 190, 81, 16));
         leCntr->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color: rgb(85, 255, 0);"));
-        leCntr->setAlignment(Qt::AlignCenter);
         lbFondo = new QLabel(WRotorTurb);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));
@@ -374,6 +370,7 @@ public:
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_LPSPD.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         leOper->setText(QString());
+        leCntr->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrllavagua.ui'
 **
-** Created: Sat 12. Oct 21:52:04 2013
+** Created: Sun 13. Oct 17:34:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -19,6 +19,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -28,13 +29,13 @@ public:
     QFrame *frame;
     QLabel *lbCtrlLavAguaT;
     QPushButton *btCerrar;
-    QLabel *lbPermLav;
+    WLabel *lbPermLav;
     QPushButton *btPermLav;
     QLabel *lbFueraDeLineaT;
     QPushButton *btDeLineaHab;
     QPushButton *btDeLineaDes;
-    QLabel *lbDeLinea;
-    QLabel *lbEnLinea;
+    WLabel *lbDeLinea;
+    WLabel *lbEnLinea;
     QPushButton *btEnLineaHab;
     QLabel *lbFueraEnLineaT;
     QPushButton *btEnLineaDes;
@@ -84,17 +85,17 @@ public:
         btCerrar->setAutoDefault(false);
         btCerrar->setDefault(false);
         btCerrar->setFlat(false);
-        lbPermLav = new QLabel(WCtrlLavAgua);
+        lbPermLav = new WLabel(WCtrlLavAgua);
         lbPermLav->setObjectName(QString::fromUtf8("lbPermLav"));
         lbPermLav->setGeometry(QRect(127, 60, 67, 21));
+        lbPermLav->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(255, 255, 255);"));
         QFont font2;
         font2.setFamily(QString::fromUtf8("Verdana"));
         font2.setPointSize(10);
         font2.setBold(true);
         font2.setWeight(75);
         lbPermLav->setFont(font2);
-        lbPermLav->setStyleSheet(QString::fromUtf8("\n"
-"color: rgb(255, 255, 255);"));
         btPermLav = new QPushButton(WCtrlLavAgua);
         btPermLav->setObjectName(QString::fromUtf8("btPermLav"));
         btPermLav->setGeometry(QRect(5, 63, 121, 23));
@@ -121,23 +122,23 @@ public:
         btDeLineaDes->setGeometry(QRect(94, 129, 101, 31));
         btDeLineaDes->setFont(font4);
         btDeLineaDes->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
-        lbDeLinea = new QLabel(WCtrlLavAgua);
+        lbDeLinea = new WLabel(WCtrlLavAgua);
         lbDeLinea->setObjectName(QString::fromUtf8("lbDeLinea"));
         lbDeLinea->setGeometry(QRect(40, 162, 121, 25));
+        lbDeLinea->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 0, 0);"));
         QFont font5;
         font5.setBold(true);
         font5.setWeight(75);
         lbDeLinea->setFont(font5);
-        lbDeLinea->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 0, 0);"));
-        lbDeLinea->setAlignment(Qt::AlignCenter);
-        lbEnLinea = new QLabel(WCtrlLavAgua);
+        lbDeLinea->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbEnLinea = new WLabel(WCtrlLavAgua);
         lbEnLinea->setObjectName(QString::fromUtf8("lbEnLinea"));
         lbEnLinea->setGeometry(QRect(40, 253, 121, 25));
-        lbEnLinea->setFont(font4);
         lbEnLinea->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 0, 0);"));
-        lbEnLinea->setAlignment(Qt::AlignCenter);
+        lbEnLinea->setFont(font4);
+        lbEnLinea->setProperty("Alineacion", QVariant(WLabel::Centro));
         btEnLineaHab = new QPushButton(WCtrlLavAgua);
         btEnLineaHab->setObjectName(QString::fromUtf8("btEnLineaHab"));
         btEnLineaHab->setGeometry(QRect(10, 220, 78, 31));

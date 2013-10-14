@@ -52,7 +52,7 @@
     <string>ST8DMD</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_1">
+  <widget class="WLabel" name="lbSTGB_1">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -60,6 +60,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>9.70</string>
    </property>
    <property name="font">
     <font>
@@ -69,11 +75,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>9.70</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbSTGBU_1">
@@ -148,7 +151,7 @@
     <string>ST8SEL</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_2">
+  <widget class="WLabel" name="lbSTGB_2">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -156,6 +159,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>99.10</string>
    </property>
    <property name="font">
     <font>
@@ -165,11 +174,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>99.10</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbSTGBU_3">
@@ -196,7 +202,7 @@
     <string>%</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_3">
+  <widget class="WLabel" name="lbSTGB_3">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -204,6 +210,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>98.60</string>
    </property>
    <property name="font">
     <font>
@@ -213,11 +225,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>98.60</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbSTGBT_3">
@@ -292,7 +301,7 @@
     <string>ST8B</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_4">
+  <widget class="WLabel" name="lbSTGB_4">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -300,6 +309,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>99.60</string>
    </property>
    <property name="font">
     <font>
@@ -309,11 +324,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>99.60</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbSTGBT_5">
@@ -340,7 +352,7 @@
     <string>ST8MA</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_5">
+  <widget class="WLabel" name="lbSTGB_5">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -348,6 +360,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>10.00</string>
    </property>
    <property name="font">
     <font>
@@ -357,11 +375,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>10.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbSTGBU_5">
@@ -436,7 +451,7 @@
     <string>ST80HMS</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbSTGB_6">
+  <widget class="WLabel" name="lbSTGB_6">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -444,6 +459,12 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>10.00</string>
    </property>
    <property name="font">
     <font>
@@ -453,11 +474,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>10.00</string>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbFondo">
@@ -521,6 +539,13 @@
   <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wveln25.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 18:15:41 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -26,8 +27,8 @@ class Ui_WVelN25
 public:
     QLabel *lbN25T_1;
     QLabel *lbN25T_2;
-    QLabel *lbN25_2;
-    QLabel *lbN25_1;
+    WLabel *lbN25_2;
+    WLabel *lbN25_1;
     QLabel *lbN25U_1;
     QLabel *lbN25U_2;
     QLabel *lbFondo;
@@ -58,16 +59,16 @@ public:
         lbN25T_2->setGeometry(QRect(35, 45, 51, 16));
         lbN25T_2->setFont(font);
         lbN25T_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbN25_2 = new QLabel(WVelN25);
+        lbN25_2 = new WLabel(WVelN25);
         lbN25_2->setObjectName(QString::fromUtf8("lbN25_2"));
         lbN25_2->setGeometry(QRect(98, 45, 31, 16));
         lbN25_2->setFont(font);
-        lbN25_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbN25_1 = new QLabel(WVelN25);
+        lbN25_2->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbN25_1 = new WLabel(WVelN25);
         lbN25_1->setObjectName(QString::fromUtf8("lbN25_1"));
         lbN25_1->setGeometry(QRect(98, 30, 31, 16));
         lbN25_1->setFont(font);
-        lbN25_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbN25_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbN25U_1 = new QLabel(WVelN25);
         lbN25U_1->setObjectName(QString::fromUtf8("lbN25U_1"));
         lbN25U_1->setGeometry(QRect(133, 30, 31, 16));

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpresbalance.ui'
 **
-** Created: Sun 13. Oct 12:37:48 2013
+** Created: Sun 13. Oct 17:33:57 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,11 +26,11 @@ class Ui_WPresBalance
 {
 public:
     QLabel *lbBALIT_1;
-    QLabel *lbBALI_1;
+    WLabel *lbBALI_1;
     QLabel *lbBALIU_1;
     QLabel *lbBALIU_2;
     QLabel *lbBALIT_2;
-    QLabel *lbBALI_2;
+    WLabel *lbBALI_2;
     QLabel *lbFondo;
     QPushButton *btCerrar;
 
@@ -51,11 +52,12 @@ public:
         font.setWeight(75);
         lbBALIT_1->setFont(font);
         lbBALIT_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbBALI_1 = new QLabel(WPresBalance);
+        lbBALI_1 = new WLabel(WPresBalance);
         lbBALI_1->setObjectName(QString::fromUtf8("lbBALI_1"));
         lbBALI_1->setGeometry(QRect(95, 32, 38, 15));
-        lbBALI_1->setFont(font);
         lbBALI_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbBALI_1->setFont(font);
+        lbBALI_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbBALIU_1 = new QLabel(WPresBalance);
         lbBALIU_1->setObjectName(QString::fromUtf8("lbBALIU_1"));
         lbBALIU_1->setGeometry(QRect(135, 32, 38, 15));
@@ -71,11 +73,12 @@ public:
         lbBALIT_2->setGeometry(QRect(30, 50, 61, 16));
         lbBALIT_2->setFont(font);
         lbBALIT_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbBALI_2 = new QLabel(WPresBalance);
+        lbBALI_2 = new WLabel(WPresBalance);
         lbBALI_2->setObjectName(QString::fromUtf8("lbBALI_2"));
         lbBALI_2->setGeometry(QRect(95, 50, 38, 15));
-        lbBALI_2->setFont(font);
         lbBALI_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbBALI_2->setFont(font);
+        lbBALI_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WPresBalance);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));

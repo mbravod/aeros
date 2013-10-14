@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpresdescc.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:52 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include <wlabel.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -25,10 +26,10 @@ class Ui_WPresDescC
 {
 public:
     QLabel *lbDESCT_1;
-    QLabel *lbDESC_1;
+    WLabel *lbDESC_1;
     QLabel *lbDESCU_1;
     QLabel *lbDESCU_2;
-    QLabel *lbDESC_2;
+    WLabel *lbDESC_2;
     QLabel *lbDESCT_2;
     QLabel *lbFondo;
     QPushButton *btCerrar;
@@ -51,7 +52,7 @@ public:
         font.setWeight(75);
         lbDESCT_1->setFont(font);
         lbDESCT_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbDESC_1 = new QLabel(WPresDescC);
+        lbDESC_1 = new WLabel(WPresDescC);
         lbDESC_1->setObjectName(QString::fromUtf8("lbDESC_1"));
         lbDESC_1->setGeometry(QRect(94, 31, 41, 15));
         lbDESC_1->setFont(font);
@@ -66,7 +67,7 @@ public:
         lbDESCU_2->setGeometry(QRect(135, 43, 41, 20));
         lbDESCU_2->setFont(font);
         lbDESCU_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbDESC_2 = new QLabel(WPresDescC);
+        lbDESC_2 = new WLabel(WPresDescC);
         lbDESC_2->setObjectName(QString::fromUtf8("lbDESC_2"));
         lbDESC_2->setGeometry(QRect(94, 43, 41, 20));
         lbDESC_2->setFont(font);

@@ -233,7 +233,7 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
   </widget>
-  <widget class="QLineEdit" name="leAlto">
+  <widget class="WLabel" name="leAlto">
    <property name="geometry">
     <rect>
      <x>36</x>
@@ -242,6 +242,13 @@ p, li { white-space: pre-wrap; }
      <height>24</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 195, 0);</string>
+   </property>
+   <property name="text">
+    <string> </string>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
@@ -249,18 +256,11 @@ p, li { white-space: pre-wrap; }
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(0, 195, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leInicio">
+  <widget class="WLabel" name="leInicio">
    <property name="geometry">
     <rect>
      <x>34</x>
@@ -269,6 +269,13 @@ color: rgb(0, 195, 0);</string>
      <height>24</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 195, 0);</string>
+   </property>
+   <property name="text">
+    <string> </string>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
@@ -276,15 +283,8 @@ color: rgb(0, 195, 0);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(0, 195, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbFondo">
@@ -312,6 +312,13 @@ color: rgb(0, 195, 0);</string>
   <zorder>leAlto</zorder>
   <zorder>leInicio</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

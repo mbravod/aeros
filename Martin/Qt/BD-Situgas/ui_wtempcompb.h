@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempcompb.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 17:33:44 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,28 +26,28 @@ class Ui_WTempCompB
 {
 public:
     QLabel *lbCOMBT_1;
-    QLabel *lbCOMB_1;
+    WLabel *lbCOMB_1;
     QLabel *lbCOMBU_1;
-    QLabel *lbCOMB_2;
+    WLabel *lbCOMB_2;
     QLabel *lbCOMBT_2;
     QLabel *lbCOMBU_2;
     QLabel *lbCOMBT_3;
     QLabel *lbCOMBU_3;
-    QLabel *lbCOMB_3;
+    WLabel *lbCOMB_3;
     QLabel *lbCOMBT_4;
     QLabel *lbCOMBU_4;
-    QLabel *lbCOMB_4;
+    WLabel *lbCOMB_4;
     QLabel *lbCOMBT_5;
-    QLabel *lbCOMB_5;
+    WLabel *lbCOMB_5;
     QLabel *lbCOMBU_5;
     QLabel *lbCOMBT_6;
     QLabel *lbCOMBU_6;
-    QLabel *lbCOMB_6;
+    WLabel *lbCOMB_6;
     QLabel *lbCOMBT_7;
     QLabel *lbCOMBU_7;
-    QLabel *lbCOMB_7;
+    WLabel *lbCOMB_7;
     QLabel *lbCOMBT_8;
-    QLabel *lbCOMB_8;
+    WLabel *lbCOMB_8;
     QLabel *lbCOMBU_8;
     QLabel *lbFondo;
     QPushButton *btCerrar;
@@ -68,18 +69,20 @@ public:
         font.setBold(true);
         font.setWeight(75);
         lbCOMBT_1->setFont(font);
-        lbCOMB_1 = new QLabel(WTempCompB);
+        lbCOMB_1 = new WLabel(WTempCompB);
         lbCOMB_1->setObjectName(QString::fromUtf8("lbCOMB_1"));
         lbCOMB_1->setGeometry(QRect(88, 32, 44, 16));
         lbCOMB_1->setFont(font);
+        lbCOMB_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBU_1 = new QLabel(WTempCompB);
         lbCOMBU_1->setObjectName(QString::fromUtf8("lbCOMBU_1"));
         lbCOMBU_1->setGeometry(QRect(135, 32, 21, 16));
         lbCOMBU_1->setFont(font);
-        lbCOMB_2 = new QLabel(WTempCompB);
+        lbCOMB_2 = new WLabel(WTempCompB);
         lbCOMB_2->setObjectName(QString::fromUtf8("lbCOMB_2"));
         lbCOMB_2->setGeometry(QRect(88, 47, 44, 16));
         lbCOMB_2->setFont(font);
+        lbCOMB_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBT_2 = new QLabel(WTempCompB);
         lbCOMBT_2->setObjectName(QString::fromUtf8("lbCOMBT_2"));
         lbCOMBT_2->setGeometry(QRect(32, 47, 51, 16));
@@ -96,10 +99,11 @@ public:
         lbCOMBU_3->setObjectName(QString::fromUtf8("lbCOMBU_3"));
         lbCOMBU_3->setGeometry(QRect(135, 61, 21, 16));
         lbCOMBU_3->setFont(font);
-        lbCOMB_3 = new QLabel(WTempCompB);
+        lbCOMB_3 = new WLabel(WTempCompB);
         lbCOMB_3->setObjectName(QString::fromUtf8("lbCOMB_3"));
         lbCOMB_3->setGeometry(QRect(88, 61, 44, 16));
         lbCOMB_3->setFont(font);
+        lbCOMB_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBT_4 = new QLabel(WTempCompB);
         lbCOMBT_4->setObjectName(QString::fromUtf8("lbCOMBT_4"));
         lbCOMBT_4->setGeometry(QRect(32, 75, 51, 16));
@@ -108,18 +112,20 @@ public:
         lbCOMBU_4->setObjectName(QString::fromUtf8("lbCOMBU_4"));
         lbCOMBU_4->setGeometry(QRect(135, 75, 21, 16));
         lbCOMBU_4->setFont(font);
-        lbCOMB_4 = new QLabel(WTempCompB);
+        lbCOMB_4 = new WLabel(WTempCompB);
         lbCOMB_4->setObjectName(QString::fromUtf8("lbCOMB_4"));
         lbCOMB_4->setGeometry(QRect(88, 75, 44, 16));
         lbCOMB_4->setFont(font);
+        lbCOMB_4->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBT_5 = new QLabel(WTempCompB);
         lbCOMBT_5->setObjectName(QString::fromUtf8("lbCOMBT_5"));
         lbCOMBT_5->setGeometry(QRect(32, 90, 51, 16));
         lbCOMBT_5->setFont(font);
-        lbCOMB_5 = new QLabel(WTempCompB);
+        lbCOMB_5 = new WLabel(WTempCompB);
         lbCOMB_5->setObjectName(QString::fromUtf8("lbCOMB_5"));
         lbCOMB_5->setGeometry(QRect(88, 90, 44, 16));
         lbCOMB_5->setFont(font);
+        lbCOMB_5->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBU_5 = new QLabel(WTempCompB);
         lbCOMBU_5->setObjectName(QString::fromUtf8("lbCOMBU_5"));
         lbCOMBU_5->setGeometry(QRect(135, 90, 21, 16));
@@ -132,10 +138,11 @@ public:
         lbCOMBU_6->setObjectName(QString::fromUtf8("lbCOMBU_6"));
         lbCOMBU_6->setGeometry(QRect(135, 105, 21, 16));
         lbCOMBU_6->setFont(font);
-        lbCOMB_6 = new QLabel(WTempCompB);
+        lbCOMB_6 = new WLabel(WTempCompB);
         lbCOMB_6->setObjectName(QString::fromUtf8("lbCOMB_6"));
         lbCOMB_6->setGeometry(QRect(88, 105, 44, 16));
         lbCOMB_6->setFont(font);
+        lbCOMB_6->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBT_7 = new QLabel(WTempCompB);
         lbCOMBT_7->setObjectName(QString::fromUtf8("lbCOMBT_7"));
         lbCOMBT_7->setGeometry(QRect(32, 119, 51, 16));
@@ -144,18 +151,20 @@ public:
         lbCOMBU_7->setObjectName(QString::fromUtf8("lbCOMBU_7"));
         lbCOMBU_7->setGeometry(QRect(135, 119, 21, 16));
         lbCOMBU_7->setFont(font);
-        lbCOMB_7 = new QLabel(WTempCompB);
+        lbCOMB_7 = new WLabel(WTempCompB);
         lbCOMB_7->setObjectName(QString::fromUtf8("lbCOMB_7"));
         lbCOMB_7->setGeometry(QRect(88, 119, 44, 16));
         lbCOMB_7->setFont(font);
+        lbCOMB_7->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBT_8 = new QLabel(WTempCompB);
         lbCOMBT_8->setObjectName(QString::fromUtf8("lbCOMBT_8"));
         lbCOMBT_8->setGeometry(QRect(32, 133, 51, 16));
         lbCOMBT_8->setFont(font);
-        lbCOMB_8 = new QLabel(WTempCompB);
+        lbCOMB_8 = new WLabel(WTempCompB);
         lbCOMB_8->setObjectName(QString::fromUtf8("lbCOMB_8"));
         lbCOMB_8->setGeometry(QRect(88, 133, 44, 16));
         lbCOMB_8->setFont(font);
+        lbCOMB_8->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCOMBU_8 = new QLabel(WTempCompB);
         lbCOMBU_8->setObjectName(QString::fromUtf8("lbCOMBU_8"));
         lbCOMBU_8->setGeometry(QRect(135, 133, 21, 16));

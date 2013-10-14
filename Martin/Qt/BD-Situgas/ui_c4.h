@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c4.ui'
 **
-** Created: Sat 12. Oct 21:51:21 2013
+** Created: Sun 13. Oct 17:32:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

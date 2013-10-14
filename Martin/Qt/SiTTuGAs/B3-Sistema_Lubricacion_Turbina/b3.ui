@@ -46,7 +46,7 @@
    <property name="frameShadow">
     <enum>QFrame::Sunken</enum>
    </property>
-   <widget class="QLabel" name="lb_ESH_Lect_TT_1">
+   <widget class="WLabel" name="lb_ESH_Lect_TT_1">
     <property name="geometry">
      <rect>
       <x>162</x>
@@ -67,13 +67,6 @@
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -84,8 +77,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="QFrame" name="frTitulo_9">
@@ -112,7 +112,7 @@ color: rgb(255, 255, 255);</string>
     <property name="midLineWidth">
      <number>0</number>
     </property>
-    <widget class="QLabel" name="label_41">
+    <widget class="WLabel" name="label_41">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -121,6 +121,12 @@ color: rgb(255, 255, 255);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(128, 128, 128, 0);</string>
+     </property>
+     <property name="text">
+      <string>SELECCIÓN VENT. REFRIG.</string>
+     </property>
      <property name="font">
       <font>
        <pointsize>9</pointsize>
@@ -128,17 +134,11 @@ color: rgb(255, 255, 255);</string>
        <bold>true</bold>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(128, 128, 128, 0);</string>
-     </property>
-     <property name="text">
-      <string>SELECCIÓN VENT. REFRIG.</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
        <x>5</x>
@@ -147,15 +147,12 @@ color: rgb(255, 255, 255);</string>
        <height>17</height>
       </rect>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-     </property>
      <property name="text">
       <string/>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="lb_SVR_2_1">
+   <widget class="WLabel" name="lb_SVR_2_1">
     <property name="geometry">
      <rect>
       <x>15</x>
@@ -176,13 +173,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -193,11 +183,18 @@ color: rgb(226, 226, 31);</string>
     <property name="text">
      <string>VENT. A EN SERVICIO</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_SVR_1_1">
+   <widget class="WLabel" name="lb_SVR_1_1">
     <property name="geometry">
      <rect>
       <x>15</x>
@@ -218,13 +215,6 @@ color: rgb(226, 226, 31);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -235,12 +225,19 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>VENT. B EN ESPERA</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="lb_B3_1">
+  <widget class="WLabel" name="lb_B3_1">
    <property name="geometry">
     <rect>
      <x>45</x>
@@ -248,13 +245,6 @@ color: rgb(255, 255, 255);</string>
      <width>141</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -266,8 +256,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>VALOR SELECCIONADO</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="QFrame" name="frame_8">
@@ -407,7 +404,7 @@ color: rgb(0, 0, 0);</string>
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Esc_3_11">
+   <widget class="WLabel" name="lb_Esc_3_11">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -428,13 +425,6 @@ color: rgb(0, 0, 0);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -444,11 +434,18 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Esc_3_12">
+   <widget class="WLabel" name="lb_Esc_3_12">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -469,13 +466,6 @@ color: rgb(0, 0, 0);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -485,11 +475,18 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>100</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Esc_3_13">
+   <widget class="WLabel" name="lb_Esc_3_13">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -510,13 +507,6 @@ color: rgb(0, 0, 0);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -526,11 +516,18 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>200</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Esc_3_14">
+   <widget class="WLabel" name="lb_Esc_3_14">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -551,13 +548,6 @@ color: rgb(0, 0, 0);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -567,11 +557,18 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>300</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Esc_3_15">
+   <widget class="WLabel" name="lb_Esc_3_15">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -592,13 +589,6 @@ color: rgb(0, 0, 0);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -608,8 +598,15 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>400</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="QProgressBar" name="PGR_1">
@@ -1330,7 +1327,7 @@ color: rgb(230, 230, 230);</string>
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_5_1">
+   <widget class="WLabel" name="lb_VST_Lect_5_1">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -1351,13 +1348,6 @@ color: rgb(230, 230, 230);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1368,11 +1358,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_5_1">
+   <widget class="WLabel" name="lb_VST_Unit_5_1">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -1393,13 +1390,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1410,11 +1400,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_6_1">
+   <widget class="WLabel" name="lb_VST_Lect_6_1">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -1435,13 +1432,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1452,11 +1442,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_6_1">
+   <widget class="WLabel" name="lb_VST_Unit_6_1">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -1477,13 +1474,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1494,11 +1484,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_6_1">
+   <widget class="WLabel" name="lb_VST_6_1">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -1513,13 +1510,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1530,11 +1520,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6142 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_6_2">
+   <widget class="WLabel" name="lb_VST_6_2">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -1549,13 +1546,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1566,11 +1556,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TGBE</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_6_3">
+   <widget class="WLabel" name="lb_VST_Lect_6_3">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -1591,13 +1588,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1608,11 +1598,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_6_3">
+   <widget class="WLabel" name="lb_VST_Unit_6_3">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -1633,13 +1630,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1650,11 +1640,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_7_1">
+   <widget class="WLabel" name="lb_VST_Lect_7_1">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -1675,13 +1672,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1692,11 +1682,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_7_1">
+   <widget class="WLabel" name="lb_VST_Unit_7_1">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -1717,13 +1714,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1734,11 +1724,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_7_1">
+   <widget class="WLabel" name="lb_VST_7_1">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -1753,13 +1750,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1770,11 +1760,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6128 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_7_2">
+   <widget class="WLabel" name="lb_VST_7_2">
     <property name="geometry">
      <rect>
       <x>495</x>
@@ -1789,13 +1786,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1806,11 +1796,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TLUB</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_7_2">
+   <widget class="WLabel" name="lb_VST_Unit_7_2">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -1831,13 +1828,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1848,11 +1838,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_7_2">
+   <widget class="WLabel" name="lb_VST_Lect_7_2">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -1873,13 +1870,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1890,11 +1880,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_7_3">
+   <widget class="WLabel" name="lb_VST_Lect_7_3">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -1915,13 +1912,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1932,11 +1922,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_7_3">
+   <widget class="WLabel" name="lb_VST_Unit_7_3">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -1957,13 +1954,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -1974,11 +1964,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_1_1">
+   <widget class="WLabel" name="lb_VST_Lect_1_1">
     <property name="geometry">
      <rect>
       <x>-5</x>
@@ -1999,13 +1996,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2016,11 +2006,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_1_1">
+   <widget class="WLabel" name="lb_VST_Unit_1_1">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -2041,13 +2038,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2058,11 +2048,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_1_1">
+   <widget class="WLabel" name="lb_VST_1_1">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2077,13 +2074,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2094,11 +2084,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6123 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_1_2">
+   <widget class="WLabel" name="lb_VST_1_2">
     <property name="geometry">
      <rect>
       <x>-5</x>
@@ -2113,13 +2110,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2130,11 +2120,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TAGB</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_1_2">
+   <widget class="WLabel" name="lb_VST_Lect_1_2">
     <property name="geometry">
      <rect>
       <x>-5</x>
@@ -2155,13 +2152,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2172,11 +2162,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_1_2">
+   <widget class="WLabel" name="lb_VST_Unit_1_2">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -2197,13 +2194,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2214,11 +2204,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_1_3">
+   <widget class="WLabel" name="lb_VST_Lect_1_3">
     <property name="geometry">
      <rect>
       <x>-5</x>
@@ -2239,13 +2236,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2256,11 +2246,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_1_3">
+   <widget class="WLabel" name="lb_VST_Unit_1_3">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -2281,13 +2278,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2298,11 +2288,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_2_1">
+   <widget class="WLabel" name="lb_VST_Lect_2_1">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -2323,13 +2320,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2340,11 +2330,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_2_1">
+   <widget class="WLabel" name="lb_VST_Unit_2_1">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -2365,13 +2362,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2382,11 +2372,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_2_1">
+   <widget class="WLabel" name="lb_VST_2_1">
     <property name="geometry">
      <rect>
       <x>85</x>
@@ -2401,13 +2398,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2418,11 +2408,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6124 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_2_2">
+   <widget class="WLabel" name="lb_VST_2_2">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -2437,13 +2434,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2454,11 +2444,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TGBA</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_2_2">
+   <widget class="WLabel" name="lb_VST_Lect_2_2">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -2479,13 +2476,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2496,11 +2486,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_2_2">
+   <widget class="WLabel" name="lb_VST_Unit_2_2">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -2521,13 +2518,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2538,11 +2528,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_2_3">
+   <widget class="WLabel" name="lb_VST_Lect_2_3">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -2563,13 +2560,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2580,11 +2570,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_2_3">
+   <widget class="WLabel" name="lb_VST_Unit_2_3">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -2605,13 +2602,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2622,11 +2612,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_3_1">
+   <widget class="WLabel" name="lb_VST_Lect_3_1">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -2647,13 +2644,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2664,11 +2654,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_3_1">
+   <widget class="WLabel" name="lb_VST_Unit_3_1">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -2689,13 +2686,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2706,11 +2696,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_3_1">
+   <widget class="WLabel" name="lb_VST_3_1">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -2725,13 +2722,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2742,11 +2732,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6125 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_3_2">
+   <widget class="WLabel" name="lb_VST_3_2">
     <property name="geometry">
      <rect>
       <x>165</x>
@@ -2761,13 +2758,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2778,11 +2768,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TGBB</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_3_2">
+   <widget class="WLabel" name="lb_VST_Lect_3_2">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -2803,13 +2800,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2820,11 +2810,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_3_2">
+   <widget class="WLabel" name="lb_VST_Unit_3_2">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -2845,13 +2842,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2862,11 +2852,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_3_3">
+   <widget class="WLabel" name="lb_VST_Lect_3_3">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -2887,13 +2884,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2904,11 +2894,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_3_3">
+   <widget class="WLabel" name="lb_VST_Unit_3_3">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -2929,13 +2926,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2946,11 +2936,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_4_1">
+   <widget class="WLabel" name="lb_VST_Lect_4_1">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -2971,13 +2968,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -2988,11 +2978,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_4_1">
+   <widget class="WLabel" name="lb_VST_Unit_4_1">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -3013,13 +3010,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3030,11 +3020,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_4_1">
+   <widget class="WLabel" name="lb_VST_4_1">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -3049,13 +3046,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3066,11 +3056,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6168 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_4_2">
+   <widget class="WLabel" name="lb_VST_4_2">
     <property name="geometry">
      <rect>
       <x>245</x>
@@ -3085,13 +3082,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3102,11 +3092,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TGBC</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_4_2">
+   <widget class="WLabel" name="lb_VST_Lect_4_2">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -3127,13 +3124,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3144,11 +3134,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_4_2">
+   <widget class="WLabel" name="lb_VST_Unit_4_2">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -3169,13 +3166,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3186,11 +3176,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_4_3">
+   <widget class="WLabel" name="lb_VST_Lect_4_3">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -3211,13 +3208,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3228,11 +3218,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_4_3">
+   <widget class="WLabel" name="lb_VST_Unit_4_3">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -3253,13 +3250,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3270,11 +3260,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_5_1">
+   <widget class="WLabel" name="lb_VST_5_1">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -3289,13 +3286,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3306,11 +3296,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TE-6141 A/B</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_5_2">
+   <widget class="WLabel" name="lb_VST_5_2">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -3325,13 +3322,6 @@ color: rgb(255, 255, 255);</string>
       <height>20</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3342,11 +3332,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>TGBD</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_5_2">
+   <widget class="WLabel" name="lb_VST_Lect_5_2">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -3367,13 +3364,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3384,11 +3374,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_5_2">
+   <widget class="WLabel" name="lb_VST_Unit_5_2">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -3409,13 +3406,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3426,11 +3416,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_5_3">
+   <widget class="WLabel" name="lb_VST_Lect_5_3">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -3451,13 +3448,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3468,11 +3458,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_5_3">
+   <widget class="WLabel" name="lb_VST_Unit_5_3">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -3493,13 +3490,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3510,11 +3500,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Lect_6_2">
+   <widget class="WLabel" name="lb_VST_Lect_6_2">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -3535,13 +3532,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3552,11 +3542,18 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>0</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_VST_Unit_6_2">
+   <widget class="WLabel" name="lb_VST_Unit_6_2">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -3577,13 +3574,6 @@ color: rgb(255, 255, 255);</string>
       <height>18</height>
      </size>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -3594,8 +3584,15 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>ºF</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
   </widget>
@@ -3641,7 +3638,7 @@ color: rgb(255, 255, 255);</string>
     <string>IMP PANT</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbUnit3">
+  <widget class="WLabel" name="lbUnit3">
    <property name="geometry">
     <rect>
      <x>835</x>
@@ -3650,17 +3647,20 @@ color: rgb(255, 255, 255);</string>
      <height>15</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
    <property name="font">
     <font>
      <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(175, 175, 175);</string>
-   </property>
-   <property name="text">
-    <string>    UNIT3</string>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aVal_0">
@@ -3806,7 +3806,7 @@ color: rgb(255, 255, 255);</string>
     <enum>AWMultiObject::Green</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbTanque_0">
+  <widget class="WLabel" name="lbTanque_0">
    <property name="geometry">
     <rect>
      <x>783</x>
@@ -3822,11 +3822,14 @@ color: none;</string>
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="lbTanque_1">
+  <widget class="WLabel" name="lbTanque_1">
    <property name="geometry">
     <rect>
      <x>955</x>
@@ -3842,106 +3845,14 @@ color: none;</string>
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>340</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_der.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>600</x>
-     <y>350</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_der.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>585</y>
-     <width>46</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_izq.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>385</x>
-     <y>308</y>
-     <width>21</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_abajo.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>28</x>
-     <y>350</y>
-     <width>21</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_arriba.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lb_B3_2">
+  <widget class="WLabel" name="lb_B3_2">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -3949,13 +3860,6 @@ color: none;</string>
      <width>141</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -3967,11 +3871,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>RECIPIENTE DE ACEITE</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_3">
+  <widget class="WLabel" name="lb_B3_3">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -3979,13 +3890,6 @@ color: rgb(255, 255, 255);</string>
      <width>201</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -3997,11 +3901,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>DE LUBRICANTE DE LA TURBINA</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_4">
+  <widget class="WLabel" name="lb_B3_4">
    <property name="geometry">
     <rect>
      <x>470</x>
@@ -4009,13 +3920,6 @@ color: rgb(255, 255, 255);</string>
      <width>141</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4027,11 +3931,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>BOMBA VG</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_5">
+  <widget class="WLabel" name="lb_B3_5">
    <property name="geometry">
     <rect>
      <x>490</x>
@@ -4039,13 +3950,6 @@ color: rgb(255, 255, 255);</string>
      <width>141</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4057,11 +3961,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>FILTRO DE ACEITE</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_6">
+  <widget class="WLabel" name="lb_B3_6">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -4069,13 +3980,6 @@ color: rgb(255, 255, 255);</string>
      <width>141</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4087,11 +3991,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>SUCCIÓN DE BOMBA</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_7">
+  <widget class="WLabel" name="lb_B3_7">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -4099,14 +4010,6 @@ color: rgb(255, 255, 255);</string>
      <width>241</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Verdana</family>
-     <pointsize>7</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4118,30 +4021,19 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>VER HORAS DE OPER. EN PANTALLA B1</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>7</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>320</y>
-     <width>21</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>:/Resources/PNG/B1/flecha_blanca_arriba.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="WLabel" name="label_7">
    <property name="geometry">
     <rect>
      <x>486</x>
@@ -4156,7 +4048,10 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B1/flecha_blanca_abajo.png</pixmap>
    </property>
   </widget>
@@ -4579,7 +4474,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_8">
+  <widget class="WLabel" name="lb_B3_8">
    <property name="geometry">
     <rect>
      <x>805</x>
@@ -4587,13 +4482,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4605,11 +4493,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>INTERCAMBIADOR DE CALOR</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_9">
+  <widget class="WLabel" name="lb_B3_9">
    <property name="geometry">
     <rect>
      <x>805</x>
@@ -4617,13 +4512,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4635,11 +4523,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>DEL AIRE/AIRE</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_10">
+  <widget class="WLabel" name="lb_B3_10">
    <property name="geometry">
     <rect>
      <x>725</x>
@@ -4647,13 +4542,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4665,11 +4553,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PRE-SEPARACIÓN</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_11">
+  <widget class="WLabel" name="lb_B3_11">
    <property name="geometry">
     <rect>
      <x>725</x>
@@ -4677,13 +4572,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4695,11 +4583,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>AIRE/ACEITE</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_12">
+  <widget class="WLabel" name="lb_B3_12">
    <property name="geometry">
     <rect>
      <x>872</x>
@@ -4707,13 +4602,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4725,11 +4613,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>SEPARADOR DEL </string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_13">
+  <widget class="WLabel" name="lb_B3_13">
    <property name="geometry">
     <rect>
      <x>880</x>
@@ -4737,13 +4632,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4755,11 +4643,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>AIRE/ACEITE</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lb_B3_14">
+  <widget class="WLabel" name="lb_B3_14">
    <property name="geometry">
     <rect>
      <x>792</x>
@@ -4767,13 +4662,6 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4785,11 +4673,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>VALV AIRE ENFRIA</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbU_0">
+  <widget class="WLabel" name="lbU_0">
    <property name="geometry">
     <rect>
      <x>164</x>
@@ -4798,13 +4693,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -4815,11 +4703,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbU_1">
+  <widget class="WLabel" name="lbU_1">
    <property name="geometry">
     <rect>
      <x>245</x>
@@ -4828,13 +4723,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -4845,11 +4733,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbU_2">
+  <widget class="WLabel" name="lbU_2">
    <property name="geometry">
     <rect>
      <x>592</x>
@@ -4858,13 +4753,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -4875,11 +4763,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbU_3">
+  <widget class="WLabel" name="lbU_3">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -4888,13 +4783,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -4905,11 +4793,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>PSIG</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_0">
+  <widget class="WLabel" name="lbVal_0">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -4917,13 +4812,6 @@ color: rgb(255, 255, 255);</string>
      <width>31</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4935,11 +4823,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>70</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_1">
+  <widget class="WLabel" name="lbVal_1">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -4947,13 +4842,6 @@ color: rgb(255, 255, 255);</string>
      <width>31</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -4965,11 +4853,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>71</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbUni_0">
+  <widget class="WLabel" name="lbUni_0">
    <property name="geometry">
     <rect>
      <x>57</x>
@@ -4978,13 +4873,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -4995,11 +4883,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>ºF</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbUni_1">
+  <widget class="WLabel" name="lbUni_1">
    <property name="geometry">
     <rect>
      <x>55</x>
@@ -5008,13 +4903,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -5025,11 +4913,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>ºF</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_2">
+  <widget class="WLabel" name="lbVal_2">
    <property name="geometry">
     <rect>
      <x>192</x>
@@ -5038,13 +4933,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -5055,11 +4943,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>00</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_3">
+  <widget class="WLabel" name="lbVal_3">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -5068,13 +4963,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -5085,11 +4973,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>00</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_4">
+  <widget class="WLabel" name="lbVal_4">
    <property name="geometry">
     <rect>
      <x>273</x>
@@ -5098,13 +4993,6 @@ color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
@@ -5115,11 +5003,18 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>00</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVal_5">
+  <widget class="WLabel" name="lbVal_5">
    <property name="geometry">
     <rect>
      <x>620</x>
@@ -5127,13 +5022,6 @@ color: rgb(255, 255, 255);</string>
      <width>31</width>
      <height>20</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -5145,8 +5033,15 @@ color: rgb(255, 255, 255);</string>
    <property name="text">
     <string>0.3</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_18">
@@ -5224,7 +5119,7 @@ QProgressBar::chunk {
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="WLabel" name="label_8">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -5239,11 +5134,14 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="WLabel" name="label_9">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -5258,11 +5156,14 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="WLabel" name="label_10">
    <property name="geometry">
     <rect>
      <x>523</x>
@@ -5277,45 +5178,10 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>647</x>
-     <y>535</y>
-     <width>31</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>647</x>
-     <y>625</y>
-     <width>31</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
+   <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
@@ -5337,18 +5203,12 @@ QProgressBar::chunk {
   <zorder>aINTER_0</zorder>
   <zorder>lbTanque_0</zorder>
   <zorder>lbTanque_1</zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
   <zorder>lb_B3_2</zorder>
   <zorder>lb_B3_3</zorder>
   <zorder>lb_B3_4</zorder>
   <zorder>lb_B3_5</zorder>
   <zorder>lb_B3_6</zorder>
   <zorder>lb_B3_7</zorder>
-  <zorder>label_6</zorder>
   <zorder>label_7</zorder>
   <zorder>aWMultiObject</zorder>
   <zorder>aIndicador_0</zorder>
@@ -5394,8 +5254,6 @@ QProgressBar::chunk {
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
   <zorder>label_10</zorder>
-  <zorder>label_11</zorder>
-  <zorder>label_12</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -5412,6 +5270,11 @@ QProgressBar::chunk {
    <class>AWAnalogicLevel</class>
    <extends>QWidget</extends>
    <header>awanalogiclevel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
   </customwidget>
  </customwidgets>
  <resources>

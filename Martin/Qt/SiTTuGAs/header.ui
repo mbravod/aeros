@@ -115,7 +115,7 @@
      <string>MODO MOTOR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbReg">
+   <widget class="WLabel" name="lbReg">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -136,6 +136,12 @@
       <height>16</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
     <property name="font">
      <font>
       <family>Arial</family>
@@ -144,14 +150,11 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbReg_2">
+   <widget class="WLabel" name="lbReg_2">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -172,6 +175,12 @@
       <height>16</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
     <property name="font">
      <font>
       <family>Arial</family>
@@ -180,11 +189,8 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lbVelNSDT">
@@ -259,7 +265,7 @@
      <string>VELOCIDAD N25</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbVelN25">
+   <widget class="WLabel" name="lbVelN25">
     <property name="geometry">
      <rect>
       <x>555</x>
@@ -267,6 +273,12 @@
       <width>40</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>0000</string>
     </property>
     <property name="font">
      <font>
@@ -276,14 +288,8 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>0000</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lbVelN25U">
@@ -313,7 +319,7 @@
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="lbVelNSD">
+   <widget class="WLabel" name="lbVelNSD">
     <property name="geometry">
      <rect>
       <x>555</x>
@@ -321,6 +327,12 @@
       <width>40</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>0000</string>
     </property>
     <property name="font">
      <font>
@@ -330,14 +342,8 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>0000</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lbVelNSDU">
@@ -418,7 +424,7 @@
      <string>POTENCIA DE LA UNIDAD</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbPotUnit">
+   <widget class="WLabel" name="lbPotUnit">
     <property name="geometry">
      <rect>
       <x>895</x>
@@ -426,6 +432,12 @@
       <width>40</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>0000</string>
     </property>
     <property name="font">
      <font>
@@ -435,14 +447,8 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>0000</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lbModoQT">
@@ -469,7 +475,7 @@
      <string>MODO QUEMADOR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbModo">
+   <widget class="WLabel" name="lbModo">
     <property name="geometry">
      <rect>
       <x>850</x>
@@ -477,6 +483,12 @@
       <width>115</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
     <property name="font">
      <font>
@@ -486,15 +498,19 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

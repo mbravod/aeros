@@ -120,7 +120,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="lbPermLav">
+  <widget class="WLabel" name="lbPermLav">
    <property name="geometry">
     <rect>
      <x>127</x>
@@ -129,6 +129,13 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>NO PREP</string>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -136,13 +143,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>NO PREP</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btPermLav">
@@ -236,7 +236,7 @@ FUERA DE LINEA</string>
     <string>DESHABILITAR</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbDeLinea">
+  <widget class="WLabel" name="lbDeLinea">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -245,12 +245,6 @@ FUERA DE LINEA</string>
      <height>25</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 0, 0);</string>
@@ -258,11 +252,17 @@ color: rgb(255, 0, 0);</string>
    <property name="text">
     <string>DESHABILIRTADO</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbEnLinea">
+  <widget class="WLabel" name="lbEnLinea">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -271,13 +271,6 @@ color: rgb(255, 0, 0);</string>
      <height>25</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Verdana</family>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 0, 0);</string>
@@ -285,8 +278,15 @@ color: rgb(255, 0, 0);</string>
    <property name="text">
     <string>DESHABILIRTADO</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="btEnLineaHab">
@@ -437,6 +437,13 @@ p, li { white-space: pre-wrap; }
   <zorder>btEnLineaDes</zorder>
   <zorder>frame_2</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'westatorv.ui'
 **
-** Created: Sun 13. Oct 12:37:48 2013
+** Created: Sun 13. Oct 17:33:58 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,25 +18,26 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
 class Ui_WEstatorV
 {
 public:
-    QLabel *lbVsvdmd;
-    QLabel *lbVsvOhms;
-    QLabel *lbVsvMa;
+    WLabel *lbVsvdmd;
+    WLabel *lbVsvOhms;
+    WLabel *lbVsvMa;
     QLabel *lbVsvMaT;
     QLabel *lbVsvdmdU;
-    QLabel *lbVsva;
+    WLabel *lbVsva;
     QLabel *lbVsvbU;
-    QLabel *lbVsvb;
+    WLabel *lbVsvb;
     QLabel *lbVsvMaU;
     QLabel *lbVsvaU;
     QLabel *lbVsvOhmsT;
     QLabel *lbVsvselT;
-    QLabel *lbVsvsel;
+    WLabel *lbVsvsel;
     QLabel *lbVsvbT;
     QLabel *lbVsvOhmsU;
     QLabel *lbVsvselU;
@@ -53,7 +54,7 @@ public:
         WEstatorV->setMinimumSize(QSize(175, 150));
         WEstatorV->setMaximumSize(QSize(175, 150));
         WEstatorV->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbVsvdmd = new QLabel(WEstatorV);
+        lbVsvdmd = new WLabel(WEstatorV);
         lbVsvdmd->setObjectName(QString::fromUtf8("lbVsvdmd"));
         lbVsvdmd->setGeometry(QRect(72, 36, 46, 13));
         QFont font;
@@ -61,17 +62,17 @@ public:
         font.setBold(true);
         font.setWeight(75);
         lbVsvdmd->setFont(font);
-        lbVsvdmd->setAlignment(Qt::AlignCenter);
-        lbVsvOhms = new QLabel(WEstatorV);
+        lbVsvdmd->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbVsvOhms = new WLabel(WEstatorV);
         lbVsvOhms->setObjectName(QString::fromUtf8("lbVsvOhms"));
         lbVsvOhms->setGeometry(QRect(72, 126, 46, 13));
         lbVsvOhms->setFont(font);
-        lbVsvOhms->setAlignment(Qt::AlignCenter);
-        lbVsvMa = new QLabel(WEstatorV);
+        lbVsvOhms->setProperty("Alineacion", QVariant(WLabel::Centro));
+        lbVsvMa = new WLabel(WEstatorV);
         lbVsvMa->setObjectName(QString::fromUtf8("lbVsvMa"));
         lbVsvMa->setGeometry(QRect(72, 110, 46, 13));
         lbVsvMa->setFont(font);
-        lbVsvMa->setAlignment(Qt::AlignCenter);
+        lbVsvMa->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVsvMaT = new QLabel(WEstatorV);
         lbVsvMaT->setObjectName(QString::fromUtf8("lbVsvMaT"));
         lbVsvMaT->setGeometry(QRect(20, 110, 46, 13));
@@ -81,20 +82,20 @@ public:
         lbVsvdmdU->setObjectName(QString::fromUtf8("lbVsvdmdU"));
         lbVsvdmdU->setGeometry(QRect(127, 36, 21, 16));
         lbVsvdmdU->setFont(font);
-        lbVsva = new QLabel(WEstatorV);
+        lbVsva = new WLabel(WEstatorV);
         lbVsva->setObjectName(QString::fromUtf8("lbVsva"));
         lbVsva->setGeometry(QRect(72, 70, 46, 13));
         lbVsva->setFont(font);
-        lbVsva->setAlignment(Qt::AlignCenter);
+        lbVsva->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVsvbU = new QLabel(WEstatorV);
         lbVsvbU->setObjectName(QString::fromUtf8("lbVsvbU"));
         lbVsvbU->setGeometry(QRect(127, 86, 21, 16));
         lbVsvbU->setFont(font);
-        lbVsvb = new QLabel(WEstatorV);
+        lbVsvb = new WLabel(WEstatorV);
         lbVsvb->setObjectName(QString::fromUtf8("lbVsvb"));
         lbVsvb->setGeometry(QRect(72, 86, 46, 13));
         lbVsvb->setFont(font);
-        lbVsvb->setAlignment(Qt::AlignCenter);
+        lbVsvb->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVsvMaU = new QLabel(WEstatorV);
         lbVsvMaU->setObjectName(QString::fromUtf8("lbVsvMaU"));
         lbVsvMaU->setGeometry(QRect(127, 110, 41, 16));
@@ -113,11 +114,11 @@ public:
         lbVsvselT->setGeometry(QRect(20, 54, 46, 13));
         lbVsvselT->setFont(font);
         lbVsvselT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        lbVsvsel = new QLabel(WEstatorV);
+        lbVsvsel = new WLabel(WEstatorV);
         lbVsvsel->setObjectName(QString::fromUtf8("lbVsvsel"));
         lbVsvsel->setGeometry(QRect(72, 54, 46, 13));
         lbVsvsel->setFont(font);
-        lbVsvsel->setAlignment(Qt::AlignCenter);
+        lbVsvsel->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVsvbT = new QLabel(WEstatorV);
         lbVsvbT->setObjectName(QString::fromUtf8("lbVsvbT"));
         lbVsvbT->setGeometry(QRect(20, 86, 46, 13));

@@ -799,7 +799,10 @@ QProgressBar::chunk {
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../Resources/PNG/B14.png</pixmap>
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B14.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aBomba_1">
@@ -1530,7 +1533,7 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(212, 255, 200);</string>
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
    </property>
    <property name="text">
     <string>LAVADO CON AGUA</string>
@@ -2040,6 +2043,8 @@ color: rgb(255, 255, 255);</string>
    <header>awmultiobject.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

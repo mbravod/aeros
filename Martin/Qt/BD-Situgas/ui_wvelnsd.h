@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvelnsd.ui'
 **
-** Created: Sun 13. Oct 12:37:47 2013
+** Created: Sun 13. Oct 18:17:03 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,6 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -26,10 +27,10 @@ class Ui_WVelNSD
 public:
     QLabel *lbNSDT_1;
     QLabel *lbNSDT_2;
-    QLabel *lbNSD_1;
+    WLabel *lbNSD_1;
     QLabel *lbNSDU_1;
     QLabel *lbNSDU_2;
-    QLabel *lbNSD_2;
+    WLabel *lbNSD_2;
     QLabel *lbFondo;
     QPushButton *btCerrar;
 
@@ -56,11 +57,11 @@ public:
         lbNSDT_2->setGeometry(QRect(38, 45, 51, 20));
         lbNSDT_2->setFont(font);
         lbNSDT_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbNSD_1 = new QLabel(WVelNSD);
+        lbNSD_1 = new WLabel(WVelNSD);
         lbNSD_1->setObjectName(QString::fromUtf8("lbNSD_1"));
         lbNSD_1->setGeometry(QRect(98, 30, 31, 20));
         lbNSD_1->setFont(font);
-        lbNSD_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbNSD_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbNSDU_1 = new QLabel(WVelNSD);
         lbNSDU_1->setObjectName(QString::fromUtf8("lbNSDU_1"));
         lbNSDU_1->setGeometry(QRect(135, 30, 31, 20));
@@ -71,11 +72,11 @@ public:
         lbNSDU_2->setGeometry(QRect(135, 45, 31, 20));
         lbNSDU_2->setFont(font);
         lbNSDU_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
-        lbNSD_2 = new QLabel(WVelNSD);
+        lbNSD_2 = new WLabel(WVelNSD);
         lbNSD_2->setObjectName(QString::fromUtf8("lbNSD_2"));
         lbNSD_2->setGeometry(QRect(98, 45, 31, 20));
         lbNSD_2->setFont(font);
-        lbNSD_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbNSD_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WVelNSD);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));

@@ -51,7 +51,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbvsel">
+  <widget class="WLabel" name="lbVbvsel">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -60,6 +60,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -67,11 +70,11 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbVbvaU">
@@ -94,7 +97,7 @@
     <string>%</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbvB">
+  <widget class="WLabel" name="lbVbvB">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -103,6 +106,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -110,14 +116,14 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbvMa">
+  <widget class="WLabel" name="lbVbvMa">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -126,6 +132,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -133,11 +142,11 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbVbvdmdU">
@@ -160,7 +169,7 @@
     <string>%</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbvOhms">
+  <widget class="WLabel" name="lbVbvOhms">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -169,6 +178,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -176,11 +188,11 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbVbvBU">
@@ -335,7 +347,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbvdmd">
+  <widget class="WLabel" name="lbVbvdmd">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -344,6 +356,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -351,11 +366,11 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbVbvaT">
@@ -381,7 +396,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVbva">
+  <widget class="WLabel" name="lbVbva">
    <property name="geometry">
     <rect>
      <x>72</x>
@@ -390,6 +405,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -397,11 +415,11 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string/>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
    </property>
   </widget>
   <widget class="QLabel" name="lbVbvMaU">
@@ -484,6 +502,13 @@
   <zorder>lbVbvMaU</zorder>
   <zorder>btCerrar</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

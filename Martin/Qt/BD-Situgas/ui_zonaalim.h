@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'zonaalim.ui'
 **
-** Created: Sat 12. Oct 21:52:32 2013
+** Created: Sun 13. Oct 17:35:04 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

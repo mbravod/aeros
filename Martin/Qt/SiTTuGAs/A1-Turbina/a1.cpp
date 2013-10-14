@@ -334,6 +334,8 @@ void A1::sltWVIGB(){
         eWVIGB->setGeometry(293,2,175,150);
         eWVIGB->show();
         ctrVen[wvigb] = true;
+        connect(eWVIGB,SIGNAL(clicked(int)),this,SLOT(sltWVIGB_Select(int)));
+
     }
 }
 
@@ -378,6 +380,9 @@ void A1::sltWTempCompA2(){
         eWTempCompA2->setGeometry(293,2,175,150);
         eWTempCompA2->show();
         ctrVen[wtempcompa2] = true;
+        connect(eWTempCompA2,SIGNAL(clicked(int)),this,SLOT(sltWTempCompA2_Select(int)));
+
+
     }
 }
 
@@ -387,6 +392,8 @@ void A1::sltWTempCompB(){
         eWTempCompB->setGeometry(293,2,175,150);
         eWTempCompB->show();
         ctrVen[wtempcompb] = true;
+        connect(eWTempCompB,SIGNAL(clicked(int)),this,SLOT(sltWTempCompB_Select(int)));
+
     }
 }
 
@@ -396,6 +403,8 @@ void A1::sltWTempCompA1(){
         eWTempCompA1->setGeometry(293,2,175,150);
         eWTempCompA1->show();
         ctrVen[wtempcompa1] = true;
+        connect(eWTempCompA1,SIGNAL(clicked(int)),this,SLOT(sltWTempCompA1_Select(int)));
+
     }
 }
 
@@ -406,6 +415,8 @@ void A1::sltWTempADM(){
         eWTempADM->setGeometry(293,2,175,150);
         eWTempADM->show();
         ctrVen[wtempadm] = true;
+        connect(eWTempADM,SIGNAL(clicked(int)),this,SLOT(sltWTempADM_Select(int)));
+
     }
 }
 
@@ -416,6 +427,8 @@ void A1::sltWSTG8BLD(){
         eWSTG8BLD->setGeometry(293,2,175,150);
         eWSTG8BLD->show();
         ctrVen[wstg8bld] = true;
+        connect(eWSTG8BLD,SIGNAL(clicked(int)),this,SLOT(sltWSTG8BLD_Select(int)));
+
     }
 }
 
@@ -426,6 +439,8 @@ void A1::sltWRotorTurb(){
         eWRotorTurb->setGeometry(293,2,175,150);
         eWRotorTurb->show();
         ctrVen[wstg8bld] = true;
+        connect(eWRotorTurb,SIGNAL(clicked(int)),this,SLOT(sltWRotorTurb_Select(int)));
+
     }
 }
 
@@ -435,6 +450,8 @@ void A1::sltWPurgaV(){
         eWPurgaV->setGeometry(293,2,175,150);
         eWPurgaV->show();
         ctrVen[wpurgav] = true;
+        connect(eWPurgaV,SIGNAL(clicked(int)),this,SLOT(sltWPurgaV_Select(int)));
+
     }
 }
 
@@ -445,6 +462,8 @@ void A1::sltWPresDescC(){
         eWPresDescC->setGeometry(293,2,175,150);
         eWPresDescC->show();
         ctrVen[wpresdescc] = true;
+        connect(eWPresDescC,SIGNAL(clicked(int)),this,SLOT(sltWPresDescC_Select(int)));
+
     }
 }
 
@@ -455,6 +474,8 @@ void A1::sltWPresCompB(){
         eWPresCompB->setGeometry(293,2,175,150);
         eWPresCompB->show();
         ctrVen[wprescompb] = true;
+        connect(eWPresCompB,SIGNAL(clicked(int)),this,SLOT(sltWPresCompB_Select(int)));
+
     }
 
 }
@@ -466,6 +487,8 @@ void A1::sltWPresBalance(){
         eWPresBalance->setGeometry(293,2,175,150);
         eWPresBalance->show();
         ctrVen[wpresbalance] = true;
+        connect(eWPresBalance,SIGNAL(clicked(int)),this,SLOT(sltWPresBalance_Select(int)));
+
     }
 }
 
@@ -476,6 +499,8 @@ void A1::sltWNivel2(){
         eWNivel2->setGeometry(293,2,175,150);
         eWNivel2->show();
         ctrVen[wnivel2] = true;
+        connect(eWNivel2,SIGNAL(clicked(int)),this,SLOT(sltWNivel2_Select(int)));
+
     }
 }
 
@@ -485,6 +510,8 @@ void A1::sltWEstatorV(){
         eWEstatorV->setGeometry(293,2,175,150);
         eWEstatorV->show();
         ctrVen[westatorv] = true;
+        connect(eWEstatorV,SIGNAL(clicked(int)),this,SLOT(sltWEstatorV_Select(int)));
+
     }
 }
 
@@ -494,6 +521,8 @@ void A1::sltWDiarioDatos(){
         eWDiarioDatos->setGeometry(293,2,175,150);
         eWDiarioDatos->show();
         ctrVen[wdiariodatos] = true;
+        connect(eWDiarioDatos,SIGNAL(clicked(int)),this,SLOT(sltWDiarioDatos_Select(int)));
+
     }
 }
 
@@ -504,6 +533,8 @@ void A1::sltWCtrlLavAgua(){
         eWCtrlLavAgua->setGeometry(293,2,175,150);
         eWCtrlLavAgua->show();
         ctrVen[wctrllavagua] = true;
+        connect(eWCtrlLavAgua,SIGNAL(clicked(int)),this,SLOT(sltWCtrlLavAgua_Select(int)));
+
     }
 }
 
@@ -514,6 +545,8 @@ void A1::sltWCtrlCarga(){
         eWCtrlCarga->setGeometry(293,2,175,150);
         eWCtrlCarga->show();
         ctrVen[wctrlcarga] = true;
+        connect(eWCtrlCarga,SIGNAL(clicked(int)),this,SLOT(sltWCtrlCarga_Select(int)));
+
     }
 }
 
@@ -523,6 +556,8 @@ void A1::sltWCtrlArranque(){
         eWCtrlArranque->setGeometry(293,2,175,150);
         eWCtrlArranque->show();
         ctrVen[wctrlarranque] = true;
+        connect(eWCtrlArranque,SIGNAL(clicked(int)),this,SLOT(sltWCtrlArranque_Select(int)));
+
     }
 }
 
@@ -532,6 +567,8 @@ void A1::sltWCtrlApagado(){
         eWCtrlApagado->setGeometry(293,2,175,150);
         eWCtrlApagado->show();
         ctrVen[wctrlapagado] = true;
+        connect(eWCtrlApagado,SIGNAL(clicked(int)),this,SLOT(sltWCtrlApagado_Select(int)));
+
     }
 }
 
@@ -541,6 +578,8 @@ void A1::sltWCrakCtrl(){
         eWCrakCtrl->setGeometry(293,2,175,150);
         eWCrakCtrl->show();
         ctrVen[wcrakctrl] = true;
+        connect(eWCrakCtrl,SIGNAL(clicked(int)),this,SLOT(sltWCrakCtrl_Select(int)));
+
     }
 }
 
@@ -550,6 +589,8 @@ void A1::sltWCDPBLD(){
         eWCDPBLD->setGeometry(293,2,175,150);
         eWCDPBLD->show();
         ctrVen[wcdpbld] = true;
+        connect(eWCDPBLD,SIGNAL(clicked(int)),this,SLOT(sltWCDPBLD_Select(int)));
+
     }
 }
 
@@ -560,6 +601,8 @@ void A1::sltWBalanceI(){
         eWBalanceI->setGeometry(293,2,175,150);
         eWBalanceI->show();
         ctrVen[wbalancei] = true;
+        connect(eWBalanceI,SIGNAL(clicked(int)),this,SLOT(sltWBalanceI_Select(int)));
+
     }
 }
 
@@ -569,6 +612,8 @@ void A1::sltWApagEmer(){
         eWApagEmer->setGeometry(293,2,175,150);
         eWApagEmer->show();
         ctrVen[wapagemer] = true;
+        connect(eWApagEmer,SIGNAL(clicked(int)),this,SLOT(sltWApagEmer_Select(int)));
+
     }
 }void A1::sltIrA3()
 {

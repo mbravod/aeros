@@ -52,7 +52,7 @@
     <string>PT6804</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbDESC_1">
+  <widget class="WLabel" name="lbDESC_1">
    <property name="geometry">
     <rect>
      <x>94</x>
@@ -124,7 +124,7 @@
     <string>PSIA</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbDESC_2">
+  <widget class="WLabel" name="lbDESC_2">
    <property name="geometry">
     <rect>
      <x>94</x>

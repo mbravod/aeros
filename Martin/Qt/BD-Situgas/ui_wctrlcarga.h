@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlcarga.ui'
 **
-** Created: Sat 12. Oct 21:52:05 2013
+** Created: Sun 13. Oct 17:34:01 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -30,19 +30,19 @@ public:
     QLabel *lbCtrlCargaHwT;
     QPushButton *btCerrar;
     QPushButton *btHabilitado;
-    QLabel *lbHabilitado;
+    WLabel *lbHabilitado;
     QLabel *lbDemandaT;
     QLabel *lbConfT;
     QPushButton *btConfir;
-    QLabel *lbRemLoc;
+    WLabel *lbRemLoc;
     QLabel *lbRealT;
     QLabel *lbRemLocT;
     QFrame *frame_2;
-    QLabel *lbIP;
-    QLineEdit *leReal;
-    QLineEdit *leConf;
-    QLineEdit *leDemanda;
-    QLabel *lbFondo;
+    WLabel *lbIP;
+    WLabel *leReal;
+    WLabel *leConf;
+    WLabel *leDemanda;
+    WLabel *lbFondo;
 
     void setupUi(QWidget *WCtrlCarga)
     {
@@ -90,13 +90,11 @@ public:
         btHabilitado->setAutoDefault(false);
         btHabilitado->setDefault(false);
         btHabilitado->setFlat(false);
-        lbHabilitado = new QLabel(WCtrlCarga);
+        lbHabilitado = new WLabel(WCtrlCarga);
         lbHabilitado->setObjectName(QString::fromUtf8("lbHabilitado"));
         lbHabilitado->setGeometry(QRect(38, 95, 124, 22));
         lbHabilitado->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 0, 0);"));
-        lbHabilitado->setFrameShape(QFrame::NoFrame);
-        lbHabilitado->setAlignment(Qt::AlignCenter);
         lbDemandaT = new QLabel(WCtrlCarga);
         lbDemandaT->setObjectName(QString::fromUtf8("lbDemandaT"));
         lbDemandaT->setGeometry(QRect(10, 127, 91, 20));
@@ -112,11 +110,11 @@ public:
         btConfir->setGeometry(QRect(66, 182, 80, 32));
         btConfir->setFont(font);
         btConfir->setStyleSheet(QString::fromUtf8("background-color: rgb(152, 152, 152);"));
-        lbRemLoc = new QLabel(WCtrlCarga);
+        lbRemLoc = new WLabel(WCtrlCarga);
         lbRemLoc->setObjectName(QString::fromUtf8("lbRemLoc"));
         lbRemLoc->setGeometry(QRect(106, 257, 74, 22));
         lbRemLoc->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);"));
-        lbRemLoc->setAlignment(Qt::AlignCenter);
+        lbRemLoc->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbRealT = new QLabel(WCtrlCarga);
         lbRealT->setObjectName(QString::fromUtf8("lbRealT"));
         lbRealT->setGeometry(QRect(11, 227, 91, 20));
@@ -134,29 +132,29 @@ public:
         frame_2->setFrameShape(QFrame::Panel);
         frame_2->setFrameShadow(QFrame::Raised);
         frame_2->setLineWidth(0);
-        lbIP = new QLabel(frame_2);
+        lbIP = new WLabel(frame_2);
         lbIP->setObjectName(QString::fromUtf8("lbIP"));
         lbIP->setGeometry(QRect(3, 0, 55, 16));
+        lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
         QFont font2;
         font2.setPointSize(5);
         lbIP->setFont(font2);
-        lbIP->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);"));
-        leReal = new QLineEdit(WCtrlCarga);
+        leReal = new WLabel(WCtrlCarga);
         leReal->setObjectName(QString::fromUtf8("leReal"));
         leReal->setGeometry(QRect(107, 227, 74, 22));
         leReal->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);"));
-        leConf = new QLineEdit(WCtrlCarga);
+        leConf = new WLabel(WCtrlCarga);
         leConf->setObjectName(QString::fromUtf8("leConf"));
         leConf->setGeometry(QRect(107, 157, 74, 22));
         leConf->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);"));
-        leDemanda = new QLineEdit(WCtrlCarga);
+        leDemanda = new WLabel(WCtrlCarga);
         leDemanda->setObjectName(QString::fromUtf8("leDemanda"));
         leDemanda->setGeometry(QRect(107, 127, 74, 22));
         leDemanda->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 255);\n"
 "color: rgb(0, 0, 0);"));
-        lbFondo = new QLabel(WCtrlCarga);
+        lbFondo = new WLabel(WCtrlCarga);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 200, 330));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
@@ -201,6 +199,9 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_MW.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        leReal->setText(QString());
+        leConf->setText(QString());
+        leDemanda->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi
 
