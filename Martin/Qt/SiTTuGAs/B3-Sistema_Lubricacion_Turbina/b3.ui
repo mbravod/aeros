@@ -25,9 +25,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(154, 154, 154);</string>
-  </property>
   <widget class="QFrame" name="Refrigeracin">
    <property name="geometry">
     <rect>
@@ -38,7 +35,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -71,8 +68,7 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string/>
@@ -87,6 +83,9 @@ color: rgb(255, 255, 255);</string>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
     </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
+    </property>
    </widget>
    <widget class="QFrame" name="frTitulo_9">
     <property name="geometry">
@@ -98,7 +97,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(192, 192, 192);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::WinPanel</enum>
@@ -122,7 +121,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(128, 128, 128, 0);</string>
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>SELECCIÓN VENT. REFRIG.</string>
@@ -137,6 +136,9 @@ color: rgb(255, 255, 255);</string>
      <property name="Fondo_Inicial" stdset="0">
       <enum>WLabel::Sin_color</enum>
      </property>
+     <property name="Texto_A" stdset="0">
+      <enum>WLabel::a_SinColor</enum>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
@@ -146,6 +148,9 @@ color: rgb(255, 255, 255);</string>
        <width>16</width>
        <height>17</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string/>
@@ -177,8 +182,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(226, 226, 31);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>VENT. A EN SERVICIO</string>
@@ -192,6 +196,9 @@ color: rgb(226, 226, 31);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SVR_1_1">
@@ -219,8 +226,7 @@ color: rgb(226, 226, 31);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>VENT. B EN ESPERA</string>
@@ -234,6 +240,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
   </widget>
@@ -250,8 +259,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>VALOR SELECCIONADO</string>
@@ -266,6 +274,9 @@ color: rgb(255, 255, 255);</string>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
    </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
+   </property>
   </widget>
   <widget class="QFrame" name="frame_8">
    <property name="geometry">
@@ -277,8 +288,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-color: rgb(221, 221, 221);
-background-color: none;</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -299,8 +309,7 @@ background-color: none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -322,8 +331,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -345,8 +353,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -368,8 +375,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -391,8 +397,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -444,6 +449,9 @@ color: rgb(0, 0, 0);</string>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
     </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
+    </property>
    </widget>
    <widget class="WLabel" name="lb_Esc_3_12">
     <property name="geometry">
@@ -484,6 +492,9 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_Esc_3_13">
@@ -526,6 +537,9 @@ color: rgb(0, 0, 0);</string>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
     </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
+    </property>
    </widget>
    <widget class="WLabel" name="lb_Esc_3_14">
     <property name="geometry">
@@ -567,6 +581,9 @@ color: rgb(0, 0, 0);</string>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
     </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
+    </property>
    </widget>
    <widget class="WLabel" name="lb_Esc_3_15">
     <property name="geometry">
@@ -607,6 +624,9 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="QProgressBar" name="PGR_1">
@@ -1292,8 +1312,7 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-color: rgb(221, 221, 221);
-background-color: none;</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -1314,8 +1333,7 @@ background-color: none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(230, 230, 230);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -1352,8 +1370,7 @@ color: rgb(230, 230, 230);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1367,6 +1384,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_5_1">
@@ -1394,8 +1414,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1409,6 +1428,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_6_1">
@@ -1436,8 +1458,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1451,6 +1472,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_6_1">
@@ -1478,8 +1502,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1493,6 +1516,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_6_1">
@@ -1514,8 +1540,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6142 A/B</string>
@@ -1529,6 +1554,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_6_2">
@@ -1550,8 +1578,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TGBE</string>
@@ -1565,6 +1592,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_6_3">
@@ -1592,8 +1622,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1607,6 +1636,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_6_3">
@@ -1634,8 +1666,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1649,6 +1680,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_7_1">
@@ -1676,8 +1710,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1691,6 +1724,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_7_1">
@@ -1718,8 +1754,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1733,6 +1768,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_7_1">
@@ -1754,8 +1792,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6128 A/B</string>
@@ -1769,6 +1806,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_7_2">
@@ -1790,8 +1830,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TLUB</string>
@@ -1805,6 +1844,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_7_2">
@@ -1832,8 +1874,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1847,6 +1888,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_7_2">
@@ -1874,8 +1918,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1889,6 +1932,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_7_3">
@@ -1916,8 +1962,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1931,6 +1976,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_7_3">
@@ -1958,8 +2006,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -1973,6 +2020,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_1_1">
@@ -2000,8 +2050,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2015,6 +2064,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_1_1">
@@ -2042,8 +2094,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2057,6 +2108,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_1_1">
@@ -2078,8 +2132,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6123 A/B</string>
@@ -2093,6 +2146,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_1_2">
@@ -2114,8 +2170,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TAGB</string>
@@ -2129,6 +2184,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_1_2">
@@ -2156,8 +2214,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2171,6 +2228,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_1_2">
@@ -2198,8 +2258,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2213,6 +2272,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_1_3">
@@ -2240,8 +2302,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2255,6 +2316,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_1_3">
@@ -2282,8 +2346,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2297,6 +2360,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_2_1">
@@ -2324,8 +2390,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2339,6 +2404,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_2_1">
@@ -2366,8 +2434,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2381,6 +2448,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_2_1">
@@ -2402,8 +2472,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6124 A/B</string>
@@ -2417,6 +2486,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_2_2">
@@ -2438,8 +2510,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TGBA</string>
@@ -2453,6 +2524,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_2_2">
@@ -2480,8 +2554,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2495,6 +2568,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_2_2">
@@ -2522,8 +2598,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2537,6 +2612,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_2_3">
@@ -2564,8 +2642,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2579,6 +2656,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_2_3">
@@ -2606,8 +2686,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2621,6 +2700,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_3_1">
@@ -2648,8 +2730,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2663,6 +2744,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_3_1">
@@ -2690,8 +2774,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2705,6 +2788,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_3_1">
@@ -2726,8 +2812,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6125 A/B</string>
@@ -2741,6 +2826,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_3_2">
@@ -2762,8 +2850,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TGBB</string>
@@ -2777,6 +2864,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_3_2">
@@ -2804,8 +2894,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2819,6 +2908,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_3_2">
@@ -2846,8 +2938,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2861,6 +2952,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_3_3">
@@ -2888,8 +2982,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2903,6 +2996,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_3_3">
@@ -2930,8 +3026,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -2945,6 +3040,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_4_1">
@@ -2972,8 +3070,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2987,6 +3084,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_4_1">
@@ -3014,8 +3114,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3029,6 +3128,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_4_1">
@@ -3050,8 +3152,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6168 A/B</string>
@@ -3065,6 +3166,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_4_2">
@@ -3086,8 +3190,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TGBC</string>
@@ -3101,6 +3204,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_4_2">
@@ -3128,8 +3234,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3143,6 +3248,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_4_2">
@@ -3170,8 +3278,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3185,6 +3292,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_4_3">
@@ -3212,8 +3322,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3227,6 +3336,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_4_3">
@@ -3254,8 +3366,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3269,6 +3380,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_5_1">
@@ -3290,8 +3404,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TE-6141 A/B</string>
@@ -3305,6 +3418,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_5_2">
@@ -3326,8 +3442,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>TGBD</string>
@@ -3341,6 +3456,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_5_2">
@@ -3368,8 +3486,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3383,6 +3500,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_5_2">
@@ -3410,8 +3530,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3425,6 +3544,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_5_3">
@@ -3452,8 +3574,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3467,6 +3588,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_5_3">
@@ -3494,8 +3618,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3509,6 +3632,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_6_2">
@@ -3536,8 +3662,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3551,6 +3676,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
+    </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_6_2">
@@ -3578,8 +3706,7 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ºF</string>
@@ -3594,6 +3721,9 @@ color: rgb(255, 255, 255);</string>
     <property name="Fondo_Inicial" stdset="0">
      <enum>WLabel::Sin_color</enum>
     </property>
+    <property name="Texto_A" stdset="0">
+     <enum>WLabel::a_SinColor</enum>
+    </property>
    </widget>
   </widget>
   <widget class="QLabel" name="lbIMGFondo">
@@ -3604,6 +3734,9 @@ color: rgb(255, 255, 255);</string>
      <width>1024</width>
      <height>662</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
@@ -3631,9 +3764,6 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(212, 208, 200);</string>
-   </property>
    <property name="text">
     <string>IMP PANT</string>
    </property>
@@ -3647,9 +3777,6 @@ color: rgb(255, 255, 255);</string>
      <height>15</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(175, 175, 175);</string>
-   </property>
    <property name="text">
     <string>    UNIT3</string>
    </property>
@@ -3662,6 +3789,9 @@ color: rgb(255, 255, 255);</string>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
    </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
+   </property>
   </widget>
   <widget class="AWMultiObject" name="aVal_0">
    <property name="geometry">
@@ -3671,6 +3801,9 @@ color: rgb(255, 255, 255);</string>
      <width>60</width>
      <height>50</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::VALCUAD2</enum>
@@ -3687,6 +3820,9 @@ color: rgb(255, 255, 255);</string>
      <width>50</width>
      <height>45</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -3707,6 +3843,9 @@ color: rgb(255, 255, 255);</string>
      <height>45</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -3725,6 +3864,9 @@ color: rgb(255, 255, 255);</string>
      <width>50</width>
      <height>45</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -3745,6 +3887,9 @@ color: rgb(255, 255, 255);</string>
      <height>45</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -3763,6 +3908,9 @@ color: rgb(255, 255, 255);</string>
      <width>50</width>
      <height>45</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -3783,6 +3931,9 @@ color: rgb(255, 255, 255);</string>
      <height>91</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTERM</enum>
    </property>
@@ -3798,6 +3949,9 @@ color: rgb(255, 255, 255);</string>
      <width>191</width>
      <height>167</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTER</enum>
@@ -3816,14 +3970,16 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: none;</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
@@ -3839,14 +3995,16 @@ color: none;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: none;</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
@@ -3865,8 +4023,7 @@ color: none;</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>RECIPIENTE DE ACEITE</string>
@@ -3880,6 +4037,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_3">
@@ -3895,8 +4055,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>DE LUBRICANTE DE LA TURBINA</string>
@@ -3910,6 +4069,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_4">
@@ -3925,8 +4087,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>BOMBA VG</string>
@@ -3940,6 +4101,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_5">
@@ -3955,8 +4119,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>FILTRO DE ACEITE</string>
@@ -3970,6 +4133,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_6">
@@ -3985,8 +4151,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>SUCCIÓN DE BOMBA</string>
@@ -4000,6 +4165,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_7">
@@ -4015,8 +4183,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>VER HORAS DE OPER. EN PANTALLA B1</string>
@@ -4032,6 +4199,9 @@ color: rgb(255, 255, 255);</string>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
    </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="label_7">
    <property name="geometry">
@@ -4043,13 +4213,16 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B1/flecha_blanca_abajo.png</pixmap>
@@ -4064,6 +4237,9 @@ color: rgb(255, 255, 255);</string>
      <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SPRING</enum>
    </property>
@@ -4076,6 +4252,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4099,6 +4278,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -4120,6 +4302,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4143,6 +4328,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4164,6 +4352,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -4187,6 +4378,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4208,6 +4402,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4231,6 +4428,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4252,6 +4452,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4275,6 +4478,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4296,6 +4502,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4319,6 +4528,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4340,6 +4552,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4363,6 +4578,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4384,6 +4602,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4407,6 +4628,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -4428,6 +4652,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4451,6 +4678,9 @@ color: rgb(255, 255, 255);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4473,6 +4703,9 @@ color: rgb(255, 255, 255);</string>
      <height>137</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_8">
    <property name="geometry">
@@ -4487,8 +4720,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>INTERCAMBIADOR DE CALOR</string>
@@ -4502,6 +4734,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_9">
@@ -4517,8 +4752,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>DEL AIRE/AIRE</string>
@@ -4532,6 +4766,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_10">
@@ -4547,8 +4784,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PRE-SEPARACIÓN</string>
@@ -4562,6 +4798,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_11">
@@ -4577,8 +4816,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>AIRE/ACEITE</string>
@@ -4592,6 +4830,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_12">
@@ -4607,8 +4848,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>SEPARADOR DEL </string>
@@ -4622,6 +4862,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_13">
@@ -4637,8 +4880,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>AIRE/ACEITE</string>
@@ -4652,6 +4894,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_14">
@@ -4667,8 +4912,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>VALV AIRE ENFRIA</string>
@@ -4682,6 +4926,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbU_0">
@@ -4697,8 +4944,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -4712,6 +4958,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbU_1">
@@ -4727,8 +4976,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -4742,6 +4990,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbU_2">
@@ -4757,8 +5008,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -4772,6 +5022,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbU_3">
@@ -4787,8 +5040,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -4802,6 +5054,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_0">
@@ -4817,8 +5072,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>70</string>
@@ -4832,6 +5086,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_1">
@@ -4847,8 +5104,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>71</string>
@@ -4862,6 +5118,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbUni_0">
@@ -4877,8 +5136,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>ºF</string>
@@ -4892,6 +5150,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbUni_1">
@@ -4907,8 +5168,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>ºF</string>
@@ -4922,6 +5182,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_2">
@@ -4937,8 +5200,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>00</string>
@@ -4952,6 +5214,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_3">
@@ -4967,8 +5232,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>00</string>
@@ -4982,6 +5246,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_4">
@@ -4997,8 +5264,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>00</string>
@@ -5012,6 +5278,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbVal_5">
@@ -5027,8 +5296,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>0.3</string>
@@ -5043,6 +5311,9 @@ color: rgb(255, 255, 255);</string>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
    </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
+   </property>
   </widget>
   <widget class="AInstrumentIndicator" name="aIndicador_18">
    <property name="geometry">
@@ -5052,6 +5323,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -5074,6 +5348,9 @@ color: rgb(255, 255, 255);</string>
      <width>70</width>
      <height>70</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -5129,13 +5406,16 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
@@ -5151,13 +5431,16 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
@@ -5173,13 +5456,16 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="Texto_A" stdset="0">
+    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
