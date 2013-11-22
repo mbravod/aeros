@@ -11,6 +11,7 @@ int main0();
 #include <windows.h>
 #include <tchar.h>
 #include <strsafe.h>
+#include <Mmsystem.h>
 using namespace std;
 #include <Winbase.h >
 int GLOBAL_INSTANCE;
@@ -282,8 +283,25 @@ __except(ExpFilterO(GetExceptionInformation(), GetExceptionCode()))
 #include <string.h>
 #include <fstream>
 using namespace std;
+HANDLE gDoneEvent;
+VOID CALLBACK TimerRoutine(PVOID lpParam, BOOLEAN TimerOrWaitFired)
+{
+    if (lpParam == NULL)
+    {
+        printf("TimerRoutine lpParam is NULL\n");
+    }
+    else
+    {
+        // lpParam points to the argument; in this case it is an int
+    printf("Timer routine called. Parameter is %d.\n", 
+                *(int*)lpParam);
+  
+    }
 
-#define MAX_THREADS 3
+    SetEvent(gDoneEvent);
+}
+
+#define MAX_THREADS 7
 DWORD WINAPI MyThreadFunction( LPVOID lpParam ){ 
 return APP_01_EXECUTE(0);
 }
@@ -309,14 +327,58 @@ int main0() {
 	APP_01_LOAD(GLOBAL_INSTANCE);
 	APP_02_LOAD(GLOBAL_INSTANCE);
     APP_03_LOAD(GLOBAL_INSTANCE);
-	    APP_04_LOAD(GLOBAL_INSTANCE);
+	APP_04_LOAD(GLOBAL_INSTANCE);
 	int i;
-printf("service ready");
-for (i=0;i<10000;i++){
-APP_01_EXECUTE (0);
-APP_02_EXECUTE (0);
-APP_03_EXECUTE (0);
-APP_04_EXECUTE (0);
+
+	//Cambios temporales hechos por Horacio
+
+
+	SetSMemI0(1, 500);
+	int edo = GetSMemI0(500);
+	cout<<"\nValor recogido: "<<edo<<"\n";
+
+	while(1)
+	{
+		edo = GetSMemI0(500);
+		while(edo == 0)
+		{
+
+		}
+
+// Parte original del código...
+// ----------------------------
+DWORD TIME;
+DWORD old_TIME;
+DWORD start_TIME,end_TIME;
+printf("service Init");
+
+
+DWORD abs[50];
+int j=0;
+for (;;){
+start_TIME=timeGetTime();
+	for (i=0;i<20;i++)
+	{	
+		old_TIME=timeGetTime();
+        edo = GetSMemI0(500);
+		if (edo != 0)
+		{
+			APP_01_EXECUTE (0);
+			APP_02_EXECUTE (0);
+			APP_03_EXECUTE (0);
+			APP_04_EXECUTE (0);
+		}
+
+
+	
+	TIME=timeGetTime();
+abs[i]=TIME-old_TIME;
+Sleep(50-abs[i]);
+
+	}
+end_TIME=timeGetTime();
+j++;
+printf("%d %d\n",j,end_TIME-start_TIME);
 }
 	printf("service ready");
 
@@ -326,6 +388,14 @@ APP_04_EXECUTE (0);
 cout<<i<<"\t"<<vGetSMemvF(i)<<"\t";
 if (i%400==0) {cout <<"\n";}
 	}
+
+//------------------------------
+
+	// Modificaciones temporales
+	}
+
+
+
 //system("pause");
 //genera un error en tiempo de ejecucion
 //int p=5/((int)sqrt(1.0f)-1);

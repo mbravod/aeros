@@ -59,9 +59,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib"
 				LinkIncremental="1"
 				UACExecutionLevel="2"
 				UACUIAccess="false"
+				IgnoreAllDefaultLibraries="false"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
 				HeapReserveSize="0"
