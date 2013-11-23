@@ -1847,1668 +1847,7 @@ double IGV_CONTROL_CB_A1;
     double Flujo_SOV62117;
     double Flujo_SOV62119;
 
-	/* inicialiacion de variables*/
-
-	TemGas = 336.15;     // K
-    TemGasF = 0 ;       // °F
-    TemGasC = 0;      // °C
-    TemAmb = 298;     // K
-    TRef = 380;     // K
-    TemRefCROMA = 84;     // °C                       //NO SE OCUPA EN NINGUN LADO 
-    hhv = 0;         // poder calorifico superior
-    PCIp = 0;         //
-    Rhoideal = 0;     // kg/m3
-    Rho_rel = 0;      // adimensional
-    Rhoreal =0 ;      // kg/m3
-    Pres_in = 135.3213; // kPa
-    Ru = 8.314;       // kJ/kmol K
-    PreSatAgua = 7.25; //psia
-    PreRef = 14.696;  //psia
-    Rgas = 0;
-    k_gas = 0;
-
-    // ENTALPIAS DE FORMACIÓN kJ/mol
-
-    HF_Nhexano = -166.92;
-    HF_Propano = -104.68;
-    HF_Ibutano = -131.775;
-    HF_Nbutano = -125.79;
-    HF_Neopentano = -166.21;
-    HF_Ipentano = -154.69;
-    HF_Npentano = -146.76;
-    HF_nitrogenoR = 0;				//NO SE OCUPA EN NINGUN LADO
-    HF_metano = -74.52;
-    HF_bioxido = -393.509;
-    HF_etano =	-83.82;
-    HF_Oxigeno = 0;
-    HF_Agua_L = -285.83;
-    HF_Agua_V = -241.818;
-
-
-    //CONCENTRACIONES DE PRODUCTOS DE COMBUSTION
-
-    X_Agua_L = 0;
-    X_Agua_V = 0;							//NO SE USA EN NINGUN LADO
-    X_Agua_Sat =0;
-    X_Agua_Corregida = 0;							//NO SE USA EN NINGUN LADO
-    X_nitrogenoP = 0;
-    X_bioxidoP = 0;
-
-    X_NhexanoX = 0 ;							//NO SE USA EN NINGUN LADO
-    X_PropanoX = 0;							//NO SE USA EN NINGUN LADO
-    X_IbutanoX = 0;							//NO SE USA EN NINGUN LADO
-    X_NbutanoX = 0;							//NO SE USA EN NINGUN LADO
-    X_NeopentanoX = 0;						//NO SE USA EN NINGUN LADO
-    X_IpentanoX = 0;						//NO SE USA EN NINGUN LADO
-    X_NpentanoX = 0;					//NO SE USA EN NINGUN LADO
-    X_nitrogenoRX = 0;					//NO SE USA EN NINGUN LADO
-    X_metanoX = 0;						//NO SE USA EN NINGUN LADO
-    X_bioxidoRX = 0;						//NO SE USA EN NINGUN LADO
-    X_etanoX = 0;						//NO SE USA EN NINGUN LADO
-
-    // CAMBIO DE ENTALPIA
-
-    DH_Nhexano = 0;
-    DH_Propano = 0;
-    DH_Ibutano = 0;
-    DH_Nbutano = 0;
-    DH_Neopentano = 0;
-    DH_Ipentano = 0;
-    DH_Npentano = 0;
-    DH_metano = 0;
-    DH_bioxido = 0;
-    DH_etano =0;
-    DH_Oxigeno = 0;
-    DH_Agua_V = 0;
-    DH_nitrogeno = 0;
-
-    //ENTALPIAS
-
-    HNhexanoSY = 0;
-    HPropanoSY = 0;
-    HIbutanoSY = 0;
-    HNbutanoSY = 0;
-    HNeopentanoSY = 0;
-    HIpentanoSY = 0;
-    HNpentanoSY = 0;
-    HmetanoSY = 0;
-    HbioxidoSY = 0;
-    HetanoSY =0;
-    HOxigenoSY = 0;
-    HnitrogenoSY = 0;
-    HAgua_L = 0;
-
-    // Cp
-
-    Cp_Nhexano = 0;
-    Cp_Propano = 0;
-    Cp_Ibutano = 0;
-    Cp_Nbutano = 0;
-    Cp_Neopentano = 0;
-    Cp_Ipentano = 0;
-    Cp_Npentano = 0;
-    Cp_metano = 0;
-    Cp_bioxido = 0;
-    Cp_etano =0;
-    Cp_nitrogeno = 0;
-    Cp_gas = 0;
-    Cv_gas = 0;
-
-    // MASA MOLAR
-
-    M_Nhexano = 86.177;
-    M_Propano = 44.097;
-    M_Ibutano = 58.123;
-    M_Nbutano = 58.123;
-    M_Neopentano = 72.15;
-    M_Ipentano = 72.15;
-    M_Npentano = 72.15;
-    M_nitrogeno = 28.0134;
-    M_metano = 16.043;
-    M_bioxido = 44.01;
-    M_etano = 30.07;
-    M_Oxigeno = 31.99;						//NO SE USA EN NINUGUN LADO
-    M_Agua = 18.053;						//NO SE USA EN NINUGUN LADO
-    M_gas = 0;
-    M_aire = 28.97;
-
-    // FACTOR SUMA
-
-    B_Nhexano = 0.0802;
-    B_Propano = 0.0344;
-    B_Ibutano = 0.0458;
-    B_Nbutano = 0.0478;
-    B_Neopentano = 0;
-    B_Ipentano = 0.0581;
-    B_Npentano = 0.0631;
-    B_nitrogeno = 0.0044;
-    B_metano = 0.0116;
-    B_bioxido = 0.0197;
-    B_etano = 0.0239;
-    B_Oxigeno = 0.0073;					//NO SE USA EN NINGUN LADO
-    B_Agua = 0.0623;
-    B_aire = 0.005;					//NO SE USA EN NINGUN LADO
-
-    // FACTOR DE COMPRESIBILIDAD
-
-    Z_Gas_seco = 0 ;
-    Z_Gas_humedo = 0 ;
-    Z_Aire_seco = 0;					//NO SE USA EN NINGUN LADO
-    Z_Aire_humedo = 0;					//NO SE USA EN NINGUN LADO
-
-    // CONVERSIONES
-
-    kJkg_Btulb = 2.326;
-    kJ_kCal = 4.19;
-
-    // AJUSTE DE CONCENTRACIONES
-    n=10;
-    dif=0;
-    aux1=0;
-
-    A1[14]=0;
-    A2[14]=0;
-    A3[14]=0;
-    A4[14]=0;
-    A5[14]=0;
-    A6[14]=0;
-    A7[14]=0;
-    logk[14]=0;
-    a1[17]=0;
-    a2[17]=0;
-    a3[17]=0;
-    a4[17]=0;
-    a5[17]=0;
-    a6[17]=0;
-    a7[17]=0;
-    k[14]=0;
-    cal_mol[17]=0;
-    H_k[17]=0;
-    kj_mol[13]=0;
-    cal_mol_reactivos=0;					//NO SE USA EN NINGUN LADO
-    coef_esq[13]=0;
-    h0_href_R[9]=0;
-    h0_href[9]=1;
-    M[11]=0;
-    hc[14]=0;
-
-    num_hidrogeno=0;
-    num_hidrogeno2=0;
-    AG=0;
-    suma=0;
-    suma2=0;
-    AC_mol=0;
-    AC_masa=0;
-    num_oxigeno=0;
-    num_nitrogeno=0;
-    n_hexano_kj_mol=0;
-    propano_kj_mol=0;
-    i_butano_kj_mol=0;
-    n_butano_kj_mol=0;
-    neopentano_kj_mol=0;
-    i_pentano_kj_mol=0;
-    nitrogeno_kj_mol=0;
-    metano_kj_mol=0;
-    bioxido_kj_mol=0;
-    etano_kj_mol=0;
-    n_pentano_kj_mol=0;
-    nitro=0;
-    bio=0;
-    nitrogeno2_kj_mol=0;
-    nitro2=0;
-    Hreactivos=0;
-    oxigeno_kj_mol=0;
-    oxi=0;
-    suma_productos=0;					//NO SE USA EN NINGUN LADO
-    constante1=0;
-    Tr=0;
-    Tx=0;
-    Ti=0;
-    poli1[17]=0;
-    poli2[17]=0;
-    poli1suma=0;
-    poli2suma=0;
-    error=0;					//NO SE USA EN NINGUN LADO
-    Ni=0;
-    Ta=0;
-
-    //MOLES REACTIVOS
-
-    C_1=0;					//NO SE USA EN NINGUN LADO
-    H_1=0;					//NO SE USA EN NINGUN LADO
-    O_1=0;					//NO SE USA EN NINGUN LADO
-    N_1=0;					//NO SE USA EN NINGUN LADO
-
-    num_carbon=0;
-
-    Temperatura=0;
-    T_nueva=0;					//NO SE USA EN NINGUN LADO
-    T_i=0;					//NO SE USA EN NINGUN LADO
-    T1_3=0;
-    T2_3=0;
-    T5_3=0;
-    T6_3=0;
-    T7_3=0;
-    T8_3=0;
-    T_F=0;
-    T_C=0;
-
-    h0_href_O2=0;					//NO SE USA EN NINGUN LADO
-    Hproductos=0;
-
-    //M_aire_kg_kmol=0;                // checar si la tienes que poner asi o solo una vez
-    M_gas_kg_kmol=0;                  // masa molar del gas combustible kg/kmol
-    mairemax_kg_s=0;                  // flujo másico máximo de aire, fuente: manual (kg/s)
-    mairemax_kmol_s=0;                //  flujo molar máximo de aire, fuente: manual (kmol/s)
-    mgas_kg_s=0;                      // flujo másico máximo de combustible, fuente: manual (kg/s)
-    mgas_kmol_s=0;                    // flujo molar máximo de combustible, fuente: manual (kmol/s)
-    RACreal_masa=0;                   // realcion aire/combustible real masa
-    RAC_ideal_masa=0;                 // relacion aire/combustible ideal masa
-    RACreal_mol=0;                    // relacion aire/ combustible real molar
-    RAC_ideal_mol=0;                  // relacion aire/ combustible ideal molar
-    RCAreal_masa=0;                   // realcion combustible /aire real masa
-    RCA_ideal_masa=0;                 // realcion combustible/aire real masa
-    RCAreal_mol=0;                    // realcion combustible/aire real masa
-    RCA_ideal_mol=0;                  // realcion combustible/aire real masa
-    Exceso_MOLAR_porciento=0;         // exceso de aire molar
-    f_molar=0;                        // RCAreal_mol/RCA_ideal_mol
-    Exceso_MASICO_porciento=0;        // exceso de aire masico
-    fMASICO=0;                        // RCAreal_masa/RCA_ideal_masa
-
-    n_C6H14_g=0;                      // Masa molar
-    C3H8_g=0;                         // Masa molar
-    i_C4H10_g=0;                      // Masa molar			//NO SE USA EN NINGUN LADO
-    n_C4H10_g=0;                      // Masa molar			//NO SE USA EN NINGUN LADO
-    neo_C5H12_g=0;                    // Masa molar
-    i_C5H12_g=0;                      // Masa molar
-    n_C5H12_g=0;                      // Masa molar
-    N2=0;                             // Masa molar
-    CH4=0;                            // Masa molar
-    CO2=0;                            // Masa molar
-    C2H6_g=0;                         // Masa molar
-    O2=0;                             // Masa molar
-    r1=0,r2=0,r3=0,r4=0;
-
-    A_i=0,B_i=0,C_i=0,D_i=0,Pn=0;
-    Q_i=0,R_i=0,S_i=0,Y_i=0,F_i=0,P_i=0,H_i=0,G_i=0,E_i=0,Z_i=0,U_i=0,V_i=0,W_i=0,X_i=0;
-    R_CO,R_HO,R_NO;
-
-    CO_H2,C_H2,CH4_H2,HCN_H2,O2_H2,OH_H2,H_H2,O_H2,O3_H2,NO_H2,NO2_H2,NH3_H2,N_H2=0;
-    CO_B,C_B,CH4_B,HCN_B,O2_B,O_B,O3_B,NO_B,NO2_B,NH3_B,OH_B;
-    CO_C,C_C,CH4_C,HCN_C;
-    HCN_D,N_D,NO_D,NO2_D,NH3_D;
-
-    F=0,FA=0,FB=0,FC=0,FD=0;
-    G=0,GA=0,GB=0,GC=0,GD=0;
-    H=0,HA=0,HB=0,HC=0,HD=0;
-    J=0,JA=0,JB=0,JC=0,JD=0;
-
-    m[4][5]=0;
-    i=0;
-    j=0;
-    iteracion=0;
-    num1=0;
-    num2=0;
-    x=0;
-    y=0;
-    d=0;
-    aux2=0;
-
-    psi_T=0;
-    psi_tref=0;
-    constante=0;
-    error1=0,error2=0,error3=0,error4=0,error5=0,error6=0;
-
-    A[9]=0;
-    B[9]=0;
-    C[9]=0;
-
-    Q_a=0;
-    F_a=0;
-    C_a=0;
-    U_a=0;
-    V_a=0;
-    NOx=0;
-
-    T1_3=0.298;
-    T2_3=2;
-    T3_3=0.8;
-    T4_3=0.298;						//NO SE USA EN NINGUN LADO
-    T5_3=337.6*0.001;
-    T6_3=298*0.001;
-    T7_3=800*0.001;
-    T8_3=298*0.001;
-
-    n_C6H14_g=86.177;
-    C3H8_g=44.097;
-    i_C4H10_g=58.123;
-    n_C4H10_g=58.123;
-    neo_C5H12_g=72.15;
-    i_C5H12_g=72.15;
-    n_C5H12_g=72.15;
-    N2=28.0134;
-    CH4=16.043;
-    CO2=44.01;
-    C2H6_g=30.07;
-    O2=0;
-
-    M[0]=n_C6H14_g;
-    M[1]=C3H8_g;
-    M[2]=i_C4H10_g;
-    M[3]=n_C4H10_g;
-    M[4]=neo_C5H12_g;
-    M[5]=i_C5H12_g;
-    M[6]=n_C5H12_g;
-    M[7]=N2;
-    M[8]=CH4;
-    M[9]=CO2;
-    M[10]=C2H6_g;
-
-    //RELACION DE ATOMOS
-
-    R_CO=0.17606865;
-    R_HO=0.69038126;
-    R_NO=3.76324869;
-
-    psi_T=337.6;
-    psi_tref=298;
-    constante=8.314;
-
-    A[0]=3.025;
-    B[0]=0.053722;
-    C[0]=-0.000016662;
-
-    A[1]=1.213;
-    B[1]=0.028785;
-    C[1]=-0.000008824;
-
-    A[2]=1.702;
-    B[2]=0.009081;
-    C[2]=-0.000002164;
-
-    A[3]=1.935;
-    B[3]=0.036915;
-    C[3]=-0.000011402;
-
-    A[4]=1.677;
-    B[4]=0.037853;
-    C[4]=-0.000011945;
-
-    A[5]=2.464;
-    B[5]=0.045351;
-    C[5]=-0.000014111;
-
-    A[6]=2.464;
-    B[6]=0.045351;
-    C[6]=-0.000014111;
-
-    A[7]=2.464;
-    B[7]=0.045351;
-    C[7]=-0.000014111;
-
-    A[8]=1.131;
-    B[8]=0.019225;
-    C[8]=-0.000005561;
-
-    A1[0]=-4.706;
-    A1[1]=-23.3871;
-    A1[2]=-12.3506;
-    A1[3]=-12.6282;
-    A1[4]=-5.1798;
-    A1[5]=-5.6771;
-    A1[6]=-4.2669;
-    A1[7]=-4.8419;
-    A1[8]=-8.23556;
-    A1[9]=-12.1749;
-    A1[10]=-2.2991;
-    A1[11]=2.0772;
-    A1[12]=4.3247;
-    A1[13]=7.6818;
-
-    A2[0]=4.5548;
-    A2[1]=13.5989;
-    A2[2]=13.1975;
-    A2[3]=9.5942;
-    A2[4]=4.0998;
-    A2[5]=4.71;
-    A2[6]=3.6898;
-    A2[7]=4.16;
-    A2[8]=2.373;
-    A2[9]=7.8225;
-    A2[10]=1.4798;
-    A2[11]=0.9404;
-    A2[12]=0.9087;
-    A2[13]=0.5958;
-
-    A3[0]=-1.9275;
-    A3[1]=-5.6463;
-    A3[2]=-5.5245;
-    A3[3]=-4.0164;
-    A3[4]=-1.6966;
-    A3[5]=-1.9572;
-    A3[6]=-1.515;
-    A3[7]=-1.7225;
-    A3[8]=-0.98;
-    A3[9]=-3.2406;
-    A3[10]=-0.6119;
-    A3[11]=-0.3968;
-    A3[12]=-0.3926;
-    A3[13]=-0.2475;
-
-    A4[0]=0.6914;
-    A4[1]=2.0147;
-    A4[2]=1.9729;
-    A4[3]=1.4348;
-    A4[4]=0.6008;
-    A4[5]=0.6958;
-    A4[6]=0.5328;
-    A4[7]=0.6135;
-    A4[8]=0.3462;
-    A4[9]=1.151;
-    A4[10]=0.2102;
-    A4[11]=0.1434;
-    A4[12]=0.1381;
-    A4[13]=0.1101;
-
-    A5[0]=-0.2143;
-    A5[1]=-0.629;
-    A5[2]=-0.6151;
-    A5[3]=-0.4479;
-    A5[4]=-0.1828;
-    A5[5]=-0.2168;
-    A5[6]=-0.1618;
-    A5[7]=-0.194;
-    A5[8]=-0.1077;
-    A5[9]=-0.3568;
-    A5[10]=-0.0593;
-    A5[11]=-0.045;
-    A5[12]=-0.0427;
-    A5[13]=-0.0781;
-
-    A6[0]=0.0568;
-    A6[1]=0.1745;
-    A6[2]=0.1704;
-    A6[3]=0.1243;
-    A6[4]=0.0461;
-    A6[5]=0.051;
-    A6[6]=0.0418;
-    A6[7]=0.057;
-    A6[8]=0.0299;
-    A6[9]=0.0984;
-    A6[10]=0.0126;
-    A6[11]=0.0125;
-    A6[12]=0.0119;
-    A6[13]=0.0699;
-
-    A7[0]=-0.0118;
-    A7[1]=-0.0436;
-    A7[2]=-0.0425;
-    A7[3]=-0.031;
-    A7[4]=-0.0081;
-    A7[5]=-0.0143;
-    A7[6]=-0.0086;
-    A7[7]=-0.0163;
-    A7[8]=-0.0075;
-    A7[9]=-0.0249;
-    A7[10]=-0.0015;
-    A7[11]=-0.0031;
-    A7[12]=-0.003;
-    A7[13]=-0.0526;
-
-    a1[0]=6.183042;
-    a1[1]=4.968;
-    a1[2]=7.361141;
-    a1[3]=5.974134;
-    a1[4]=7.709928;
-    a1[5]=4.966526;
-    a1[6]=7.6151;
-    a1[7]=7.988869;
-    a1[8]=7.0405;
-    a1[9]=8.462334;
-    a1[10]=6.61007;
-    a1[11]=5.028273;
-    a1[12]=7.812249;
-    a1[13]=4.324933;
-    a1[14]=7.918404;
-    a1[15]=4.4494;
-    a1[16]=3.854035;
-
-    a2[0]=4.710657;
-    a2[1]=0;
-    a2[2]=-5.369589;
-    a2[3]=-4.241883;
-    a2[4]=-5.503897;
-    a2[5]=0.01150479;
-    a2[6]=-1.936;
-    a2[7]=-1.506271;
-    a2[8]=1.2091;
-    a2[9]=-10.40669;
-    a2[10]=5.431315;
-    a2[11]=-0.282092;
-    a2[12]=-6.668293;
-    a2[13]=20.80895;
-    a2[14]=-11.41722;
-    a2[15]=20.895;
-    a2[16]=26.00085;
-
-    a3[0]=-10.92135;
-    a3[1]=0;
-    a3[2]=20.54179;
-    a3[3]=7.931254;
-    a3[4]=13.12136;
-    a3[5]=-0.03333487;
-    a3[6]=0.877;
-    a3[7]=6.661376;
-    a3[8]=18.33;
-    a3[9]=27.54876;
-    a3[10]=12.7251;
-    a3[11]=0.5583757;
-    a3[12]=17.28296;
-    a3[13]=-22.9459;
-    a3[14]=63.73457;
-    a3[15]=-31.376;
-    a3[16]=-30.2568;
-
-    a4[0]=12.54086;
-    a4[1]=0;
-    a4[2]=-25.86526;
-    a4[3]=-7.94423;
-    a4[4]=-11.67955;
-    a4[5]=0.04616989;
-    a4[6]=2.6153;
-    a4[7]=-4.65597;
-    a4[8]=-23.991;
-    a4[9]=-30.28119;
-    a4[10]=-24.93998;
-    a4[11]=-0.5661932;
-    a4[12]=-17.28709;
-    a4[13]=16.84483;
-    a4[14]=-75.25691;
-    a4[15]=31.911;
-    a4[16]=18.9052;
-
-    a5[0]=-7.016263;
-    a5[1]=0;
-    a5[2]=15.94566;
-    a5[3]=4.403357;
-    a5[4]=5.233997;
-    a5[5]=-0.03242073;
-    a5[6]=-2.6909;
-    a5[7]=1.696464;
-    a5[8]=15.183;
-    a5[9]=17.18511;
-    a5[10]=17.73495;
-    a5[11]=0.3002187;
-    a5[12]=8.860125;
-    a5[13]=-7.935665;
-    a5[14]=43.29269;
-    a5[15]=-18.674;
-    a5[16]=-6.266041;
-
-    a6[0]=1.923395;
-    a6[1]=0;
-    a6[2]=-4.85889;
-    a6[3]=-1.271341;
-    a6[4]=-1.173185;
-    a6[5]=0.01094605;
-    a6[6]=0.97789;
-    a6[7]=-0.3706212;
-    a6[8]=-4.9496;
-    a6[9]=-4.95726;
-    a6[10]=-5.820404;
-    a6[11]=-0.7697892;
-    a6[12]=-2.314819;
-    a6[13]=2.121672;
-    a6[14]=-12.56723;
-    a6[15]=5.6581;
-    a6[16]=0.9571012;
-
-    a7[0]=-0.2084091;
-    a7[1]=0;
-    a7[2]=0.5861501;
-    a7[3]=0.1491408;
-    a7[4]=0.103883;
-    a7[5]=-0.001373727;
-    a7[6]=-0.12695;
-    a7[7]=0.03992444;
-    a7[8]=0.65337;
-    a7[9]=0.5755281;
-    a7[10]=0.7363536;
-    a7[11]=0.007805842;
-    a7[12]=0.2447785;
-    a7[13]=-0.2408713;
-    a7[14]=1.469695;
-    a7[15]=-0.68821;
-    a7[16]=-0.03938305;
-
-    H_k[0]=0*0.004187;
-    H_k[1]=52100*0.004187;
-    H_k[2]=0*0.004187;
-    H_k[3]=59559*0.004187;
-    H_k[4]=0*0.004187;
-    H_k[5]=112965*0.004187;
-    H_k[6]=9432*0.004187;
-    H_k[7]=-57798*0.004187;
-    H_k[8]=-10970*0.004187;
-    H_k[9]=21580*0.004187;
-    H_k[10]=7910*0.004187;
-    H_k[11]=170886*0.004187;
-    H_k[12]=-26417*0.004187;
-    H_k[13]=-94054*0.004187;
-    H_k[14]=-17895*0.004187;
-    H_k[15]=31200*0.004187;
-    H_k[16]=34100*0.004187;
-
-    kj_mol[0]=-166.92;
-    kj_mol[1]=-104.68;
-    kj_mol[2]=-131.775;
-    kj_mol[3]=-125.79;
-    kj_mol[4]=-166.21;
-    kj_mol[5]=-154.69;
-    kj_mol[6]=-146.76;
-    kj_mol[7]=0;
-    kj_mol[8]=-74.52;
-    kj_mol[9]=-393.509;
-    kj_mol[10]=-83.82;
-    kj_mol[11]=0;
-
-     // CONCENTRACIONES
-
-    X_Nhexano = 0.0002;
-    X_Propano = 0.0018;
-    X_Ibutano = 0.0002;
-    X_Nbutano = 0.0002;
-    X_Neopentano = 0;
-    X_Ipentano = 0.0001;
-    X_Npentano = 0;
-    X_nitrogenoR = 0.0176;
-    X_metano =	0.9491;
-    X_bioxidoR = 0.0035;
-    X_etano =	0.0404;
-    X_Oxigeno = 2.0165;
-
-	///////////FIN MODELO///////////
-
-
-    Cp_agua = 4.18;                       // kJ/kg K
-    VolEsp_agua = 0.001;                  // m3/kg
-    Densidad_agua = 997;                  // kg/m3
-    Densidad_aire = 0;                    // kg/m3
-    Presion_atm = 101.3;                  // kPa = 1 atm
-    TambK = 300;                           // K
-    TambC = 0;                           // °C
-    TambF = 0;                           // °F
-    Cv_aire = 0.718;                      // kJ/kg K
-    Cp_aire = 1.005;                      // kJ/kg K
-    R_aire = 0.287061;                    // kJ/kg K
-    Viscosidad_Aire = 0.00001825;         // kg/m s
-
-   // Parámetros aire de entrada a casa de filtros
-    Tem_in_64031K = TambK;                 // K      alarma menor a 279 K
-    Tem_in_64031F = 0;                     // °F     alarma menor a 43°F
-    Tem_in_64031C = 0;                     // °C     alarma menor a 6°C
-    Tem_in_64030K = 0;                     // K      alarma menor a 279 K
-    Tem_in_64030F = 0;                     // °F     alarma menor a 43°F
-    Tem_in_64030C = 0;                     // °C     alarma menor a 6°C
-    Tem_in_64033K = TambK;                 // K      alarma menor a 279 K
-    Tem_in_64033F = 0;                     // °F     alarma menor a 63 °F
-    Tem_in_64033C = 0;                     // °C     alarma menor a 6 °C
-    Tem_in_64032K = 0;                     // K      alarma menor a 279 K
-    Tem_in_64032F = 0;                     // °F     alarma menor a 63 °F
-    Tem_in_64032C = 0;                     // °C     alarma menor a 6 °C
-    AreafilA = 1;
-    AreafilB =1;
-    AreafilC =1;                                   // m2
-    Permeabilidad = 1;                           // m2
-    Longitud_filtro = 0.5;                       // m
-    PDSH6405 = 1;                                // kPa
-    PDSH64060 = 0;                               // kPa
-    PDSH64060_mmH2O =0;                          // alarma
-    PDSH64060_inH2O =0;
-    PDSH64018 = 0;                               // mm H2O
-
-    // Parámetros de las bombas de agua
-    WBombaA = 18.64;                      // kJ/s  (potencia max. 44.74 kW)
-    PI_A = 200 ;                          // kPa (kN/m2)presion maxima  689.48 kPa=100psig
-    CI_PA = 689.48;                       // kPa (kN/m2)presion maxima  689.48 kPa=100psig
-    PresionFinalBomba = 0;                // kPa
-    Flujo_in_agua = 0;                        // kg/s (29 min - 106.6 max)
-    VolumenBomba = 0.001;                 // m3
-    Vel_BombaA = 0;                       // rpm
-    Vel_maxBombaA  = 1750;                // rpm (vel max 1750 rpm)
-    VelI_A = 0 ;                          // rpm
-    CI_VelA = 0;                          // rpm
-    Tao_bombaA = 1;
-    ParInducidoMotorBomba = 244.14;       // N m
-
-    // Parámetros del calentador
-    AreaCal = 10;                  // m2
-    UCal = 0.1 ;                   // kW/m2 K
-    Temperatura_final_Cal = 300;   // K
-    MasaCal = 500;                // kg
-    CICale = TambK;                   // K
-    TemperaturaInicial = 300;      // K
-    Potencia_resistenciaMax = 1758;   // kW
-    Potencia_resistencia = 0;      // kW
-    TaoRes = 1;
-    CIRes = 0;                     //kW
-
-    // Parámetros del evaporador
-    AreaEvap = 10;                  // m2
-    UEvap = 0.1 ;                   // kW/m2 K
-    Temperatura_final_Evap = 0;   // K
-    MasaEvap = 1100;                // kg
-    CIEvap = TambK;                   // K
-    Tempera_Inicial_Evap = TambK;     // K
-    Potencia_frigorifica_Max = 1758;    // kW
-    CI_Potencia_frigorifica = 0;
-    Tao_Potencia_frigorifica = 1;
-    Potencia_frigorifica = 0;
-
-    // Parametros del interbambiador de carcasa de filtro
-    Temperatura_final_HEX_agua= 0;       // K
-    MasaHEX= 40;                    // kg
-    AreaHEX = 28.615 ;              // m2
-    UHEX = 1.3703;                  // kJ/m2 K
-    CIHEX= TambK;                     // K
-    TinHexAgua = 0;                 // K
-    TaoHexCarcasa = 0.01;
-
-    Tem_fin_6450= 0;       // K
-   // Tem_fin_6450p=0;
-    Tem_fin_6450_F= 0;     // °F
-    Tem_fin_6499 = 0;       // K
-    Tem_fin_6499_F= 0;     // °F
-
-    Tem_fin_64072 = 0;
-    Tem_fin_64072_F = 0;
-    Tem_fin_64071 = TambK;
-    CIAireVentB = TambK;
-    CIAireVentA = TambK;
-    Tem_fin_64071_F = 0;             //CONDITIONED VENT AIR TEMP (SEC B) TE-64071 IN RTD -40/+400 -40/380 ALARM DEG F
-    MasaHEXAire = 4;                 // kg
-    CIAireA = TambK;                    // K
-    CIAireB = TambK;                    // K
-    Flujo_Aire_inTur = 0;              // 30 kg/s  1699 m3/min  con densidad de 1.059 kg/m3
-    Flujo_Aire_inGen = 0;              // 21 kg/s  1189 m3/min  con densidad de 1.059 kg/m3
-
-    Tem_fin_6402 =0;
-    Tem_fin_6402_F =0;
-    CITem6402 = TambK;
-
-    //  float
-    TgasesTurbina = 1150;            // K
-    Vel_in_Aire =5;                  // m/s
-    Vel_out_Aire= 12;                // m/s
-    Uturbina = 45;                    // m/s
-    Aturbina = 3;                    // m2
-    MasaTurbina = 60;                // kg
-    Temperatura_aire_turbina = 300;  //
-    CIAire_Turbina = TambK;            //
-    Pow_Res_Electrica = 1000;           // kW
-
-    // Parametros del motor de ventilador
-    WVenti = 0;                        // 77.5kW
-    CI_PI_Venti = 0;                     // kPa
-    Dif_PI_VentiTur = 0;                 // kPa
-    CI_VentiVel = 0;                     //
-    PresionFinalVenti = 1;                //
-    Tao_Ventilador = 1;                   //
-    ParInducidoMotorVentilador = 416.05 ;  // Par inducido en el motor del ventilador N m.
-    VelMaxVenti = 1780;
-    VelFinalVenti = 3;
-    RadioMedio = 0.4675;                   //  radio medio del ventilador m.
-    Angulos = 6.637;                       //  tan(alfa1)+cot(beta1).
-    VelAireIn = 0;                         // alarma menor a 20ft/s(6.1 m/s)
-    Area_Ventilador = 2.159;               // considerando que la caja de las aspas es de 20 cm y el diametro del ventilador es de 1.67 m
-    CIMasaTurbina = 64;      // m=PV/RT
-    MasaTurbina = 0;
-    VolCuartoTurb = 54.4;     //m3 considerando medidas aproximadas de 6x3x3
-    Dif_PI_VentiTur_mmH2O = 0;
-    Dif_PI_VentiTur_inH2O = 0;
-
-    // Parametros del motor de ventilador del generador
-    WVentiGen = 0;                        // 74.57 kW
-    Dif_PI_VentiGen = 101.3;                     // kPa
-    CI_VentiVelGen = 0;                     //
-    PresionFinalVentiGen = 1;                //
-    Tao_VentiGen = 1;                   //
-    ParInducidoMotorVentiGen = 395.6061;  // Par inducido en el motor del ventilador N m.
-    VelMaxVentiGen = 1800;
-    VelFinalVentiGen = 3;
-    RadioMedioGen = 0.36175;                   //  radio medio del ventilador m.
-    AngulosGen = 5.637;                       //  tan(alfa1)+cot(beta1).
-    VelAireInGen = 0;
-    Area_VentiladorGen = 1.5;               // 0.8765 m2 considerando que la caja de las aspas es de 15 cm y el diametro del ventilador es de 1.067 m
-
-
-	// Sospecho que estas son enteras
-    onoffVentTurb = 0;
-//    LocalRemotoVent = 0;
-    AutomaticoVent = 0;
-    ManualVent = 1;
-    StartManualVent = 0;
-    StopManualVent = 0;
-    FallaVentilador= 1;
-    onoffVentGen = 0;
-//    LocalRemotoVentGen = 0;
-    AutomaticoVentGen = 0;
-    ManualVentGen = 1;
-    StartManualVentGen = 0;
-    StopManualVentGen = 0;
-    FallaVentiGen= 1;
-    OnOffBomba=0;
-
-    // generador electrico
-    PDSL6407 = 0;
-
-	//====================================================
-	// Inicialización de encontradas VERIFICAR
-	//====================================================
-	FMaire = 0;
-	Flujo_Aire_inTur_B = 0;
-	Calentamiento = 0;
-	Enfriamiento = 0;
-
-	A52_1 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
-	A52_2 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
-	AREA_1_CB_IGV = 0;  // ÁREA DE IGV DEL COMPRESOR DE BAJA
-	AREA_FMENF_CA = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE ALTA
-	AREA_FMENF_CB = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE BAJA
-	AREA_FMOUT_CA = 0;  // ÁREA DE FLUJO MASICO DE SALIDA  ENFRIAMIENTO COMPRESOR DE ALTA
-	CDPA = 0;           // VÁLVULA DE PURGA COMPRESOR DE ALTA  
-	CICDPA = 0;         // CONDICIÓN INICIAL DE LA VÁLVULA DE PURGA
-	CIST8A = 0;			
-	CITCCA = 0;
-	CITCCB = 0;
-	CITCTA = 0;
-	CITCTB = 0;
-	CITenf = 0;
-	CITRCA = 0;
-	CITRCB = 0;
-	CITRTA = 0;
-	CITRTB = 0;
-	CIW_TA = 0;
-	CIW_TB = 0;
-	CIw1_TA = 0;
-	CIw1_TB = 0;
 	
-	DENSIDAD_FMENF_CA = 0;
-	DENSIDAD_FMENF_CB = 0;
-	DENSIDAD_FMOUT_CA = 0;
-	F_MAX_ENF = 0;
-	F_MAX_ENF_U1CCA = 0;
-	F_MAX_ENF_U1CCB = 0;
-	F_MAX_ENF_U1CTA = 0;
-	F_MAX_ENF_U1CTB = 0;
-	F_MAX_ENF_U4RTA = 0;
-	F_MAX_ENF_U4RTB = 0;
-	FCV_68127 = 0;
-	FLUJO_MASICO_AIRE = 0;
-	FLUJO_MASICO_CA = 0;
-	FLUJO_MASICO_CB = 0;
-	FLUJO_MASICO_ENF_CA = 0;
-	FLUJO_MASICO_ENF_CB = 0;
-	FLUJO_MASICO_GAS = 0;
-	FLUJO_MASICO_GAS_VIGV = 0;
-	FLUJO_MASICO_OUT_CA = 0;
-	FLUJO_MASICO_SALIDAVBV = 0;
-	FLUJO_MASICO_TA = 0;
-	FLUJO_MASICO_TB = 0;
-	Frecuencia = 0;
-
-	
-
-	POTENCIA_CA = 0;
-	POTENCIA_CB = 0;
-	POTENCIA_MEC = 0;
-	POTENCIA_TA = 0;
-	POTENCIA_TB = 0;
-	QA = 0;
-	QB = 0;
-	QCCA = 0;
-	QCCB = 0;
-	QCTA = 0;
-	QCTB = 0;
-	QRCA = 0;
-	QRCB = 0;
-	QRTA = 0;
-	QRTB = 0;
-
-	RADIO_MEDIO_CB = 0;
-	
-	RADIO_MEDIO_TB = 0;
-	
-	ST8A = 0;
-	T_Giro_TA = 0;
-	T_Giro_TB = 0;
-
-
-	TCCA = 0;
-	TCCB = 0;
-	Tchiller = 0;
-	TCTA = 0;
-	TCTB = 0;
-	Tenf = 0;
-	TgCA = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-	TgCB = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
-	Tgenf = TEMPERATURA_SALIDA_COMPRESOR_ALTA;	//CONSIDERANDO QUE SE ENFRIA CON EL AIRE A LA SALIDA DEL COMPRESOR DE ALTA
-	
-	TgenfA =TEMPERATURA_SALIDA_COMPRESOR_BAJA; //INICIALIZADA 
-	Tlub = 0;				// IGUALAR DE COCHI 
-
-
-	TgTA = T_C * 0.5;		//TEMPERATURA DE FLAMA ADIABATICA MULTIPLICADO POR 0.6 (FALTA HACER EL MODELO DE LA TEMPERATURA DE FLAMA HACIA LA ENTRADA DE LA TURBINA DE ALTA)
-	TgTB = TEMPERATURA_SALIDA_TURBINA_ALTA;
-
-	
-	Torque_Arracador_TA = 0;
-	Torque_Arracador_TB = 0;
-	TORQUE_CA = 0;
-	TORQUE_CB = 0;
-	TORQUE_Exc = 0;
-	TORQUE_TA = 0;
-	TORQUE_TB = 0;
-	TRCA = 0;
-	TRCB = 0;
-	TRTA = 0;
-	TRTB = 0;
-	U_CA = 0;
-	U_CB = 0;
-	U_TA = 0;
-	U_TB = 0;
-	U1CCA = 0;
-	U1CCB = 0;
-	U1CTA = 0;
-	U1CTB = 0;
-	U1enf = 0;
-	U1RCA = 0;
-	U1RCB = 0;
-	U1RTA = 0;
-	U1RTB = 0;
-	
-	U2CCA = 0;
-	U2CCB = 0;
-	U2CTA = 0;
-	U2CTB = 0;
-	U2enf = 0;
-
-	
-	U3enf = 0;
-	U3RCA = 0;
-	U3RCB = 0;
-	U3RTA = 0;
-	U3RTB = 0;
-	U4enf = 0;
-	U4RTA = 0;
-	U4RTB = 0;
-	VELOCIDAD_FMENF_CA = 0;
-	VELOCIDAD_FMENF_CB = 0;
-	VELOCIDAD_FMOUT_CA = 0;
-	VN1_CB = 0;
-	VT1_CA = 0;
-	VT1_CB = 0;
-	VT2_CA = 0;
-	VT2_CB = 0;
-	VT2_TA = 0;
-	VT2_TB = 0;
-	VT3_TA = 0;
-	VT3_TB = 0;
-	W_TA = 0;
-	W_TB = 0;
-	w1_TA = 0;
-	w1_TB = 0;
-
-	AFCV_6872 = 0;
-	ALFA1_CB = 0;
-	Alfa1_cb_control = 0;
-	ALFA1_CONTROL_CB = 0;
-	ALFA2_CB = 0;
-	ALFA3_CB = 0;
-	AREA_1_CB = 0;
-	AREA_2_CB = 0;
-	AREA_3_CB = 0;
-	BETA3_CB = 0;
-	CIALFA1 = 0;
-	CIAREA1IGV = 0;
-	CIAREA1VBV = 0;
-	
-	DELTA_PRESION_CB = 0;
-	FCV_6872 = 0;
-
-	 
-
-	PDI64070 = 0;
-	PRESION_ENTRADA_COMPRESOR_BAJA = 0;
-	PRESION_SALIDA_COMPRESOR_BAJA = 0;
-	
-	
-	TEMPERATURA_ENTRADA_COMPRESOR_BAJA = 25;
-	TEMPERATURA_SALIDA_COMPRESOR_BAJA = 0;
-	V1_CB = 0;
-	V2_CB = 0;
-	V3_CB = 0;
-	VN2_CB = 0;
-	VN3_CB = 0;
-	VRB1_CB = 0;
-	VRB2_CB = 0;
-	VRB3_CB = 0;
-	VT3_CB = 0;
-
-	ALFA_1_CA = 0;
-	ALFA1_CA = 0;
-	Alfa1_ca_control = 0;
-	ALFA1_CONTROL_CA = 0;
-	ALFA2_CA = 0;
-	ALFA3_CA = 0;
-	AREA_1_CA = 0;
-	AREA_2_CA = 0;
-	AREA_3_CA = 0;
-	AREA1_CONTROL_CA = 0;
-	BETA_3_CA = 0;
-	
-	
-	BETA3_CA = 0;
-	CIALFA1_CA = 0;
-	CIAREA1_CA = 0;
-	CIBETA3CA = 0;
-	CONTROL_BETA3_CA_CONTROL = 0;
-
-	DELTA_PRESION_CA = 0;
-	FCV_6871 = 0;
-	FCV_6873 = 0;
-	
-	PRESION_SALIDA_COMPRESOR_ALTA = 0;
-
-/* INICIALIZACION DE VARIABLES SISTEMA TURBOGRUPO*/
-
-	K_ADECUACION_CDPA = 1;					//inicializada 
-	K_ADECUACION_K1_ROTOR1_TA = 1;			//inicializada
-	K_ADECUACION_K1_ROTOR1_TB = 1;			//inicializada
-	K_ADECUACION_ST8A = 1;					//inicializada
-	mCCA = 1000;							//inicializada 
-	mCCB = 1000;							//inicializada
-	mCTA = 1000;							//inicializada
-	mCTB = 1000;							//inicializada
-	menf = 1000;							//inicializada
-	mRCA = 1000;							//inicializada
-	mRCB = 1000;							//inicializada
-	mRTA = 1000;							//inicializada
-	mRTB = 1000;							//inicializada
-	CPmaterial = 1;							//inicializada
-	K_ADECUACION_1_CA = 1;					//inicializada
-	K_ADECUACION_BETA3_CA = 1;				//inicializada
-	GRAVEDAD = 9.81;						//inicializada 
-	K_ADECUACION_1_CB = 1;					//inicializada 
-	K_ADECUACION_AREA1_CA = 1;				//inicializada 
-	K_ADECUACION_AREA1_CB = 1;				//inicializada
-	U2RCA = 1;								//inicializada
-	U2RCB = 1;								//inicializada
-	U2RTA = 1;								//inicializada
-	U2RTB = 1;								//inicializada
-	BETA1_CA = .78870538;					//INICIALIZADA
-	W_CA = 10200;							//INICIALIZADA
-	BETA2_CA = 1.0066;						//INICIALIZADA
-	W_CB = 3600;							//INICIALIZADA
-	CP_CB = 1;								//INICIALIZADA
-	RHO_AREA_2_CB = 1;						//INICIALIZADA
-	RHO_AREA_3_CB = 1;						//INICIALIZADA
-	RHO_DELTA_PRESION_CB = 1;   			//INICIALIZADA 
-	CP_CA = 1;								//INICIALIZADA
-	RHO_AREA_1_CA = 1;						//INICIALIZADA
-	RHO_AREA_2_CA = 1;						//INICIALIZADA 
-	RHO_AREA_3_CA = 1;						//INICIALIZADA
-	RHO_DELTA_PRESION_CA = 1;				//INICIALIZADA
-	RADIO_MEDIO_TA f=.1275;					//INICIALIZADA
-	RHO_AREA_1_CB = 1;						//INICIALIZADA 
-	RADIO_MEDIO_CA =.43;					//INICIALIZADA
-	BETA1_CB =.702244;						//inicializada
-	BETA2_CB =.95;							//inicializada
-	TAO_ALFA_1_CA = 1;						//INICIALIZADA
-	TAO_BETA3_CA = 1;						//INICIALIZADA
-	TAO_CA_A1 = 1;							//INICIALIZADA
-	K_ADECUACION_FCV68127 = 1;				//INICIALIZADA
-	K_ADECUACION_FCV68128 = 1;				//INICIALIZADA
-	K_ADECUACION_FCV6871 = 1;  				//INICIALIZADA
-	K_ADECUACION_FCV6872 = 1;  				//INICIALIZADA
-	K_ADECUACION_FCV6873 = 1;  				//INICIALIZADA					  
-	CONSTANTE_AREAS_2_TA = .40;				//INICIALIZADA 
-	CONSTANTE_AREAS_1_TA = 2.45;			// INICIALIZADA 
-	BETA2_TA = 1.04;						// INICIALIZADA
-	BETA1_TA = 1.39;						// INICIALIZADA
-	CP_TA = 1.17;							//INICIALIZADA
-	TAO_FCV68127 = 1;						//INICIALIZADA
-	TAO_FCV68128 = 1;						// INICIALIZADA 
-	TAO_FCV6871 = 1;						// INICIALIZADA
-	TAO_FCV6872 = 1;						// INICIALIZADA
-	TAO_FCV6873 = 1;						//INICIALIZADA
-	TAO_CDPA = 1;							//INICIALIZADA
-	TAO_ST8A = 1;							//INICIALIZADA
-	TAO_TA_ROTOR1 = 1;						//INICIALIZADA
-	TAO_TB_ROTOR1 = 1;						//INICIALIZADA
-	TAO_ALFA_1_CB = 1;						//INICIALIZADA
-	TAO_IGV_CB_A1 = 1;						//INICIALIZADA
-	TAO_VBV_CA_A1 = 1;						//INICIALIZADA
-
-
-
-/* INICIALIZACION DE VARIABLES SISTEMA TURBOGRUPO*/
-
-
-	
-	TEMPERATURA_SALIDA_COMPRESOR_ALTA = 0;
-	V1_CA = 0;
-	V2_CA = 0;
-	V3_CA = 0;
-	VN1_CA = 0;
-	VN2_CA = 0;
-	VN3_CA = 0;
-	VRB1_CA = 0;
-	VRB2_CA = 0;
-	VRB3_CA = 0;
-	VT3_CA = 0;
-	
-	aux1 = 0;
-	dif = 0;
-	n = 0;
-	X_bioxidoR = 0;
-	X_etano = 0;
-	X_Ibutano = 0;
-	X_Ipentano = 0;
-	X_metano = 0;
-	X_Nbutano = 0;
-	X_Neopentano = 0;
-	X_Nhexano = 0;
-	X_nitrogenoR = 0;
-	X_Npentano = 0;
-	X_Propano = 0;
-	X_Oxigeno = 0;
-
-	DH_Agua_V = 0;
-	DH_bioxido = 0;
-	DH_Ibutano = 0;
-	DH_metano = 0;
-	DH_Nbutano = 0;
-	DH_Nhexano = 0;
-	DH_nitrogeno = 0;
-	DH_Oxigeno = 0;
-	DH_Propano = 0;
-	TemAmb = 0;
-	//TemGas = 0;
-	DH_Neopentano = 0;
-	DH_Ipentano = 0;
-	DH_Npentano = 0;
-	DH_etano = 0;
-	B_Agua = 0;
-	B_bioxido = 0;
-	B_etano = 0;
-	B_Ibutano = 0;
-	B_Ipentano = 0;
-	B_metano = 0;
-	B_Nbutano = 0;
-	B_Neopentano = 0;
-	B_Nhexano = 0;
-	B_nitrogeno = 0;
-	B_Npentano = 0;
-	B_Propano = 0;
-	Cp_bioxido = 0;
-	Cp_etano = 0;
-	Cp_gas = 0;
-	Cp_Ibutano = 0;
-	Cp_Ipentano = 0;
-	Cp_metano = 0;
-	Cp_Nbutano = 0;
-	Cp_Neopentano = 0;
-	Cp_Nhexano = 0;
-	Cp_nitrogeno = 0;
-	Cp_Npentano = 0;
-	Cp_Propano = 0;
-	kJkg_Btulb = 0;
-	M_aire = 0;
-	M_gas = 0;
-	PCIp = 0;
-	PreSatAgua = 0;
-	Rho_rel = 0;
-	Rhoideal = 0;
-	TRef = 0;
-	X_Agua_L = 0;
-	X_nitrogenoP = 0;
-	Z_Gas_humedo = 0;
-	Z_Gas_seco = 0;
-
-	B_Agua = 0;
-	B_bioxido = 0;
-	B_etano = 0;
-	B_Ibutano = 0;
-	B_Ipentano = 0;
-	B_metano = 0;
-	B_Nbutano = 0;
-	B_Neopentano = 0;
-	B_Nhexano = 0;
-	B_nitrogeno = 0;
-	B_Npentano = 0;
-	B_Propano = 0;
-	Cp_bioxido = 0;
-	Cp_etano = 0;
-	Cp_gas = 0;
-	Cp_Ibutano = 0;
-	Cp_Ipentano = 0;
-	Cp_metano = 0;
-	Cp_Nbutano = 0;
-	Cp_Neopentano = 0;
-	Cp_Nhexano = 0;
-	Cp_nitrogeno = 0;
-	Cp_Npentano = 0;
-	Cp_Propano = 0;
-	kJkg_Btulb = 0;
-	M_aire = 0;
-	M_gas = 0;
-	PCIp = 0;
-	PreSatAgua = 0;
-	Rho_rel = 0;
-	Rhoideal = 0;
-	TRef = 0;
-	X_Agua_L = 0;
-	Z_Gas_humedo = 0;
-	Z_Gas_seco = 0;
-	Cv_gas = 0;
-	k_gas = 0;
-	Rgas = 0;
-	Rhoreal = 0;
-	TemGasC = 0;
-	TemGasF = 0;
-
-	HOxigenoSY = 0;
-	HnitrogenoSY = 0;
-	HbioxidoSY = 0;
-	HNhexanoSY = 0;
-	HPropanoSY = 0;
-	HmetanoSY = 0;
-	HNbutanoSY = 0;
-	HIbutanoSY = 0;
-	HNeopentanoSY = 0;
-	HIpentanoSY = 0;
-	HNpentanoSY = 0;
-	HetanoSY = 0;
-	HAgua_L = 0;
-	hhv = 0;
-	kJ_kCal = 0;
-	HOxigenoSY = 0;
-
-	AC_masa = 0;
-	AC_mol = 0;
-	AG = 0;
-	error6 = 0;
-	Exceso_MASICO_porciento = 0;					//exceso de aire masico
-	Exceso_MOLAR_porciento = 0;						//exceso de aire molar
-	f_molar = 0;									//RCAreal_mol/RCAideal_mol
-	fMASICO = 0;									//RCAreal_masa/RCAideal_masa
-	Hproductos = 0;
-	M_aire_kg_kmol = 0;
-	M_gas_kg_kmol = 0;
-	mairemax_kg_s = 0;
-	mairemax_kmol_s = 0;
-	mgas_kg_s = 0;
-	mgas_kmol_s = 0;
-	num_carbon = 0;
-	num_hidrogeno = 0;
-	num_hidrogeno2 = 0;
-	num_nitrogeno = 0;
-	num_oxigeno = 0;
-	poli1suma = 0;
-	poli2suma = 0;
-	RAC_ideal_masa = 0;
-	RAC_ideal_mol = 0;
-	RACreal_masa = 0;
-	RACreal_mol = 0;
-	RCA_ideal_masa = 0;
-	RCA_ideal_mol = 0;
-	RCAreal_masa = 0;
-	RCAreal_mol = 0;
-	suma = 0;
-	suma2 = 0;
-	Temperatura = 0;
-
-	bio = 0;
-	bioxido_kj_mol = 0;
-	constante = 0;
-	etano_kj_mol = 0;
-	Hreactivos = 0;
-	i_butano_kj_mol = 0;
-	i_pentano_kj_mol = 0;
-	metano_kj_mol = 0;
-	n_butano_kj_mol = 0;
-	n_hexano_kj_mol = 0;
-	n_pentano_kj_mol = 0;
-	neopentano_kj_mol = 0;
-	nitro = 0;
-	nitro2 = 0;
-	nitrogeno_kj_mol = 0;
-	nitrogeno2_kj_mol = 0;
-	oxi = 0;
-	oxigeno_kj_mol = 0;
-	propano_kj_mol = 0;
-	psi_T = 0;
-	psi_tref = 0;
-	T1_3 = 0;
-	T2_3 = 0;
-	T5_3 = 0;
-	T6_3 = 0;
-	T7_3 = 0;
-	T8_3 = 0;
-
-	A_i = 0;
-	B_i = 0;
-	C_i = 0;
-	D_i = 0;
-	error1 = 0;
-	error2 = 0;
-	error3 = 0;
-	error4 = 0;
-	F_i = 0;
-	Pn = 0;
-	Q_i = 0;
-	R_i = 0;
-	r1 = 0;
-	r2 = 0;
-	r3 = 0;
-	r4 = 0;
-	S_i = 0;
-	x = 0;
-	Y_i = 0;
-
-	C_B = 0;
-	C_C = 0;
-	C_H2 = 0;
-	CH4_B = 0;
-	CH4_C = 0;
-	CH4_H2 = 0;
-	CO_B = 0;
-	CO_C = 0;
-	CO_H2 = 0;
-	E_i = 0;
-	F = 0;
-	FA = 0;
-	FB = 0;
-	G = 0;
-	G_i = 0;
-	H = 0;
-	H_H2 = 0;
-	H_i = 0;
-	HCN_B = 0;
-	HCN_C = 0;
-	HCN_D = 0;
-	HCN_H2 = 0;
-	J = 0;
-	N_D = 0;
-	NH3_D = 0;
-	NH3_H2 = 0;
-	NO_B = 0;
-	NO_D = 0;
-	NO_H2 = 0;
-	NO2_B = 0;
-	NO2_D = 0;
-	NO2_H2 = 0;
-	O_B = 0;
-	O_H2 = 0;
-	O2_B = 0;
-	O2_H2 = 0;
-	O3_B = 0;
-	O3_H2 = 0;
-	OH_B = 0;
-	OH_H2 = 0;
-	P_i = 0;
-	R_CO = 0;
-	R_HO = 0;
-	R_NO = 0;
-	U_i = 0;
-	V_i = 0;
-	W_i = 0;
-	X_i = 0;
-	Z_i = 0;
-	
-	aux2 = 0;
-	constante1 = 0;
-	d = 0;
-	error5 = 0;
-	FC = 0;
-	FD = 0;
-	GA = 0;
-	GB = 0;
-	GC = 0;
-	GD = 0;
-	HA = 0;
-	HB = 0;
-	HC = 0;
-	HD = 0;
-	JA = 0;
-	JB = 0;
-	JC = 0;
-	JD = 0;
-	N_H2 = 0;
-	Ni = 0;
-	Ta = 0;
-	Ti = 0;
-	Tr = 0;
-	Tx = 0;
-
-	C_a = 0;
-	F_a = 0;
-	NOx = 0;
-	Q_a = 0;
-	T_C = 0;
-	T_F = 0;
-	U_a = 0;
-	V_a = 0;
-	
-
-	ALFA_1_TA = 0;
-	ALFA_1_TB = 0;
-	ALFA_2 = 0;
-	ALFA1_TA = 0;
-	ALFA1_TB = 0;
-	ALFA2_TA = 0;
-	ALFA2_TB = 0;
-	ALFA3_TA = 0;
-	ALFA3_TB = 0;
-	BETA1_TB = 0;
-	BETA2_TB = 0;
-	BETA3_TA = 0;
-	BETA3_TB = 0;
-	CONSTANTE_AREAS_1_TB = 0;
-	
-	CONSTANTE_AREAS_2_TB = 0;
-	CP_TB = 0;
-	DELTA_PRESION_TA = 0;
-	DELTA_PRESION_TB = 0;
-	PRESION_SALIDA_TURBINA_ALTA = 0;
-	PRESION_SALIDA_TURBINA_BAJA = 0;
-	RHO_DELTA_PRESION_TA = 0;
-	RHO_DELTA_PRESION_TB = 0;
-	TEMPERATURA_ENTRADA_TURBINA_ALTA = TgTA;
-	TEMPERATURA_SALIDA_TURBINA_ALTA = 0;
-	TEMPERATURA_SALIDA_TURBINA_BAJA = 0;
-	V1_TA = 0;
-	V1_TB = 0;
-	V2_TA = 0;
-	V2_TB = 0;
-	V3_TA = 0;
-	V3_TB = 0;
-	VN1_TA = 0;
-	VN1_TB = 0;
-	VN2_TA = 0;
-	VN2_TB = 0;
-	VN3_TA = 0;
-	VN3_TB = 0;
-	VRB1_TA = 0;
-	VRB1_TB = 0;
-	VRB2_TA = 0;
-	VRB2_TA = 0;
-	VRB2_TB = 0;
-	VRB3_TA = 0;
-	VRB3_TB = 0;
-	VT1_TA = 0;
-	VT1_TB = 0;
-
-	CIIEx_GE = 0;
-	CIVFaseA_GE = 0;
-	CIVFaseB_GE = 0;
-	CIVFaseC_GE = 0;
-	Consigna_VinTranEx_GE = 0;
-	delta = 0;
-	IEx_GE = 0;
-	IEx_IMagA = 0;
-	IEx_IMagB = 0;
-	IEx_IMagC = 0;
-	IFaseA_GE = 0;
-	IFaseB_GE = 0;
-	IFaseC_GE = 0;
-	IntCarga_GE = 0;
-	IntCrow_Bar = 0;
-	IntEx_GE = 0;
-	KEx_GE = 0;
-	KGen_GE_A = 0;
-	KGen_GE_B = 0;
-	KGen_GE_C = 0;
-	KTranEx_GE = 0;
-	Por_FA = 0;
-	Por_FB = 0;
-	Por_FC = 0;
-	SatIEx = 0;
-	TaoEx_GE = 0;
-	TaoGen_GE = 0;
-	VAB_GE = 0;
-	VAC_GE = 0;
-	VBC_GE = 0;
-	VEx_GE = 0;
-	VFaseA_GE = 0;
-	VFaseB_GE = 0;
-	VFaseC_GE = 0;
-	VinTranEx_GE = 0;
-
-	KcapaReac = 0;
-	PActiva = 0;
-	PReacFaseA_GE = 0;
-	PReacFaseB_GE = 0;
-	PReacFaseC_GE = 0;
-	PReactiva = 0;
-	PTotal = 0;
-	Vred_GE = 0;
-
-	CI2TORQUE_TA = 0;
-	CIBETA3CB = 0;
-	CIFCV68127 = 0;
-	CIFCV68128 = 0;
-	CIFCV6871 = 0;
-	CIFCV6872 = 0;
-	CIFCV6873 = 0;
-	CITORQUE_TA = 0;
-	CONTROL_FCV68127 = 0;
-	CONTROL_FCV68128 = 0;
-	CONTROL_FCV6871 = 0;
-	CONTROL_FCV6872 = 0;
-	CONTROL_FCV6873 = 0;
-	FCV_68128 = 0;
-	FCV_68128 = 0;
-	
-	PRESION_ENTRADA_TURBINA_ALTA = PRESION_SALIDA_COMPRESOR_ALTA * 0.9;
-	PT_6804 = 0;
-	PT_6814 = 0;
-	PT_6859A = 0;
-	PT_6859B = 0;
-	PT_6860 = 0;
-	SE_6800A = 0;
-	SE_6800B = 0;
-	SE_6812 = 0;
-	SE_6813 = 0;
-	
-	TE_6821A = 0;
-	TE_6821B = 0;
-	TE_6837A = 0;
-	TE_6837B = 0;
-	TE_6838A1 = 0;
-	TE_6838A2 = 0;
-	TE_6838B1 = 0;
-	TE_6838B2 = 0;
-	TE_6843 = 0;
-	TE_6844 = 0;
-	TE_6845 = 0;
-	TE_6846 = 0;
-	TE_6847 = 0;
-	TE_6848 = 0;
-	TE_6849 = 0;
-	TE_6850 = 0;
-	TORQUE_TA2 = 0;
-	ZT_68127A = 0;
-	ZT_68127B = 0;
-	ZT_68128A = 0;
-	ZT_68128B = 0;
-	ZT_6871A = 0;
-	ZT_6871B = 0;
-	ZT_6872A = 0;
-	ZT_6872B = 0;
-	ZT_6873A = 0;
-	ZT_6873B = 0;
-
-	TGE = 0;
-	Texc = 0;
-	Taire = 0;
-	I = 0;
-	R = 0;
-	Ugen = 0;
-	Iexc = 0;
-	Rexc = 0;
-	Uexc = 0;
-	Flujo_masico = 0;
-	Uexc_aire = 0;
-	Ugen_aire = 0;
-
-	Tao_TempGE = 0;
-	Tao_Tempexc = 0;
-	Tao_Tairege = 0;
-
-	CITGE = 0;
-	CITexc = 0;
-	CITaire = 0;
-
-
-	// Inicialización de los arreglos
-	InicializaAF(M, 12);
-	InicializaAF(M, 12);
-	InicializaAF(logk, 14);
-	InicializaAF(k, 14);
-	InicializaAF(kj_mol, 14);
-	InicializaAF(cal_mol, 17);
-	InicializaAF(a1, 17);
-	InicializaAF(a2, 17);
-	InicializaAF(a3, 17);
-	InicializaAF(a4, 17);
-	InicializaAF(a5, 17);
-	InicializaAF(a6, 17);
-	InicializaAF(a7, 17);
-	InicializaAF(A1, 17);
-	InicializaAF(A2, 17);
-	InicializaAF(A3, 17);
-	InicializaAF(A4, 17);
-	InicializaAF(A5, 17);
-	InicializaAF(A6, 17);
-	InicializaAF(A7, 17);
-	InicializaAF(h0_href_R, 9);
-	InicializaAF(h0_href, 9);
-	InicializaAF(A, 9);
-	InicializaAF(B, 9);
-	InicializaAF(C, 9);
-//	InicializaA2F(m, 4, 5);
-	InicializaAF(hc, 17);
-	InicializaAF(H_k, 17);
-	InicializaAF(poli1, 17);
-	InicializaAF(poli2, 17);
-
-
-
-
-
-/* termina inicializacion de variables*/
 
 
 
@@ -3855,7 +2194,7 @@ double Temperatura_Generador(double I, double R, double Ugen, double Taire,doubl
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Temperatura_Excitacion (double Iexc, double Rexc, double Uexc, double Taire,double Tao_Tempexc, double CITexc){
@@ -3885,7 +2224,7 @@ double Temperatura_Excitacion (double Iexc, double Rexc, double Uexc, double Tai
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Temperatura_Aire (double Texc, double TGE, double Tchiller, double Flujo_masico,double Uexc_aire,double Ugen_aire,double Tao_Tairege, double CITaire){
@@ -3915,7 +2254,7 @@ double Temperatura_Aire (double Texc, double TGE, double Tchiller, double Flujo_
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Masa(double CI, double P_in, double P_out,double CA_RT)
@@ -4196,7 +2535,7 @@ double Temperatura_de_Aire_en_el_Habitaculo(double U1enf, double TCTB, double U2
       x[0]=x[j-1];
   }
 
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Compresor_de_Alta(double TgCA, double U1RCA, double TCCA, double U2RCA, double TRTA, double U3RCA, double Tlub, double mRCA, double CPmaterial, double CITRCA)
@@ -4227,7 +2566,7 @@ double Temperatura_Rotor_Compresor_de_Alta(double TgCA, double U1RCA, double TCC
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Compresor_de_Alta(double U1CCA, double Tenf, double U2CCA, double TgCA, double mCCA, double CPmaterial, double CITCCA)
@@ -4257,7 +2596,7 @@ double Temperatura_Carcasa_Compresor_de_Alta(double U1CCA, double Tenf, double U
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Compresor_de_Baja(double TgCB, double U1RCB, double TCCB, double U2RCB, double TRTB, double U3RCB, double Tlub, double mRCB, double CPmaterial, double CITRCB)
@@ -4288,7 +2627,7 @@ double Temperatura_Rotor_Compresor_de_Baja(double TgCB, double U1RCB, double TCC
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Compresor_de_Baja(double U1CCB, double Tenf, double U2CCB, double TgCB, double mCCB, double CPmaterial, double CITCCB)
@@ -4318,7 +2657,7 @@ double Temperatura_Carcasa_Compresor_de_Baja(double U1CCB, double Tenf, double U
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Turbina_de_Baja(double U1RTB, double TgTB, double U2RTB, double TRCB, double U3RTB, double Tlub, double U4RTB, double Tgenf, double mRTB, double CPmaterial, double CITRTB)
@@ -4349,7 +2688,7 @@ double Temperatura_Rotor_Turbina_de_Baja(double U1RTB, double TgTB, double U2RTB
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Turbina_de_Baja(double U1CTB, double Tenf, double U2CTB, double TgTB, double mCTB, double CPmaterial, double CITCTB)
@@ -4379,7 +2718,7 @@ double Temperatura_Carcasa_Turbina_de_Baja(double U1CTB, double Tenf, double U2C
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Turbina_de_Alta(double U1RTA, double TgTA, double U2RTA, double TRCA, double U3RTA, double Tlub, double U4RTA, double Tgenf, double mRTA, double CPmaterial, double CITRTA)
@@ -4410,7 +2749,7 @@ double Temperatura_Rotor_Turbina_de_Alta(double U1RTA, double TgTA, double U2RTA
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Turbina_de_Alta(double U1CTA, double Tenf, double U2CTA, double TgTA, double mCTA, double CPmaterial, double CITCTA)
@@ -4440,7 +2779,7 @@ double Temperatura_Carcasa_Turbina_de_Alta(double U1CTA, double Tenf, double U2C
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double TORQUETA(double K_ADECUACION_K1_ROTOR1_TA, double T_Giro_TA, double TAO_TA_ROTOR_1,double CONTROL_TA_TORQUE_1, double CITORQUE_TA, double CIw1_TA)
@@ -4470,7 +2809,7 @@ double TORQUETA(double K_ADECUACION_K1_ROTOR1_TA, double T_Giro_TA, double TAO_T
 	  x[0]=x[j-1];
 
 	  }
-	return 0;
+	return x[0];
 
 }
 double TORQUETA2 (double  K_ADECUACION_K2_ROTOR2,double CITORQUE_TA,double TAO_TA_ROTOR2,double CI2TORQUE_TA) {
@@ -4592,7 +2931,7 @@ double ST8AFUN(double K_ADECUACION_ST8A, double FCV_68127, double TAO_ST8A, doub
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double CDPAFUN (double K_ADECUACION_CDPA, double FCV_68128, double TAO_CDPA, double CICDPA)
@@ -4622,7 +2961,7 @@ double CDPAFUN (double K_ADECUACION_CDPA, double FCV_68128, double TAO_CDPA, dou
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double ALFA1CONTROLCB(double K_ADECUACION_1_CB,double ALFA1_CONTROL_CB, double TAO_ALFA_1_CB, double CIALFA1)
@@ -4654,7 +2993,7 @@ double ALFA1CONTROLCB(double K_ADECUACION_1_CB,double ALFA1_CONTROL_CB, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1VBVCB (double K_ADECUACION_AREA1_CA, double FCV_6872, double TAO_VBV_CA_A1, double CIAREA1VBV)
@@ -4686,7 +3025,7 @@ double AREA1VBVCB (double K_ADECUACION_AREA1_CA, double FCV_6872, double TAO_VBV
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1IGVCB (double K_ADECUACION_AREA1_CB, double AFCV_6872,double IGV_CONTROL_CB_A1, double TAO_IGV_CB_A1, double CIAREA1IGV)
@@ -4718,7 +3057,7 @@ double AREA1IGVCB (double K_ADECUACION_AREA1_CB, double AFCV_6872,double IGV_CON
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1CA (double K_ADECUACION_AREA1_CA, double FCV_6871, double TAO_CA_A1, double CIAREA1_CA)
@@ -4750,7 +3089,7 @@ double AREA1CA (double K_ADECUACION_AREA1_CA, double FCV_6871, double TAO_CA_A1,
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double BETA3CA (double K_ADECUACION_BETA3_CA, double FCV_6873, double TAO_BETA3_CA, double CIBETA3CA)
@@ -4782,7 +3121,7 @@ double BETA3CA (double K_ADECUACION_BETA3_CA, double FCV_6873, double TAO_BETA3_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double PriO(double A, double B, double C, double D)  // falta modelo del genrador
@@ -4822,7 +3161,7 @@ double FCV6871 (double K_ADECUACION_FCV6871, double CONTROL_FCV6871, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV6872 (double K_ADECUACION_FCV6872, double CONTROL_FCV6872, double TAO_FCV6872, double CIFCV6872)
@@ -4852,7 +3191,7 @@ double FCV6872 (double K_ADECUACION_FCV6872, double CONTROL_FCV6872, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV6873 (double K_ADECUACION_FCV6873, double CONTROL_FCV6873, double TAO_FCV6873, double CIFCV6873)
@@ -4882,7 +3221,7 @@ double FCV6873 (double K_ADECUACION_FCV6873, double CONTROL_FCV6873, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV68127 (double K_ADECUACION_FCV68127, double CONTROL_FCV68127, double TAO_FCV68127, double CIFCV68127)
@@ -4912,7 +3251,7 @@ double FCV68127 (double K_ADECUACION_FCV68127, double CONTROL_FCV68127, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV68128 (double K_ADECUACION_FCV68128, double CONTROL_FCV68128, double TAO_FCV68128, double CIFCV68128)
@@ -4942,7 +3281,7 @@ double FCV68128 (double K_ADECUACION_FCV68128, double CONTROL_FCV68128, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 
