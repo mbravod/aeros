@@ -3567,7 +3567,7 @@ double Vibraciones(double A,double B,double C,double D,double *CIDesplazamiento,
 
 //***********************************************************************************************************************************//
 
-	
+
 
 
 //funcion de entrada de ejecucion  
@@ -4228,8 +4228,8 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
     Temperatura=2000;
     error6=100;
 
-
-
+//######VERIFICAR################################################################################
+/*//----------------------------------------------------------------------------------------------
 	for(z=0; z < 100; z++)
     {
         for( i=0; i < 14; i++)
@@ -4600,7 +4600,8 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
         Temperatura=Tx*1000;
         //FIN METODO DE NEWTON-RAPSON
     }
-	
+//------------------------------------------------------------------------------------------*/
+//######FIN VERIFICAR################################################################################
 	T_F=(1.8*Temperatura)-459.67;
     T_C=Temperatura-273.15;
 
@@ -5024,200 +5025,6 @@ PresionSum = PresionSum_kg*kg_kPa;
 
 
 ////////////////////////////////////////////////////////////////////////////
-
-
-//****************************EL ULISES ES PUÑAL Y LE GUSTA POR ATRAS*********************************************//
-CIIEx_GE=IEx_GE;
-    CIVFaseA_GE=VFaseA_GE;
-    CIVFaseB_GE=VFaseB_GE;
-    CIVFaseC_GE=VFaseC_GE;
-
-    /****************************************************************************
-    *                   calculo ADECUACION DE CONTROL                          *
-    ****************************************************************************/
-
-    TE_6821A = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
-    TE_6821B = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
-
-    ZT_68127A = ST8A;
-    ZT_68127B = ST8A;
-    FCV_68127 = FCV68127 (K_ADECUACION_FCV68127, CONTROL_FCV68127, TAO_FCV68127, CIFCV68127);
-
-    SE_6800A = W_CA;
-    SE_6800B = W_CA;
-
-    ZT_6873A = BETA_3_CA;
-    ZT_6873B = BETA_3_CA;
-    FCV_6873 = FCV6873 (K_ADECUACION_FCV6873, CONTROL_FCV6873, TAO_FCV6873, CIFCV6873);
-
-    ZT_6872A = AREA_1_CB;
-    ZT_6872B = AREA_1_CB;
-    FCV_6872 = FCV6872 (K_ADECUACION_FCV6872, CONTROL_FCV6872, TAO_FCV6872, CIFCV6872);
-
-    ZT_6871A = AREA_1_CA;
-    ZT_6871B = AREA_1_CA;
-    FCV_6871 =  FCV6871 (K_ADECUACION_FCV6871, CONTROL_FCV6871, TAO_FCV6871, CIFCV6871);
-
-
-    PT_6859A = PRESION_SALIDA_COMPRESOR_BAJA;
-    PT_6859B = PRESION_SALIDA_COMPRESOR_BAJA;// MAS VARIACION
-
-    TE_6837A = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
-    TE_6837B = TEMPERATURA_SALIDA_COMPRESOR_BAJA;//MAS VARIACION
-
-    PT_6804 = PRESION_SALIDA_COMPRESOR_ALTA;
-
-    PT_6814 = PRESION_SALIDA_COMPRESOR_ALTA;
-
-    TE_6838A1 = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-    TE_6838A2 = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-
-    TE_6838B1 = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-    TE_6838B2 = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-
-    ZT_68128A = CDPA;
-    ZT_68128B = CDPA;
-    FCV_68128 = FCV68128 (K_ADECUACION_FCV68128, CONTROL_FCV68128, TAO_FCV68128, CIFCV68128);
-
-
-
-    PT_6860 = PRESION_ENTRADA_TURBINA_ALTA;
-
-    TE_6843 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6844 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6845 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6846 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6847 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6848 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6849 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    TE_6850 = TEMPERATURA_ENTRADA_TURBINA_ALTA;
-
-    SE_6812 = W_CB;
-
-    SE_6813 = W_CB;
-
-	CITGE = TGE;
-	CITexc = Texc;
-	CITaire = Taire;
-
-    CITRTB = TRTB;
-    CITCTB = TCTB;
-    CITRCB = TRCB;
-    CITCCB = TCCB;
-    CITenf = Tenf;
-
-
-    CITRTA = TRTA;
-    CITCTA = TCTA;
-    CITRCA = TRCA;
-    CITCCA = TCCA;
-
-    CIALFA1_CA=ALFA1_CA;
-    CIAREA1_CA=AREA_1_CA;
-    CIBETA3CA=BETA3_CA;
-
-    CITORQUE_TA=TORQUE_TA;
-    CI2TORQUE_TA= TORQUE_TA2;
-
-    CIALFA1=ALFA1_CB;
-    CIAREA1VBV=AREA_1_CB;
-    CIBETA3CB=BETA3_CB;
-
-    CIST8A=ST8A;
-    CICDPA=CDPA;
-    CIFCV68127=FCV_68127;
-    CIFCV6873=FCV_6873;
-    CIFCV6872=FCV_6872;
-    CIFCV6871=FCV_6871;
-    CIFCV68128=FCV_68128;
-	
-	//CONSIDERACIONES PARA 50ms//////////////////////////////////////////////////////////////////////////////////
-	
-	Tiempo = Tiempo+0.05;
-	
-	CI_VentiVel = VelFinalVenti;
-	//CIHEX = Temperatura_final_HEX_agua;
-	CICale = Temperatura_final_Cal;
-	CI_VelA = Vel_BombaA;
-	CIEvap = Temperatura_final_Evap;
-	CIAireA = Tem_fin_6450;
-	CIAireB = Tem_fin_6499;
-	CIAireVentA = Tem_fin_64072;
-	CIAireVentB = Tem_fin_64071;
-	CITem6402 = Tem_fin_6402;
-	CI_VentiVelGen = VelFinalVentiGen;
-	CIMasaTurbina = MasaTurbina;
-	
-	//CIAire_Turbina = Temperatura_aire_turbina;
-	CIRes = Potencia_resistencia;
-	CI_Potencia_frigorifica = Potencia_frigorifica;
-//****************************************************************************************************************//
-
-//**************************************EL TATA Y EL COCHI <3 SE AMAN*************************************************//
-CI_I_CG = Acc_I_CG;
-   CIXvalControl_1_v1 = Ap_valvula_CG;
-   CIMasaTanqDepu1 = MasaTanqueDepu1;
-   CITanqDepu1=TemperaturaOutTanqueDepu1;
-   CIFIL1 = NivelTanqueDepu1;
-   CITanqueSuc1=Temperatura_final_TanSuc1;
-   CIMotorCompresor=VelMotorCompresor;
-   CI1ra = Temperatura_final_1ra; //Temperatura_in_LubComp,CILubComp,(1.98*1.21),(1.98*1.21),(MasaLubComp*1.98),(Trabajo_in1)
-   CIT_Chuma_3111A = TemChum3111A;
-   CIT_Chuma_3111B = TemChum3111B;
-   CILubComp=TempAceiteoutLubComp;
-   CIMasaTanSuc1 = MasaTanqueSuc1;
-   CITanqueExp=Temperatura_final_TanExp;
-   CIMasaTanqueExp =MasaTanqueExp;
-   CIHEX1 = Temperatura_final_HEX;
-   CIMasaTanqueDepu2 = MasaTanqueDepu2;
-   CITanqDepu2 = TemperaturaOutTanqueDepu2;
-   CIFIL2 = NivelTanqueDepu2;
-   CI2da = Temperatura_final_2da;
-   CITanqueExp2 = Temperatura_final_TanExp2;
-   CIMasaTanqueExp2 = MasaTanqueExp2;
-   CIHEX2 = Temperatura_final_HEX2;
-   CIMasaTanqueCoal_V3 = MasaTanqueCoal_V3;
-   CIMasaCoalV082_1 = MasaCoalFV082_1;
-   CIMasaCoalV082_2 = MasaCoalFV082_2;
-   CICoal_FV082_1A = NivelCoalFV082_1A;
-   CICoal_FV082_1B = NivelCoalFV082_1B;
-   CICoal_FV082_2A = NivelCoalFV082_2A;
-   CICoal_FV082_2B = NivelCoalFV082_2B;
-   CICoal_V3=NivelCoal_V3;
-   CICoal_V3B=NivelCoal_V3B;
-   CITemCoal_V3 = TempOutCoal_V3;
-   CITemCoalV082_1 = TempOutCoalFV082_1;
-   CITemCoalV082_2 = TempOutCoalFV082_2;
-   CI_VelAceiteceite = Vel_BombaAceite;
-   CI_HEX_LUB = Temperatura_in_LubComp;
-   CIT_ChumEmpu_3113 = TemChumEmpu_3113;
-   CI_Apertura_FCV62109 = X_FCV62109;
-   CI_Apertura_FCV62108 = X_FCV62108;
-   CI_Apertura_FCV62107 = X_FCV62107;
-   CI_Vel_Vent_HEX=Velocidad_Ventilador_HEX;
-   CI_Apertura_SOV62110 = SOV62110;
-   CI_Apertura_FSV6249 = X_FSV6249;
-   CI_Apertura_FSV6204 = X_FSV6204;
-   CI_Apertura_SOV6208 = X_SOV6208;
-   CI_Apertura_SOV62111 = SOV62111;
-   CI_Apertura_SOV62112 = SOV62112;
-   CI_Apertura_SOV62113 = SOV62113;
-   CI_Apertura_SOV62114 = SOV62114;
-   CI_Apertura_SOV62115 = SOV62115;
-   CI_Apertura_SOV62116 = SOV62116;
-   CI_Apertura_SOV62117 = SOV62117;
-   CI_Apertura_SOV62118 = SOV62118;
-   CI_Apertura_SOV62119 = SOV62119;
-   CI_Apertura_SOV62120 = SOV62120;
-
-//********************************************************************************************************************//
 
 
 if (pars==1){
