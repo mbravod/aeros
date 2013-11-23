@@ -12,7 +12,37 @@ int main0(int pars);
 
 
 using namespace std;
+FILE *arc = NULL;
 
+FILE *arc1 = NULL;
+FILE *arc2 = NULL;
+FILE *arc3 = NULL;
+FILE *arc4 = NULL;
+FILE *arc5 = NULL;
+FILE *arc6 = NULL;
+FILE *arc7 = NULL;
+FILE *arc8 = NULL;
+FILE *arc9 = NULL;
+FILE *arc10 = NULL;
+FILE *arc11 = NULL;
+FILE *arc12 = NULL;
+FILE *arc13 = NULL;
+FILE *arc14 = NULL;
+FILE *arc15 = NULL;
+FILE *arc16 = NULL;
+FILE *arc17 = NULL;
+FILE *arc18 = NULL;
+FILE *arc19 = NULL;
+FILE *arc20 = NULL;
+FILE *arc21 = NULL;
+FILE *arc22 = NULL;
+FILE *arc23 = NULL;
+FILE *arc24 = NULL;
+FILE *arc25 = NULL;
+FILE *arc26 = NULL;
+FILE *arc27 = NULL;
+FILE *arc28 = NULL;
+FILE *arc29 = NULL;
 
 
 
@@ -3572,7 +3602,81 @@ double Vibraciones(double A,double B,double C,double D,double *CIDesplazamiento,
 
 //funcion de entrada de ejecucion  
  int main0(int pars) 
-{ 
+{
+	arc = fopen("C:/prog.csv", "a");
+	arc1 = fopen("C:/prog1.csv", "a");
+	arc2 = fopen("C:/prog2.csv", "a");
+	arc3 = fopen("C:/prog3.csv", "a");
+	arc4 = fopen("C:/prog4.csv", "a");
+	arc5 = fopen("C:/prog5.csv", "a");
+	arc6 = fopen("C:/prog6.csv", "a");
+	arc7 = fopen("C:/prog7.csv", "a");
+	arc8 = fopen("C:/prog8.csv", "a");
+	arc9 = fopen("C:/prog9.csv", "a");
+	arc10 = fopen("C:/prog10.csv", "a");
+	arc11 = fopen("C:/prog11.csv", "a");
+	arc12 = fopen("C:/prog12.csv", "a");
+	arc13 = fopen("C:/prog13.csv", "a");
+	arc14 = fopen("C:/prog14.csv", "a");
+	arc15 = fopen("C:/prog15.csv", "a");
+	arc16 = fopen("C:/prog16.csv", "a");
+	arc17 = fopen("C:/prog17.csv", "a");
+	arc18 = fopen("C:/prog18.csv", "a");
+	arc19 = fopen("C:/prog19.csv", "a");
+	arc20 = fopen("C:/prog20.csv", "a");
+	arc21 = fopen("C:/prog21.csv", "a");
+	arc22 = fopen("C:/prog22.csv", "a");
+	arc23 = fopen("C:/prog23.csv", "a");
+	arc24 = fopen("C:/prog24.csv", "a");
+	arc25 = fopen("C:/prog25.csv", "a");
+	arc26 = fopen("C:/prog26.csv", "a");
+	arc27 = fopen("C:/prog27.csv", "a");
+	arc28 = fopen("C:/prog28.csv", "a");
+	arc29 = fopen("C:/prog29.csv", "a");
+
+	if(arc == NULL||arc1==NULL||arc2==NULL||arc3==NULL||arc4==NULL||arc5==NULL||arc6==NULL||arc7==NULL||arc8==NULL||arc9==NULL||arc10==NULL||arc11==NULL||arc12==NULL||arc13==NULL||arc14==NULL||arc15==NULL||arc16==NULL||arc17==NULL||arc18==NULL||arc19==NULL||arc20==NULL||arc21==NULL||arc22==NULL||arc23==NULL||arc24==NULL||arc25==NULL||arc26==NULL||arc27==NULL||arc28==NULL||arc29==NULL)
+		{
+			return 0;
+		}
+
+		fprintf(arc, "Temperatura_entrada_compresor_baja;%f\n",TEMPERATURA_ENTRADA_COMPRESOR_BAJA);
+		fprintf(arc1, "Temperatura_salida_compresor_baja;%f\n",TEMPERATURA_SALIDA_COMPRESOR_BAJA);
+		fprintf(arc2, "Presion_entrada_compresor_baja;%f\n",PRESION_ENTRADA_COMPRESOR_BAJA);
+		fprintf(arc3, "Presion_salida_compresor_baja;%f\n",PRESION_SALIDA_COMPRESOR_BAJA);
+
+		fprintf(arc4, "Temperatura_salida_compresor_alta;%f\n",TEMPERATURA_SALIDA_COMPRESOR_ALTA);
+		fprintf(arc5, "Presion_salida_compresor_alta;%f\n",PRESION_SALIDA_COMPRESOR_ALTA);
+		fprintf(arc6, "Temperatura_entrada_turbina_alta;%f\n",TEMPERATURA_ENTRADA_TURBINA_ALTA);
+		fprintf(arc7, "Presion_entrada_turbina_alta;%f\n",PRESION_ENTRADA_TURBINA_ALTA);
+
+		fprintf(arc8, "Presion_salida_turbina_alta;%f\n",PRESION_SALIDA_TURBINA_ALTA);
+		fprintf(arc9, "Temperatura_salida_turbina_alta;%f\n",TEMPERATURA_SALIDA_TURBINA_ALTA);
+		fprintf(arc10, "Presion_salida_turbina_baja;%f\n",PRESION_SALIDA_TURBINA_BAJA);
+		fprintf(arc11, "Temperatura_salida_turbina_baja;%f\n",TEMPERATURA_SALIDA_TURBINA_BAJA);
+
+		fprintf(arc12, "Tenf;%f\n",Tenf);
+		fprintf(arc13, "TRTA;%f\n",TRTA);
+		fprintf(arc14, "TRTB;%f\n",TRTB);
+		fprintf(arc15, "TRCA;%f\n",TRCA);
+
+		fprintf(arc16, "TRCB;%f\n",TRCB);
+		fprintf(arc17, "TCTA;%f\n",TCTA);
+		fprintf(arc18, "TCTB;%f\n",TCTB);
+		fprintf(arc19, "TCCA;%f\n",TCCA);
+
+		fprintf(arc20, "TCCB;%f\n",TCCB);
+		fprintf(arc21, "POTENCIA_CB;%f\n",POTENCIA_CB);
+		fprintf(arc22, "POTENCIA_TA;%f\n",POTENCIA_TA);
+		fprintf(arc23, "POTENCIA_CA;%f\n",POTENCIA_CA);
+
+		fprintf(arc24, "POTENCIA_TB;%f\n",POTENCIA_TB);
+		fprintf(arc25, "TPOTENCIA_MECf\n",POTENCIA_MEC);
+		fprintf(arc26, "TORQUE_CB;%f\n",TORQUE_CB);
+		fprintf(arc27, "TORQUE_TA;%f\n",TORQUE_TA);
+		fprintf(arc28, "TORQUE_CA;%f\n",TORQUE_CA);
+		fprintf(arc29, "TORQUE_TB;%f\n",TORQUE_TB);
+
+
 //ejemplo de ejecucion...genera la raiz cuadrada
 
 //Setdouble(sqrt((double)i),i);
@@ -5038,6 +5142,7 @@ PresionSum = PresionSum_kg*kg_kPa;
 if (pars==1){
 int p=5/((int)sqrt(1.0f)-1);
 }
+fclose(arc);
 return 1;
 
 }
