@@ -322,7 +322,7 @@ int HYD_STRT_STRTORCRNK;
 //*****************************EL ULISES ES PUÑAL Y LE GUSTA POR ATRAS*************************************//
 // Declaración de Variables Globales
 // Parámetros del los fluidos de trabajo
-
+int counterTata;//Gracias tata
 double Cp_agua;                       // Calor específico del agua
 double VolEsp_agua;                   // volumen específico del agua							//NO SE USA EN NINGUN LADO CHECAR TATA
 double Densidad_agua;                 // densidad del agua
@@ -4229,8 +4229,11 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
     error6=100;
 
 //######VERIFICAR################################################################################
-/*//----------------------------------------------------------------------------------------------
-	for(z=0; z < 100; z++)
+//----------------------------------------------------------------------------------------------
+	counterTata=counterTata+1;
+	if(counterTata>=1000){
+	for(z=0; z < 10; z++)
+
     {
         for( i=0; i < 14; i++)
         {
@@ -4539,7 +4542,7 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
              // FIN METODO DE GAUSS-JORDAN 4X4
             x++;
         }
-        while( (error1 > 0.001)&&(error2 > 0.001)&&(error3 > 0.001)&&(error4 > 0.001) );
+        while( (error1 > 0.01)&&(error2 > 0.01)&&(error3 > 0.01)&&(error4 > 0.01) );
         
         hc[0]=A_i;
         hc[1]=H_i;
@@ -4595,11 +4598,16 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
               error5=error5*-1;
             }
         }
-        while( error5 > 0.001);
+        while( error5 > 0.01);
         
         Temperatura=Tx*1000;
         //FIN METODO DE NEWTON-RAPSON
+		
     }
+	counterTata=0;
+	printf("Si entre por las mamadas del tata");
+}
+	
 //------------------------------------------------------------------------------------------*/
 //######FIN VERIFICAR################################################################################
 	T_F=(1.8*Temperatura)-459.67;
