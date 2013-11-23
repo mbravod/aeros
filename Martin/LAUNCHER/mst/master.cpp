@@ -345,6 +345,7 @@ int main0()
 	
 	DWORD abs[50];
 	int j=0;
+	int tenp_time;
 	for (;;)
 	{
 		start_TIME=timeGetTime();
@@ -361,7 +362,9 @@ int main0()
 			}
 			TIME=timeGetTime();
 			abs[i]=TIME-old_TIME;
-			Sleep(50-abs[i]);
+			tenp_time = 50-abs[i];
+			if(tenp_time <= 50)
+				Sleep(50-abs[i]);
 		}
 		end_TIME=timeGetTime();
 		j++;
