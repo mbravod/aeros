@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b4.ui'
 **
-** Created: Sun 24. Nov 01:20:54 2013
+** Created: Sun 24. Nov 14:56:41 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -161,19 +161,16 @@ public:
         font2.setBold(true);
         font2.setWeight(75);
         label_2->setFont(font2);
-        label_2->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbAceiTempT = new WLabel(frame_2);
         lbAceiTempT->setObjectName(QString::fromUtf8("lbAceiTempT"));
         lbAceiTempT->setGeometry(QRect(40, 23, 181, 41));
         lbAceiTempT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbAceiTempT->setFont(font2);
-        lbAceiTempT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbAceiNivT = new WLabel(frame_2);
         lbAceiNivT->setObjectName(QString::fromUtf8("lbAceiNivT"));
         lbAceiNivT->setGeometry(QRect(40, 62, 181, 41));
         lbAceiNivT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbAceiNivT->setFont(font2);
-        lbAceiNivT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         aWMultiObject_5 = new AWMultiObject(B4);
         aWMultiObject_5->setObjectName(QString::fromUtf8("aWMultiObject_5"));
         aWMultiObject_5->setGeometry(QRect(507, 156, 82, 41));
@@ -260,50 +257,42 @@ public:
         lbInterT->setGeometry(QRect(88, 344, 191, 21));
         lbInterT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbInterT->setFont(font2);
-        lbInterT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbBomRecT = new WLabel(B4);
         lbBomRecT->setObjectName(QString::fromUtf8("lbBomRecT"));
         lbBomRecT->setGeometry(QRect(366, 321, 191, 21));
         lbBomRecT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbBomRecT->setFont(font2);
-        lbBomRecT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbAlimT = new WLabel(B4);
         lbAlimT->setObjectName(QString::fromUtf8("lbAlimT"));
         lbAlimT->setGeometry(QRect(630, 194, 191, 21));
         lbAlimT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbAlimT->setFont(font2);
-        lbAlimT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbRetMotT = new WLabel(B4);
         lbRetMotT->setObjectName(QString::fromUtf8("lbRetMotT"));
         lbRetMotT->setGeometry(QRect(665, 280, 191, 41));
         lbRetMotT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbRetMotT->setFont(font2);
-        lbRetMotT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbRetMotT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbDrenCarcaT = new WLabel(B4);
         lbDrenCarcaT->setObjectName(QString::fromUtf8("lbDrenCarcaT"));
         lbDrenCarcaT->setGeometry(QRect(590, 397, 310, 21));
         lbDrenCarcaT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lbDrenCarcaT->setFont(font2);
-        lbDrenCarcaT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lb83fT_2 = new WLabel(B4);
         lb83fT_2->setObjectName(QString::fromUtf8("lb83fT_2"));
         lb83fT_2->setGeometry(QRect(950, 104, 21, 21));
         lb83fT_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb83fT_2->setFont(font2);
-        lb83fT_2->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lb83fT = new WLabel(B4);
         lb83fT->setObjectName(QString::fromUtf8("lb83fT"));
         lb83fT->setGeometry(QRect(903, 120, 41, 21));
         lb83fT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb83fT->setFont(font2);
-        lb83fT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lb82f = new WLabel(B4);
         lb82f->setObjectName(QString::fromUtf8("lb82f"));
         lb82f->setGeometry(QRect(965, 120, 31, 21));
         lb82f->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb82f->setFont(font2);
-        lb82f->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         label_13 = new WLabel(B4);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(591, 127, 241, 21));
@@ -314,19 +303,16 @@ public:
         font3.setBold(true);
         font3.setWeight(75);
         label_13->setFont(font3);
-        label_13->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         label_14 = new WLabel(B4);
         label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setGeometry(QRect(653, 146, 41, 21));
         label_14->setStyleSheet(QString::fromUtf8(""));
         label_14->setFont(font3);
-        label_14->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         label_15 = new WLabel(B4);
         label_15->setObjectName(QString::fromUtf8("label_15"));
         label_15->setGeometry(QRect(710, 146, 41, 21));
         label_15->setStyleSheet(QString::fromUtf8(""));
         label_15->setFont(font3);
-        label_15->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbUnit3 = new WLabel(B4);
         lbUnit3->setObjectName(QString::fromUtf8("lbUnit3"));
         lbUnit3->setGeometry(QRect(833, 647, 190, 15));
@@ -349,19 +335,16 @@ public:
         lb83fT_3->setGeometry(QRect(921, 104, 31, 21));
         lb83fT_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb83fT_3->setFont(font2);
-        lb83fT_3->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lb83fT_4 = new WLabel(B4);
         lb83fT_4->setObjectName(QString::fromUtf8("lb83fT_4"));
         lb83fT_4->setGeometry(QRect(860, 120, 31, 21));
         lb83fT_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb83fT_4->setFont(font2);
-        lb83fT_4->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lb82f_2 = new WLabel(B4);
         lb82f_2->setObjectName(QString::fromUtf8("lb82f_2"));
         lb82f_2->setGeometry(QRect(930, 120, 41, 21));
         lb82f_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         lb82f_2->setFont(font2);
-        lb82f_2->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
 
         retranslateUi(B4);
 
@@ -378,8 +361,10 @@ public:
 "TEMP DEL TANQUE - OK", 0, QApplication::UnicodeUTF8));
         lbAceiNivT->setText(QApplication::translate("B4", "ACEITE HIDR. DE ARRANQUE\n"
 "NIVEL DEL TANQUE - OK", 0, QApplication::UnicodeUTF8));
+        infCuatro->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
         infCuatro->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TLS", 0, QApplication::UnicodeUTF8)));
         infCuatro->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1603", 0, QApplication::UnicodeUTF8)));
+        infUno->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR007_F_CV", 0, QApplication::UnicodeUTF8));
         infUno->setProperty("UpLabel", QVariant(QApplication::translate("B4", "LSLL", 0, QApplication::UnicodeUTF8)));
         infUno->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1601", 0, QApplication::UnicodeUTF8)));
         infDos->setProperty("UpLabel", QVariant(QApplication::translate("B4", "HE", 0, QApplication::UnicodeUTF8)));
@@ -392,10 +377,13 @@ public:
         infCinco->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1615", 0, QApplication::UnicodeUTF8)));
         infSeis->setProperty("UpLabel", QVariant(QApplication::translate("B4", "PSLL", 0, QApplication::UnicodeUTF8)));
         infSeis->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1605", 0, QApplication::UnicodeUTF8)));
+        infSiete->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR006_F_CV", 0, QApplication::UnicodeUTF8));
         infSiete->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TSH", 0, QApplication::UnicodeUTF8)));
         infSiete->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1602", 0, QApplication::UnicodeUTF8)));
+        inf82f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR232_F_CV", 0, QApplication::UnicodeUTF8));
         inf82f->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TE", 0, QApplication::UnicodeUTF8)));
         inf82f->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1663A1", 0, QApplication::UnicodeUTF8)));
+        ind83f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR238_F_CV", 0, QApplication::UnicodeUTF8));
         ind83f->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TE", 0, QApplication::UnicodeUTF8)));
         ind83f->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1663A2", 0, QApplication::UnicodeUTF8)));
         lbInterT->setText(QApplication::translate("B4", "INTERCAMBIADOR DE CALOR", 0, QApplication::UnicodeUTF8));

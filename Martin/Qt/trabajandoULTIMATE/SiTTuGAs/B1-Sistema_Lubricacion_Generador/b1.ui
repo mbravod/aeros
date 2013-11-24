@@ -37,9 +37,6 @@
      <height>65</height>
     </rect>
    </property>
-   <property name="id">
-    <string>p_Fix32.THISNODE.DUMMY.F_CV</string>
-   </property>
    <property name="value">
     <number>-1</number>
    </property>
@@ -334,9 +331,6 @@ color: rgb(255, 255, 255);</string>
      <width>61</width>
      <height>61</height>
     </rect>
-   </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
    </property>
    <property name="value">
     <number>-1</number>
@@ -666,9 +660,6 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
-   </property>
    <property name="value">
     <number>-1</number>
    </property>
@@ -693,9 +684,6 @@ color: rgb(255, 255, 255);</string>
      <width>65</width>
      <height>65</height>
     </rect>
-   </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
    </property>
    <property name="value">
     <number>-1</number>

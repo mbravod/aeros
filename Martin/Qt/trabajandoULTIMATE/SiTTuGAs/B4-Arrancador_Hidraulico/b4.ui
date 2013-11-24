@@ -462,9 +462,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -491,9 +488,6 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
-   </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -525,9 +519,6 @@ NIVEL DEL TANQUE - OK</string>
    <property name="intID">
     <number>0</number>
    </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -555,9 +546,6 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -584,9 +572,6 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
-   </property>
-   <property name="id">
-    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>

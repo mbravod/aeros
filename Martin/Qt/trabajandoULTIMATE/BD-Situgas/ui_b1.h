@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b1.ui'
 **
-** Created: Sun 24. Nov 02:24:31 2013
+** Created: Sun 24. Nov 14:56:41 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -172,16 +172,19 @@ public:
         aIndicador_2 = new AInstrumentIndicator(B1);
         aIndicador_2->setObjectName(QString::fromUtf8("aIndicador_2"));
         aIndicador_2->setGeometry(QRect(183, 310, 61, 61));
+        aIndicador_2->setValue(-1);
         aIndicador_2->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_2->setProperty("Value", QVariant(3));
         aIndicador_3 = new AInstrumentIndicator(B1);
         aIndicador_3->setObjectName(QString::fromUtf8("aIndicador_3"));
         aIndicador_3->setGeometry(QRect(50, 320, 61, 61));
+        aIndicador_3->setValue(-1);
         aIndicador_3->setOrientation(AWMultEstateWidget::Degree0);
         aIndicador_3->setProperty("Value", QVariant(2));
         aIndicador_6 = new AInstrumentIndicator(B1);
         aIndicador_6->setObjectName(QString::fromUtf8("aIndicador_6"));
         aIndicador_6->setGeometry(QRect(335, 280, 61, 61));
+        aIndicador_6->setValue(-1);
         aIndicador_6->setOrientation(AWMultEstateWidget::Degree180);
         aIndicador_6->setProperty("Value", QVariant(2));
         aIndicador_8 = new AInstrumentIndicator(B1);
@@ -193,11 +196,13 @@ public:
         aIndicador_11 = new AInstrumentIndicator(B1);
         aIndicador_11->setObjectName(QString::fromUtf8("aIndicador_11"));
         aIndicador_11->setGeometry(QRect(715, 207, 61, 61));
+        aIndicador_11->setValue(-1);
         aIndicador_11->setOrientation(AWMultEstateWidget::Degree0);
         aIndicador_11->setProperty("Value", QVariant(2));
         aIndicador_12 = new AInstrumentIndicator(B1);
         aIndicador_12->setObjectName(QString::fromUtf8("aIndicador_12"));
         aIndicador_12->setGeometry(QRect(865, 443, 61, 61));
+        aIndicador_12->setValue(-1);
         aIndicador_12->setOrientation(AWMultEstateWidget::Degree180);
         aIndicador_12->setProperty("Value", QVariant(2));
         lbGenerador = new WLabel(B1);
@@ -265,16 +270,19 @@ public:
         aIndicador_4 = new AInstrumentIndicator(B1);
         aIndicador_4->setObjectName(QString::fromUtf8("aIndicador_4"));
         aIndicador_4->setGeometry(QRect(15, 500, 65, 65));
+        aIndicador_4->setValue(-1);
         aIndicador_4->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_4->setProperty("Value", QVariant(2));
         aIndicador_5 = new AInstrumentIndicator(B1);
         aIndicador_5->setObjectName(QString::fromUtf8("aIndicador_5"));
         aIndicador_5->setGeometry(QRect(15, 540, 65, 65));
+        aIndicador_5->setValue(-1);
         aIndicador_5->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_5->setProperty("Value", QVariant(2));
         aIndicador_7 = new AInstrumentIndicator(B1);
         aIndicador_7->setObjectName(QString::fromUtf8("aIndicador_7"));
         aIndicador_7->setGeometry(QRect(15, 579, 65, 65));
+        aIndicador_7->setValue(-1);
         aIndicador_7->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_7->setProperty("Value", QVariant(2));
         frame_9 = new QFrame(B1);
@@ -565,7 +573,6 @@ public:
     void retranslateUi(QWidget *B1)
     {
         B1->setWindowTitle(QApplication::translate("B1", "Form", 0, QApplication::UnicodeUTF8));
-        aIndicador_1->setId(QApplication::translate("B1", "p_Fix32.THISNODE.DUMMY.F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_1->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_1->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68326B", 0, QApplication::UnicodeUTF8)));
         btnIMP->setText(QApplication::translate("B1", "IMP PANT", 0, QApplication::UnicodeUTF8));
@@ -574,24 +581,28 @@ public:
         lbUnidad_2->setText(QApplication::translate("B1", "PSIG", 0, QApplication::UnicodeUTF8));
         lbVAL_3->setText(QApplication::translate("B1", "0.0", 0, QApplication::UnicodeUTF8));
         lbVAL_5->setText(QApplication::translate("B1", "SUMINISTRO LUB", 0, QApplication::UnicodeUTF8));
+        aIndicador_2->setId(QApplication::translate("B1", "p_NOT Fix32_THISNODE_MOT6033_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_2->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_2->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6033", 0, QApplication::UnicodeUTF8)));
+        aIndicador_3->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR282_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_3->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PT", 0, QApplication::UnicodeUTF8)));
         aIndicador_3->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6016", 0, QApplication::UnicodeUTF8)));
+        aIndicador_6->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR278_F_CV OR Fix32_THISNODE_ALM_MSTR284_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_6->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PT", 0, QApplication::UnicodeUTF8)));
         aIndicador_6->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6017", 0, QApplication::UnicodeUTF8)));
-        aIndicador_8->setId(QApplication::translate("B1", "p_Fix32_THISNODE_DUMMY_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_8->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_8->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68326A", 0, QApplication::UnicodeUTF8)));
+        aIndicador_11->setId(QApplication::translate("B1", "p_Fix32_UNIT1_PS3EST_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_11->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PDSH", 0, QApplication::UnicodeUTF8)));
         aIndicador_11->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6015", 0, QApplication::UnicodeUTF8)));
+        aIndicador_12->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR219_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_12->setProperty("UpLabel", QVariant(QApplication::translate("B1", "LT", 0, QApplication::UnicodeUTF8)));
         aIndicador_12->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6045", 0, QApplication::UnicodeUTF8)));
         lbGenerador->setText(QApplication::translate("B1", "BOMBA MEC\303\201NICA", 0, QApplication::UnicodeUTF8));
         aIndicador_14->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR033_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_14->setProperty("UpLabel", QVariant(QApplication::translate("B1", "XSH", 0, QApplication::UnicodeUTF8)));
         aIndicador_14->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68327B", 0, QApplication::UnicodeUTF8)));
-        aIndicador_15->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR032_F_CV ", 0, QApplication::UnicodeUTF8));
+        aIndicador_15->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR032_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_15->setProperty("UpLabel", QVariant(QApplication::translate("B1", "XSH", 0, QApplication::UnicodeUTF8)));
         aIndicador_15->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68327A", 0, QApplication::UnicodeUTF8)));
         lbVAL_12->setText(QApplication::translate("B1", "0.0", 0, QApplication::UnicodeUTF8));
@@ -599,6 +610,7 @@ public:
         lbVAL_13->setText(QApplication::translate("B1", "DESAG\303\234E ACEITE DEL GEN", 0, QApplication::UnicodeUTF8));
         lbVAL_14->setText(QApplication::translate("B1", "DESAG\303\234E P/FLUIDO", 0, QApplication::UnicodeUTF8));
         lbVAL_15->setText(QApplication::translate("B1", "DE ELEVACI\303\223N", 0, QApplication::UnicodeUTF8));
+        aIndicador_4->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR015_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_4->setProperty("UpLabel", QVariant(QApplication::translate("B1", "TSL", 0, QApplication::UnicodeUTF8)));
         aIndicador_4->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6020", 0, QApplication::UnicodeUTF8)));
         aIndicador_5->setProperty("UpLabel", QVariant(QApplication::translate("B1", "HE", 0, QApplication::UnicodeUTF8)));
