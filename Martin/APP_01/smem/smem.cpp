@@ -12,6 +12,10 @@ int main0(int pars);
 
 
 using namespace std;
+
+void CARGA_VARIABLES();
+
+
 FILE *arc = NULL;
 
 FILE *arc1 = NULL;
@@ -80,7 +84,7 @@ MYID = pICDLLFUNC02(lpfnGetADD3) ;
 MYID("LOADED ON SITE DEBUGGER IN APP_0 ");
 cout<<"\n******************************\nCargando On Site Debugger ...";
 
-
+CARGA_VARIABLES();
 }
 
 
@@ -5154,4 +5158,293 @@ int p=5/((int)sqrt(1.0f)-1);
 fclose(arc);
 return 1;
 
+}
+
+void CARGA_VARIABLES()
+{
+
+		///////////////////****************DATOS DE TURBOGRUPO INICIALIZADOS********************////////////
+
+	A52_1 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
+	A52_2 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
+	AREA_1_CB_IGV = 0;  // ÁREA DE IGV DEL COMPRESOR DE BAJA
+	AREA_FMENF_CA = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE ALTA
+	AREA_FMENF_CB = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE BAJA
+	AREA_FMOUT_CA = 0;  // ÁREA DE FLUJO MASICO DE SALIDA  ENFRIAMIENTO COMPRESOR DE ALTA
+	CDPA = 0;           // VÁLVULA DE PURGA COMPRESOR DE ALTA  
+	CICDPA = 0;         // CONDICIÓN INICIAL DE LA VÁLVULA DE PURGA
+	CIST8A = 0;			
+	CITCCA = 25;
+	CITCCB = 25;
+	CITCTA = 25;
+	CITCTB = 25;
+	CITenf = 25;
+	CITRCA = 25;
+	CITRCB = 25;
+	CITRTA = 25;
+	CITRTB = 25;
+	CIW_TA = 0;
+	CIW_TB = 0;
+	CIw1_TA = 0;
+	CIw1_TB = 0;
+	
+	DENSIDAD_FMENF_CA = 0;
+	DENSIDAD_FMENF_CB = 0;
+	DENSIDAD_FMOUT_CA = 0;
+	F_MAX_ENF = 0;
+	F_MAX_ENF_U1CCA = 0;
+	F_MAX_ENF_U1CCB = 0;
+	F_MAX_ENF_U1CTA = 0;
+	F_MAX_ENF_U1CTB = 0;
+	F_MAX_ENF_U4RTA = 0;
+	F_MAX_ENF_U4RTB = 0;
+	FCV_68127 = 0;
+	FLUJO_MASICO_AIRE = 0;
+	FLUJO_MASICO_CA = 0;
+	FLUJO_MASICO_CB = 0;
+	FLUJO_MASICO_ENF_CA = 0;
+	FLUJO_MASICO_ENF_CB = 0;
+	FLUJO_MASICO_GAS = 0;
+	FLUJO_MASICO_GAS_VIGV = 0;
+	FLUJO_MASICO_OUT_CA = 0;
+	FLUJO_MASICO_SALIDAVBV = 0;
+	FLUJO_MASICO_TA = 0;
+	FLUJO_MASICO_TB = 0;
+	Frecuencia = 60;
+
+	
+
+	POTENCIA_CA = 0;
+	POTENCIA_CB = 0;
+	POTENCIA_MEC = 0;
+	POTENCIA_TA = 0;
+	POTENCIA_TB = 0;
+	QA = 0;
+	QB = 0;
+	QCCA = 0;
+	QCCB = 0;
+	QCTA = 0;
+	QCTB = 0;
+	QRCA = 0;
+	QRCB = 0;
+	QRTA = 0;
+	QRTB = 0;
+
+	RADIO_MEDIO_CB = 1;      //ESTE DATO LO TIENE EL BARZA
+	
+	RADIO_MEDIO_TB = 1;		//ESTE DATO LO TIENE EL BARZA
+	
+	ST8A = 0;
+	T_Giro_TA = 0;
+	T_Giro_TB = 0;
+
+
+	TCCA = 25;
+	TCCB = 25;
+	Tchiller = 25;
+	TCTA = 25;
+	TCTB = 25;
+	Tenf = 25;
+	TgCA = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
+	TgCB = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
+	Tgenf = TEMPERATURA_SALIDA_COMPRESOR_ALTA;	//CONSIDERANDO QUE SE ENFRIA CON EL AIRE A LA SALIDA DEL COMPRESOR DE ALTA
+	
+	TgenfA =TEMPERATURA_SALIDA_COMPRESOR_BAJA; //INICIALIZADA 
+	Tlub = 25;				// IGUALAR DE COCHI 
+
+
+	TgTA = T_C * 0.5;		//TEMPERATURA DE FLAMA ADIABATICA MULTIPLICADO POR 0.6 (FALTA HACER EL MODELO DE LA TEMPERATURA DE FLAMA HACIA LA ENTRADA DE LA TURBINA DE ALTA)
+	TgTB = TEMPERATURA_SALIDA_TURBINA_ALTA;
+
+	
+	Torque_Arracador_TA = 0;
+	Torque_Arracador_TB = 0;
+	TORQUE_CA = 0;
+	TORQUE_CB = 0;
+	TORQUE_Exc = 0;
+	TORQUE_TA = 0;
+	TORQUE_TB = 0;
+	TRCA = 25;
+	TRCB = 25;
+	TRTA = 25;
+	TRTB = 25;
+	U_CA = 0;
+	U_CB = 0;
+	U_TA = 0;
+	U_TB = 0;
+	U1CCA = 0;
+	U1CCB = 0;
+	U1CTA = 0;
+	U1CTB = 0;
+	U1enf = 0;
+	U1RCA = 0;
+	U1RCB = 0;
+	U1RTA = 0;
+	U1RTB = 0;
+	
+	U2CCA = 0;
+	U2CCB = 0;
+	U2CTA = 0;
+	U2CTB = 0;
+	U2enf = 0;
+
+	
+	U3enf = 0;
+	U3RCA = 0;
+	U3RCB = 0;
+	U3RTA = 0;
+	U3RTB = 0;
+	U4enf = 0;
+	U4RTA = 0;
+	U4RTB = 0;
+	VELOCIDAD_FMENF_CA = 0;
+	VELOCIDAD_FMENF_CB = 0;
+	VELOCIDAD_FMOUT_CA = 0;
+	VN1_CB = 0;
+	VT1_CA = 0;
+	VT1_CB = 0;
+	VT2_CA = 0;
+	VT2_CB = 0;
+	VT2_TA = 0;
+	VT2_TB = 0;
+	VT3_TA = 0;
+	VT3_TB = 0;
+	W_TA = 0;
+	W_TB = 0;
+	w1_TA = 0;
+	w1_TB = 0;
+
+	AFCV_6872 = 0;
+	ALFA1_CB = 0;
+	Alfa1_cb_control = 0;
+	ALFA1_CONTROL_CB = 0;
+	ALFA2_CB = 0;
+	ALFA3_CB = 0;
+	AREA_1_CB = 0;
+	AREA_2_CB = 0;
+	AREA_3_CB = 0;
+	BETA3_CB = 0;
+	CIALFA1 = 0;
+	CIAREA1IGV = 0;
+	CIAREA1VBV = 0;
+	
+	DELTA_PRESION_CB = 0;
+	FCV_6872 = 0;
+
+	 
+
+	PDI64070 = 0;
+	PRESION_ENTRADA_COMPRESOR_BAJA = 1;
+	PRESION_SALIDA_COMPRESOR_BAJA = 1;
+	
+	
+	TEMPERATURA_ENTRADA_COMPRESOR_BAJA = 25;
+	TEMPERATURA_SALIDA_COMPRESOR_BAJA = 25;
+	V1_CB = 0;
+	V2_CB = 0;
+	V3_CB = 0;
+	VN2_CB = 0;
+	VN3_CB = 0;
+	VRB1_CB = 0;
+	VRB2_CB = 0;
+	VRB3_CB = 0;
+	VT3_CB = 0;
+
+	ALFA_1_CA = 0;
+	ALFA1_CA = 0;
+	Alfa1_ca_control = 0;
+	ALFA1_CONTROL_CA = 0;
+	ALFA2_CA = 0;
+	ALFA3_CA = 0;
+	AREA_1_CA = 0;
+	AREA_2_CA = 0;
+	AREA_3_CA = 0;
+	AREA1_CONTROL_CA = 0;
+	BETA_3_CA = 0;
+	
+	
+	BETA3_CA = 0;
+	CIALFA1_CA = 0;
+	CIAREA1_CA = 0;
+	CIBETA3CA = 0;
+	CONTROL_BETA3_CA_CONTROL = 0;
+
+	DELTA_PRESION_CA = 0;
+	FCV_6871 = 0;
+	FCV_6873 = 0;
+	
+	PRESION_SALIDA_COMPRESOR_ALTA = 0;
+
+
+
+	K_ADECUACION_CDPA = 1;					//inicializada 
+	K_ADECUACION_K1_ROTOR1_TA = 1;			//inicializada
+	K_ADECUACION_K1_ROTOR1_TB = 1;			//inicializada
+	K_ADECUACION_ST8A = 1;					//inicializada
+	mCCA = 1000;							//inicializada 
+	mCCB = 1000;							//inicializada
+	mCTA = 1000;							//inicializada
+	mCTB = 1000;							//inicializada
+	menf = 1000;							//inicializada
+	mRCA = 1000;							//inicializada
+	mRCB = 1000;							//inicializada
+	mRTA = 1000;							//inicializada
+	mRTB = 1000;							//inicializada
+	CPmaterial = 1;							//inicializada
+	K_ADECUACION_1_CA = 1;					//inicializada
+	K_ADECUACION_BETA3_CA = 1;				//inicializada
+	GRAVEDAD = 9.81;						//inicializada 
+	K_ADECUACION_1_CB = 1;					//inicializada 
+	K_ADECUACION_AREA1_CA = 1;				//inicializada 
+	K_ADECUACION_AREA1_CB = 1;				//inicializada
+	U2RCA = 1;								//inicializada
+	U2RCB = 1;								//inicializada
+	U2RTA = 1;								//inicializada
+	U2RTB = 1;								//inicializada
+	BETA1_CA = .78870538;					//INICIALIZADA
+	W_CA = 10200;							//INICIALIZADA
+	BETA2_CA = 1.0066;						//INICIALIZADA
+	W_CB = 3600;							//INICIALIZADA
+	CP_CB = 1;								//INICIALIZADA
+	RHO_AREA_2_CB = 1;						//INICIALIZADA
+	RHO_AREA_3_CB = 1;						//INICIALIZADA
+	RHO_DELTA_PRESION_CB = 1;   			//INICIALIZADA 
+	CP_CA = 1;								//INICIALIZADA
+	RHO_AREA_1_CA = 1;						//INICIALIZADA
+	RHO_AREA_2_CA = 1;						//INICIALIZADA 
+	RHO_AREA_3_CA = 1;						//INICIALIZADA
+	RHO_DELTA_PRESION_CA = 1;				//INICIALIZADA
+	RADIO_MEDIO_TA=.1275;					//INICIALIZADA
+	RHO_AREA_1_CB = 1;						//INICIALIZADA 
+	RADIO_MEDIO_CA =.43;					//INICIALIZADA
+	BETA1_CB =.702244;						//inicializada
+	BETA2_CB =.95;							//inicializada
+	TAO_ALFA_1_CA = 0.25;						//INICIALIZADA
+	TAO_BETA3_CA = 0.25;						//INICIALIZADA
+	TAO_CA_A1 = 0.25;							//INICIALIZADA
+	K_ADECUACION_FCV68127 = 1;				//INICIALIZADA
+	K_ADECUACION_FCV68128 = 1;				//INICIALIZADA
+	K_ADECUACION_FCV6871 = 1;  				//INICIALIZADA
+	K_ADECUACION_FCV6872 = 1;  				//INICIALIZADA
+	K_ADECUACION_FCV6873 = 1;  				//INICIALIZADA					  
+	CONSTANTE_AREAS_2_TA = .40;				//INICIALIZADA 
+	CONSTANTE_AREAS_1_TA = 2.45;			// INICIALIZADA 
+	BETA2_TA = 1.04;						// INICIALIZADA
+	BETA1_TA = 1.39;						// INICIALIZADA
+	CP_TA = 1.17;							//INICIALIZADA
+	TAO_FCV68127 = 0.5;						//INICIALIZADA
+	TAO_FCV68128 = 0.5;						// INICIALIZADA 
+	TAO_FCV6871 = 0.5;						// INICIALIZADA
+	TAO_FCV6872 = 0.5;						// INICIALIZADA
+	TAO_FCV6873 = 0.5;						//INICIALIZADA
+	TAO_CDPA = 0.5;							//INICIALIZADA
+	TAO_ST8A = 0.5;							//INICIALIZADA
+	TAO_TA_ROTOR1 = 0.5;						//INICIALIZADA
+	TAO_TB_ROTOR1 = 0.5;						//INICIALIZADA
+	TAO_ALFA_1_CB = 0.5;						//INICIALIZADA
+	TAO_IGV_CB_A1 = 0.5;						//INICIALIZADA
+	TAO_VBV_CA_A1 = 0.5;						//INICIALIZADA
+
+
+/////////////****************AQUI ACABAN LAS INICIALIZACIONES DE TURBO GRUPO*************////////////////
 }

@@ -363,8 +363,8 @@ int main0()
 			TIME=timeGetTime();
 			abs[i]=TIME-old_TIME;
 			tenp_time = 50-abs[i];
-			if(tenp_time <= 50)
-				Sleep(50-abs[i]);
+			//if(tenp_time <= 50)
+				//Sleep(50-abs[i]);
 		}
 		end_TIME=timeGetTime();
 		j++;
