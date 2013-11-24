@@ -4,6 +4,7 @@
 #include <QWidget>
 #include "../header.h"
 #include "Abstract/pantallas.h"
+#include "QDebug"
 
 namespace Ui {
 class B1;

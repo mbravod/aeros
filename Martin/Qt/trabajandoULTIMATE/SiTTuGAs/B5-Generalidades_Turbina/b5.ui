@@ -6400,6 +6400,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>70</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE044_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6421,6 +6427,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE104_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6444,6 +6456,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE104_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6465,6 +6483,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6488,6 +6509,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE119_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6509,6 +6536,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE119_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6532,6 +6565,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6553,6 +6589,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE047_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6576,6 +6618,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE047_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6597,6 +6645,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE006_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6620,6 +6674,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE006_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6641,6 +6701,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE050_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6664,6 +6730,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE050_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6685,6 +6757,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6708,6 +6783,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE015_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6729,6 +6810,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE011_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6752,6 +6839,12 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE012_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6773,6 +6866,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6796,6 +6892,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6817,6 +6916,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6840,6 +6942,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6861,6 +6966,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6884,6 +6992,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6905,6 +7016,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6928,6 +7042,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6949,6 +7066,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -6972,6 +7092,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -6993,6 +7116,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7016,6 +7142,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7037,6 +7166,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7060,6 +7192,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7081,6 +7216,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7104,6 +7242,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7125,6 +7266,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7148,6 +7292,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7169,6 +7316,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7192,6 +7342,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7213,6 +7366,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7236,6 +7392,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7257,6 +7416,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7280,6 +7442,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7301,6 +7466,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7324,6 +7492,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7345,6 +7516,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7368,6 +7542,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7389,6 +7566,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7412,6 +7592,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -7433,6 +7616,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -7456,6 +7642,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -7477,6 +7666,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -7500,6 +7692,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -7521,6 +7716,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -7544,6 +7742,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -7565,6 +7766,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -7588,6 +7792,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -7609,6 +7816,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -7632,6 +7842,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -7654,6 +7867,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -7675,6 +7891,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <width>61</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>

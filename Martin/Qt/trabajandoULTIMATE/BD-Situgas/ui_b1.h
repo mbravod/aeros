@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b1.ui'
 **
-** Created: Sun 24. Nov 01:20:54 2013
+** Created: Sun 24. Nov 02:24:31 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -102,6 +102,7 @@ public:
         aIndicador_1 = new AInstrumentIndicator(B1);
         aIndicador_1->setObjectName(QString::fromUtf8("aIndicador_1"));
         aIndicador_1->setGeometry(QRect(183, 30, 65, 65));
+        aIndicador_1->setValue(-1);
         aIndicador_1->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_1->setProperty("Value", QVariant(2));
         aBomba_1 = new AWMultiObject(B1);
@@ -186,6 +187,7 @@ public:
         aIndicador_8 = new AInstrumentIndicator(B1);
         aIndicador_8->setObjectName(QString::fromUtf8("aIndicador_8"));
         aIndicador_8->setGeometry(QRect(185, 165, 61, 61));
+        aIndicador_8->setValue(-1);
         aIndicador_8->setOrientation(AWMultEstateWidget::Degree270);
         aIndicador_8->setProperty("Value", QVariant(2));
         aIndicador_11 = new AInstrumentIndicator(B1);
@@ -211,11 +213,13 @@ public:
         aIndicador_14 = new AInstrumentIndicator(B1);
         aIndicador_14->setObjectName(QString::fromUtf8("aIndicador_14"));
         aIndicador_14->setGeometry(QRect(230, 30, 65, 65));
+        aIndicador_14->setValue(-1);
         aIndicador_14->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_14->setProperty("Value", QVariant(2));
         aIndicador_15 = new AInstrumentIndicator(B1);
         aIndicador_15->setObjectName(QString::fromUtf8("aIndicador_15"));
         aIndicador_15->setGeometry(QRect(230, 165, 61, 61));
+        aIndicador_15->setValue(-1);
         aIndicador_15->setOrientation(AWMultEstateWidget::Degree270);
         aIndicador_15->setProperty("Value", QVariant(2));
         aWMultiObject = new AWMultiObject(B1);
@@ -561,6 +565,7 @@ public:
     void retranslateUi(QWidget *B1)
     {
         B1->setWindowTitle(QApplication::translate("B1", "Form", 0, QApplication::UnicodeUTF8));
+        aIndicador_1->setId(QApplication::translate("B1", "p_Fix32.THISNODE.DUMMY.F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_1->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_1->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68326B", 0, QApplication::UnicodeUTF8)));
         btnIMP->setText(QApplication::translate("B1", "IMP PANT", 0, QApplication::UnicodeUTF8));
@@ -575,6 +580,7 @@ public:
         aIndicador_3->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6016", 0, QApplication::UnicodeUTF8)));
         aIndicador_6->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PT", 0, QApplication::UnicodeUTF8)));
         aIndicador_6->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6017", 0, QApplication::UnicodeUTF8)));
+        aIndicador_8->setId(QApplication::translate("B1", "p_Fix32_THISNODE_DUMMY_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_8->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_8->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68326A", 0, QApplication::UnicodeUTF8)));
         aIndicador_11->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PDSH", 0, QApplication::UnicodeUTF8)));
@@ -582,8 +588,10 @@ public:
         aIndicador_12->setProperty("UpLabel", QVariant(QApplication::translate("B1", "LT", 0, QApplication::UnicodeUTF8)));
         aIndicador_12->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6045", 0, QApplication::UnicodeUTF8)));
         lbGenerador->setText(QApplication::translate("B1", "BOMBA MEC\303\201NICA", 0, QApplication::UnicodeUTF8));
+        aIndicador_14->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR033_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_14->setProperty("UpLabel", QVariant(QApplication::translate("B1", "XSH", 0, QApplication::UnicodeUTF8)));
         aIndicador_14->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68327B", 0, QApplication::UnicodeUTF8)));
+        aIndicador_15->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR032_F_CV ", 0, QApplication::UnicodeUTF8));
         aIndicador_15->setProperty("UpLabel", QVariant(QApplication::translate("B1", "XSH", 0, QApplication::UnicodeUTF8)));
         aIndicador_15->setProperty("DownLabel", QVariant(QApplication::translate("B1", "68327A", 0, QApplication::UnicodeUTF8)));
         lbVAL_12->setText(QApplication::translate("B1", "0.0", 0, QApplication::UnicodeUTF8));

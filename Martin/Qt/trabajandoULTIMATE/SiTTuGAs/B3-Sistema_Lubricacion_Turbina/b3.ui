@@ -80,12 +80,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -132,12 +126,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
-     </property>
-     <property name="Texto_A" stdset="0">
-      <enum>WLabel::a_SinColor</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton">
@@ -194,12 +182,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -241,12 +223,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -276,12 +252,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="QFrame" name="frame_8">
@@ -446,12 +416,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -486,12 +450,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
@@ -528,12 +486,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -569,12 +521,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -609,12 +555,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
@@ -1370,12 +1310,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -1414,12 +1348,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_6_1">
     <property name="geometry">
@@ -1454,12 +1382,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1499,12 +1421,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_6_1">
     <property name="geometry">
@@ -1534,12 +1450,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_6_2">
     <property name="geometry">
@@ -1568,12 +1478,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1613,12 +1517,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -1657,12 +1555,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_7_1">
     <property name="geometry">
@@ -1697,12 +1589,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1742,12 +1628,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_7_1">
     <property name="geometry">
@@ -1777,12 +1657,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_7_2">
     <property name="geometry">
@@ -1811,12 +1685,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Unit_7_2">
@@ -1853,12 +1721,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_7_2">
     <property name="geometry">
@@ -1893,12 +1755,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1938,12 +1794,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -1982,12 +1832,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_1_1">
     <property name="geometry">
@@ -2022,12 +1866,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2067,12 +1905,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_1_1">
     <property name="geometry">
@@ -2102,12 +1934,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_1_2">
     <property name="geometry">
@@ -2136,12 +1962,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2181,12 +2001,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -2225,12 +2039,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_1_3">
     <property name="geometry">
@@ -2265,12 +2073,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2310,12 +2112,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -2353,12 +2149,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2398,12 +2188,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_2_1">
     <property name="geometry">
@@ -2433,12 +2217,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_2_2">
     <property name="geometry">
@@ -2467,12 +2245,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2512,12 +2284,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -2556,12 +2322,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_2_3">
     <property name="geometry">
@@ -2596,12 +2356,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2641,12 +2395,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -2684,12 +2432,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2729,12 +2471,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_3_1">
     <property name="geometry">
@@ -2764,12 +2500,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_3_2">
     <property name="geometry">
@@ -2798,12 +2528,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2843,12 +2567,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -2887,12 +2605,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_3_3">
     <property name="geometry">
@@ -2927,12 +2639,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2972,12 +2678,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -3015,12 +2715,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3060,12 +2754,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_4_1">
     <property name="geometry">
@@ -3095,12 +2783,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_4_2">
     <property name="geometry">
@@ -3129,12 +2811,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3174,12 +2850,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -3218,12 +2888,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_4_3">
     <property name="geometry">
@@ -3258,12 +2922,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3303,12 +2961,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -3341,12 +2993,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_5_2">
     <property name="geometry">
@@ -3375,12 +3021,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3420,12 +3060,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -3464,12 +3098,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="lb_VST_Lect_5_3">
     <property name="geometry">
@@ -3504,12 +3132,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3549,12 +3171,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
     </property>
@@ -3593,12 +3209,6 @@ QProgressBar::chunk {
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -3636,12 +3246,6 @@ QProgressBar::chunk {
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
-    <property name="Texto_A" stdset="0">
-     <enum>WLabel::a_SinColor</enum>
     </property>
    </widget>
   </widget>
@@ -3707,12 +3311,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aVal_0">
@@ -3897,12 +3495,6 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
    </property>
@@ -3921,12 +3513,6 @@ QProgressBar::chunk {
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B3/tanque.png</pixmap>
@@ -3957,12 +3543,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_3">
    <property name="geometry">
@@ -3988,12 +3568,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_4">
@@ -4021,12 +3595,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_5">
    <property name="geometry">
@@ -4053,12 +3621,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_6">
    <property name="geometry">
@@ -4084,12 +3646,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_7">
@@ -4118,12 +3674,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_7">
    <property name="geometry">
@@ -4139,12 +3689,6 @@ QProgressBar::chunk {
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>:/Resources/PNG/B1/flecha_blanca_abajo.png</pixmap>
@@ -4178,6 +3722,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR078_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -4202,6 +3752,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR067_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4228,6 +3784,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE084_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4252,6 +3814,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_CORE084_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4278,6 +3846,9 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -4302,6 +3873,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR237_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4328,6 +3905,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR237_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4336,31 +3919,6 @@ QProgressBar::chunk {
    </property>
    <property name="DownLabel" stdset="0">
     <string>6121B</string>
-   </property>
-   <property name="Value" stdset="0">
-    <number>2</number>
-   </property>
-  </widget>
-  <widget class="AInstrumentIndicator" name="aIndicador_7">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>370</y>
-     <width>70</width>
-     <height>70</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="Orientation">
-    <enum>AWMultEstateWidget::Degree270</enum>
-   </property>
-   <property name="UpLabel" stdset="0">
-    <string>PT</string>
-   </property>
-   <property name="DownLabel" stdset="0">
-    <string>6122</string>
    </property>
    <property name="Value" stdset="0">
     <number>2</number>
@@ -4377,6 +3935,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR309_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4403,11 +3967,17 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR074_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
    <property name="UpLabel" stdset="0">
-    <string>PT</string>
+    <string>PSH</string>
    </property>
    <property name="DownLabel" stdset="0">
     <string>6117</string>
@@ -4427,6 +3997,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR090_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4453,6 +4029,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR091_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4477,6 +4059,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR092_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4503,6 +4091,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR032_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -4527,6 +4121,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4553,6 +4153,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -4578,6 +4184,12 @@ QProgressBar::chunk {
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -4602,6 +4214,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR077_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -4654,12 +4272,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_9">
    <property name="geometry">
@@ -4685,12 +4297,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_10">
@@ -4718,12 +4324,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_11">
    <property name="geometry">
@@ -4749,12 +4349,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_12">
@@ -4782,12 +4376,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lb_B3_13">
    <property name="geometry">
@@ -4813,12 +4401,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_B3_14">
@@ -4846,12 +4428,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbU_0">
    <property name="geometry">
@@ -4877,12 +4453,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -4913,12 +4483,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
    </property>
@@ -4947,12 +4511,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -4983,12 +4541,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
    </property>
@@ -5018,12 +4570,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbVal_1">
    <property name="geometry">
@@ -5049,12 +4595,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbUni_0">
@@ -5082,12 +4622,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbUni_1">
    <property name="geometry">
@@ -5114,12 +4648,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbVal_2">
    <property name="geometry">
@@ -5145,12 +4673,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -5181,12 +4703,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
    </property>
@@ -5215,12 +4731,6 @@ QProgressBar::chunk {
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -5251,12 +4761,6 @@ QProgressBar::chunk {
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
    </property>
@@ -5272,6 +4776,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_DUMMY_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -5297,6 +4807,12 @@ QProgressBar::chunk {
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR033_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -5357,12 +4873,6 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
@@ -5381,12 +4891,6 @@ QProgressBar::chunk {
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
    </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
@@ -5407,16 +4911,11 @@ QProgressBar::chunk {
    <property name="text">
     <string/>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
-   <property name="Texto_A" stdset="0">
-    <enum>WLabel::a_SinColor</enum>
-   </property>
    <property name="pixmap" stdset="0">
     <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
    </property>
   </widget>
+  <zorder>aWAnalogicLevel</zorder>
   <zorder>lbIMGFondo</zorder>
   <zorder>progressBar</zorder>
   <zorder>Refrigeracin</zorder>
@@ -5450,7 +4949,6 @@ QProgressBar::chunk {
   <zorder>aIndicador_4</zorder>
   <zorder>aIndicador_5</zorder>
   <zorder>aIndicador_6</zorder>
-  <zorder>aIndicador_7</zorder>
   <zorder>aIndicador_8</zorder>
   <zorder>aIndicador_9</zorder>
   <zorder>aIndicador_10</zorder>
@@ -5461,7 +4959,6 @@ QProgressBar::chunk {
   <zorder>aIndicador_15</zorder>
   <zorder>aIndicador_16</zorder>
   <zorder>aIndicador_17</zorder>
-  <zorder>aWAnalogicLevel</zorder>
   <zorder>lb_B3_8</zorder>
   <zorder>lb_B3_9</zorder>
   <zorder>lb_B3_10</zorder>

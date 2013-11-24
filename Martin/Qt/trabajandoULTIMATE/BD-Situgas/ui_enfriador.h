@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enfriador.ui'
 **
-** Created: Sun 24. Nov 01:20:59 2013
+** Created: Sun 24. Nov 02:24:31 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -184,12 +184,12 @@ public:
         btnlbAlarma_2->setIcon(icon);
         btnlbAlarma_3 = new QCommandLinkButton(ENFRIADOR);
         btnlbAlarma_3->setObjectName(QString::fromUtf8("btnlbAlarma_3"));
-        btnlbAlarma_3->setGeometry(QRect(80, 130, 97, 16));
+        btnlbAlarma_3->setGeometry(QRect(80, 100, 97, 16));
         btnlbAlarma_3->setStyleSheet(QString::fromUtf8(""));
         btnlbAlarma_3->setIcon(icon);
         lbAlarma_2 = new QLabel(ENFRIADOR);
         lbAlarma_2->setObjectName(QString::fromUtf8("lbAlarma_2"));
-        lbAlarma_2->setGeometry(QRect(80, 130, 97, 16));
+        lbAlarma_2->setGeometry(QRect(80, 100, 97, 16));
         lbAlarma_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
         lbAlarma_2->setAlignment(Qt::AlignCenter);

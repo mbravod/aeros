@@ -476,7 +476,7 @@ AGUA CHILL</string>
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>130</y>
+     <y>100</y>
      <width>97</width>
      <height>16</height>
     </rect>
@@ -496,7 +496,7 @@ AGUA CHILL</string>
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>130</y>
+     <y>100</y>
      <width>97</width>
      <height>16</height>
     </rect>
