@@ -13,6 +13,40 @@ int main0(int pars);
 
 using namespace std;
 
+void CARGA_VARIABLES();
+
+
+FILE *arc = NULL;
+
+FILE *arc1 = NULL;
+FILE *arc2 = NULL;
+FILE *arc3 = NULL;
+FILE *arc4 = NULL;
+FILE *arc5 = NULL;
+FILE *arc6 = NULL;
+FILE *arc7 = NULL;
+FILE *arc8 = NULL;
+FILE *arc9 = NULL;
+FILE *arc10 = NULL;
+FILE *arc11 = NULL;
+FILE *arc12 = NULL;
+FILE *arc13 = NULL;
+FILE *arc14 = NULL;
+FILE *arc15 = NULL;
+FILE *arc16 = NULL;
+FILE *arc17 = NULL;
+FILE *arc18 = NULL;
+FILE *arc19 = NULL;
+FILE *arc20 = NULL;
+FILE *arc21 = NULL;
+FILE *arc22 = NULL;
+FILE *arc23 = NULL;
+FILE *arc24 = NULL;
+FILE *arc25 = NULL;
+FILE *arc26 = NULL;
+FILE *arc27 = NULL;
+FILE *arc28 = NULL;
+FILE *arc29 = NULL;
 
 
 
@@ -50,7 +84,7 @@ MYID = pICDLLFUNC02(lpfnGetADD3) ;
 MYID("LOADED ON SITE DEBUGGER IN APP_0 ");
 cout<<"\n******************************\nCargando On Site Debugger ...";
 
-
+CARGA_VARIABLES();
 }
 
 
@@ -322,6 +356,7 @@ int HYD_STRT_STRTORCRNK;
 //*****************************EL ULISES ES PUÑAL Y LE GUSTA POR ATRAS*************************************//
 // Declaración de Variables Globales
 // Parámetros del los fluidos de trabajo
+
 int counterTata;//Gracias tata
 double Cp_agua;                       // Calor específico del agua
 double VolEsp_agua;                   // volumen específico del agua							//NO SE USA EN NINGUN LADO CHECAR TATA
@@ -1816,6 +1851,7 @@ double IGV_CONTROL_CB_A1;
     double Flujo_SOV62117;
     double Flujo_SOV62119;
 
+	
 
 
 
@@ -1823,6 +1859,13 @@ double IGV_CONTROL_CB_A1;
 
     double FallaVenti;                    // Falla del ventilador reduce el U del intercambiador de calor
     double FallaComp;                     // Falla del compresor disminuye la presion de suministro
+
+
+
+
+
+
+
 
 //**********************************************************************************************************************//
 
@@ -2155,7 +2198,7 @@ double Temperatura_Generador(double I, double R, double Ugen, double Taire,doubl
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Temperatura_Excitacion (double Iexc, double Rexc, double Uexc, double Taire,double Tao_Tempexc, double CITexc){
@@ -2185,7 +2228,7 @@ double Temperatura_Excitacion (double Iexc, double Rexc, double Uexc, double Tai
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Temperatura_Aire (double Texc, double TGE, double Tchiller, double Flujo_masico,double Uexc_aire,double Ugen_aire,double Tao_Tairege, double CITaire){
@@ -2215,7 +2258,7 @@ double Temperatura_Aire (double Texc, double TGE, double Tchiller, double Flujo_
       x[0] = x[j-1];
   }
 
-  return 0;
+  return x[0];
 }
 
 double Masa(double CI, double P_in, double P_out,double CA_RT)
@@ -2496,7 +2539,7 @@ double Temperatura_de_Aire_en_el_Habitaculo(double U1enf, double TCTB, double U2
       x[0]=x[j-1];
   }
 
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Compresor_de_Alta(double TgCA, double U1RCA, double TCCA, double U2RCA, double TRTA, double U3RCA, double Tlub, double mRCA, double CPmaterial, double CITRCA)
@@ -2527,7 +2570,7 @@ double Temperatura_Rotor_Compresor_de_Alta(double TgCA, double U1RCA, double TCC
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Compresor_de_Alta(double U1CCA, double Tenf, double U2CCA, double TgCA, double mCCA, double CPmaterial, double CITCCA)
@@ -2557,7 +2600,7 @@ double Temperatura_Carcasa_Compresor_de_Alta(double U1CCA, double Tenf, double U
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Compresor_de_Baja(double TgCB, double U1RCB, double TCCB, double U2RCB, double TRTB, double U3RCB, double Tlub, double mRCB, double CPmaterial, double CITRCB)
@@ -2588,7 +2631,7 @@ double Temperatura_Rotor_Compresor_de_Baja(double TgCB, double U1RCB, double TCC
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Compresor_de_Baja(double U1CCB, double Tenf, double U2CCB, double TgCB, double mCCB, double CPmaterial, double CITCCB)
@@ -2618,7 +2661,7 @@ double Temperatura_Carcasa_Compresor_de_Baja(double U1CCB, double Tenf, double U
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Turbina_de_Baja(double U1RTB, double TgTB, double U2RTB, double TRCB, double U3RTB, double Tlub, double U4RTB, double Tgenf, double mRTB, double CPmaterial, double CITRTB)
@@ -2649,7 +2692,7 @@ double Temperatura_Rotor_Turbina_de_Baja(double U1RTB, double TgTB, double U2RTB
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Turbina_de_Baja(double U1CTB, double Tenf, double U2CTB, double TgTB, double mCTB, double CPmaterial, double CITCTB)
@@ -2679,7 +2722,7 @@ double Temperatura_Carcasa_Turbina_de_Baja(double U1CTB, double Tenf, double U2C
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Rotor_Turbina_de_Alta(double U1RTA, double TgTA, double U2RTA, double TRCA, double U3RTA, double Tlub, double U4RTA, double Tgenf, double mRTA, double CPmaterial, double CITRTA)
@@ -2710,7 +2753,7 @@ double Temperatura_Rotor_Turbina_de_Alta(double U1RTA, double TgTA, double U2RTA
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double Temperatura_Carcasa_Turbina_de_Alta(double U1CTA, double Tenf, double U2CTA, double TgTA, double mCTA, double CPmaterial, double CITCTA)
@@ -2740,7 +2783,7 @@ double Temperatura_Carcasa_Turbina_de_Alta(double U1CTA, double Tenf, double U2C
   else {
       x[0]=x[j-1];
   }
-	return 0;
+	return x[0];
 }
 
 double TORQUETA(double K_ADECUACION_K1_ROTOR1_TA, double T_Giro_TA, double TAO_TA_ROTOR_1,double CONTROL_TA_TORQUE_1, double CITORQUE_TA, double CIw1_TA)
@@ -2770,7 +2813,7 @@ double TORQUETA(double K_ADECUACION_K1_ROTOR1_TA, double T_Giro_TA, double TAO_T
 	  x[0]=x[j-1];
 
 	  }
-	return 0;
+	return x[0];
 
 }
 double TORQUETA2 (double  K_ADECUACION_K2_ROTOR2,double CITORQUE_TA,double TAO_TA_ROTOR2,double CI2TORQUE_TA) {
@@ -2892,7 +2935,7 @@ double ST8AFUN(double K_ADECUACION_ST8A, double FCV_68127, double TAO_ST8A, doub
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double CDPAFUN (double K_ADECUACION_CDPA, double FCV_68128, double TAO_CDPA, double CICDPA)
@@ -2922,7 +2965,7 @@ double CDPAFUN (double K_ADECUACION_CDPA, double FCV_68128, double TAO_CDPA, dou
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double ALFA1CONTROLCB(double K_ADECUACION_1_CB,double ALFA1_CONTROL_CB, double TAO_ALFA_1_CB, double CIALFA1)
@@ -2954,7 +2997,7 @@ double ALFA1CONTROLCB(double K_ADECUACION_1_CB,double ALFA1_CONTROL_CB, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1VBVCB (double K_ADECUACION_AREA1_CA, double FCV_6872, double TAO_VBV_CA_A1, double CIAREA1VBV)
@@ -2986,7 +3029,7 @@ double AREA1VBVCB (double K_ADECUACION_AREA1_CA, double FCV_6872, double TAO_VBV
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1IGVCB (double K_ADECUACION_AREA1_CB, double AFCV_6872,double IGV_CONTROL_CB_A1, double TAO_IGV_CB_A1, double CIAREA1IGV)
@@ -3018,7 +3061,7 @@ double AREA1IGVCB (double K_ADECUACION_AREA1_CB, double AFCV_6872,double IGV_CON
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double AREA1CA (double K_ADECUACION_AREA1_CA, double FCV_6871, double TAO_CA_A1, double CIAREA1_CA)
@@ -3050,7 +3093,7 @@ double AREA1CA (double K_ADECUACION_AREA1_CA, double FCV_6871, double TAO_CA_A1,
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double BETA3CA (double K_ADECUACION_BETA3_CA, double FCV_6873, double TAO_BETA3_CA, double CIBETA3CA)
@@ -3082,7 +3125,7 @@ double BETA3CA (double K_ADECUACION_BETA3_CA, double FCV_6873, double TAO_BETA3_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double PriO(double A, double B, double C, double D)  // falta modelo del genrador
@@ -3122,7 +3165,7 @@ double FCV6871 (double K_ADECUACION_FCV6871, double CONTROL_FCV6871, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV6872 (double K_ADECUACION_FCV6872, double CONTROL_FCV6872, double TAO_FCV6872, double CIFCV6872)
@@ -3152,7 +3195,7 @@ double FCV6872 (double K_ADECUACION_FCV6872, double CONTROL_FCV6872, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV6873 (double K_ADECUACION_FCV6873, double CONTROL_FCV6873, double TAO_FCV6873, double CIFCV6873)
@@ -3182,7 +3225,7 @@ double FCV6873 (double K_ADECUACION_FCV6873, double CONTROL_FCV6873, double TAO_
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV68127 (double K_ADECUACION_FCV68127, double CONTROL_FCV68127, double TAO_FCV68127, double CIFCV68127)
@@ -3212,7 +3255,7 @@ double FCV68127 (double K_ADECUACION_FCV68127, double CONTROL_FCV68127, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 double FCV68128 (double K_ADECUACION_FCV68128, double CONTROL_FCV68128, double TAO_FCV68128, double CIFCV68128)
@@ -3242,7 +3285,7 @@ double FCV68128 (double K_ADECUACION_FCV68128, double CONTROL_FCV68128, double T
   x[0]=x[j-1];
 
   }
-	return 0;
+	return x[0];
 }
 
 
@@ -3572,7 +3615,81 @@ double Vibraciones(double A,double B,double C,double D,double *CIDesplazamiento,
 
 //funcion de entrada de ejecucion  
  int main0(int pars) 
-{ 
+{
+	arc = fopen("C:/prog.csv", "a");
+	arc1 = fopen("C:/prog1.csv", "a");
+	arc2 = fopen("C:/prog2.csv", "a");
+	arc3 = fopen("C:/prog3.csv", "a");
+	arc4 = fopen("C:/prog4.csv", "a");
+	arc5 = fopen("C:/prog5.csv", "a");
+	arc6 = fopen("C:/prog6.csv", "a");
+	arc7 = fopen("C:/prog7.csv", "a");
+	arc8 = fopen("C:/prog8.csv", "a");
+	arc9 = fopen("C:/prog9.csv", "a");
+	arc10 = fopen("C:/prog10.csv", "a");
+	arc11 = fopen("C:/prog11.csv", "a");
+	arc12 = fopen("C:/prog12.csv", "a");
+	arc13 = fopen("C:/prog13.csv", "a");
+	arc14 = fopen("C:/prog14.csv", "a");
+	arc15 = fopen("C:/prog15.csv", "a");
+	arc16 = fopen("C:/prog16.csv", "a");
+	arc17 = fopen("C:/prog17.csv", "a");
+	arc18 = fopen("C:/prog18.csv", "a");
+	arc19 = fopen("C:/prog19.csv", "a");
+	arc20 = fopen("C:/prog20.csv", "a");
+	arc21 = fopen("C:/prog21.csv", "a");
+	arc22 = fopen("C:/prog22.csv", "a");
+	arc23 = fopen("C:/prog23.csv", "a");
+	arc24 = fopen("C:/prog24.csv", "a");
+	arc25 = fopen("C:/prog25.csv", "a");
+	arc26 = fopen("C:/prog26.csv", "a");
+	arc27 = fopen("C:/prog27.csv", "a");
+	arc28 = fopen("C:/prog28.csv", "a");
+	arc29 = fopen("C:/prog29.csv", "a");
+
+	if(arc == NULL||arc1==NULL||arc2==NULL||arc3==NULL||arc4==NULL||arc5==NULL||arc6==NULL||arc7==NULL||arc8==NULL||arc9==NULL||arc10==NULL||arc11==NULL||arc12==NULL||arc13==NULL||arc14==NULL||arc15==NULL||arc16==NULL||arc17==NULL||arc18==NULL||arc19==NULL||arc20==NULL||arc21==NULL||arc22==NULL||arc23==NULL||arc24==NULL||arc25==NULL||arc26==NULL||arc27==NULL||arc28==NULL||arc29==NULL)
+		{
+			return 0;
+		}
+
+		fprintf(arc, "Temperatura_entrada_compresor_baja;%f\n",TEMPERATURA_ENTRADA_COMPRESOR_BAJA);
+		fprintf(arc1, "Temperatura_salida_compresor_baja;%f\n",TEMPERATURA_SALIDA_COMPRESOR_BAJA);
+		fprintf(arc2, "Presion_entrada_compresor_baja;%f\n",PRESION_ENTRADA_COMPRESOR_BAJA);
+		fprintf(arc3, "Presion_salida_compresor_baja;%f\n",PRESION_SALIDA_COMPRESOR_BAJA);
+
+		fprintf(arc4, "Temperatura_salida_compresor_alta;%f\n",TEMPERATURA_SALIDA_COMPRESOR_ALTA);
+		fprintf(arc5, "Presion_salida_compresor_alta;%f\n",PRESION_SALIDA_COMPRESOR_ALTA);
+		fprintf(arc6, "Temperatura_entrada_turbina_alta;%f\n",TEMPERATURA_ENTRADA_TURBINA_ALTA);
+		fprintf(arc7, "Presion_entrada_turbina_alta;%f\n",PRESION_ENTRADA_TURBINA_ALTA);
+
+		fprintf(arc8, "Presion_salida_turbina_alta;%f\n",PRESION_SALIDA_TURBINA_ALTA);
+		fprintf(arc9, "Temperatura_salida_turbina_alta;%f\n",TEMPERATURA_SALIDA_TURBINA_ALTA);
+		fprintf(arc10, "Presion_salida_turbina_baja;%f\n",PRESION_SALIDA_TURBINA_BAJA);
+		fprintf(arc11, "Temperatura_salida_turbina_baja;%f\n",TEMPERATURA_SALIDA_TURBINA_BAJA);
+
+		fprintf(arc12, "Tenf;%f\n",Tenf);
+		fprintf(arc13, "TRTA;%f\n",TRTA);
+		fprintf(arc14, "TRTB;%f\n",TRTB);
+		fprintf(arc15, "TRCA;%f\n",TRCA);
+
+		fprintf(arc16, "TRCB;%f\n",TRCB);
+		fprintf(arc17, "TCTA;%f\n",TCTA);
+		fprintf(arc18, "TCTB;%f\n",TCTB);
+		fprintf(arc19, "TCCA;%f\n",TCCA);
+
+		fprintf(arc20, "TCCB;%f\n",TCCB);
+		fprintf(arc21, "POTENCIA_CB;%f\n",POTENCIA_CB);
+		fprintf(arc22, "POTENCIA_TA;%f\n",POTENCIA_TA);
+		fprintf(arc23, "POTENCIA_CA;%f\n",POTENCIA_CA);
+
+		fprintf(arc24, "POTENCIA_TB;%f\n",POTENCIA_TB);
+		fprintf(arc25, "TPOTENCIA_MECf\n",POTENCIA_MEC);
+		fprintf(arc26, "TORQUE_CB;%f\n",TORQUE_CB);
+		fprintf(arc27, "TORQUE_TA;%f\n",TORQUE_TA);
+		fprintf(arc28, "TORQUE_CA;%f\n",TORQUE_CA);
+		fprintf(arc29, "TORQUE_TB;%f\n",TORQUE_TB);
+
+
 //ejemplo de ejecucion...genera la raiz cuadrada
 
 //Setdouble(sqrt((double)i),i);
@@ -5038,6 +5155,296 @@ PresionSum = PresionSum_kg*kg_kPa;
 if (pars==1){
 int p=5/((int)sqrt(1.0f)-1);
 }
+fclose(arc);
 return 1;
 
+}
+
+void CARGA_VARIABLES()
+{
+
+		///////////////////****************DATOS DE TURBOGRUPO INICIALIZADOS********************////////////
+
+	A52_1 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
+	A52_2 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
+	AREA_1_CB_IGV = 0;  // ÁREA DE IGV DEL COMPRESOR DE BAJA
+	AREA_FMENF_CA = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE ALTA
+	AREA_FMENF_CB = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE BAJA
+	AREA_FMOUT_CA = 0;  // ÁREA DE FLUJO MASICO DE SALIDA  ENFRIAMIENTO COMPRESOR DE ALTA
+	CDPA = 0;           // VÁLVULA DE PURGA COMPRESOR DE ALTA  
+	CICDPA = 0;         // CONDICIÓN INICIAL DE LA VÁLVULA DE PURGA
+	CIST8A = 0;			
+	CITCCA = 25;
+	CITCCB = 25;
+	CITCTA = 25;
+	CITCTB = 25;
+	CITenf = 25;
+	CITRCA = 25;
+	CITRCB = 25;
+	CITRTA = 25;
+	CITRTB = 25;
+	CIW_TA = 0;
+	CIW_TB = 0;
+	CIw1_TA = 0;
+	CIw1_TB = 0;
+	
+	DENSIDAD_FMENF_CA = 0;
+	DENSIDAD_FMENF_CB = 0;
+	DENSIDAD_FMOUT_CA = 0;
+	F_MAX_ENF = 0;
+	F_MAX_ENF_U1CCA = 0;
+	F_MAX_ENF_U1CCB = 0;
+	F_MAX_ENF_U1CTA = 0;
+	F_MAX_ENF_U1CTB = 0;
+	F_MAX_ENF_U4RTA = 0;
+	F_MAX_ENF_U4RTB = 0;
+	FCV_68127 = 0;
+	FLUJO_MASICO_AIRE = 0;
+	FLUJO_MASICO_CA = 0;
+	FLUJO_MASICO_CB = 0;
+	FLUJO_MASICO_ENF_CA = 0;
+	FLUJO_MASICO_ENF_CB = 0;
+	FLUJO_MASICO_GAS = 0;
+	FLUJO_MASICO_GAS_VIGV = 0;
+	FLUJO_MASICO_OUT_CA = 0;
+	FLUJO_MASICO_SALIDAVBV = 0;
+	FLUJO_MASICO_TA = 0;
+	FLUJO_MASICO_TB = 0;
+	Frecuencia = 60;
+
+	
+
+	POTENCIA_CA = 0;
+	POTENCIA_CB = 0;
+	POTENCIA_MEC = 0;
+	POTENCIA_TA = 0;
+	POTENCIA_TB = 0;
+	QA = 0;
+	QB = 0;
+	QCCA = 0;
+	QCCB = 0;
+	QCTA = 0;
+	QCTB = 0;
+	QRCA = 0;
+	QRCB = 0;
+	QRTA = 0;
+	QRTB = 0;
+
+	RADIO_MEDIO_CB = 1;      //ESTE DATO LO TIENE EL BARZA
+	
+	RADIO_MEDIO_TB = 1;		//ESTE DATO LO TIENE EL BARZA
+	
+	ST8A = 0;
+	T_Giro_TA = 0;
+	T_Giro_TB = 0;
+
+
+	TCCA = 25;
+	TCCB = 25;
+	Tchiller = 25;
+	TCTA = 25;
+	TCTB = 25;
+	Tenf = 25;
+	TgCA = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
+	TgCB = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
+	Tgenf = TEMPERATURA_SALIDA_COMPRESOR_ALTA;	//CONSIDERANDO QUE SE ENFRIA CON EL AIRE A LA SALIDA DEL COMPRESOR DE ALTA
+	
+	TgenfA =TEMPERATURA_SALIDA_COMPRESOR_BAJA; //INICIALIZADA 
+	Tlub = 25;				// IGUALAR DE COCHI 
+
+
+	TgTA = T_C * 0.5;		//TEMPERATURA DE FLAMA ADIABATICA MULTIPLICADO POR 0.6 (FALTA HACER EL MODELO DE LA TEMPERATURA DE FLAMA HACIA LA ENTRADA DE LA TURBINA DE ALTA)
+	TgTB = TEMPERATURA_SALIDA_TURBINA_ALTA;
+
+	
+	Torque_Arracador_TA = 0;
+	Torque_Arracador_TB = 0;
+	TORQUE_CA = 0;
+	TORQUE_CB = 0;
+	TORQUE_Exc = 0;
+	TORQUE_TA = 0;
+	TORQUE_TB = 0;
+	TRCA = 25;
+	TRCB = 25;
+	TRTA = 25;
+	TRTB = 25;
+	U_CA = 0;
+	U_CB = 0;
+	U_TA = 0;
+	U_TB = 0;
+	U1CCA = 0;
+	U1CCB = 0;
+	U1CTA = 0;
+	U1CTB = 0;
+	U1enf = 0;
+	U1RCA = 0;
+	U1RCB = 0;
+	U1RTA = 0;
+	U1RTB = 0;
+	
+	U2CCA = 0;
+	U2CCB = 0;
+	U2CTA = 0;
+	U2CTB = 0;
+	U2enf = 0;
+
+	
+	U3enf = 0;
+	U3RCA = 0;
+	U3RCB = 0;
+	U3RTA = 0;
+	U3RTB = 0;
+	U4enf = 0;
+	U4RTA = 0;
+	U4RTB = 0;
+	VELOCIDAD_FMENF_CA = 0;
+	VELOCIDAD_FMENF_CB = 0;
+	VELOCIDAD_FMOUT_CA = 0;
+	VN1_CB = 0;
+	VT1_CA = 0;
+	VT1_CB = 0;
+	VT2_CA = 0;
+	VT2_CB = 0;
+	VT2_TA = 0;
+	VT2_TB = 0;
+	VT3_TA = 0;
+	VT3_TB = 0;
+	W_TA = 0;
+	W_TB = 0;
+	w1_TA = 0;
+	w1_TB = 0;
+
+	AFCV_6872 = 0;
+	ALFA1_CB = 0;
+	Alfa1_cb_control = 0;
+	ALFA1_CONTROL_CB = 0;
+	ALFA2_CB = 0;
+	ALFA3_CB = 0;
+	AREA_1_CB = 0;
+	AREA_2_CB = 0;
+	AREA_3_CB = 0;
+	BETA3_CB = 0;
+	CIALFA1 = 0;
+	CIAREA1IGV = 0;
+	CIAREA1VBV = 0;
+	
+	DELTA_PRESION_CB = 0;
+	FCV_6872 = 0;
+
+	 
+
+	PDI64070 = 0;
+	PRESION_ENTRADA_COMPRESOR_BAJA = 1;
+	PRESION_SALIDA_COMPRESOR_BAJA = 1;
+	
+	
+	TEMPERATURA_ENTRADA_COMPRESOR_BAJA = 25;
+	TEMPERATURA_SALIDA_COMPRESOR_BAJA = 25;
+	V1_CB = 0;
+	V2_CB = 0;
+	V3_CB = 0;
+	VN2_CB = 0;
+	VN3_CB = 0;
+	VRB1_CB = 0;
+	VRB2_CB = 0;
+	VRB3_CB = 0;
+	VT3_CB = 0;
+
+	ALFA_1_CA = 0;
+	ALFA1_CA = 0;
+	Alfa1_ca_control = 0;
+	ALFA1_CONTROL_CA = 0;
+	ALFA2_CA = 0;
+	ALFA3_CA = 0;
+	AREA_1_CA = 0;
+	AREA_2_CA = 0;
+	AREA_3_CA = 0;
+	AREA1_CONTROL_CA = 0;
+	BETA_3_CA = 0;
+	
+	
+	BETA3_CA = 0;
+	CIALFA1_CA = 0;
+	CIAREA1_CA = 0;
+	CIBETA3CA = 0;
+	CONTROL_BETA3_CA_CONTROL = 0;
+
+	DELTA_PRESION_CA = 0;
+	FCV_6871 = 0;
+	FCV_6873 = 0;
+	
+	PRESION_SALIDA_COMPRESOR_ALTA = 0;
+
+
+
+	K_ADECUACION_CDPA = 1;					//inicializada 
+	K_ADECUACION_K1_ROTOR1_TA = 1;			//inicializada
+	K_ADECUACION_K1_ROTOR1_TB = 1;			//inicializada
+	K_ADECUACION_ST8A = 1;					//inicializada
+	mCCA = 1000;							//inicializada 
+	mCCB = 1000;							//inicializada
+	mCTA = 1000;							//inicializada
+	mCTB = 1000;							//inicializada
+	menf = 1000;							//inicializada
+	mRCA = 1000;							//inicializada
+	mRCB = 1000;							//inicializada
+	mRTA = 1000;							//inicializada
+	mRTB = 1000;							//inicializada
+	CPmaterial = 1;							//inicializada
+	K_ADECUACION_1_CA = 1;					//inicializada
+	K_ADECUACION_BETA3_CA = 1;				//inicializada
+	GRAVEDAD = 9.81;						//inicializada 
+	K_ADECUACION_1_CB = 1;					//inicializada 
+	K_ADECUACION_AREA1_CA = 1;				//inicializada 
+	K_ADECUACION_AREA1_CB = 1;				//inicializada
+	U2RCA = 1;								//inicializada
+	U2RCB = 1;								//inicializada
+	U2RTA = 1;								//inicializada
+	U2RTB = 1;								//inicializada
+	BETA1_CA = .78870538;					//INICIALIZADA
+	W_CA = 10200;							//INICIALIZADA
+	BETA2_CA = 1.0066;						//INICIALIZADA
+	W_CB = 3600;							//INICIALIZADA
+	CP_CB = 1;								//INICIALIZADA
+	RHO_AREA_2_CB = 1;						//INICIALIZADA
+	RHO_AREA_3_CB = 1;						//INICIALIZADA
+	RHO_DELTA_PRESION_CB = 1;   			//INICIALIZADA 
+	CP_CA = 1;								//INICIALIZADA
+	RHO_AREA_1_CA = 1;						//INICIALIZADA
+	RHO_AREA_2_CA = 1;						//INICIALIZADA 
+	RHO_AREA_3_CA = 1;						//INICIALIZADA
+	RHO_DELTA_PRESION_CA = 1;				//INICIALIZADA
+	RADIO_MEDIO_TA=.1275;					//INICIALIZADA
+	RHO_AREA_1_CB = 1;						//INICIALIZADA 
+	RADIO_MEDIO_CA =.43;					//INICIALIZADA
+	BETA1_CB =.702244;						//inicializada
+	BETA2_CB =.95;							//inicializada
+	TAO_ALFA_1_CA = 0.25;						//INICIALIZADA
+	TAO_BETA3_CA = 0.25;						//INICIALIZADA
+	TAO_CA_A1 = 0.25;							//INICIALIZADA
+	K_ADECUACION_FCV68127 = 1;				//INICIALIZADA
+	K_ADECUACION_FCV68128 = 1;				//INICIALIZADA
+	K_ADECUACION_FCV6871 = 1;  				//INICIALIZADA
+	K_ADECUACION_FCV6872 = 1;  				//INICIALIZADA
+	K_ADECUACION_FCV6873 = 1;  				//INICIALIZADA					  
+	CONSTANTE_AREAS_2_TA = .40;				//INICIALIZADA 
+	CONSTANTE_AREAS_1_TA = 2.45;			// INICIALIZADA 
+	BETA2_TA = 1.04;						// INICIALIZADA
+	BETA1_TA = 1.39;						// INICIALIZADA
+	CP_TA = 1.17;							//INICIALIZADA
+	TAO_FCV68127 = 0.5;						//INICIALIZADA
+	TAO_FCV68128 = 0.5;						// INICIALIZADA 
+	TAO_FCV6871 = 0.5;						// INICIALIZADA
+	TAO_FCV6872 = 0.5;						// INICIALIZADA
+	TAO_FCV6873 = 0.5;						//INICIALIZADA
+	TAO_CDPA = 0.5;							//INICIALIZADA
+	TAO_ST8A = 0.5;							//INICIALIZADA
+	TAO_TA_ROTOR1 = 0.5;						//INICIALIZADA
+	TAO_TB_ROTOR1 = 0.5;						//INICIALIZADA
+	TAO_ALFA_1_CB = 0.5;						//INICIALIZADA
+	TAO_IGV_CB_A1 = 0.5;						//INICIALIZADA
+	TAO_VBV_CA_A1 = 0.5;						//INICIALIZADA
+
+
+/////////////****************AQUI ACABAN LAS INICIALIZACIONES DE TURBO GRUPO*************////////////////
 }
