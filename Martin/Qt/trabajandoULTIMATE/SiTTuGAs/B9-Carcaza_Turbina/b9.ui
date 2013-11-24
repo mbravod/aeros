@@ -93,9 +93,6 @@
       <bold>false</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_43">
     <property name="geometry">
@@ -118,9 +115,6 @@
       <weight>50</weight>
       <bold>false</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="label_44">
@@ -146,9 +140,6 @@ color: rgb(255, 255, 0);</string>
       <bold>false</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_45">
     <property name="geometry">
@@ -171,9 +162,6 @@ color: rgb(255, 255, 0);</string>
       <weight>50</weight>
       <bold>false</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBox">
@@ -222,6 +210,12 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR371_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
    </property>
@@ -240,6 +234,12 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR346_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -260,6 +260,12 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR161_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
    </property>
@@ -278,6 +284,12 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR299_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -298,6 +310,12 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR049_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
    </property>
@@ -317,6 +335,18 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR377_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="Normal" stdset="0">
+    <number>2</number>
+   </property>
+   <property name="Alarma">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
    </property>
@@ -335,6 +365,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -358,6 +391,12 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR347_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -379,6 +418,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -402,6 +444,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -423,6 +468,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -446,6 +494,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>PDSHH</string>
    </property>
@@ -464,6 +515,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>PDSH</string>
@@ -484,6 +538,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>PDSL</string>
    </property>
@@ -502,6 +559,12 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR357_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -525,6 +588,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -546,6 +612,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -569,6 +638,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -590,6 +662,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -613,6 +688,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -634,6 +712,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -682,9 +763,6 @@ color: rgb(255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_32">
     <property name="geometry">
@@ -708,9 +786,6 @@ color: rgb(255, 255, 0);</string>
       <bold>false</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_33">
     <property name="geometry">
@@ -733,9 +808,6 @@ color: rgb(255, 255, 0);</string>
       <weight>50</weight>
       <bold>false</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
   </widget>
@@ -771,9 +843,6 @@ color: rgb(255, 255, 0);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_4">
    <property name="geometry">
@@ -793,9 +862,6 @@ color: rgb(255, 255, 0);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_5">
@@ -817,9 +883,6 @@ color: rgb(255, 255, 0);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_6">
    <property name="geometry">
@@ -839,9 +902,6 @@ color: rgb(255, 255, 0);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_7">
@@ -863,9 +923,6 @@ color: rgb(255, 255, 0);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_8">
    <property name="geometry">
@@ -885,9 +942,6 @@ color: rgb(255, 255, 0);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_9">
@@ -909,9 +963,6 @@ color: rgb(255, 255, 0);</string>
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_10">
    <property name="geometry">
@@ -932,9 +983,6 @@ ADMISIÓN DE AIRE</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -959,9 +1007,6 @@ ADMIN AIRE VENTILACIÓN</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -988,9 +1033,6 @@ DE DISTRIBUCIÓN</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1015,9 +1057,6 @@ PURGA AIRE</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_14">
    <property name="geometry">
@@ -1037,9 +1076,6 @@ PURGA AIRE</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_15">
@@ -1061,9 +1097,6 @@ PURGA AIRE</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_16">
    <property name="geometry">
@@ -1083,9 +1116,6 @@ PURGA AIRE</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_17">
@@ -1107,9 +1137,6 @@ PURGA AIRE</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_18">
    <property name="geometry">
@@ -1129,9 +1156,6 @@ PURGA AIRE</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -1156,9 +1180,6 @@ PURGA AIRE</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1182,9 +1203,6 @@ PURGA AIRE</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1193,7 +1211,7 @@ PURGA AIRE</string>
    <property name="geometry">
     <rect>
      <x>798</x>
-     <y>220</y>
+     <y>224</y>
      <width>121</width>
      <height>61</height>
     </rect>
@@ -1209,9 +1227,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -1239,9 +1254,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_23">
    <property name="geometry">
@@ -1264,9 +1276,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_24">
@@ -1291,9 +1300,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_25">
    <property name="geometry">
@@ -1316,9 +1322,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_26">
@@ -1343,9 +1346,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_27">
    <property name="geometry">
@@ -1368,9 +1368,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_28">
@@ -1395,9 +1392,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_29">
    <property name="geometry">
@@ -1420,9 +1414,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_30">
@@ -1447,9 +1438,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_31">
    <property name="geometry">
@@ -1472,9 +1460,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_34">
@@ -1499,9 +1484,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_35">
    <property name="geometry">
@@ -1524,9 +1506,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_36">
@@ -1551,9 +1530,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_37">
    <property name="geometry">
@@ -1576,9 +1552,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_38">
@@ -1603,9 +1576,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_39">
    <property name="geometry">
@@ -1628,9 +1598,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_40">
@@ -1655,9 +1622,6 @@ SILENCIADORES</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_41">
    <property name="geometry">
@@ -1680,9 +1644,6 @@ SILENCIADORES</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_46">
@@ -1709,9 +1670,6 @@ ELIMINADOR DE GOTAS</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -1742,9 +1700,6 @@ HR SECCIÓN A</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1771,9 +1726,6 @@ HR SECCIÓN A</string>
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_49">
    <property name="geometry">
@@ -1796,9 +1748,6 @@ HR SECCIÓN A</string>
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aWMultiObject_2">
@@ -1847,9 +1796,6 @@ HR SECCIÓN A</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="btnIMPPant">
