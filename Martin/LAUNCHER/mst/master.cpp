@@ -361,7 +361,7 @@ int main0()
 			}
 			TIME=timeGetTime();
 			abs[i]=TIME-old_TIME;
-			Sleep(50-abs[i]);
+//			Sleep(50-abs[i]);
 		}
 		end_TIME=timeGetTime();
 		j++;
