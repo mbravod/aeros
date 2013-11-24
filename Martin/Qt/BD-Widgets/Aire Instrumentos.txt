@@ -1,3 +1,0 @@
-Tiempo	Potencia Compresor	Temperatura Aire Salida	Presión Aire Salida	Presión Tanque
-Tiempo	Potencia Compresor	Temperatura Aire Salida	Presión Aire Salida	Presión Tanque
-Tiempo	Potencia Compresor	Temperatura Aire Salida	Presión Aire Salida	Presión Tanque

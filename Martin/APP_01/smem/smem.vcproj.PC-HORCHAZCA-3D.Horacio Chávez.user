@@ -9,7 +9,7 @@
 			Name="Debug|Win32"
 			>
 			<DebugSettings
-				Command=""
+				Command="C:\sthie\launcher.exe"
 				WorkingDirectory=""
 				CommandArguments=""
 				Attach="false"

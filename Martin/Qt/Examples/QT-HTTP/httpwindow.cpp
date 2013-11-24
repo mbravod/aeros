@@ -40,6 +40,7 @@
 
 #include <QtGui>
 #include <QtNetwork>
+#include <QDebug>
 
 #include "httpwindow.h"
 #include "ui_authenticationdialog.h"
@@ -48,15 +49,14 @@ HttpWindow::HttpWindow(QWidget *parent)
     : QDialog(parent)
 {
 #ifndef QT_NO_OPENSSL
-    urlLineEdit = new QLineEdit("https://cncaoi.com/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=3.1415&complete=FALSE");  //check for SSL SUPPORT DJSC
+    urlLineEdit = new QLineEdit("https://127.0.0.1/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=23.1415&complete=FALSE");  //check for SSL SUPPORT DJSC
 #else
-    urlLineEdit = new QLineEdit("http://cncaoi.com/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=3.1415&complete=FALSE");
+    urlLineEdit = new QLineEdit("http://127.0.0.1/onlinesthie.aspx?session=1&RW=w&type=float&var=23&value=23.1415&complete=FALSE");
 #endif
 
     urlLabel = new QLabel(tr("&URL:"));
     urlLabel->setBuddy(urlLineEdit);
-    statusLabel = new QLabel(tr("Please enter the URL of a file you want to "
-                                "download."));
+    statusLabel = new QLabel(tr("Please enter the URL of a file you want to download."));
 
     downloadButton = new QPushButton(tr("Download"));
     downloadButton->setDefault(true);
@@ -98,24 +98,18 @@ HttpWindow::HttpWindow(QWidget *parent)
 
 void HttpWindow::startRequest(QUrl url)
 {
-
-	QUrl postData;
-postData.addQueryItem("var_upload"     , "1,2,3,4,5,6,7");
-postData.addQueryItem("var_type_upload", "i,i,i,i,i,i,f");
-postData.addQueryItem("var_type_value",  "5,6,7,8,9,0,3.1415");
-postData.addQueryItem("sql_query",  "5,6,7,8,9,0,3.1415");
-QNetworkRequest request(url);
-request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
-
-//networkManager->post(request, postData.encodedQuery());
-
+    QUrl postData;
+/*    postData.addQueryItem("var_upload"     , "1,2,3,4,5,6,7");
+    postData.addQueryItem("var_type_upload", "i,i,i,i,i,i,f");
+    postData.addQueryItem("var_type_value",  "5,6,7,8,9,0,3.1415");
+    postData.addQueryItem("sql_query",  "5,6,7,8,9,0,3.1415");*/
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
+    //networkManager->post(request, postData.encodedQuery());
     reply = qnam.post(QNetworkRequest(url),postData.encodedQuery());
-    connect(reply, SIGNAL(finished()),
-            this, SLOT(httpFinished()));
-    connect(reply, SIGNAL(readyRead()),
-            this, SLOT(httpReadyRead()));
-    connect(reply, SIGNAL(downloadProgress(qint64,qint64)),
-            this, SLOT(updateDataReadProgress(qint64,qint64)));
+    connect(reply, SIGNAL(finished()), this, SLOT(httpFinished()));
+    connect(reply, SIGNAL(readyRead()),this, SLOT(httpReadyRead()));
+    connect(reply, SIGNAL(downloadProgress(qint64,qint64)), this, SLOT(updateDataReadProgress(qint64,qint64)));
 }
 
 void HttpWindow::downloadFile()
@@ -127,20 +121,19 @@ void HttpWindow::downloadFile()
     if (fileName.isEmpty())
         fileName = "index.html";
 
-    if (QFile::exists(fileName)) {
+    if (QFile::exists(fileName))
+    {
         QFile::remove(fileName);
     }
 
     file = new QFile(fileName);
-    if (!file->open(QIODevice::WriteOnly)) {
-        QMessageBox::information(this, tr("HTTP"),
-                                 tr("Unable to save the file %1: %2.")
-                                 .arg(fileName).arg(file->errorString()));
+    if (!file->open(QIODevice::WriteOnly))
+    {
+        QMessageBox::information(this, tr("HTTP"), tr("Unable to save the file %1: %2.").arg(fileName).arg(file->errorString()));
         delete file;
         file = 0;
         return;
     }
-
 
     progressDialog->setWindowTitle(tr("HTTP"));
     progressDialog->setLabelText(tr("Downloading %1.").arg(fileName));
@@ -161,8 +154,10 @@ void HttpWindow::cancelDownload()
 
 void HttpWindow::httpFinished()
 {
-    if (httpRequestAborted) {
-        if (file) {
+    if (httpRequestAborted)
+    {
+        if (file)
+        {
             file->close();
             file->remove();
             delete file;
@@ -179,13 +174,16 @@ void HttpWindow::httpFinished()
 
 
     QVariant redirectionTarget = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
-    if (reply->error()) {
+    if (reply->error())
+    {
         file->remove();
         QMessageBox::information(this, tr("HTTP"),
                                  tr("Download failed: %1.")
                                  .arg(reply->errorString()));
         downloadButton->setEnabled(true);
-    } else if (!redirectionTarget.isNull()) {        
+    }
+    else if (!redirectionTarget.isNull())
+    {
         QUrl newUrl = url.resolved(redirectionTarget.toUrl());
         if (QMessageBox::question(this, tr("HTTP"),
                                   tr("Redirect to %1 ?").arg(newUrl.toString()),
@@ -197,7 +195,9 @@ void HttpWindow::httpFinished()
             startRequest(url);
             return;
         }
-    } else {
+    }
+    else
+    {
         QString fileName = QFileInfo(QUrl(urlLineEdit->text()).path()).fileName();
         statusLabel->setText(tr("Downloaded %1 to current directory.").arg(fileName));
         downloadButton->setEnabled(true);
@@ -216,7 +216,10 @@ void HttpWindow::httpReadyRead()
     // That way we use less RAM than when reading it at the finished()
     // signal of the QNetworkReply
     if (file)
+    {
+        qDebug()<<"Leyendo... "<<reply->readAll();
         file->write(reply->readAll());
+    }
 }
 
 void HttpWindow::updateDataReadProgress(qint64 bytesRead, qint64 totalBytes)

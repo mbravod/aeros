@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'authenticationdialog.ui'
 **
-** Created: Wed 2. Oct 14:50:11 2013
+** Created: Sat 23. Nov 20:43:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/default">
-        <file>resources/Cambio.svg</file>
-        <file>resources/CambioA.svg</file>
-        <file>resources/CambioH.svg</file>
-        <file>resources/nuevo.svg</file>
-        <file>resources/CIRCULOS.svg</file>
-    </qresource>
-</RCC>
