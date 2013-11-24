@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ENFRIADOR</class>
+ <widget class="QWidget" name="ENFRIADOR">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/N5.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbEnfT">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>7</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENFRIADOR</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btHabPla">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>564</y>
+     <width>80</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>HABILITAR
+PLANTA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btDesPla">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>597</y>
+     <width>80</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>DESHABILITAR
+PLANTA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btEnfr">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>597</y>
+     <width>80</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>MODO
+ENFRIADOR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btCalent">
+   <property name="geometry">
+    <rect>
+     <x>511</x>
+     <y>564</y>
+     <width>80</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>MODO
+CALENTADOR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAlarma">
+   <property name="geometry">
+    <rect>
+     <x>79</x>
+     <y>81</y>
+     <width>97</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbPm100a">
+   <property name="geometry">
+    <rect>
+     <x>188</x>
+     <y>563</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>PM - 100A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbPm100b">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>562</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>PM - 100B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbT390">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>213</y>
+     <width>45</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>T - 390  </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbh110">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>264</y>
+     <width>45</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>H - 110</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbCh100">
+   <property name="geometry">
+    <rect>
+     <x>798</x>
+     <y>556</y>
+     <width>45</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>CH - 100</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbT2U">
+   <property name="geometry">
+    <rect>
+     <x>852</x>
+     <y>578</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>ºF</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbIndT">
+   <property name="geometry">
+    <rect>
+     <x>684</x>
+     <y>602</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>INDIQUE EL PUNTO DE AJUSTE DE LA VARIABLE T2</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leT2">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>575</y>
+     <width>63</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbMizq">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>542</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>M</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbMder">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>542</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>M</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btImpr">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>634</y>
+     <width>133</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 208, 212);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbRetorT">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>304</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>RETORIO
+AGUA CHILL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbConexionT">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>184</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CONEXION
+AGUA CHILL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbSumiT">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>110</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SUMINISTRO
+AGUA CHILL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnlbAlarma">
+   <property name="geometry">
+    <rect>
+     <x>79</x>
+     <y>81</y>
+     <width>97</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnlbAlarma_2">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>575</y>
+     <width>63</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnlbAlarma_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>97</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAlarma_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>97</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>lbEnfT</zorder>
+  <zorder>btHabPla</zorder>
+  <zorder>btDesPla</zorder>
+  <zorder>btEnfr</zorder>
+  <zorder>btCalent</zorder>
+  <zorder>lbAlarma</zorder>
+  <zorder>lbPm100a</zorder>
+  <zorder>lbPm100b</zorder>
+  <zorder>lbT390</zorder>
+  <zorder>lbh110</zorder>
+  <zorder>lbCh100</zorder>
+  <zorder>lbT2U</zorder>
+  <zorder>lbIndT</zorder>
+  <zorder>leT2</zorder>
+  <zorder>lbMizq</zorder>
+  <zorder>lbMder</zorder>
+  <zorder>btImpr</zorder>
+  <zorder>lbRetorT</zorder>
+  <zorder>lbConexionT</zorder>
+  <zorder>lbSumiT</zorder>
+  <zorder>btnlbAlarma</zorder>
+  <zorder>btnlbAlarma_2</zorder>
+  <zorder>lbAlarma_2</zorder>
+  <zorder>btnlbAlarma_3</zorder>
+ </widget>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

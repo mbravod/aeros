@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Inet_DI_4</class>
+ <widget class="QWidget" name="Inet_DI_4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>485</width>
+    <height>425</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>485</width>
+    <height>425</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="WLabel" name="lbNum_9">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>210</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_8">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>190</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_3">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>94</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_1">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>55</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>74</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_14">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>310</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_23">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>330</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>74</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_3">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>94</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>383</y>
+     <width>101</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>CERRAR</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_19">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>350</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_21">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>350</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_21">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_20">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>350</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_6">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>154</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>154</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_9">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>210</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>94</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_11">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>250</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_10">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>230</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_18">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>310</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_7">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>173</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_7">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>173</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>173</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TEMP BAJ TANQUE ACEITE LUB GEN</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_11">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>250</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_8">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>190</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>55</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_12">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>270</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_11">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>250</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_4">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>113</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(43, 71, 134, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <widget class="WLabel" name="lbIP">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>0</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(74, 110, 195);
+background-color: rgb(74, 110, 195);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>LNET_D1.grf</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="WLabel" name="lbNum_20">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>290</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_18">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DIF PREF GEN A TURB</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_6">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>154</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_7">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>173</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>NALM</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_10">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>230</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_4">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>113</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_12">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>270</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>113</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_17">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>290</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_18">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>330</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>135</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_2">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>74</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_4">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>113</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_6">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>154</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_3">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>94</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_2">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>74</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>17</y>
+     <width>485</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <widget class="WLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>62</x>
+      <y>4</y>
+      <width>400</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NODE - N2N32 -D1</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="WLabel" name="lbUni_10">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>230</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_17">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>330</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_8">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>190</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_9">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>210</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_12">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FILTRO ACEITE LUB GEN P/D ALTA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_13">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_1">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>55</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_5">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>135</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_5">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>135</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_12">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>270</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>NALM</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTit_24">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>340</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>(REFACCIÓN) </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_5">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>135</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNumDes_24">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>310</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUni_15">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>290</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbNum_1">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>55</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(22, 232, 232);</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>485</width>
+     <height>421</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>485</width>
+     <height>421</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>lbNum_9</zorder>
+  <zorder>lbNumDes_8</zorder>
+  <zorder>lbTit_9</zorder>
+  <zorder>lbNumDes_3</zorder>
+  <zorder>lbNumDes_1</zorder>
+  <zorder>lbTit_2</zorder>
+  <zorder>lbUni_14</zorder>
+  <zorder>lbNum_23</zorder>
+  <zorder>lbNum_2</zorder>
+  <zorder>lbUni_3</zorder>
+  <zorder>btCerrar</zorder>
+  <zorder>lbUni_19</zorder>
+  <zorder>lbNum_21</zorder>
+  <zorder>lbTit_21</zorder>
+  <zorder>lbNumDes_20</zorder>
+  <zorder>lbNum_6</zorder>
+  <zorder>lbTit_6</zorder>
+  <zorder>lbUni_9</zorder>
+  <zorder>lbTit_3</zorder>
+  <zorder>lbNumDes_11</zorder>
+  <zorder>lbNumDes_10</zorder>
+  <zorder>lbNum_18</zorder>
+  <zorder>lbNumDes_7</zorder>
+  <zorder>lbNum_7</zorder>
+  <zorder>lbTit_7</zorder>
+  <zorder>lbUni_11</zorder>
+  <zorder>lbNum_8</zorder>
+  <zorder>lbTit_1</zorder>
+  <zorder>lbNumDes_12</zorder>
+  <zorder>lbNum_11</zorder>
+  <zorder>lbNum_4</zorder>
+  <zorder>lbTit_11</zorder>
+  <zorder>frame_2</zorder>
+  <zorder>lbNum_20</zorder>
+  <zorder>lbTit_18</zorder>
+  <zorder>lbUni_6</zorder>
+  <zorder>lbUni_7</zorder>
+  <zorder>lbNum_10</zorder>
+  <zorder>lbUni_4</zorder>
+  <zorder>lbNum_12</zorder>
+  <zorder>lbTit_4</zorder>
+  <zorder>lbNumDes_17</zorder>
+  <zorder>lbNumDes_18</zorder>
+  <zorder>lbTit_5</zorder>
+  <zorder>lbNumDes_2</zorder>
+  <zorder>lbNumDes_4</zorder>
+  <zorder>lbTit_8</zorder>
+  <zorder>lbNumDes_6</zorder>
+  <zorder>lbTit_10</zorder>
+  <zorder>lbNum_3</zorder>
+  <zorder>lbUni_2</zorder>
+  <zorder>frame</zorder>
+  <zorder>lbUni_10</zorder>
+  <zorder>lbUni_17</zorder>
+  <zorder>lbUni_8</zorder>
+  <zorder>lbNumDes_9</zorder>
+  <zorder>lbTit_12</zorder>
+  <zorder>lbTit_13</zorder>
+  <zorder>lbUni_1</zorder>
+  <zorder>lbNum_5</zorder>
+  <zorder>lbUni_5</zorder>
+  <zorder>lbUni_12</zorder>
+  <zorder>lbTit_24</zorder>
+  <zorder>lbNumDes_5</zorder>
+  <zorder>lbNumDes_24</zorder>
+  <zorder>lbUni_15</zorder>
+  <zorder>lbNum_1</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

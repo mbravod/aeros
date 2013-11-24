@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="svg9493" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" sodipodi:docbase="/datas/Projs/Cliparts Stocker/led" sodipodi:docname="led_circle_blue.svg" sodipodi:version="0.32" inkscape:export-xdpi="90.000000" inkscape:export-ydpi="90.000000" inkscape:version="0.42" inkscape:export-filename="/datas/Projs/Cliparts Stocker/led/led_circle_blue.png" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<metadata>
+	
+		<rdf:RDF  xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<cc:Work  rdf:about="">
+			<dc:title>LED Circle (Blue)</dc:title>
+			<dc:description>jean.victor.balin@gmail.com</dc:description>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>led</rdf:li>
+					<rdf:li>shape</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<dc:publisher>
+				<cc:Agent  rdf:about="http://www.openclipart.org/">
+					<dc:title>Open Clip Art Library</dc:title>
+				</cc:Agent>
+			</dc:publisher>
+			<dc:creator>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:creator>
+			<dc:rights>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:rights>
+			<dc:date>2005-08-21</dc:date>
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<cc:license  rdf:resource="http://web.resource.org/cc/PublicDomain"></cc:license>
+			<dc:language>en</dc:language>
+		</cc:Work>
+		<cc:License  rdf:about="http://web.resource.org/cc/PublicDomain">
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Reproduction"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Distribution"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks"></cc:permits>
+		</cc:License>
+	</rdf:RDF>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  x="541.682" y="-30.117" width="280.556" height="94.022" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="regs">
+	<g id="regtaRed">
+		<g id="XMLID_1_">
+			<g>
+				<circle fill="#FF0019" cx="24.999" cy="25.001" r="19.963"/>
+			</g>
+			<g>
+				<circle fill="none" stroke="#050505" cx="24.999" cy="25.001" r="19.963"/>
+			</g>
+		</g>
+		<g id="XMLID_2_">
+			<g>
+				<polygon fill="#050505" points="33.181,34.083 33.181,34.133 25.023,44.963 16.82,34.083 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="16.82" y1="34.083" x2="33.181" y2="34.083"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="16.82" y1="34.083" x2="25.023" y2="44.963"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="25.023" y1="44.963" x2="33.181" y2="34.133"/>
+			</g>
+		</g>
+		<g id="XMLID_3_">
+			<g>
+				<polygon fill="#050505" points="39.599,7.193 39.638,7.162 51,4.115 45.271,14.453 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="45.271" y1="14.453" x2="39.599" y2="7.193"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="45.271" y1="14.453" x2="51" y2="4.115"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="4.115" x2="39.638" y2="7.162"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="42.993" y1="10.735" x2="1.499" y2="43.155"/>
+	</g>
+	<g id="regtaBlue">
+		<g id="XMLID_9_">
+			<g>
+				<path fill="#0000FF" d="M134.273,5.497c11.023,0,19.964,8.94,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S123.25,5.497,134.273,5.497z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M154.237,25.46c0,11.023-8.94,19.963-19.964,19.963c-11.022,0-19.963-8.939-19.963-19.963
+					s8.94-19.963,19.963-19.963C145.296,5.497,154.237,14.437,154.237,25.46z"/>
+			</g>
+		</g>
+		<g id="XMLID_8_">
+			<g>
+				<polygon fill="#050505" points="142.457,34.544 142.457,34.594 134.299,45.424 126.097,34.544 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="126.097" y1="34.544" x2="142.457" y2="34.544"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="126.097" y1="34.544" x2="134.299" y2="45.424"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="134.299" y1="45.424" x2="142.457" y2="34.594"/>
+			</g>
+		</g>
+		<g id="XMLID_7_">
+			<g>
+				<polygon fill="#050505" points="148.879,7.652 148.919,7.622 160.271,4.577 154.552,14.913 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="154.552" y1="14.913" x2="148.879" y2="7.652"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="154.552" y1="14.913" x2="160.271" y2="4.577"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="160.271" y1="4.577" x2="148.919" y2="7.622"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="152.27" y1="11.195" x2="110.776" y2="43.615"/>
+	</g>
+	<g id="regtaWhite">
+		<g id="XMLID_12_">
+			<g>
+				<path fill="#FFFFFF" d="M196.512,5.497c11.023,0,19.964,8.94,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S185.49,5.497,196.512,5.497z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M216.476,25.46c0,11.023-8.94,19.963-19.964,19.963c-11.022,0-19.963-8.939-19.963-19.963
+					s8.94-19.963,19.963-19.963C207.535,5.497,216.476,14.437,216.476,25.46z"/>
+			</g>
+		</g>
+		<g id="XMLID_11_">
+			<g>
+				<polygon fill="#050505" points="204.697,34.544 204.697,34.594 196.538,45.424 188.336,34.544 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="188.336" y1="34.544" x2="204.697" y2="34.544"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="188.336" y1="34.544" x2="196.538" y2="45.424"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="196.538" y1="45.424" x2="204.697" y2="34.594"/>
+			</g>
+		</g>
+		<g id="XMLID_10_">
+			<g>
+				<polygon fill="#050505" points="211.118,7.652 211.158,7.622 222.51,4.577 216.791,14.913 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="216.791" y1="14.913" x2="211.118" y2="7.652"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="216.791" y1="14.913" x2="222.51" y2="4.577"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="222.51" y1="4.577" x2="211.158" y2="7.622"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="214.509" y1="11.195" x2="173.015" y2="43.615"/>
+	</g>
+	<g id="regtaGrey">
+		<g id="XMLID_15_">
+			<g>
+				<path fill="#848484" d="M253.81,5.957c11.023,0,19.964,8.94,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S242.787,5.957,253.81,5.957z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M273.774,25.92c0,11.023-8.94,19.963-19.964,19.963c-11.022,0-19.963-8.939-19.963-19.963
+					s8.94-19.963,19.963-19.963C264.833,5.957,273.774,14.896,273.774,25.92z"/>
+			</g>
+		</g>
+		<g id="XMLID_14_">
+			<g>
+				<polygon fill="#050505" points="261.994,35.004 261.994,35.054 253.836,45.884 245.634,35.004 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="245.634" y1="35.004" x2="261.994" y2="35.004"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="245.634" y1="35.004" x2="253.836" y2="45.884"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="253.836" y1="45.884" x2="261.994" y2="35.054"/>
+			</g>
+		</g>
+		<g id="XMLID_13_">
+			<g>
+				<polygon fill="#050505" points="268.416,8.112 268.456,8.082 279.808,5.037 274.089,15.373 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="274.089" y1="15.373" x2="268.416" y2="8.112"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="274.089" y1="15.373" x2="279.808" y2="5.037"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="279.808" y1="5.037" x2="268.456" y2="8.082"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="271.807" y1="11.655" x2="230.313" y2="44.075"/>
+	</g>
+	<g id="regtaBlack">
+		<g id="XMLID_18_">
+			<g>
+				<path fill="#020202" d="M252.586,56.291c11.023,0,19.964,8.939,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S241.564,56.291,252.586,56.291z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M272.55,76.254c0,11.023-8.94,19.963-19.964,19.963c-11.022,0-19.963-8.939-19.963-19.963
+					s8.94-19.963,19.963-19.963C263.61,56.291,272.55,65.23,272.55,76.254z"/>
+			</g>
+		</g>
+		<g id="XMLID_17_">
+			<g>
+				<polygon fill="#848484" points="260.771,85.338 260.771,85.388 252.613,96.218 244.41,85.338 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="244.41" y1="85.338" x2="260.771" y2="85.338"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="244.41" y1="85.338" x2="252.613" y2="96.218"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="252.613" y1="96.218" x2="260.771" y2="85.388"/>
+			</g>
+		</g>
+		<g id="XMLID_16_">
+			<g>
+				<polygon fill="#050505" points="267.193,58.446 267.233,58.415 278.584,55.371 272.865,65.706 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="272.865" y1="65.706" x2="267.193" y2="58.446"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="272.865" y1="65.706" x2="278.584" y2="55.371"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="278.584" y1="55.371" x2="267.233" y2="58.415"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="270.583" y1="61.988" x2="229.089" y2="94.408"/>
+	</g>
+	<g id="regtaOrange">
+		<g id="XMLID_21_">
+			<g>
+				<path fill="#FF7D03" d="M193.441,56.291c11.023,0,19.964,8.939,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S182.418,56.291,193.441,56.291z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M213.405,76.254c0,11.023-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963s8.94-19.963,19.963-19.963C204.464,56.291,213.405,65.23,213.405,76.254z"/>
+			</g>
+		</g>
+		<g id="XMLID_20_">
+			<g>
+				<polygon fill="#050505" points="201.625,85.338 201.625,85.388 193.467,96.218 185.265,85.338 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="185.265" y1="85.338" x2="201.625" y2="85.338"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="185.265" y1="85.338" x2="193.467" y2="96.218"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="193.467" y1="96.218" x2="201.625" y2="85.388"/>
+			</g>
+		</g>
+		<g id="XMLID_19_">
+			<g>
+				<polygon fill="#050505" points="208.047,58.446 208.087,58.415 219.439,55.371 213.72,65.706 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="213.72" y1="65.706" x2="208.047" y2="58.446"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="213.72" y1="65.706" x2="219.439" y2="55.371"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="219.439" y1="55.371" x2="208.087" y2="58.415"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="211.438" y1="61.988" x2="169.944" y2="94.408"/>
+	</g>
+	<g id="regtaBrown">
+		<g id="XMLID_24_">
+			<g>
+				<path fill="#724806" d="M133.048,56.751c11.023,0,19.964,8.939,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S122.026,56.751,133.048,56.751z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M153.012,76.714c0,11.023-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963s8.94-19.963,19.963-19.963C144.072,56.751,153.012,65.69,153.012,76.714z"/>
+			</g>
+		</g>
+		<g id="XMLID_23_">
+			<g>
+				<polygon fill="#050505" points="141.233,85.798 141.233,85.848 133.074,96.678 124.872,85.798 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="124.872" y1="85.798" x2="141.233" y2="85.798"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="124.872" y1="85.798" x2="133.074" y2="96.678"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="133.074" y1="96.678" x2="141.233" y2="85.848"/>
+			</g>
+		</g>
+		<g id="XMLID_22_">
+			<g>
+				<polygon fill="#050505" points="147.655,58.906 147.695,58.875 159.046,55.831 153.327,66.166 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="153.327" y1="66.166" x2="147.655" y2="58.906"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="153.327" y1="66.166" x2="159.046" y2="55.831"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="159.046" y1="55.831" x2="147.695" y2="58.875"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="151.045" y1="62.448" x2="109.551" y2="94.868"/>
+	</g>
+	<g id="regtaPurple">
+		<g id="XMLID_27_">
+			<g>
+				<path fill="#FF00FF" d="M80.871,56.75c11.023,0,19.964,8.939,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S69.849,56.75,80.871,56.75z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M100.835,76.713c0,11.023-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963s8.94-19.963,19.963-19.963C91.895,56.75,100.835,65.689,100.835,76.713z"/>
+			</g>
+		</g>
+		<g id="XMLID_26_">
+			<g>
+				<polygon fill="#050505" points="89.056,85.797 89.056,85.847 80.898,96.677 72.696,85.797 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="72.696" y1="85.797" x2="89.056" y2="85.797"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="72.696" y1="85.797" x2="80.898" y2="96.677"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="80.898" y1="96.677" x2="89.056" y2="85.847"/>
+			</g>
+		</g>
+		<g id="XMLID_25_">
+			<g>
+				<polygon fill="#050505" points="95.478,58.905 95.518,58.874 106.869,55.83 101.151,66.165 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="101.151" y1="66.165" x2="95.478" y2="58.905"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="101.151" y1="66.165" x2="106.869" y2="55.83"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="106.869" y1="55.83" x2="95.518" y2="58.874"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="98.868" y1="62.447" x2="57.374" y2="94.867"/>
+	</g>
+	<g id="regtaYellow">
+		<g id="XMLID_30_">
+			<g>
+				<circle fill="#FFFF00" cx="23.75" cy="77.173" r="19.963"/>
+			</g>
+			<g>
+				<circle fill="none" stroke="#050505" cx="23.75" cy="77.173" r="19.963"/>
+			</g>
+		</g>
+		<g id="XMLID_29_">
+			<g>
+				<polygon fill="#050505" points="31.934,86.257 31.934,86.307 23.776,97.137 15.573,86.257 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="15.573" y1="86.257" x2="31.934" y2="86.257"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="15.573" y1="86.257" x2="23.776" y2="97.137"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="23.776" y1="97.137" x2="31.934" y2="86.307"/>
+			</g>
+		</g>
+		<g id="XMLID_28_">
+			<g>
+				<polygon fill="#050505" points="38.356,59.365 38.396,59.334 49.747,56.29 44.029,66.625 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="44.029" y1="66.625" x2="38.356" y2="59.365"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="44.029" y1="66.625" x2="49.747" y2="56.29"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="49.747" y1="56.29" x2="38.396" y2="59.334"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="41.746" y1="62.907" x2="0.252" y2="95.327"/>
+	</g>
+	<g id="regtaGreen">
+		<g id="XMLID_6_">
+			<g>
+				<path fill="#00FF00" d="M79.769,5.95c11.023,0,19.964,8.94,19.964,19.963s-8.94,19.963-19.964,19.963
+					c-11.022,0-19.963-8.939-19.963-19.963S68.746,5.95,79.769,5.95z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#050505" d="M99.733,25.913c0,11.023-8.94,19.963-19.964,19.963c-11.022,0-19.963-8.939-19.963-19.963
+					S68.746,5.95,79.769,5.95C90.792,5.95,99.733,14.89,99.733,25.913z"/>
+			</g>
+		</g>
+		<g id="XMLID_5_">
+			<g>
+				<polygon fill="#050505" points="87.953,34.997 87.953,35.047 79.795,45.877 71.593,34.997 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="71.593" y1="34.997" x2="87.953" y2="34.997"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="71.593" y1="34.997" x2="79.795" y2="45.877"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="79.795" y1="45.877" x2="87.953" y2="35.047"/>
+			</g>
+		</g>
+		<g id="XMLID_4_">
+			<g>
+				<polygon fill="#050505" points="94.375,8.105 94.415,8.075 105.778,5.027 100.048,15.366 				"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="100.048" y1="15.366" x2="94.375" y2="8.105"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="100.048" y1="15.366" x2="105.778" y2="5.027"/>
+				
+					<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="105.778" y1="5.027" x2="94.415" y2="8.075"/>
+			</g>
+		</g>
+		
+			<line fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round" x1="97.766" y1="11.649" x2="56.272" y2="44.069"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="svg9493" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" sodipodi:docbase="/datas/Projs/Cliparts Stocker/led" sodipodi:docname="led_circle_blue.svg" sodipodi:version="0.32" inkscape:export-xdpi="90.000000" inkscape:export-ydpi="90.000000" inkscape:version="0.42" inkscape:export-filename="/datas/Projs/Cliparts Stocker/led/led_circle_blue.png" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<metadata>
+	
+		<rdf:RDF  xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<cc:Work  rdf:about="">
+			<dc:title>LED Circle (Blue)</dc:title>
+			<dc:description>jean.victor.balin@gmail.com</dc:description>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>led</rdf:li>
+					<rdf:li>shape</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<dc:publisher>
+				<cc:Agent  rdf:about="http://www.openclipart.org/">
+					<dc:title>Open Clip Art Library</dc:title>
+				</cc:Agent>
+			</dc:publisher>
+			<dc:creator>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:creator>
+			<dc:rights>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:rights>
+			<dc:date>2005-08-21</dc:date>
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<cc:license  rdf:resource="http://web.resource.org/cc/PublicDomain"></cc:license>
+			<dc:language>en</dc:language>
+		</cc:Work>
+		<cc:License  rdf:about="http://web.resource.org/cc/PublicDomain">
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Reproduction"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Distribution"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks"></cc:permits>
+		</cc:License>
+	</rdf:RDF>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  x="546.753" y="-15.472" width="256.408" height="67.951" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="leds">
+	<g id="springRed">
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="8.297" y1="34.191" x2="10.802" y2="15.54"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="10.802" y1="15.54" x2="13.865" y2="34.191"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="13.865" y1="34.191" x2="16.37" y2="15.54"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="16.37" y1="15.54" x2="19.432" y2="34.191"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="19.432" y1="34.46" x2="21.938" y2="15.809"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="21.938" y1="15.809" x2="25" y2="34.46"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="25" y1="34.46" x2="27.506" y2="15.809"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="27.506" y1="15.809" x2="30.569" y2="34.46"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="30.569" y1="34.46" x2="33.073" y2="15.809"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="33.073" y1="15.809" x2="36.136" y2="34.46"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="36.136" y1="34.46" x2="38.641" y2="15.809"/>
+		
+			<line fill="#FF0019" stroke="#FF0000" stroke-linecap="round" stroke-linejoin="round" x1="38.641" y1="15.809" x2="41.703" y2="34.46"/>
+	</g>
+	<g id="springGreen">
+		<line fill="#00FF00" stroke="#00FF00" x1="63.383" y1="34.191" x2="65.889" y2="15.54"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="65.889" y1="15.54" x2="68.951" y2="34.191"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="68.951" y1="34.191" x2="71.456" y2="15.54"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="71.456" y1="15.54" x2="74.519" y2="34.191"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="74.519" y1="34.46" x2="77.024" y2="15.809"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="77.024" y1="15.809" x2="80.086" y2="34.46"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="80.086" y1="34.46" x2="82.592" y2="15.809"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="82.592" y1="15.809" x2="85.655" y2="34.46"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="85.655" y1="34.46" x2="88.16" y2="15.809"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="88.16" y1="15.809" x2="91.223" y2="34.46"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="91.223" y1="34.46" x2="93.727" y2="15.809"/>
+		<line fill="#00FF00" stroke="#00FF00" x1="93.727" y1="15.809" x2="96.789" y2="34.46"/>
+	</g>
+	<g id="springBlue">
+		<line fill="none" stroke="#0000FF" x1="109.503" y1="34.191" x2="112.009" y2="15.54"/>
+		<line fill="none" stroke="#0000FF" x1="112.009" y1="15.54" x2="115.072" y2="34.191"/>
+		<line fill="none" stroke="#0000FF" x1="115.072" y1="34.191" x2="117.576" y2="15.54"/>
+		<line fill="none" stroke="#0000FF" x1="117.576" y1="15.54" x2="120.639" y2="34.191"/>
+		<line fill="none" stroke="#0000FF" x1="120.639" y1="34.46" x2="123.144" y2="15.809"/>
+		<line fill="none" stroke="#0000FF" x1="123.144" y1="15.809" x2="126.206" y2="34.46"/>
+		<line fill="none" stroke="#0000FF" x1="126.206" y1="34.46" x2="128.712" y2="15.809"/>
+		<line fill="none" stroke="#0000FF" x1="128.712" y1="15.809" x2="131.775" y2="34.46"/>
+		<line fill="none" stroke="#0000FF" x1="131.775" y1="34.46" x2="134.281" y2="15.809"/>
+		<line fill="none" stroke="#0000FF" x1="134.281" y1="15.809" x2="137.343" y2="34.46"/>
+		<line fill="none" stroke="#0000FF" x1="137.343" y1="34.46" x2="139.847" y2="15.809"/>
+		<line fill="none" stroke="#0000FF" x1="139.847" y1="15.809" x2="142.909" y2="34.46"/>
+	</g>
+	<g id="springWhite">
+		<line fill="none" stroke="#FFFFFF" x1="169.089" y1="34.191" x2="171.595" y2="15.54"/>
+		<line fill="none" stroke="#FFFFFF" x1="171.595" y1="15.54" x2="174.657" y2="34.191"/>
+		<line fill="none" stroke="#FFFFFF" x1="174.657" y1="34.191" x2="177.162" y2="15.54"/>
+		<line fill="none" stroke="#FFFFFF" x1="177.162" y1="15.54" x2="180.225" y2="34.191"/>
+		<line fill="none" stroke="#FFFFFF" x1="180.225" y1="34.46" x2="182.73" y2="15.809"/>
+		<line fill="none" stroke="#FFFFFF" x1="182.73" y1="15.809" x2="185.792" y2="34.46"/>
+		<line fill="none" stroke="#FFFFFF" x1="185.792" y1="34.46" x2="188.298" y2="15.809"/>
+		<line fill="none" stroke="#FFFFFF" x1="188.298" y1="15.809" x2="191.361" y2="34.46"/>
+		<line fill="none" stroke="#FFFFFF" x1="191.361" y1="34.46" x2="193.866" y2="15.809"/>
+		<line fill="none" stroke="#FFFFFF" x1="193.866" y1="15.809" x2="196.929" y2="34.46"/>
+		<line fill="none" stroke="#FFFFFF" x1="196.929" y1="34.46" x2="199.433" y2="15.809"/>
+		<line fill="none" stroke="#FFFFFF" x1="199.433" y1="15.809" x2="202.495" y2="34.46"/>
+	</g>
+	<g id="springGrey">
+		<line fill="none" stroke="#848484" x1="224.741" y1="34.191" x2="227.247" y2="15.54"/>
+		<line fill="none" stroke="#848484" x1="227.247" y1="15.54" x2="230.31" y2="34.191"/>
+		<line fill="none" stroke="#848484" x1="230.31" y1="34.191" x2="232.815" y2="15.54"/>
+		<line fill="none" stroke="#848484" x1="232.815" y1="15.54" x2="235.877" y2="34.191"/>
+		<line fill="none" stroke="#848484" x1="235.877" y1="34.46" x2="238.382" y2="15.809"/>
+		<line fill="none" stroke="#848484" x1="238.382" y1="15.809" x2="241.445" y2="34.46"/>
+		<line fill="none" stroke="#848484" x1="241.445" y1="34.46" x2="243.95" y2="15.809"/>
+		<line fill="none" stroke="#848484" x1="243.95" y1="15.809" x2="247.013" y2="34.46"/>
+		<line fill="none" stroke="#848484" x1="247.013" y1="34.46" x2="249.519" y2="15.809"/>
+		<line fill="none" stroke="#848484" x1="249.519" y1="15.809" x2="252.581" y2="34.46"/>
+		<line fill="none" stroke="#848484" x1="252.581" y1="34.46" x2="255.085" y2="15.809"/>
+		<line fill="none" stroke="#848484" x1="255.085" y1="15.809" x2="258.148" y2="34.46"/>
+	</g>
+	<g id="springBlack">
+		<line fill="none" stroke="#020202" x1="227.331" y1="82.508" x2="229.837" y2="63.856"/>
+		<line fill="none" stroke="#020202" x1="229.837" y1="63.856" x2="232.9" y2="82.508"/>
+		<line fill="none" stroke="#020202" x1="232.9" y1="82.508" x2="235.405" y2="63.856"/>
+		<line fill="none" stroke="#020202" x1="235.405" y1="63.856" x2="238.467" y2="82.508"/>
+		<line fill="none" stroke="#020202" x1="238.467" y1="82.776" x2="240.972" y2="64.124"/>
+		<line fill="none" stroke="#020202" x1="240.972" y1="64.124" x2="244.034" y2="82.776"/>
+		<line fill="none" stroke="#020202" x1="244.034" y1="82.776" x2="246.54" y2="64.124"/>
+		<line fill="none" stroke="#020202" x1="246.54" y1="64.124" x2="249.603" y2="82.776"/>
+		<line fill="none" stroke="#020202" x1="249.603" y1="82.776" x2="252.109" y2="64.124"/>
+		<line fill="none" stroke="#020202" x1="252.109" y1="64.124" x2="255.171" y2="82.776"/>
+		<line fill="none" stroke="#020202" x1="255.171" y1="82.776" x2="257.675" y2="64.124"/>
+		<line fill="none" stroke="#020202" x1="257.675" y1="64.124" x2="260.738" y2="82.776"/>
+	</g>
+	<g id="springOrange">
+		<line fill="none" stroke="#FF7D03" x1="169.173" y1="82.642" x2="171.679" y2="63.99"/>
+		<line fill="none" stroke="#FF7D03" x1="171.679" y1="63.99" x2="174.741" y2="82.642"/>
+		<line fill="none" stroke="#FF7D03" x1="174.741" y1="82.642" x2="177.246" y2="63.99"/>
+		<line fill="none" stroke="#FF7D03" x1="177.246" y1="63.99" x2="180.309" y2="82.642"/>
+		<line fill="none" stroke="#FF7D03" x1="180.309" y1="82.91" x2="182.814" y2="64.258"/>
+		<line fill="none" stroke="#FF7D03" x1="182.814" y1="64.258" x2="185.876" y2="82.91"/>
+		<line fill="none" stroke="#FF7D03" x1="185.876" y1="82.91" x2="188.382" y2="64.258"/>
+		<line fill="none" stroke="#FF7D03" x1="188.382" y1="64.258" x2="191.445" y2="82.91"/>
+		<line fill="none" stroke="#FF7D03" x1="191.445" y1="82.91" x2="193.95" y2="64.258"/>
+		<line fill="none" stroke="#FF7D03" x1="193.95" y1="64.258" x2="197.013" y2="82.91"/>
+		<line fill="none" stroke="#FF7D03" x1="197.013" y1="82.91" x2="199.517" y2="64.258"/>
+		<line fill="none" stroke="#FF7D03" x1="199.517" y1="64.258" x2="202.579" y2="82.91"/>
+	</g>
+	<g id="springBrown">
+		<line fill="none" stroke="#724806" x1="117.66" y1="82.373" x2="120.166" y2="63.722"/>
+		<line fill="none" stroke="#724806" x1="120.166" y1="63.722" x2="123.229" y2="82.373"/>
+		<line fill="none" stroke="#724806" x1="123.229" y1="82.373" x2="125.734" y2="63.722"/>
+		<line fill="none" stroke="#724806" x1="125.734" y1="63.722" x2="128.796" y2="82.373"/>
+		<line fill="none" stroke="#724806" x1="128.796" y1="82.642" x2="131.301" y2="63.989"/>
+		<line fill="none" stroke="#724806" x1="131.301" y1="63.989" x2="134.364" y2="82.642"/>
+		<line fill="none" stroke="#724806" x1="134.364" y1="82.642" x2="136.869" y2="63.989"/>
+		<line fill="none" stroke="#724806" x1="136.869" y1="63.989" x2="139.932" y2="82.642"/>
+		<line fill="none" stroke="#724806" x1="139.932" y1="82.642" x2="142.438" y2="63.989"/>
+		<line fill="none" stroke="#724806" x1="142.438" y1="63.989" x2="145.5" y2="82.642"/>
+		<line fill="none" stroke="#724806" x1="145.5" y1="82.642" x2="148.004" y2="63.989"/>
+		<line fill="none" stroke="#724806" x1="148.004" y1="63.989" x2="151.067" y2="82.642"/>
+	</g>
+	<g id="springPurple">
+		<line fill="none" stroke="#FF00FF" x1="61.936" y1="82.238" x2="64.442" y2="63.587"/>
+		<line fill="none" stroke="#FF00FF" x1="64.442" y1="63.587" x2="67.504" y2="82.238"/>
+		<line fill="none" stroke="#FF00FF" x1="67.504" y1="82.238" x2="70.009" y2="63.587"/>
+		<line fill="none" stroke="#FF00FF" x1="70.009" y1="63.587" x2="73.072" y2="82.238"/>
+		<line fill="none" stroke="#FF00FF" x1="73.072" y1="82.507" x2="75.576" y2="63.854"/>
+		<line fill="none" stroke="#FF00FF" x1="75.576" y1="63.854" x2="78.639" y2="82.507"/>
+		<line fill="none" stroke="#FF00FF" x1="78.639" y1="82.507" x2="81.145" y2="63.854"/>
+		<line fill="none" stroke="#FF00FF" x1="81.145" y1="63.854" x2="84.207" y2="82.507"/>
+		<line fill="none" stroke="#FF00FF" x1="84.207" y1="82.507" x2="86.713" y2="63.854"/>
+		<line fill="none" stroke="#FF00FF" x1="86.713" y1="63.854" x2="89.776" y2="82.507"/>
+		<line fill="none" stroke="#FF00FF" x1="89.776" y1="82.507" x2="92.28" y2="63.854"/>
+		<line fill="none" stroke="#FF00FF" x1="92.28" y1="63.854" x2="95.342" y2="82.507"/>
+	</g>
+	<g id="springYellow">
+		<line fill="none" stroke="#FFFF00" x1="5.319" y1="82.104" x2="7.824" y2="63.452"/>
+		<line fill="none" stroke="#FFFF00" x1="7.824" y1="63.452" x2="10.887" y2="82.104"/>
+		<line fill="none" stroke="#FFFF00" x1="10.887" y1="82.104" x2="13.392" y2="63.452"/>
+		<line fill="none" stroke="#FFFF00" x1="13.392" y1="63.452" x2="16.454" y2="82.104"/>
+		<line fill="none" stroke="#FFFF00" x1="16.454" y1="82.372" x2="18.959" y2="63.72"/>
+		<line fill="none" stroke="#FFFF00" x1="18.959" y1="63.72" x2="22.022" y2="82.372"/>
+		<line fill="none" stroke="#FFFF00" x1="22.022" y1="82.372" x2="24.528" y2="63.72"/>
+		<line fill="none" stroke="#FFFF00" x1="24.528" y1="63.72" x2="27.59" y2="82.372"/>
+		<line fill="none" stroke="#FFFF00" x1="27.59" y1="82.372" x2="30.096" y2="63.72"/>
+		<line fill="none" stroke="#FFFF00" x1="30.096" y1="63.72" x2="33.158" y2="82.372"/>
+		<line fill="none" stroke="#FFFF00" x1="33.158" y1="82.372" x2="35.662" y2="63.72"/>
+		<line fill="none" stroke="#FFFF00" x1="35.662" y1="63.72" x2="38.725" y2="82.372"/>
+	</g>
+</g>
+</svg>

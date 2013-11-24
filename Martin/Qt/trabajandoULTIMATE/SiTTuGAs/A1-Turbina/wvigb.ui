@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WVIGB</class>
+ <widget class="QWidget" name="WVIGB">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>175</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WVIGB</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="QLabel" name="lbVIGVT_3">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>60</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVA</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_2">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>45</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>41.60</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_4">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>75</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>40.90</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_6">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>120</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>20.00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_1">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>32</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>28.61</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_2">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>45</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_5">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>105</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>-14.63</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVT_5">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>105</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVMA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_1">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>32</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVT_6">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>120</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVOHMS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_3">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_4">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>75</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_6">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>120</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>OHMS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVT_1">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>32</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVDMD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVT_4">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>75</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVB</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVT_2">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>45</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>IGVSEL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVIGV_3">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>60</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>41.30</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVIGVU_5">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>105</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>MA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>VIGV</string>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>lbVIGVT_3</zorder>
+  <zorder>lbVIGV_2</zorder>
+  <zorder>lbVIGV_4</zorder>
+  <zorder>lbVIGV_6</zorder>
+  <zorder>lbVIGV_1</zorder>
+  <zorder>lbVIGVU_2</zorder>
+  <zorder>lbVIGV_5</zorder>
+  <zorder>lbVIGVT_5</zorder>
+  <zorder>lbVIGVU_1</zorder>
+  <zorder>lbVIGVT_6</zorder>
+  <zorder>lbVIGVU_3</zorder>
+  <zorder>lbVIGVU_4</zorder>
+  <zorder>lbVIGVU_6</zorder>
+  <zorder>lbVIGVT_1</zorder>
+  <zorder>lbVIGVT_4</zorder>
+  <zorder>lbVIGVT_2</zorder>
+  <zorder>lbVIGV_3</zorder>
+  <zorder>lbVIGVU_5</zorder>
+  <zorder>btCerrar</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

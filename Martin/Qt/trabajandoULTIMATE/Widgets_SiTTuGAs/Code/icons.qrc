@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/default">
+        <file>resource/sectorA.svg</file>
+        <file>resource/sectorB.svg</file>
+        <file>resource/sectorC.svg</file>
+        <file>resource/sectorD.svg</file>
+        <file>resource/sectorE.svg</file>
+        <file>resource/sectorF.svg</file>
+        <file>resource/sectorG.svg</file>
+        <file>resource/sectorH.svg</file>
+        <file>resource/sectorI.svg</file>
+        <file>resource/sectorJ.svg</file>
+        <file>resource/sectorK.svg</file>
+        <file>resource/sectorL.svg</file>
+    </qresource>
+</RCC>
