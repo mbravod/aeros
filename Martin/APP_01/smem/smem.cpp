@@ -10,7 +10,6 @@ int main0(int pars);
 #include <iostream>
 #include "..\\..\\mmf.h"
 
-
 using namespace std;
 
 void CARGA_VARIABLES();
@@ -1182,7 +1181,7 @@ double PReacFaseC_GE;
 double PReactiva;
 double PTotal;
 double Vred_GE;
-
+double BETA_3_CB;
 double CI2TORQUE_TA;							//CONDICIONES INICIALES DE TORQUE EN TURBINA DE BAJA EN CONTROL
 double CIBETA3CB;							// CPONDICIONES INICIALES DE BETA 3 COMPRESOR DE BAJA
 double CIFCV68127;							// CONDICIONES INICIALES DE VALVULA DE PRUGA ST8 DE PRIMER ORDEN
@@ -2519,7 +2518,8 @@ double Temperatura_de_Aire_en_el_Habitaculo(double U1enf, double TCTB, double U2
 
   x[0] = CITenf;
 
-  for(j=1;j<25;j++) {
+  for(j=1;j<25;j++)
+  {
 
     k1 = ( U1enf * (TCTB - x[j-1]) + U2enf * (TCCB - x[j-1]) + FMaire * CPaire * (Tchiller - x[j-1]) + U3enf *(TCTA - x[j-1]) + U4enf * (TCCA -x[j-1])) / (menf * CPaire);
     k2 = ( U1enf * (TCTB - (x[j-1]+ ((h/2)* k1))) + U2enf * (TCCB - (x[j-1]+ ((h/2)* k1))) + FMaire * CPaire * (Tchiller - (x[j-1]+ ((h/2)* k1))) + U3enf *(TCTA - (x[j-1]+ ((h/2)* k1))) + U4enf * (TCCA -(x[j-1]+ ((h/2)* k1)))) / (menf * CPaire);
@@ -2815,7 +2815,8 @@ double TORQUETA(double K_ADECUACION_K1_ROTOR1_TA, double T_Giro_TA, double TAO_T
 	return x[0];
 
 }
-double TORQUETA2 (double  K_ADECUACION_K2_ROTOR2,double CITORQUE_TA,double TAO_TA_ROTOR2,double CI2TORQUE_TA) {
+double TORQUETA2 (double  K_ADECUACION_K2_ROTOR2,double CITORQUE_TA,double TAO_TA_ROTOR2,double CI2TORQUE_TA) // no se utiliza en ningun lugar 
+{
   int j; 
   double x[26];
   double h=0.05/25;
@@ -2873,7 +2874,7 @@ double ALFA1CONTROLCA (double K_ADECUACION_1_CA,double ALFA1_CONTROL_CA,double T
   }
   return x[0];
   }
-double BETA3CONTROLCB (double K_ADECUACION_BETA3_CB,double BETA3_CONTROL_CB,double TAO_BETA3_CB,double CIBETA3CB){
+double BETA_3_CONTROLCB (double K_ADECUACION_BETA3_CB,double BETA3_CONTROL_CB,double TAO_BETA3_CB,double CIBETA3CB){
 
   int j; 
   double x[26];
@@ -4057,7 +4058,7 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
     //Torque_Arrancador_TA=Torque_Hidraulico*cte_TA;
     T_Giro_TA=Torque_Arracador_TA+TORQUE_CA+TORQUE_TA;//Torque total TA
 	w1_TA= TORQUETA( K_ADECUACION_K1_ROTOR1_TA,  T_Giro_TA,  TAO_TA_ROTOR_1, CONTROL_TA_TORQUE_1,  CITORQUE_TA,  CIw1_TA);//1er Orden
-    W_TA= TORQUETA( K_ADECUACION_K1_ROTOR1_TA,  T_Giro_TA,  TAO_TA_ROTOR_1, CONTROL_TA_TORQUE_1,  CITORQUE_TA,  CIw1_TA);//2do Orden; Velocidad angular en rpm
+    W_TA= TORQUETA ( K_ADECUACION_K1_ROTOR1_TA,  T_Giro_TA,  TAO_TA_ROTOR_1, CONTROL_TA_TORQUE_1,  CITORQUE_TA,  CIw1_TA);//2do Orden; Velocidad angular en rpm
 
     //1.2 CALCULO DE TORQUE PARA GIRO DE ROTOR TURBINA DE BAJA
 
@@ -4082,7 +4083,7 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
     FLUJO_MASICO_AIRE= FLUJO_MASICO_GAS_VIGV - FLUJO_MASICO_OUT_CA - FLUJO_MASICO_ENF_CA - FLUJO_MASICO_ENF_CB - FLUJO_MASICO_SALIDAVBV; // FLUJO MASICO DE GAS
     //PURGA
 
-    ST8A = ST8AFUN (K_ADECUACION_ST8A, FCV_68127, TAO_ST8A, CIST8A);
+    ST8A = ST8AFUN (K_ADECUACION_ST8A, FCV_68127, TAO_ST8A, CIST8A);			// CHECAR SI ESTA LLEVA IGUALLACION CON LA CONDICION INICIAL 
     CDPA = CDPAFUN (K_ADECUACION_CDPA, FCV_68128, TAO_CDPA, CICDPA);
 
 
@@ -4093,7 +4094,7 @@ Densidad_aire = Presion_atm/(R_aire*TambK);
     ALFA1_CB=ALFA1CONTROLCB( K_ADECUACION_1_CB,   ALFA1_CONTROL_CB,  TAO_ALFA_1_CB,  CIALFA1); // FUNCION RUNGE KUTA ALFA 1 COMPRESOR DE BAJA
     AFCV_6872 = AREA1VBVCB (K_ADECUACION_AREA1_CA, FCV_6872,TAO_VBV_CA_A1, CIAREA1VBV);// FUNCION RUNGE KUTA AREA 1 COMPRESOR DE BAJA
     AREA_1_CB_IGV=AREA1IGVCB ( K_ADECUACION_AREA1_CB,  AFCV_6872, IGV_CONTROL_CB_A1,  TAO_IGV_CB_A1,  CIAREA1IGV); // COMPRESOR DE BAJA PRESION
-    
+    BETA3_CB=BETA_3_CONTROLCB(K_ADECUACION_BETA3_CB, BETA3_CONTROL_CB, TAO_BETA3_CB, CIBETA3CB);
 	//CALCULO DE VARIABLES PARA COMPRESOR DE BAJA PRESION
 
     U_CB=RADIO_MEDIO_CB*W_CB; //CALCULO VELOCIDAD ANGULAR DE COMPRESOR DE BAJA
@@ -5170,230 +5171,114 @@ void CARGA_VARIABLES()
 
 	A52_1 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
 	A52_2 = 0;          //INTERUPTORES DE MAQUINA VARIABLES DE CONTROL PARA SINCRONIZACIÓN
-	AREA_1_CB_IGV = 0;  // ÁREA DE IGV DEL COMPRESOR DE BAJA
-	AREA_FMENF_CA = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE ALTA
-	AREA_FMENF_CB = 0;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE BAJA
-	AREA_FMOUT_CA = 0;  // ÁREA DE FLUJO MASICO DE SALIDA  ENFRIAMIENTO COMPRESOR DE ALTA
+	
+	
+		
+	////////////////////////////// variables de turbogrupo///////////////////////////// modificado 5am 
+
+	AREA_1_CB_IGV = 1;  // ÁREA DE IGV DEL COMPRESOR DE BAJA
+	AREA_FMENF_CA = 1;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE ALTA
+	AREA_FMENF_CB = 1;  // ÁREA DE FLUJO MASICO DE ENTRADA ENFRIAMIENTO COMPRESOR DE BAJA
+	AREA_FMOUT_CA = 1;  // ÁREA DE FLUJO MASICO DE SALIDA  ENFRIAMIENTO COMPRESOR DE ALTA
 	CDPA = 0;           // VÁLVULA DE PURGA COMPRESOR DE ALTA  
-	CICDPA = 0;         // CONDICIÓN INICIAL DE LA VÁLVULA DE PURGA
-	CIST8A = 0;			
-	CITCCA = 25;
-	CITCCB = 25;
-	CITCTA = 25;
-	CITCTB = 25;
-	CITenf = 25;
-	CITRCA = 25;
-	CITRCB = 25;
-	CITRTA = 25;
-	CITRTB = 25;
-	CIW_TA = 0;
-	CIW_TB = 0;
-	CIw1_TA = 0;
-	CIw1_TB = 0;
-	
-	DENSIDAD_FMENF_CA = 0;
-	DENSIDAD_FMENF_CB = 0;
-	DENSIDAD_FMOUT_CA = 0;
-	F_MAX_ENF = 0;
-	F_MAX_ENF_U1CCA = 0;
-	F_MAX_ENF_U1CCB = 0;
-	F_MAX_ENF_U1CTA = 0;
-	F_MAX_ENF_U1CTB = 0;
-	F_MAX_ENF_U4RTA = 0;
-	F_MAX_ENF_U4RTB = 0;
-	FCV_68127 = 0;
-	FLUJO_MASICO_AIRE = 0;
-	FLUJO_MASICO_CA = 0;
-	FLUJO_MASICO_CB = 0;
-	FLUJO_MASICO_ENF_CA = 0;
-	FLUJO_MASICO_ENF_CB = 0;
-	FLUJO_MASICO_GAS = 0;
-	FLUJO_MASICO_GAS_VIGV = 0;
-	FLUJO_MASICO_OUT_CA = 0;
-	FLUJO_MASICO_SALIDAVBV = 0;
-	FLUJO_MASICO_TA = 0;
-	FLUJO_MASICO_TB = 0;
-	Frecuencia = 60;
-
-	
-
-	POTENCIA_CA = 0;
-	POTENCIA_CB = 0;
-	POTENCIA_MEC = 0;
-	POTENCIA_TA = 0;
-	POTENCIA_TB = 0;
-	QA = 0;
-	QB = 0;
-	QCCA = 0;
-	QCCB = 0;
-	QCTA = 0;
-	QCTB = 0;
-	QRCA = 0;
-	QRCB = 0;
-	QRTA = 0;
-	QRTB = 0;
-
+	CIW_TA = 1;
+	CIW_TB = 1;
+	CIw1_TA = 1;
+	CIw1_TB = 1;
+	FCV_68127 = 1;
+	FLUJO_MASICO_AIRE = 1;
+	FLUJO_MASICO_CA = 1;
+	FLUJO_MASICO_CB = 1;
+	FLUJO_MASICO_ENF_CA = 1;
+	FLUJO_MASICO_ENF_CB = 1;
+	FLUJO_MASICO_GAS = 1;
+	POTENCIA_CA = 1;
+	POTENCIA_CB = 1;
+	POTENCIA_MEC = 1;
+	POTENCIA_TA = 1;
+	POTENCIA_TB = 1;
+	TORQUE_CA = 1;
+	TORQUE_CB = 1;
+	TORQUE_Exc = 1;
+	TORQUE_TA = 1;
+	TORQUE_TB = 1;
+	U_CA = 1;
+	U_CB = 1;
+	U_TA = 1;
+	U_TB = 1;
 	RADIO_MEDIO_CB = 1;      //ESTE DATO LO TIENE EL BARZA
-	
 	RADIO_MEDIO_TB = 1;		//ESTE DATO LO TIENE EL BARZA
-	
-	ST8A = 0;
-	T_Giro_TA = 0;
-	T_Giro_TB = 0;
-
-
-	TCCA = 25;
-	TCCB = 25;
-	Tchiller = 25;
-	TCTA = 25;
-	TCTB = 25;
-	Tenf = 25;
-	TgCA = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
-	TgCB = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
-	Tgenf = TEMPERATURA_SALIDA_COMPRESOR_ALTA;	//CONSIDERANDO QUE SE ENFRIA CON EL AIRE A LA SALIDA DEL COMPRESOR DE ALTA
-	
-	TgenfA =TEMPERATURA_SALIDA_COMPRESOR_BAJA; //INICIALIZADA 
-	Tlub = 25;				// IGUALAR DE COCHI 
-
-
-	TgTA = T_C * 0.5;		//TEMPERATURA DE FLAMA ADIABATICA MULTIPLICADO POR 0.6 (FALTA HACER EL MODELO DE LA TEMPERATURA DE FLAMA HACIA LA ENTRADA DE LA TURBINA DE ALTA)
-	TgTB = TEMPERATURA_SALIDA_TURBINA_ALTA;
-
-	
-	Torque_Arracador_TA = 0;
-	Torque_Arracador_TB = 0;
-	TORQUE_CA = 0;
-	TORQUE_CB = 0;
-	TORQUE_Exc = 0;
-	TORQUE_TA = 0;
-	TORQUE_TB = 0;
-	TRCA = 25;
-	TRCB = 25;
-	TRTA = 25;
-	TRTB = 25;
-	U_CA = 0;
-	U_CB = 0;
-	U_TA = 0;
-	U_TB = 0;
-	U1CCA = 0;
-	U1CCB = 0;
-	U1CTA = 0;
-	U1CTB = 0;
-	U1enf = 0;
-	U1RCA = 0;
-	U1RCB = 0;
-	U1RTA = 0;
-	U1RTB = 0;
-	
-	U2CCA = 0;
-	U2CCB = 0;
-	U2CTA = 0;
-	U2CTB = 0;
-	U2enf = 0;
-
-	
-	U3enf = 0;
-	U3RCA = 0;
-	U3RCB = 0;
-	U3RTA = 0;
-	U3RTB = 0;
-	U4enf = 0;
-	U4RTA = 0;
-	U4RTB = 0;
-	VELOCIDAD_FMENF_CA = 0;
-	VELOCIDAD_FMENF_CB = 0;
-	VELOCIDAD_FMOUT_CA = 0;
-	VN1_CB = 0;
-	VT1_CA = 0;
-	VT1_CB = 0;
-	VT2_CA = 0;
-	VT2_CB = 0;
-	VT2_TA = 0;
-	VT2_TB = 0;
-	VT3_TA = 0;
-	VT3_TB = 0;
-	W_TA = 0;
-	W_TB = 0;
-	w1_TA = 0;
-	w1_TB = 0;
-
-	AFCV_6872 = 0;
-	ALFA1_CB = 0;
-	Alfa1_cb_control = 0;
-	ALFA1_CONTROL_CB = 0;
-	ALFA2_CB = 0;
-	ALFA3_CB = 0;
-	AREA_1_CB = 0;
-	AREA_2_CB = 0;
-	AREA_3_CB = 0;
-	BETA3_CB = 0;
-	CIALFA1 = 0;
-	CIAREA1IGV = 0;
-	CIAREA1VBV = 0;
-	
+	FLUJO_MASICO_GAS_VIGV = 1;
+	FLUJO_MASICO_OUT_CA = 1;
+	FLUJO_MASICO_SALIDAVBV = 1;
+	FLUJO_MASICO_TA = 1;
+	FLUJO_MASICO_TB = 1;
+	Frecuencia = 60;
+	VN1_CB = 1;
+	VT1_CA = 1;
+	VT1_CB = 1;
+	VT2_CA = 1;
+	VT2_CB = 1;
+	VT2_TA = 1;
+	VT2_TB = 1;
+	VT3_TA = 1;
+	VT3_TB = 1;
+	W_TA = 1;
+	W_TB = 1;
+	w1_TA = 1;
+	w1_TB = 1;
+	AFCV_6872 = 1;
+	ALFA1_CB = .5;
+	Alfa1_cb_control = 1;
+	ALFA1_CONTROL_CB = 1;
+	ALFA2_CB = 1;
+	ALFA3_CB = 1;
+	AREA_1_CB = 1;// controlquique 
+	AREA_2_CB = 1;// control quique 
+	AREA_3_CB = 1;
+	BETA3_CB = 1;// control quique 
+	CIALFA1 = 1;
+	CIAREA1IGV = 1;		//CHECAR BIEN QUE DIMENCION SERIA LA INICIAL 
+	CIAREA1VBV = 1;		//CHECAR BIEN QUE DIMENCION SERIA LA INICIAL 
 	DELTA_PRESION_CB = 0;
 	FCV_6872 = 0;
-
-	 
-
-	PDI64070 = 0;
 	PRESION_ENTRADA_COMPRESOR_BAJA = 1;
 	PRESION_SALIDA_COMPRESOR_BAJA = 1;
-	
-	
 	TEMPERATURA_ENTRADA_COMPRESOR_BAJA = 25;
 	TEMPERATURA_SALIDA_COMPRESOR_BAJA = 25;
 	V1_CB = 0;
 	V2_CB = 0;
 	V3_CB = 0;
-	VN2_CB = 0;
+	VN2_CB =0;
 	VN3_CB = 0;
 	VRB1_CB = 0;
 	VRB2_CB = 0;
 	VRB3_CB = 0;
 	VT3_CB = 0;
-
-	ALFA_1_CA = 0;
-	ALFA1_CA = 0;
-	Alfa1_ca_control = 0;
-	ALFA1_CONTROL_CA = 0;
-	ALFA2_CA = 0;
-	ALFA3_CA = 0;
-	AREA_1_CA = 0;
-	AREA_2_CA = 0;
-	AREA_3_CA = 0;
-	AREA1_CONTROL_CA = 0;
-	BETA_3_CA = 0;
-	
-	
-	BETA3_CA = 0;
-	CIALFA1_CA = 0;
-	CIAREA1_CA = 0;
-	CIBETA3CA = 0;
-	CONTROL_BETA3_CA_CONTROL = 0;
-
-	DELTA_PRESION_CA = 0;
-	FCV_6871 = 0;
-	FCV_6873 = 0;
-	
-	PRESION_SALIDA_COMPRESOR_ALTA = 0;
-
-
-
+	ALFA_1_CA = 1;
+	ALFA1_CA = .5;
+	Alfa1_ca_control = 1;
+	ALFA1_CONTROL_CA = 1;
+	ALFA2_CA = 1;
+	ALFA3_CA = 1;
+	AREA_1_CA = 1;
+	AREA_2_CA = 1;
+	AREA_3_CA = 1;
+	AREA1_CONTROL_CA = 1;
+	BETA_3_CA = 1;	
+	BETA3_CA = 1;
+	CIALFA1_CA = .5;
+	CIAREA1_CA = 1;				// recien colocada 
+	CIBETA3CA =1;
+	CONTROL_BETA3_CA_CONTROL = 1
+	DELTA_PRESION_CA = 1;
+	FCV_6871 = 1;
+	FCV_6873 = 1;	
+	PRESION_SALIDA_COMPRESOR_ALTA = 1;
 	K_ADECUACION_CDPA = 1;					//inicializada 
 	K_ADECUACION_K1_ROTOR1_TA = 1;			//inicializada
 	K_ADECUACION_K1_ROTOR1_TB = 1;			//inicializada
-	K_ADECUACION_ST8A = 1;					//inicializada
-	mCCA = 1000;							//inicializada 
-	mCCB = 1000;							//inicializada
-	mCTA = 1000;							//inicializada
-	mCTB = 1000;							//inicializada
-	menf = 1000;							//inicializada
-	mRCA = 1000;							//inicializada
-	mRCB = 1000;							//inicializada
-	mRTA = 1000;							//inicializada
-	mRTB = 1000;							//inicializada
-	CPmaterial = 1;							//inicializada
+	K_ADECUACION_ST8A = 1;					//inicializada	
 	K_ADECUACION_1_CA = 1;					//inicializada
 	K_ADECUACION_BETA3_CA = 1;				//inicializada
 	GRAVEDAD = 9.81;						//inicializada 
@@ -5422,9 +5307,9 @@ void CARGA_VARIABLES()
 	RADIO_MEDIO_CA =.43;					//INICIALIZADA
 	BETA1_CB =.702244;						//inicializada
 	BETA2_CB =.95;							//inicializada
-	TAO_ALFA_1_CA = 0.25;						//INICIALIZADA
-	TAO_BETA3_CA = 0.25;						//INICIALIZADA
-	TAO_CA_A1 = 0.25;							//INICIALIZADA
+	TAO_ALFA_1_CA = 0.25;					//INICIALIZADA
+	TAO_BETA3_CA = 0.25;					//INICIALIZADA
+	TAO_CA_A1 = 0.25;						//INICIALIZADA
 	K_ADECUACION_FCV68127 = 1;				//INICIALIZADA
 	K_ADECUACION_FCV68128 = 1;				//INICIALIZADA
 	K_ADECUACION_FCV6871 = 1;  				//INICIALIZADA
@@ -5442,12 +5327,136 @@ void CARGA_VARIABLES()
 	TAO_FCV6873 = 0.5;						//INICIALIZADA
 	TAO_CDPA = 0.5;							//INICIALIZADA
 	TAO_ST8A = 0.5;							//INICIALIZADA
-	TAO_TA_ROTOR1 = 0.5;						//INICIALIZADA
-	TAO_TB_ROTOR1 = 0.5;						//INICIALIZADA
-	TAO_ALFA_1_CB = 0.5;						//INICIALIZADA
-	TAO_IGV_CB_A1 = 0.5;						//INICIALIZADA
-	TAO_VBV_CA_A1 = 0.5;						//INICIALIZADA
+	TAO_TA_ROTOR1 = 0.5;					//INICIALIZADA
+	TAO_TB_ROTOR1 = 0.5;					//INICIALIZADA
+	TAO_ALFA_1_CB = 0.5;					//INICIALIZADA
+	TAO_IGV_CB_A1 = 0.5;					//INICIALIZADA
+	TAO_VBV_CA_A1 = 0.5;					//INICIALIZADA
 
+
+
+
+	//////////////////// terminana variables de turbogrupo///////////////////////// modificado 5am 
+
+
+
+
+	CICDPA = 0;         // CONDICIÓN INICIAL DE LA VÁLVULA DE PURGA 
+	CIST8A = .5;			// VALOR DE CONTROL
+	CITCCA = 25;
+	CITCCB = 25;
+	CITCTA = 25;
+	CITCTB = 25;
+	CITenf = 25;
+	CITRCA = 25;
+	CITRCB = 25;
+	CITRTA = 25;
+	CITRTB = 25;
+
+	mCCA = 1000;							//inicializada 
+	mCCB = 1000;							//inicializada
+	mCTA = 1000;							//inicializada
+	mCTB = 1000;							//inicializada
+	menf = 1000;							//inicializada
+	mRCA = 1000;							//inicializada
+	mRCB = 1000;							//inicializada
+	mRTA = 1000;							//inicializada
+	mRTB = 1000;							//inicializada
+	CPmaterial = 1;							//inicializada
+	
+	
+	DENSIDAD_FMENF_CA = 0;
+	DENSIDAD_FMENF_CB = 0;
+	DENSIDAD_FMOUT_CA = 0;
+	F_MAX_ENF = 0;
+	F_MAX_ENF_U1CCA = 0;
+	F_MAX_ENF_U1CCB = 0;
+	F_MAX_ENF_U1CTA = 0;
+	F_MAX_ENF_U1CTB = 0;
+	F_MAX_ENF_U4RTA = 0;
+	F_MAX_ENF_U4RTB = 0;
+	
+	
+	
+	QA = 0;
+	QB = 0;
+	QCCA = 0;
+	QCCB = 0;
+	QCTA = 0;
+	QCTB = 0;
+	QRCA = 0;
+	QRCB = 0;
+	QRTA = 0;
+	QRTB = 0;
+	
+	ST8A = 0;
+	T_Giro_TA = 0;
+	T_Giro_TB = 0;
+
+
+	TCCA = 25;
+	TCCB = 25;
+	Tchiller = 25;
+	TCTA = 25;
+	TCTB = 25;
+	Tenf = 25;
+	TgCA = TEMPERATURA_SALIDA_COMPRESOR_ALTA;
+	TgCB = TEMPERATURA_SALIDA_COMPRESOR_BAJA;
+	Tgenf = TEMPERATURA_SALIDA_COMPRESOR_ALTA;	//CONSIDERANDO QUE SE ENFRIA CON EL AIRE A LA SALIDA DEL COMPRESOR DE ALTA
+	
+	TgenfA =TEMPERATURA_SALIDA_COMPRESOR_BAJA; //INICIALIZADA 
+	Tlub = 25;				// IGUALAR DE COCHI 
+
+
+	TgTA = T_C * 0.5;		//TEMPERATURA DE FLAMA ADIABATICA MULTIPLICADO POR 0.6 (FALTA HACER EL MODELO DE LA TEMPERATURA DE FLAMA HACIA LA ENTRADA DE LA TURBINA DE ALTA)
+	TgTB = TEMPERATURA_SALIDA_TURBINA_ALTA;
+
+	
+	Torque_Arracador_TA = 0;
+	Torque_Arracador_TB = 0;
+	
+	TRCA = 25;
+	TRCB = 25;
+	TRTA = 25;
+	TRTB = 25;
+	
+	U1CCA = 0;
+	U1CCB = 0;
+	U1CTA = 0;
+	U1CTB = 0;
+	U1enf = 0;
+	U1RCA = 0;
+	U1RCB = 0;
+	U1RTA = 0;
+	U1RTB = 0;
+	
+	U2CCA = 0;
+	U2CCB = 0;
+	U2CTA = 0;
+	U2CTB = 0;
+	U2enf = 0;
+
+	
+	U3enf = 0;
+	U3RCA = 0;
+	U3RCB = 0;
+	U3RTA = 0;
+	U3RTB = 0;
+	U4enf = 0;
+	U4RTA = 0;
+	U4RTB = 0;
+
+	VELOCIDAD_FMENF_CA = 0;
+	VELOCIDAD_FMENF_CB = 0;
+	VELOCIDAD_FMOUT_CA = 0;
+	
+	 
+
+	PDI64070 = 0;
+	
+	
+	
+	
 
 /////////////****************AQUI ACABAN LAS INICIALIZACIONES DE TURBO GRUPO*************////////////////
 }
