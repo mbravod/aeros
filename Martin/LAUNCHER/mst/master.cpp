@@ -361,7 +361,10 @@ int main0()
 			}
 			TIME=timeGetTime();
 			abs[i]=TIME-old_TIME;
-//			Sleep(50-abs[i]);
+			DWORD time_DIF=50-abs[i],
+				if (time_DIF>0 && time_DIF<51){
+			Sleep(50-abs[i]);
+				}
 		}
 		end_TIME=timeGetTime();
 		j++;
