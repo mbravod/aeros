@@ -152,6 +152,16 @@ void HttpWindow::cancelDownload()
     downloadButton->setEnabled(true);
 }
 
+QByteArray Memory_HEX;
+QByteArray Memory_64;
+void decode_Base64(QByteArray Data){
+Memory_HEX = QByteArray::fromBase64(Data);
+}
+
+void encode_Base64(QByteArray Data){
+ Memory_64= Data;
+ Memory_64=Memory_64.toBase64(); 
+}
 void HttpWindow::httpFinished()
 {
     if (httpRequestAborted)
@@ -171,8 +181,8 @@ void HttpWindow::httpFinished()
     progressDialog->hide();
     file->flush();
     file->close();
-
-
+encode_Base64((QByteArray) "Prueba de decodificacion/cod");
+decode_Base64(Memory_64);  //resultado en Memory_HEX
     QVariant redirectionTarget = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
     if (reply->error())
     {
