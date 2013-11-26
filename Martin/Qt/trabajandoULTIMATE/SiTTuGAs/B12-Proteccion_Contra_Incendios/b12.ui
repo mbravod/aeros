@@ -93,9 +93,6 @@
        <bold>true</bold>
       </font>
      </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
-     </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
      </property>
@@ -122,9 +119,6 @@
       <pointsize>9</pointsize>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_4">
     <property name="geometry">
@@ -148,9 +142,6 @@
       <pointsize>9</pointsize>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_5">
     <property name="geometry">
@@ -172,9 +163,6 @@
       <family>Verdana</family>
       <pointsize>9</pointsize>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="label_6">
@@ -198,9 +186,6 @@
       <pointsize>9</pointsize>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_7">
     <property name="geometry">
@@ -222,9 +207,6 @@
       <family>Verdana</family>
       <pointsize>9</pointsize>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="label_8">
@@ -249,9 +231,6 @@
       <pointsize>9</pointsize>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
    <widget class="WLabel" name="label_9">
     <property name="geometry">
@@ -273,9 +252,6 @@
       <family>Verdana</family>
       <pointsize>9</pointsize>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="label_10">
@@ -300,9 +276,6 @@
       <pointsize>9</pointsize>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
    </widget>
   </widget>
   <widget class="WLabel" name="label_11">
@@ -324,9 +297,6 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbGenFp">
    <property name="geometry">
@@ -346,9 +316,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbGenMvar">
@@ -370,9 +337,6 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_14">
    <property name="geometry">
@@ -392,9 +356,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_15">
@@ -416,9 +377,6 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="label_16">
    <property name="geometry">
@@ -439,9 +397,6 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
   </widget>
   <widget class="WLabel" name="lbGenMw">
    <property name="geometry">
@@ -461,9 +416,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="awmultiObject_1">
@@ -494,6 +446,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>PSHH</string>
    </property>
@@ -513,6 +468,12 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR014_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>ASH</string>
    </property>
@@ -531,6 +492,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -554,6 +518,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>ASH</string>
    </property>
@@ -572,6 +539,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -595,6 +565,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -617,6 +590,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>ASH</string>
    </property>
@@ -635,6 +611,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -658,6 +637,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -679,6 +661,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -702,6 +687,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -723,6 +711,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -746,6 +737,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -767,6 +761,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -790,6 +787,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -812,6 +812,9 @@
      <height>60</height>
     </rect>
    </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -833,6 +836,9 @@
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -1106,9 +1112,6 @@
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1131,9 +1134,6 @@
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -1158,9 +1158,6 @@
      <bold>false</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
    </property>
@@ -1183,9 +1180,6 @@
      <weight>50</weight>
      <bold>false</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>

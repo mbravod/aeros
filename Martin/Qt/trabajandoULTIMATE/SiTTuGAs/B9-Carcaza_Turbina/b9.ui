@@ -419,6 +419,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR002_F_CV</string>
+   </property>
    <property name="value">
     <number>0</number>
    </property>
@@ -469,6 +472,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR002_F_CV</string>
+   </property>
    <property name="value">
     <number>0</number>
    </property>
@@ -516,6 +522,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR004_F_CV</string>
+   </property>
    <property name="value">
     <number>0</number>
    </property>
@@ -537,6 +546,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR142_F_CV</string>
    </property>
    <property name="value">
     <number>0</number>
@@ -613,6 +625,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR363_F_CV</string>
+   </property>
    <property name="value">
     <number>0</number>
    </property>
@@ -663,6 +678,9 @@ color: rgb(255, 255, 0);</string>
      <height>60</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR064_F_CV</string>
+   </property>
    <property name="value">
     <number>0</number>
    </property>
@@ -712,6 +730,9 @@ color: rgb(255, 255, 0);</string>
      <width>60</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR088_F_CV</string>
    </property>
    <property name="value">
     <number>0</number>
