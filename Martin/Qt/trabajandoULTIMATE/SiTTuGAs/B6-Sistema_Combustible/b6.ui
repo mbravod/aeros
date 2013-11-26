@@ -52,6 +52,9 @@ DE GAS</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="label_29">
    <property name="geometry">
@@ -75,6 +78,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_30">
@@ -100,6 +106,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="label_31">
    <property name="geometry">
@@ -123,6 +132,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="label_32">
@@ -148,6 +160,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="label_33">
    <property name="geometry">
@@ -159,8 +174,8 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:none;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string>DRENE</string>
@@ -171,6 +186,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_38">
@@ -231,6 +249,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_5">
    <property name="geometry">
@@ -269,6 +290,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_4">
@@ -309,6 +333,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Unit_4">
    <property name="geometry">
@@ -347,6 +374,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_3">
@@ -387,6 +417,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Unit_3">
    <property name="geometry">
@@ -425,6 +458,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_2">
@@ -465,6 +501,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Unit_2">
    <property name="geometry">
@@ -503,6 +542,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Unit_1">
@@ -543,6 +585,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_1">
    <property name="geometry">
@@ -581,6 +626,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Unit_1">
@@ -621,6 +669,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Lect_1">
    <property name="geometry">
@@ -659,6 +710,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Lect_2">
@@ -699,6 +753,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Unit_2">
    <property name="geometry">
@@ -737,6 +794,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Lect_3">
@@ -777,6 +837,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Temp_Unit_3">
    <property name="geometry">
@@ -815,6 +878,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="valCua2_1">
@@ -1520,6 +1586,9 @@ GASES EXHAUSTOS</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Unit_0">
    <property name="geometry">
@@ -1559,6 +1628,9 @@ color: rgb(255, 255, 255);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
   </widget>
   <widget class="WLabel" name="lb_Lect_0">
    <property name="geometry">
@@ -1597,6 +1669,9 @@ color: rgb(255, 255, 255);</string>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="WLabel" name="lbUnit3">

@@ -221,7 +221,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR371_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -246,7 +246,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR346_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -271,7 +271,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR161_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -296,7 +296,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR299_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -321,7 +321,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR049_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>TE</string>
@@ -346,7 +346,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR377_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Normal" stdset="0">
     <number>2</number>
@@ -374,7 +374,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -402,7 +402,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR347_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -430,7 +430,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR002_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -455,7 +455,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -483,7 +483,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR002_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -508,7 +508,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>PDSHH</string>
@@ -533,7 +533,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR004_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>PDSH</string>
@@ -558,7 +558,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR142_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="UpLabel" stdset="0">
     <string>PDSL</string>
@@ -583,7 +583,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR357_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -608,7 +608,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -636,7 +636,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR363_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -661,7 +661,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -689,7 +689,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR064_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -714,7 +714,7 @@ background-color: rgba(255, 255, 255, 0);
     </rect>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -742,7 +742,7 @@ background-color: rgba(255, 255, 255, 0);
     <string>p_Fix32_THISNODE_ALM_MSTR088_F_CV</string>
    </property>
    <property name="value">
-    <number>0</number>
+    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
