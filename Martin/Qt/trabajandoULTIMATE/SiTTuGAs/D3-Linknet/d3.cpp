@@ -18,6 +18,9 @@ D3::D3(SiTTuGAs *siTTuGAs, ShrdMem *shrdMem) :
     connect(ui->btind1_3,SIGNAL(clicked()),this,SLOT(SLTanalog08_2()));
     connect(ui->btnind1_4,SIGNAL(clicked()),this,SLOT(SLTanalog16()));
     connect(ui->btnind1_5,SIGNAL(clicked()),this,SLOT(SLTanalog16_2()));
+
+    connect(ui->btMicroNet,SIGNAL(clicked()),this,SLOT(sltirA()));
+
     Id = -1;
     venActual = -1;
     qDebug()<< "Ultima posicion de ctrVen: "<<ctrVen[5];
@@ -192,4 +195,9 @@ void D3::SLTanalog16_2()
         }
         venActual = analog16_2;
     }// Indicamos que ventana se ha seleccionado
+}
+
+void D3::sltirA()
+{
+    emit(irA(24));
 }

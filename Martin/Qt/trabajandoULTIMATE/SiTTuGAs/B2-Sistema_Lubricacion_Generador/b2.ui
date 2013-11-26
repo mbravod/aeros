@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QLabel" name="lbBack">
    <property name="geometry">
     <rect>
@@ -497,7 +500,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>SUMINISTRO ACEITE  LUB</string>
@@ -522,7 +526,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -547,7 +552,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -572,7 +578,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>CIERRE GRADUAL 
@@ -598,7 +605,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>CIERRE GRADUAL 
@@ -624,7 +632,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>DESAGÜES
@@ -651,7 +660,8 @@ P/FLUIDO DE ELEVACIÓN</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>DESAGÜE ACEITE DEL GENERADOR</string>
@@ -677,7 +687,8 @@ P/FLUIDO DE ELEVACIÓN</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>BOMBA DE ALJIBE</string>
@@ -702,7 +713,8 @@ P/FLUIDO DE ELEVACIÓN</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>EXTREMO IMPULSOR</string>
@@ -727,7 +739,8 @@ P/FLUIDO DE ELEVACIÓN</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>EXTREMO  EXCITADOR</string>
@@ -750,6 +763,10 @@ P/FLUIDO DE ELEVACIÓN</string>
      <width>91</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>GENERADOR</string>
@@ -774,6 +791,10 @@ P/FLUIDO DE ELEVACIÓN</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
+   </property>
    <property name="text">
     <string>MW</string>
    </property>
@@ -796,6 +817,10 @@ P/FLUIDO DE ELEVACIÓN</string>
      <width>51</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>0.0</string>
@@ -931,7 +956,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>20</string>
@@ -956,7 +982,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -981,7 +1008,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1006,7 +1034,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1031,7 +1060,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1056,7 +1086,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1081,7 +1112,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1106,7 +1138,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1131,7 +1164,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1156,7 +1190,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1181,7 +1216,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1206,7 +1242,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1231,7 +1268,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -1256,7 +1294,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1281,7 +1320,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -1306,7 +1346,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1331,7 +1372,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -1356,7 +1398,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1381,7 +1424,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>PSIG</string>
@@ -1406,7 +1450,8 @@ QProgressBar::chunk {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>77</string>

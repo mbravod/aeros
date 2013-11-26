@@ -56,7 +56,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnMicron">
    <property name="geometry">
     <rect>
      <x>11</x>
@@ -1522,7 +1522,7 @@ A1</string>
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>btnMicron</zorder>
   <zorder>btnIMPPant</zorder>
   <zorder>lbUnit3</zorder>
   <zorder>btNod1</zorder>

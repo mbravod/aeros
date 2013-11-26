@@ -594,6 +594,7 @@ void SiTTuGAs::ChangeWin(int n)
                         ui->lbTitle->setText(d1->getTitle());
                         ui->lbNum->setText(d1->getClave());
                         d1->show();
+                        connect(this->d1,SIGNAL(irA(int)),this,SLOT(ChangeWin(int)));
                         selectWindow(n,flagOpt);
                     }
                     break;
@@ -616,8 +617,8 @@ void SiTTuGAs::ChangeWin(int n)
                         ui->lbTitle->setText(d2->getTitle());
                         ui->lbNum->setText(d2->getClave());
                         d2->show();
-                        connect(this->d2,SIGNAL(irA(int)),this,SLOT(ChangeWin(int)));
                         selectWindow(n,flagOpt);
+                        connect(this->d2,SIGNAL(irA(int)),this,SLOT(ChangeWin(int)));
                     }
                     break;
         case ID_D3:
@@ -639,8 +640,8 @@ void SiTTuGAs::ChangeWin(int n)
                         ui->lbTitle->setText(d3->getTitle());
                         ui->lbNum->setText(d3->getClave());
                         d3->show();
-                        connect(this->d3,SIGNAL(irA(int)),this,SLOT(ChangeWin(int)));
                         selectWindow(n,flagOpt);
+                        connect(this->d3,SIGNAL(irA(int)),this,SLOT(ChangeWin(int)));
                     }
                     break;
         case ID_D4:

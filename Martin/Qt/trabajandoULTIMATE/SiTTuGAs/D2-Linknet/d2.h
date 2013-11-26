@@ -78,6 +78,7 @@ public slots:
 
     void ctlVenActivacion(int id);
     void cerrarVentana(int i);
+    void sltirA();
     //Slot para crear una ventana emergente determinada por el usuario
     void sltCrearVentanaAI_10();
     void sltCrearVentanaAI_11();
@@ -109,7 +110,9 @@ public slots:
     //Slot para validar que ventana seleccionamos
 
     void sltSeleccionarVentana(int id);
-    
+signals:
+    void irA(int id);
+
 private:
 
 

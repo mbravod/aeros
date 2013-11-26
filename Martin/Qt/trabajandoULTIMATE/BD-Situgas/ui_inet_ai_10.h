@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'inet_ai_10.ui'
 **
-** Created: Sun 24. Nov 01:20:58 2013
+** Created: Mon 25. Nov 21:01:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -253,6 +253,8 @@ public:
         lbFondo->setMinimumSize(QSize(485, 250));
         lbFondo->setMaximumSize(QSize(485, 250));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbFondo->raise();
         frame->raise();
         lbNumDes_2->raise();

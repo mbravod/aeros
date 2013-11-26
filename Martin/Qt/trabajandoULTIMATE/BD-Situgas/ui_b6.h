@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b6.ui'
 **
-** Created: Sun 24. Nov 14:56:41 2013
+** Created: Mon 25. Nov 21:01:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -95,7 +95,7 @@ public:
         label_28 = new WLabel(B6);
         label_28->setObjectName(QString::fromUtf8("label_28"));
         label_28->setGeometry(QRect(5, 238, 151, 31));
-        label_28->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_28->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         QFont font;
         font.setPointSize(10);
@@ -105,31 +105,31 @@ public:
         label_29 = new WLabel(B6);
         label_29->setObjectName(QString::fromUtf8("label_29"));
         label_29->setGeometry(QRect(190, 133, 101, 26));
-        label_29->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_29->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         label_29->setFont(font);
         label_30 = new WLabel(B6);
         label_30->setObjectName(QString::fromUtf8("label_30"));
         label_30->setGeometry(QRect(542, 66, 101, 26));
-        label_30->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_30->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         label_30->setFont(font);
         label_31 = new WLabel(B6);
         label_31->setObjectName(QString::fromUtf8("label_31"));
         label_31->setGeometry(QRect(792, 280, 161, 26));
-        label_31->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_31->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         label_31->setFont(font);
         label_32 = new WLabel(B6);
         label_32->setObjectName(QString::fromUtf8("label_32"));
         label_32->setGeometry(QRect(500, 580, 131, 26));
-        label_32->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_32->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         label_32->setFont(font);
         label_33 = new WLabel(B6);
         label_33->setObjectName(QString::fromUtf8("label_33"));
         label_33->setGeometry(QRect(870, 460, 131, 26));
-        label_33->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        label_33->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         label_33->setFont(font);
         label_38 = new QLabel(B6);
@@ -238,7 +238,7 @@ public:
         lb_Temp_Unit_1->setMinimumSize(QSize(30, 18));
         lb_Temp_Unit_1->setMaximumSize(QSize(30, 18));
         lb_Temp_Unit_1->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Unit_1->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        lb_Temp_Unit_1->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         QFont font2;
         font2.setPointSize(9);
@@ -251,7 +251,7 @@ public:
         lb_Temp_Lect_1->setMinimumSize(QSize(50, 18));
         lb_Temp_Lect_1->setMaximumSize(QSize(50, 18));
         lb_Temp_Lect_1->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Lect_1->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        lb_Temp_Lect_1->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         lb_Temp_Lect_1->setFont(font2);
         lb_Temp_Lect_2 = new WLabel(B6);
@@ -260,7 +260,7 @@ public:
         lb_Temp_Lect_2->setMinimumSize(QSize(50, 18));
         lb_Temp_Lect_2->setMaximumSize(QSize(50, 18));
         lb_Temp_Lect_2->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Lect_2->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        lb_Temp_Lect_2->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         lb_Temp_Lect_2->setFont(font2);
         lb_Temp_Unit_2 = new WLabel(B6);
@@ -269,9 +269,8 @@ public:
         lb_Temp_Unit_2->setMinimumSize(QSize(30, 18));
         lb_Temp_Unit_2->setMaximumSize(QSize(30, 18));
         lb_Temp_Unit_2->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Unit_2->setStyleSheet(QString::fromUtf8("background-color: none;\n"
-"color: rgb(255, 255, 255);\n"
-""));
+        lb_Temp_Unit_2->setStyleSheet(QString::fromUtf8("background-color:none;\n"
+"color: rgb(255, 255, 255);"));
         lb_Temp_Unit_2->setFont(font2);
         lb_Temp_Lect_3 = new WLabel(B6);
         lb_Temp_Lect_3->setObjectName(QString::fromUtf8("lb_Temp_Lect_3"));
@@ -279,7 +278,7 @@ public:
         lb_Temp_Lect_3->setMinimumSize(QSize(50, 18));
         lb_Temp_Lect_3->setMaximumSize(QSize(50, 18));
         lb_Temp_Lect_3->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Lect_3->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        lb_Temp_Lect_3->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         lb_Temp_Lect_3->setFont(font2);
         lb_Temp_Unit_3 = new WLabel(B6);
@@ -288,7 +287,7 @@ public:
         lb_Temp_Unit_3->setMinimumSize(QSize(30, 18));
         lb_Temp_Unit_3->setMaximumSize(QSize(30, 18));
         lb_Temp_Unit_3->setLayoutDirection(Qt::LeftToRight);
-        lb_Temp_Unit_3->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+        lb_Temp_Unit_3->setStyleSheet(QString::fromUtf8("background-color:none;\n"
 "color: rgb(255, 255, 255);"));
         lb_Temp_Unit_3->setFont(font2);
         valCua2_1 = new AWMultiObject(B6);
@@ -461,7 +460,8 @@ public:
         label_34 = new WLabel(B6);
         label_34->setObjectName(QString::fromUtf8("label_34"));
         label_34->setGeometry(QRect(673, 364, 161, 51));
-        label_34->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+        label_34->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_34->setFont(font);
         lb_Unit_0 = new WLabel(B6);
         lb_Unit_0->setObjectName(QString::fromUtf8("lb_Unit_0"));

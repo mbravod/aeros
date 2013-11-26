@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b3.ui'
 **
-** Created: Sun 24. Nov 14:56:41 2013
+** Created: Mon 25. Nov 21:01:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -205,7 +205,8 @@ public:
         lb_ESH_Lect_TT_1->setMinimumSize(QSize(50, 18));
         lb_ESH_Lect_TT_1->setMaximumSize(QSize(50, 18));
         lb_ESH_Lect_TT_1->setLayoutDirection(Qt::LeftToRight);
-        lb_ESH_Lect_TT_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_ESH_Lect_TT_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font;
         font.setPointSize(9);
         font.setBold(true);
@@ -222,7 +223,8 @@ public:
         label_41 = new WLabel(frTitulo_9);
         label_41->setObjectName(QString::fromUtf8("label_41"));
         label_41->setGeometry(QRect(30, 5, 158, 16));
-        label_41->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        label_41->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_41->setFont(font);
         pushButton = new QPushButton(frTitulo_9);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -234,7 +236,8 @@ public:
         lb_SVR_2_1->setMinimumSize(QSize(140, 18));
         lb_SVR_2_1->setMaximumSize(QSize(140, 18));
         lb_SVR_2_1->setLayoutDirection(Qt::LeftToRight);
-        lb_SVR_2_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_SVR_2_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_SVR_2_1->setFont(font);
         lb_SVR_2_1->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_SVR_1_1 = new WLabel(Refrigeracin);
@@ -243,14 +246,17 @@ public:
         lb_SVR_1_1->setMinimumSize(QSize(140, 18));
         lb_SVR_1_1->setMaximumSize(QSize(140, 18));
         lb_SVR_1_1->setLayoutDirection(Qt::LeftToRight);
-        lb_SVR_1_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_SVR_1_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_SVR_1_1->setFont(font);
         lb_SVR_1_1->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_B3_1 = new WLabel(B3);
         lb_B3_1->setObjectName(QString::fromUtf8("lb_B3_1"));
         lb_B3_1->setGeometry(QRect(45, 42, 141, 20));
         lb_B3_1->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_1->setFont(font);
         frame_8 = new QFrame(B3);
         frame_8->setObjectName(QString::fromUtf8("frame_8"));
@@ -299,6 +305,8 @@ public:
         lb_Esc_3_11->setGeometry(QRect(0, 95, 25, 18));
         lb_Esc_3_11->setMinimumSize(QSize(25, 18));
         lb_Esc_3_11->setMaximumSize(QSize(25, 18));
+        lb_Esc_3_11->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font1;
         font1.setPointSize(8);
         font1.setBold(true);
@@ -310,6 +318,8 @@ public:
         lb_Esc_3_12->setGeometry(QRect(0, 70, 25, 18));
         lb_Esc_3_12->setMinimumSize(QSize(25, 18));
         lb_Esc_3_12->setMaximumSize(QSize(25, 18));
+        lb_Esc_3_12->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_Esc_3_12->setFont(font1);
         lb_Esc_3_12->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_Esc_3_13 = new WLabel(frame_8);
@@ -317,6 +327,8 @@ public:
         lb_Esc_3_13->setGeometry(QRect(0, 45, 25, 18));
         lb_Esc_3_13->setMinimumSize(QSize(25, 18));
         lb_Esc_3_13->setMaximumSize(QSize(25, 18));
+        lb_Esc_3_13->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_Esc_3_13->setFont(font1);
         lb_Esc_3_13->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_Esc_3_14 = new WLabel(frame_8);
@@ -324,6 +336,8 @@ public:
         lb_Esc_3_14->setGeometry(QRect(0, 25, 25, 18));
         lb_Esc_3_14->setMinimumSize(QSize(25, 18));
         lb_Esc_3_14->setMaximumSize(QSize(25, 18));
+        lb_Esc_3_14->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_Esc_3_14->setFont(font1);
         lb_Esc_3_14->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_Esc_3_15 = new WLabel(frame_8);
@@ -331,6 +345,8 @@ public:
         lb_Esc_3_15->setGeometry(QRect(0, 0, 25, 18));
         lb_Esc_3_15->setMinimumSize(QSize(25, 18));
         lb_Esc_3_15->setMaximumSize(QSize(25, 18));
+        lb_Esc_3_15->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_Esc_3_15->setFont(font1);
         lb_Esc_3_15->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         PGR_1 = new QProgressBar(frame_8);
@@ -759,6 +775,8 @@ public:
         lb_VST_Lect_5_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_5_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_5_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_5_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_5_1->setFont(font1);
         lb_VST_Lect_5_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_5_1 = new WLabel(frame_9);
@@ -767,6 +785,8 @@ public:
         lb_VST_Unit_5_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_5_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_5_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_5_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_5_1->setFont(font1);
         lb_VST_Lect_6_1 = new WLabel(frame_9);
         lb_VST_Lect_6_1->setObjectName(QString::fromUtf8("lb_VST_Lect_6_1"));
@@ -774,6 +794,8 @@ public:
         lb_VST_Lect_6_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_6_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_6_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_6_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_6_1->setFont(font1);
         lb_VST_Lect_6_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_6_1 = new WLabel(frame_9);
@@ -782,18 +804,24 @@ public:
         lb_VST_Unit_6_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_6_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_6_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_6_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_6_1->setFont(font1);
         lb_VST_6_1 = new WLabel(frame_9);
         lb_VST_6_1->setObjectName(QString::fromUtf8("lb_VST_6_1"));
         lb_VST_6_1->setGeometry(QRect(410, 35, 90, 20));
         lb_VST_6_1->setMinimumSize(QSize(90, 20));
         lb_VST_6_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_6_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_6_1->setFont(font1);
         lb_VST_6_2 = new WLabel(frame_9);
         lb_VST_6_2->setObjectName(QString::fromUtf8("lb_VST_6_2"));
         lb_VST_6_2->setGeometry(QRect(410, 55, 90, 20));
         lb_VST_6_2->setMinimumSize(QSize(90, 20));
         lb_VST_6_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_6_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_6_2->setFont(font1);
         lb_VST_6_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_6_3 = new WLabel(frame_9);
@@ -802,6 +830,8 @@ public:
         lb_VST_Lect_6_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_6_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_6_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_6_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_6_3->setFont(font1);
         lb_VST_Lect_6_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_6_3 = new WLabel(frame_9);
@@ -810,6 +840,8 @@ public:
         lb_VST_Unit_6_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_6_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_6_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_6_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_6_3->setFont(font1);
         lb_VST_Lect_7_1 = new WLabel(frame_9);
         lb_VST_Lect_7_1->setObjectName(QString::fromUtf8("lb_VST_Lect_7_1"));
@@ -817,6 +849,8 @@ public:
         lb_VST_Lect_7_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_7_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_7_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_7_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_7_1->setFont(font1);
         lb_VST_Lect_7_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_7_1 = new WLabel(frame_9);
@@ -825,18 +859,24 @@ public:
         lb_VST_Unit_7_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_7_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_7_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_7_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_7_1->setFont(font1);
         lb_VST_7_1 = new WLabel(frame_9);
         lb_VST_7_1->setObjectName(QString::fromUtf8("lb_VST_7_1"));
         lb_VST_7_1->setGeometry(QRect(500, 35, 90, 20));
         lb_VST_7_1->setMinimumSize(QSize(90, 20));
         lb_VST_7_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_7_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_7_1->setFont(font1);
         lb_VST_7_2 = new WLabel(frame_9);
         lb_VST_7_2->setObjectName(QString::fromUtf8("lb_VST_7_2"));
         lb_VST_7_2->setGeometry(QRect(495, 55, 90, 20));
         lb_VST_7_2->setMinimumSize(QSize(90, 20));
         lb_VST_7_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_7_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_7_2->setFont(font1);
         lb_VST_Unit_7_2 = new WLabel(frame_9);
         lb_VST_Unit_7_2->setObjectName(QString::fromUtf8("lb_VST_Unit_7_2"));
@@ -844,6 +884,8 @@ public:
         lb_VST_Unit_7_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_7_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_7_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_7_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_7_2->setFont(font1);
         lb_VST_Lect_7_2 = new WLabel(frame_9);
         lb_VST_Lect_7_2->setObjectName(QString::fromUtf8("lb_VST_Lect_7_2"));
@@ -851,6 +893,8 @@ public:
         lb_VST_Lect_7_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_7_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_7_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_7_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_7_2->setFont(font1);
         lb_VST_Lect_7_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_7_3 = new WLabel(frame_9);
@@ -859,6 +903,8 @@ public:
         lb_VST_Lect_7_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_7_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_7_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_7_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_7_3->setFont(font1);
         lb_VST_Lect_7_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_7_3 = new WLabel(frame_9);
@@ -867,6 +913,8 @@ public:
         lb_VST_Unit_7_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_7_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_7_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_7_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_7_3->setFont(font1);
         lb_VST_Lect_1_1 = new WLabel(frame_9);
         lb_VST_Lect_1_1->setObjectName(QString::fromUtf8("lb_VST_Lect_1_1"));
@@ -874,6 +922,8 @@ public:
         lb_VST_Lect_1_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_1_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_1_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_1_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_1_1->setFont(font1);
         lb_VST_Lect_1_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_1_1 = new WLabel(frame_9);
@@ -882,18 +932,24 @@ public:
         lb_VST_Unit_1_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_1_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_1_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_1_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_1_1->setFont(font1);
         lb_VST_1_1 = new WLabel(frame_9);
         lb_VST_1_1->setObjectName(QString::fromUtf8("lb_VST_1_1"));
         lb_VST_1_1->setGeometry(QRect(0, 35, 90, 20));
         lb_VST_1_1->setMinimumSize(QSize(90, 20));
         lb_VST_1_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_1_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_1_1->setFont(font1);
         lb_VST_1_2 = new WLabel(frame_9);
         lb_VST_1_2->setObjectName(QString::fromUtf8("lb_VST_1_2"));
         lb_VST_1_2->setGeometry(QRect(-5, 55, 90, 20));
         lb_VST_1_2->setMinimumSize(QSize(90, 20));
         lb_VST_1_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_1_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_1_2->setFont(font1);
         lb_VST_1_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_1_2 = new WLabel(frame_9);
@@ -902,6 +958,8 @@ public:
         lb_VST_Lect_1_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_1_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_1_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_1_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_1_2->setFont(font1);
         lb_VST_Lect_1_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_1_2 = new WLabel(frame_9);
@@ -910,6 +968,8 @@ public:
         lb_VST_Unit_1_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_1_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_1_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_1_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_1_2->setFont(font1);
         lb_VST_Lect_1_3 = new WLabel(frame_9);
         lb_VST_Lect_1_3->setObjectName(QString::fromUtf8("lb_VST_Lect_1_3"));
@@ -917,6 +977,8 @@ public:
         lb_VST_Lect_1_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_1_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_1_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_1_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_1_3->setFont(font1);
         lb_VST_Lect_1_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_1_3 = new WLabel(frame_9);
@@ -925,6 +987,8 @@ public:
         lb_VST_Unit_1_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_1_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_1_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_1_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_1_3->setFont(font1);
         lb_VST_Unit_1_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_VST_Lect_2_1 = new WLabel(frame_9);
@@ -933,6 +997,8 @@ public:
         lb_VST_Lect_2_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_2_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_2_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_2_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_2_1->setFont(font1);
         lb_VST_Lect_2_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_2_1 = new WLabel(frame_9);
@@ -941,18 +1007,24 @@ public:
         lb_VST_Unit_2_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_2_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_2_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_2_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_2_1->setFont(font1);
         lb_VST_2_1 = new WLabel(frame_9);
         lb_VST_2_1->setObjectName(QString::fromUtf8("lb_VST_2_1"));
         lb_VST_2_1->setGeometry(QRect(85, 35, 90, 20));
         lb_VST_2_1->setMinimumSize(QSize(90, 20));
         lb_VST_2_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_2_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_2_1->setFont(font1);
         lb_VST_2_2 = new WLabel(frame_9);
         lb_VST_2_2->setObjectName(QString::fromUtf8("lb_VST_2_2"));
         lb_VST_2_2->setGeometry(QRect(80, 55, 90, 20));
         lb_VST_2_2->setMinimumSize(QSize(90, 20));
         lb_VST_2_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_2_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_2_2->setFont(font1);
         lb_VST_2_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_2_2 = new WLabel(frame_9);
@@ -961,6 +1033,8 @@ public:
         lb_VST_Lect_2_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_2_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_2_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_2_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_2_2->setFont(font1);
         lb_VST_Lect_2_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_2_2 = new WLabel(frame_9);
@@ -969,6 +1043,8 @@ public:
         lb_VST_Unit_2_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_2_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_2_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_2_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_2_2->setFont(font1);
         lb_VST_Lect_2_3 = new WLabel(frame_9);
         lb_VST_Lect_2_3->setObjectName(QString::fromUtf8("lb_VST_Lect_2_3"));
@@ -976,6 +1052,8 @@ public:
         lb_VST_Lect_2_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_2_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_2_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_2_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_2_3->setFont(font1);
         lb_VST_Lect_2_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_2_3 = new WLabel(frame_9);
@@ -984,6 +1062,8 @@ public:
         lb_VST_Unit_2_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_2_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_2_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_2_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_2_3->setFont(font1);
         lb_VST_Unit_2_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_VST_Lect_3_1 = new WLabel(frame_9);
@@ -992,6 +1072,8 @@ public:
         lb_VST_Lect_3_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_3_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_3_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_3_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_3_1->setFont(font1);
         lb_VST_Lect_3_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_3_1 = new WLabel(frame_9);
@@ -1000,18 +1082,24 @@ public:
         lb_VST_Unit_3_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_3_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_3_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_3_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_3_1->setFont(font1);
         lb_VST_3_1 = new WLabel(frame_9);
         lb_VST_3_1->setObjectName(QString::fromUtf8("lb_VST_3_1"));
         lb_VST_3_1->setGeometry(QRect(170, 35, 90, 20));
         lb_VST_3_1->setMinimumSize(QSize(90, 20));
         lb_VST_3_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_3_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_3_1->setFont(font1);
         lb_VST_3_2 = new WLabel(frame_9);
         lb_VST_3_2->setObjectName(QString::fromUtf8("lb_VST_3_2"));
         lb_VST_3_2->setGeometry(QRect(165, 55, 90, 20));
         lb_VST_3_2->setMinimumSize(QSize(90, 20));
         lb_VST_3_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_3_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_3_2->setFont(font1);
         lb_VST_3_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_3_2 = new WLabel(frame_9);
@@ -1020,6 +1108,8 @@ public:
         lb_VST_Lect_3_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_3_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_3_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_3_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_3_2->setFont(font1);
         lb_VST_Lect_3_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_3_2 = new WLabel(frame_9);
@@ -1028,6 +1118,8 @@ public:
         lb_VST_Unit_3_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_3_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_3_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_3_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_3_2->setFont(font1);
         lb_VST_Lect_3_3 = new WLabel(frame_9);
         lb_VST_Lect_3_3->setObjectName(QString::fromUtf8("lb_VST_Lect_3_3"));
@@ -1035,6 +1127,8 @@ public:
         lb_VST_Lect_3_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_3_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_3_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_3_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_3_3->setFont(font1);
         lb_VST_Lect_3_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_3_3 = new WLabel(frame_9);
@@ -1043,6 +1137,8 @@ public:
         lb_VST_Unit_3_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_3_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_3_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_3_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_3_3->setFont(font1);
         lb_VST_Unit_3_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_VST_Lect_4_1 = new WLabel(frame_9);
@@ -1051,6 +1147,8 @@ public:
         lb_VST_Lect_4_1->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_4_1->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_4_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_4_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_4_1->setFont(font1);
         lb_VST_Lect_4_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_4_1 = new WLabel(frame_9);
@@ -1059,18 +1157,24 @@ public:
         lb_VST_Unit_4_1->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_4_1->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_4_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_4_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_4_1->setFont(font1);
         lb_VST_4_1 = new WLabel(frame_9);
         lb_VST_4_1->setObjectName(QString::fromUtf8("lb_VST_4_1"));
         lb_VST_4_1->setGeometry(QRect(250, 35, 90, 20));
         lb_VST_4_1->setMinimumSize(QSize(90, 20));
         lb_VST_4_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_4_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_4_1->setFont(font1);
         lb_VST_4_2 = new WLabel(frame_9);
         lb_VST_4_2->setObjectName(QString::fromUtf8("lb_VST_4_2"));
         lb_VST_4_2->setGeometry(QRect(245, 55, 90, 20));
         lb_VST_4_2->setMinimumSize(QSize(90, 20));
         lb_VST_4_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_4_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_4_2->setFont(font1);
         lb_VST_4_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_4_2 = new WLabel(frame_9);
@@ -1079,6 +1183,8 @@ public:
         lb_VST_Lect_4_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_4_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_4_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_4_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_4_2->setFont(font1);
         lb_VST_Lect_4_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_4_2 = new WLabel(frame_9);
@@ -1087,6 +1193,8 @@ public:
         lb_VST_Unit_4_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_4_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_4_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_4_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_4_2->setFont(font1);
         lb_VST_Lect_4_3 = new WLabel(frame_9);
         lb_VST_Lect_4_3->setObjectName(QString::fromUtf8("lb_VST_Lect_4_3"));
@@ -1094,6 +1202,8 @@ public:
         lb_VST_Lect_4_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_4_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_4_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_4_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_4_3->setFont(font1);
         lb_VST_Lect_4_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_4_3 = new WLabel(frame_9);
@@ -1102,6 +1212,8 @@ public:
         lb_VST_Unit_4_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_4_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_4_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_4_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_4_3->setFont(font1);
         lb_VST_Unit_4_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_VST_5_1 = new WLabel(frame_9);
@@ -1109,12 +1221,16 @@ public:
         lb_VST_5_1->setGeometry(QRect(330, 35, 90, 20));
         lb_VST_5_1->setMinimumSize(QSize(90, 20));
         lb_VST_5_1->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_5_1->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_5_1->setFont(font1);
         lb_VST_5_2 = new WLabel(frame_9);
         lb_VST_5_2->setObjectName(QString::fromUtf8("lb_VST_5_2"));
         lb_VST_5_2->setGeometry(QRect(330, 55, 90, 20));
         lb_VST_5_2->setMinimumSize(QSize(90, 20));
         lb_VST_5_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_5_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_5_2->setFont(font1);
         lb_VST_5_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Lect_5_2 = new WLabel(frame_9);
@@ -1123,6 +1239,8 @@ public:
         lb_VST_Lect_5_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_5_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_5_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_5_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_5_2->setFont(font1);
         lb_VST_Lect_5_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_5_2 = new WLabel(frame_9);
@@ -1131,6 +1249,8 @@ public:
         lb_VST_Unit_5_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_5_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_5_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_5_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_5_2->setFont(font1);
         lb_VST_Lect_5_3 = new WLabel(frame_9);
         lb_VST_Lect_5_3->setObjectName(QString::fromUtf8("lb_VST_Lect_5_3"));
@@ -1138,6 +1258,8 @@ public:
         lb_VST_Lect_5_3->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_5_3->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_5_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_5_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_5_3->setFont(font1);
         lb_VST_Lect_5_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_5_3 = new WLabel(frame_9);
@@ -1146,6 +1268,8 @@ public:
         lb_VST_Unit_5_3->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_5_3->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_5_3->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_5_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_5_3->setFont(font1);
         lb_VST_Unit_5_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lb_VST_Lect_6_2 = new WLabel(frame_9);
@@ -1154,6 +1278,8 @@ public:
         lb_VST_Lect_6_2->setMinimumSize(QSize(50, 18));
         lb_VST_Lect_6_2->setMaximumSize(QSize(50, 18));
         lb_VST_Lect_6_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Lect_6_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Lect_6_2->setFont(font1);
         lb_VST_Lect_6_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lb_VST_Unit_6_2 = new WLabel(frame_9);
@@ -1162,11 +1288,15 @@ public:
         lb_VST_Unit_6_2->setMinimumSize(QSize(35, 18));
         lb_VST_Unit_6_2->setMaximumSize(QSize(35, 18));
         lb_VST_Unit_6_2->setLayoutDirection(Qt::LeftToRight);
+        lb_VST_Unit_6_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_VST_Unit_6_2->setFont(font1);
         lbIMGFondo = new QLabel(B3);
         lbIMGFondo->setObjectName(QString::fromUtf8("lbIMGFondo"));
         lbIMGFondo->setGeometry(QRect(0, 22, 1024, 662));
-        lbIMGFondo->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbIMGFondo->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbIMGFondo->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/B3.png")));
         lbIMGFondo->setScaledContents(true);
         btnIMPPant = new QPushButton(B3);
@@ -1242,43 +1372,57 @@ public:
         lbTanque_1 = new WLabel(B3);
         lbTanque_1->setObjectName(QString::fromUtf8("lbTanque_1"));
         lbTanque_1->setGeometry(QRect(955, 320, 71, 171));
-        lbTanque_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbTanque_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbTanque_1->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8(":/Resources/PNG/B3/tanque.png"))));
         lb_B3_2 = new WLabel(B3);
         lb_B3_2->setObjectName(QString::fromUtf8("lb_B3_2"));
         lb_B3_2->setGeometry(QRect(90, 265, 141, 20));
         lb_B3_2->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_2->setFont(font);
         lb_B3_3 = new WLabel(B3);
         lb_B3_3->setObjectName(QString::fromUtf8("lb_B3_3"));
         lb_B3_3->setGeometry(QRect(90, 280, 201, 20));
         lb_B3_3->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_3->setFont(font);
         lb_B3_4 = new WLabel(B3);
         lb_B3_4->setObjectName(QString::fromUtf8("lb_B3_4"));
         lb_B3_4->setGeometry(QRect(470, 325, 141, 20));
         lb_B3_4->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_4->setFont(font);
         lb_B3_5 = new WLabel(B3);
         lb_B3_5->setObjectName(QString::fromUtf8("lb_B3_5"));
         lb_B3_5->setGeometry(QRect(490, 338, 141, 20));
         lb_B3_5->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_5->setFont(font);
         lb_B3_6 = new WLabel(B3);
         lb_B3_6->setObjectName(QString::fromUtf8("lb_B3_6"));
         lb_B3_6->setGeometry(QRect(170, 335, 141, 20));
         lb_B3_6->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_6->setFont(font);
         lb_B3_7 = new WLabel(B3);
         lb_B3_7->setObjectName(QString::fromUtf8("lb_B3_7"));
         lb_B3_7->setGeometry(QRect(33, 553, 241, 20));
         lb_B3_7->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font3;
         font3.setFamily(QString::fromUtf8("Verdana"));
         font3.setPointSize(7);
@@ -1288,7 +1432,9 @@ public:
         label_7 = new WLabel(B3);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(486, 310, 21, 51));
-        label_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_7->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8(":/Resources/PNG/B1/flecha_blanca_abajo.png"))));
         aWMultiObject = new AWMultiObject(B3);
         aWMultiObject->setObjectName(QString::fromUtf8("aWMultiObject"));
@@ -1422,122 +1568,160 @@ public:
         lb_B3_8->setObjectName(QString::fromUtf8("lb_B3_8"));
         lb_B3_8->setGeometry(QRect(805, 465, 191, 20));
         lb_B3_8->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_8->setFont(font);
         lb_B3_9 = new WLabel(B3);
         lb_B3_9->setObjectName(QString::fromUtf8("lb_B3_9"));
         lb_B3_9->setGeometry(QRect(805, 480, 191, 20));
         lb_B3_9->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_9->setFont(font);
         lb_B3_10 = new WLabel(B3);
         lb_B3_10->setObjectName(QString::fromUtf8("lb_B3_10"));
         lb_B3_10->setGeometry(QRect(725, 495, 191, 20));
         lb_B3_10->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_10->setFont(font);
         lb_B3_11 = new WLabel(B3);
         lb_B3_11->setObjectName(QString::fromUtf8("lb_B3_11"));
         lb_B3_11->setGeometry(QRect(725, 508, 191, 20));
         lb_B3_11->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_11->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_11->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_11->setFont(font);
         lb_B3_12 = new WLabel(B3);
         lb_B3_12->setObjectName(QString::fromUtf8("lb_B3_12"));
         lb_B3_12->setGeometry(QRect(921, 495, 191, 20));
         lb_B3_12->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_12->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_12->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_12->setFont(font);
         lb_B3_13 = new WLabel(B3);
         lb_B3_13->setObjectName(QString::fromUtf8("lb_B3_13"));
         lb_B3_13->setGeometry(QRect(921, 510, 191, 20));
         lb_B3_13->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_13->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_13->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_13->setFont(font);
         lb_B3_14 = new WLabel(B3);
         lb_B3_14->setObjectName(QString::fromUtf8("lb_B3_14"));
         lb_B3_14->setGeometry(QRect(792, 600, 191, 20));
         lb_B3_14->setLayoutDirection(Qt::LeftToRight);
-        lb_B3_14->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb_B3_14->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb_B3_14->setFont(font);
         lbU_0 = new WLabel(B3);
         lbU_0->setObjectName(QString::fromUtf8("lbU_0"));
         lbU_0->setGeometry(QRect(164, 415, 141, 20));
         lbU_0->setLayoutDirection(Qt::LeftToRight);
-        lbU_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbU_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbU_0->setFont(font);
         lbU_0->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_1 = new WLabel(B3);
         lbU_1->setObjectName(QString::fromUtf8("lbU_1"));
         lbU_1->setGeometry(QRect(245, 415, 141, 20));
         lbU_1->setLayoutDirection(Qt::LeftToRight);
-        lbU_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbU_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbU_1->setFont(font);
         lbU_1->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_2 = new WLabel(B3);
         lbU_2->setObjectName(QString::fromUtf8("lbU_2"));
         lbU_2->setGeometry(QRect(592, 432, 141, 20));
         lbU_2->setLayoutDirection(Qt::LeftToRight);
-        lbU_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbU_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbU_2->setFont(font);
         lbU_2->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_3 = new WLabel(B3);
         lbU_3->setObjectName(QString::fromUtf8("lbU_3"));
         lbU_3->setGeometry(QRect(210, 430, 141, 20));
         lbU_3->setLayoutDirection(Qt::LeftToRight);
-        lbU_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbU_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbU_3->setFont(font);
         lbU_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbVal_0 = new WLabel(B3);
         lbVal_0->setObjectName(QString::fromUtf8("lbVal_0"));
         lbVal_0->setGeometry(QRect(40, 380, 31, 20));
         lbVal_0->setLayoutDirection(Qt::LeftToRight);
-        lbVal_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_0->setFont(font);
         lbVal_1 = new WLabel(B3);
         lbVal_1->setObjectName(QString::fromUtf8("lbVal_1"));
         lbVal_1->setGeometry(QRect(40, 420, 31, 20));
         lbVal_1->setLayoutDirection(Qt::LeftToRight);
-        lbVal_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_1->setFont(font);
         lbUni_0 = new WLabel(B3);
         lbUni_0->setObjectName(QString::fromUtf8("lbUni_0"));
         lbUni_0->setGeometry(QRect(62, 380, 31, 20));
         lbUni_0->setLayoutDirection(Qt::LeftToRight);
-        lbUni_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUni_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbUni_0->setFont(font);
         lbUni_1 = new WLabel(B3);
         lbUni_1->setObjectName(QString::fromUtf8("lbUni_1"));
         lbUni_1->setGeometry(QRect(62, 420, 31, 20));
         lbUni_1->setLayoutDirection(Qt::LeftToRight);
-        lbUni_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUni_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbUni_1->setFont(font);
         lbVal_2 = new WLabel(B3);
         lbVal_2->setObjectName(QString::fromUtf8("lbVal_2"));
         lbVal_2->setGeometry(QRect(192, 415, 31, 20));
         lbVal_2->setLayoutDirection(Qt::LeftToRight);
-        lbVal_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_2->setFont(font);
         lbVal_2->setProperty("Alineacion", QVariant(WLabel::Derecha));
         lbVal_3 = new WLabel(B3);
         lbVal_3->setObjectName(QString::fromUtf8("lbVal_3"));
         lbVal_3->setGeometry(QRect(240, 430, 31, 20));
         lbVal_3->setLayoutDirection(Qt::LeftToRight);
-        lbVal_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_3->setFont(font);
         lbVal_3->setProperty("Alineacion", QVariant(WLabel::Derecha));
         lbVal_4 = new WLabel(B3);
         lbVal_4->setObjectName(QString::fromUtf8("lbVal_4"));
         lbVal_4->setGeometry(QRect(273, 415, 31, 20));
         lbVal_4->setLayoutDirection(Qt::LeftToRight);
-        lbVal_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_4->setFont(font);
         lbVal_4->setProperty("Alineacion", QVariant(WLabel::Derecha));
         lbVal_5 = new WLabel(B3);
         lbVal_5->setObjectName(QString::fromUtf8("lbVal_5"));
         lbVal_5->setGeometry(QRect(620, 432, 31, 20));
         lbVal_5->setLayoutDirection(Qt::LeftToRight);
-        lbVal_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbVal_5->setFont(font);
         lbVal_5->setProperty("Alineacion", QVariant(WLabel::Derecha));
         aIndicador_18 = new AInstrumentIndicator(B3);
@@ -1573,17 +1757,23 @@ public:
         label_8 = new WLabel(B3);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(480, 480, 31, 51));
-        label_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_8->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8("../Resources/PNG/B1/cuadro.png"))));
         label_9 = new WLabel(B3);
         label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setGeometry(QRect(480, 390, 31, 51));
-        label_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        label_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_9->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8("../Resources/PNG/B1/cuadro.png"))));
         label_10 = new WLabel(B3);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setGeometry(QRect(523, 243, 31, 51));
-        label_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        label_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_10->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8("../Resources/PNG/B1/cuadro.png"))));
         aWAnalogicLevel->raise();
         lbIMGFondo->raise();

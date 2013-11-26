@@ -38,7 +38,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -63,7 +63,7 @@ DE GAS</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -87,7 +87,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -111,7 +111,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -135,7 +135,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -159,7 +159,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -608,7 +608,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -647,7 +647,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -686,7 +686,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -725,9 +725,8 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
-color: rgb(255, 255, 255);
-</string>
+    <string notr="true">background-color:none;
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -765,7 +764,7 @@ color: rgb(255, 255, 255);
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -804,7 +803,7 @@ color: rgb(255, 255, 255);</string>
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: none;
+    <string notr="true">background-color:none;
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -1507,7 +1506,8 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>DIFFUSOR DE

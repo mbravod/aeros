@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'd2.ui'
 **
-** Created: Sun 24. Nov 01:20:56 2013
+** Created: Mon 25. Nov 21:01:07 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -26,7 +26,7 @@ class Ui_D2
 {
 public:
     QLabel *label;
-    QPushButton *pushButton;
+    QPushButton *btnMicron;
     QPushButton *btnIMPPant;
     QLabel *lbUnit3;
     QPushButton *btNod1;
@@ -94,14 +94,14 @@ public:
         label->setMaximumSize(QSize(1024, 662));
         label->setPixmap(QPixmap(QString::fromUtf8(":/Resources/PNG/D2.png")));
         label->setScaledContents(true);
-        pushButton = new QPushButton(D2);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(11, 242, 119, 41));
+        btnMicron = new QPushButton(D2);
+        btnMicron->setObjectName(QString::fromUtf8("btnMicron"));
+        btnMicron->setGeometry(QRect(11, 242, 119, 41));
         QFont font;
         font.setPointSize(12);
         font.setBold(true);
         font.setWeight(75);
-        pushButton->setFont(font);
+        btnMicron->setFont(font);
         btnIMPPant = new QPushButton(D2);
         btnIMPPant->setObjectName(QString::fromUtf8("btnIMPPant"));
         btnIMPPant->setGeometry(QRect(5, 639, 134, 23));
@@ -472,7 +472,7 @@ public:
         btind1_17->setGeometry(QRect(750, 468, 101, 157));
         btind1_17->setIcon(icon);
         label->raise();
-        pushButton->raise();
+        btnMicron->raise();
         btnIMPPant->raise();
         lbUnit3->raise();
         btNod1->raise();
@@ -535,7 +535,7 @@ public:
     {
         D2->setWindowTitle(QApplication::translate("D2", "Form", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
-        pushButton->setText(QApplication::translate("D2", "MicroNET", 0, QApplication::UnicodeUTF8));
+        btnMicron->setText(QApplication::translate("D2", "MicroNET", 0, QApplication::UnicodeUTF8));
         btnIMPPant->setText(QApplication::translate("D2", "IMP PANT", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("D2", "    UNIT3", 0, QApplication::UnicodeUTF8));
         btNod1->setText(QApplication::translate("D2", "NODE1", 0, QApplication::UnicodeUTF8));

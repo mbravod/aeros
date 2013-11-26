@@ -41,6 +41,7 @@ D2::D2(SiTTuGAs *siTTuGAs, ShrdMem *shrdMem) :
 
     connect(ui->btind1_15,SIGNAL(clicked()),this,SLOT(sltCrearVentanaAI_8()));
     connect(ui->btind1_17,SIGNAL(clicked()),this,SLOT(sltCrearVentanaAI_9()));
+    connect(ui->btnMicron,SIGNAL(clicked()),this,SLOT(sltirA()));
 
 
 
@@ -549,6 +550,12 @@ void D2::cerrarVentana(int i)
     venActual = -1;
 
 }
+
+void D2::sltirA()
+{
+    emit(irA(24));
+}
+
 
 
 void D2::mouseReleaseEvent(QMouseEvent *event)

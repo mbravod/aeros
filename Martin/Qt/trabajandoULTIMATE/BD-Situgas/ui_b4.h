@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b4.ui'
 **
-** Created: Sun 24. Nov 14:56:41 2013
+** Created: Mon 25. Nov 21:01:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -154,7 +154,9 @@ public:
         label_2 = new WLabel(frame_3);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(2, 2, 219, 15));
-        label_2->setStyleSheet(QString::fromUtf8(""));
+        label_2->setStyleSheet(QString::fromUtf8("\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font2;
         font2.setFamily(QString::fromUtf8("Verdana"));
         font2.setPointSize(8);
@@ -164,12 +166,16 @@ public:
         lbAceiTempT = new WLabel(frame_2);
         lbAceiTempT->setObjectName(QString::fromUtf8("lbAceiTempT"));
         lbAceiTempT->setGeometry(QRect(40, 23, 181, 41));
-        lbAceiTempT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbAceiTempT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbAceiTempT->setFont(font2);
         lbAceiNivT = new WLabel(frame_2);
         lbAceiNivT->setObjectName(QString::fromUtf8("lbAceiNivT"));
         lbAceiNivT->setGeometry(QRect(40, 62, 181, 41));
-        lbAceiNivT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbAceiNivT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbAceiNivT->setFont(font2);
         aWMultiObject_5 = new AWMultiObject(B4);
         aWMultiObject_5->setObjectName(QString::fromUtf8("aWMultiObject_5"));
@@ -255,48 +261,65 @@ public:
         lbInterT = new WLabel(B4);
         lbInterT->setObjectName(QString::fromUtf8("lbInterT"));
         lbInterT->setGeometry(QRect(88, 344, 191, 21));
-        lbInterT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbInterT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbInterT->setFont(font2);
         lbBomRecT = new WLabel(B4);
         lbBomRecT->setObjectName(QString::fromUtf8("lbBomRecT"));
         lbBomRecT->setGeometry(QRect(366, 321, 191, 21));
-        lbBomRecT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbBomRecT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbBomRecT->setFont(font2);
         lbAlimT = new WLabel(B4);
         lbAlimT->setObjectName(QString::fromUtf8("lbAlimT"));
         lbAlimT->setGeometry(QRect(630, 194, 191, 21));
-        lbAlimT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbAlimT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbAlimT->setFont(font2);
         lbRetMotT = new WLabel(B4);
         lbRetMotT->setObjectName(QString::fromUtf8("lbRetMotT"));
         lbRetMotT->setGeometry(QRect(665, 280, 191, 41));
-        lbRetMotT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbRetMotT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbRetMotT->setFont(font2);
         lbRetMotT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbDrenCarcaT = new WLabel(B4);
         lbDrenCarcaT->setObjectName(QString::fromUtf8("lbDrenCarcaT"));
         lbDrenCarcaT->setGeometry(QRect(590, 397, 310, 21));
-        lbDrenCarcaT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbDrenCarcaT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbDrenCarcaT->setFont(font2);
         lb83fT_2 = new WLabel(B4);
         lb83fT_2->setObjectName(QString::fromUtf8("lb83fT_2"));
         lb83fT_2->setGeometry(QRect(950, 104, 21, 21));
-        lb83fT_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb83fT_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb83fT_2->setFont(font2);
         lb83fT = new WLabel(B4);
         lb83fT->setObjectName(QString::fromUtf8("lb83fT"));
         lb83fT->setGeometry(QRect(903, 120, 41, 21));
-        lb83fT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb83fT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb83fT->setFont(font2);
         lb82f = new WLabel(B4);
         lb82f->setObjectName(QString::fromUtf8("lb82f"));
         lb82f->setGeometry(QRect(965, 120, 31, 21));
-        lb82f->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb82f->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb82f->setFont(font2);
         label_13 = new WLabel(B4);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(591, 127, 241, 21));
-        label_13->setStyleSheet(QString::fromUtf8(""));
+        label_13->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font3;
         font3.setFamily(QString::fromUtf8("Verdana"));
         font3.setPointSize(9);
@@ -306,12 +329,14 @@ public:
         label_14 = new WLabel(B4);
         label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setGeometry(QRect(653, 146, 41, 21));
-        label_14->setStyleSheet(QString::fromUtf8(""));
+        label_14->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_14->setFont(font3);
         label_15 = new WLabel(B4);
         label_15->setObjectName(QString::fromUtf8("label_15"));
         label_15->setGeometry(QRect(710, 146, 41, 21));
-        label_15->setStyleSheet(QString::fromUtf8(""));
+        label_15->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         label_15->setFont(font3);
         lbUnit3 = new WLabel(B4);
         lbUnit3->setObjectName(QString::fromUtf8("lbUnit3"));
@@ -333,17 +358,23 @@ public:
         lb83fT_3 = new WLabel(B4);
         lb83fT_3->setObjectName(QString::fromUtf8("lb83fT_3"));
         lb83fT_3->setGeometry(QRect(921, 104, 31, 21));
-        lb83fT_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb83fT_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb83fT_3->setFont(font2);
         lb83fT_4 = new WLabel(B4);
         lb83fT_4->setObjectName(QString::fromUtf8("lb83fT_4"));
         lb83fT_4->setGeometry(QRect(860, 120, 31, 21));
-        lb83fT_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb83fT_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb83fT_4->setFont(font2);
         lb82f_2 = new WLabel(B4);
         lb82f_2->setObjectName(QString::fromUtf8("lb82f_2"));
         lb82f_2->setGeometry(QRect(930, 120, 41, 21));
-        lb82f_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lb82f_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+""));
         lb82f_2->setFont(font2);
 
         retranslateUi(B4);

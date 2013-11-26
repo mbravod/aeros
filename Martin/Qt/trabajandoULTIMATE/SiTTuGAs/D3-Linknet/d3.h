@@ -35,6 +35,7 @@ public slots:
     void SLTanalog08_2();
     void SLTanalog16();
     void SLTanalog16_2();
+    void sltirA();
 
 
     void ctlVenActivacion(int id);
@@ -42,7 +43,8 @@ public slots:
 
     //Slot para validar la eleccion de la ventana
     void sltSeleccionarVentana(int id);
-
+signals:
+    void irA(int i);
     
 private:
     Ui::D3 *ui;

@@ -250,7 +250,9 @@ border:0px solidblack;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);
+</string>
      </property>
      <property name="text">
       <string>ENCLAVAMIENTOS DE SISTEMA HIDR</string>
@@ -275,7 +277,9 @@ border:0px solidblack;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
     </property>
     <property name="text">
      <string>ACEITE HIDR. DE ARRANQUE
@@ -300,7 +304,9 @@ TEMP DEL TANQUE - OK</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
     </property>
     <property name="text">
      <string>ACEITE HIDR. DE ARRANQUE
@@ -686,7 +692,9 @@ NIVEL DEL TANQUE - OK</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>INTERCAMBIADOR DE CALOR</string>
@@ -710,7 +718,9 @@ NIVEL DEL TANQUE - OK</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>BOMBA DE RECUPERACIÓN</string>
@@ -734,7 +744,9 @@ NIVEL DEL TANQUE - OK</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>ALIM, MOTOR HIDR. DE ARRANQUE</string>
@@ -758,7 +770,9 @@ NIVEL DEL TANQUE - OK</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>RETORNO MOTOR
@@ -786,7 +800,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>DRENAJE CARCASA MOTOR HIDR. DE ARRANQUE</string>
@@ -810,7 +826,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -834,7 +852,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -858,7 +878,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>°F</string>
@@ -882,7 +904,8 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>DEMANDA MOTOR DE ARRANQUE</string>
@@ -906,7 +929,8 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>0.0</string>
@@ -930,7 +954,8 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>%</string>
@@ -999,7 +1024,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>83</string>
@@ -1023,7 +1050,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>83 </string>
@@ -1047,7 +1076,9 @@ HIDR. DE ARRANQUE</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+</string>
    </property>
    <property name="text">
     <string>82</string>

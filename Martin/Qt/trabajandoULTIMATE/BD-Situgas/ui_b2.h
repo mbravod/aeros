@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b2.ui'
 **
-** Created: Sun 24. Nov 14:56:41 2013
+** Created: Mon 25. Nov 21:01:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -88,6 +88,7 @@ public:
         B2->resize(1024, 662);
         B2->setMinimumSize(QSize(1024, 662));
         B2->setMaximumSize(QSize(1024, 662));
+        B2->setStyleSheet(QString::fromUtf8(""));
         lbBack = new QLabel(B2);
         lbBack->setObjectName(QString::fromUtf8("lbBack"));
         lbBack->setGeometry(QRect(0, 0, 1024, 662));
@@ -199,7 +200,8 @@ public:
         lbSumAceT = new WLabel(B2);
         lbSumAceT->setObjectName(QString::fromUtf8("lbSumAceT"));
         lbSumAceT->setGeometry(QRect(115, 51, 191, 16));
-        lbSumAceT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbSumAceT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         QFont font;
         font.setBold(true);
         font.setWeight(75);
@@ -208,31 +210,36 @@ public:
         lbPsigU = new WLabel(B2);
         lbPsigU->setObjectName(QString::fromUtf8("lbPsigU"));
         lbPsigU->setGeometry(QRect(220, 132, 41, 16));
-        lbPsigU->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbPsigU->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbPsigU->setFont(font);
         lbPsigU->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad = new WLabel(B2);
         lbUnidad->setObjectName(QString::fromUtf8("lbUnidad"));
         lbUnidad->setGeometry(QRect(459, 110, 31, 16));
-        lbUnidad->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad->setFont(font);
         lbUnidad->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCierGraIT = new WLabel(B2);
         lbCierGraIT->setObjectName(QString::fromUtf8("lbCierGraIT"));
         lbCierGraIT->setGeometry(QRect(289, 209, 111, 41));
-        lbCierGraIT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbCierGraIT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbCierGraIT->setFont(font);
         lbCierGraIT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbCierGraDT = new WLabel(B2);
         lbCierGraDT->setObjectName(QString::fromUtf8("lbCierGraDT"));
         lbCierGraDT->setGeometry(QRect(737, 209, 111, 41));
-        lbCierGraDT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbCierGraDT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbCierGraDT->setFont(font);
         lbCierGraDT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbDesFluT = new WLabel(B2);
         lbDesFluT->setObjectName(QString::fromUtf8("lbDesFluT"));
         lbDesFluT->setGeometry(QRect(115, 504, 161, 41));
-        lbDesFluT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbDesFluT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         QFont font1;
         font1.setPointSize(9);
         font1.setBold(true);
@@ -242,30 +249,36 @@ public:
         lbDesAceT = new WLabel(B2);
         lbDesAceT->setObjectName(QString::fromUtf8("lbDesAceT"));
         lbDesAceT->setGeometry(QRect(114, 565, 221, 21));
-        lbDesAceT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbDesAceT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbDesAceT->setFont(font1);
         lbDesAceT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbBomAljT = new WLabel(B2);
         lbBomAljT->setObjectName(QString::fromUtf8("lbBomAljT"));
         lbBomAljT->setGeometry(QRect(209, 412, 111, 16));
-        lbBomAljT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbBomAljT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbBomAljT->setFont(font);
         lbBomAljT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbExtImp95fT = new WLabel(B2);
         lbExtImp95fT->setObjectName(QString::fromUtf8("lbExtImp95fT"));
         lbExtImp95fT->setGeometry(QRect(300, 390, 121, 31));
-        lbExtImp95fT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbExtImp95fT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbExtImp95fT->setFont(font);
         lbExtImp95fT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbExtExc101fT = new WLabel(B2);
         lbExtExc101fT->setObjectName(QString::fromUtf8("lbExtExc101fT"));
         lbExtExc101fT->setGeometry(QRect(646, 379, 121, 41));
-        lbExtExc101fT->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbExtExc101fT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbExtExc101fT->setFont(font);
         lbExtExc101fT->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbGenT = new WLabel(B2);
         lbGenT->setObjectName(QString::fromUtf8("lbGenT"));
         lbGenT->setGeometry(QRect(489, 440, 91, 16));
+        lbGenT->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         QFont font2;
         font2.setPointSize(10);
         font2.setBold(true);
@@ -275,11 +288,15 @@ public:
         lbGenU = new WLabel(B2);
         lbGenU->setObjectName(QString::fromUtf8("lbGenU"));
         lbGenU->setGeometry(QRect(536, 458, 31, 16));
+        lbGenU->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbGenU->setFont(font2);
         lbGenU->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbGen = new WLabel(B2);
         lbGen->setObjectName(QString::fromUtf8("lbGen"));
         lbGen->setGeometry(QRect(486, 457, 51, 16));
+        lbGen->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+""));
         lbGen->setFont(font2);
         lbGen->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnit3 = new WLabel(B2);
@@ -332,121 +349,141 @@ public:
         lbPsig = new WLabel(B2);
         lbPsig->setObjectName(QString::fromUtf8("lbPsig"));
         lbPsig->setGeometry(QRect(180, 132, 31, 16));
-        lbPsig->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbPsig->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbPsig->setFont(font);
         lbPsig->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal = new WLabel(B2);
         lbVal->setObjectName(QString::fromUtf8("lbVal"));
         lbVal->setGeometry(QRect(420, 110, 41, 16));
-        lbVal->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal->setFont(font);
         lbVal->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_2 = new WLabel(B2);
         lbUnidad_2->setObjectName(QString::fromUtf8("lbUnidad_2"));
         lbUnidad_2->setGeometry(QRect(490, 320, 31, 16));
-        lbUnidad_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_2->setFont(font);
         lbUnidad_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_2 = new WLabel(B2);
         lbVal_2->setObjectName(QString::fromUtf8("lbVal_2"));
         lbVal_2->setGeometry(QRect(451, 320, 41, 16));
-        lbVal_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_2->setFont(font);
         lbVal_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_3 = new WLabel(B2);
         lbUnidad_3->setObjectName(QString::fromUtf8("lbUnidad_3"));
         lbUnidad_3->setGeometry(QRect(390, 420, 31, 16));
-        lbUnidad_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_3->setFont(font);
         lbUnidad_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_3 = new WLabel(B2);
         lbVal_3->setObjectName(QString::fromUtf8("lbVal_3"));
         lbVal_3->setGeometry(QRect(351, 420, 41, 16));
-        lbVal_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_3->setFont(font);
         lbVal_3->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_4 = new WLabel(B2);
         lbUnidad_4->setObjectName(QString::fromUtf8("lbUnidad_4"));
         lbUnidad_4->setGeometry(QRect(410, 510, 31, 16));
-        lbUnidad_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_4->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_4->setFont(font);
         lbUnidad_4->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_4 = new WLabel(B2);
         lbVal_4->setObjectName(QString::fromUtf8("lbVal_4"));
         lbVal_4->setGeometry(QRect(371, 510, 41, 16));
-        lbVal_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_4->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_4->setFont(font);
         lbVal_4->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_5 = new WLabel(B2);
         lbUnidad_5->setObjectName(QString::fromUtf8("lbUnidad_5"));
         lbUnidad_5->setGeometry(QRect(560, 530, 31, 16));
-        lbUnidad_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_5->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_5->setFont(font);
         lbUnidad_5->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_5 = new WLabel(B2);
         lbVal_5->setObjectName(QString::fromUtf8("lbVal_5"));
         lbVal_5->setGeometry(QRect(521, 530, 41, 16));
-        lbVal_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_5->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_5->setFont(font);
         lbVal_5->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_6 = new WLabel(B2);
         lbUnidad_6->setObjectName(QString::fromUtf8("lbUnidad_6"));
         lbUnidad_6->setGeometry(QRect(670, 500, 31, 16));
-        lbUnidad_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_6->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_6->setFont(font);
         lbUnidad_6->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_6 = new WLabel(B2);
         lbVal_6->setObjectName(QString::fromUtf8("lbVal_6"));
         lbVal_6->setGeometry(QRect(631, 500, 41, 16));
-        lbVal_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_6->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_6->setFont(font);
         lbVal_6->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_7 = new WLabel(B2);
         lbUnidad_7->setObjectName(QString::fromUtf8("lbUnidad_7"));
         lbUnidad_7->setGeometry(QRect(700, 410, 31, 16));
-        lbUnidad_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_7->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_7->setFont(font);
         lbUnidad_7->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_7 = new WLabel(B2);
         lbVal_7->setObjectName(QString::fromUtf8("lbVal_7"));
         lbVal_7->setGeometry(QRect(661, 410, 41, 16));
-        lbVal_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_7->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_7->setFont(font);
         lbVal_7->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_8 = new WLabel(B2);
         lbUnidad_8->setObjectName(QString::fromUtf8("lbUnidad_8"));
         lbUnidad_8->setGeometry(QRect(700, 40, 31, 16));
-        lbUnidad_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_8->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_8->setFont(font);
         lbUnidad_8->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_8 = new WLabel(B2);
         lbVal_8->setObjectName(QString::fromUtf8("lbVal_8"));
         lbVal_8->setGeometry(QRect(650, 40, 41, 16));
-        lbVal_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_8->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_8->setFont(font);
         lbVal_8->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_9 = new WLabel(B2);
         lbUnidad_9->setObjectName(QString::fromUtf8("lbUnidad_9"));
         lbUnidad_9->setGeometry(QRect(650, 54, 31, 16));
-        lbUnidad_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_9->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_9->setFont(font);
         lbUnidad_9->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_9 = new WLabel(B2);
         lbVal_9->setObjectName(QString::fromUtf8("lbVal_9"));
         lbVal_9->setGeometry(QRect(600, 54, 41, 16));
-        lbVal_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_9->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_9->setFont(font);
         lbVal_9->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbUnidad_10 = new WLabel(B2);
         lbUnidad_10->setObjectName(QString::fromUtf8("lbUnidad_10"));
         lbUnidad_10->setGeometry(QRect(740, 54, 31, 16));
-        lbUnidad_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbUnidad_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbUnidad_10->setFont(font);
         lbUnidad_10->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVal_10 = new WLabel(B2);
         lbVal_10->setObjectName(QString::fromUtf8("lbVal_10"));
         lbVal_10->setGeometry(QRect(690, 54, 41, 16));
-        lbVal_10->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        lbVal_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"color: rgb(255, 255, 255);"));
         lbVal_10->setFont(font);
         lbVal_10->setProperty("Alineacion", QVariant(WLabel::Centro));
 
