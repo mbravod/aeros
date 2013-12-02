@@ -5,6 +5,7 @@ Analog24_S2::Analog24_S2(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Analog24_S2)
 {
+    flag = 0;
     ui->setupUi(this);
     //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );

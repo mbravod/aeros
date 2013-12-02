@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digital16.ui'
 **
-** Created: Mon 2. Dec 16:27:59 2013
+** Created: Mon 2. Dec 17:00:17 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -2307,6 +2307,8 @@ public:
         btnCerrar_2->setGeometry(QRect(120, 20, 101, 41));
         btnCerrar_2->setFont(font3);
         btnCerrar_2->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
+        btnCerrar_2->raise();
+        btnProx_2->raise();
 
         retranslateUi(Digital16);
 

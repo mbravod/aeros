@@ -7644,6 +7644,8 @@ p, li { white-space: pre-wrap; }
      <string>CERRAR</string>
     </property>
    </widget>
+   <zorder>btnCerrar_2</zorder>
+   <zorder>btnProx_2</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

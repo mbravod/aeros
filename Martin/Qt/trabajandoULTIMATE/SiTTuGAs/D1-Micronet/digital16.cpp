@@ -63,6 +63,7 @@ void Digital16::siguiente()
             flag = 0;
      break;
     }
+    update();
 }
 void Digital16::mousePressEvent(QMouseEvent *event)
 {

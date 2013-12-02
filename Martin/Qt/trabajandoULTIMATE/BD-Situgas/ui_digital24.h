@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digital24.ui'
 **
-** Created: Mon 2. Dec 16:27:59 2013
+** Created: Mon 2. Dec 17:24:03 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -38,7 +38,6 @@ public:
     WLabel *lbTit_22;
     WLabel *lbUni_16;
     WLabel *lbUni_20;
-    QPushButton *btProx;
     WLabel *lbNum_23;
     WLabel *lbTit_21;
     WLabel *lbUni_22;
@@ -95,7 +94,6 @@ public:
     WLabel *lbTit_9;
     WLabel *lbNumDes_3;
     WLabel *lbUni_9;
-    QPushButton *btCerrar;
     WLabel *lbTit_7;
     WLabel *lbNum_9;
     WLabel *lbTit_5;
@@ -334,6 +332,9 @@ public:
     WLabel *lbTit_71;
     WLabel *lbNum_72;
     WLabel *lbTit_72;
+    QFrame *frame;
+    QPushButton *btCerrar;
+    QPushButton *btProx;
 
     void setupUi(QWidget *Digital24)
     {
@@ -345,7 +346,7 @@ public:
         Digital24->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
         panel1 = new QFrame(Digital24);
         panel1->setObjectName(QString::fromUtf8("panel1"));
-        panel1->setGeometry(QRect(0, 0, 485, 590));
+        panel1->setGeometry(QRect(0, 0, 485, 530));
         panel1->setFrameShape(QFrame::StyledPanel);
         panel1->setFrameShadow(QFrame::Raised);
         lbTit_19 = new WLabel(panel1);
@@ -417,16 +418,6 @@ public:
         lbUni_20->setStyleSheet(QString::fromUtf8(""));
         lbUni_20->setFont(font);
         lbUni_20->setProperty("Alineacion", QVariant(WLabel::Izquierda));
-        btProx = new QPushButton(panel1);
-        btProx->setObjectName(QString::fromUtf8("btProx"));
-        btProx->setGeometry(QRect(283, 536, 101, 33));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Verdana"));
-        font2.setPointSize(9);
-        font2.setBold(true);
-        font2.setWeight(75);
-        btProx->setFont(font2);
-        btProx->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
         lbNum_23 = new WLabel(panel1);
         lbNum_23->setObjectName(QString::fromUtf8("lbNum_23"));
         lbNum_23->setGeometry(QRect(5, 330, 21, 16));
@@ -467,6 +458,11 @@ public:
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(62, 4, 400, 22));
         label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);"));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Verdana"));
+        font2.setPointSize(9);
+        font2.setBold(true);
+        font2.setWeight(75);
         label_2->setFont(font2);
         label_2->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbNum_17 = new WLabel(panel1);
@@ -749,11 +745,6 @@ public:
         lbUni_9->setStyleSheet(QString::fromUtf8(""));
         lbUni_9->setFont(font);
         lbUni_9->setProperty("Alineacion", QVariant(WLabel::Izquierda));
-        btCerrar = new QPushButton(panel1);
-        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
-        btCerrar->setGeometry(QRect(136, 536, 101, 33));
-        btCerrar->setFont(font2);
-        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
         lbTit_7 = new WLabel(panel1);
         lbTit_7->setObjectName(QString::fromUtf8("lbTit_7"));
         lbTit_7->setGeometry(QRect(30, 173, 340, 16));
@@ -952,7 +943,6 @@ public:
         lbTit_22->raise();
         lbUni_16->raise();
         lbUni_20->raise();
-        btProx->raise();
         lbNum_23->raise();
         lbTit_21->raise();
         lbUni_22->raise();
@@ -1007,7 +997,6 @@ public:
         lbTit_9->raise();
         lbNumDes_3->raise();
         lbUni_9->raise();
-        btCerrar->raise();
         lbTit_7->raise();
         lbNum_9->raise();
         lbTit_5->raise();
@@ -2381,6 +2370,22 @@ public:
         lbTit_71->raise();
         lbNum_72->raise();
         lbTit_72->raise();
+        frame = new QFrame(Digital24);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setGeometry(QRect(0, 510, 488, 80));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        btCerrar = new QPushButton(frame);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(110, 40, 101, 33));
+        btCerrar->setFont(font2);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
+        btProx = new QPushButton(frame);
+        btProx->setObjectName(QString::fromUtf8("btProx"));
+        btProx->setGeometry(QRect(257, 40, 101, 33));
+        btProx->setFont(font2);
+        btProx->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
+        frame->raise();
         panel1_2->raise();
         panel1_3->raise();
         panel1->raise();
@@ -2404,7 +2409,6 @@ public:
         lbTit_22->setText(QApplication::translate("Digital24", "(REFACCI\303\223N)", 0, QApplication::UnicodeUTF8));
         lbUni_16->setText(QApplication::translate("Digital24", "OPN", 0, QApplication::UnicodeUTF8));
         lbUni_20->setText(QApplication::translate("Digital24", "10", 0, QApplication::UnicodeUTF8));
-        btProx->setText(QApplication::translate("Digital24", "PR\303\223X>", 0, QApplication::UnicodeUTF8));
         lbNum_23->setText(QApplication::translate("Digital24", "15", 0, QApplication::UnicodeUTF8));
         lbTit_21->setText(QApplication::translate("Digital24", "(REFACCI\303\223N)", 0, QApplication::UnicodeUTF8));
         lbUni_22->setText(QApplication::translate("Digital24", "10", 0, QApplication::UnicodeUTF8));
@@ -2459,7 +2463,6 @@ public:
         lbTit_9->setText(QApplication::translate("Digital24", "FALLA INTERUPTOR GENERADOR", 0, QApplication::UnicodeUTF8));
         lbNumDes_3->setText(QApplication::translate("Digital24", "0", 0, QApplication::UnicodeUTF8));
         lbUni_9->setText(QString());
-        btCerrar->setText(QApplication::translate("Digital24", "CERRAR", 0, QApplication::UnicodeUTF8));
         lbTit_7->setText(QApplication::translate("Digital24", "CIERRE L.I.E -SALA GEN", 0, QApplication::UnicodeUTF8));
         lbNum_9->setText(QApplication::translate("Digital24", "9", 0, QApplication::UnicodeUTF8));
         lbTit_5->setText(QApplication::translate("Digital24", "CIERRE MONITOR FUEGO/GAS", 0, QApplication::UnicodeUTF8));
@@ -2718,6 +2721,8 @@ public:
         lbNum_72->setText(QApplication::translate("Digital24", "13", 0, QApplication::UnicodeUTF8));
         lbTit_72->setText(QApplication::translate("Digital24", "IMPULSOR NUM 8 VALV PREPARACI\303\223N GAS \n"
 "", 0, QApplication::UnicodeUTF8));
+        btCerrar->setText(QApplication::translate("Digital24", "CERRAR", 0, QApplication::UnicodeUTF8));
+        btProx->setText(QApplication::translate("Digital24", "PR\303\223X>", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

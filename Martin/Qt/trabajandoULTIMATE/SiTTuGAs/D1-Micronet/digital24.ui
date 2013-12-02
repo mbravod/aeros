@@ -34,7 +34,7 @@
      <x>0</x>
      <y>0</y>
      <width>485</width>
-     <height>590</height>
+     <height>530</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -318,30 +318,6 @@
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btProx">
-    <property name="geometry">
-     <rect>
-      <x>283</x>
-      <y>536</y>
-      <width>101</width>
-      <height>33</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 208, 200);</string>
-    </property>
-    <property name="text">
-     <string>PRÓX&gt;</string>
     </property>
    </widget>
    <widget class="WLabel" name="lbNum_23">
@@ -1772,30 +1748,6 @@ background-color: rgb(74, 110, 195);</string>
      <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="btCerrar">
-    <property name="geometry">
-     <rect>
-      <x>136</x>
-      <y>536</y>
-      <width>101</width>
-      <height>33</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 208, 200);</string>
-    </property>
-    <property name="text">
-     <string>CERRAR</string>
-    </property>
-   </widget>
    <widget class="WLabel" name="lbTit_7">
     <property name="geometry">
      <rect>
@@ -2664,7 +2616,6 @@ background-color: rgb(74, 110, 195);</string>
    <zorder>lbTit_22</zorder>
    <zorder>lbUni_16</zorder>
    <zorder>lbUni_20</zorder>
-   <zorder>btProx</zorder>
    <zorder>lbNum_23</zorder>
    <zorder>lbTit_21</zorder>
    <zorder>lbUni_22</zorder>
@@ -2719,7 +2670,6 @@ background-color: rgb(74, 110, 195);</string>
    <zorder>lbTit_9</zorder>
    <zorder>lbNumDes_3</zorder>
    <zorder>lbUni_9</zorder>
-   <zorder>btCerrar</zorder>
    <zorder>lbTit_7</zorder>
    <zorder>lbNum_9</zorder>
    <zorder>lbTit_5</zorder>
@@ -8132,6 +8082,71 @@ background-color: rgb(74, 110, 195);</string>
    <zorder>lbNum_72</zorder>
    <zorder>lbTit_72</zorder>
   </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>510</y>
+     <width>488</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btCerrar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>101</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(212, 208, 200);</string>
+    </property>
+    <property name="text">
+     <string>CERRAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btProx">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>40</y>
+      <width>101</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(212, 208, 200);</string>
+    </property>
+    <property name="text">
+     <string>PRÓX&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
   <zorder>panel1_2</zorder>
   <zorder>panel1_3</zorder>
   <zorder>panel1</zorder>
