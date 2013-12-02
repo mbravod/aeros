@@ -16,7 +16,7 @@ void AWMultiObject::init(){
     this->m_OnColor = Red;
     this->m_eType = VH2;
 
-    eTypeList<<"vh2"<<"cirled"<<"valcuad2"<<"valcuad3"<<"valsimp3"<<"valsimp4"<<"valele2"<<"agitador"<<"inter"<<"interm"<<"bombata"<<"bombatb"<<"bombatc"<<"bombatd"<<"bombate"<<"regta"<<"spring"<<"cirline"<<"telem"<<"square"<<"aspta"<<"asptb"<<"flame";
+    eTypeList<<"vh2"<<"cirled"<<"valcuad2"<<"valcuad3"<<"valsimp3"<<"valsimp4"<<"valele2"<<"agitador"<<"inter"<<"interm"<<"bombata"<<"bombatb"<<"bombatc"<<"bombatd"<<"bombate"<<"regta"<<"spring"<<"cirline"<<"telem"<<"square"<<"aspta"<<"asptb"<<"flame"<<"bombaft"<<"triangulo";
     eColorList<<"Red"<<"Green"<<"Blue"<<"White"<<"Grey"<<"Yellow"<<"Purple"<<"Brown"<<"Orange"<<"Black";
 
     //flag=loadSvgFile(":/default/resources/VH2.svg");//Cambiar Ruta en base a objeto

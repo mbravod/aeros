@@ -2,7 +2,7 @@
 #define FLAMA_SECTORL_H
 
 
-#include "../Base/Base.h"
+#include "Base.h"
 #include <QString>
 #include <QtSvg/QSvgRenderer>
 #include <QPainter>

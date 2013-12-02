@@ -61,7 +61,7 @@ bool wElemento_CPlugin::isContainer() const
 
 QString wElemento_CPlugin::domXml() const
 {
-    return QLatin1String("<widget class=\"wElemento_C\" name=\"wElemento_C\">\n</widget>\n");
+    return QLatin1String("<widget class=\"wElemento_C\" name=\"w_Elemento_C\">\n</widget>\n");
 }
 
 QString wElemento_CPlugin::includeFile() const

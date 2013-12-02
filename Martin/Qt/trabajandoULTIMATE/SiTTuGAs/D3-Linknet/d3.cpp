@@ -14,10 +14,10 @@ D3::D3(SiTTuGAs *siTTuGAs, ShrdMem *shrdMem) :
         ctrVen[i] = false;
     }
     connect(ui->btind1,SIGNAL(clicked()),this,SLOT(SLTanalog04()));
-    connect(ui->btind1_2,SIGNAL(clicked()),this,SLOT(SLTanalog08()));
+/*    connect(ui->btind1_2,SIGNAL(clicked()),this,SLOT(SLTanalog08()));
     connect(ui->btind1_3,SIGNAL(clicked()),this,SLOT(SLTanalog08_2()));
     connect(ui->btnind1_4,SIGNAL(clicked()),this,SLOT(SLTanalog16()));
-    connect(ui->btnind1_5,SIGNAL(clicked()),this,SLOT(SLTanalog16_2()));
+    connect(ui->btnind1_5,SIGNAL(clicked()),this,SLOT(SLTanalog16_2()));*/
 
     connect(ui->btMicroNet,SIGNAL(clicked()),this,SLOT(sltirA()));
 
@@ -113,9 +113,13 @@ void D3::ctlVenActivacion(int id)
     ctrVen[id] = false;
     venActual = -1;
 }
-void D3::SLTanalog04(){
+
+void D3::SLTanalog04()
+{
     //Validamos que no se genere mas de una instancia de la sub-ventana
-    if(ctrVen[analog04] == false){
+    if(ctrVen[analog04] == false)
+    {
+
         eAnalog04 = new N3N18(this);
         eAnalog04->setGeometry(493,50,100,100);
         eAnalog04->show();
@@ -126,9 +130,9 @@ void D3::SLTanalog04(){
             cerrarVentana(venActual);
         }
         venActual = analog04;
-    }// Indicamos que ventana se ha seleccionado
-
+    }// Indicamos que ventana se ha seleccionado*/
 }
+
 void D3::SLTanalog08()
 {
     //Validamos que no se genere mas de una instancia de la sub-ventana

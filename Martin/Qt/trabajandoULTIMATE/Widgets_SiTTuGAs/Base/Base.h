@@ -11,11 +11,11 @@ class Base : public QWidget
 {
     Q_OBJECT
     //Macro para declarar propiedades de la clase inherentes a QOBJECT()
-    //Q_PROPERTY(QString id READ getId WRITE setId )
-    //Q_PROPERTY(int tipo READ getTipo WRITE setTipo)
+    Q_PROPERTY(QString id READ getId WRITE setId )
+    Q_PROPERTY(int tipo READ getTipo WRITE setTipo)
     //Q_PROPERTY(int indice READ getIndice WRITE setIndice)
     Q_PROPERTY(int value READ getValue WRITE setValue)
-    //Q_PROPERTY (bool isUpdateable READ isUpdateable WRITE setUpdateable)
+    Q_PROPERTY (bool isUpdateable READ isUpdateable WRITE setUpdateable)
 
 
 public:

@@ -14,6 +14,7 @@ using namespace std;
 
 void CARGA_VARIABLES();
 
+double K_ADECUACION_BETA3_CB = 0, BETA3_CONTROL_CB = 0, TAO_BETA3_CB = 0;
 
 FILE *arc = NULL;
 FILE *arc1 = NULL;
@@ -5270,7 +5271,7 @@ void CARGA_VARIABLES()
 	CIALFA1_CA = .5;
 	CIAREA1_CA = 1;				// recien colocada 
 	CIBETA3CA =1;
-	CONTROL_BETA3_CA_CONTROL = 1
+	CONTROL_BETA3_CA_CONTROL = 1;
 	DELTA_PRESION_CA = 1;
 	FCV_6871 = 1;
 	FCV_6873 = 1;	

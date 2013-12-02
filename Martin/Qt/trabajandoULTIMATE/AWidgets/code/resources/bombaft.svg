@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="bombaft" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" sodipodi:docname="intercambiador_calor.svg" inkscape:version="0.48.4 r9939"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91.15px" height="44.8px"
+	 viewBox="0 0 91.15 44.8" enable-background="new 0 0 91.15 44.8" xml:space="preserve">
+<sodipodi:namedview  id="base" bordercolor="#666666" showguides="true" borderopacity="1.0" inkscape:zoom="5.4401948" inkscape:cx="81.682947" inkscape:cy="1.8074313" showgrid="false" pagecolor="#ffffff" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:document-units="px" inkscape:current-layer="d2" inkscape:guide-bbox="true" inkscape:window-width="1366" inkscape:window-height="746" inkscape:window-maximized="1">
+	<sodipodi:guide  id="guide4299" orientation="1,0" position="85.750605,26.837274"></sodipodi:guide>
+</sodipodi:namedview>
+<g id="bombaftBlack" transform="translate(0,-1007.5622)" inkscape:label="d0" inkscape:groupmode="layer">
+	<g id="g4304" transform="matrix(0.99990925,0,0,1,-35.084835,-18.330201)">
+		<g id="g5001" transform="matrix(1.3697366,0,0,1.4567211,61.435498,1018.406)">
+			
+				<linearGradient id="polygon28_1_" gradientUnits="userSpaceOnUse" x1="-165.7297" y1="362.0883" x2="-165.7297" y2="351.5992" gradientTransform="matrix(1.8758 0 0 2.122 293.591 -744.4239)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			<polygon id="polygon28" fill="url(#polygon28_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-15.703,23.844 -15.703,25.045 -18.873,25.045 -18.873,11.934 -15.703,11.934 -15.703,13.144 			"/>
+			
+				<linearGradient id="path91_1_" gradientUnits="userSpaceOnUse" x1="-187.2102" y1="363.7951" x2="-187.2102" y2="353.3073" gradientTransform="matrix(2.1636 0 0 2.108 397.4307 -742.9939)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.442,23.809h-16.109v-10.63H0.442V23.809z"/>
+		</g>
+		
+			<path id="rect4301" sodipodi:nodetypes="cccc" inkscape:connector-curvature="0" fill="#CCCCCC" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" d="
+			M80.741,1049.88l20.542,20.313H60.2L80.741,1049.88z"/>
+		
+			<path id="path4036" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" stroke="#1A1A1A" stroke-width="0.9336" stroke-linecap="round" d="
+			M100.556,1045.495c0,10.605-9.011,19.204-20.124,19.204s-20.124-8.599-20.124-19.204s9.011-19.203,20.124-19.203
+			C91.545,1026.293,100.556,1034.89,100.556,1045.495z"/>
+		<g id="g4094">
+			
+				<path id="path4036-7" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.139,1052.148c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C82.862,1045.164,86.139,1048.291,86.139,1052.148z"/>
+			
+				<path id="path4036-7-9" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.306,1037.833c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C83.029,1030.849,86.306,1033.976,86.306,1037.833z"/>
+		</g>
+		<g id="g5001-9" transform="matrix(-1.7091543,0,0,1.4567211,93.434896,1018.4431)">
+			
+				<linearGradient id="polygon28-0_1_" gradientUnits="userSpaceOnUse" x1="-23.5181" y1="362.0802" x2="-23.5181" y2="351.5919" gradientTransform="matrix(2.9207 0 0 2.122 51.4009 -744.4074)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			<polygon id="polygon28-0" fill="url(#polygon28-0_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-18.873,11.934 -15.703,11.934 -15.703,13.144 -15.703,23.844 -15.703,25.045 -18.873,25.045 			"/>
+			
+				<linearGradient id="path91-0_1_" gradientUnits="userSpaceOnUse" x1="-6.7337" y1="363.787" x2="-6.7337" y2="353.2982" gradientTransform="matrix(3.3688 0 0 2.108 16.554 -742.9777)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91-0" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91-0_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.173,23.809h-15.84v-10.63h15.84C4.496,15.11,4.472,21.654,0.173,23.809z"/>
+		</g>
+	</g>
+</g>
+<g id="bombaftGreen" transform="translate(0,19.490001)" inkscape:label="d1" inkscape:groupmode="layer">
+	<g id="g4304-1" transform="matrix(0.99990925,0,0,1,-35.084812,-1045.3824)">
+		<g id="g5001-5" transform="matrix(1.3697366,0,0,1.4567211,61.435498,1018.406)">
+			
+				<linearGradient id="polygon28-4_1_" gradientUnits="userSpaceOnUse" x1="-165.7297" y1="362.0883" x2="-165.7297" y2="351.5992" gradientTransform="matrix(1.8758 0 0 2.122 293.591 -744.424)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			<polygon id="polygon28-4" fill="url(#polygon28-4_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-18.873,11.934 -15.703,11.934 -15.703,13.144 -15.703,23.844 -15.703,25.045 -18.873,25.045 			"/>
+			
+				<linearGradient id="path91-2_1_" gradientUnits="userSpaceOnUse" x1="-187.2102" y1="363.7952" x2="-187.2102" y2="353.3074" gradientTransform="matrix(2.1636 0 0 2.108 397.4307 -742.994)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91-2" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91-2_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.442,23.809h-16.109v-10.63H0.442V23.809z"/>
+		</g>
+		
+			<path id="rect4301-0" sodipodi:nodetypes="cccc" inkscape:connector-curvature="0" fill="#CCCCCC" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" d="
+			M80.741,1049.88l20.542,20.313H60.2L80.741,1049.88z"/>
+		
+			<path id="path4036-9" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#00FF00" stroke="#1A1A1A" stroke-width="0.9336" stroke-linecap="round" d="
+			M100.556,1045.496c0,10.605-9.011,19.203-20.124,19.203s-20.124-8.598-20.124-19.203s9.011-19.203,20.124-19.203
+			S100.556,1034.89,100.556,1045.496z"/>
+		<g id="g4094-7">
+			
+				<path id="path4036-7-3" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.139,1052.148c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C82.862,1045.164,86.139,1048.291,86.139,1052.148z"/>
+			
+				<path id="path4036-7-9-7" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.306,1037.833c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C83.029,1030.849,86.306,1033.976,86.306,1037.833z"/>
+		</g>
+		<g id="g5001-9-2" transform="matrix(-1.7091543,0,0,1.4567211,93.434896,1018.4431)">
+			
+				<linearGradient id="polygon28-0-6_1_" gradientUnits="userSpaceOnUse" x1="-23.5181" y1="362.0803" x2="-23.5181" y2="351.592" gradientTransform="matrix(2.9207 0 0 2.122 51.4009 -744.4075)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<polygon id="polygon28-0-6" fill="url(#polygon28-0-6_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-15.703,23.844 -15.703,25.045 -18.873,25.045 -18.873,11.934 -15.703,11.934 -15.703,13.144 			"/>
+			
+				<linearGradient id="path91-0-0_1_" gradientUnits="userSpaceOnUse" x1="-6.7336" y1="363.7871" x2="-6.7336" y2="353.2983" gradientTransform="matrix(3.3688 0 0 2.108 16.554 -742.9778)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91-0-0" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91-0-0_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.173,23.809h-15.84v-10.63h15.84C4.496,15.11,4.472,21.655,0.173,23.809z"/>
+		</g>
+	</g>
+</g>
+<g id="bombaftRed" transform="translate(0,19.490001)" inkscape:label="d2" inkscape:groupmode="layer">
+	<g id="g4304-0" transform="matrix(0.99990925,0,0,1,-35.084812,-1045.3824)">
+		<g id="g5001-94" transform="matrix(1.3697366,0,0,1.4567211,61.435498,1018.406)">
+			
+				<linearGradient id="polygon28-7_1_" gradientUnits="userSpaceOnUse" x1="-165.7297" y1="362.0883" x2="-165.7297" y2="351.5992" gradientTransform="matrix(1.8758 0 0 2.122 293.591 -744.424)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			<polygon id="polygon28-7" fill="url(#polygon28-7_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-15.703,13.144 -15.703,23.844 -15.703,25.045 -18.873,25.045 -18.873,11.934 -15.703,11.934 			"/>
+			
+				<linearGradient id="path91-8_1_" gradientUnits="userSpaceOnUse" x1="-187.2102" y1="363.7952" x2="-187.2102" y2="353.3074" gradientTransform="matrix(2.1636 0 0 2.108 397.4307 -742.994)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91-8" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91-8_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.442,23.809h-16.109v-10.63H0.442V23.809z"/>
+		</g>
+		
+			<path id="rect4301-3" sodipodi:nodetypes="cccc" inkscape:connector-curvature="0" fill="#CCCCCC" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" d="
+			M80.741,1049.88l20.542,20.313H60.2L80.741,1049.88z"/>
+		
+			<path id="path4036-5" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#FF0000" stroke="#1A1A1A" stroke-width="0.9336" stroke-linecap="round" d="
+			M100.556,1045.496c0,10.605-9.011,19.203-20.124,19.203s-20.124-8.598-20.124-19.203s9.011-19.203,20.124-19.203
+			S100.556,1034.89,100.556,1045.496z"/>
+		<g id="g4094-1">
+			
+				<path id="path4036-7-2" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.139,1052.148c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C82.862,1045.164,86.139,1048.291,86.139,1052.148z"/>
+			
+				<path id="path4036-7-9-0" sodipodi:ry="24.146437" sodipodi:rx="21.793182" sodipodi:cy="23.877584" sodipodi:cx="84.000954" sodipodi:type="arc" fill="#808080" stroke="#1A1A1A" stroke-width="2.5668" stroke-linecap="round" d="
+				M86.306,1037.833c0,3.857-3.278,6.984-7.319,6.984c-4.042,0-7.319-3.127-7.319-6.984c0-3.857,3.277-6.984,7.319-6.984
+				C83.029,1030.849,86.306,1033.976,86.306,1037.833z"/>
+		</g>
+		<g id="g5001-9-1" transform="matrix(-1.7091543,0,0,1.4567211,93.434896,1018.4431)">
+			
+				<linearGradient id="polygon28-0-64_1_" gradientUnits="userSpaceOnUse" x1="-23.5181" y1="362.0803" x2="-23.5181" y2="351.592" gradientTransform="matrix(2.9207 0 0 2.122 51.4009 -744.4075)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<polygon id="polygon28-0-64" fill="url(#polygon28-0-64_1_)" stroke="#000000" stroke-width="0.7031" stroke-linejoin="round" points="
+				-18.873,25.045 -18.873,11.934 -15.703,11.934 -15.703,13.144 -15.703,23.844 -15.703,25.045 			"/>
+			
+				<linearGradient id="path91-0-06_1_" gradientUnits="userSpaceOnUse" x1="-6.7336" y1="363.7871" x2="-6.7336" y2="353.2983" gradientTransform="matrix(3.3688 0 0 2.108 16.554 -742.9778)">
+				<stop  offset="0" style="stop-color:#999999"/>
+				<stop  offset="0.2152" style="stop-color:#CACACA"/>
+				<stop  offset="0.4303" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.5378" style="stop-color:#F2F2F2"/>
+				<stop  offset="0.7373" style="stop-color:#CFCFCF"/>
+				<stop  offset="1" style="stop-color:#999999"/>
+			</linearGradient>
+			
+				<path id="path91-0-06" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="url(#path91-0-06_1_)" stroke="#000000" stroke-width="0.7004" d="
+				M0.173,23.809h-15.84v-10.63h15.84C4.496,15.11,4.472,21.655,0.173,23.809z"/>
+		</g>
+	</g>
+</g>
+</svg>

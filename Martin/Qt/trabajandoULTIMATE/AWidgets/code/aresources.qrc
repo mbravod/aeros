@@ -24,5 +24,7 @@
         <file>resources/asptb.svg</file>
         <file>resources/aspta.svg</file>
         <file>resources/flame.svg</file>
+        <file>resources/bombaft.svg</file>
+        <file>resources/triangulo.svg</file>
     </qresource>
 </RCC>

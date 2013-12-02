@@ -61,7 +61,7 @@ bool wVentiladorPlugin::isContainer() const
 
 QString wVentiladorPlugin::domXml() const
 {
-    return QLatin1String("<widget class=\"wVentilador\" name=\"wVentilador\">\n</widget>\n");
+    return QLatin1String("<widget class=\"wVentilador\" name=\"w_Ventilador\">\n</widget>\n");
 }
 
 QString wVentiladorPlugin::includeFile() const

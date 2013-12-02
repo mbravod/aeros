@@ -61,7 +61,7 @@ bool wBombaPlugin::isContainer() const
 
 QString wBombaPlugin::domXml() const
 {
-    return QLatin1String("<widget class=\"wBomba\" name=\"wBomba\">\n</widget>\n");
+    return QLatin1String("<widget class=\"wBomba\" name=\"w_Bomba\">\n</widget>\n");
 }
 
 QString wBombaPlugin::includeFile() const

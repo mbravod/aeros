@@ -1,7 +1,7 @@
 #ifndef FLAMA_SECTORJ_H
 #define FLAMA_SECTORJ_H
 
-#include "../Base/Base.h"
+#include "Base.h"
 #include <QString>
 #include <QtSvg/QSvgRenderer>
 #include <QPainter>

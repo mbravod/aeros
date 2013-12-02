@@ -6,34 +6,25 @@ TEMPLATE = app
 
 INCLUDEPATH += ../awidgets/awidgets
 INCLUDEPATH += ../awidgets/bases
-#Para los nuevos widgets que se crearon
-INCLUDEPATH += ../awidgets/EWidgets/ewidgets
-INCLUDEPATH += ../awidgets/bases/EWidgets/base
 
 INCLUDEPATH += ../Widgets_SiTTuGAs/Base
 INCLUDEPATH += ../Widgets_SiTTuGAs/Header
 
-INCLUDEPATH += ../awidgets/bases/Widgets Componentes/Componentes/Base
-INCLUDEPATH += ../awidgets/bases/Widgets Componentes/Componentes/Header
+INCLUDEPATH += ../Componentes/Base
+INCLUDEPATH += ../Componentes/Header
 
 win32-g++:{
 LIBS += ../BD-Widgets/libawidgets.a
 LIBS += ../BD-Widgets/libbases.a
-
-#Elementos de los widgets generados
-#LIBS += ../BD-Widgets/BD-EWidgets Falta generar esta isntancia en el widget personalizado
-#LIBS += ../BD-Widgets/libbases.a Falta generar esta isntancia en el widget personalizado
 }
 
 win32-msvc*:{
 LIBS += ../BD-Widgets/awidgets.lib
 LIBS += ../BD-Widgets/bases.lib
-#Elementos necesarios para la compilacion con MSVC
-LIBS += ../BD-Widgets/BD-EWidgets/ewidgets.lib
-LIBS += ../BD-Widgets/BD-EWidgets/base.lib
+
 #Librerias de los nuevos elementos de la interfaz
-LIBS += ../BD-Widgets/BD-Componentes/Base.lib
-LIBS += ../BD-Widgets/BD-Componentes/Header.lib
+LIBS += ../BD-Componentes/Base.lib
+LIBS += ../BD-Componentes/Header.lib
 
 #Elementos de los sectores para las flamas
 LIBS += ../BD-WidgetsSiTTuGAs/Base.lib
@@ -198,7 +189,6 @@ SOURCES += main.cpp\
     D3-Linknet/d3.cpp \
     N1/zonaalim.cpp \
     N2/sisaguares.cpp \
-    N3/sisgascomb.cpp \
     N4/widget.cpp \
     N5/enfriador.cpp \
     N6/compresorgas.cpp \
@@ -208,6 +198,7 @@ SOURCES += main.cpp\
     Extras/desc_2.cpp \
     Extras/bob_digital_pf1.cpp \
     Extras/bob_digital_pf.cpp \
+    N3/sisgascomb.cpp \
     D3-Linknet/n3n42.cpp \
     D3-Linknet/n3n41.cpp \
     D3-Linknet/n3n40.cpp \
@@ -555,5 +546,5 @@ RESOURCES += \
     Resources.qrc \
     ../AWidgets/code/aresources.qrc \
     ../Widgets_SiTTuGAs/Code/icons.qrc \
-    ../AWidgets/EWidgets/code/icons.qrc
+    ../Componentes/Code/componentes.qrc
 

@@ -28,8 +28,8 @@ class D3 : public Pantallas
 public:
     explicit D3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
     ~D3();
-public slots:
 
+public slots:
     void SLTanalog04();
     void SLTanalog08();
     void SLTanalog08_2();
