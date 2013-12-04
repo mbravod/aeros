@@ -63,7 +63,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leFrec" native="true">
+  <widget class="WLabel" name="leFrec">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -84,16 +84,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_FREQ_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVCET">
@@ -160,7 +163,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leAmp_B" native="true">
+  <widget class="WLabel" name="leAmp_B">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -181,16 +184,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_AMPS_B_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leMV_BT">
@@ -231,7 +237,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVolt_BC" native="true">
+  <widget class="WLabel" name="leVolt_BC">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -252,16 +258,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VOLT_BC_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVA_AT">
@@ -530,7 +539,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVA_A" native="true">
+  <widget class="WLabel" name="leVA_A">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -551,16 +560,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VA_A_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVA_TotalesT">
@@ -741,7 +753,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leMV_Total" native="true">
+  <widget class="WLabel" name="leMV_Total">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -762,16 +774,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VARS_T_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leMV_CT">
@@ -850,7 +865,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leMWH" native="true">
+  <widget class="WLabel" name="leMWH">
    <property name="geometry">
     <rect>
      <x>829</x>
@@ -871,16 +886,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_CONO_MOVV_MWHRSHI_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leFrecBU">
@@ -921,7 +939,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leFP" native="true">
+  <widget class="WLabel" name="leFP">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -942,16 +960,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_PF_T_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ABU">
@@ -1111,7 +1132,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leFrecB" native="true">
+  <widget class="WLabel" name="leFrecB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1132,16 +1153,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_N3N18_AI_BFX_AI_420_L</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="lb52uT">
@@ -1182,7 +1206,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leMV_B" native="true">
+  <widget class="WLabel" name="leMV_B">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1203,19 +1227,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VARS_B_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leMV_C" native="true">
+  <widget class="WLabel" name="leMV_C">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1236,19 +1263,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VARS_C_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leVoltB" native="true">
+  <widget class="WLabel" name="leVoltB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1269,28 +1299,31 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_N3N18_AI_BUX_AI_420_L</string>
+   </property>
+   <property name="tipo">
+    <number>-1</number>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="tipo" stdset="0">
-    <number>-1</number>
-   </property>
    <property name="indice" stdset="0">
     <number>-1</number>
    </property>
-   <property name="value" stdset="0">
-    <number>-1</number>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leVCE" native="true">
+  <widget class="WLabel" name="leVCE">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1311,19 +1344,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_HMI_INTER_EVX_CALC_PLUS</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leMV_A" native="true">
+  <widget class="WLabel" name="leMV_A">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1344,16 +1380,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VARS_A_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_BU">
@@ -1394,7 +1433,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVolt_AC" native="true">
+  <widget class="WLabel" name="leVolt_AC">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1415,19 +1454,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VOLT_CA_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leVA_Totales" native="true">
+  <widget class="WLabel" name="leVA_Totales">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1448,16 +1490,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VA_T_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ACT">
@@ -1612,7 +1657,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVA_B" native="true">
+  <widget class="WLabel" name="leVA_B">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1633,19 +1678,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VA_B_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leVat_Total" native="true">
+  <widget class="WLabel" name="leVat_Total">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1666,16 +1714,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_WATTS_T_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVat_TotalU">
@@ -1716,7 +1767,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leAmp_C" native="true">
+  <widget class="WLabel" name="leAmp_C">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1737,16 +1788,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_AMPS_C_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_AT">
@@ -1825,7 +1879,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVA_C" native="true">
+  <widget class="WLabel" name="leVA_C">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -1846,16 +1900,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VA_C_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leAVRT">
@@ -1960,7 +2017,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leACE" native="true">
+  <widget class="WLabel" name="leACE">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -1981,19 +2038,22 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_HMI_INTER_EAX_CALC_PLUS</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leAVR" native="true">
+  <widget class="WLabel" name="leAVR">
    <property name="geometry">
     <rect>
      <x>656</x>
@@ -2014,22 +2074,25 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_N3N39_B1_AVRINAUTO</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
    <property name="isUpdateable" stdset="0">
     <bool>false</bool>
    </property>
-   <property name="text" stdset="0">
-    <string/>
-   </property>
   </widget>
-  <widget class="WLabel" name="leVat_B" native="true">
+  <widget class="WLabel" name="leVat_B">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2050,16 +2113,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_MW_B_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="lbCerrado2">
@@ -2143,7 +2209,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVolt_AB" native="true">
+  <widget class="WLabel" name="leVolt_AB">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2164,16 +2230,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_VOLT_AB_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVolt_ACU">
@@ -2214,7 +2283,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leAmp_A" native="true">
+  <widget class="WLabel" name="leAmp_A">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -2235,16 +2304,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_AMPS_A_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leAmp_CU">
@@ -2551,7 +2623,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVat_A" native="true">
+  <widget class="WLabel" name="leVat_A">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2572,16 +2644,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_MW_A_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVat_CT">
@@ -2736,7 +2811,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leVat_C" native="true">
+  <widget class="WLabel" name="leVat_C">
    <property name="geometry">
     <rect>
      <x>217</x>
@@ -2757,16 +2832,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_GEN_MW_C_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="leVCEU">
@@ -2883,7 +2961,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="WLabel" name="leMVH" native="true">
+  <widget class="WLabel" name="leMVH">
    <property name="geometry">
     <rect>
      <x>829</x>
@@ -2904,16 +2982,19 @@
      <height>23</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_CONO_MOV_VARHRSH_A_NAME</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
    <property name="font">
     <font>
      <pointsize>9</pointsize>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text" stdset="0">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="lb522T">
@@ -3310,7 +3391,7 @@
     <string>IMP PANT</string>
    </property>
   </widget>
-  <widget class="WLabel" name="etiqueta" native="true">
+  <widget class="WLabel" name="etiqueta">
    <property name="geometry">
     <rect>
      <x>410</x>
@@ -3415,7 +3496,7 @@
  <customwidgets>
   <customwidget>
    <class>WLabel</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>wlabel.h</header>
   </customwidget>
  </customwidgets>

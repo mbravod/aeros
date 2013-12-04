@@ -249,6 +249,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_NORM_1_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>RAMPA NPT A CARGA MIN</string>
      </property>
@@ -275,6 +278,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_NORM_3_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>INTERRUPTOR ABIERTO</string>
      </property>
@@ -300,6 +306,9 @@
        <width>261</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_TIMER_CD_ON_B_NAME</string>
      </property>
      <property name="text">
       <string>CRON CICLO ENFRIAMIENTO ACTIVO</string>
@@ -425,6 +434,9 @@
        <width>235</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SHUTDOWN_STEPIDLE_B_NAME</string>
      </property>
      <property name="text">
       <string>DESACEL A CARGA MIN ACTIVO</string>
@@ -750,6 +762,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SHUTDOWN_DOSTEPIDLE</string>
+     </property>
      <property name="text">
       <string>ESPERAR NÚCLEO RALENTÍ</string>
      </property>
@@ -775,6 +790,9 @@
        <width>281</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_ST1_2_SFC_STEP</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO DE 10 SEG A REESTAB</string>
@@ -927,6 +945,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_ES_2_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>ESPERAR QUE VEL BAJE ANTES DE MOTOR</string>
      </property>
@@ -1009,6 +1030,9 @@
        <width>211</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_ES_1_SFC_STEP</string>
      </property>
      <property name="text">
       <string>APAGADO DE EMERGENCIA</string>
@@ -1150,6 +1174,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_MOTOR_2_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
      </property>
@@ -1233,6 +1260,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_MOTOR_5_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>INICIAR CRONO ROTACIÓN ENFR</string>
      </property>
@@ -1258,6 +1288,9 @@
        <width>191</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_MOTOR_3_SFC_STEP</string>
      </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD</string>
@@ -1285,6 +1318,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_START_PERM_N2SCT300_B_NAME</string>
+     </property>
      <property name="text">
       <string>ESPERAR QUE N25 ABAJO DE 300 RPM</string>
      </property>
@@ -1311,6 +1347,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_MOTOR_6_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>LISTO PARA ARRANQUE CALIENTE</string>
      </property>
@@ -1336,6 +1375,9 @@
        <width>311</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_MOTOR_4_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM</string>
@@ -1482,7 +1524,7 @@
  <customwidgets>
   <customwidget>
    <class>WCheckBox</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>wcheckbox.h</header>
   </customwidget>
  </customwidgets>

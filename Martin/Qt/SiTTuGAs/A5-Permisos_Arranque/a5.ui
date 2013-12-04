@@ -151,6 +151,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_NO_SHTDNS_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -193,6 +196,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_LOK_4HROFF_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -211,6 +217,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_CAL_MODE_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -277,6 +286,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_TLUB_OK_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -319,6 +331,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_TLO_TNKLVL_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -337,6 +352,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_HYD_ST_OK_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -380,6 +398,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_GLUBTNKTMP_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -422,6 +443,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_FORCE_MODE_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -463,6 +487,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_STATOR_PRM_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -529,6 +556,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_PS46089_OK_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -547,6 +577,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_FANS_OK_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -590,6 +623,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_WWNOTANCTIVE_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -631,6 +667,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_CUSTPRM_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -674,6 +713,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_GLUBTNKLVL_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -715,6 +757,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OFF_RUN_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -809,6 +854,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START01_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -851,6 +899,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START02_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -892,6 +943,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START03_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -958,6 +1012,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START04_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -976,6 +1033,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START05_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1042,6 +1102,9 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START06_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1060,6 +1123,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START07_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1125,6 +1191,9 @@
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START08_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1431,6 +1500,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_FUELDVR_OK</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1473,6 +1545,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_VMIN_STOP</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1491,6 +1566,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_FUELPRJOK</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1557,6 +1635,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_FUELSYSOK</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1599,6 +1680,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_SOV_CLSD</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1617,6 +1701,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_MNET_OK_B_NAME</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1660,6 +1747,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_LH_OK_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1702,6 +1792,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_VIB_SYS_OK</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1743,6 +1836,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_REFSATMIN</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1809,6 +1905,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_REFSATMIN</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1827,6 +1926,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_T48_LT400</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1870,6 +1972,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_N25LT300_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1911,6 +2016,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START09</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1954,6 +2062,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START10</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -1995,6 +2106,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START11</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2038,6 +2152,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START12</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -2080,6 +2197,9 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START13</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -2121,6 +2241,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START14</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2186,6 +2309,9 @@ p, li { white-space: pre-wrap; }
       <width>26</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_START_PERM_OK2START15</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2355,7 +2481,7 @@ p, li { white-space: pre-wrap; }
  <customwidgets>
   <customwidget>
    <class>AWMultiObject</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>awmultiobject.h</header>
   </customwidget>
  </customwidgets>

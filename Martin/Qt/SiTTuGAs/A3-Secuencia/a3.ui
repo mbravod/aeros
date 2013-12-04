@@ -249,6 +249,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_OUTOFOP_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>UNIDAD FUERA DE OPERACIÓN</string>
      </property>
@@ -274,6 +277,9 @@
        <width>201</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_VENT_SFC_STEP</string>
      </property>
      <property name="text">
       <string>PURGA DE CARCAZA ACTIVA</string>
@@ -301,6 +307,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_GLUB_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>VERIFICAR SISTEMA LUBRICACION GENERADOR</string>
      </property>
@@ -326,6 +335,9 @@
        <width>233</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_HYD_STRT_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
@@ -353,6 +365,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_SPDSEL1_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD EN ARRANCADOR</string>
      </property>
@@ -378,6 +393,9 @@
        <width>231</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_TURB_PRG_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ACTIVAR CRONO PURGA TURBINA</string>
@@ -405,6 +423,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_HI_SPDSEL2_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>ACTIVAR ARRANCADOR LUEGO ENCENDEDORES</string>
      </property>
@@ -430,6 +451,9 @@
        <width>303</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_SPDSEL3_SFC_STEP</string>
      </property>
      <property name="text">
       <string>LUZ APAG DETEC ACEL CORTE D/ARRANCADOR</string>
@@ -457,6 +481,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_FSNL_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>VELOCIDAD MÁXIMA SIN CARGA</string>
      </property>
@@ -482,6 +509,9 @@
        <width>192</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_ACCTOSYNC_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ACELERAR A SINC RELENTI</string>
@@ -509,6 +539,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_WARMUP_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>INICIAR CRONO DE CALENTAMIENTO</string>
      </property>
@@ -534,6 +567,9 @@
        <width>278</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_ATCORE_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ESPERA CONTROL N25 Y NSD GT 1200 RPM</string>
@@ -561,6 +597,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_READY25YNC_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>LISTO PARA CERRAR INTERRUPTOR</string>
      </property>
@@ -586,6 +625,9 @@
        <width>141</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_UNITONLINE_SFC_STEP</string>
      </property>
      <property name="text">
       <string>UNIDAD EN LÍNEA</string>
@@ -964,6 +1006,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_HICRANK_3_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>ACTIVAR BOMBA ALJIBE ACEITE</string>
      </property>
@@ -989,6 +1034,9 @@
        <width>301</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_HICRANK_1_SFC_STEP</string>
      </property>
      <property name="text">
       <string>ACTIVAR SISTEMA LUBRICACIÓN GENERADOR</string>
@@ -1016,6 +1064,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_SFC_STEP_HICRANK_2_SFC_STEP</string>
+     </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
      </property>
@@ -1041,6 +1092,9 @@
        <width>223</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_STEP_HICRANK_4_SFC_STEP</string>
      </property>
      <property name="text">
       <string>SELECCIONAR ALTA VELOCIDAD</string>
@@ -1263,7 +1317,7 @@
  <customwidgets>
   <customwidget>
    <class>WCheckBox</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>wcheckbox.h</header>
   </customwidget>
  </customwidgets>
