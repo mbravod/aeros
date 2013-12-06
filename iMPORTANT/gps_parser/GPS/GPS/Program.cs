@@ -85,7 +85,7 @@ namespace GPS
             //abre el archivo de posiciones
 
             //genera la opcion
-            int opc = 4; //NS LAT //SN LAT //NS MEX
+            int opc = 1; //NS LAT //SN LAT //NS MEX//SN mEX
 
             string inF1 = "";
             if (opc == 1 || opc == 3)
@@ -314,7 +314,7 @@ namespace GPS
                             }
 
                         }
-                        file.Close();
+                     //   file.Close();
                         //Console.WriteLine(line);
                     }
                 }
