@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a5.ui'
 **
-** Created: Mon 2. Dec 19:01:09 2013
+** Created: Thu 5. Dec 21:01:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -768,29 +768,52 @@ public:
         lbIMGFondo->setText(QString());
         lbTexto_2->setText(QApplication::translate("A5", "SIN APAGADOS", 0, QApplication::UnicodeUTF8));
         lbTexto_1->setText(QApplication::translate("A5", "UNIDAD", 0, QApplication::UnicodeUTF8));
+        aLet_1->setId(QApplication::translate("A5", "p_START_PERM_NO_SHTDNS_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_3->setText(QApplication::translate("A5", "BLOQUEO CUATRO HORAS NO ACTIVO", 0, QApplication::UnicodeUTF8));
+        aLet_2->setId(QApplication::translate("A5", "p_START_PERM_LOK_4HROFF_B_NAME", 0, QApplication::UnicodeUTF8));
+        aLet_3->setId(QApplication::translate("A5", "p_START_PERM_CAL_MODE_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_4->setText(QApplication::translate("A5", "NO ES MODO DE CALIBRACI\303\223N", 0, QApplication::UnicodeUTF8));
         lbTexto_5->setText(QApplication::translate("A5", "TEMP ACEITE LUB TURBINA OK", 0, QApplication::UnicodeUTF8));
+        aLet_4->setId(QApplication::translate("A5", "p_START_PERM_TLUB_OK_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_6->setText(QApplication::translate("A5", "NIVEL TANQUE TURBINA OK", 0, QApplication::UnicodeUTF8));
+        aLet_5->setId(QApplication::translate("A5", "p_START_PERM_TLO_TNKLVL_B_NAME", 0, QApplication::UnicodeUTF8));
+        aLet_6->setId(QApplication::translate("A5", "p_START_PERM_HYD_ST_OK_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_7->setText(QApplication::translate("A5", "ARRANCADOR - HID OK", 0, QApplication::UnicodeUTF8));
+        aLet_7->setId(QApplication::translate("A5", "p_START_PERM_GLUBTNKTMP_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_8->setText(QApplication::translate("A5", "TEMP ACEITE LUB GEN OK ", 0, QApplication::UnicodeUTF8));
+        aLet_8->setId(QApplication::translate("A5", "p_START_PERM_FORCE_MODE_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_9->setText(QApplication::translate("A5", "CONTROL MANUAL DO DESHABILITADO", 0, QApplication::UnicodeUTF8));
+        aLet_9->setId(QApplication::translate("A5", "p_START_PERM_STATOR_PRM_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_10->setText(QApplication::translate("A5", "TEMP ESTATOR OK", 0, QApplication::UnicodeUTF8));
         lbTexto_11->setText(QApplication::translate("A5", "PRES DESEMPA\303\221ADOR GEN/GB OK", 0, QApplication::UnicodeUTF8));
+        aLet_10->setId(QApplication::translate("A5", "p_START_PERM_PS46089_OK_B_NAME", 0, QApplication::UnicodeUTF8));
+        aLet_11->setId(QApplication::translate("A5", "p_START_PERM_FANS_OK_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_12->setText(QApplication::translate("A5", "TODO LOS VENT OK P/FUNC", 0, QApplication::UnicodeUTF8));
+        aLet_12->setId(QApplication::translate("A5", "p_START_PERM_WWNOTANCTIVE_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_13->setText(QApplication::translate("A5", "LAVADO AGUA FUERA DE L\303\215NEA NO ACTIVO", 0, QApplication::UnicodeUTF8));
+        aLet_13->setId(QApplication::translate("A5", "p_START_PERM_CUSTPRM_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_14->setText(QApplication::translate("A5", "PERMISOS ARRANQUE CLIENTE", 0, QApplication::UnicodeUTF8));
+        aLet_14->setId(QApplication::translate("A5", "p_START_PERM_GLUBTNKLVL_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_15->setText(QApplication::translate("A5", "CANAL 2 N4N52", 0, QApplication::UnicodeUTF8));
+        aLet_15->setId(QApplication::translate("A5", "p_START_PERM_OFF_RUN_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_16->setText(QApplication::translate("A5", "APAGADO/FUNCIONANDO", 0, QApplication::UnicodeUTF8));
         lbTexto_17->setText(QApplication::translate("A5", "OK P/ARRANQUE DESDE N\303\232CLEO", 0, QApplication::UnicodeUTF8));
+        aLet_16->setId(QApplication::translate("A5", "p_START_PERM_OK2START01_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_18->setText(QApplication::translate("A5", "4 T48 SENSORES NO FALLARON", 0, QApplication::UnicodeUTF8));
+        aLet_17->setId(QApplication::translate("A5", "p_START_PERM_OK2START02_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_19->setText(QApplication::translate("A5", "3 T48 SENSORES ADYACENTES NO FALLARON", 0, QApplication::UnicodeUTF8));
+        aLet_18->setId(QApplication::translate("A5", "p_START_PERM_OK2START03_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_20->setText(QApplication::translate("A5", "RETROALIMENTACIONES TBV NO FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_21->setText(QApplication::translate("A5", "ERROR GRAVE DE POSICI\303\223N TBV NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_19->setId(QApplication::translate("A5", "p_START_PERM_OK2START04_B_NAME", 0, QApplication::UnicodeUTF8));
+        aLet_20->setId(QApplication::translate("A5", "p_START_PERM_OK2START05_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_22->setText(QApplication::translate("A5", "MOTOR TORQUE TBV NO FALL\303\223", 0, QApplication::UnicodeUTF8));
         lbTexto_23->setText(QApplication::translate("A5", "CAMBIO NULO TBV NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_21->setId(QApplication::translate("A5", "p_START_PERM_OK2START06_B_NAME", 0, QApplication::UnicodeUTF8));
+        aLet_22->setId(QApplication::translate("A5", "p_START_PERM_OK2START07_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_24->setText(QApplication::translate("A5", "RETROALIMENTACIONES CDP NO FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_25->setText(QApplication::translate("A5", "ERROR GRAVE DE POSICI\303\223N CDP NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_23->setId(QApplication::translate("A5", "p_START_PERM_OK2START08_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTextoT->setText(QApplication::translate("A5", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -800,24 +823,43 @@ public:
         btnIMPPant->setText(QApplication::translate("A5", "IMP PANT", 0, QApplication::UnicodeUTF8));
         lbTexto_51->setText(QApplication::translate("A5", "IMPULS COMB OK", 0, QApplication::UnicodeUTF8));
         lbTexto_52->setText(QApplication::translate("A5", "SISTEMA DE COMBUSTIBLE", 0, QApplication::UnicodeUTF8));
+        aLet_47->setId(QApplication::translate("A5", "p_START_PERM_FUELDVR_OK", 0, QApplication::UnicodeUTF8));
         lbTexto_53->setText(QApplication::translate("A5", "V\303\201LV COMB EN ALTO MIN", 0, QApplication::UnicodeUTF8));
+        aLet_48->setId(QApplication::translate("A5", "p_START_PERM_VMIN_STOP", 0, QApplication::UnicodeUTF8));
+        aLet_49->setId(QApplication::translate("A5", "p_START_PERM_FUELPRJOK", 0, QApplication::UnicodeUTF8));
         lbTexto_54->setText(QApplication::translate("A5", "PRESI\303\223N DE COMB GAS OK", 0, QApplication::UnicodeUTF8));
         lbTexto_55->setText(QApplication::translate("A5", "SIST DE COMB LISTO", 0, QApplication::UnicodeUTF8));
+        aLet_50->setId(QApplication::translate("A5", "p_START_PERM_FUELSYSOK", 0, QApplication::UnicodeUTF8));
         lbTexto_56->setText(QApplication::translate("A5", "VALVS SUMINISTRO CERRADO VENTEO ABIERTO", 0, QApplication::UnicodeUTF8));
+        aLet_51->setId(QApplication::translate("A5", "p_START_PERM_SOV_CLSD", 0, QApplication::UnicodeUTF8));
+        aLet_52->setId(QApplication::translate("A5", "p_START_PERM_MNET_OK_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_57->setText(QApplication::translate("A5", "HARDWARE MICRONET OK", 0, QApplication::UnicodeUTF8));
+        aLet_53->setId(QApplication::translate("A5", "p_START_PERM_LH_OK_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_58->setText(QApplication::translate("A5", "HARDWARE LINKNET OK", 0, QApplication::UnicodeUTF8));
+        aLet_54->setId(QApplication::translate("A5", "p_START_PERM_VIB_SYS_OK", 0, QApplication::UnicodeUTF8));
         lbTexto_59->setText(QApplication::translate("A5", "SISTEMA DE VIBRACIONES OK", 0, QApplication::UnicodeUTF8));
+        aLet_55->setId(QApplication::translate("A5", "p_START_PERM_REFSATMIN", 0, QApplication::UnicodeUTF8));
         lbTexto_60->setText(QApplication::translate("A5", "REF EN MIN N25", 0, QApplication::UnicodeUTF8));
         lbTexto_61->setText(QApplication::translate("A5", "NDS EN POSICI\303\223N D/SINC", 0, QApplication::UnicodeUTF8));
+        aLet_56->setId(QApplication::translate("A5", "p_START_PERM_REFSATMIN", 0, QApplication::UnicodeUTF8));
+        aLet_57->setId(QApplication::translate("A5", "p_START_PERM_T48_LT400", 0, QApplication::UnicodeUTF8));
         lbTexto_62->setText(QApplication::translate("A5", "T48 MENOS DE 400", 0, QApplication::UnicodeUTF8));
+        aLet_58->setId(QApplication::translate("A5", "p_START_PERM_N25LT300_B_NAME", 0, QApplication::UnicodeUTF8));
         lbTexto_63->setText(QApplication::translate("A5", "MENOS DE 300 RPM N25", 0, QApplication::UnicodeUTF8));
+        aLet_59->setId(QApplication::translate("A5", "p_START_PERM_OK2START09", 0, QApplication::UnicodeUTF8));
         lbTexto_64->setText(QApplication::translate("A5", "MOTOR TORQUE CDP NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_60->setId(QApplication::translate("A5", "p_START_PERM_OK2START10", 0, QApplication::UnicodeUTF8));
         lbTexto_65->setText(QApplication::translate("A5", "CAMBIO NULO CDP NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_61->setId(QApplication::translate("A5", "p_START_PERM_OK2START11", 0, QApplication::UnicodeUTF8));
         lbTexto_66->setText(QApplication::translate("A5", "RETROALIMENTACIONES ST8 NO FALLARON", 0, QApplication::UnicodeUTF8));
+        aLet_62->setId(QApplication::translate("A5", "p_START_PERM_OK2START12", 0, QApplication::UnicodeUTF8));
         lbTexto_68->setText(QApplication::translate("A5", "ERROR GRAVE DE POSICI\303\223N ST8 NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_63->setId(QApplication::translate("A5", "p_START_PERM_OK2START13", 0, QApplication::UnicodeUTF8));
         lbTexto_69->setText(QApplication::translate("A5", "MOTOR TORQUE ST8 NO FALL\303\223", 0, QApplication::UnicodeUTF8));
+        aLet_64->setId(QApplication::translate("A5", "p_START_PERM_OK2START14", 0, QApplication::UnicodeUTF8));
         lbTexto_70->setText(QApplication::translate("A5", "CAMBIO NULO ST8 NO FALL\303\223", 0, QApplication::UnicodeUTF8));
         lbTexto_71->setText(QApplication::translate("A5", "RETROAL VBV NO HAY GRAN DIFERENCIA", 0, QApplication::UnicodeUTF8));
+        aLet_65->setId(QApplication::translate("A5", "p_START_PERM_OK2START15", 0, QApplication::UnicodeUTF8));
         lbTexto_67->setText(QApplication::translate("A5", "EQUIPO DEL SISTEMA DE CONTROL OK", 0, QApplication::UnicodeUTF8));
         lbTexto_77->setText(QApplication::translate("A5", "TURBINA", 0, QApplication::UnicodeUTF8));
         lbTexto_79->setText(QApplication::translate("A5", "OK P/ARRANQUE DESDE N\303\232CLEO", 0, QApplication::UnicodeUTF8));

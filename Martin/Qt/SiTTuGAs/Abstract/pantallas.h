@@ -13,7 +13,7 @@ class Pantallas : public QWidget
 {
     Q_OBJECT
     public:
-        Pantallas(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+        Pantallas(SiTTuGAs *siTTuGAs, HTTPRequest *shrdMem);
 
         QString getTitle();
         QString getClave();
@@ -24,7 +24,7 @@ class Pantallas : public QWidget
         QString clave;
 
     protected slots:
-        void Update();
+//        void Update();
 
 private:
         ShrdMem *m_shrdMem;

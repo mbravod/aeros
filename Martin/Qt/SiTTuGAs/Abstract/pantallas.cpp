@@ -3,7 +3,7 @@
 #include "Sittugas/sittugas.h"
 #include "SharedMemory/shrdmem.h"
 
-Pantallas::Pantallas(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem):
+Pantallas::Pantallas(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem):
         QWidget(siTTuGAs)
 {
     this->m_SiTTuGAs = siTTuGAs;
@@ -16,7 +16,7 @@ QString Pantallas::getTitle()
 {
     return this->title;
 }
-
+/*
 void Pantallas::Update(){
 
     if(allAWWidget.size()!=0){
@@ -24,7 +24,7 @@ void Pantallas::Update(){
     for(i=0;i<allAWWidget.size();i++)
         allAWWidget.at(i)->Update();
     }
-}
+}//*/
 
 QString Pantallas::getClave()
 {
@@ -33,7 +33,7 @@ QString Pantallas::getClave()
 
 void Pantallas::setUpdateableChildrenList()
 {
-/*
+
     allAWWidget = this->findChildren<AWidget *>();
 
     int i;
@@ -46,5 +46,5 @@ void Pantallas::setUpdateableChildrenList()
             allAWWidget.removeAt(i);
             i--;
         }
-    }*/
+    }
 }

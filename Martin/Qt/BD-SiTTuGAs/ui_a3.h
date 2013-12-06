@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a3.ui'
 **
-** Created: Mon 2. Dec 19:01:08 2013
+** Created: Thu 5. Dec 21:01:55 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -378,19 +378,33 @@ public:
         lbSecT->setText(QApplication::translate("A3", "SECUENCIA DE ARRANQUE", 0, QApplication::UnicodeUTF8));
         lbPasT->setText(QApplication::translate("A3", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdoT->setText(QApplication::translate("A3", "ESTADO", 0, QApplication::UnicodeUTF8));
+        cbUniFue->setId(QApplication::translate("A3", "p_SFC_STEP_OUTOFOP_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbUniFue->setText(QApplication::translate("A3", "UNIDAD FUERA DE OPERACI\303\223N", 0, QApplication::UnicodeUTF8));
+        cbPurga->setId(QApplication::translate("A3", "p_SFC_STEP_VENT_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbPurga->setText(QApplication::translate("A3", "PURGA DE CARCAZA ACTIVA", 0, QApplication::UnicodeUTF8));
+        cbVrif->setId(QApplication::translate("A3", "p_SFC_STEP_GLUB_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbVrif->setText(QApplication::translate("A3", "VERIFICAR SISTEMA LUBRICACION GENERADOR", 0, QApplication::UnicodeUTF8));
+        cbActAHidr->setId(QApplication::translate("A3", "p_SFC_STEP_HYD_STRT_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActAHidr->setText(QApplication::translate("A3", "ACTIVAR ARRANQUE HIDR\303\201ULICO", 0, QApplication::UnicodeUTF8));
+        cbSelAltArr->setId(QApplication::translate("A3", "p_SFC_STEP_SPDSEL1_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbSelAltArr->setText(QApplication::translate("A3", "SELEC ALTA VELOCIDAD EN ARRANCADOR", 0, QApplication::UnicodeUTF8));
+        cbActCron->setId(QApplication::translate("A3", "p_SFC_STEP_TURB_PRG_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActCron->setText(QApplication::translate("A3", "ACTIVAR CRONO PURGA TURBINA", 0, QApplication::UnicodeUTF8));
+        cbActALue->setId(QApplication::translate("A3", "p_SFC_STEP_HI_SPDSEL2_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActALue->setText(QApplication::translate("A3", "ACTIVAR ARRANCADOR LUEGO ENCENDEDORES", 0, QApplication::UnicodeUTF8));
+        cbLuzApg->setId(QApplication::translate("A3", "p_SFC_STEP_SPDSEL3_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbLuzApg->setText(QApplication::translate("A3", "LUZ APAG DETEC ACEL CORTE D/ARRANCADOR", 0, QApplication::UnicodeUTF8));
+        cbVelMax->setId(QApplication::translate("A3", "p_SFC_STEP_FSNL_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbVelMax->setText(QApplication::translate("A3", "VELOCIDAD M\303\201XIMA SIN CARGA", 0, QApplication::UnicodeUTF8));
+        cbAcel->setId(QApplication::translate("A3", "p_SFC_STEP_ACCTOSYNC_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbAcel->setText(QApplication::translate("A3", "ACELERAR A SINC RELENTI", 0, QApplication::UnicodeUTF8));
+        cbInicCro->setId(QApplication::translate("A3", "p_SFC_STEP_WARMUP_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbInicCro->setText(QApplication::translate("A3", "INICIAR CRONO DE CALENTAMIENTO", 0, QApplication::UnicodeUTF8));
+        cbEsp->setId(QApplication::translate("A3", "p_SFC_STEP_ATCORE_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbEsp->setText(QApplication::translate("A3", "ESPERA CONTROL N25 Y NSD GT 1200 RPM", 0, QApplication::UnicodeUTF8));
+        cbList->setId(QApplication::translate("A3", "p_SFC_STEP_READY25YNC_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbList->setText(QApplication::translate("A3", "LISTO PARA CERRAR INTERRUPTOR", 0, QApplication::UnicodeUTF8));
+        cbUniLin->setId(QApplication::translate("A3", "p_SFC_STEP_UNITONLINE_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbUniLin->setText(QApplication::translate("A3", "UNIDAD EN L\303\215NEA", 0, QApplication::UnicodeUTF8));
         lbPurgaEdo->setText(QApplication::translate("A3", "0", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("A3", ":", 0, QApplication::UnicodeUTF8));
@@ -403,9 +417,13 @@ public:
         lbRotT->setText(QApplication::translate("A3", "ROTACION DE ALTA VELOCIDAD", 0, QApplication::UnicodeUTF8));
         lbPasT_2->setText(QApplication::translate("A3", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdoT_2->setText(QApplication::translate("A3", "ESTADO", 0, QApplication::UnicodeUTF8));
+        cbActBom->setId(QApplication::translate("A3", "p_SFC_STEP_HICRANK_3_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActBom->setText(QApplication::translate("A3", "ACTIVAR BOMBA ALJIBE ACEITE", 0, QApplication::UnicodeUTF8));
+        cbActSis->setId(QApplication::translate("A3", "p_SFC_STEP_HICRANK_1_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActSis->setText(QApplication::translate("A3", "ACTIVAR SISTEMA LUBRICACI\303\223N GENERADOR", 0, QApplication::UnicodeUTF8));
+        cbActAHid->setId(QApplication::translate("A3", "p_SFC_STEP_HICRANK_2_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbActAHid->setText(QApplication::translate("A3", "ACTIVAR ARRANQUE HIDR\303\201ULICO", 0, QApplication::UnicodeUTF8));
+        cbSelAltVel->setId(QApplication::translate("A3", "p_SFC_STEP_HICRANK_4_SFC_STEP", 0, QApplication::UnicodeUTF8));
         cbSelAltVel->setText(QApplication::translate("A3", "SELECCIONAR ALTA VELOCIDAD", 0, QApplication::UnicodeUTF8));
         lbMin->setText(QApplication::translate("A3", "60", 0, QApplication::UnicodeUTF8));
         lhHrs->setText(QApplication::translate("A3", "60", 0, QApplication::UnicodeUTF8));
