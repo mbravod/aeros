@@ -13,7 +13,7 @@ class E3 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit E3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit E3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~E3();
     
 private:

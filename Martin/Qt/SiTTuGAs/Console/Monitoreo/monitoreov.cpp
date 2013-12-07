@@ -11,7 +11,7 @@ MonitoreoV::MonitoreoV(QWidget *parent) :
     ui->setupUi(this);
     setAttribute( Qt::WA_DeleteOnClose );
     ruta = InstallPath;
-    shrdMem = new ShrdMem();
+//    shrdMem = new ShrdMem();
     ///Condiciones iniciales para tabla
     ui->table->setColumnCount(4);
     QStringList headers;

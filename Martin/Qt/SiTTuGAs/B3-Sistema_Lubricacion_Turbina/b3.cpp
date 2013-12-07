@@ -1,7 +1,7 @@
 #include "b3.h"
 #include "ui_b3.h"
 
-B3::B3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+B3::B3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::B3)
 {

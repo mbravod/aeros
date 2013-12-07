@@ -13,7 +13,7 @@ class F5 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit F5(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit F5(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~F5();
     
 private:

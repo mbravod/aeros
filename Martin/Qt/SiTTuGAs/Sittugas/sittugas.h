@@ -46,7 +46,7 @@
 #include "F3-Desaceleracion/f3.h"
 #include "F4-Apagados_de_emergencia/f4.h"
 #include "F5-Apagados_de_emergencia/f5.h"
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 
 #include "N1/zonaalim.h"
 #include "N2/sisaguares.h"
@@ -128,7 +128,10 @@ class SiTTuGAs  : public QWidget
         ~SiTTuGAs();
         void Connections();
 
-        ShrdMem getShrdMem()const{return m_shrdMem;}
+        HTTPRequest getShrdMem();/*const
+        {
+            return m_shrdMem;
+        }*/
 
     public slots:
         void ChangeWin(int n);
@@ -152,7 +155,7 @@ signals:
         void emitUpdate();
 
 protected:
-        ShrdMem *m_shrdMem;
+        HTTPRequest *m_shrdMem;
 
     private:
         Ui::SiTTuGAs *ui;

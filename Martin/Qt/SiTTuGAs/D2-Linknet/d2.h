@@ -71,7 +71,7 @@ class D2 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit D2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D2();
 
 public slots:

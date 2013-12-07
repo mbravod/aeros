@@ -1,7 +1,7 @@
 #include "d4.h"
 #include "ui_d4.h"
 
-D4::D4(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+D4::D4(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::D4)
 {

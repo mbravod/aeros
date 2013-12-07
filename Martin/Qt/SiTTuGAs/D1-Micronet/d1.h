@@ -43,7 +43,7 @@ class D1 : public Pantallas
     Q_OBJECT
 
 public:
-    explicit D1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D1();
     void setLbInd_1(QString s);
     void setLbInd_2(QString s);

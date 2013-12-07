@@ -13,7 +13,7 @@ class E1 :  public Pantallas
     Q_OBJECT
     
 public:
-    explicit E1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit E1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~E1();
     
 private:

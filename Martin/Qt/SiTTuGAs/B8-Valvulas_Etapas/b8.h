@@ -14,7 +14,7 @@ class B8 :public Pantallas
     Q_OBJECT
     
 public:
-    explicit B8(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit B8(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~B8();
     
 private:

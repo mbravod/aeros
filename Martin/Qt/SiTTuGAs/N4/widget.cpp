@@ -1,7 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
 
-N4::N4(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N4::N4(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::Widget)
 {

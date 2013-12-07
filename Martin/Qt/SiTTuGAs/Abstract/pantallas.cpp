@@ -1,7 +1,7 @@
 #include "pantallas.h"
 
 #include "Sittugas/sittugas.h"
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 
 Pantallas::Pantallas(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem):
         QWidget(siTTuGAs)

@@ -2,7 +2,7 @@
 #define CONFIGURACIONDEMODELOS_H
 
 #include <QDialog>
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 
 namespace Ui {
     class ConfiguracionDeModelos;
@@ -31,7 +31,7 @@ private:
     QString rFrStringVarsNum(QString var);
     int Row;
     int Column;
-    ShrdMem *shrdMem;
+    HTTPRequest *shrdMem;
     QString ruta;
 };
 

@@ -1,7 +1,7 @@
 #include "e3.h"
 #include "ui_e3.h"
 
-E3::E3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+E3::E3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::E3)
 {

@@ -1,7 +1,7 @@
 #include "zonaalim.h"
 #include "ui_zonaalim.h"
 
-N1::N1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N1::N1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::zonaAlim)
 {

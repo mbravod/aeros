@@ -14,7 +14,7 @@ class D7 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit D7(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D7(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D7();
     
 private:

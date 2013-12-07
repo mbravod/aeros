@@ -6,6 +6,7 @@
 #include <QStringList>
 #include <QDebug>
 #include <QMessageBox>
+#include "config.h"
 
 class SQLite
 {
@@ -13,10 +14,10 @@ class SQLite
         SQLite();
 
         static bool IniciaBD();
-        static bool CreaBD();
         static bool VaciarTxtBD(QString ruta);
         static int BuscarVal(QString var);
         static QStringList GetText(QString file);
+        static Config getConfig();
     private:
         static QString BDName;
 };

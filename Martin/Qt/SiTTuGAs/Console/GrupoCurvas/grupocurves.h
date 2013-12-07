@@ -2,8 +2,8 @@
 #define GRUPOCURVES_H
 
 #include <QDialog>
-#include "SharedMemory/shrdmem.h"
-class ShrdMem;
+#include "SharedMemory/httprequest.h"
+//class ShrdMem;
 
 namespace Ui {
     class GrupoCurves;
@@ -45,7 +45,7 @@ private:
     QString StringE;
     int Row;
     int Column;
-    ShrdMem *shrdMem;
+    HTTPRequest *shrdMem;
     void readFromFile(QString fileName);
     void loadSyst();
     QString ruta;

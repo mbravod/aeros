@@ -25,7 +25,7 @@ Fallas::Fallas(QWidget *parent, QString mod) :
     this->modSld = 1;
     ui->setupUi(this);
     setAttribute( Qt::WA_DeleteOnClose );
-    shrdMem = new ShrdMem();
+    shrdMem = new HTTPRequest();
     //-----------------------
     this->fallas_act.clear();
     this->fallas_all.clear();
@@ -59,7 +59,7 @@ Fallas::Fallas(QWidget *parent, QString mod) :
     ui->tableAll->setHorizontalHeaderLabels(headers2);
     ui->tableAll->horizontalHeader()->setStretchLastSection(true);
     //-------------------------------------
-    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
+//    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
     connect(ui->table,SIGNAL(cellActivated(int,int)),this,SLOT(showVartoChange(int,int)));
     connect(ui->tableAll, SIGNAL(cellActivated(int,int)), this, SLOT(showVartoReset(int,int)));
     connect(ui->slider,SIGNAL(sliderMoved(int)),this,SLOT(dialValChanged(int)));
@@ -1049,8 +1049,8 @@ void Fallas::changeVal()
                                 {
                                     qDebug()<<"Modificación de la falla...";                                    if(valNomF == valFailF)
                                         resetVal();
-                                    else
-                                        shrdMem->setMFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
+//                                    else
+//                                        shrdMem->setMFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
                                 }
                                 else if(failVal && !onfail)
                                 {
@@ -1071,8 +1071,8 @@ void Fallas::changeVal()
 
                                     if(valNomF == valFailF)
                                         resetVal();
-                                    else
-                                        shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
+//                                    else
+//                                        shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
                                 }
                                 else
                                 {
@@ -1089,7 +1089,7 @@ void Fallas::changeVal()
                                         t_baj = 1;
 
                                     qDebug()<<"Aplicación de la falla desde cero";
-                                    shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
+//                                    shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
                                 }
                             }
                         }
@@ -1113,11 +1113,11 @@ void Fallas::changeVal()
                                 qDebug()<<"Modifica secuencia a cero... Valores:";
                                 qDebug()<<"Espera: "<<t_esp<<" Subida: "<<t_sub<<" Aplicación: "<<t_aplic<<" Bajada: "<<t_baj<<" Pos: "<<varpos<<" Normal: "<<valNomF<<" Falla: "<<valFailF;
 
-                                shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
+//                                shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
                             }
                             else
                             {
-                                shrdMem->setF(valNomF, varpos);
+//                                shrdMem->setF(valNomF, varpos);
                             }
                         }
                         //qDebug()<<"Falla Puesta Flotante";
@@ -1175,8 +1175,8 @@ void Fallas::changeVal()
                                 //qDebug()<<"Modificación de la falla";
                                 if(valNomI == valFailI)
                                     resetVal();
-                                else
-                                    shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
+//                                else
+//                                    shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
                             }
                             else if(failVal && !onfail)
                             {
@@ -1197,8 +1197,8 @@ void Fallas::changeVal()
 
                                 if(valNomI == valFailI)
                                     resetVal();
-                                else
-                                    shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
+//                                else
+//                                    shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
                             }
                             else
                             {
@@ -1215,7 +1215,7 @@ void Fallas::changeVal()
                                     t_baj = 1;
 
                                 //qDebug()<<"Aplicación de la falla";
-                                shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
+//                                shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
                             }
                         }
                     }
@@ -1238,7 +1238,7 @@ void Fallas::changeVal()
                             qDebug()<<"Modifica secuencia a cero... Valores:";
                             qDebug()<<"Espera: "<<t_esp<<" Subida: "<<t_sub<<" Aplicación: "<<t_aplic<<" Bajada: "<<t_baj<<" Pos: "<<varpos<<" Normal: "<<valNomF<<" Falla: "<<valFailF;
 
-                            shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
+//                            shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
                         }
                         else
                         {

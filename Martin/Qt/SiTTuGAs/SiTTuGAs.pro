@@ -66,7 +66,6 @@ SOURCES += main.cpp\
     Console/IConsole/console.cpp \
     Console/Base/toolbar.cpp \
     Console/Base/toolb.cpp \
-    SharedMemory/shrdmem.cpp \
     Settings/modsel.cpp \
     Console/Login/passwdialog.cpp \
     Console/Login/login.cpp \
@@ -205,7 +204,8 @@ SOURCES += main.cpp\
     D3-Linknet/n3n39.cpp \
     D3-Linknet/n3n18.cpp \
     SharedMemory/sqlite.cpp \
-    SharedMemory/httprequest.cpp
+    SharedMemory/httprequest.cpp \
+    SharedMemory/config.cpp
 
 HEADERS  += Sittugas/sittugas.h \
     A1-Turbina/a1.h \
@@ -241,7 +241,6 @@ HEADERS  += Sittugas/sittugas.h \
     Console/IConsole/console.h \
     Console/Base/toolbar.h \
     Console/Base/toolb.h \
-    SharedMemory/shrdmem.h \
     Settings/modsel.h \
     Console/Login/passwdialog.h \
     Console/Login/login.h \
@@ -380,7 +379,8 @@ HEADERS  += Sittugas/sittugas.h \
     D3-Linknet/n3n39.h \
     D3-Linknet/n3n18.h \
     SharedMemory/sqlite.h \
-    SharedMemory/httprequest.h
+    SharedMemory/httprequest.h \
+    SharedMemory/config.h
 
 FORMS    += \
     Sittugas/sittugas.ui \

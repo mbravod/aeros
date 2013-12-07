@@ -6,7 +6,7 @@
 #include <QObject>
 #include "awidget.h"
 
-class ShrdMem;
+class HTTPRequest;
 class SiTTuGAs;
 
 class Pantallas : public QWidget
@@ -27,7 +27,7 @@ class Pantallas : public QWidget
 //        void Update();
 
 private:
-        ShrdMem *m_shrdMem;
+        HTTPRequest *m_shrdMem;
         SiTTuGAs *m_SiTTuGAs;
         QList<AWidget *> allAWWidget;
 };

@@ -1,7 +1,7 @@
 #include "sisaguares.h"
 #include "ui_sisaguares.h"
 
-N2::N2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N2::N2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::SisAguaRes)
 {

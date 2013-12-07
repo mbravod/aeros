@@ -16,7 +16,7 @@ class B3 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit B3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit B3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~B3();
 
 private slots:

@@ -14,7 +14,7 @@ class C2 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit C2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit C2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~C2();
     
 private:

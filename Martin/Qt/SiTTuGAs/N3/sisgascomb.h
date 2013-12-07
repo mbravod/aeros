@@ -19,7 +19,7 @@ class N3 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit N3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit N3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~N3();
     
 private:

@@ -15,7 +15,7 @@ class Menu : public Pantallas
     Q_OBJECT
 
     public:
-        explicit Menu(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+        explicit Menu(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
         ~Menu();
 
     signals:

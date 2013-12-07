@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include "Console/Login/login.h"
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 namespace Ui {
     class PassWDialog;
 }
@@ -13,7 +13,7 @@ class PassWDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit PassWDialog(QWidget *parent=0,ShrdMem *s= NULL);
+    explicit PassWDialog(QWidget *parent=0,HTTPRequest *s= NULL);
     ~PassWDialog();
 
     bool verificar(QString pass1, QString pass2);
@@ -30,7 +30,7 @@ private:
     void actualizaSys();
     void limpia_campos();
     void sndUserToShared(QString user);
-    ShrdMem *m_shrdMem;
+    HTTPRequest *m_shrdMem;
 
 private slots:
     // Slots de PassDialog

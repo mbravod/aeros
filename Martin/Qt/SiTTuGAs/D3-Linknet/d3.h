@@ -26,7 +26,7 @@ class D3 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit D3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D3();
 
 public slots:

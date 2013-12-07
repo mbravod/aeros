@@ -16,7 +16,7 @@ class N2 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit N2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit N2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~N2();
     
 private:

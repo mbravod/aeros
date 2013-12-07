@@ -13,7 +13,7 @@ class C3 :  public Pantallas
     Q_OBJECT
     
 public:
-    explicit C3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit C3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~C3();
     
 private:

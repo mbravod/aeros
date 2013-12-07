@@ -1,7 +1,7 @@
 #include "enfriador.h"
 #include "ui_enfriador.h"
 
-N5::N5(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N5::N5(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::ENFRIADOR)
 {

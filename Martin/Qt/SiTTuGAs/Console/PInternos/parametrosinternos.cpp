@@ -24,7 +24,7 @@ ui(new Ui::ParametrosInternos)
     this->modSld = 1;
     ui->setupUi(this);
     setAttribute( Qt::WA_DeleteOnClose );
-    m_shrdMem = new ShrdMem(this);
+//    m_shrdMem = new ShrdMem(this);
     //-----------------------
     this->fallas_act.clear();
     this->NamesList_act.clear();
@@ -50,7 +50,7 @@ ui(new Ui::ParametrosInternos)
     ui->table->setHorizontalHeaderLabels(headers);
     ui->table->horizontalHeader()->setStretchLastSection(true);
     //-------------------------------------
-    connect(m_shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
+//    connect(m_shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
     connect(ui->table,SIGNAL(cellActivated(int,int)),this,SLOT(showVartoChange(int,int)));
     connect(ui->slider,SIGNAL(sliderMoved(int)),this,SLOT(dialValChanged(int)));
     connect(ui->slider, SIGNAL(valueChanged(int)), this, SLOT(dialValChanged(int)));
@@ -538,8 +538,8 @@ void ParametrosInternos::changeVal()
                                     qDebug()<<"Modificación de la falla";
                                     if(valNomF == valFailF)
                                         resetVal();
-                                    else
-                                        m_shrdMem->setMFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
+//                                    else
+//                                        m_shrdMem->setMFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
                                 }
                                 else if(failVal && !onfail)
                                 {
@@ -560,8 +560,8 @@ void ParametrosInternos::changeVal()
 
                                     if(valNomF == valFailF)
                                         resetVal();
-                                    else
-                                        m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
+//                                    else
+//                                        m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
                                 }
                                 else
                                 {
@@ -578,7 +578,7 @@ void ParametrosInternos::changeVal()
                                         t_baj = 1;
 
                                     qDebug()<<"Aplicación de la falla";
-                                    m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
+//                                    m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, valNomF, valFailF);
                                 }
                             }
                         }
@@ -602,7 +602,7 @@ void ParametrosInternos::changeVal()
                                 qDebug()<<"Modifica secuencia a cero... Valores:";
                                 qDebug()<<"Espera: "<<t_esp<<" Subida: "<<t_sub<<" Aplicación: "<<t_aplic<<" Bajada: "<<t_baj<<" Pos: "<<varpos<<" Normal: "<<valNomF<<" Falla: "<<valFailF;
 
-                                m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
+//                                m_shrdMem->setFAULTF(t_esp, t_sub, t_aplic, t_baj, varpos, fAct, valFailF);
                             }
                             else
                             {
@@ -664,8 +664,8 @@ void ParametrosInternos::changeVal()
                                 qDebug()<<"Modificación de la falla";
                                 if(valNomI == valFailI)
                                     resetVal();
-                                else
-                                    m_shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
+//                                else
+//                                    m_shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
                             }
                             else if(failVal && !onfail)
                             {
@@ -686,8 +686,8 @@ void ParametrosInternos::changeVal()
 
                                 if(valNomI == valFailI)
                                     resetVal();
-                                else
-                                    m_shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
+//                                else
+//                                    m_shrdMem->setMFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
                             }
                             else
                             {
@@ -704,7 +704,7 @@ void ParametrosInternos::changeVal()
                                     t_baj = 1;
 
                                 qDebug()<<"Aplicación de la falla";
-                                m_shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
+//                                m_shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, valNomI, valFailI);
                             }
                         }
                     }
@@ -727,7 +727,7 @@ void ParametrosInternos::changeVal()
                             qDebug()<<"Modifica secuencia a cero... Valores:";
                             qDebug()<<"Espera: "<<t_esp<<" Subida: "<<t_sub<<" Aplicación: "<<t_aplic<<" Bajada: "<<t_baj<<" Pos: "<<varpos<<" Normal: "<<valNomF<<" Falla: "<<valFailF;
 
-                            m_shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
+//                            m_shrdMem->setFAULTI(t_esp, t_sub, t_aplic, t_baj, varpos, iAct, valFailI);
                         }
                         else
                         {

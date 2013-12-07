@@ -13,7 +13,7 @@ class D4 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit D4(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D4(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D4();
     
 private:

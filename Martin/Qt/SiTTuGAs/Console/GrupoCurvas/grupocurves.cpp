@@ -13,8 +13,8 @@ GrupoCurves::GrupoCurves(QWidget *parent) :
     setAttribute( Qt::WA_DeleteOnClose );
     ruta = InstallPath;
 
-    shrdMem = new ShrdMem();
-    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
+//    shrdMem = new ShrdMem();
+//    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
 
     ///Condiciones iniciales para tabla
     ui->table->setColumnCount(5);

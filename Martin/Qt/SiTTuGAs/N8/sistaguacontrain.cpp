@@ -1,7 +1,7 @@
 #include "sistaguacontrain.h"
 #include "ui_sistaguacontrain.h"
 
-N8::N8(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N8::N8(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::SistAguaContrain)
 {

@@ -22,9 +22,10 @@ SiTTuGAs::SiTTuGAs(QWidget *parent) :
     this->setWindowTitle("SiTTuGas");
     setAttribute(Qt::WA_DeleteOnClose);
     //Un solo objeto para todas las interfaces, corroborar que no se requiera una instancia para cada interfaz!
-    m_shrdMem = new ShrdMem();
+    m_shrdMem = new HTTPRequest();
     //Estructura para reservar espacio en memoria de cada HMI a crear *(considerando el menu)
-    for(int i=0; i<(ID_N8+1); i++){
+    for(int i=0; i<(ID_N8+1); i++)
+    {
         subWindow = new QMdiSubWindow;
         subWindow->setGeometry(QRect(0, 0, 1024, 662));
         subWindow->setMinimumSize(QSize(1024, 662));

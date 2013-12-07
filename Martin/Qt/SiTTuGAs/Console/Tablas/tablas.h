@@ -7,8 +7,8 @@
 #include <time.h>
 #include <QDialog>
 
-#include "SharedMemory/shrdmem.h"
-class ShrdMem;
+#include "SharedMemory/httprequest.h"
+//class ShrdMem;
 
 namespace Ui {
     class Tablas;
@@ -47,7 +47,7 @@ private:
     QString rootDest;
     void saveTable(QString fileName);
     void  initialUpdate();
-    ShrdMem *m_shrdMem;
+    HTTPRequest *m_shrdMem;
     QString ruta;
 };
 

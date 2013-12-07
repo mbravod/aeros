@@ -1,7 +1,7 @@
 #include "d9.h"
 #include "ui_d9.h"
 
-D9::D9(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+D9::D9(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::D9)
 {

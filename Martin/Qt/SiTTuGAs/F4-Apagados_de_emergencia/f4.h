@@ -14,7 +14,7 @@ class F4 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit F4(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit F4(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~F4();
     
 private:

@@ -2,7 +2,7 @@
 #include "ui_menu.h"
 #include <qDebug>
 
-Menu::Menu(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+Menu::Menu(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
         Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::Menu)
 {

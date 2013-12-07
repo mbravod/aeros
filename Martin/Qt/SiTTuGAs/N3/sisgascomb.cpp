@@ -2,7 +2,7 @@
 #include "ui_sisgascomb.h"
 
 
-N3::N3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N3::N3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
        Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::SisGasComb)
 {

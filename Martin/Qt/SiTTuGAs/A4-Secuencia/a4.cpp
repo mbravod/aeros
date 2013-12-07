@@ -1,7 +1,7 @@
 #include "a4.h"
 #include "ui_a4.h"
 
-A4::A4(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+A4::A4(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::A4)
 {

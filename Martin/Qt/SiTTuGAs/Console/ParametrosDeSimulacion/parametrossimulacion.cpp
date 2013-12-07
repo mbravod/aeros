@@ -2,13 +2,13 @@
 #include "ui_parametrossimulacion.h"
 #include "BitaC/BitaC.h"
 
-ParametrosSimulacion::ParametrosSimulacion(QWidget *parent,ShrdMem *s) :
+ParametrosSimulacion::ParametrosSimulacion(QWidget *parent,HTTPRequest *s) :
     QDialog(parent),
     ui(new Ui::ParametrosSimulacion)
 {
 
     ui->setupUi(this);
-    m_shrdMem = s;
+//    m_shrdMem = s;
     connect(ui->slider,SIGNAL(sliderMoved(int)),this,SLOT(sliderValChanged(int)));
     //updateSlider(shrdMem->getI(PlayPauseConst));
 }

@@ -3,7 +3,7 @@
 
 #include <QtGui>
 #include <QDialog>
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 
 namespace Ui
 {
@@ -31,7 +31,7 @@ class ParametrosInternos : public QDialog
         QString ptr_valNorm;                                    // Valor normal de la variable seleccionada
         QString ptr_valFail;                                    // Valor con falla de la variable seleccionada
         //----------------------------
-        ShrdMem *m_shrdMem;                                       // Puntero aSharedMemory
+        HTTPRequest *m_shrdMem;                                       // Puntero aSharedMemory
         QStringList fallas_act;                                 // Lista de Fallas actuales
         QStringList NamesList_act;                              // Lista de los nombres de las Fallas actuales
         QStringList Descrip_act;                                // Lista de las descripciones de las Fallas Actuales

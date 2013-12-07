@@ -10,7 +10,7 @@ Retroceder::Retroceder(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Retroceder)
 {
-    shrdMem = new ShrdMem();
+//    shrdMem = new ShrdMem();
     cIn = new CIn ();
     cIn->login();
     ui->setupUi(this);

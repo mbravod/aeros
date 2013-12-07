@@ -4,7 +4,7 @@
 //#include "Sittugas/sittugas.h"
 //#include "SharedMemory/shrdmem.h"
 
-A1::A1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+A1::A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::A1)
 {

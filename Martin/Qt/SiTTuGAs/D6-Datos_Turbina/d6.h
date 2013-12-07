@@ -14,7 +14,7 @@ class D6 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit D6(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit D6(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D6();
     
 private:

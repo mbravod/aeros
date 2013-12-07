@@ -14,7 +14,7 @@ class B12 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit B12(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit B12(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~B12();
     
 private:

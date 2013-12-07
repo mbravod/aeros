@@ -13,7 +13,7 @@ Tablas::Tablas(QWidget *parent) :
     ui->setupUi(this);
     ruta = InstallPath;
     //setAttribute( Qt::WA_DeleteOnClose );
-    m_shrdMem = new ShrdMem();
+//    m_shrdMem = new ShrdMem();
     connect(ui->abrir,SIGNAL(clicked()),this,SLOT(openFile()));
     connect(ui->guardar,SIGNAL(clicked()),this,SLOT(saveFile()));
     connect(ui->guardarcomo,SIGNAL(clicked()),this,SLOT(saveFileAs()));

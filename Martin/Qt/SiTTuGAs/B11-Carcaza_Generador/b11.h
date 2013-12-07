@@ -15,7 +15,7 @@ class B11 : public Pantallas
     Q_OBJECT
 
 public:
-    explicit B11(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit B11(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~B11();
     void setLbTem_9(QString s);
     void setLbTem_1(QString s);

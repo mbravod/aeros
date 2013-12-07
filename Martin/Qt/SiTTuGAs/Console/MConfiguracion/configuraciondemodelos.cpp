@@ -11,8 +11,8 @@ ConfiguracionDeModelos::ConfiguracionDeModelos(QWidget *parent) :
     ui->setupUi(this);
     this->ruta = InstallPath;
     setAttribute( Qt::WA_DeleteOnClose );
-    shrdMem = new ShrdMem();
-    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
+//    shrdMem = new ShrdMem();
+//    connect(shrdMem,SIGNAL(varNotFound(QString)),this,SLOT(anuncmnt(QString)));
 
 ///Condiciones iniciales para tabla
     ui->table->setColumnCount(4);

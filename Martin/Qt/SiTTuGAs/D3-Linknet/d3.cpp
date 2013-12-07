@@ -1,7 +1,7 @@
 #include "d3.h"
 #include "ui_d3.h"
 
-D3::D3(SiTTuGAs *siTTuGAs, ShrdMem *shrdMem) :
+D3::D3(SiTTuGAs *siTTuGAs, HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::D3)
 {

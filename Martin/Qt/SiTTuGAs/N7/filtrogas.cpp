@@ -1,7 +1,7 @@
 #include "filtrogas.h"
 #include "ui_filtrogas.h"
 
-N7::N7(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N7::N7(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::filtroGas)
 {

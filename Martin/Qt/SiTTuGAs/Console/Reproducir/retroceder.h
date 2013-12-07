@@ -5,7 +5,7 @@
 #include <QMainWindow>
 //#include "coins.h"
 
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 #include "Console/CIClass/cin.h"
 
 
@@ -22,7 +22,7 @@ public:
     ~Retroceder();
     Ui::Retroceder *ui;
 private:
-     ShrdMem *shrdMem;
+     HTTPRequest *shrdMem;
      CIn *cIn;
      char FILESVIRTUALTABLE[1024*20][32];
      QList<char*> backs;

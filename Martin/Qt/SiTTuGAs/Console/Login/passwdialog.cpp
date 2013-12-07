@@ -3,17 +3,17 @@
 #include "Settings/Paths.h"
 #include "BitaC/bitac.h"
 
-PassWDialog::PassWDialog(QWidget *parent,ShrdMem *s) :
+PassWDialog::PassWDialog(QWidget *parent,HTTPRequest *s) :
     QDialog(parent),
     ui(new Ui::PassWDialog)
 {
     ui->setupUi(this);
 
     if(s==NULL){
-        s = new ShrdMem();
+        s = new HTTPRequest();
     }
     else
-    this->m_shrdMem = s;
+//    this->m_shrdMem = s;
 
     this->setWindowFlags(Qt::SplashScreen);
     setWindowOpacity(1);

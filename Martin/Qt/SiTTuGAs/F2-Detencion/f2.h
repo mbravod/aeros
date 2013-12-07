@@ -13,7 +13,7 @@ class F2 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit F2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit F2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~F2();
     
 private:

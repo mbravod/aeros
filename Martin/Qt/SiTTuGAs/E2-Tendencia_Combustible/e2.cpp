@@ -1,7 +1,7 @@
 #include "e2.h"
 #include "ui_e2.h"
 
-E2::E2(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+E2::E2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::E2)
 {

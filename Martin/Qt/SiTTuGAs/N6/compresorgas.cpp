@@ -3,7 +3,7 @@
 
 
 
-N6::N6(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+N6::N6(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::CompresorGas)
 {

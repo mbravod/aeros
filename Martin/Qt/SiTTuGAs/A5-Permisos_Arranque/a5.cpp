@@ -1,7 +1,7 @@
 #include "a5.h"
 #include "ui_a5.h"
 
-A5::A5(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+A5::A5(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::A5)
 {

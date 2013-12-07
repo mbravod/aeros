@@ -2,8 +2,8 @@
 #define MONITOREOV_H
 
 #include <QDialog>
-#include "SharedMemory/shrdmem.h"
-class ShrdMem;
+#include "SharedMemory/httprequest.h"
+//class ShrdMem;
 
 namespace Ui {
     class MonitoreoV;
@@ -25,7 +25,7 @@ private:
     void readFromFile(QString fileName);
     QStringList StringList;
     QTimer *updatetimer;
-    ShrdMem *shrdMem;
+    HTTPRequest *shrdMem;
     QString ftoa(float f);
     QString ruta;
 

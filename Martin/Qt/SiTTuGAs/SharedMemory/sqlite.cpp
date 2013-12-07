@@ -26,28 +26,12 @@ bool SQLite::IniciaBD()
 
     dbA.exec("create table punteros(var varchar(25) primary key not null, value int(7) not null)");
     dbA.commit();
+    dbA.exec("create table config(id int(1) primary key not null, mode int(1) not null, protocolo varchar(5) not null, server varchar(100) not null, asp varchar(100) not null)");
+    dbA.commit();
+    dbA.exec("insert into 'config' ('id', 'mode', 'protocolo', 'server', 'asp') values (1, 0, 'http://', '127.0.0.1', 'onlinesthie.aspx');");
+    dbA.commit();
+
     dbA.close();
-
-    return true;
-}
-
-bool SQLite::CreaBD()
-{
-    // Preparamos el SQLite
-    QSqlDatabase dbA =  QSqlDatabase::addDatabase("QSQLITE");
-
-    // Verificamos que el archivo exista
-    QFile *file = new QFile(BDName);
-    qDebug()<<"El archivo existe? "<<file->exists()<<" - "<<file->size();
-
-    // Abrimos el archivo de la BD
-    dbA.setDatabaseName(BDName);
-    // Verificamos que lo haya abierto
-    if(!dbA.open())
-        return false;
-
-    //Ahora, dependiendo de que exista o no, hacemos algo
-    qDebug()<<"El archivo existe? "<<file->exists()<<" - "<<file->size();
 
     return true;
 }
@@ -162,3 +146,7 @@ int SQLite::BuscarVal(QString var)
     return indice;
 }
 
+Config SQLite::getConfig()
+{
+
+}

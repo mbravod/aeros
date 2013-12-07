@@ -15,7 +15,7 @@ class A5 : public Pantallas
     Q_OBJECT
     
 public:
-    explicit A5(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+    explicit A5(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~A5();
     
 private:

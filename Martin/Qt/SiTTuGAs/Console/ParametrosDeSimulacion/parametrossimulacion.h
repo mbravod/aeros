@@ -2,8 +2,8 @@
 #define PARAMETROSSIMULACION_H
 
 #include <QDialog>
-#include "SharedMemory/shrdmem.h"
-class ShrdMem;
+#include "SharedMemory/httprequest.h"
+//class ShrdMem;
 
 namespace Ui {
     class ParametrosSimulacion;
@@ -12,7 +12,7 @@ namespace Ui {
 class ParametrosSimulacion : public QDialog {
     Q_OBJECT
 public:
-    ParametrosSimulacion(QWidget *parent = 0,ShrdMem *s=NULL);
+    ParametrosSimulacion(QWidget *parent = 0,HTTPRequest *s=NULL);
     ~ParametrosSimulacion();
     QString ftoa(float f);
     Ui::ParametrosSimulacion *ui;
@@ -22,7 +22,7 @@ protected:
     void changeEvent(QEvent *e);
 
 private:
-    ShrdMem *m_shrdMem;
+    HTTPRequest *m_shrdMem;
     void updateSlider(int pos);
 };
 

@@ -5,7 +5,7 @@
 #include "Console/Base/toolbar.h"
 #include "Console/Base/toolb.h"
 #include "Settings/settings.h"
-#include "SharedMemory/shrdmem.h"
+#include "SharedMemory/httprequest.h"
 
 #include "Console/ParametrosDeSimulacion/parametrossimulacion.h"
 #include "Console/Tablas/tablas.h"
@@ -164,7 +164,7 @@ private:
     void setActionsToMenu();
     void encodeFString();
 
-    ShrdMem *m_shrdMem;
+    HTTPRequest *m_shrdMem;
 
 };
 

@@ -72,7 +72,7 @@ class A1 : public Pantallas
     Q_OBJECT
 
     public:
-        explicit A1(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem);
+        explicit A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
         ~A1();
 
 

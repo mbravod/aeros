@@ -1,7 +1,7 @@
 #include "d5.h"
 #include "ui_d5.h"
 
-D5::D5(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+D5::D5(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
         Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::D5)
 {

@@ -25,7 +25,7 @@ Console::Console(QWidget *parent,Settings *s) :
     setAttribute(Qt::WA_DeleteOnClose);
     ui->setupUi(this);
 
-    ShrdMem *m_shrdMem = new ShrdMem(this);
+//    HTTPRequest *m_shrdMem = new HTTPRequest(this);
 
     settings = s;
     createMenu();

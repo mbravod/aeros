@@ -1,7 +1,7 @@
 #include "f3.h"
 #include "ui_f3.h"
 
-F3::F3(SiTTuGAs *siTTuGAs,ShrdMem *shrdMem) :
+F3::F3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Pantallas(siTTuGAs,shrdMem),
     ui(new Ui::F3)
 {
