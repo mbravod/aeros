@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a4.ui'
 **
-** Created: Sat 7. Dec 00:54:30 2013
+** Created: Mon 9. Dec 18:08:30 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -414,15 +414,15 @@ public:
         lbPrdT->setText(QApplication::translate("A4", "PARADA NORMAL", 0, QApplication::UnicodeUTF8));
         lbPas1_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo1_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbRampa->setId(QApplication::translate("A4", "p_SFC_STEP_NORM_1_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbRampa->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
         cbRampa->setText(QApplication::translate("A4", "RAMPA NPT A CARGA MIN", 0, QApplication::UnicodeUTF8));
-        cbInteruptor->setId(QApplication::translate("A4", "p_SFC_STEP_NORM_3_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbInteruptor->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_3_F_CV", 0, QApplication::UnicodeUTF8));
         cbInteruptor->setText(QApplication::translate("A4", "INTERRUPTOR ABIERTO", 0, QApplication::UnicodeUTF8));
-        cbCronCiclo->setId(QApplication::translate("A4", "p_SFC_STEP_TIMER_CD_ON_B_NAME", 0, QApplication::UnicodeUTF8));
+        cbCronCiclo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CD_CYCT_ON_F_CV", 0, QApplication::UnicodeUTF8));
         cbCronCiclo->setText(QApplication::translate("A4", "CRON CICLO ENFRIAMIENTO ACTIVO", 0, QApplication::UnicodeUTF8));
         lbsecT->setText(QApplication::translate("A4", "SECUENCIA DESACEL A MIN", 0, QApplication::UnicodeUTF8));
         lbPas1_2T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        cbDesacel->setId(QApplication::translate("A4", "p_SHUTDOWN_STEPIDLE_B_NAME", 0, QApplication::UnicodeUTF8));
+        cbDesacel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_DECELMIN_F_CV", 0, QApplication::UnicodeUTF8));
         cbDesacel->setText(QApplication::translate("A4", "DESACEL A CARGA MIN ACTIVO", 0, QApplication::UnicodeUTF8));
         lbEdo1_2->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
         lbCronCicloHrs->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
@@ -431,32 +431,32 @@ public:
         lbApaT->setText(QApplication::translate("A4", "APAGADO CON PASO A RALENT\303\215", 0, QApplication::UnicodeUTF8));
         lbPas2_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo2_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbEsperarNuc->setId(QApplication::translate("A4", "p_SHUTDOWN_DOSTEPIDLE", 0, QApplication::UnicodeUTF8));
+        cbEsperarNuc->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_1_F_CV", 0, QApplication::UnicodeUTF8));
         cbEsperarNuc->setText(QApplication::translate("A4", "ESPERAR N\303\232CLEO RALENT\303\215", 0, QApplication::UnicodeUTF8));
-        cbIniciar->setId(QApplication::translate("A4", "p_SFC_STEP_ST1_2_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbIniciar->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_2_F_CV", 0, QApplication::UnicodeUTF8));
         cbIniciar->setText(QApplication::translate("A4", "INICIAR CRONO DE 10 SEG A REESTAB", 0, QApplication::UnicodeUTF8));
         lbIniciarCrono->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
         lbApaET->setText(QApplication::translate("A4", "APAGADO DE EMERGENCIA", 0, QApplication::UnicodeUTF8));
         lbImpT->setText(QApplication::translate("A4", "IMPULSI\303\223N", 0, QApplication::UnicodeUTF8));
-        cbEsperarVel->setId(QApplication::translate("A4", "p_SFC_STEP_ES_2_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbEsperarVel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_2_F_CV", 0, QApplication::UnicodeUTF8));
         cbEsperarVel->setText(QApplication::translate("A4", "ESPERAR QUE VEL BAJE ANTES DE MOTOR", 0, QApplication::UnicodeUTF8));
         lbPas3_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        cbApagado->setId(QApplication::translate("A4", "p_SFC_STEP_ES_1_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbApagado->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
         cbApagado->setText(QApplication::translate("A4", "APAGADO DE EMERGENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo3_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
         lbPas3_2T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        checkBox_19->setId(QApplication::translate("A4", "p_SFC_STEP_MOTOR_2_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        checkBox_19->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_2_F_CV", 0, QApplication::UnicodeUTF8));
         checkBox_19->setText(QApplication::translate("A4", "ACTIVAR ARRANQUE HIDR\303\201ULICO", 0, QApplication::UnicodeUTF8));
         lbEdo3_2->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbEsperarIni->setId(QApplication::translate("A4", "p_SFC_STEP_MOTOR_5_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbEsperarIni->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_5_F_CV", 0, QApplication::UnicodeUTF8));
         cbEsperarIni->setText(QApplication::translate("A4", "INICIAR CRONO ROTACI\303\223N ENFR", 0, QApplication::UnicodeUTF8));
-        cbSelec->setId(QApplication::translate("A4", "p_SFC_STEP_MOTOR_3_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbSelec->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_3_F_CV", 0, QApplication::UnicodeUTF8));
         cbSelec->setText(QApplication::translate("A4", "SELEC ALTA VELOCIDAD", 0, QApplication::UnicodeUTF8));
-        cbEsperarN25->setId(QApplication::translate("A4", "p_START_PERM_N2SCT300_B_NAME", 0, QApplication::UnicodeUTF8));
+        cbEsperarN25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
         cbEsperarN25->setText(QApplication::translate("A4", "ESPERAR QUE N25 ABAJO DE 300 RPM", 0, QApplication::UnicodeUTF8));
-        cbListo->setId(QApplication::translate("A4", "p_SFC_STEP_MOTOR_6_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbListo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_6_F_CV", 0, QApplication::UnicodeUTF8));
         cbListo->setText(QApplication::translate("A4", "LISTO PARA ARRANQUE CALIENTE", 0, QApplication::UnicodeUTF8));
-        cbEsperarXn25->setId(QApplication::translate("A4", "p_SFC_STEP_MOTOR_4_SFC_STEP", 0, QApplication::UnicodeUTF8));
+        cbEsperarXn25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_4_F_CV", 0, QApplication::UnicodeUTF8));
         cbEsperarXn25->setText(QApplication::translate("A4", "ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM", 0, QApplication::UnicodeUTF8));
         lbHrs->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("A4", ":", 0, QApplication::UnicodeUTF8));

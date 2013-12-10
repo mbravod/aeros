@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'n3n41.ui'
 **
-** Created: Sat 7. Dec 00:54:31 2013
+** Created: Mon 9. Dec 18:08:34 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

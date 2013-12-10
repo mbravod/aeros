@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b1.ui'
 **
-** Created: Sat 7. Dec 00:54:30 2013
+** Created: Mon 9. Dec 18:08:30 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -587,7 +587,7 @@ public:
         aIndicador_3->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR282_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_3->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PT", 0, QApplication::UnicodeUTF8)));
         aIndicador_3->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6016", 0, QApplication::UnicodeUTF8)));
-        aIndicador_6->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR278_F_CV OR Fix32_THISNODE_ALM_MSTR284_F_CV", 0, QApplication::UnicodeUTF8));
+        aIndicador_6->setId(QApplication::translate("B1", "p_Fix32_THISNODE_ALM_MSTR278_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_6->setProperty("UpLabel", QVariant(QApplication::translate("B1", "PT", 0, QApplication::UnicodeUTF8)));
         aIndicador_6->setProperty("DownLabel", QVariant(QApplication::translate("B1", "6017", 0, QApplication::UnicodeUTF8)));
         aIndicador_8->setProperty("UpLabel", QVariant(QApplication::translate("B1", "MOT", 0, QApplication::UnicodeUTF8)));

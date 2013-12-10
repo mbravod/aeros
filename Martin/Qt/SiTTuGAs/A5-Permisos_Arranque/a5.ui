@@ -152,7 +152,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_NO_SHTDNS_B_NAME</string>
+     <string>p_Fix32_THISNODE_NO_SHTDNS_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -197,7 +197,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_LOK_4HROFF_B_NAME</string>
+     <string>p_Fix32_THISNODE_LOK_4HROFF_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -219,7 +219,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_CAL_MODE_B_NAME</string>
+     <string>p_Fix32_THISNODE_CAL_MODE_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -287,7 +287,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_TLUB_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_TLUB_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -332,7 +332,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_TLO_TNKLVL_B_NAME</string>
+     <string>p_Fix32_THISNODE_TLO_TNKLVL_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -354,7 +354,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_HYD_ST_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_HYD_ST_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -399,7 +399,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_GLUBTNKTMP_B_NAME</string>
+     <string>p_Fix32_THISNODE_GLUBTNKTMP_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -444,7 +444,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_FORCE_MODE_B_NAME</string>
+     <string>p_Fix32_THISNODE_BO_MANUAL_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -489,7 +489,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_STATOR_PRM_B_NAME</string>
+     <string>p_Fix32_THISNODE_STATOR_PRM_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -557,7 +557,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_PS46089_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_PSH6089_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -579,7 +579,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_FANS_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_FANS_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -624,7 +624,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_WWNOTANCTIVE_B_NAME</string>
+     <string>p_Fix32_THISNODE_WW_NOTACTIVE_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -669,7 +669,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_CUSTPRM_B_NAME</string>
+     <string>p_Fix32_THISNODE_CUST_STRTPERM_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -714,7 +714,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_GLUBTNKLVL_B_NAME</string>
+     <string>p_Fix32_THISNODE_GLUBTNKLVL_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -759,7 +759,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OFF_RUN_B_NAME</string>
+     <string>p_Fix32_THISNODE_OFF_RUN_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -855,7 +855,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START01_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START01_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -900,7 +900,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START02_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START02_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -945,7 +945,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START03_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START03_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1013,7 +1013,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START04_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START04_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1035,7 +1035,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START05_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START05_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1103,7 +1103,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START06_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START06_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1125,7 +1125,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START07_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START07_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1193,7 +1193,7 @@
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START08_B_NAME</string>
+     <string>p_Fix32_THISNODE_OK2START08_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1501,7 +1501,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_FUELDVR_OK</string>
+     <string>p_Fix32_THISNODE_FUELDVR_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1546,7 +1546,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_VMIN_STOP</string>
+     <string>p_Fix32_THISNODE_VMIN_STOP_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1568,7 +1568,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_FUELPRJOK</string>
+     <string>p_Fix32_THISNODE_FUELPRSOK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1636,7 +1636,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_FUELSYSOK</string>
+     <string>p_Fix32_THISNODE_FUELSYSOK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1681,7 +1681,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_SOV_CLSD</string>
+     <string>p_Fix32_THISNODE_SOV_CLSD_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1703,7 +1703,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_MNET_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_MNET_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1748,7 +1748,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_LH_OK_B_NAME</string>
+     <string>p_Fix32_THISNODE_LH_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1793,7 +1793,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_VIB_SYS_OK</string>
+     <string>p_Fix32_THISNODE_VIB_SYS_OK_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1838,7 +1838,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_REFSATMIN</string>
+     <string>p_Fix32_THISNODE_XN25MINPOS_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1906,7 +1906,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_REFSATMIN</string>
+     <string>p_Fix32_THISNODE_NPTSYNCPOS_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1928,7 +1928,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_T48_LT400</string>
+     <string>p_Fix32_THISNODE_T48_LT400_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -1973,7 +1973,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_N25LT300_B_NAME</string>
+     <string>p_Fix32_THISNODE_N25LT300_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2018,7 +2018,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START09</string>
+     <string>p_Fix32_THISNODE_OK2START09_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2063,7 +2063,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START10</string>
+     <string>p_Fix32_THISNODE_OK2START10_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2108,7 +2108,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START11</string>
+     <string>p_Fix32_THISNODE_OK2START11_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2153,7 +2153,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START12</string>
+     <string>p_Fix32_THISNODE_OK2START12_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2198,7 +2198,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START13</string>
+     <string>p_Fix32_THISNODE_OK2START13_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2243,7 +2243,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START14</string>
+     <string>p_Fix32_THISNODE_OK2START14_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2311,7 +2311,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="id">
-     <string>p_START_PERM_OK2START15</string>
+     <string>p_Fix32_THISNODE_OK2START15_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -2481,7 +2481,7 @@ p, li { white-space: pre-wrap; }
  <customwidgets>
   <customwidget>
    <class>AWMultiObject</class>
-   <extends></extends>
+   <extends>QWidget</extends>
    <header>awmultiobject.h</header>
   </customwidget>
  </customwidgets>

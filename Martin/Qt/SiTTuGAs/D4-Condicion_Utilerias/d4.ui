@@ -190,6 +190,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_DMS_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -240,6 +243,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NSS_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -286,6 +292,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STIS_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -331,6 +340,9 @@ color: rgb(0, 0, 126);</string>
        <width>40</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_SDN_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -401,6 +413,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_SDS_F_CV </string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -423,6 +438,9 @@ color: rgb(0, 0, 126);</string>
        <width>40</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STARTSG_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -470,6 +488,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STRTATTEMP_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -515,6 +536,9 @@ color: rgb(0, 0, 126);</string>
        <width>40</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_HI_PS3_HRS_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -562,6 +586,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BASET48_HR_F_CV</string>
+     </property>
      <property name="text">
       <string>3566</string>
      </property>
@@ -607,6 +634,9 @@ color: rgb(0, 0, 126);</string>
        <width>40</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BASET3_HR_F_CV</string>
      </property>
      <property name="text">
       <string>75</string>
@@ -654,6 +684,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_HI_PS3_MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -676,6 +709,9 @@ color: rgb(0, 0, 126);</string>
        <width>30</width>
        <height>16</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BASET48MIN_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -700,6 +736,9 @@ color: rgb(0, 0, 126);</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BASET3MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -723,6 +762,9 @@ color: rgb(0, 0, 126);</string>
        <height>18</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STRTLOG_F_CV </string>
+     </property>
      <property name="text">
       <string>INICIAR RECOLECCIÓN DATOS EN REGISTRO </string>
      </property>
@@ -742,6 +784,9 @@ color: rgb(0, 0, 126);</string>
        <width>301</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STPLOG_F_CV </string>
      </property>
      <property name="text">
       <string>ALTO RECOLECCIÓN DATOS EN REGISTRO </string>
@@ -1393,14 +1438,14 @@ color: rgb(0, 0, 126);</string>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
+   <class>WCheckBox</class>
+   <extends></extends>
+   <header>wcheckbox.h</header>
+  </customwidget>
+  <customwidget>
    <class>WLabel</class>
    <extends>QWidget</extends>
    <header>wlabel.h</header>
-  </customwidget>
-  <customwidget>
-   <class>WCheckBox</class>
-   <extends>QWidget</extends>
-   <header>wcheckbox.h</header>
   </customwidget>
  </customwidgets>
  <resources>

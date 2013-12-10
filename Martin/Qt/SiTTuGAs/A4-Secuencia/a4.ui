@@ -250,7 +250,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_NORM_1_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_NORM_STP_1_F_CV</string>
      </property>
      <property name="text">
       <string>RAMPA NPT A CARGA MIN</string>
@@ -279,7 +279,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_NORM_3_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_NORM_STP_3_F_CV</string>
      </property>
      <property name="text">
       <string>INTERRUPTOR ABIERTO</string>
@@ -308,7 +308,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_TIMER_CD_ON_B_NAME</string>
+      <string>p_Fix32_THISNODE_CD_CYCT_ON_F_CV</string>
      </property>
      <property name="text">
       <string>CRON CICLO ENFRIAMIENTO ACTIVO</string>
@@ -436,7 +436,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SHUTDOWN_STEPIDLE_B_NAME</string>
+      <string>p_Fix32_THISNODE_DECELMIN_F_CV</string>
      </property>
      <property name="text">
       <string>DESACEL A CARGA MIN ACTIVO</string>
@@ -763,7 +763,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SHUTDOWN_DOSTEPIDLE</string>
+      <string>p_Fix32_THISNODE_STI_SEQ_1_F_CV</string>
      </property>
      <property name="text">
       <string>ESPERAR NÚCLEO RALENTÍ</string>
@@ -792,7 +792,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_ST1_2_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_STI_SEQ_2_F_CV</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO DE 10 SEG A REESTAB</string>
@@ -946,7 +946,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_ES_2_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_ES_STP_2_F_CV</string>
      </property>
      <property name="text">
       <string>ESPERAR QUE VEL BAJE ANTES DE MOTOR</string>
@@ -1032,7 +1032,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_ES_1_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_ES_STP_1_F_CV</string>
      </property>
      <property name="text">
       <string>APAGADO DE EMERGENCIA</string>
@@ -1175,7 +1175,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_MOTOR_2_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_MTR_STP_2_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
@@ -1261,7 +1261,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_MOTOR_5_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_MTR_STP_5_F_CV</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO ROTACIÓN ENFR</string>
@@ -1290,7 +1290,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_MOTOR_3_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_MTR_STP_3_F_CV</string>
      </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD</string>
@@ -1319,7 +1319,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_START_PERM_N2SCT300_B_NAME</string>
+      <string>p_Fix32_THISNODE_MTR_STP_1_F_CV</string>
      </property>
      <property name="text">
       <string>ESPERAR QUE N25 ABAJO DE 300 RPM</string>
@@ -1348,7 +1348,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_MOTOR_6_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_MTR_STP_6_F_CV</string>
      </property>
      <property name="text">
       <string>LISTO PARA ARRANQUE CALIENTE</string>
@@ -1377,7 +1377,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_MOTOR_4_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_MTR_STP_4_F_CV</string>
      </property>
      <property name="text">
       <string>ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM</string>
@@ -1524,7 +1524,7 @@
  <customwidgets>
   <customwidget>
    <class>WCheckBox</class>
-   <extends></extends>
+   <extends>QWidget</extends>
    <header>wcheckbox.h</header>
   </customwidget>
  </customwidgets>

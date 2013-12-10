@@ -88,7 +88,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_FREQ_A_NAME</string>
+    <string>p_Fix32_THISNODE_FREQ_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -188,7 +188,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_AMPS_B_A_NAME</string>
+    <string>p_Fix32_THISNODE_BUS_VLTS2_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -262,7 +262,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VOLT_BC_A_NAME</string>
+    <string>p_Fix32_THISNODE_VOLT_BC_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -564,7 +564,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VA_A_A_NAME</string>
+    <string>p_Fix32_THISNODE_AMPS_A_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -778,7 +778,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VARS_T_A_NAME</string>
+    <string>p_Fix32_THISNODE_MVAR_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -890,7 +890,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_CONO_MOVV_MWHRSHI_A_NAME</string>
+    <string>p_Fix32_THISNODE_MWHRSHI_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -964,7 +964,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_PF_T_A_NAME</string>
+    <string>p_Fix32_THISNODE_PF_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1157,7 +1157,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_N3N18_AI_BFX_AI_420_L</string>
+    <string>p_Fix32_THISNODE_BFX_F_CV </string>
    </property>
    <property name="text">
     <string/>
@@ -1231,7 +1231,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VARS_B_A_NAME</string>
+    <string>p_Fix32_THISNODE_VARS_B_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1267,7 +1267,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VARS_C_A_NAME</string>
+    <string>p_Fix32_THISNODE_VARS_C_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1303,7 +1303,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_N3N18_AI_BUX_AI_420_L</string>
+    <string>p_Fix32_THISNODE_BVX_F_CV</string>
    </property>
    <property name="tipo">
     <number>-1</number>
@@ -1348,7 +1348,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_HMI_INTER_EVX_CALC_PLUS</string>
+    <string>p_Fix32_THISNODE_EXCIT_VLTS_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1384,7 +1384,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VARS_A_A_NAME</string>
+    <string>p_Fix32_THISNODE_VARS_A_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1458,7 +1458,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VOLT_CA_A_NAME</string>
+    <string>p_Fix32_THISNODE_VOLT_AC_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1494,7 +1494,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VA_T_A_NAME</string>
+    <string>p_Fix32_THISNODE_BUS_FREQ2_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1682,7 +1682,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VA_B_A_NAME</string>
+    <string>p_Fix32_THISNODE_AMPS_B_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1718,7 +1718,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_WATTS_T_A_NAME</string>
+    <string>p_Fix32_THISNODE_MW_INPUT_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1792,7 +1792,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_AMPS_C_A_NAME</string>
+    <string>p_Fix32_THISNODE_BUS_FREQ1_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1904,7 +1904,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VA_C_A_NAME</string>
+    <string>p_Fix32_THISNODE_AMPS_C_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2042,7 +2042,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_HMI_INTER_EAX_CALC_PLUS</string>
+    <string>p_Fix32_THISNODE_EXCIT_AMPS_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2078,7 +2078,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_N3N39_B1_AVRINAUTO</string>
+    <string>p_Fix32_THISNODE_AVRINAUTO_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2117,7 +2117,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_MW_B_A_NAME</string>
+    <string>p_Fix32_THISNODE_WATTS_B_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2234,7 +2234,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_VOLT_AB_A_NAME</string>
+    <string>p_Fix32_THISNODE_VOLT_AB_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2308,7 +2308,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_AMPS_A_A_NAME</string>
+    <string>p_Fix32_THISNODE_BUS_VLTS1_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2648,7 +2648,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_MW_A_A_NAME</string>
+    <string>p_Fix32_THISNODE_WATTS_A_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2836,7 +2836,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_GEN_MW_C_A_NAME</string>
+    <string>p_Fix32_THISNODE_WATTS_C_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2986,7 +2986,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_CONO_MOV_VARHRSH_A_NAME</string>
+    <string>p_Fix32_THISNODE_VARHRSHI_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -3496,7 +3496,7 @@
  <customwidgets>
   <customwidget>
    <class>WLabel</class>
-   <extends></extends>
+   <extends>QWidget</extends>
    <header>wlabel.h</header>
   </customwidget>
  </customwidgets>

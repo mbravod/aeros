@@ -305,7 +305,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR278_F_CV OR Fix32_THISNODE_ALM_MSTR284_F_CV</string>
+    <string>p_Fix32_THISNODE_ALM_MSTR278_F_CV</string>
    </property>
    <property name="value">
     <number>-1</number>

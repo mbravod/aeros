@@ -250,7 +250,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_OUTOFOP_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_0_F_CV</string>
      </property>
      <property name="text">
       <string>UNIDAD FUERA DE OPERACIÓN</string>
@@ -279,7 +279,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_VENT_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_1_F_CV</string>
      </property>
      <property name="text">
       <string>PURGA DE CARCAZA ACTIVA</string>
@@ -308,7 +308,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_GLUB_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_2_F_CV</string>
      </property>
      <property name="text">
       <string>VERIFICAR SISTEMA LUBRICACION GENERADOR</string>
@@ -337,7 +337,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HYD_STRT_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_3_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
@@ -366,7 +366,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_SPDSEL1_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_4_F_CV</string>
      </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD EN ARRANCADOR</string>
@@ -395,7 +395,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_TURB_PRG_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_6_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR CRONO PURGA TURBINA</string>
@@ -424,7 +424,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HI_SPDSEL2_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_8_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANCADOR LUEGO ENCENDEDORES</string>
@@ -453,7 +453,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_SPDSEL3_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_9_F_CV</string>
      </property>
      <property name="text">
       <string>LUZ APAG DETEC ACEL CORTE D/ARRANCADOR</string>
@@ -482,7 +482,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_FSNL_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_13_F_CV</string>
      </property>
      <property name="text">
       <string>VELOCIDAD MÁXIMA SIN CARGA</string>
@@ -511,7 +511,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_ACCTOSYNC_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_11_F_CV</string>
      </property>
      <property name="text">
       <string>ACELERAR A SINC RELENTI</string>
@@ -540,7 +540,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_WARMUP_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_12_F_CV</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO DE CALENTAMIENTO</string>
@@ -569,7 +569,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_ATCORE_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_10_F_CV</string>
      </property>
      <property name="text">
       <string>ESPERA CONTROL N25 Y NSD GT 1200 RPM</string>
@@ -598,7 +598,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_READY25YNC_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_START_SYNC_14_F_CV</string>
      </property>
      <property name="text">
       <string>LISTO PARA CERRAR INTERRUPTOR</string>
@@ -627,7 +627,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_UNITONLINE_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_HICRANK_1_F_CV</string>
      </property>
      <property name="text">
       <string>UNIDAD EN LÍNEA</string>
@@ -1007,7 +1007,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HICRANK_3_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_HICRANK_4_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR BOMBA ALJIBE ACEITE</string>
@@ -1036,7 +1036,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HICRANK_1_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_HICRANK_2_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR SISTEMA LUBRICACIÓN GENERADOR</string>
@@ -1065,7 +1065,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HICRANK_2_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_HICRANK_3_F_CV</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
@@ -1094,7 +1094,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_SFC_STEP_HICRANK_4_SFC_STEP</string>
+      <string>p_Fix32_THISNODE_HISPD_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>SELECCIONAR ALTA VELOCIDAD</string>
@@ -1317,7 +1317,7 @@
  <customwidgets>
   <customwidget>
    <class>WCheckBox</class>
-   <extends></extends>
+   <extends>QWidget</extends>
    <header>wcheckbox.h</header>
   </customwidget>
  </customwidgets>

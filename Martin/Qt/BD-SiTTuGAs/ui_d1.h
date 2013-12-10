@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'd1.ui'
 **
-** Created: Sat 7. Dec 00:54:30 2013
+** Created: Mon 9. Dec 18:08:31 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -647,6 +647,19 @@ public:
         lbInd_30->setText(QApplication::translate("D1", "Al", 0, QApplication::UnicodeUTF8));
         lbInd_31->setText(QApplication::translate("D1", "DVR", 0, QApplication::UnicodeUTF8));
         lbInd_32->setText(QApplication::translate("D1", "LN", 0, QApplication::UnicodeUTF8));
+        WCuadrado_1->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN033_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_2->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN031_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_3->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN031_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_4->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN034_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_5->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN030_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_7->setId(QString());
+        WCuadrado_8->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN031_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_9->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN032_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_10->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN033_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_11->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN034_F_CV ", 0, QApplication::UnicodeUTF8));
+        WCuadrado_12->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN035_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_13->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN036_F_CV", 0, QApplication::UnicodeUTF8));
+        WCuadrado_18->setId(QApplication::translate("D1", "p_Fix32_THISNODE_SDNGEN039_F_CV", 0, QApplication::UnicodeUTF8));
         btnRed_1->setText(QApplication::translate("D1", "RED DE C\303\223MPUTO 1", 0, QApplication::UnicodeUTF8));
         btnRed_2->setText(QApplication::translate("D1", "RED DE C\303\223MPUTO 2", 0, QApplication::UnicodeUTF8));
         btnRed_3->setText(QApplication::translate("D1", "RED DE C\303\223MPUTO 3", 0, QApplication::UnicodeUTF8));

@@ -848,6 +848,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN033_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -866,6 +869,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN031_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -886,6 +892,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN031_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -904,6 +913,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN034_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -924,6 +936,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN030_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -942,6 +957,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string/>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -962,6 +980,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN031_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -980,6 +1001,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN032_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -1000,6 +1024,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN033_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -1018,6 +1045,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN034_F_CV </string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -1038,6 +1068,9 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN035_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -1056,6 +1089,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN036_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -1151,6 +1187,9 @@
      <width>25</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN039_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -1767,7 +1806,7 @@
  <customwidgets>
   <customwidget>
    <class>AWMultiObject</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>awmultiobject.h</header>
   </customwidget>
  </customwidgets>
