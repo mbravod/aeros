@@ -148,5 +148,7 @@ int SQLite::BuscarVal(QString var)
 
 Config SQLite::getConfig()
 {
+    Config h;
 
+    return h;
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'd4.ui'
 **
-** Created: Mon 9. Dec 18:08:32 2013
+** Created: Mon 9. Dec 19:12:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -446,30 +446,45 @@ public:
         lbCtrlT->setText(QApplication::translate("D4", "CONTROL REGISTRO DE DATOS MICRONET", 0, QApplication::UnicodeUTF8));
         lbContT->setText(QApplication::translate("D4", "CONTADORES", 0, QApplication::UnicodeUTF8));
         lbDesaT->setText(QApplication::translate("D4", "DESACEL A CARGA MINIMA", 0, QApplication::UnicodeUTF8));
+        lbDesa->setId(QApplication::translate("D4", "p_Fix32_THISNODE_DMS_F_CV", 0, QApplication::UnicodeUTF8));
         lbDesa->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbTiemT->setText(QApplication::translate("D4", "TIEMPO", 0, QApplication::UnicodeUTF8));
+        lbDetT_2->setId(QApplication::translate("D4", "p_Fix32_THISNODE_NSS_F_CV", 0, QApplication::UnicodeUTF8));
         lbDetT_2->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbDetT->setText(QApplication::translate("D4", "DETENCIONES NORMALES ", 0, QApplication::UnicodeUTF8));
+        lbPaso->setId(QApplication::translate("D4", "p_Fix32_THISNODE_STIS_F_CV", 0, QApplication::UnicodeUTF8));
         lbPaso->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbPasoT->setText(QApplication::translate("D4", "PASOS A RALENT\303\215", 0, QApplication::UnicodeUTF8));
+        lbApaSin->setId(QApplication::translate("D4", "p_Fix32_THISNODE_SDN_F_CV", 0, QApplication::UnicodeUTF8));
         lbApaSin->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbApaSinT->setText(QApplication::translate("D4", "APAGADOS DE EMRGENCIA SIN MOTOR", 0, QApplication::UnicodeUTF8));
         lbApaConT->setText(QApplication::translate("D4", "APAGADOS DE EMRGENCIA CON MOTOR", 0, QApplication::UnicodeUTF8));
+        lbApaCon->setId(QApplication::translate("D4", "p_Fix32_THISNODE_SDS_F_CV ", 0, QApplication::UnicodeUTF8));
         lbApaCon->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
+        lbArra->setId(QApplication::translate("D4", "p_Fix32_THISNODE_STARTSG_F_CV", 0, QApplication::UnicodeUTF8));
         lbArra->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbArraT->setText(QApplication::translate("D4", "ARRANQUES CON GAS", 0, QApplication::UnicodeUTF8));
+        lbInt->setId(QApplication::translate("D4", "p_Fix32_THISNODE_STRTATTEMP_F_CV", 0, QApplication::UnicodeUTF8));
         lbInt->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbIntT->setText(QApplication::translate("D4", "INTENTO DE ARRANQUES", 0, QApplication::UnicodeUTF8));
+        lbPs3->setId(QApplication::translate("D4", "p_Fix32_THISNODE_HI_PS3_HRS_F_CV", 0, QApplication::UnicodeUTF8));
         lbPs3->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
         lbPs3T->setText(QApplication::translate("D4", "PS3 CONTROL DE RELLENO", 0, QApplication::UnicodeUTF8));
+        lbt48E->setId(QApplication::translate("D4", "p_Fix32_THISNODE_BASET48_HR_F_CV", 0, QApplication::UnicodeUTF8));
         lbt48E->setText(QApplication::translate("D4", "3566", 0, QApplication::UnicodeUTF8));
         lbT3ET->setText(QApplication::translate("D4", "T3 ENTRADA BASE", 0, QApplication::UnicodeUTF8));
+        lbT3E->setId(QApplication::translate("D4", "p_Fix32_THISNODE_BASET3_HR_F_CV", 0, QApplication::UnicodeUTF8));
         lbT3E->setText(QApplication::translate("D4", "75", 0, QApplication::UnicodeUTF8));
         lbt48ET->setText(QApplication::translate("D4", "T48 ENTRADA BASE", 0, QApplication::UnicodeUTF8));
+        lbPs3_2->setId(QApplication::translate("D4", "p_Fix32_THISNODE_HI_PS3_MIN_F_CV", 0, QApplication::UnicodeUTF8));
         lbPs3_2->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
+        lbt48E_2->setId(QApplication::translate("D4", "p_Fix32_THISNODE_BASET48MIN_F_CV", 0, QApplication::UnicodeUTF8));
         lbt48E_2->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
+        lbT3E_2->setId(QApplication::translate("D4", "p_Fix32_THISNODE_BASET3MIN_F_CV", 0, QApplication::UnicodeUTF8));
         lbT3E_2->setText(QApplication::translate("D4", "0", 0, QApplication::UnicodeUTF8));
+        cbInic->setId(QApplication::translate("D4", "p_Fix32_THISNODE_STRTLOG_F_CV ", 0, QApplication::UnicodeUTF8));
         cbInic->setText(QApplication::translate("D4", "INICIAR RECOLECCI\303\223N DATOS EN REGISTRO ", 0, QApplication::UnicodeUTF8));
+        cbAlto->setId(QApplication::translate("D4", "p_Fix32_THISNODE_STPLOG_F_CV ", 0, QApplication::UnicodeUTF8));
         cbAlto->setText(QApplication::translate("D4", "ALTO RECOLECCI\303\223N DATOS EN REGISTRO ", 0, QApplication::UnicodeUTF8));
         lbColeT->setText(QApplication::translate("D4", "COLECCIONA", 0, QApplication::UnicodeUTF8));
         lbMemllT->setText(QApplication::translate("D4", "MEMORIA INTERMEDIA LLENA", 0, QApplication::UnicodeUTF8));
