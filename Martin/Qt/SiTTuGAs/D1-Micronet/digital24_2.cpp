@@ -11,7 +11,8 @@ Digital24_2::Digital24_2(QWidget *parent) :
     //Emitimos una señal para identificar a cada widget cuando este sea clickeado por el usuario
     connect(this,SIGNAL(clicked(int )),this,SLOT(idWindow(int)));
     connect(ui->btCerrar,SIGNAL(clicked()),this,SLOT(cerrar()));
-
+    connect(ui->btProx,SIGNAL(clicked()),this,SLOT(siguiente()));
+    flag = 1;
 }
 
 Digital24_2::~Digital24_2()
@@ -27,6 +28,32 @@ void Digital24_2::cerrar()
 void Digital24_2::idWindow(int id)
 {
     emit(id);
+}
+
+void Digital24_2::siguiente()
+{
+    switch(flag){
+
+    case 1:
+            ui->panel1->setVisible(false);
+            ui->panel2->setVisible(true);
+            ui->panel3->setVisible(false);
+            flag = 2;
+     break;
+    case 2:
+            ui->panel1->setVisible(false);
+            ui->panel2->setVisible(false);
+            ui->panel3->setVisible(true);
+            flag = 0;
+     break;
+    default:
+            ui->panel1->setVisible(true);
+            ui->panel2->setVisible(false);
+            ui->panel3->setVisible(false);
+            flag = 1;
+    }
+    update();
+
 }
 void Digital24_2::mousePressEvent(QMouseEvent *event)
 {

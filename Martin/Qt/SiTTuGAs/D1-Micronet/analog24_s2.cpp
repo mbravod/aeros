@@ -34,8 +34,8 @@ void Analog24_S2::siguiente()
         ui->panel1->setVisible(false);
         flag = 1;
     }else{
-        ui->panel1->setVisible(false);
-        ui->panel2->setVisible(true);
+        ui->panel1->setVisible(true);
+        ui->panel2->setVisible(false);
         flag = 0;
     }
 }

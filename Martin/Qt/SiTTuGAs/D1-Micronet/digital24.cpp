@@ -5,7 +5,7 @@ Digital24::Digital24(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Digital24)
 {
-    flag = 0;
+    flag = 1;
     ui->setupUi(this);
     //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );
@@ -36,12 +36,7 @@ void Digital24::idWindow(int id)
 void Digital24::siguiente()
 {
     switch(flag){
-        case 0:
-            ui->panel1->setVisible(true);
-            ui->panel1_2->setVisible(false);
-            ui->panel1_3->setVisible(false);
-            flag = 1;
-        break;
+
         case 1:
             ui->panel1->setVisible(false);
             ui->panel1_2->setVisible(true);
@@ -54,6 +49,11 @@ void Digital24::siguiente()
             ui->panel1_3->setVisible(true);
             flag = 0;
         break;
+    default:
+        ui->panel1->setVisible(true);
+        ui->panel1_2->setVisible(false);
+        ui->panel1_3->setVisible(false);
+        flag = 1;
     }
     update();
 }

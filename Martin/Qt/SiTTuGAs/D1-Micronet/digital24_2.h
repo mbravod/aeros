@@ -14,9 +14,11 @@ class Digital24_2 : public QWidget
 public:
     explicit Digital24_2(QWidget *parent = 0);
     ~Digital24_2();
+    int flag;
 public slots:
     void cerrar();
     void idWindow(int);
+    void siguiente();
 
 signals:
     void clicked (int id);

@@ -34,7 +34,7 @@
      <x>0</x>
      <y>0</y>
      <width>485</width>
-     <height>590</height>
+     <height>530</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -224,30 +224,6 @@
      <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="btProx">
-    <property name="geometry">
-     <rect>
-      <x>283</x>
-      <y>536</y>
-      <width>101</width>
-      <height>33</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 208, 200);</string>
-    </property>
-    <property name="text">
-     <string>PRÓX&gt;</string>
-    </property>
-   </widget>
    <widget class="WLabel" name="lbNumDes_20">
     <property name="geometry">
      <rect>
@@ -425,30 +401,6 @@
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btCerrar">
-    <property name="geometry">
-     <rect>
-      <x>136</x>
-      <y>536</y>
-      <width>101</width>
-      <height>33</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Verdana</family>
-      <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 208, 200);</string>
-    </property>
-    <property name="text">
-     <string>CERRAR</string>
     </property>
    </widget>
    <widget class="WLabel" name="lbTit_10">
@@ -2660,7 +2612,6 @@ color: rgb(255, 255, 255);</string>
    <zorder>lbNum_4</zorder>
    <zorder>lbTit_8</zorder>
    <zorder>lbTit_3</zorder>
-   <zorder>btProx</zorder>
    <zorder>lbNumDes_20</zorder>
    <zorder>lbTit_21</zorder>
    <zorder>lbUni_12</zorder>
@@ -2668,7 +2619,6 @@ color: rgb(255, 255, 255);</string>
    <zorder>lbNum_8</zorder>
    <zorder>lbUni_1</zorder>
    <zorder>lbTit_5</zorder>
-   <zorder>btCerrar</zorder>
    <zorder>lbTit_10</zorder>
    <zorder>lbUni_23</zorder>
    <zorder>lbUni_5</zorder>
@@ -8116,9 +8066,88 @@ color: rgb(255, 255, 255);</string>
    <zorder>lbNumDes_120</zorder>
    <zorder>lbUni_120</zorder>
   </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>540</y>
+     <width>101</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>CERRAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btProx">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>540</y>
+     <width>101</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>PRÓX&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFondo_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>590</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>485</width>
+     <height>590</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>485</width>
+     <height>590</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbFondo_2</zorder>
   <zorder>panel2</zorder>
   <zorder>panel3</zorder>
   <zorder>panel1</zorder>
+  <zorder>btCerrar</zorder>
+  <zorder>btProx</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

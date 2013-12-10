@@ -5,7 +5,7 @@ Digital16::Digital16(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Digital16)
 {
-    flag = 0;
+    flag = 1;
     ui->setupUi(this);
     //Activamos el seguimiento del raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );
@@ -34,13 +34,8 @@ void Digital16::idWindow(int id)
 void Digital16::siguiente()
 {
     switch(flag){
-        case 0:
-                ui->panel1->setVisible(true);
-                ui->panel2->setVisible(false);
-                ui->panel3->setVisible(false);
-                ui->panel4->setVisible(false);
-                flag = 1;
-         break;
+
+
     case 1:
             ui->panel1->setVisible(false);
             ui->panel2->setVisible(true);
@@ -62,6 +57,12 @@ void Digital16::siguiente()
             ui->panel4->setVisible(true);
             flag = 0;
      break;
+    default:
+            ui->panel1->setVisible(true);
+            ui->panel2->setVisible(false);
+            ui->panel3->setVisible(false);
+            ui->panel4->setVisible(false);
+            flag = 1;
     }
     update();
 }

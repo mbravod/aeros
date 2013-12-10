@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digital24_2.ui'
 **
-** Created: Mon 9. Dec 19:12:10 2013
+** Created: Mon 9. Dec 20:15:55 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -34,7 +34,6 @@ public:
     WLabel *lbNum_4;
     WLabel *lbTit_8;
     WLabel *lbTit_3;
-    QPushButton *btProx;
     WLabel *lbNumDes_20;
     WLabel *lbTit_21;
     WLabel *lbUni_12;
@@ -42,7 +41,6 @@ public:
     WLabel *lbNum_8;
     WLabel *lbUni_1;
     WLabel *lbTit_5;
-    QPushButton *btCerrar;
     WLabel *lbTit_10;
     WLabel *lbUni_23;
     WLabel *lbUni_5;
@@ -334,6 +332,9 @@ public:
     WLabel *lbUni_119;
     WLabel *lbNumDes_120;
     WLabel *lbUni_120;
+    QPushButton *btCerrar;
+    QPushButton *btProx;
+    QLabel *lbFondo_2;
 
     void setupUi(QWidget *Digital24_2)
     {
@@ -345,7 +346,7 @@ public:
         Digital24_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
         panel1 = new QFrame(Digital24_2);
         panel1->setObjectName(QString::fromUtf8("panel1"));
-        panel1->setGeometry(QRect(0, 0, 485, 590));
+        panel1->setGeometry(QRect(0, 0, 485, 530));
         panel1->setFrameShape(QFrame::StyledPanel);
         panel1->setFrameShadow(QFrame::Raised);
         lbTit_4 = new WLabel(panel1);
@@ -397,16 +398,6 @@ public:
         lbTit_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
         lbTit_3->setFont(font);
         lbTit_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
-        btProx = new QPushButton(panel1);
-        btProx->setObjectName(QString::fromUtf8("btProx"));
-        btProx->setGeometry(QRect(283, 536, 101, 33));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Verdana"));
-        font2.setPointSize(9);
-        font2.setBold(true);
-        font2.setWeight(75);
-        btProx->setFont(font2);
-        btProx->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
         lbNumDes_20 = new WLabel(panel1);
         lbNumDes_20->setObjectName(QString::fromUtf8("lbNumDes_20"));
         lbNumDes_20->setGeometry(QRect(369, 350, 45, 16));
@@ -446,11 +437,6 @@ public:
         lbTit_5->setGeometry(QRect(30, 135, 340, 16));
         lbTit_5->setFont(font);
         lbTit_5->setProperty("Alineacion", QVariant(WLabel::Izquierda));
-        btCerrar = new QPushButton(panel1);
-        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
-        btCerrar->setGeometry(QRect(136, 536, 101, 33));
-        btCerrar->setFont(font2);
-        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
         lbTit_10 = new WLabel(panel1);
         lbTit_10->setObjectName(QString::fromUtf8("lbTit_10"));
         lbTit_10->setGeometry(QRect(30, 230, 340, 16));
@@ -549,9 +535,9 @@ public:
         lbIP_2->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);\n"
 "background-color: rgb(74, 110, 195);\n"
 "color: rgb(255, 255, 255);"));
-        QFont font3;
-        font3.setPointSize(9);
-        lbIP_2->setFont(font3);
+        QFont font2;
+        font2.setPointSize(9);
+        lbIP_2->setFont(font2);
         lbIP_2->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbNumDes_10 = new WLabel(panel1);
         lbNumDes_10->setObjectName(QString::fromUtf8("lbNumDes_10"));
@@ -816,7 +802,12 @@ public:
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(62, 4, 400, 22));
         label_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);"));
-        label_3->setFont(font2);
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Verdana"));
+        font3.setPointSize(9);
+        font3.setBold(true);
+        font3.setWeight(75);
+        label_3->setFont(font3);
         label_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbUni_8 = new WLabel(panel1);
         lbUni_8->setObjectName(QString::fromUtf8("lbUni_8"));
@@ -948,7 +939,6 @@ public:
         lbNum_4->raise();
         lbTit_8->raise();
         lbTit_3->raise();
-        btProx->raise();
         lbNumDes_20->raise();
         lbTit_21->raise();
         lbUni_12->raise();
@@ -956,7 +946,6 @@ public:
         lbNum_8->raise();
         lbUni_1->raise();
         lbTit_5->raise();
-        btCerrar->raise();
         lbTit_10->raise();
         lbUni_23->raise();
         lbUni_5->raise();
@@ -1223,7 +1212,7 @@ public:
         lbIP_5->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);\n"
 "background-color: rgb(74, 110, 195);\n"
 "color: rgb(255, 255, 255);"));
-        lbIP_5->setFont(font3);
+        lbIP_5->setFont(font2);
         lbIP_5->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbNumDes_78 = new WLabel(panel2);
         lbNumDes_78->setObjectName(QString::fromUtf8("lbNumDes_78"));
@@ -1488,7 +1477,7 @@ public:
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(62, 4, 400, 22));
         label_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);"));
-        label_6->setFont(font2);
+        label_6->setFont(font3);
         label_6->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbUni_92 = new WLabel(panel2);
         lbUni_92->setObjectName(QString::fromUtf8("lbUni_92"));
@@ -1893,7 +1882,7 @@ public:
         lbIP_6->setStyleSheet(QString::fromUtf8("background-color: rgb(74, 110, 195);\n"
 "background-color: rgb(74, 110, 195);\n"
 "color: rgb(255, 255, 255);"));
-        lbIP_6->setFont(font3);
+        lbIP_6->setFont(font2);
         lbIP_6->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbNumDes_102 = new WLabel(panel3);
         lbNumDes_102->setObjectName(QString::fromUtf8("lbNumDes_102"));
@@ -2158,7 +2147,7 @@ public:
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(62, 4, 400, 22));
         label_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);"));
-        label_7->setFont(font2);
+        label_7->setFont(font3);
         label_7->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbUni_116 = new WLabel(panel3);
         lbUni_116->setObjectName(QString::fromUtf8("lbUni_116"));
@@ -2381,9 +2370,28 @@ public:
         lbUni_119->raise();
         lbNumDes_120->raise();
         lbUni_120->raise();
+        btCerrar = new QPushButton(Digital24_2);
+        btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
+        btCerrar->setGeometry(QRect(143, 540, 101, 33));
+        btCerrar->setFont(font3);
+        btCerrar->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
+        btProx = new QPushButton(Digital24_2);
+        btProx->setObjectName(QString::fromUtf8("btProx"));
+        btProx->setGeometry(QRect(290, 540, 101, 33));
+        btProx->setFont(font3);
+        btProx->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 208, 200);"));
+        lbFondo_2 = new QLabel(Digital24_2);
+        lbFondo_2->setObjectName(QString::fromUtf8("lbFondo_2"));
+        lbFondo_2->setGeometry(QRect(0, 0, 485, 590));
+        lbFondo_2->setMinimumSize(QSize(485, 590));
+        lbFondo_2->setMaximumSize(QSize(485, 590));
+        lbFondo_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo_2->raise();
         panel2->raise();
         panel3->raise();
         panel1->raise();
+        btCerrar->raise();
+        btProx->raise();
 
         retranslateUi(Digital24_2);
 
@@ -2400,7 +2408,6 @@ public:
         lbNum_4->setText(QApplication::translate("Digital24_2", "4", 0, QApplication::UnicodeUTF8));
         lbTit_8->setText(QApplication::translate("Digital24_2", "8- RETROAL VALV N\302\260 8 PREPARACI\303\223N D/GAS", 0, QApplication::UnicodeUTF8));
         lbTit_3->setText(QApplication::translate("Digital24_2", "3- RETROAL VALV N\302\260 3 PREPARACI\303\223N D/GAS", 0, QApplication::UnicodeUTF8));
-        btProx->setText(QApplication::translate("Digital24_2", "PR\303\223X>", 0, QApplication::UnicodeUTF8));
         lbNumDes_20->setText(QApplication::translate("Digital24_2", "1", 0, QApplication::UnicodeUTF8));
         lbTit_21->setText(QApplication::translate("Digital24_2", "RESUMEN CALOR\303\215METRO AL (ACT 0)", 0, QApplication::UnicodeUTF8));
         lbUni_12->setText(QApplication::translate("Digital24_2", "SD", 0, QApplication::UnicodeUTF8));
@@ -2408,7 +2415,6 @@ public:
         lbNum_8->setText(QApplication::translate("Digital24_2", "8", 0, QApplication::UnicodeUTF8));
         lbUni_1->setText(QApplication::translate("Digital24_2", "OPN", 0, QApplication::UnicodeUTF8));
         lbTit_5->setText(QApplication::translate("Digital24_2", "5- RETROAL VALV N\302\260 5 PREPARACI\303\223N D/GAS", 0, QApplication::UnicodeUTF8));
-        btCerrar->setText(QApplication::translate("Digital24_2", "CERRAR", 0, QApplication::UnicodeUTF8));
         lbTit_10->setText(QApplication::translate("Digital24_2", "10- RETROAL VALV N\302\260 10 PREPARACI\303\223N D/GAS", 0, QApplication::UnicodeUTF8));
         lbUni_23->setText(QApplication::translate("Digital24_2", "10", 0, QApplication::UnicodeUTF8));
         lbUni_5->setText(QApplication::translate("Digital24_2", "CLSD", 0, QApplication::UnicodeUTF8));
@@ -2702,6 +2708,9 @@ public:
         lbUni_119->setText(QApplication::translate("Digital24_2", "10", 0, QApplication::UnicodeUTF8));
         lbNumDes_120->setText(QApplication::translate("Digital24_2", "1", 0, QApplication::UnicodeUTF8));
         lbUni_120->setText(QApplication::translate("Digital24_2", "OPN", 0, QApplication::UnicodeUTF8));
+        btCerrar->setText(QApplication::translate("Digital24_2", "CERRAR", 0, QApplication::UnicodeUTF8));
+        btProx->setText(QApplication::translate("Digital24_2", "PR\303\223X>", 0, QApplication::UnicodeUTF8));
+        lbFondo_2->setText(QString());
     } // retranslateUi
 
 };

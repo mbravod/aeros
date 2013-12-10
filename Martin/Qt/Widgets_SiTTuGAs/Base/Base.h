@@ -5,7 +5,8 @@
 
 
 //Posiblemente cambiar esta referencia una vez que se defina el nombre
-#include "../SiTTuGAs/SharedMemory/httprequest.h"
+#include "../SharedMemory/httprequest.h"                    //modifica
+
 
 class Base : public QWidget
 {

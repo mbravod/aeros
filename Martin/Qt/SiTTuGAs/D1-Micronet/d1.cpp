@@ -9,7 +9,7 @@ D1::D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     header = new Header(this);
     this->title = "MICRONET I/O";
     this->clave= "D1";
-    for(int i=0; i<10; i++){
+    for(int i=0; i<11; i++){
         ctrVen[i] = false;
     }
     connect(ui->btind4,SIGNAL(clicked()),this,SLOT(SLTanalog04()));
@@ -28,7 +28,7 @@ D1::D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
 
     Id = -1;
     venActual = -1;
-    qDebug()<< "Ultima posicion de ctrVen: "<<ctrVen[10];
+    qDebug()<< "Ultima posicion de ctrVen: "<<ctrVen[11];
     //Evitamos que se de seguimiento al raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b11.ui'
 **
-** Created: Mon 9. Dec 19:12:09 2013
+** Created: Mon 9. Dec 20:22:26 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -114,7 +114,6 @@ public:
         WIndicatorTE_24->setObjectName(QString::fromUtf8("WIndicatorTE_24"));
         WIndicatorTE_24->setGeometry(QRect(325, 240, 70, 70));
         WIndicatorTE_24->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_24->setValue(0);
         WIndicatorTE_24->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_24->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_24->setProperty("Value", QVariant(2));
@@ -122,7 +121,6 @@ public:
         WIndicatorTE_23->setObjectName(QString::fromUtf8("WIndicatorTE_23"));
         WIndicatorTE_23->setGeometry(QRect(450, 240, 70, 70));
         WIndicatorTE_23->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_23->setValue(0);
         WIndicatorTE_23->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_23->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_23->setProperty("Value", QVariant(2));
@@ -131,7 +129,6 @@ public:
         WIndicatorTE_22->setGeometry(QRect(500, 240, 70, 70));
         WIndicatorTE_22->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
         WIndicatorTE_22->setProperty("isUpdateable", QVariant(false));
-        WIndicatorTE_22->setValue(0);
         WIndicatorTE_22->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_22->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_22->setProperty("Value", QVariant(2));
@@ -139,7 +136,6 @@ public:
         WIndicatorTE_21->setObjectName(QString::fromUtf8("WIndicatorTE_21"));
         WIndicatorTE_21->setGeometry(QRect(555, 240, 70, 70));
         WIndicatorTE_21->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_21->setValue(0);
         WIndicatorTE_21->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_21->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_21->setProperty("Value", QVariant(2));
@@ -147,7 +143,6 @@ public:
         WIndicatorTE_25->setObjectName(QString::fromUtf8("WIndicatorTE_25"));
         WIndicatorTE_25->setGeometry(QRect(274, 240, 70, 70));
         WIndicatorTE_25->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_25->setValue(0);
         WIndicatorTE_25->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_25->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_25->setProperty("Value", QVariant(2));
@@ -155,7 +150,6 @@ public:
         WIndicatorTE_26->setObjectName(QString::fromUtf8("WIndicatorTE_26"));
         WIndicatorTE_26->setGeometry(QRect(223, 240, 70, 70));
         WIndicatorTE_26->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_26->setValue(0);
         WIndicatorTE_26->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_26->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_26->setProperty("Value", QVariant(2));
@@ -163,31 +157,26 @@ public:
         WIndicatorTE_30->setObjectName(QString::fromUtf8("WIndicatorTE_30"));
         WIndicatorTE_30->setGeometry(QRect(638, 205, 70, 70));
         WIndicatorTE_30->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_30->setValue(0);
         WIndicatorTE_30->setOrientation(AWMultEstateWidget::Degree180);
         WIndicatorTE_30->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_30->setProperty("Value", QVariant(2));
         WIndicadorMOT_13 = new AInstrumentIndicator(B11);
         WIndicadorMOT_13->setObjectName(QString::fromUtf8("WIndicadorMOT_13"));
         WIndicadorMOT_13->setGeometry(QRect(640, 75, 71, 61));
-        WIndicadorMOT_13->setValue(0);
         WIndicadorMOT_13->setProperty("Value", QVariant(3));
         WIndicadorMOT_16 = new AInstrumentIndicator(B11);
         WIndicadorMOT_16->setObjectName(QString::fromUtf8("WIndicadorMOT_16"));
         WIndicadorMOT_16->setGeometry(QRect(825, 74, 71, 61));
-        WIndicadorMOT_16->setValue(0);
         WIndicadorMOT_16->setOrientation(AWMultEstateWidget::Degree180);
         WIndicadorMOT_16->setProperty("Value", QVariant(3));
         WIndicadorFSL_10 = new AInstrumentIndicator(B11);
         WIndicadorFSL_10->setObjectName(QString::fromUtf8("WIndicadorFSL_10"));
         WIndicadorFSL_10->setGeometry(QRect(825, 118, 71, 61));
-        WIndicadorFSL_10->setValue(0);
         WIndicadorFSL_10->setOrientation(AWMultEstateWidget::Degree180);
         WIndicadorFSL_10->setProperty("Value", QVariant(2));
         WIndicadorFSL_09 = new AInstrumentIndicator(B11);
         WIndicadorFSL_09->setObjectName(QString::fromUtf8("WIndicadorFSL_09"));
         WIndicadorFSL_09->setGeometry(QRect(640, 118, 71, 61));
-        WIndicadorFSL_09->setValue(0);
         WIndicadorFSL_09->setOrientation(AWMultEstateWidget::Degree0);
         WIndicadorFSL_09->setProperty("Value", QVariant(2));
         btnVenGEN = new QPushButton(B11);
@@ -239,40 +228,34 @@ public:
         WIndicatorPDSL_07->setObjectName(QString::fromUtf8("WIndicatorPDSL_07"));
         WIndicatorPDSL_07->setGeometry(QRect(895, 295, 70, 70));
         WIndicatorPDSL_07->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorPDSL_07->setValue(0);
         WIndicatorPDSL_07->setOrientation(AWMultEstateWidget::Degree180);
         WIndicatorPDSL_07->setProperty("LineAngle", QVariant(0));
         WIndicatorPDSL_07->setProperty("Value", QVariant(2));
         WIndicadorHE_50 = new AInstrumentIndicator(B11);
         WIndicadorHE_50->setObjectName(QString::fromUtf8("WIndicadorHE_50"));
         WIndicadorHE_50->setGeometry(QRect(670, 500, 71, 61));
-        WIndicadorHE_50->setValue(0);
         WIndicadorHE_50->setOrientation(AWMultEstateWidget::Degree180);
         WIndicadorHE_50->setProperty("Value", QVariant(3));
         WIndicadorHE_3 = new AInstrumentIndicator(B11);
         WIndicadorHE_3->setObjectName(QString::fromUtf8("WIndicadorHE_3"));
         WIndicadorHE_3->setGeometry(QRect(935, 502, 71, 61));
-        WIndicadorHE_3->setValue(0);
         WIndicadorHE_3->setOrientation(AWMultEstateWidget::Degree180);
         WIndicadorHE_3->setProperty("Value", QVariant(3));
         WIndicatorTE_31 = new AInstrumentIndicator(B11);
         WIndicatorTE_31->setObjectName(QString::fromUtf8("WIndicatorTE_31"));
         WIndicatorTE_31->setGeometry(QRect(115, 309, 63, 61));
         WIndicatorTE_31->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_31->setValue(0);
         WIndicatorTE_31->setOrientation(AWMultEstateWidget::Degree0);
         WIndicatorTE_31->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_31->setProperty("Value", QVariant(2));
         WIndicadorHE_51 = new AInstrumentIndicator(B11);
         WIndicadorHE_51->setObjectName(QString::fromUtf8("WIndicadorHE_51"));
         WIndicadorHE_51->setGeometry(QRect(18, 403, 71, 61));
-        WIndicadorHE_51->setValue(0);
         WIndicadorHE_51->setProperty("Value", QVariant(3));
         WIndicatorTE_2 = new AInstrumentIndicator(B11);
         WIndicatorTE_2->setObjectName(QString::fromUtf8("WIndicatorTE_2"));
         WIndicatorTE_2->setGeometry(QRect(46, 102, 61, 61));
         WIndicatorTE_2->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);"));
-        WIndicatorTE_2->setValue(0);
         WIndicatorTE_2->setOrientation(AWMultEstateWidget::Degree90);
         WIndicatorTE_2->setProperty("LineAngle", QVariant(0));
         WIndicatorTE_2->setProperty("Value", QVariant(2));

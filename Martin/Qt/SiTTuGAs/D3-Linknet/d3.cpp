@@ -14,10 +14,10 @@ D3::D3(SiTTuGAs *siTTuGAs, HTTPRequest *shrdMem) :
         ctrVen[i] = false;
     }
     connect(ui->btind1,SIGNAL(clicked()),this,SLOT(SLTanalog04()));
-/*    connect(ui->btind1_2,SIGNAL(clicked()),this,SLOT(SLTanalog08()));
+    connect(ui->btind1_2,SIGNAL(clicked()),this,SLOT(SLTanalog08()));
     connect(ui->btind1_3,SIGNAL(clicked()),this,SLOT(SLTanalog08_2()));
     connect(ui->btnind1_4,SIGNAL(clicked()),this,SLOT(SLTanalog16()));
-    connect(ui->btnind1_5,SIGNAL(clicked()),this,SLOT(SLTanalog16_2()));*/
+    connect(ui->btnind1_5,SIGNAL(clicked()),this,SLOT(SLTanalog16_2()));
 
     connect(ui->btMicroNet,SIGNAL(clicked()),this,SLOT(sltirA()));
 
