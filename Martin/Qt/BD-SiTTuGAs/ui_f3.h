@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'f3.ui'
 **
-** Created: Tue 10. Dec 18:43:57 2013
+** Created: Wed 11. Dec 16:16:01 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -742,47 +742,87 @@ public:
         lbIMGFondo->setText(QString());
         lbTitulo_1->setText(QApplication::translate("F3", "DESACEL A MIN (2\302\272 ANILLO)", 0, QApplication::UnicodeUTF8));
         lbTexto_1->setText(QApplication::translate("F3", "SEC:N1N6 FALLA NODO", 0, QApplication::UnicodeUTF8));
+        aLet_1->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_MSTR010_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_2->setText(QApplication::translate("F3", "SEC:N1N7 FALLA NODO", 0, QApplication::UnicodeUTF8));
+        aLet_2->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_MSTR011_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_3->setText(QApplication::translate("F3", "SEC:N1N8 FALLA NODO", 0, QApplication::UnicodeUTF8));
+        aLet_3->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_MSTR012_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_4->setText(QApplication::translate("F3", "SEC:N2N3 FALLA NODO", 0, QApplication::UnicodeUTF8));
+        aLet_4->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN017_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_5->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN018_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_5->setText(QApplication::translate("F3", "SEC:N2N5 FALLA NODO", 0, QApplication::UnicodeUTF8));
+        aLet_6->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_6->setText(QApplication::translate("F3", "SEC:PT6121 A&B FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_7->setText(QApplication::translate("F3", "SEC:TEMP DE ESTATOR DEL GEN FASE W(N\302\272)", 0, QApplication::UnicodeUTF8));
+        aLet_7->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN001_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_8->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN002_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_8->setText(QApplication::translate("F3", "SEC:TEMP DE ESTATOR DEL GEN FASE V (N\302\272)", 0, QApplication::UnicodeUTF8));
+        aLet_9->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN003_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_9->setText(QApplication::translate("F3", "SEC:TEMP DE ESTATOR DEL GEN FASE U (N\302\272)", 0, QApplication::UnicodeUTF8));
         lbTexto_10->setText(QApplication::translate("F3", "SEC: TEMP SALIDA AIRE DE GEN", 0, QApplication::UnicodeUTF8));
+        aLet_10->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN004_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_11->setText(QApplication::translate("F3", "SEC: TEMP DE ESTATOR DEL GEN FASE W (N\302\272)", 0, QApplication::UnicodeUTF8));
+        aLet_11->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN005_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_12->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN006_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_12->setText(QApplication::translate("F3", "SEC: TEMP AIRE DE ENTR CUARTO DE TURB (N\302\272)", 0, QApplication::UnicodeUTF8));
         lbTexto_13->setText(QApplication::translate("F3", "SEC: TEMP DE ESTATOR DEL GEN FASE V (N\302\272)", 0, QApplication::UnicodeUTF8));
+        aLet_13->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN007_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_14->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN008_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_14->setText(QApplication::translate("F3", "SEC: TEMP AIRE CUARTO DE GENERADOR", 0, QApplication::UnicodeUTF8));
         lbTexto_15->setText(QApplication::translate("F3", "SEC:TEMP DE ESTATOR DEL GEN PASE U (N\302\272)", 0, QApplication::UnicodeUTF8));
+        aLet_15->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN009_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_16->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN010_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_16->setText(QApplication::translate("F3", "SEC:TEMP SALIDA AIRE DE EXCITADOR DE GEN", 0, QApplication::UnicodeUTF8));
+        aLet_17->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN014_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_17->setText(QApplication::translate("F3", "SEC:DM GEN REFACCI\303\223N", 0, QApplication::UnicodeUTF8));
+        aLet_18->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN015_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_18->setText(QApplication::translate("F3", "SEC:DM GEN REFACCI\303\223N", 0, QApplication::UnicodeUTF8));
+        aLet_19->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN016_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_19->setText(QApplication::translate("F3", "SEC:DM GEN REFACCI\303\223N", 0, QApplication::UnicodeUTF8));
         lbTexto_20->setText(QApplication::translate("F3", "SEC:VOLTAJE BATER\303\215A BAJO (24DC)", 0, QApplication::UnicodeUTF8));
+        aLet_20->setId(QApplication::translate("F3", "p_Fix32_THISNODE_DM_GEN012_F_CV", 0, QApplication::UnicodeUTF8));
         lbTitulo_2->setText(QApplication::translate("F3", "REDUCIR POR PASOS A RELENT\303\215 (N\303\232CLEO)", 0, QApplication::UnicodeUTF8));
         lbTexto_21->setText(QApplication::translate("F3", "N\303\232CLEO:L\303\223GICO SEGUNDO ANILLO", 0, QApplication::UnicodeUTF8));
+        aLet_21->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE001_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_22->setText(QApplication::translate("F3", "N\303\232CLEO:ICV DEMANDA VS RETROAL ERR", 0, QApplication::UnicodeUTF8));
+        aLet_22->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE002_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_23->setText(QApplication::translate("F3", "N\303\232CLEO:IGV A&B RETROALS FALLARON", 0, QApplication::UnicodeUTF8));
+        aLet_23->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE003_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_24->setText(QApplication::translate("F3", "N\303\232CLEO:IGV IMPULSOR/CT MEDIDOR FALLA", 0, QApplication::UnicodeUTF8));
+        aLet_24->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE004_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_25->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE005_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_25->setText(QApplication::translate("F3", "N\303\232CLEO:VSV DEMANDA VS RETROAL ERR", 0, QApplication::UnicodeUTF8));
+        aLet_26->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE006_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_26->setText(QApplication::translate("F3", "N\303\232CLEO:VSV A&B RETROALS FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_27->setText(QApplication::translate("F3", "N\303\232CLEO:VSV IMPULSOR/CT MEDIDOR FALLA", 0, QApplication::UnicodeUTF8));
+        aLet_27->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE007_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_28->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE008_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_28->setText(QApplication::translate("F3", "N\303\232CLEO:CDP DEMANDA VS RETROAL ERR", 0, QApplication::UnicodeUTF8));
+        aLet_29->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE009_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_29->setText(QApplication::translate("F3", "N\303\232CLEO:CDP A&B RETROALS FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_30->setText(QApplication::translate("F3", "N\303\232CLEO:CDP IMPULSOR/CT MEDIDOR FALLA", 0, QApplication::UnicodeUTF8));
+        aLet_30->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE010_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_31->setText(QApplication::translate("F3", "N\303\232CLEO:ST8 DEMANDA VS RETROAL ERR", 0, QApplication::UnicodeUTF8));
+        aLet_31->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE011_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_32->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE012_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_32->setText(QApplication::translate("F3", "N\303\232CLEO:ST8 A&B RETROALS FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_33->setText(QApplication::translate("F3", "N\303\232CLEO:ST8 IMPULSOR/CT MEDIDOR FALLA", 0, QApplication::UnicodeUTF8));
+        aLet_33->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE013_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_34->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE014_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_34->setText(QApplication::translate("F3", "N\303\232CLEO:PX36 A&B SENSORES FALLARON", 0, QApplication::UnicodeUTF8));
         lbTexto_35->setText(QApplication::translate("F3", "N\303\232CLEO:T48 SOBRE TEMP", 0, QApplication::UnicodeUTF8));
+        aLet_35->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE017_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_36->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_CORE025_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_36->setText(QApplication::translate("F3", "N\303\232CLEO:PRES ACEITE LUB BAJA", 0, QApplication::UnicodeUTF8));
         lbTitulo_3->setText(QApplication::translate("F3", "REDUCIR POR  PASOS A RELENT\303\215 (2\302\272 ANILLO)", 0, QApplication::UnicodeUTF8));
         lbTexto_37->setText(QApplication::translate("F3", "SEC:RESUMEN VIBRACI\303\223N Sl", 0, QApplication::UnicodeUTF8));
+        aLet_37->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_MSTR001_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_38->setText(QApplication::translate("F3", "SEC:PRES LUB A TURB BAJ BAJ(XN25>7.8K)", 0, QApplication::UnicodeUTF8));
         lbTexto_39->setText(QApplication::translate("F3", "SEC:PRES LUB TURB B BAJ BAJ(XN25>7.8K)", 0, QApplication::UnicodeUTF8));
+        aLet_39->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_MSTR003_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_40->setText(QApplication::translate("F3", "PRES SUMIN LUB DEL GEN A&B FALLARON", 0, QApplication::UnicodeUTF8));
+        aLet_40->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_MSTR004_F_CV", 0, QApplication::UnicodeUTF8));
+        aLet_41->setId(QApplication::translate("F3", "p_Fix32_THISNODE_SI_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
         lbValDES->setText(QApplication::translate("F3", "SIN APAGADOS", 0, QApplication::UnicodeUTF8));
         lbValNUM->setText(QApplication::translate("F3", "0", 0, QApplication::UnicodeUTF8));
         lbAux_2->setText(QApplication::translate("F3", "Descripci\303\263n", 0, QApplication::UnicodeUTF8));

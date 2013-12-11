@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c3.ui'
 **
-** Created: Tue 10. Dec 18:43:57 2013
+** Created: Wed 11. Dec 16:16:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -818,32 +818,46 @@ public:
         lbUnit3->setText(QApplication::translate("C3", "    UNIT3", 0, QApplication::UnicodeUTF8));
         lbTextoT->setText(QApplication::translate("C3", "TEMPERATURAS BOBINADO ESTATOR DEL GENERADOR", 0, QApplication::UnicodeUTF8));
         lbTexto_T1->setText(QApplication::translate("C3", "TE-6421 PHASE", 0, QApplication::UnicodeUTF8));
+        lbTexto_1->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6421_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_1->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_U1->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTexto_U2->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTexto_T->setText(QApplication::translate("C3", "TE-6424 PHASE", 0, QApplication::UnicodeUTF8));
+        lbTexto_2->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6424_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_2->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_T_2->setText(QApplication::translate("C3", "TE-6422 PHASE", 0, QApplication::UnicodeUTF8));
         lbTexto_U2_2->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lbTexto_3->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6422_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_3->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_T_3->setText(QApplication::translate("C3", "TE-6425 PHASE", 0, QApplication::UnicodeUTF8));
+        lbTexto_4->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6425_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_4->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_U2_3->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTexto_T_4->setText(QApplication::translate("C3", "TE-6423 PHASE", 0, QApplication::UnicodeUTF8));
         lbTexto_U2_4->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lbTexto_5->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6423_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_5->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_T_5->setText(QApplication::translate("C3", "TE-6426 PHASE", 0, QApplication::UnicodeUTF8));
         lbTexto_U2_5->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lbTexto_6->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6426_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_6->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbTexto_U2_6->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTexto_T_6->setText(QApplication::translate("C3", "PROMEDIO ESTATOR", 0, QApplication::UnicodeUTF8));
+        lbTexto_7->setId(QApplication::translate("C3", "p_Fix32_THISNODE_STATOR_AVG_F_CV", 0, QApplication::UnicodeUTF8));
         lbTexto_7->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6421_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_2->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6424_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_2->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_3->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6422_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_3->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_4->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6425_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_4->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_5->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6423_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_5->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_6->setId(QApplication::translate("C3", "p_Fix32_THISNODE_TE6426_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_6->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
+        lbVal_7->setId(QApplication::translate("C3", "p_Fix32_THISNODE_STATOR_AVG_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_7->setText(QApplication::translate("C3", "126", 0, QApplication::UnicodeUTF8));
         lbVal_U->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbVal_U_2->setText(QApplication::translate("C3", "\302\272F", 0, QApplication::UnicodeUTF8));

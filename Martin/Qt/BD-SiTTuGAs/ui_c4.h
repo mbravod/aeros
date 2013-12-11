@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c4.ui'
 **
-** Created: Tue 10. Dec 18:43:55 2013
+** Created: Wed 11. Dec 16:16:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -218,8 +218,8 @@ public:
         label_3->setLayoutDirection(Qt::RightToLeft);
         label_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: rgb(0, 0, 0);"));
-        label_3->setFont(font);
         label_3->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        label_3->setFont(font);
         label_3->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         label_4 = new WLabel(frAux);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -240,8 +240,8 @@ public:
         label_5->setLayoutDirection(Qt::RightToLeft);
         label_5->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: rgb(0, 0, 0);"));
-        label_5->setFont(font);
         label_5->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        label_5->setFont(font);
         label_5->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         label_6 = new WLabel(frAux);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -268,8 +268,8 @@ public:
         label_8->setLayoutDirection(Qt::RightToLeft);
         label_8->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: rgb(0, 0, 0);"));
-        label_8->setFont(font);
         label_8->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        label_8->setFont(font);
         label_8->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbTextoT_3 = new WLabel(frAux);
         lbTextoT_3->setObjectName(QString::fromUtf8("lbTextoT_3"));
@@ -290,8 +290,8 @@ public:
         label_10->setLayoutDirection(Qt::RightToLeft);
         label_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: rgb(0, 0, 0);"));
-        label_10->setFont(font);
         label_10->setProperty("Fondo_B", QVariant(WLabel::B_SinColor));
+        label_10->setFont(font);
         label_10->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         frTitulo_9 = new QFrame(C4);
         frTitulo_9->setObjectName(QString::fromUtf8("frTitulo_9"));
@@ -1589,40 +1589,51 @@ public:
         C4->setWindowTitle(QApplication::translate("C4", "Form", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
         lbTextoT_->setText(QApplication::translate("C4", "XE6876A LP_CRF", 0, QApplication::UnicodeUTF8));
+        label_3->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876A_F_CV", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
         lbTextoT_1->setText(QApplication::translate("C4", "XE6877A LP_TRF", 0, QApplication::UnicodeUTF8));
+        label_5->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877A_F_CV", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
         lbTextoT_2->setText(QApplication::translate("C4", "XE6876B HP_CRF", 0, QApplication::UnicodeUTF8));
         label_7->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
+        label_8->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876B_F_CV", 0, QApplication::UnicodeUTF8));
         label_8->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTextoT_3->setText(QApplication::translate("C4", "XE6877B HP_TRF", 0, QApplication::UnicodeUTF8));
         label_9->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
+        label_10->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877B_F_CV", 0, QApplication::UnicodeUTF8));
         label_10->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTextoTT->setText(QApplication::translate("C4", "ROTOR DE TURBINA (1X)", 0, QApplication::UnicodeUTF8));
         lbTextoT_4->setText(QApplication::translate("C4", "XE6807 DE_X", 0, QApplication::UnicodeUTF8));
+        label_11->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6807_F_CV", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("C4", "MILS", 0, QApplication::UnicodeUTF8));
         lbTextoT_5->setText(QApplication::translate("C4", "XE6808 DE_Y", 0, QApplication::UnicodeUTF8));
+        label_13->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6808_F_CV", 0, QApplication::UnicodeUTF8));
         label_13->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         label_14->setText(QApplication::translate("C4", "MILS", 0, QApplication::UnicodeUTF8));
         lbTextoT_6->setText(QApplication::translate("C4", "XE6809 NDE_", 0, QApplication::UnicodeUTF8));
         label_15->setText(QApplication::translate("C4", "MILS", 0, QApplication::UnicodeUTF8));
+        label_16->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6809_F_CV", 0, QApplication::UnicodeUTF8));
         label_16->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTextoT_7->setText(QApplication::translate("C4", "XE6810 NDE_", 0, QApplication::UnicodeUTF8));
         label_17->setText(QApplication::translate("C4", "MILS", 0, QApplication::UnicodeUTF8));
+        label_18->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6810_F_CV", 0, QApplication::UnicodeUTF8));
         label_18->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTextoTT_2->setText(QApplication::translate("C4", "COJINETE DEL GENERADOR", 0, QApplication::UnicodeUTF8));
         lbTextoT_8->setText(QApplication::translate("C4", "XE6876 CRF", 0, QApplication::UnicodeUTF8));
+        label_19->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876WB_F_CV", 0, QApplication::UnicodeUTF8));
         label_19->setText(QApplication::translate("C4", "0.01", 0, QApplication::UnicodeUTF8));
         label_20->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
         lbTextoT_9->setText(QApplication::translate("C4", "XE6877 TRF", 0, QApplication::UnicodeUTF8));
+        label_21->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877WB_F_CV", 0, QApplication::UnicodeUTF8));
         label_21->setText(QApplication::translate("C4", "0.00", 0, QApplication::UnicodeUTF8));
         label_22->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
         lbTextoTT_3->setText(QApplication::translate("C4", "BANDA ANCHA DEL ROTOR DE TURB", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("C4", "    UNIT3", 0, QApplication::UnicodeUTF8));
         btnIMPPant->setText(QApplication::translate("C4", "IMP PANT", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_0->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876B_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_0->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTexto_0->setText(QApplication::translate("C4", "XE-6876B", 0, QApplication::UnicodeUTF8));
         lbTextoU_0->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
@@ -1639,14 +1650,23 @@ public:
         lbTexto_I_6->setText(QApplication::translate("C4", "MILS", 0, QApplication::UnicodeUTF8));
         lbTexto_I_7->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
         lbTexto_I_8->setText(QApplication::translate("C4", "ln/S", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_1->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877B_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_1->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_2->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876A_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_2->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_3->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877A_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_3->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_4->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6876WB_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_4->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_5->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6877WB_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_5->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_6->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6807_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_6->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_7->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6808_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_7->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_8->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6809_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_8->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_9->setId(QApplication::translate("C4", "p_Fix32_THISNODE_XE6810_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_9->setText(QApplication::translate("C4", "???", 0, QApplication::UnicodeUTF8));
         lbTexto_1->setText(QApplication::translate("C4", "XE-6877B", 0, QApplication::UnicodeUTF8));
         lbTexto_2->setText(QApplication::translate("C4", "XE-6876A", 0, QApplication::UnicodeUTF8));

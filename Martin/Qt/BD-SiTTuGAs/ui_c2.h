@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c2.ui'
 **
-** Created: Tue 10. Dec 18:43:57 2013
+** Created: Wed 11. Dec 16:16:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -1238,40 +1238,52 @@ public:
         lbIMGFondo->setText(QString());
         lbTextoT->setText(QApplication::translate("C2", "T48 TEMP DE ENTRADA TURBINA DE IMPULSI\303\223N", 0, QApplication::UnicodeUTF8));
         lbTextoT_->setText(QApplication::translate("C2", "T48A", 0, QApplication::UnicodeUTF8));
+        label_3->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6843_F_CV", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_1->setText(QApplication::translate("C2", "T48B", 0, QApplication::UnicodeUTF8));
+        label_5->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6844_F_CV", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_2->setText(QApplication::translate("C2", "T48C", 0, QApplication::UnicodeUTF8));
         label_7->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_8->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6845_F_CV", 0, QApplication::UnicodeUTF8));
         label_8->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_3->setText(QApplication::translate("C2", "T48D", 0, QApplication::UnicodeUTF8));
         label_9->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_10->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6846_F_CV", 0, QApplication::UnicodeUTF8));
         label_10->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_4->setText(QApplication::translate("C2", "T48E", 0, QApplication::UnicodeUTF8));
+        label_11->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6847_F_CV", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_5->setText(QApplication::translate("C2", "T48F", 0, QApplication::UnicodeUTF8));
+        label_13->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6848_F_CV", 0, QApplication::UnicodeUTF8));
         label_13->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_14->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_6->setText(QApplication::translate("C2", "T48G", 0, QApplication::UnicodeUTF8));
         label_15->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_16->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6849_F_CV", 0, QApplication::UnicodeUTF8));
         label_16->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_7->setText(QApplication::translate("C2", "T48H", 0, QApplication::UnicodeUTF8));
         label_17->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_18->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6850_F_CV", 0, QApplication::UnicodeUTF8));
         label_18->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_8->setText(QApplication::translate("C2", "T48SEL", 0, QApplication::UnicodeUTF8));
+        label_19->setId(QApplication::translate("C2", "p_Fix32_THISNODE_T48SEL_F_CV", 0, QApplication::UnicodeUTF8));
         label_19->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_20->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_9->setText(QApplication::translate("C2", "T48 HIGH", 0, QApplication::UnicodeUTF8));
+        label_21->setId(QApplication::translate("C2", "p_Fix32_THISNODE_T48HIVL_F_CV", 0, QApplication::UnicodeUTF8));
         label_21->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         label_22->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_10->setText(QApplication::translate("C2", "T48 LOW", 0, QApplication::UnicodeUTF8));
         label_23->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_24->setId(QApplication::translate("C2", "p_Fix32_THISNODE_T48LOVL_F_CV", 0, QApplication::UnicodeUTF8));
         label_24->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_11->setText(QApplication::translate("C2", "T48 SPREAD", 0, QApplication::UnicodeUTF8));
         label_25->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        label_26->setId(QApplication::translate("C2", "p_Fix32_THISNODE_T48SPRD_F_CV", 0, QApplication::UnicodeUTF8));
         label_26->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoT_12->setText(QApplication::translate("C2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1308,14 +1320,23 @@ public:
         lbTextoT_39->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_40->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbTextoT_41->setText(QApplication::translate("C2", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lbTextoVal->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6843_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_2->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6844_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_2->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_3->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6845_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_3->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_4->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6846_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_4->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_5->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6847_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_5->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_6->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6848_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_6->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_7->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6849_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_7->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_8->setId(QApplication::translate("C2", "p_Fix32_THISNODE_TE6850_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_8->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
+        lbTextoVal_9->setId(QApplication::translate("C2", "p_Fix32_THISNODE_T48SEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbTextoVal_9->setText(QApplication::translate("C2", "93", 0, QApplication::UnicodeUTF8));
         lbTextoVal_10->setText(QApplication::translate("C2", "T48A", 0, QApplication::UnicodeUTF8));
         lbTextoVal_11->setText(QApplication::translate("C2", "T48B", 0, QApplication::UnicodeUTF8));

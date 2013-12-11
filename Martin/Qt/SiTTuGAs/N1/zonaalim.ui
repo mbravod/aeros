@@ -75,14 +75,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_4">
@@ -94,14 +94,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="QPushButton" name="btRelay1">
@@ -129,14 +129,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_2">
@@ -148,14 +148,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_6">
@@ -167,14 +167,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_3">
@@ -186,14 +186,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_1">
@@ -205,14 +205,14 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="Value">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
-   </property>
-   <property name="Value" stdset="0">
-    <number>0</number>
    </property>
   </widget>
   <widget class="QPushButton" name="btSincA">
@@ -1891,146 +1891,6 @@ T21A</string>
      <string/>
     </property>
    </widget>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_1">
-   <property name="geometry">
-    <rect>
-     <x>285</x>
-     <y>84</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_2">
-   <property name="geometry">
-    <rect>
-     <x>732</x>
-     <y>84</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_03">
-   <property name="geometry">
-    <rect>
-     <x>387</x>
-     <y>163</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_04">
-   <property name="geometry">
-    <rect>
-     <x>625</x>
-     <y>164</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_5">
-   <property name="geometry">
-    <rect>
-     <x>283</x>
-     <y>303</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_06">
-   <property name="geometry">
-    <rect>
-     <x>626</x>
-     <y>303</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="btnEmergente_07">
-   <property name="geometry">
-    <rect>
-     <x>342</x>
-     <y>474</y>
-     <width>28</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../Resources.qrc">
-     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
-   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

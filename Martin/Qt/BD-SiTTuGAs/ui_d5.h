@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'd5.ui'
 **
-** Created: Tue 10. Dec 18:43:55 2013
+** Created: Wed 11. Dec 16:16:00 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -1130,7 +1130,7 @@ public:
         lbLT_Unit_DVSB->setGeometry(QRect(292, 181, 40, 14));
         lbLT_Unit_DVSB->setLayoutDirection(Qt::LeftToRight);
         lbLT_Unit_DVSB->setFont(font);
-        lbLT_Unit_DVSB->setProperty("Alineacion", QVariant(WLabel::Derecha));
+        lbLT_Unit_DVSB->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbST_Descr_36 = new WLabel(frame_5);
         lbST_Descr_36->setObjectName(QString::fromUtf8("lbST_Descr_36"));
         lbST_Descr_36->setGeometry(QRect(19, 181, 225, 18));
@@ -2032,31 +2032,40 @@ public:
         lbCG_Lect_GP1IB->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("D5", "Carcaza Turbina", 0, QApplication::UnicodeUTF8));
         lbST_Descr_38->setText(QApplication::translate("D5", "Pres. ABS (P0) Admis. Compr.", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_PABSAC->setId(QApplication::translate("D5", "p_Fix32_THISNODE_AIRAVERAGE_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_PABSAC->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_PABSAC->setText(QApplication::translate("D5", "PSIA", 0, QApplication::UnicodeUTF8));
         lbST_Descr_39->setText(QApplication::translate("D5", "Temp. Prom. Admis. Filtro Aire", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TPAFA->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE6454_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TPAFA->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TPAFA->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         lbST_Descr_40->setText(QApplication::translate("D5", "Temp. Admis. Carc. Turb.", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TACT->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE6401_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TACT->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TACT->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         lbST_Descr_41->setText(QApplication::translate("D5", "Temp. Comb. Air. Sec. B (TE6499)", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TE6499->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE6499_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TE6499->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TE6499->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         lbST_Descr_42->setText(QApplication::translate("D5", "Temp. Comb. Air. Sec. A (TE6450)", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TE6450->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE6450_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TE6450->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TE6450->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         lbST_Descr_43->setText(QApplication::translate("D5", "Temp. Air. Vent. Sec. A (TE64071)", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TE64071->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE64071_F_CV ", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TE64071->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TE64071->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         lbST_Descr_44->setText(QApplication::translate("D5", "Temp. Air. Vent. Sec. B (TE64072)", 0, QApplication::UnicodeUTF8));
+        lbCT_Lect_TE64072->setId(QApplication::translate("D5", "p_Fix32_THISNODE_TE64072_F_CV", 0, QApplication::UnicodeUTF8));
         lbCT_Lect_TE64072->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbCT_Unit_TE64072->setText(QApplication::translate("D5", "\302\260F", 0, QApplication::UnicodeUTF8));
         label_15->setText(QApplication::translate("D5", "ESTADO MOTOR", 0, QApplication::UnicodeUTF8));
         lbST_Descr_70->setText(QApplication::translate("D5", "Vent. A Carcasa Turb.", 0, QApplication::UnicodeUTF8));
+        lbEM_Lect_VentA->setId(QApplication::translate("D5", "p_Fix32_THISNODE_MOT6417_A_CV", 0, QApplication::UnicodeUTF8));
         lbEM_Lect_VentA->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbEM_Unit_VentA->setText(QString());
         lbST_Descr_71->setText(QApplication::translate("D5", "Vent. B Carcasa Turb.", 0, QApplication::UnicodeUTF8));
+        lbEM_Lect_VentB->setId(QApplication::translate("D5", "p_Fix32_THISNODE_MOT6418_A_CV", 0, QApplication::UnicodeUTF8));
         lbEM_Lect_VentB->setText(QApplication::translate("D5", "0", 0, QApplication::UnicodeUTF8));
         lbEM_Unit_VentB->setText(QString());
         label->setText(QString());
