@@ -128,8 +128,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TFLP10S_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -200,8 +203,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SDS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -272,8 +278,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SDN_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -320,8 +329,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TFLP15S_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -440,8 +452,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_DMS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -449,7 +464,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_55">
@@ -488,8 +503,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_STRTATTEMP_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -536,8 +554,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_S2IFORACO_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -632,8 +653,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDLOS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -704,8 +728,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_STARTSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -713,7 +740,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_1_2">
@@ -776,8 +803,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_NSS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -848,8 +878,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_STIS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -935,7 +968,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_1">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>26</y>
       <width>50</width>
       <height>14</height>
@@ -944,8 +977,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BRNMDCHNG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -953,7 +989,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_69">
@@ -983,7 +1019,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_4">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>72</y>
       <width>50</width>
       <height>14</height>
@@ -992,8 +1028,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC2BC2ATRN_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1001,7 +1040,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_4">
@@ -1031,7 +1070,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_8">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>134</y>
       <width>50</width>
       <height>14</height>
@@ -1040,8 +1079,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACTBC2G_F_CV </string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1049,7 +1091,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_8">
@@ -1103,7 +1145,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_11">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>179</y>
       <width>50</width>
       <height>14</height>
@@ -1112,8 +1154,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACTABG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1121,7 +1166,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_11">
@@ -1199,7 +1244,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_10">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>164</y>
       <width>50</width>
       <height>14</height>
@@ -1208,8 +1253,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACBC2AG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1217,7 +1265,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_10">
@@ -1271,7 +1319,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_2">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>40</y>
       <width>50</width>
       <height>14</height>
@@ -1280,8 +1328,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_B2BC2_TRAN_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1289,7 +1340,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_2">
@@ -1367,7 +1418,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_9">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>148</y>
       <width>50</width>
       <height>14</height>
@@ -1376,8 +1427,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACTBCG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1385,7 +1439,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_72">
@@ -1439,7 +1493,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_7">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>118</y>
       <width>50</width>
       <height>14</height>
@@ -1448,8 +1502,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACTBG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1457,7 +1514,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_77">
@@ -1487,7 +1544,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_12">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>195</y>
       <width>50</width>
       <height>14</height>
@@ -1496,8 +1553,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABLACTABCG_F_CV </string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1505,7 +1565,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_12">
@@ -1559,7 +1619,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_5">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>87</y>
       <width>50</width>
       <height>14</height>
@@ -1568,8 +1628,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC2A2ABTRN_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1577,7 +1640,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_5">
@@ -1655,7 +1718,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_6">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>102</y>
       <width>50</width>
       <height>14</height>
@@ -1664,8 +1727,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AB2ABCTRNG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1673,7 +1739,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CU_Unit_2_3">
@@ -1703,7 +1769,7 @@
    <widget class="WLabel" name="lb_CU_Lect_2_3">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>579</x>
       <y>55</y>
       <width>50</width>
       <height>14</height>
@@ -1712,8 +1778,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC22BC_TRN_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1721,7 +1790,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_68">
@@ -1850,8 +1919,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PEAKT48_HR_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1922,8 +1994,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -1931,7 +2006,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_4">
@@ -2018,8 +2093,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BASET48_HR_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2066,8 +2144,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_HI_N25R_F_CV </string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2138,8 +2219,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PKPDF_BC_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2210,8 +2294,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_HI_PS3_HRS_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2282,8 +2369,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TPEAK_HRG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2354,8 +2444,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AB_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2363,7 +2456,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_6">
@@ -2426,8 +2519,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC2A_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2435,7 +2531,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_5">
@@ -2498,8 +2594,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ABC_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2507,7 +2606,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_7">
@@ -2570,8 +2669,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_HI_T48_DWB_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2642,8 +2744,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BASET3_HR_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2651,7 +2756,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_8">
@@ -2738,8 +2843,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BC2_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2747,7 +2855,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_86">
@@ -2786,8 +2894,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TPEAK_HRG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2795,7 +2906,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_9">
@@ -2858,8 +2969,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PKT48_BC2A_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -2930,8 +3044,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PKPDF_OTHR_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -3002,8 +3119,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_B_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -3011,7 +3131,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_2">
@@ -3074,8 +3194,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_OP_HRSG_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -3083,7 +3206,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_CTU_Unit_1_1">
@@ -3178,7 +3301,7 @@
     <property name="geometry">
      <rect>
       <x>25</x>
-      <y>178</y>
+      <y>180</y>
       <width>225</width>
       <height>18</height>
      </rect>
@@ -3221,6 +3344,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6123A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3306,6 +3432,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6232B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3346,7 +3475,7 @@
     <property name="geometry">
      <rect>
       <x>25</x>
-      <y>86</y>
+      <y>87</y>
       <width>225</width>
       <height>18</height>
      </rect>
@@ -3389,6 +3518,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838A1_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3498,6 +3630,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6821A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3581,6 +3716,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6837A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3666,6 +3804,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6821B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3718,7 +3859,7 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>132</y>
+      <y>133</y>
       <width>30</width>
       <height>18</height>
      </rect>
@@ -3749,6 +3890,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838B2_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3834,6 +3978,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6837B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3857,6 +4004,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838A2_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3990,6 +4140,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838B1_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4059,7 +4212,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Derecha</enum>
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_Temp_Lect_TE6124A">
@@ -4073,6 +4226,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6124A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4097,6 +4253,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6125A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4181,6 +4340,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6124B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4326,6 +4488,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6232A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4410,6 +4575,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6123B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4433,6 +4601,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6125B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4578,6 +4749,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6186B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4601,6 +4775,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6186A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4710,6 +4887,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6128A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4726,7 +4906,7 @@
     <property name="geometry">
      <rect>
       <x>25</x>
-      <y>364</y>
+      <y>365</y>
       <width>225</width>
       <height>18</height>
      </rect>
@@ -4793,6 +4973,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6141A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4878,6 +5061,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6128B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4961,6 +5147,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6142B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5057,6 +5246,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6141B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5165,6 +5357,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6142A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5338,6 +5533,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_DROOP_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -5452,6 +5650,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6859B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5523,6 +5724,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6804_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5620,6 +5824,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT68135_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5667,6 +5874,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6814_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5764,6 +5974,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT68136_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5811,6 +6024,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6861B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5884,6 +6100,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6861A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5955,6 +6174,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6859A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -6094,8 +6316,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVSEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6166,8 +6391,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVB_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6262,8 +6490,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVSEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6286,8 +6517,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVA_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6406,8 +6640,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVB_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6454,8 +6691,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVA_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6526,8 +6766,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVA_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6598,8 +6841,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6614,7 +6860,7 @@
     <property name="geometry">
      <rect>
       <x>34</x>
-      <y>101</y>
+      <y>103</y>
       <width>191</width>
       <height>18</height>
      </rect>
@@ -6670,8 +6916,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVB_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6774,7 +7023,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>55</y>
+      <y>56</y>
       <width>200</width>
       <height>18</height>
      </rect>
@@ -6806,8 +7055,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_N25SEL_F_CV </string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6815,7 +7067,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_N25SEL">
@@ -6878,8 +7130,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6800_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6887,7 +7142,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_SE6800">
@@ -6950,8 +7205,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6801_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -6959,7 +7217,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_SE6801">
@@ -7022,8 +7280,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6812_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7031,7 +7292,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_SE6812">
@@ -7094,8 +7355,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7103,7 +7367,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_NSDSEL">
@@ -7166,8 +7430,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6813_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7175,7 +7442,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_SV_Unit_SE6813">
@@ -7272,7 +7539,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>55</y>
+      <y>56</y>
       <width>200</width>
       <height>18</height>
      </rect>
@@ -7304,8 +7571,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPSEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7313,7 +7583,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_AP_Unit_CDPSEL_POS">
@@ -7376,8 +7646,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8SEL_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7385,7 +7658,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_48">
@@ -7472,8 +7745,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8B_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7481,7 +7757,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_AP_Unit_FCV6812A">
@@ -7544,8 +7820,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8A_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7553,7 +7832,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lb_AP_Lect_FCV68128B">
@@ -7568,8 +7847,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPB_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7577,7 +7859,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_44">
@@ -7664,8 +7946,11 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPA_F_CV</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="font">
      <font>
@@ -7673,7 +7958,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Izquierda</enum>
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="WLabel" name="Descr_43">

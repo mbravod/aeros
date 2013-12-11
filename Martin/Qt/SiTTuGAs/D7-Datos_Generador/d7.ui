@@ -140,6 +140,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6807_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -248,6 +251,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6809_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -307,6 +313,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6808_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -391,6 +400,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6810_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -540,6 +552,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MW_INPUT_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -623,6 +638,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_K229_A_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -736,6 +754,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ISOCH_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -771,6 +792,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_DROOP_F_CV </string>
     </property>
     <property name="text">
      <string/>
@@ -932,6 +956,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FREQ_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1016,6 +1043,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VA_T_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1075,6 +1105,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AMPS_B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1184,6 +1217,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AMPS_A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1292,6 +1328,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AMPS_C_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1351,6 +1390,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PF_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1447,6 +1489,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BVX_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1556,6 +1601,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VOLT_AB_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1591,6 +1639,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MVAR_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1724,6 +1775,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VOLT_BC_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1808,6 +1862,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VOLT_AC_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1867,6 +1924,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BFX_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2016,6 +2076,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BVX_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2099,6 +2162,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_EXCIT_VLTS_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2184,6 +2250,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MW_INPUT_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2268,6 +2337,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_EXCIT_AMPS_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2351,6 +2423,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_BFX_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2493,6 +2568,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6416_A_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -2638,6 +2716,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6031_A_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -2710,6 +2791,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6413_A_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -2744,6 +2828,57 @@
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lb_EM_Unit_VCBG_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>40</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lb_EM_Lect_VCBG_2">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>80</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6033_A_CV </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
   </widget>
@@ -2846,6 +2981,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_LT6045_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -2942,6 +3080,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6026A_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -2989,6 +3130,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6026B_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -3061,6 +3205,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT60021_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -3158,6 +3305,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6026SEL_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -3205,6 +3355,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6017_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -3347,6 +3500,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6421_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3443,6 +3599,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6424_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3478,6 +3637,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6035_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3587,6 +3749,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6021_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3634,6 +3799,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6423_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3827,6 +3995,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6426_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3875,6 +4046,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_STATOR_AVG_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3922,6 +4096,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6425_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4031,6 +4208,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6036_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4115,6 +4295,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6025_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4187,6 +4370,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6023_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4234,6 +4420,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6056_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4318,6 +4507,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6402_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -4462,6 +4654,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6057_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>

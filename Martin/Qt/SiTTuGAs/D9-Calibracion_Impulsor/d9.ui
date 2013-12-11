@@ -225,6 +225,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_MA_F_CV</string>
+    </property>
     <property name="text">
      <string>16.80</string>
     </property>
@@ -317,6 +320,9 @@ background-color: rgba(255, 255, 255, 0);</string>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_V1A_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -411,6 +417,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_V1B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -503,6 +512,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_V2A_F_CV</string>
     </property>
     <property name="text">
      <string>1.5</string>
@@ -597,6 +609,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_V2B_F_CV </string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -689,6 +704,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVA_F_CV</string>
     </property>
     <property name="text">
      <string>2.1</string>
@@ -783,6 +801,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVB_F_CV</string>
+    </property>
     <property name="text">
      <string>0.0</string>
     </property>
@@ -876,6 +897,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>1.0</string>
     </property>
@@ -968,6 +992,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVDMD_F_CV</string>
     </property>
     <property name="text">
      <string>1.0</string>
@@ -1200,6 +1227,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_MA_F_CV</string>
+    </property>
     <property name="text">
      <string>16.80</string>
     </property>
@@ -1292,6 +1322,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_V1A_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -1386,6 +1419,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_V1B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -1478,6 +1514,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_V2A_F_CV</string>
     </property>
     <property name="text">
      <string>1.5</string>
@@ -1572,6 +1611,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_V2B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -1664,6 +1706,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVA_F_CV</string>
     </property>
     <property name="text">
      <string>2.1</string>
@@ -1758,6 +1803,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVB_F_CV</string>
+    </property>
     <property name="text">
      <string>0.0</string>
     </property>
@@ -1851,6 +1899,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>1.0</string>
     </property>
@@ -1943,6 +1994,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVDMD_F_CV</string>
     </property>
     <property name="text">
      <string>1.0</string>
@@ -2169,6 +2223,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_MA_F_CV</string>
+    </property>
     <property name="text">
      <string>16.80</string>
     </property>
@@ -2261,6 +2318,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_V1A_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -2355,6 +2415,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_V1B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -2447,6 +2510,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_V2A_F_CV</string>
     </property>
     <property name="text">
      <string>1.5</string>
@@ -2541,6 +2607,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_V2B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -2633,6 +2702,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPA_F_CV</string>
     </property>
     <property name="text">
      <string>2.1</string>
@@ -2727,6 +2799,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPB_F_CV</string>
+    </property>
     <property name="text">
      <string>0.0</string>
     </property>
@@ -2820,6 +2895,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>1.0</string>
     </property>
@@ -2912,6 +2990,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPDMD_F_CV</string>
     </property>
     <property name="text">
      <string>1.0</string>
@@ -3068,6 +3149,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBV_NUL_F_CV</string>
+     </property>
      <property name="text">
       <string>-20.0</string>
      </property>
@@ -3145,6 +3229,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBV_VA_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>0.20</string>
@@ -3239,6 +3326,9 @@ background-color: rgba(255, 255, 255, 0);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBV_VB_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>0.20</string>
      </property>
@@ -3301,6 +3391,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBV_VA_MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>-0.4</string>
      </property>
@@ -3331,6 +3424,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBV_VB_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>-0.4</string>
@@ -3488,6 +3584,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VA1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>1.51</string>
     </property>
@@ -3612,6 +3711,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VB1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -3642,6 +3744,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VA1_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.22</string>
@@ -3736,6 +3841,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VB1_MAX_F_CV</string>
+    </property>
     <property name="text">
      <string>2.22</string>
     </property>
@@ -3828,6 +3936,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VA2_MIN_F_CV</string>
     </property>
     <property name="text">
      <string>1.53</string>
@@ -3984,6 +4095,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VB2_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.57</string>
     </property>
@@ -4014,6 +4128,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VA2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -4138,6 +4255,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBV_VB2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -4294,6 +4414,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGV_NUL_F_CV</string>
+     </property>
      <property name="text">
       <string>-20.0</string>
      </property>
@@ -4371,6 +4494,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGV_VA_MAX_R_F_CV</string>
      </property>
      <property name="text">
       <string>0.20</string>
@@ -4465,6 +4591,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGV_VB_MAX_R_F_CV</string>
+     </property>
      <property name="text">
       <string>0.20</string>
      </property>
@@ -4527,6 +4656,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGV_VA_MIN_R_F_CV</string>
+     </property>
      <property name="text">
       <string>-0.4</string>
      </property>
@@ -4557,6 +4689,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGV_VB_MIN_R_F_CV</string>
      </property>
      <property name="text">
       <string>-0.4</string>
@@ -4714,6 +4849,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VA1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>1.51</string>
     </property>
@@ -4838,6 +4976,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VB1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -4868,6 +5009,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VA1_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.22</string>
@@ -4962,6 +5106,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VB1_MAX_F_CV</string>
+    </property>
     <property name="text">
      <string>2.22</string>
     </property>
@@ -5054,6 +5201,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VA2_MIN_F_CV</string>
     </property>
     <property name="text">
      <string>1.53</string>
@@ -5210,6 +5360,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VB2_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.57</string>
     </property>
@@ -5240,6 +5393,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VA2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -5364,6 +5520,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGV_VB2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -5520,6 +5679,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDP_NUL_F_CV</string>
+     </property>
      <property name="text">
       <string>-20.0</string>
      </property>
@@ -5597,6 +5759,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDP_V1_V2_1MNR_F_CV</string>
      </property>
      <property name="text">
       <string>0.20</string>
@@ -5691,6 +5856,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDP_V1_V2_2MNR_F_CV</string>
+     </property>
      <property name="text">
       <string>0.20</string>
      </property>
@@ -5753,6 +5921,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDP_V1_V2_1MXR_F_CV</string>
+     </property>
      <property name="text">
       <string>-0.4</string>
      </property>
@@ -5783,6 +5954,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDP_V1_V2_2MXR_F_CV</string>
      </property>
      <property name="text">
       <string>-0.4</string>
@@ -5940,6 +6114,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VA1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>1.51</string>
     </property>
@@ -6064,6 +6241,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VB1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -6094,6 +6274,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VA1_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.22</string>
@@ -6188,6 +6371,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VB1_MAX_F_CV</string>
+    </property>
     <property name="text">
      <string>2.22</string>
     </property>
@@ -6280,6 +6466,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VA2_MIN_F_CV</string>
     </property>
     <property name="text">
      <string>1.53</string>
@@ -6436,6 +6625,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VB2_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>3.57</string>
     </property>
@@ -6466,6 +6658,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VA2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -6590,6 +6785,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDP_VB2_MAX_F_CV</string>
     </property>
     <property name="text">
      <string>2.26</string>
@@ -7033,6 +7231,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_MA_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -7095,6 +7296,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_V1A_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -7156,6 +7360,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_V1B_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -7250,6 +7457,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_V2A_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -7312,6 +7522,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_V2B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -7342,6 +7555,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVA_F_CV</string>
     </property>
     <property name="text">
      <string>99.8</string>
@@ -7436,6 +7652,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVB_F_CV</string>
+    </property>
     <property name="text">
      <string>100.0</string>
     </property>
@@ -7498,6 +7717,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>99.9</string>
     </property>
@@ -7528,6 +7750,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVDMD_F_CV</string>
     </property>
     <property name="text">
      <string>0.0</string>
@@ -7667,6 +7892,9 @@ color: rgb(8, 247, 8);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_TBV_VA_MAX_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -7760,6 +7988,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_TBV_VB_MAX_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -7822,6 +8053,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_TBV_VA_MIN_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -7883,6 +8117,9 @@ color: rgb(255, 255, 255);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_TBV_VB_MIN_R_F_CV</string>
        </property>
        <property name="text">
         <string>3.34</string>
@@ -7962,6 +8199,9 @@ color: rgb(8, 247, 8);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TBV_NUL_F_CV</string>
       </property>
       <property name="text">
        <string>20.00</string>
@@ -8087,6 +8327,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VA1_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -8243,6 +8486,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VA1_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -8335,6 +8581,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VB1_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -8429,6 +8678,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VA2_MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -8521,6 +8773,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VB2_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -8615,6 +8870,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VA2_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -8677,6 +8935,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBV_VB2_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -8689,7 +8950,7 @@ color: rgb(255, 255, 255);</string>
       </font>
      </property>
      <property name="Alineacion" stdset="0">
-      <enum>WLabel::Izquierda</enum>
+      <enum>WLabel::Derecha</enum>
      </property>
     </widget>
     <widget class="WLabel" name="lbVALT_21">
@@ -8833,6 +9094,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBV_VB1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>1.67</string>
     </property>
@@ -8975,7 +9239,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(8, 247, 8);</string>
     </property>
     <property name="text">
-     <string>CALIBRACIÓN TBV</string>
+     <string>CALIBRACIÓN TVSV</string>
     </property>
     <property name="font">
      <font>
@@ -9029,7 +9293,7 @@ color: rgb(8, 247, 8);</string>
 color: rgb(8, 247, 8);</string>
     </property>
     <property name="text">
-     <string>VAL IMPULSOR TBV</string>
+     <string>VAL IMPULSOR VSV</string>
     </property>
     <property name="font">
      <font>
@@ -9338,6 +9602,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_MA_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -9400,6 +9667,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_V1A_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -9461,6 +9731,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_V1B_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -9555,6 +9828,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_V2A_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -9617,6 +9893,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_V2B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -9647,6 +9926,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVA_F_CV</string>
     </property>
     <property name="text">
      <string>99.8</string>
@@ -9741,6 +10023,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVB_F_CV</string>
+    </property>
     <property name="text">
      <string>100.0</string>
     </property>
@@ -9803,6 +10088,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>99.9</string>
     </property>
@@ -9833,6 +10121,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVDMD_F_CV</string>
     </property>
     <property name="text">
      <string>0.0</string>
@@ -9972,6 +10263,9 @@ color: rgb(8, 247, 8);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_VSV_VA_MAX_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -10065,6 +10359,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_VSV_VB_MAX_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -10127,6 +10424,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_VSV_VA_MIN_R_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -10188,6 +10488,9 @@ color: rgb(255, 255, 255);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_VSV_VB_MIN_R_F_CV</string>
        </property>
        <property name="text">
         <string>3.34</string>
@@ -10276,6 +10579,9 @@ color: rgb(8, 247, 8);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_VSV_NUL_F_CV</string>
       </property>
       <property name="text">
        <string>20.00</string>
@@ -10401,6 +10707,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VA1_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -10557,6 +10866,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VA1_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -10649,6 +10961,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VB1_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -10743,6 +11058,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VA2_MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -10835,6 +11153,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VB2_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -10929,6 +11250,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VA2_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -10990,6 +11314,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSV_VB2_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -11147,6 +11474,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSV_VB1_MIN_F_CV</string>
+    </property>
     <property name="text">
      <string>1.67</string>
     </property>
@@ -11195,7 +11525,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(8, 247, 8);</string>
     </property>
     <property name="text">
-     <string>CALIBRACIÓN TBV</string>
+     <string>CALIBRACIÓN ST8</string>
     </property>
     <property name="font">
      <font>
@@ -11249,7 +11579,7 @@ color: rgb(8, 247, 8);</string>
 color: rgb(8, 247, 8);</string>
     </property>
     <property name="text">
-     <string>VAL IMPULSOR TBV</string>
+     <string>VAL IMPULSOR ST8</string>
     </property>
     <property name="font">
      <font>
@@ -11558,6 +11888,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_MA_F_CV </string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -11620,6 +11953,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_V1A_F_CV</string>
+    </property>
     <property name="text">
      <string>3.34</string>
     </property>
@@ -11681,6 +12017,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_V1B_F_CV</string>
     </property>
     <property name="text">
      <string>1.6</string>
@@ -11775,6 +12114,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_V2A_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -11837,6 +12179,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_V2B_F_CV</string>
+    </property>
     <property name="text">
      <string>4.3</string>
     </property>
@@ -11867,6 +12212,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8A_F_CV</string>
     </property>
     <property name="text">
      <string>99.8</string>
@@ -11961,6 +12309,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8B_F_CV</string>
+    </property>
     <property name="text">
      <string>100.0</string>
     </property>
@@ -12023,6 +12374,9 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8SEL_F_CV</string>
+    </property>
     <property name="text">
      <string>99.9</string>
     </property>
@@ -12053,6 +12407,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8DMD_F_CV</string>
     </property>
     <property name="text">
      <string>0.0</string>
@@ -12192,6 +12549,9 @@ color: rgb(8, 247, 8);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_ST8_V1_V2_1MNR_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -12285,6 +12645,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_ST8_V1_V2_2MNR_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -12347,6 +12710,9 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
        </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_ST8_V1_V2_1MXR_F_CV</string>
+       </property>
        <property name="text">
         <string>3.34</string>
        </property>
@@ -12408,6 +12774,9 @@ color: rgb(255, 255, 255);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="id">
+        <string>p_Fix32_THISNODE_ST8_V1_V2_2MXR_F_CV</string>
        </property>
        <property name="text">
         <string>3.34</string>
@@ -12487,6 +12856,9 @@ color: rgb(8, 247, 8);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(255, 255, 255, 0);
  color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_ST8_NUL_F_CV</string>
       </property>
       <property name="text">
        <string>20.00</string>
@@ -12612,6 +12984,9 @@ color: rgb(8, 247, 8);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VA1_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -12768,6 +13143,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VA1_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -12860,6 +13238,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VB1_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -12954,6 +13335,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VA2_MIN_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -13046,6 +13430,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VB2_MIN_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -13140,6 +13527,9 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VA2_MAX_F_CV</string>
+     </property>
      <property name="text">
       <string>1.67</string>
      </property>
@@ -13201,6 +13591,9 @@ color: rgb(255, 255, 255);</string>
      <property name="styleSheet">
       <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8_VB2_MAX_F_CV</string>
      </property>
      <property name="text">
       <string>1.67</string>
@@ -13357,6 +13750,9 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8_VB1_MIN_F_CV</string>
     </property>
     <property name="text">
      <string>1.67</string>

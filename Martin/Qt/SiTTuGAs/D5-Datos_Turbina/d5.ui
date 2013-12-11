@@ -3528,7 +3528,7 @@
      </font>
     </property>
     <property name="Alineacion" stdset="0">
-     <enum>WLabel::Derecha</enum>
+     <enum>WLabel::Izquierda</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbST_Descr_36">
@@ -5250,6 +5250,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AIRAVERAGE_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5321,6 +5324,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6454_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5394,6 +5400,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6401_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5465,6 +5474,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6499_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5538,6 +5550,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6450_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5610,6 +5625,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE64071_F_CV </string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5681,6 +5699,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE64072_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -5830,6 +5851,9 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6417_A_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5901,6 +5925,9 @@
     </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6418_A_CV</string>
     </property>
     <property name="text">
      <string>0</string>

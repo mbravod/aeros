@@ -177,6 +177,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T2SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -236,6 +239,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T25SEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -297,6 +303,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T3BSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -336,6 +345,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T3ASEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -437,6 +449,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T3HREF_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -456,6 +471,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T3SEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -597,6 +615,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T48LOVAL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -616,6 +637,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T48HIVAL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -637,6 +661,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T48SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -656,6 +683,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T48REF_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -777,6 +807,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_P0SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -857,6 +890,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_P25SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -896,6 +932,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PS32SEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -957,6 +996,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PS3REF_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1016,6 +1058,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PS3EST_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1077,6 +1122,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_P48SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1137,6 +1185,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N25REF_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1156,6 +1207,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N25SEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1196,6 +1250,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N25R_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1316,6 +1373,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_Z_THROTTLE_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1477,6 +1537,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1497,6 +1560,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NSDR2_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1516,6 +1582,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N2ROTOR_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1576,6 +1645,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NSDREF_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1741,6 +1813,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBVSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1780,6 +1855,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSVDMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -1861,6 +1939,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGVDMD_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1921,6 +2002,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_IGVSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1961,6 +2045,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -1980,6 +2067,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VBVDMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2161,6 +2251,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PTBSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2180,6 +2273,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PTBDMD_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2201,6 +2297,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBVDMD_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2220,6 +2319,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NETLOAD_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2301,6 +2403,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_RESLOAD_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2340,6 +2445,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TBVSEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2561,6 +2669,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_SG_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2661,6 +2772,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ZSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2681,6 +2795,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_LHVSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2700,6 +2817,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MOLCO2SEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2761,6 +2881,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TGSSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2780,6 +2903,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_KSEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2820,6 +2946,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MOLN2SEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -2921,6 +3050,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PSCVSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -2940,6 +3072,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MCD6866_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3061,6 +3196,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MCD6865_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3080,6 +3218,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MCD6870_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3140,6 +3281,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PLUBSEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3251,6 +3395,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BRNREQR_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3270,6 +3417,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BRNDMDR_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3391,6 +3541,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLMAXG_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3411,6 +3564,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLMING_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3430,6 +3586,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_F_TFLCYCG_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3531,6 +3690,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLAMPCTG_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3631,6 +3793,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLIDFS_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3691,6 +3856,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLPDFS_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3710,6 +3878,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLIREFG_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3750,6 +3921,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLOREFG_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3851,6 +4025,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TFLODFS_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -3910,6 +4087,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ACOUSTICSP_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -3971,6 +4151,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_PX36SEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4030,6 +4213,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BWFQPERRSP_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4091,6 +4277,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFQPERRCOR_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4151,6 +4340,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDPSEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4190,6 +4382,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDPDMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4251,6 +4446,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8SEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4310,6 +4508,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_ST8DMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4371,6 +4572,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_DWB36PCT_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4430,6 +4634,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_DWB36_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4491,6 +4698,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_DWB36MAX_M_F_CV </string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4550,6 +4760,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WB27C_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4611,6 +4824,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WB3C_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4670,6 +4886,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_W3M_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4731,6 +4950,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_W25M_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4791,6 +5013,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_W32M_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -4850,6 +5075,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WA36M_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -4954,6 +5182,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFMAX_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5014,6 +5245,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WF36DMD_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5053,6 +5287,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFLBO_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5154,6 +5391,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFGMVTOT_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5193,6 +5433,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFPLTDMDGS_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5254,6 +5497,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFPILM_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5293,6 +5539,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFNOZPIL_CA_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5394,6 +5643,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFGMVP_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5433,6 +5685,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GMVPDMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5494,6 +5749,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_FCV62108SEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5533,6 +5791,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP2PSEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5634,6 +5895,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP1PSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5673,6 +5937,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFINRDMDGS_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5734,6 +6001,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFINRM_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5773,6 +6043,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFNOZINR_CA_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5874,6 +6147,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFGMVI_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -5913,6 +6189,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GMVIDMD_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -5974,6 +6253,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_FCV62107SEL_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6013,6 +6295,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP2ISEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -6114,6 +6399,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP1ISEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6153,6 +6441,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFOTRDMDGS_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -6214,6 +6505,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFOTRM_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6253,6 +6547,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFNOZOTR_CA_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -6354,6 +6651,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WFGMVO_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6434,6 +6734,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GMVODMD_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6454,6 +6757,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
      </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP1OSEL_M_F_CV</string>
+     </property>
      <property name="text">
       <string>0</string>
      </property>
@@ -6473,6 +6779,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_FCV62109SEL_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -6573,6 +6882,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GP2OSEL_M_F_CV</string>
      </property>
      <property name="text">
       <string>0</string>
@@ -6737,7 +7049,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
          <enum>WLabel::Izquierda</enum>
         </property>
        </widget>
-       <widget class="QLineEdit" name="leTFLDMDJA">
+       <widget class="WLineEdit" name="leTFLDMDJA">
         <property name="geometry">
          <rect>
           <x>115</x>
@@ -6749,6 +7061,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="id">
+         <string>p_Fix32_THISNODE_TFLDMDJA_AI_F_CV</string>
+        </property>
+        <property name="text">
+         <string> </string>
         </property>
        </widget>
        <widget class="WLabel" name="lbTFLDMDJAFBT">
@@ -6790,6 +7108,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
         <property name="styleSheet">
          <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+        </property>
+        <property name="id">
+         <string>p_Fix32_THISNODE_TFLDMDJAFB_M_F_CV</string>
         </property>
         <property name="text">
          <string>0</string>
@@ -6927,7 +7248,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <enum>WLabel::Izquierda</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leTFLMAXJA">
+     <widget class="WLineEdit" name="leTFLMAXJA">
       <property name="geometry">
        <rect>
         <x>115</x>
@@ -6939,6 +7260,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLMAXJFB_AI_F_CV</string>
+      </property>
+      <property name="text">
+       <string> </string>
       </property>
      </widget>
      <widget class="WLabel" name="lbTFLMAXJAFBT">
@@ -6980,6 +7307,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLMAXJAFB_M_F_CV</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -7115,7 +7445,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <enum>WLabel::Izquierda</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leTFLMINJA">
+     <widget class="WLineEdit" name="leTFLMINJA">
       <property name="geometry">
        <rect>
         <x>115</x>
@@ -7127,6 +7457,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLMINJFB_AI_F_CV</string>
+      </property>
+      <property name="text">
+       <string> </string>
       </property>
      </widget>
      <widget class="WLabel" name="lbTFLMINJAFBT">
@@ -7168,6 +7504,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLMINJAFB_M_F_CV</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -7303,7 +7642,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <enum>WLabel::Izquierda</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leTFLISCHJA">
+     <widget class="WLineEdit" name="leTFLISCHJA">
       <property name="geometry">
        <rect>
         <x>115</x>
@@ -7315,6 +7654,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLISCHFB_AI_F_CV</string>
+      </property>
+      <property name="text">
+       <string> </string>
       </property>
      </widget>
      <widget class="WLabel" name="lbTFLISCHJAFBT">
@@ -7384,6 +7729,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
       </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLISCHJAF_M_F_CV</string>
+      </property>
       <property name="text">
        <string>0</string>
       </property>
@@ -7410,6 +7758,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TABALI_M_F_CV</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -7550,7 +7901,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <enum>WLabel::Izquierda</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leTFLOSCHJA">
+     <widget class="WLineEdit" name="leTFLOSCHJA">
       <property name="geometry">
        <rect>
         <x>115</x>
@@ -7562,6 +7913,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLOSCHFB_AI_F_CV</string>
+      </property>
+      <property name="text">
+       <string> </string>
       </property>
      </widget>
      <widget class="WLabel" name="lbTABALOT">
@@ -7631,6 +7988,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
       </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TABALO_M_F_CV</string>
+      </property>
       <property name="text">
        <string>0</string>
       </property>
@@ -7657,6 +8017,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TFLOSCHJAF_M_F_CV</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -7785,7 +8148,7 @@ border: 1px solid rgb(255, 255, 255,0);</string>
        <enum>WLabel::Izquierda</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leincTem">
+     <widget class="WLineEdit" name="leincTem">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -7797,6 +8160,12 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(128, 128, 128);
 border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_RATE_AO_Z_F_CV</string>
+      </property>
+      <property name="text">
+       <string> </string>
       </property>
      </widget>
      <widget class="WLabel" name="lbTABABULKT">
@@ -7838,6 +8207,9 @@ border: 1px solid rgb(255, 255, 255,0);</string>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);</string>
+      </property>
+      <property name="id">
+       <string>p_Fix32_THISNODE_TABALBULK_M_F_CV</string>
       </property>
       <property name="text">
        <string>0</string>
@@ -8094,6 +8466,9 @@ background-color: rgba(255, 255, 255, 0);</string>
     <string notr="true">color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255,0);
 background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_LOGRATE_AI_F_CV</string>
    </property>
    <property name="text">
     <string>4</string>
@@ -8498,6 +8873,11 @@ background-color: rgba(255, 255, 255, 0);</string>
    <class>WLabel</class>
    <extends>QWidget</extends>
    <header>wlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLineEdit</class>
+   <extends>QWidget</extends>
+   <header>wlineedit.h</header>
   </customwidget>
  </customwidgets>
  <resources>

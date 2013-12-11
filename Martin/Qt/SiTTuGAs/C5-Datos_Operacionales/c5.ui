@@ -101,6 +101,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>VELOCIDAD DE LA TURBINA</string>
      </property>
@@ -110,9 +113,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -128,6 +128,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>N25A</string>
     </property>
@@ -137,9 +140,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -154,6 +154,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6800_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -163,9 +169,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -180,6 +183,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -189,9 +195,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbN25BU">
@@ -203,6 +206,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -212,9 +218,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbN25B">
@@ -226,6 +229,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6801_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -235,9 +244,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -252,6 +258,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>N25B</string>
     </property>
@@ -261,9 +270,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -278,6 +284,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -287,9 +296,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbN25SELT">
@@ -301,6 +307,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>N25SEL</string>
     </property>
@@ -310,9 +319,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -327,6 +333,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_N25SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -336,9 +348,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -353,6 +362,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -362,9 +374,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbN25REFT">
@@ -376,6 +385,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>N25REF</string>
     </property>
@@ -385,9 +397,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -402,6 +411,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_N25REF_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -411,9 +426,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -428,6 +440,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -437,9 +452,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbNSDAT">
@@ -451,6 +463,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>NSDA</string>
     </property>
@@ -460,9 +475,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -477,6 +489,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6812_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -486,9 +504,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -503,6 +518,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -512,9 +530,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbNSDBT">
@@ -526,6 +541,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>NSDB</string>
     </property>
@@ -535,9 +553,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -552,6 +567,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_SE6813_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -561,9 +582,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -578,6 +596,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>RPM</string>
     </property>
@@ -587,9 +608,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbNSDSELT">
@@ -601,6 +619,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>NSDSEL</string>
     </property>
@@ -610,9 +631,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -627,6 +645,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -636,9 +660,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -687,6 +708,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>TEMPERATURAS DE TERBINA</string>
      </property>
@@ -696,9 +720,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
     </widget>
    </widget>
@@ -711,6 +732,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T2A</string>
     </property>
@@ -720,9 +744,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -737,6 +758,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6821A_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -746,9 +773,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -763,6 +787,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -772,9 +799,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -789,6 +813,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -798,9 +825,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -815,6 +839,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6821B_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -824,9 +854,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -841,6 +868,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T2B</string>
     </property>
@@ -850,9 +880,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -867,6 +894,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -876,9 +906,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -893,6 +920,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T2SEL</string>
     </property>
@@ -902,9 +932,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -919,6 +946,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T2SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -928,9 +961,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -945,6 +975,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -954,9 +987,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -971,6 +1001,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T25B</string>
     </property>
@@ -980,9 +1013,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -997,6 +1027,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6837B_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1006,9 +1042,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1023,6 +1056,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1032,9 +1068,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1049,6 +1082,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T25SEL</string>
     </property>
@@ -1058,9 +1094,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1075,6 +1108,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T25SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1084,9 +1123,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1101,6 +1137,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1110,9 +1149,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1127,6 +1163,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T3A1</string>
     </property>
@@ -1136,9 +1175,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1153,6 +1189,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838A1_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1162,9 +1204,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1179,6 +1218,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1188,9 +1230,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1205,6 +1244,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6837A_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1214,9 +1259,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1231,6 +1273,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T25A</string>
     </property>
@@ -1240,9 +1285,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1257,6 +1299,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1266,9 +1311,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1283,6 +1325,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838A2_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1292,9 +1340,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1309,6 +1354,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T3A2</string>
     </property>
@@ -1318,9 +1366,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1335,6 +1380,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1344,9 +1392,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1361,6 +1406,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T3B1</string>
     </property>
@@ -1370,9 +1418,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1387,6 +1432,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838B1_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1396,9 +1447,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1413,6 +1461,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1422,9 +1473,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1439,6 +1487,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6838B2_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1448,9 +1502,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1465,6 +1516,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T3SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1474,9 +1531,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1491,6 +1545,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1500,9 +1557,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -1517,6 +1571,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T3SEL</string>
     </property>
@@ -1526,9 +1583,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1543,6 +1597,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T3B2</string>
     </property>
@@ -1552,9 +1609,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1603,6 +1657,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>TEMPERATURAS DE TERBINA</string>
      </property>
@@ -1612,9 +1669,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
     </widget>
    </widget>
@@ -1627,6 +1681,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48A</string>
     </property>
@@ -1636,9 +1693,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1653,6 +1707,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6843_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1662,9 +1722,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1679,6 +1736,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1688,9 +1748,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1705,6 +1762,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1714,9 +1774,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1731,6 +1788,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6844_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1740,9 +1803,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1757,6 +1817,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48B</string>
     </property>
@@ -1766,9 +1829,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1783,6 +1843,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1792,9 +1855,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1809,6 +1869,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48C</string>
     </property>
@@ -1818,9 +1881,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1835,6 +1895,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6845_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1844,9 +1910,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1861,6 +1924,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1870,9 +1936,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1887,6 +1950,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48D</string>
     </property>
@@ -1896,9 +1962,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1913,6 +1976,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6846_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1922,9 +1991,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1939,6 +2005,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -1948,9 +2017,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1965,6 +2031,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48F</string>
     </property>
@@ -1974,9 +2043,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -1991,6 +2057,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6848_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2000,9 +2072,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2017,6 +2086,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -2026,9 +2098,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2043,6 +2112,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48G</string>
     </property>
@@ -2052,9 +2124,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2069,6 +2138,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6849_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2078,9 +2153,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2095,6 +2167,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -2104,9 +2179,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2121,6 +2193,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48H</string>
     </property>
@@ -2130,9 +2205,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2147,6 +2219,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6850_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2156,9 +2234,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2173,6 +2248,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -2182,9 +2260,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2199,6 +2274,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6847_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2208,9 +2289,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2225,6 +2303,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48E</string>
     </property>
@@ -2234,9 +2315,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2251,6 +2329,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -2260,9 +2341,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2277,6 +2355,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T48SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2286,9 +2370,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2303,6 +2384,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48SEL</string>
     </property>
@@ -2312,9 +2396,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2329,6 +2410,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -2338,9 +2422,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2355,6 +2436,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>T48REF</string>
     </property>
@@ -2364,9 +2448,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2381,6 +2462,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T48REF_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2390,9 +2477,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2441,6 +2525,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>PRESIONES DE TURBINA</string>
      </property>
@@ -2450,9 +2537,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -2468,6 +2552,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>POSEL</string>
     </property>
@@ -2477,9 +2564,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2494,6 +2578,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6863_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2503,9 +2593,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2520,6 +2607,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2529,9 +2619,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbP25AU">
@@ -2543,6 +2630,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2552,9 +2642,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbP25AT">
@@ -2566,6 +2653,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>P25A</string>
     </property>
@@ -2575,9 +2665,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2592,6 +2679,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6859A_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2601,9 +2694,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2618,6 +2708,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2627,9 +2720,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbP25BT">
@@ -2641,6 +2731,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>P25B</string>
     </property>
@@ -2650,9 +2743,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2667,6 +2757,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6859B_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2676,9 +2772,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2693,6 +2786,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2702,9 +2798,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPS3AT">
@@ -2716,6 +2809,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PS3A</string>
     </property>
@@ -2725,9 +2821,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2742,6 +2835,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6804_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2751,9 +2850,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2768,6 +2864,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2777,9 +2876,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPS3BT">
@@ -2791,6 +2887,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PS3B</string>
     </property>
@@ -2800,9 +2899,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2817,6 +2913,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6814_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2826,9 +2928,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2843,6 +2942,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2852,9 +2954,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPS3SELT">
@@ -2866,6 +2965,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PS3SEL</string>
     </property>
@@ -2875,9 +2977,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2892,6 +2991,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PS3SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2901,9 +3006,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2918,6 +3020,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -2927,9 +3032,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbP25SEL">
@@ -2941,6 +3043,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_P25SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2950,9 +3058,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -2967,6 +3072,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>P25SEL</string>
     </property>
@@ -2976,9 +3084,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -2993,6 +3098,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -3002,9 +3110,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbP48SELT">
@@ -3016,6 +3121,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>P48SEL</string>
     </property>
@@ -3025,9 +3133,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3042,6 +3147,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_P48SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3051,9 +3162,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3102,6 +3210,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>PROPIEDADES DEL COMB </string>
      </property>
@@ -3111,9 +3222,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -3129,6 +3237,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>WF36DMD</string>
     </property>
@@ -3138,9 +3249,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3155,6 +3263,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_WF36DMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3165,9 +3279,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -3175,11 +3286,14 @@
    <widget class="WLabel" name="lbWF36DMDU">
     <property name="geometry">
      <rect>
-      <x>159</x>
+      <x>155</x>
       <y>35</y>
-      <width>37</width>
+      <width>45</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="text">
      <string>Lbs/Hr</string>
@@ -3190,9 +3304,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3201,11 +3312,14 @@
    <widget class="WLabel" name="lbWF36ACU">
     <property name="geometry">
      <rect>
-      <x>159</x>
+      <x>155</x>
       <y>56</y>
-      <width>37</width>
+      <width>45</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="text">
      <string>Lbs/Hr</string>
@@ -3216,9 +3330,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3233,6 +3344,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_WF36PPH_AI_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3242,9 +3359,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3259,6 +3373,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>WF36ACT</string>
     </property>
@@ -3268,9 +3385,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3285,6 +3399,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3294,9 +3411,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3311,6 +3425,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVISEL</string>
     </property>
@@ -3320,9 +3437,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3337,6 +3451,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62107SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3346,9 +3466,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3363,6 +3480,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3372,9 +3492,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3389,6 +3506,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVIDMD</string>
     </property>
@@ -3398,9 +3518,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3415,6 +3532,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVIDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3424,9 +3547,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3441,6 +3561,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3450,9 +3573,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3467,6 +3587,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVPDMD</string>
     </property>
@@ -3476,9 +3599,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3493,6 +3613,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVPDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3502,9 +3628,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3519,6 +3642,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3528,9 +3654,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3545,6 +3668,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVPSEL</string>
     </property>
@@ -3554,9 +3680,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3571,6 +3694,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62109SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3580,9 +3709,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3597,6 +3723,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3606,9 +3735,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3623,6 +3749,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVPDMD</string>
     </property>
@@ -3632,9 +3761,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3649,6 +3775,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVODMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3658,9 +3790,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3675,6 +3804,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -3684,9 +3816,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3701,6 +3830,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62108SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3710,9 +3845,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3727,6 +3859,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>GMVPSEL</string>
     </property>
@@ -3736,9 +3871,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3753,6 +3885,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>°F</string>
     </property>
@@ -3762,9 +3897,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3779,6 +3911,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGSSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3788,9 +3926,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3805,6 +3940,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>TGSSEL</string>
     </property>
@@ -3814,9 +3952,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3831,6 +3966,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -3840,9 +3978,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3857,6 +3992,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>TGSSEL</string>
     </property>
@@ -3866,9 +4004,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3883,6 +4018,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6227_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3892,9 +4033,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -3943,6 +4081,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>VÁLVULAS DE PURGA</string>
      </property>
@@ -3952,9 +4093,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -3970,6 +4108,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>CDPA</string>
     </property>
@@ -3979,9 +4120,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -3996,6 +4134,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPA_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4005,9 +4149,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4022,6 +4163,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4031,9 +4175,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4048,6 +4189,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4057,9 +4201,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4074,6 +4215,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPB_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4083,9 +4230,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4100,6 +4244,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>CDPB</string>
     </property>
@@ -4109,9 +4256,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4126,6 +4270,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4135,9 +4282,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4152,6 +4296,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>CDPSEL</string>
     </property>
@@ -4161,9 +4308,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4178,6 +4322,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4187,9 +4337,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4204,6 +4351,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4213,9 +4363,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4230,6 +4377,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>CDPDMD</string>
     </property>
@@ -4239,9 +4389,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4256,6 +4403,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CDPDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4265,9 +4418,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4282,6 +4432,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4291,9 +4444,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4308,6 +4458,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>ST8A</string>
     </property>
@@ -4317,9 +4470,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4334,6 +4484,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8A_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4343,9 +4499,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4360,6 +4513,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4369,9 +4525,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4386,6 +4539,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>ST8B</string>
     </property>
@@ -4395,9 +4551,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4412,6 +4565,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8B_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4421,9 +4580,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4438,6 +4594,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4447,9 +4606,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4464,6 +4620,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>ST8SEL</string>
     </property>
@@ -4473,9 +4632,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4490,6 +4646,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8SEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4499,9 +4661,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4516,6 +4675,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4525,9 +4687,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4542,6 +4701,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ST8DMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4551,9 +4716,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4568,6 +4730,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>ST8DMD</string>
     </property>
@@ -4577,9 +4742,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4628,6 +4790,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>GEOMETRÍA VARIABLE</string>
      </property>
@@ -4637,9 +4802,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -4655,6 +4817,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VSVA</string>
     </property>
@@ -4664,9 +4829,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4681,6 +4843,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVA_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4690,9 +4858,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVSVAU">
@@ -4704,6 +4869,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4713,9 +4881,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4730,6 +4895,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4739,9 +4907,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4756,6 +4921,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVB_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4765,9 +4936,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVSVBT">
@@ -4779,6 +4947,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VSVB</string>
     </property>
@@ -4788,9 +4959,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4805,6 +4973,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4814,9 +4985,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -4831,6 +4999,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VSVSEL</string>
     </property>
@@ -4840,9 +5011,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4857,6 +5025,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4866,9 +5040,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVSVDMDU">
@@ -4880,6 +5051,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4890,9 +5064,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -4900,11 +5071,14 @@
    <widget class="WLabel" name="lbVSVDMDT">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>29</x>
       <y>95</y>
-      <width>50</width>
-      <height>13</height>
+      <width>61</width>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="text">
      <string>VSVDMD</string>
@@ -4915,9 +5089,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -4932,6 +5103,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4941,9 +5118,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbIGVA">
@@ -4955,6 +5129,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVA_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -4964,9 +5144,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbIGVBU">
@@ -4978,6 +5155,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -4987,9 +5167,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5004,6 +5181,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5013,9 +5196,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbIGVDMDU">
@@ -5027,6 +5207,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5036,9 +5219,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5053,6 +5233,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>IGVDMD</string>
     </property>
@@ -5062,9 +5245,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5079,6 +5259,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5088,9 +5274,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbIGVAT">
@@ -5102,6 +5285,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>IGVA</string>
     </property>
@@ -5111,9 +5297,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5128,6 +5311,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5137,9 +5323,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5154,6 +5337,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>IGVB</string>
     </property>
@@ -5163,9 +5349,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5180,6 +5363,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5189,9 +5375,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5206,6 +5389,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>IGVSEL</string>
     </property>
@@ -5215,9 +5401,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5232,6 +5415,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_IGVB_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5241,9 +5430,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVBVA">
@@ -5255,6 +5441,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVA_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5264,9 +5456,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVBVBU">
@@ -5278,6 +5467,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5287,9 +5479,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5304,6 +5493,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5313,9 +5508,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVBVDMDU">
@@ -5327,6 +5519,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5337,9 +5532,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -5347,11 +5539,14 @@
    <widget class="WLabel" name="lbVBVDMDT">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>29</x>
       <y>179</y>
-      <width>50</width>
-      <height>13</height>
+      <width>61</width>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="text">
      <string>VBVDMD</string>
@@ -5362,9 +5557,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5379,6 +5571,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5388,9 +5586,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbVBVAT">
@@ -5402,6 +5597,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VBVA</string>
     </property>
@@ -5411,9 +5609,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5428,6 +5623,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5437,9 +5635,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5454,6 +5649,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VBVB</string>
     </property>
@@ -5463,9 +5661,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5480,6 +5675,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5489,9 +5687,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5506,6 +5701,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>VBVSEL</string>
     </property>
@@ -5515,9 +5713,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5532,6 +5727,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVB_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5541,9 +5742,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
   </widget>
@@ -5589,6 +5787,9 @@
        <height>13</height>
       </rect>
      </property>
+     <property name="Fondo_Inicial" stdset="0">
+      <enum>WLabel::Sin_color</enum>
+     </property>
      <property name="text">
       <string>EQUILIBRIO DE IMPULSIÓN</string>
      </property>
@@ -5598,9 +5799,6 @@
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-     <property name="Fondo_Inicial" stdset="0">
-      <enum>WLabel::Sin_color</enum>
      </property>
      <property name="Alineacion" stdset="0">
       <enum>WLabel::Centro</enum>
@@ -5616,6 +5814,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PTBA</string>
     </property>
@@ -5625,9 +5826,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5642,6 +5840,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6861A_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5651,9 +5855,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5668,6 +5869,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -5677,9 +5881,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPTBBU">
@@ -5691,6 +5892,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -5700,9 +5904,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPTBB">
@@ -5714,6 +5915,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6861B_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5723,9 +5930,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5740,6 +5944,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PTBB</string>
     </property>
@@ -5749,9 +5956,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5766,6 +5970,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PSIA</string>
     </property>
@@ -5775,9 +5982,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbPTBSELT">
@@ -5789,6 +5993,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>PTBSEL</string>
     </property>
@@ -5798,9 +6005,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5815,6 +6019,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PTBSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5824,9 +6034,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5841,6 +6048,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5850,9 +6060,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbTBVAT">
@@ -5864,6 +6071,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>TBVA</string>
     </property>
@@ -5873,9 +6083,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5890,6 +6097,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVA_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5899,9 +6112,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5916,6 +6126,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -5925,9 +6138,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbTBVBT">
@@ -5939,6 +6149,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>TBVB</string>
     </property>
@@ -5948,9 +6161,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -5965,6 +6175,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVB_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -5974,9 +6190,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -5991,6 +6204,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -6000,9 +6216,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbTBVSELT">
@@ -6014,6 +6227,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>TBVSEL</string>
     </property>
@@ -6023,9 +6239,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -6040,6 +6253,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVSEL_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -6049,9 +6268,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
@@ -6066,6 +6282,9 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>%</string>
     </property>
@@ -6075,9 +6294,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
    </widget>
    <widget class="WLabel" name="lbTBVDMD">
@@ -6089,6 +6305,12 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVDMD_F_CV</string>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -6099,9 +6321,6 @@
       <bold>true</bold>
      </font>
     </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
-    </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Centro</enum>
     </property>
@@ -6109,11 +6328,14 @@
    <widget class="WLabel" name="lbTBVDMDT">
     <property name="geometry">
      <rect>
-      <x>65</x>
+      <x>40</x>
       <y>191</y>
-      <width>46</width>
-      <height>13</height>
+      <width>71</width>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="Fondo_Inicial" stdset="0">
+     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="text">
      <string>TBVDMD</string>
@@ -6124,9 +6346,6 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="Fondo_Inicial" stdset="0">
-     <enum>WLabel::Sin_color</enum>
     </property>
     <property name="Alineacion" stdset="0">
      <enum>WLabel::Derecha</enum>
@@ -6154,11 +6373,11 @@
      <height>662</height>
     </size>
    </property>
-   <property name="text">
-    <string/>
-   </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <zorder>label_232</zorder>
