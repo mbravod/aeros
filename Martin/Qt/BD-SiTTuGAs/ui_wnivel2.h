@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wnivel2.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -112,6 +112,7 @@ public:
         font2.setBold(true);
         font2.setWeight(75);
         lbTodP->setFont(font2);
+        lbTodP->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
         lbNivL = new QLabel(WNivel2);
         lbNivL->setObjectName(QString::fromUtf8("lbNivL"));
         lbNivL->setGeometry(QRect(32, 158, 121, 20));
@@ -149,15 +150,15 @@ public:
         ldNiv2 = new AWMultiObject(WNivel2);
         ldNiv2->setObjectName(QString::fromUtf8("ldNiv2"));
         ldNiv2->setGeometry(QRect(15, 145, 21, 21));
-        ldNiv2->setValue(0);
         ldNiv2->setElementType(AWMultiObject::CIRLED);
+        ldNiv2->setProperty("Value", QVariant(0));
         ldNiv1 = new AWMultiObject(WNivel2);
         ldNiv1->setObjectName(QString::fromUtf8("ldNiv1"));
         ldNiv1->setGeometry(QRect(15, 160, 21, 21));
-        ldNiv1->setValue(0);
         ldNiv1->setElementType(AWMultiObject::CIRLED);
         ldNiv1->setOnColor(AWMultiObject::Red);
         ldNiv1->setOffColor(AWMultiObject::Green);
+        ldNiv1->setProperty("Value", QVariant(0));
         ldComOk = new AWMultiObject(WNivel2);
         ldComOk->setObjectName(QString::fromUtf8("ldComOk"));
         ldComOk->setGeometry(QRect(15, 175, 21, 21));
@@ -165,8 +166,10 @@ public:
         ldComOk->setOffColor(AWMultiObject::Red);
         lbFondo = new QLabel(WNivel2);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
-        lbFondo->setGeometry(QRect(0, 0, 200, 330));
+        lbFondo->setGeometry(QRect(0, 0, 198, 321));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbFondo->raise();
         frame->raise();
         frame_2->raise();

@@ -216,6 +216,9 @@ p, li { white-space: pre-wrap; }
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
    <property name="text">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -400,11 +403,11 @@ p, li { white-space: pre-wrap; }
      <height>21</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::CIRLED</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ldNiv1">
@@ -416,9 +419,6 @@ p, li { white-space: pre-wrap; }
      <height>21</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::CIRLED</enum>
    </property>
@@ -427,6 +427,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="OffColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ldComOk">
@@ -450,12 +453,18 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>200</width>
-     <height>330</height>
+     <width>198</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>

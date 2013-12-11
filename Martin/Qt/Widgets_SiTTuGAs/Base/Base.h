@@ -2,11 +2,8 @@
 #define BASE_H
 
 #include <QWidget>
-
-
 //Posiblemente cambiar esta referencia una vez que se defina el nombre
-#include "../SharedMemory/httprequest.h"                    //modifica
-
+#include "../SharedMemory/httprequest.h"
 
 class Base : public QWidget
 {
@@ -20,7 +17,7 @@ class Base : public QWidget
 
 
 public:
-    explicit Base(QWidget *parent = 0);
+    Base(QWidget *parent = 0);
     //Metodos setters y getters
     QString getId();
     int getTipo();

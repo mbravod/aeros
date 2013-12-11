@@ -7,7 +7,7 @@ INCLUDEPATH += ../../SiTTuGAs/Sittugas
 
 win32-g++:{
         POST_TARGETDEPS += ../libHeader.a
-	   LIBS += ../libHeader.a
+        LIBS += ../libHeader.a
         POST_TARGETDEPS += ../libBase.a
         LIBS += ../libBase.a
 }

@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgba(128, 128, 128, 0);</string>
   </property>
   <widget class="WLabel" name="lbtbvohms">
    <property name="geometry">
@@ -37,6 +37,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -46,9 +49,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -63,6 +63,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>%</string>
    </property>
@@ -72,9 +75,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -89,6 +89,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVSEL</string>
    </property>
@@ -98,9 +101,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -115,6 +115,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>%</string>
    </property>
@@ -124,9 +127,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -141,6 +141,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -150,9 +153,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -167,6 +167,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -176,9 +179,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -193,6 +193,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -202,9 +205,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -219,6 +219,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVMA</string>
    </property>
@@ -228,9 +231,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -245,6 +245,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>MA</string>
    </property>
@@ -254,9 +257,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -271,6 +271,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVDMD</string>
    </property>
@@ -280,9 +283,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -297,6 +297,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVOHMS</string>
    </property>
@@ -306,9 +309,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -323,6 +323,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>OHMS</string>
    </property>
@@ -332,9 +335,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -349,6 +349,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>%</string>
    </property>
@@ -358,9 +361,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -375,6 +375,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -384,9 +387,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -401,6 +401,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -410,9 +413,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -427,6 +427,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>%</string>
    </property>
@@ -436,9 +439,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Izquierda</enum>
@@ -453,6 +453,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVA</string>
    </property>
@@ -462,9 +465,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
@@ -479,6 +479,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>TBVB</string>
    </property>
@@ -489,30 +492,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
-   </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Derecha</enum>
-   </property>
-  </widget>
-  <widget class="WLabel" name="lbFondo">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>175</width>
-     <height>1502</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="btCerrar">
@@ -538,7 +519,26 @@
     <string>BALANCE IMPULSO</string>
    </property>
   </widget>
-  <zorder>lbFondo</zorder>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
   <zorder>lbtbvohms</zorder>
   <zorder>lbtbvbU</zorder>
   <zorder>lbtbvselT</zorder>

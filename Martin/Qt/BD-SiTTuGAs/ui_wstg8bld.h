@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wstg8bld.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -148,7 +148,8 @@ public:
         lbSTGBU_6->setObjectName(QString::fromUtf8("lbSTGBU_6"));
         lbSTGBU_6->setGeometry(QRect(135, 120, 41, 16));
         lbSTGBU_6->setFont(font);
-        lbSTGBU_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbSTGBU_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);\n"
+"background-color: rgba(255, 255, 255, 0);"));
         lbSTGBT_6 = new QLabel(WSTG8BLD);
         lbSTGBT_6->setObjectName(QString::fromUtf8("lbSTGBT_6"));
         lbSTGBT_6->setGeometry(QRect(30, 120, 52, 20));
@@ -165,6 +166,8 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WSTG8BLD);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

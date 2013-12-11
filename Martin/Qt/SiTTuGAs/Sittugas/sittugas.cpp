@@ -59,7 +59,7 @@ void SiTTuGAs::ChangeWin(int n)
                         //Activamos la intefaz (considerandose que ya fue creada)
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A1";
+                        //()<< "Creando A1";
                         flagOpt = 0;
                         //Generamos una instancia de A1
                         a1 = new A1(this,m_shrdMem);
@@ -92,7 +92,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A2";
+                        //()<< "Creando A2";
                         flagOpt = 0;
                         a2 = new A2(this,m_shrdMem);
                         a2->setUpdateableChildrenList();
@@ -118,7 +118,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A3";
+                        //()<< "Creando A3";
                         flagOpt = 0;
                         a3 = new A3(this,m_shrdMem);
                         a3->setAttribute(Qt::WA_DeleteOnClose);
@@ -142,7 +142,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A4";
+                        //()<< "Creando A4";
                         flagOpt = 0;
                         a4 = new A4(this,m_shrdMem);
                         a4->setAttribute(Qt::WA_DeleteOnClose);
@@ -164,7 +164,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A5";
+                        //()<< "Creando A5";
                         flagOpt = 0;
                         a5 = new A5(this,m_shrdMem);
                         a5->setUpdateableChildrenList();
@@ -186,7 +186,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando A6";
+                        //()<< "Creando A6";
                         flagOpt = 0;
                         a6 = new A6(this,m_shrdMem);
                         a6->setAttribute(Qt::WA_DeleteOnClose);
@@ -210,7 +210,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B1";
+                        //()<< "Creando B1";
                         flagOpt = 0;
                         b1 = new B1(this,m_shrdMem);
                         b1->setUpdateableChildrenList();
@@ -224,7 +224,7 @@ void SiTTuGAs::ChangeWin(int n)
                     break;
         case ID_B2:
                     if(lst.at(n)->widget() != NULL){
-                        qDebug()<< "Actualizando B2";
+                        //()<< "Actualizando B2";
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
                         b2->setUpdateableChildrenList();
                         b2->update();
@@ -233,7 +233,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B2";
+                        //()<< "Creando B2";
                         flagOpt = 0;
                         b2 = new B2(this,m_shrdMem);
                         b2->setUpdateableChildrenList();
@@ -255,7 +255,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B3";
+                        //()<< "Creando B3";
                         flagOpt = 0;
                         b3 = new B3(this,m_shrdMem);
                         b3->setAttribute(Qt::WA_DeleteOnClose);
@@ -277,7 +277,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B4";
+                        //()<< "Creando B4";
                         flagOpt = 0;
                         b4 = new B4(this,m_shrdMem);
                         b4->setUpdateableChildrenList();
@@ -299,7 +299,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B5";
+                        //()<< "Creando B5";
                         flagOpt = 0;
                         b5 = new B5(this,m_shrdMem);
                         b5->setAttribute(Qt::WA_DeleteOnClose);
@@ -321,7 +321,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B6";
+                        //()<< "Creando B6";
                         flagOpt = 0;
                         b6 = new B6(this,m_shrdMem);
                         b6->setUpdateableChildrenList();
@@ -343,7 +343,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B7";
+                        //()<< "Creando B7";
                         flagOpt = 0;
                         b7 = new B7(this,m_shrdMem);
                         b7->setUpdateableChildrenList();
@@ -365,7 +365,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B8";
+                        //()<< "Creando B8";
                         flagOpt = 0;
                         b8 = new B8(this,m_shrdMem);
                         b8->setUpdateableChildrenList();
@@ -387,7 +387,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B9";
+                        //()<< "Creando B9";
                         flagOpt = 0;
                         b9 = new B9(this,m_shrdMem);
                         b9->setUpdateableChildrenList();
@@ -409,7 +409,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B11";
+                        //()<< "Creando B11";
                         flagOpt = 0;
                         b11 = new B11(this,m_shrdMem);
                         b11->setUpdateableChildrenList();
@@ -431,7 +431,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B12";
+                        //()<< "Creando B12";
                         flagOpt = 0;
                         b12 = new B12(this,m_shrdMem);
                         b12->setUpdateableChildrenList();
@@ -454,7 +454,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B12";
+                        //()<< "Creando B12";
                         flagOpt = 0;
                         b14 = new B14(this,m_shrdMem);
                         b14->setUpdateableChildrenList();
@@ -477,7 +477,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando B12";
+                        //()<< "Creando B12";
                         flagOpt = 0;
                         c1 = new C1(this,m_shrdMem);
                         c1->setUpdateableChildrenList();
@@ -499,7 +499,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando C2";
+                        //()<< "Creando C2";
                         flagOpt = 0;
                         c2 = new C2(this,m_shrdMem);
                         c2->setUpdateableChildrenList();
@@ -521,7 +521,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando C3";
+                        //()<< "Creando C3";
                         flagOpt = 0;
                         c3 = new C3(this,m_shrdMem);
                         c3->setUpdateableChildrenList();
@@ -543,7 +543,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando C4";
+                        //()<< "Creando C4";
                         flagOpt = 0;
                         c4 = new C4(this,m_shrdMem);
                         c4->setUpdateableChildrenList();
@@ -565,7 +565,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando C5";
+                        //()<< "Creando C5";
                         flagOpt = 0;
                         c5 = new C5(this,m_shrdMem);
                         c5->setUpdateableChildrenList();
@@ -586,7 +586,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D1";
+                        //()<< "Creando D1";
                         flagOpt = 0;
                         d1 = new D1(this,m_shrdMem);
                         d1->setUpdateableChildrenList();
@@ -609,7 +609,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D2";
+                        //()<< "Creando D2";
                         flagOpt = 0;
                         d2 = new D2(this,m_shrdMem);
                         d2->setUpdateableChildrenList();
@@ -632,7 +632,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D3";
+                        //()<< "Creando D3";
                         flagOpt = 0;
                         d3 = new D3(this,m_shrdMem);
                         d3->setUpdateableChildrenList();
@@ -655,7 +655,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D4";
+                        //()<< "Creando D4";
                         flagOpt = 0;
                         d4 = new D4(this,m_shrdMem);
                         d4->setUpdateableChildrenList();
@@ -677,7 +677,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D5";
+                        //()<< "Creando D5";
                         flagOpt = 0;
                         d5 = new D5(this,m_shrdMem);
                         d5->setUpdateableChildrenList();
@@ -699,7 +699,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D6";
+                        //()<< "Creando D6";
                         flagOpt = 0;
                         d6 = new D6(this,m_shrdMem);
                         d6->setUpdateableChildrenList();
@@ -721,7 +721,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D7";
+                        //()<< "Creando D7";
                         flagOpt = 0;
                         d7 = new D7(this,m_shrdMem);
                         d7->setUpdateableChildrenList();
@@ -743,7 +743,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D8";
+                        //()<< "Creando D8";
                         flagOpt = 0;
                         d8 = new D8(this,m_shrdMem);
                         d8->setUpdateableChildrenList();
@@ -765,7 +765,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando D9";
+                        //()<< "Creando D9";
                         flagOpt = 0;
                         d9 = new D9(this,m_shrdMem);
                         d9->setUpdateableChildrenList();
@@ -787,7 +787,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando E1";
+                        //()<< "Creando E1";
                         flagOpt = 0;
                         e1 = new E1(this,m_shrdMem);
                         e1->setUpdateableChildrenList();
@@ -809,7 +809,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando E2";
+                        //()<< "Creando E2";
                         flagOpt = 0;
                         e2 = new E2(this,m_shrdMem);
                         e2->setUpdateableChildrenList();
@@ -831,7 +831,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando E3";
+                        //()<< "Creando E3";
                         flagOpt = 0;
                         e3 = new E3(this,m_shrdMem);
                         e3->setUpdateableChildrenList();
@@ -853,7 +853,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando F1";
+                        //()<< "Creando F1";
                         flagOpt = 0;
                         f1 = new F1(this,m_shrdMem);
                         f1->setUpdateableChildrenList();
@@ -867,7 +867,7 @@ void SiTTuGAs::ChangeWin(int n)
                     break;
         case ID_F2:
                     if(lst.at(n)->widget() != NULL){
-                        qDebug()<< "Actualizando F2";
+                        //()<< "Actualizando F2";
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
                         f2->setUpdateableChildrenList();
                         f2->update();
@@ -876,7 +876,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando F2";
+                        //()<< "Creando F2";
                         flagOpt = 0;
                         f2 = new F2(this,m_shrdMem);
                         f2->setUpdateableChildrenList();
@@ -898,7 +898,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando F3";
+                        //()<< "Creando F3";
                         flagOpt = 0;
                         f3 = new F3(this,m_shrdMem);
                         f3->setUpdateableChildrenList();
@@ -920,7 +920,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando F4";
+                        //()<< "Creando F4";
                         flagOpt = 0;
                         f4 = new F4(this,m_shrdMem);
                         f4->setUpdateableChildrenList();
@@ -942,7 +942,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando F5";
+                        //()<< "Creando F5";
                         flagOpt = 0;
                         f5 = new F5(this,m_shrdMem);
                         f5->setUpdateableChildrenList();
@@ -968,7 +968,7 @@ void SiTTuGAs::ChangeWin(int n)
                         //Activamos la intefaz (considerandose que ya fue creada)
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando zonaAlim";
+                        //()<< "Creando zonaAlim";
                         flagOpt = 0;
                         //Generamos una instancia de A1
                         n1 = new N1(this,m_shrdMem);
@@ -999,7 +999,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando SisAguaRes";
+                        //()<< "Creando SisAguaRes";
                         flagOpt = 0;
                         n2 = new N2(this,m_shrdMem);
                         n2->setUpdateableChildrenList();
@@ -1025,7 +1025,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando SisGasComb";
+                        //()<< "Creando SisGasComb";
                         flagOpt = 0;
                         n3 = new N3(this,m_shrdMem);
                         n3->setAttribute(Qt::WA_DeleteOnClose);
@@ -1049,7 +1049,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando Widget";
+                        //()<< "Creando Widget";
                         flagOpt = 0;
                         n4 = new N4(this,m_shrdMem);
                         n4->setAttribute(Qt::WA_DeleteOnClose);
@@ -1071,7 +1071,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando ENFRIADOR";
+                        //()<< "Creando ENFRIADOR";
                         flagOpt = 0;
                         n5 = new N5(this,m_shrdMem);
                         n5->setUpdateableChildrenList();
@@ -1093,7 +1093,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando CompresorGas";
+                        //()<< "Creando CompresorGas";
                         flagOpt = 0;
                         n6 = new N6(this,m_shrdMem);
                         n6->setAttribute(Qt::WA_DeleteOnClose);
@@ -1117,7 +1117,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando filtroGas";
+                        //()<< "Creando filtroGas";
                         flagOpt = 0;
                         n7 = new N7(this,m_shrdMem);
                         n7->setUpdateableChildrenList();
@@ -1131,7 +1131,7 @@ void SiTTuGAs::ChangeWin(int n)
                     break;
         case ID_N8:
                     if(lst.at(n)->widget() != NULL){
-                        qDebug()<< "Actualizando SistAguaContrain";
+                        //()<< "Actualizando SistAguaContrain";
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
                         n8->setUpdateableChildrenList();
                         n8->update();
@@ -1140,7 +1140,7 @@ void SiTTuGAs::ChangeWin(int n)
                         flagOpt = 1;
                         selectWindow(n, flagOpt);
                     }else{
-                        qDebug()<< "Creando SistAguaContrain";
+                        //()<< "Creando SistAguaContrain";
                         flagOpt = 0;
                         n8 = new N8(this,m_shrdMem);
                         n8->setUpdateableChildrenList();
@@ -1163,7 +1163,7 @@ void SiTTuGAs::ChangeWin(int n)
                         selectWindow(n, flagOpt);
                     }
                     else{
-                        qDebug()<<"Creando Menu";
+                        //()<<"Creando Menu";
                         flagOpt = 0;
                         menu = new Menu(this,m_shrdMem);
                         ui->mdiArea->addSubWindow(menu, Qt::FramelessWindowHint);
@@ -1204,11 +1204,11 @@ void SiTTuGAs::Connections()
 void SiTTuGAs::selectWindow(int n, int opt)
 {
     lst = ui->mdiArea->subWindowList(QMdiArea::CreationOrder);
-    //qDebug()<<"Tengo al inicio en la lista: "<< lst.length();
+    ////()<<"Tengo al inicio en la lista: "<< lst.length();
     if(opt == 0)
         lst.at(n)->setWidget(lst.takeLast());
         //Eliminamos la ultima ventana agregada
-    //qDebug()<<"Tengo al final en la lista: "<< lst.length();
+    ////()<<"Tengo al final en la lista: "<< lst.length();
     //Activamos la GUI de acuerdo a la interfaz clickeada
     ui->mdiArea->setActiveSubWindow(lst.at(n));
 
@@ -1345,13 +1345,13 @@ void SiTTuGAs::ViewBOP(int id)
     ui->TitleBar->hide();
     ui->ButtonBar->hide();
     ui->ButtonBarBOP->show();
-    qDebug()<< "Entramos en BOP:" << id;
+    //()<< "Entramos en BOP:" << id;
 
 }
 
 SiTTuGAs::~SiTTuGAs()
 {
-    qDebug()<< "Total en lista (al finalizar): " << lst.length() ;
+    //()<< "Total en lista (al finalizar): " << lst.length() ;
     //Liberamos la lista creada para contener las GUI
     for(int x=0; x<lst.length(); x++)
     {

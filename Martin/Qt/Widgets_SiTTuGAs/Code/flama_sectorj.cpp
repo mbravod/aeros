@@ -203,10 +203,10 @@ void Flama_SectorJ::loadSvgFile(QString filePath)
     m_SvGrenderer = new QSvgRenderer(this);
     //Validamos que el SVG sea cargado de manera exitosa
     if(!m_SvGrenderer->load(filePath)){
-        qDebug() << "No se cargo:" << filePath;
+        //qDebug() << "No se cargo:" << filePath;
         flag = false;
     }else{
-        qDebug() << "Listo:" << filePath;
+        //qDebug() << "Listo:" << filePath;
         flag = true;
     }
     update();

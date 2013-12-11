@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpresdescc.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,7 +18,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
-#include <wlabel.h>
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -55,23 +55,25 @@ public:
         lbDESC_1 = new WLabel(WPresDescC);
         lbDESC_1->setObjectName(QString::fromUtf8("lbDESC_1"));
         lbDESC_1->setGeometry(QRect(94, 31, 41, 15));
-        lbDESC_1->setFont(font);
         lbDESC_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbDESC_1->setFont(font);
         lbDESCU_1 = new QLabel(WPresDescC);
         lbDESCU_1->setObjectName(QString::fromUtf8("lbDESCU_1"));
         lbDESCU_1->setGeometry(QRect(135, 31, 41, 15));
         lbDESCU_1->setFont(font);
-        lbDESCU_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbDESCU_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);\n"
+"background-color: rgba(255, 255, 255, 0);"));
         lbDESCU_2 = new QLabel(WPresDescC);
         lbDESCU_2->setObjectName(QString::fromUtf8("lbDESCU_2"));
         lbDESCU_2->setGeometry(QRect(135, 43, 41, 20));
         lbDESCU_2->setFont(font);
-        lbDESCU_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbDESCU_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);\n"
+"background-color: rgba(255, 255, 255, 0);"));
         lbDESC_2 = new WLabel(WPresDescC);
         lbDESC_2->setObjectName(QString::fromUtf8("lbDESC_2"));
         lbDESC_2->setGeometry(QRect(94, 43, 41, 20));
-        lbDESC_2->setFont(font);
         lbDESC_2->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbDESC_2->setFont(font);
         lbDESCT_2 = new QLabel(WPresDescC);
         lbDESCT_2->setObjectName(QString::fromUtf8("lbDESCT_2"));
         lbDESCT_2->setGeometry(QRect(38, 43, 52, 20));
@@ -81,6 +83,8 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WPresDescC);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

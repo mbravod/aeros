@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvelnsd.ui'
 **
-** Created: Mon 9. Dec 19:33:40 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -60,8 +60,8 @@ public:
         lbNSD_1 = new WLabel(WVelNSD);
         lbNSD_1->setObjectName(QString::fromUtf8("lbNSD_1"));
         lbNSD_1->setGeometry(QRect(88, 32, 41, 20));
-        lbNSD_1->setFont(font);
         lbNSD_1->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbNSD_1->setFont(font);
         lbNSD_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbNSDU_1 = new QLabel(WVelNSD);
         lbNSDU_1->setObjectName(QString::fromUtf8("lbNSDU_1"));
@@ -76,13 +76,15 @@ public:
         lbNSD_2 = new WLabel(WVelNSD);
         lbNSD_2->setObjectName(QString::fromUtf8("lbNSD_2"));
         lbNSD_2->setGeometry(QRect(88, 47, 41, 20));
-        lbNSD_2->setFont(font);
         lbNSD_2->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbNSD_2->setFont(font);
         lbNSD_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbFondo = new QLabel(WVelNSD);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WVelNSD);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

@@ -79,10 +79,10 @@ void Flama_SectorA::loadSvgFile(QString filePath)
     //Validamos que el SVG sea cargado de manera exitosa
 
     if(!m_SvGrenderer->load(filePath)){
-        qDebug() << "No se cargo:" << filePath;
+        //qDebug() << "No se cargo:" << filePath;
         flag = false;
     }else{
-        qDebug() << "Listo:" << filePath;
+        //qDebug() << "Listo:" << filePath;
         flag = true;
     }
     update();

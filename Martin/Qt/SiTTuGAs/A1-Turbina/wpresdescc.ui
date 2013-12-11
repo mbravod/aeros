@@ -61,6 +61,12 @@
      <height>15</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>10.90</string>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -68,12 +74,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>10.90</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbDESCU_1">
@@ -94,7 +94,8 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
+    <string notr="true">background-color: rgb(128, 128, 128);
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string>PSIA</string>
@@ -118,7 +119,8 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
+    <string notr="true">background-color: rgb(128, 128, 128);
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string>PSIA</string>
@@ -133,6 +135,12 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string>11.30</string>
+   </property>
    <property name="font">
     <font>
      <family>Verdana</family>
@@ -140,12 +148,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
-   </property>
-   <property name="text">
-    <string>11.30</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbDESCT_2">
@@ -184,6 +186,12 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -221,6 +229,13 @@
   <zorder>btCerrar</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

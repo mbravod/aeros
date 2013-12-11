@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wveln25.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -62,14 +62,14 @@ public:
         lbN25_2 = new WLabel(WVelN25);
         lbN25_2->setObjectName(QString::fromUtf8("lbN25_2"));
         lbN25_2->setGeometry(QRect(88, 47, 41, 20));
-        lbN25_2->setFont(font);
         lbN25_2->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbN25_2->setFont(font);
         lbN25_2->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbN25_1 = new WLabel(WVelN25);
         lbN25_1->setObjectName(QString::fromUtf8("lbN25_1"));
         lbN25_1->setGeometry(QRect(88, 32, 41, 20));
-        lbN25_1->setFont(font);
         lbN25_1->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbN25_1->setFont(font);
         lbN25_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbN25U_1 = new QLabel(WVelN25);
         lbN25U_1->setObjectName(QString::fromUtf8("lbN25U_1"));
@@ -90,6 +90,8 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WVelN25);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

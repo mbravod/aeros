@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpurgav.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -66,8 +66,8 @@ public:
         lbVbvsel = new WLabel(WPurgaV);
         lbVbvsel->setObjectName(QString::fromUtf8("lbVbvsel"));
         lbVbvsel->setGeometry(QRect(72, 46, 46, 13));
-        lbVbvsel->setFont(font);
         lbVbvsel->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvsel->setFont(font);
         lbVbvsel->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvaU = new QLabel(WPurgaV);
         lbVbvaU->setObjectName(QString::fromUtf8("lbVbvaU"));
@@ -76,14 +76,14 @@ public:
         lbVbvB = new WLabel(WPurgaV);
         lbVbvB->setObjectName(QString::fromUtf8("lbVbvB"));
         lbVbvB->setGeometry(QRect(72, 78, 46, 13));
-        lbVbvB->setFont(font);
         lbVbvB->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvB->setFont(font);
         lbVbvB->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvMa = new WLabel(WPurgaV);
         lbVbvMa->setObjectName(QString::fromUtf8("lbVbvMa"));
         lbVbvMa->setGeometry(QRect(72, 110, 46, 13));
-        lbVbvMa->setFont(font);
         lbVbvMa->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvMa->setFont(font);
         lbVbvMa->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvdmdU = new QLabel(WPurgaV);
         lbVbvdmdU->setObjectName(QString::fromUtf8("lbVbvdmdU"));
@@ -92,8 +92,8 @@ public:
         lbVbvOhms = new WLabel(WPurgaV);
         lbVbvOhms->setObjectName(QString::fromUtf8("lbVbvOhms"));
         lbVbvOhms->setGeometry(QRect(72, 126, 46, 13));
-        lbVbvOhms->setFont(font);
         lbVbvOhms->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvOhms->setFont(font);
         lbVbvOhms->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvBU = new QLabel(WPurgaV);
         lbVbvBU->setObjectName(QString::fromUtf8("lbVbvBU"));
@@ -130,8 +130,8 @@ public:
         lbVbvdmd = new WLabel(WPurgaV);
         lbVbvdmd->setObjectName(QString::fromUtf8("lbVbvdmd"));
         lbVbvdmd->setGeometry(QRect(72, 30, 46, 13));
-        lbVbvdmd->setFont(font);
         lbVbvdmd->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbvdmd->setFont(font);
         lbVbvdmd->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvaT = new QLabel(WPurgaV);
         lbVbvaT->setObjectName(QString::fromUtf8("lbVbvaT"));
@@ -141,8 +141,8 @@ public:
         lbVbva = new WLabel(WPurgaV);
         lbVbva->setObjectName(QString::fromUtf8("lbVbva"));
         lbVbva->setGeometry(QRect(72, 62, 46, 13));
-        lbVbva->setFont(font);
         lbVbva->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
+        lbVbva->setFont(font);
         lbVbva->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVbvMaU = new QLabel(WPurgaV);
         lbVbvMaU->setObjectName(QString::fromUtf8("lbVbvMaU"));
@@ -152,6 +152,8 @@ public:
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
         lbFondo->setGeometry(QRect(0, 0, 175, 150));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WPurgaV);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

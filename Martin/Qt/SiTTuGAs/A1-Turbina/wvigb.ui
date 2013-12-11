@@ -352,7 +352,8 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);</string>
+    <string notr="true">background-color: rgb(128, 128, 128);
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string>OHMS</string>
@@ -490,12 +491,18 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>175</width>
-     <height>150</height>
+     <width>176</width>
+     <height>151</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>

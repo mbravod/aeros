@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvigb.ui'
 **
-** Created: Mon 9. Dec 19:33:40 2013
+** Created: Tue 10. Dec 18:43:56 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -134,7 +134,8 @@ public:
         lbVIGVU_6->setObjectName(QString::fromUtf8("lbVIGVU_6"));
         lbVIGVU_6->setGeometry(QRect(135, 120, 41, 16));
         lbVIGVU_6->setFont(font1);
-        lbVIGVU_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbVIGVU_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);\n"
+"background-color: rgba(255, 255, 255, 0);"));
         lbVIGVT_1 = new QLabel(WVIGB);
         lbVIGVT_1->setObjectName(QString::fromUtf8("lbVIGVT_1"));
         lbVIGVT_1->setGeometry(QRect(25, 32, 55, 16));
@@ -164,8 +165,10 @@ public:
         lbVIGVU_5->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
         lbFondo = new QLabel(WVIGB);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
-        lbFondo->setGeometry(QRect(0, 0, 175, 150));
+        lbFondo->setGeometry(QRect(0, 0, 176, 151));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         btCerrar = new QPushButton(WVIGB);
         btCerrar->setObjectName(QString::fromUtf8("btCerrar"));
         btCerrar->setGeometry(QRect(1, 1, 173, 31));

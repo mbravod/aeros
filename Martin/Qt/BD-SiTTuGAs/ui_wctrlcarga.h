@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlcarga.ui'
 **
-** Created: Mon 9. Dec 19:33:41 2013
+** Created: Tue 10. Dec 18:43:57 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -42,7 +42,7 @@ public:
     WLabel *leReal;
     WLabel *leConf;
     WLabel *leDemanda;
-    WLabel *lbFondo;
+    QLabel *lbFondo;
 
     void setupUi(QWidget *WCtrlCarga)
     {
@@ -154,10 +154,12 @@ public:
         leDemanda->setGeometry(QRect(107, 127, 74, 22));
         leDemanda->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 255);\n"
 "color: rgb(0, 0, 0);"));
-        lbFondo = new WLabel(WCtrlCarga);
+        lbFondo = new QLabel(WCtrlCarga);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
-        lbFondo->setGeometry(QRect(0, 0, 200, 330));
-        lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setGeometry(QRect(0, 0, 201, 331));
+        lbFondo->setStyleSheet(QString::fromUtf8(""));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbFondo->raise();
         frame->raise();
         btCerrar->raise();

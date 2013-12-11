@@ -91,6 +91,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>00.00</string>
    </property>
@@ -101,9 +104,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -118,6 +118,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
    <property name="text">
     <string>00.00</string>
    </property>
@@ -128,9 +131,6 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
-   </property>
-   <property name="Fondo_Inicial" stdset="0">
-    <enum>WLabel::Sin_color</enum>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -195,6 +195,12 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>

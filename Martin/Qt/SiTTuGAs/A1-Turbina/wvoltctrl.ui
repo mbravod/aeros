@@ -208,7 +208,7 @@
 color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string> </string>
+    <string/>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -266,12 +266,18 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>200</width>
-     <height>330</height>
+     <width>201</width>
+     <height>331</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>
