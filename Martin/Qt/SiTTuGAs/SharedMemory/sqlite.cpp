@@ -146,9 +146,104 @@ int SQLite::BuscarVal(QString var)
     return indice;
 }
 
-Config SQLite::getConfig()
+Config * SQLite::getConfig()
 {
-    Config h;
+    // Preparamos el SQLite
+    bool found = false;
+    QSqlDatabase dbA =  QSqlDatabase::addDatabase("QSQLITE");
+
+    // Verificamos que el archivo exista
+    QFile *file = new QFile(BDName);
+
+    // si el archivo no existe o su tamaño es cero
+    if(!file->exists() || file->size() <= 0)
+    {
+        qDebug()<<"No existe la BD...";
+        return NULL;
+    }
+
+    // Abrimos el archivo de la BD
+    dbA.setDatabaseName(BDName);
+    // Verificamos que lo haya abierto
+    if(!dbA.open())
+    {
+        qDebug()<<"No se pudo abrir la BD...";
+        return NULL;
+    }
+
+    QString strc = "select * from 'config' where id = 1;";
+
+    QSqlQuery query = dbA.exec(strc);
+
+    Config *h;
+    while (query.next())
+    {
+        if(h != NULL)
+            delete h;
+
+        h = new Config();
+        h->setMode(query.value(2).toInt());
+        h->setProtocolo(query.value(3).toString());
+        h->setServer(query.value(4).toString());
+        h->setAsp(query.value(5).toString());
+        found = true;
+    }
+
+    dbA.close();
+
+    if(!found)
+        return NULL;
 
     return h;
 }
+
+void SQLite::setConfig(Config *cfg)
+{
+    if( cfg == NULL)
+        return;
+
+    bool found = false;
+    QSqlDatabase dbA =  QSqlDatabase::addDatabase("QSQLITE");
+
+    // Verificamos que el archivo exista
+    QFile *file = new QFile(BDName);
+
+    // si el archivo no existe o su tamaño es cero
+    if(!file->exists() || file->size() <= 0)
+    {
+        qDebug()<<"No existe la BD...";
+        if(!SQLite::IniciaBD())
+            return;
+    }
+
+    // Abrimos el archivo de la BD
+    dbA.setDatabaseName(BDName);
+    // Verificamos que lo haya abierto
+    if(!dbA.open())
+    {
+        qDebug()<<"No se pudo abrir la BD...";
+        return;
+    }
+
+    QString strc = "select * from 'config' where id = 1;";
+
+    QSqlQuery query = dbA.exec(strc);
+
+    while (query.next())
+    {
+        found = true;
+    }
+
+    if(found)
+    {
+        strc = QString("update config set mode = %1, protocolo = '%2', server = '%3', asp = '%4' where id = 1;").arg(cfg->getMode()).arg(cfg->getProtocolo()).arg(cfg->getServer()).arg(cfg->getAsp());
+    }
+    else
+        strc = QString("insert into config (id, mode, protocolo, server, asp) values (1, %1, '%2', '%3','%4');").arg(cfg->getMode()).arg(cfg->getProtocolo()).arg(cfg->getServer()).arg(cfg->getAsp());
+
+    dbA.exec(strc);
+    dbA.commit();
+    dbA.close();
+}
+
+

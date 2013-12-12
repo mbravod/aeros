@@ -17,7 +17,8 @@ class SQLite
         static bool VaciarTxtBD(QString ruta);
         static int BuscarVal(QString var);
         static QStringList GetText(QString file);
-        static Config getConfig();
+        static Config *getConfig();
+        static void setConfig(Config *cfg);
     private:
         static QString BDName;
 };

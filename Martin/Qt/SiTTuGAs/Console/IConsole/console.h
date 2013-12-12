@@ -24,7 +24,7 @@ class Console : public QMainWindow
     Q_OBJECT
 
 public:
-    Console(QWidget *parent, Settings *s);
+    Console(QWidget *parent);
     ~Console();
 
     QString user;

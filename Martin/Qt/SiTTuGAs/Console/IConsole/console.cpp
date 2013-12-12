@@ -18,7 +18,7 @@
 #include "Console/CIHistorial/ci_historial.h"
 #include "Console/MConfiguracion/configuraciondemodelos.h"
 
-Console::Console(QWidget *parent,Settings *s) :
+Console::Console(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Console),ui2(new Ui::ParametrosSimulacion)
 {
@@ -27,7 +27,6 @@ Console::Console(QWidget *parent,Settings *s) :
 
 //    HTTPRequest *m_shrdMem = new HTTPRequest(this);
 
-    settings = s;
     createMenu();
     createActions();
     createIcons();

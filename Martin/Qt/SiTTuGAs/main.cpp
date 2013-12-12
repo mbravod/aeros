@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
             if(pw->exec()){
                 qDebug("Iniciando Modo Consola");
                 splash->showMessage(QObject::tr("Creando Consola..."), bottomLeft, Qt::white);
-                Console *c = new Console(0,&s);
+                Console *c = new Console(0);
                 c->user= pw->username;
                 c->show();
             }
