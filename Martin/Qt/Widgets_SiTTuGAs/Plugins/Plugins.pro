@@ -21,7 +21,6 @@ win32-msvc*:{
 
 }
 
-
 MOC_DIR =     ..\objects
 OBJECTS_DIR = ..\objects
 TARGET =       WidgetsSiTTuGAs

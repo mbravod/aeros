@@ -65,7 +65,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -90,7 +90,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -118,7 +118,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -146,7 +146,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -174,7 +174,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -202,7 +202,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -230,7 +230,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -404,10 +404,10 @@
   <widget class="QFrame" name="frame_3">
    <property name="geometry">
     <rect>
-     <x>196</x>
+     <x>190</x>
      <y>290</y>
-     <width>167</width>
-     <height>157</height>
+     <width>191</width>
+     <height>141</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -419,7 +419,7 @@
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>-20</x>
+      <x>0</x>
       <y>10</y>
       <width>131</width>
       <height>21</height>
@@ -433,7 +433,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -451,7 +451,7 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>155</width>
+      <width>191</width>
       <height>17</height>
      </rect>
     </property>
@@ -464,7 +464,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -485,7 +485,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>155</width>
+      <width>171</width>
       <height>17</height>
      </rect>
     </property>
@@ -498,7 +498,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -519,7 +519,7 @@
      <rect>
       <x>10</x>
       <y>80</y>
-      <width>155</width>
+      <width>201</width>
       <height>17</height>
      </rect>
     </property>
@@ -532,7 +532,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -566,7 +566,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -587,7 +587,7 @@
      <rect>
       <x>10</x>
       <y>118</y>
-      <width>155</width>
+      <width>181</width>
       <height>17</height>
      </rect>
     </property>
@@ -600,7 +600,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -620,9 +620,9 @@
   <widget class="QFrame" name="frame_4">
    <property name="geometry">
     <rect>
-     <x>396</x>
+     <x>383</x>
      <y>290</y>
-     <width>219</width>
+     <width>255</width>
      <height>269</height>
     </rect>
    </property>
@@ -635,7 +635,7 @@
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>10</y>
       <width>131</width>
       <height>21</height>
@@ -649,7 +649,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -665,9 +665,9 @@
    <widget class="QLabelClick" name="lb_D1_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>39</y>
-      <width>208</width>
+      <width>221</width>
       <height>17</height>
      </rect>
     </property>
@@ -680,7 +680,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -699,9 +699,9 @@
    <widget class="QLabelClick" name="lb_D2_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>60</y>
-      <width>208</width>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -714,7 +714,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -733,9 +733,9 @@
    <widget class="QLabelClick" name="lb_D3_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>80</y>
-      <width>208</width>
+      <width>221</width>
       <height>17</height>
      </rect>
     </property>
@@ -748,7 +748,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -767,9 +767,9 @@
    <widget class="QLabelClick" name="lb_D4_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>98</y>
-      <width>208</width>
+      <width>291</width>
       <height>17</height>
      </rect>
     </property>
@@ -782,7 +782,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -804,9 +804,9 @@
    <widget class="QLabelClick" name="lb_D5_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>118</y>
-      <width>208</width>
+      <width>281</width>
       <height>17</height>
      </rect>
     </property>
@@ -819,7 +819,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -838,9 +838,9 @@
    <widget class="QLabelClick" name="lb_D6_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>136</y>
-      <width>208</width>
+      <width>271</width>
       <height>17</height>
      </rect>
     </property>
@@ -853,7 +853,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -872,9 +872,9 @@
    <widget class="QLabelClick" name="lb_D7_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>155</y>
-      <width>208</width>
+      <width>281</width>
       <height>17</height>
      </rect>
     </property>
@@ -887,7 +887,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -906,7 +906,7 @@
    <widget class="QLabelClick" name="lb_D8_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>175</y>
       <width>208</width>
       <height>17</height>
@@ -921,7 +921,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -940,7 +940,7 @@
    <widget class="QLabelClick" name="lb_D9_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>195</y>
       <width>208</width>
       <height>17</height>
@@ -955,7 +955,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -975,10 +975,10 @@
   <widget class="QFrame" name="frame_6">
    <property name="geometry">
     <rect>
-     <x>804</x>
+     <x>810</x>
      <y>290</y>
-     <width>192</width>
-     <height>156</height>
+     <width>211</width>
+     <height>151</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -990,7 +990,7 @@
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>5</x>
       <y>10</y>
       <width>147</width>
       <height>21</height>
@@ -1004,7 +1004,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -1020,7 +1020,7 @@
    <widget class="QLabelClick" name="lb_F1_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>40</y>
       <width>180</width>
       <height>17</height>
@@ -1035,7 +1035,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1054,9 +1054,9 @@
    <widget class="QLabelClick" name="lb_F2_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>60</y>
-      <width>180</width>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1069,7 +1069,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1088,9 +1088,9 @@
    <widget class="QLabelClick" name="lb_F3_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>80</y>
-      <width>180</width>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1103,7 +1103,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1122,7 +1122,7 @@
    <widget class="QLabelClick" name="lb_F4_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>98</y>
       <width>180</width>
       <height>17</height>
@@ -1137,7 +1137,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1156,7 +1156,7 @@
    <widget class="QLabelClick" name="lb_F5_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>118</y>
       <width>180</width>
       <height>17</height>
@@ -1171,7 +1171,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1191,9 +1191,9 @@
   <widget class="QFrame" name="frame_5">
    <property name="geometry">
     <rect>
-     <x>630</x>
+     <x>637</x>
      <y>290</y>
-     <width>156</width>
+     <width>167</width>
      <height>110</height>
     </rect>
    </property>
@@ -1206,7 +1206,7 @@
    <widget class="QLabel" name="label_21">
     <property name="geometry">
      <rect>
-      <x>-20</x>
+      <x>-14</x>
       <y>10</y>
       <width>131</width>
       <height>21</height>
@@ -1220,7 +1220,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -1236,9 +1236,9 @@
    <widget class="QLabelClick" name="lb_E1_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>40</y>
-      <width>143</width>
+      <width>171</width>
       <height>17</height>
      </rect>
     </property>
@@ -1251,7 +1251,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1270,9 +1270,9 @@
    <widget class="QLabelClick" name="lb_E2_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>60</y>
-      <width>143</width>
+      <width>171</width>
       <height>17</height>
      </rect>
     </property>
@@ -1285,7 +1285,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1304,9 +1304,9 @@
    <widget class="QLabelClick" name="lb_E3_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>79</y>
-      <width>143</width>
+      <width>161</width>
       <height>17</height>
      </rect>
     </property>
@@ -1319,7 +1319,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1339,9 +1339,9 @@
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>8</x>
+     <x>5</x>
      <y>290</y>
-     <width>191</width>
+     <width>186</width>
      <height>320</height>
     </rect>
    </property>
@@ -1368,7 +1368,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>true</underline>
@@ -1384,9 +1384,9 @@
    <widget class="QLabelClick" name="lb_B8_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>175</y>
-      <width>158</width>
+      <x>0</x>
+      <y>174</y>
+      <width>181</width>
       <height>17</height>
      </rect>
     </property>
@@ -1399,7 +1399,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1418,9 +1418,9 @@
    <widget class="QLabelClick" name="lb_B9_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>195</y>
-      <width>158</width>
+      <x>0</x>
+      <y>194</y>
+      <width>181</width>
       <height>17</height>
      </rect>
     </property>
@@ -1433,7 +1433,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1452,8 +1452,8 @@
    <widget class="QLabelClick" name="lb_B1_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>40</y>
+      <x>0</x>
+      <y>39</y>
       <width>158</width>
       <height>17</height>
      </rect>
@@ -1467,7 +1467,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1486,9 +1486,9 @@
    <widget class="QLabelClick" name="lb_B11_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>235</y>
-      <width>158</width>
+      <x>0</x>
+      <y>234</y>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1501,7 +1501,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1520,8 +1520,8 @@
    <widget class="QLabelClick" name="lb_B2_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>61</y>
+      <x>0</x>
+      <y>60</y>
       <width>171</width>
       <height>17</height>
      </rect>
@@ -1535,7 +1535,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1554,9 +1554,9 @@
    <widget class="QLabelClick" name="lb_B12_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>253</y>
-      <width>158</width>
+      <x>0</x>
+      <y>252</y>
+      <width>221</width>
       <height>17</height>
      </rect>
     </property>
@@ -1569,7 +1569,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1588,8 +1588,8 @@
    <widget class="QLabel" name="lb_B13_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>273</y>
+      <x>0</x>
+      <y>272</y>
       <width>158</width>
       <height>17</height>
      </rect>
@@ -1603,7 +1603,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1622,8 +1622,8 @@
    <widget class="QLabelClick" name="lb_B14_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>293</y>
+      <x>0</x>
+      <y>292</y>
       <width>158</width>
       <height>17</height>
      </rect>
@@ -1637,7 +1637,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1656,8 +1656,8 @@
    <widget class="QLabelClick" name="lb_B10_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>215</y>
+      <x>0</x>
+      <y>214</y>
       <width>158</width>
       <height>17</height>
      </rect>
@@ -1671,7 +1671,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1690,9 +1690,9 @@
    <widget class="QLabelClick" name="lb_B7_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>155</y>
-      <width>158</width>
+      <x>0</x>
+      <y>154</y>
+      <width>191</width>
       <height>17</height>
      </rect>
     </property>
@@ -1705,7 +1705,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1724,9 +1724,9 @@
    <widget class="QLabelClick" name="lb_B5_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>118</y>
-      <width>158</width>
+      <x>0</x>
+      <y>117</y>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1739,7 +1739,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1758,9 +1758,9 @@
    <widget class="QLabelClick" name="lb_B6_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>135</y>
-      <width>158</width>
+      <x>0</x>
+      <y>134</y>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1773,7 +1773,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1792,9 +1792,9 @@
    <widget class="QLabelClick" name="lb_B3_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>158</width>
+      <x>0</x>
+      <y>79</y>
+      <width>181</width>
       <height>17</height>
      </rect>
     </property>
@@ -1807,7 +1807,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -1826,9 +1826,9 @@
    <widget class="QLabelClick" name="lb_B4_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>98</y>
-      <width>158</width>
+      <x>0</x>
+      <y>97</y>
+      <width>211</width>
       <height>17</height>
      </rect>
     </property>
@@ -1841,7 +1841,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>

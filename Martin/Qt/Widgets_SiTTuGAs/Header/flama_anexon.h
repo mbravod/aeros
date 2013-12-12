@@ -1,7 +1,7 @@
 #ifndef FLAMA_ANEXON_H
 #define FLAMA_ANEXON_H
 
-#include "../Base/Base.h"
+#include "Base.h"
 
 
 class Flama_AnexoN : public Base

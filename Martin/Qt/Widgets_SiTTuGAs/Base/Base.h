@@ -2,8 +2,10 @@
 #define BASE_H
 
 #include <QWidget>
+#include <QString>
+
 //Posiblemente cambiar esta referencia una vez que se defina el nombre
-#include "../SharedMemory/httprequest.h"
+#include "SharedMemory/httprequest.h"
 
 class Base : public QWidget
 {

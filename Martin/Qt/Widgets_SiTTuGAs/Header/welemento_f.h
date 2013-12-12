@@ -1,9 +1,9 @@
 #ifndef WELEMENTO_F_H
 #define WELEMENTO_F_H
 
-#include <QtGui/QWidget>
+#include "Base.h"
 
-class wElemento_F : public QWidget
+class wElemento_F : public Base
 {
     Q_OBJECT
     

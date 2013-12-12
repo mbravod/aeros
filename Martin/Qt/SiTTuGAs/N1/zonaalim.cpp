@@ -11,11 +11,11 @@ N1::N1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     activado = false;
     moving = false;
     connect(ui->btRelay1,SIGNAL(clicked()),SLOT(ventanaTablaRelay()));
-    connect(ui->btnEmergente_03,SIGNAL(clicked()),SLOT(ventanaEmergente()));
+    /*connect(ui->btnEmergente_03,SIGNAL(clicked()),SLOT(ventanaEmergente()));
     connect(ui->btnEmergente_04,SIGNAL(clicked()),SLOT(ventanaEmergente()));
     connect(ui->btnEmergente_06,SIGNAL(clicked()),SLOT(ventanaEmergente()));
     connect(ui->btnEmergente_07,SIGNAL(clicked()),SLOT(ventanaEmergente()));
-}
+*/}
 
 N1::~N1()
 {

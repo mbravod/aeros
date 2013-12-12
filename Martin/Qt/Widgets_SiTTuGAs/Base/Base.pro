@@ -12,6 +12,7 @@ INCLUDEPATH += ../../SiTTuGAs/Sittugas
 
 INSTALLS += staticlib
 
+
 HEADERS += \
     Base.h  \
     ../../SiTTuGAs/SharedMemory/httprequest.h

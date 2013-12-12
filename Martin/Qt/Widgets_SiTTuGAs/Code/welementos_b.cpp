@@ -1,6 +1,6 @@
 #include "welementos_b.h"
 
 wElementos_B::wElementos_B(QWidget *parent) :
-    QWidget(parent)
+    Base(parent)
 {
 }
