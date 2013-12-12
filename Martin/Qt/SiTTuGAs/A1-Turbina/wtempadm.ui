@@ -58,6 +58,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6821A_F_CV</string>
+   </property>
    <property name="text">
     <string>65.00</string>
    </property>
@@ -123,6 +126,9 @@
      <width>41</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6821B_F_CV</string>
    </property>
    <property name="text">
     <string>65.00</string>

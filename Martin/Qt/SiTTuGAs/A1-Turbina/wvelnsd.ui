@@ -73,7 +73,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="text">
-    <string>SE6812</string>
+    <string>SE6813</string>
    </property>
   </widget>
   <widget class="WLabel" name="lbNSD_1">
@@ -84,6 +84,9 @@
      <width>41</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SE6812_F_CV</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
@@ -159,6 +162,9 @@
      <width>41</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SE6813_F_CV</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>

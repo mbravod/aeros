@@ -567,6 +567,9 @@ QProgressBar::chunk {
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODENAME_NSDSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0000</string>
     </property>
@@ -618,6 +621,9 @@ QProgressBar::chunk {
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_NSD_2ND_REF_F_CV</string>
+    </property>
     <property name="text">
      <string>0000</string>
     </property>
@@ -668,6 +674,9 @@ QProgressBar::chunk {
       <width>41</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODENAME_NSDPRX_F_CV</string>
     </property>
     <property name="text">
      <string>0000</string>
@@ -753,6 +762,9 @@ p, li { white-space: pre-wrap; }
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODENAME_ISOCH_F_CV</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -772,6 +784,9 @@ color: rgb(255, 255, 0);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(85, 255, 0);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODENAME_CNTRL_REG_F_CV</string>
    </property>
    <property name="text">
     <string/>

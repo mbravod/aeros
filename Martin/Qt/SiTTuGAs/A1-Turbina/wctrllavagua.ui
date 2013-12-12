@@ -249,6 +249,9 @@ FUERA DE LINEA</string>
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODENAME_WW_ENBL_F_CV</string>
+   </property>
    <property name="text">
     <string>DESHABILIRTADO</string>
    </property>
@@ -274,6 +277,9 @@ color: rgb(255, 0, 0);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODENAME_ONLINE_EN_F_CV</string>
    </property>
    <property name="text">
     <string>DESHABILIRTADO</string>

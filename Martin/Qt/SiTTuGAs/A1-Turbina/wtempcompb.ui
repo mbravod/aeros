@@ -58,6 +58,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6843_F_CV</string>
+   </property>
    <property name="text">
     <string>106.00</string>
    </property>
@@ -102,6 +105,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6844_F_CV</string>
    </property>
    <property name="text">
     <string>98.00</string>
@@ -211,6 +217,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6845_F_CV</string>
+   </property>
    <property name="text">
     <string>91.00</string>
    </property>
@@ -277,6 +286,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6846_F_CV</string>
+   </property>
    <property name="text">
     <string>92.00</string>
    </property>
@@ -321,6 +333,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6847_F_CV</string>
    </property>
    <property name="text">
     <string>88.00</string>
@@ -409,6 +424,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6848_F_CV</string>
+   </property>
    <property name="text">
     <string>90.00</string>
    </property>
@@ -475,6 +493,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6849_F_CV</string>
+   </property>
    <property name="text">
     <string>95.00</string>
    </property>
@@ -519,6 +540,9 @@
      <width>44</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6850_F_CV</string>
    </property>
    <property name="text">
     <string>105.00</string>

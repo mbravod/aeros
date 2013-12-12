@@ -207,6 +207,9 @@
     <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODENAME_BVX_F_CV</string>
+   </property>
    <property name="text">
     <string/>
    </property>

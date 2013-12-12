@@ -64,6 +64,9 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6804_F_CV</string>
+   </property>
    <property name="text">
     <string>10.90</string>
    </property>
@@ -137,6 +140,9 @@ background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6814_F_CV</string>
    </property>
    <property name="text">
     <string>11.30</string>

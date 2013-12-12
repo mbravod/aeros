@@ -64,6 +64,9 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6861A_F_CV</string>
+   </property>
    <property name="text">
     <string>11.30</string>
    </property>
@@ -162,6 +165,9 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6861B_F_CV</string>
    </property>
    <property name="text">
     <string>11.60</string>

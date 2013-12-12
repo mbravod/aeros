@@ -65,6 +65,9 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_IGVSEL_F_CV</string>
+   </property>
    <property name="text">
     <string>41.60</string>
    </property>
@@ -91,6 +94,9 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_IGVB_F_CV</string>
    </property>
    <property name="text">
     <string>40.90</string>
@@ -146,8 +152,20 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_IGVDMD_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>-1</number>
+   </property>
+   <property name="valueF">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
    <property name="text">
-    <string>28.61</string>
+    <string>0.00</string>
    </property>
    <property name="font">
     <font>
@@ -156,6 +174,9 @@
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="Presicion">
+    <number>0</number>
    </property>
    <property name="Alineacion" stdset="0">
     <enum>WLabel::Centro</enum>
@@ -446,6 +467,9 @@ background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_IGVA_F_CV</string>
    </property>
    <property name="text">
     <string>41.30</string>

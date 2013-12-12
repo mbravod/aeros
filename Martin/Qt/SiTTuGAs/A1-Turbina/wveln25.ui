@@ -91,6 +91,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SE6801_F_CV</string>
+   </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
    </property>
@@ -117,6 +120,9 @@
      <width>41</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SE6800_F_CV</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>

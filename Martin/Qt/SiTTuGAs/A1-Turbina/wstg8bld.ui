@@ -67,6 +67,9 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ST8DMD_F_CV</string>
+   </property>
    <property name="text">
     <string>9.70</string>
    </property>
@@ -169,6 +172,9 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ST8SEL_F_CV</string>
+   </property>
    <property name="text">
     <string>99.10</string>
    </property>
@@ -219,6 +225,9 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ST8A_F_CV</string>
    </property>
    <property name="text">
     <string>98.60</string>
@@ -324,6 +333,9 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ST8B_F_CV</string>
    </property>
    <property name="text">
     <string>99.60</string>
@@ -446,9 +458,9 @@ background-color: rgba(255, 255, 255, 0);</string>
   <widget class="QLabel" name="lbSTGBT_6">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>1</x>
      <y>120</y>
-     <width>52</width>
+     <width>81</width>
      <height>20</height>
     </rect>
    </property>

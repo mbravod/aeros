@@ -37,6 +37,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VSVDMD_F_CV</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -149,6 +152,9 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VSVA_F_CV</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -191,6 +197,9 @@
      <width>46</width>
      <height>13</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VSVB_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -300,6 +309,9 @@
      <width>46</width>
      <height>13</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
    </property>
    <property name="text">
     <string/>
