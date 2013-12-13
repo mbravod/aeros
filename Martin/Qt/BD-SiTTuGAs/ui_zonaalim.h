@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'zonaalim.ui'
 **
-** Created: Wed 11. Dec 20:17:16 2013
+** Created: Thu 12. Dec 21:16:50 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,6 +14,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QCommandLinkButton>
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
@@ -138,6 +139,13 @@ public:
     QLabel *lbhz_2;
     QLabel *lbmva_2;
     QLabel *lbfp_2;
+    QCommandLinkButton *btnEmergente_1;
+    QCommandLinkButton *btnEmergente_2;
+    QCommandLinkButton *btnEmergente_03;
+    QCommandLinkButton *btnEmergente_04;
+    QCommandLinkButton *btnEmergente_5;
+    QCommandLinkButton *btnEmergente_06;
+    QCommandLinkButton *btnEmergente_07;
 
     void setupUi(QWidget *zonaAlim)
     {
@@ -162,15 +170,15 @@ public:
         ind_7 = new AWMultiObject(zonaAlim);
         ind_7->setObjectName(QString::fromUtf8("ind_7"));
         ind_7->setGeometry(QRect(727, 80, 39, 36));
-        ind_7->setValue(0);
         ind_7->setElementType(AWMultiObject::SQUARE);
         ind_7->setOnColor(AWMultiObject::Green);
+        ind_7->setProperty("Value", QVariant(0));
         ind_4 = new AWMultiObject(zonaAlim);
         ind_4->setObjectName(QString::fromUtf8("ind_4"));
         ind_4->setGeometry(QRect(382, 159, 39, 36));
-        ind_4->setValue(0);
         ind_4->setElementType(AWMultiObject::SQUARE);
         ind_4->setOnColor(AWMultiObject::Green);
+        ind_4->setProperty("Value", QVariant(0));
         btRelay1 = new QPushButton(zonaAlim);
         btRelay1->setObjectName(QString::fromUtf8("btRelay1"));
         btRelay1->setGeometry(QRect(910, 270, 97, 35));
@@ -178,33 +186,33 @@ public:
         ind_5 = new AWMultiObject(zonaAlim);
         ind_5->setObjectName(QString::fromUtf8("ind_5"));
         ind_5->setGeometry(QRect(620, 160, 39, 36));
-        ind_5->setValue(0);
         ind_5->setElementType(AWMultiObject::SQUARE);
         ind_5->setOnColor(AWMultiObject::Green);
+        ind_5->setProperty("Value", QVariant(0));
         ind_2 = new AWMultiObject(zonaAlim);
         ind_2->setObjectName(QString::fromUtf8("ind_2"));
         ind_2->setGeometry(QRect(278, 300, 39, 36));
-        ind_2->setValue(0);
         ind_2->setElementType(AWMultiObject::SQUARE);
         ind_2->setOnColor(AWMultiObject::Green);
+        ind_2->setProperty("Value", QVariant(0));
         ind_6 = new AWMultiObject(zonaAlim);
         ind_6->setObjectName(QString::fromUtf8("ind_6"));
         ind_6->setGeometry(QRect(621, 300, 39, 36));
-        ind_6->setValue(0);
         ind_6->setElementType(AWMultiObject::SQUARE);
         ind_6->setOnColor(AWMultiObject::Green);
+        ind_6->setProperty("Value", QVariant(0));
         ind_3 = new AWMultiObject(zonaAlim);
         ind_3->setObjectName(QString::fromUtf8("ind_3"));
         ind_3->setGeometry(QRect(337, 470, 39, 36));
-        ind_3->setValue(0);
         ind_3->setElementType(AWMultiObject::SQUARE);
         ind_3->setOnColor(AWMultiObject::Green);
+        ind_3->setProperty("Value", QVariant(0));
         ind_1 = new AWMultiObject(zonaAlim);
         ind_1->setObjectName(QString::fromUtf8("ind_1"));
         ind_1->setGeometry(QRect(280, 80, 39, 36));
-        ind_1->setValue(0);
         ind_1->setElementType(AWMultiObject::SQUARE);
         ind_1->setOnColor(AWMultiObject::Green);
+        ind_1->setProperty("Value", QVariant(0));
         btSincA = new QPushButton(zonaAlim);
         btSincA->setObjectName(QString::fromUtf8("btSincA"));
         btSincA->setGeometry(QRect(912, 335, 83, 32));
@@ -613,6 +621,43 @@ public:
         lbfp_2 = new QLabel(frame_4);
         lbfp_2->setObjectName(QString::fromUtf8("lbfp_2"));
         lbfp_2->setGeometry(QRect(284, 21, 46, 13));
+        btnEmergente_1 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_1->setObjectName(QString::fromUtf8("btnEmergente_1"));
+        btnEmergente_1->setGeometry(QRect(285, 84, 28, 28));
+        btnEmergente_1->setStyleSheet(QString::fromUtf8(""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Resources/PNG/Extras/transparente.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        btnEmergente_1->setIcon(icon);
+        btnEmergente_2 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_2->setObjectName(QString::fromUtf8("btnEmergente_2"));
+        btnEmergente_2->setGeometry(QRect(732, 84, 28, 28));
+        btnEmergente_2->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_2->setIcon(icon);
+        btnEmergente_03 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_03->setObjectName(QString::fromUtf8("btnEmergente_03"));
+        btnEmergente_03->setGeometry(QRect(387, 163, 28, 28));
+        btnEmergente_03->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_03->setIcon(icon);
+        btnEmergente_04 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_04->setObjectName(QString::fromUtf8("btnEmergente_04"));
+        btnEmergente_04->setGeometry(QRect(625, 164, 28, 28));
+        btnEmergente_04->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_04->setIcon(icon);
+        btnEmergente_5 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_5->setObjectName(QString::fromUtf8("btnEmergente_5"));
+        btnEmergente_5->setGeometry(QRect(283, 303, 28, 28));
+        btnEmergente_5->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_5->setIcon(icon);
+        btnEmergente_06 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_06->setObjectName(QString::fromUtf8("btnEmergente_06"));
+        btnEmergente_06->setGeometry(QRect(626, 303, 28, 28));
+        btnEmergente_06->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_06->setIcon(icon);
+        btnEmergente_07 = new QCommandLinkButton(zonaAlim);
+        btnEmergente_07->setObjectName(QString::fromUtf8("btnEmergente_07"));
+        btnEmergente_07->setGeometry(QRect(342, 474, 28, 28));
+        btnEmergente_07->setStyleSheet(QString::fromUtf8(""));
+        btnEmergente_07->setIcon(icon);
 
         retranslateUi(zonaAlim);
 
@@ -739,6 +784,13 @@ public:
         lbhz_2->setText(QString());
         lbmva_2->setText(QString());
         lbfp_2->setText(QString());
+        btnEmergente_1->setText(QString());
+        btnEmergente_2->setText(QString());
+        btnEmergente_03->setText(QString());
+        btnEmergente_04->setText(QString());
+        btnEmergente_5->setText(QString());
+        btnEmergente_06->setText(QString());
+        btnEmergente_07->setText(QString());
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlapagado.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:45 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -134,6 +134,7 @@ public:
         btcerrar->setShortcut(QString());
         btapagfunc->setText(QApplication::translate("WCtrlApagado", "APAGADO / FUNCION", 0, QApplication::UnicodeUTF8));
         btapagfunc->setShortcut(QString());
+        leApagFun->setId(QApplication::translate("WCtrlApagado", "p_Fix32_THISNODE_OFF_RUN_F_CV", 0, QApplication::UnicodeUTF8));
         leApagFun->setText(QString());
         lbIP->setText(QApplication::translate("WCtrlApagado", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

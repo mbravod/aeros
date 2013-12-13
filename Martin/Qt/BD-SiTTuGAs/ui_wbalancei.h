@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wbalancei.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:45 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -114,7 +114,7 @@ public:
         lbtbvmaU->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbtbvdmdT = new WLabel(WBalanceI);
         lbtbvdmdT->setObjectName(QString::fromUtf8("lbtbvdmdT"));
-        lbtbvdmdT->setGeometry(QRect(20, 32, 46, 13));
+        lbtbvdmdT->setGeometry(QRect(5, 32, 61, 20));
         lbtbvdmdT->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbtbvdmdT->setFont(font);
         lbtbvdmdT->setProperty("Alineacion", QVariant(WLabel::Derecha));
@@ -213,8 +213,10 @@ public:
         lbtbvbU->setText(QApplication::translate("WBalanceI", "%", 0, QApplication::UnicodeUTF8));
         lbtbvselT->setText(QApplication::translate("WBalanceI", "TBVSEL", 0, QApplication::UnicodeUTF8));
         lbtbvselU->setText(QApplication::translate("WBalanceI", "%", 0, QApplication::UnicodeUTF8));
+        lbtbvsel->setId(QApplication::translate("WBalanceI", "p_Fix32_THISNODE_TBVSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbtbvsel->setText(QString());
         lbtbvma->setText(QString());
+        lbtbva->setId(QApplication::translate("WBalanceI", "p_Fix32_THISNODE_TBVA_F_CV", 0, QApplication::UnicodeUTF8));
         lbtbva->setText(QString());
         lbtbvmaT->setText(QApplication::translate("WBalanceI", "TBVMA", 0, QApplication::UnicodeUTF8));
         lbtbvmaU->setText(QApplication::translate("WBalanceI", "MA", 0, QApplication::UnicodeUTF8));
@@ -222,7 +224,9 @@ public:
         lbtbvohmsT->setText(QApplication::translate("WBalanceI", "TBVOHMS", 0, QApplication::UnicodeUTF8));
         lbtbvohmsU->setText(QApplication::translate("WBalanceI", "OHMS", 0, QApplication::UnicodeUTF8));
         lbtbvdmdU->setText(QApplication::translate("WBalanceI", "%", 0, QApplication::UnicodeUTF8));
+        lbtbvb->setId(QApplication::translate("WBalanceI", "p_Fix32_THISNODE_TBVB_F_CV", 0, QApplication::UnicodeUTF8));
         lbtbvb->setText(QString());
+        lbtbvdmd->setId(QApplication::translate("WBalanceI", "p_Fix32_THISNODE_TBVDMD_F_CV", 0, QApplication::UnicodeUTF8));
         lbtbvdmd->setText(QString());
         lbtbvaU->setText(QApplication::translate("WBalanceI", "%", 0, QApplication::UnicodeUTF8));
         lbtbvaT->setText(QApplication::translate("WBalanceI", "TBVA", 0, QApplication::UnicodeUTF8));

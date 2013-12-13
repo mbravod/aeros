@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvigb.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:42 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -92,7 +92,11 @@ public:
         lbVIGV_1->setObjectName(QString::fromUtf8("lbVIGV_1"));
         lbVIGV_1->setGeometry(QRect(85, 32, 41, 15));
         lbVIGV_1->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbVIGV_1->setTipo(-1);
+        lbVIGV_1->setValueF(0);
+        lbVIGV_1->setValue(-1);
         lbVIGV_1->setFont(font1);
+        lbVIGV_1->setPresicion(0);
         lbVIGV_1->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbVIGVU_2 = new QLabel(WVIGB);
         lbVIGVU_2->setObjectName(QString::fromUtf8("lbVIGVU_2"));
@@ -208,10 +212,13 @@ public:
     {
         WVIGB->setWindowTitle(QApplication::translate("WVIGB", "WVIGB", 0, QApplication::UnicodeUTF8));
         lbVIGVT_3->setText(QApplication::translate("WVIGB", "IGVA", 0, QApplication::UnicodeUTF8));
+        lbVIGV_2->setId(QApplication::translate("WVIGB", "p_Fix32_THISNODE_IGVSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVIGV_2->setText(QApplication::translate("WVIGB", "41.60", 0, QApplication::UnicodeUTF8));
+        lbVIGV_4->setId(QApplication::translate("WVIGB", "p_Fix32_THISNODE_IGVB_F_CV", 0, QApplication::UnicodeUTF8));
         lbVIGV_4->setText(QApplication::translate("WVIGB", "40.90", 0, QApplication::UnicodeUTF8));
         lbVIGV_6->setText(QApplication::translate("WVIGB", "20.00", 0, QApplication::UnicodeUTF8));
-        lbVIGV_1->setText(QApplication::translate("WVIGB", "28.61", 0, QApplication::UnicodeUTF8));
+        lbVIGV_1->setId(QApplication::translate("WVIGB", "p_Fix32_THISNODE_IGVDMD_F_CV", 0, QApplication::UnicodeUTF8));
+        lbVIGV_1->setText(QApplication::translate("WVIGB", "0.00", 0, QApplication::UnicodeUTF8));
         lbVIGVU_2->setText(QApplication::translate("WVIGB", "%", 0, QApplication::UnicodeUTF8));
         lbVIGV_5->setText(QApplication::translate("WVIGB", "-14.63", 0, QApplication::UnicodeUTF8));
         lbVIGVT_5->setText(QApplication::translate("WVIGB", "IGVMA", 0, QApplication::UnicodeUTF8));
@@ -223,6 +230,7 @@ public:
         lbVIGVT_1->setText(QApplication::translate("WVIGB", "IGVDMD", 0, QApplication::UnicodeUTF8));
         lbVIGVT_4->setText(QApplication::translate("WVIGB", "IGVB", 0, QApplication::UnicodeUTF8));
         lbVIGVT_2->setText(QApplication::translate("WVIGB", "IGVSEL", 0, QApplication::UnicodeUTF8));
+        lbVIGV_3->setId(QApplication::translate("WVIGB", "p_Fix32_THISNODE_IGVA_F_CV", 0, QApplication::UnicodeUTF8));
         lbVIGV_3->setText(QApplication::translate("WVIGB", "41.30", 0, QApplication::UnicodeUTF8));
         lbVIGVU_5->setText(QApplication::translate("WVIGB", "MA", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());

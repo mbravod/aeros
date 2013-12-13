@@ -25,6 +25,7 @@ class WLabel : public Base
     Q_ENUMS(wEdoColorFondo2)
     Q_ENUMS(wEdoColorTexto2)
 
+    Q_PROPERTY(double valueF READ getValueF WRITE setValueF)
     //Propiedades para inicializar la eqtiqueta
     Q_PROPERTY(wColorFondo Fondo_Inicial READ getWColorFondo WRITE setWColorFondo)
 
@@ -39,6 +40,9 @@ class WLabel : public Base
     Q_PROPERTY(wAlignment Alineacion READ getWAlignment WRITE setWAlignment)
 
 
+    //Definimos la presicion que maneja el campo
+    Q_PROPERTY(int Presicion READ getPresicion WRITE setPresicion)
+
     //Bandera para la activacion de animacion
     Q_PROPERTY(bool Animacion READ getAnimacion  WRITE setAnimacion)
 
@@ -46,11 +50,15 @@ public:
 
     WLabel(QWidget *parent = 0);
     ~WLabel();
-
+    void setPresicion(int i);
+    int getPresicion()const{return m_presicion;}
 
     QFont getFont();
     void setFont(QFont opt);
-
+    double getValueF()const{
+        return valueF;
+    }
+    void setValueF(double valueF);
 
     //Tipo enumerado para el primer estado
     enum wEdoColorFondo1{A_SinColor = 0,A_Rojo = 1,A_Verde = 2, A_Amarillo = 3,A_Blanco = 4,A_Gris = 5,A_Negro = 6};
@@ -104,7 +112,8 @@ private:
     bool cambio;
     bool animacion;
     QFont estilo;
-
+    int m_presicion;
+    double valueF;
     int tamanio;
 
     //Paleta con la configuracion para cada estado (valido solo para la animacion)

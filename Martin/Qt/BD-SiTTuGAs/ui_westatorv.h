@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'westatorv.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:43 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -186,18 +186,22 @@ public:
     void retranslateUi(QWidget *WEstatorV)
     {
         WEstatorV->setWindowTitle(QApplication::translate("WEstatorV", "Form", 0, QApplication::UnicodeUTF8));
+        lbVsvdmd->setId(QApplication::translate("WEstatorV", "p_Fix32_THISNODE_VSVDMD_F_CV", 0, QApplication::UnicodeUTF8));
         lbVsvdmd->setText(QString());
         lbVsvOhms->setText(QString());
         lbVsvMa->setText(QString());
         lbVsvMaT->setText(QApplication::translate("WEstatorV", "VSVMA", 0, QApplication::UnicodeUTF8));
         lbVsvdmdU->setText(QApplication::translate("WEstatorV", "%", 0, QApplication::UnicodeUTF8));
+        lbVsva->setId(QApplication::translate("WEstatorV", "p_Fix32_THISNODE_VSVA_F_CV", 0, QApplication::UnicodeUTF8));
         lbVsva->setText(QString());
         lbVsvbU->setText(QApplication::translate("WEstatorV", "%", 0, QApplication::UnicodeUTF8));
+        lbVsvb->setId(QApplication::translate("WEstatorV", "p_Fix32_THISNODE_VSVB_F_CV", 0, QApplication::UnicodeUTF8));
         lbVsvb->setText(QString());
         lbVsvMaU->setText(QApplication::translate("WEstatorV", "MA", 0, QApplication::UnicodeUTF8));
         lbVsvaU->setText(QApplication::translate("WEstatorV", "%", 0, QApplication::UnicodeUTF8));
         lbVsvOhmsT->setText(QApplication::translate("WEstatorV", "VSVOHMS", 0, QApplication::UnicodeUTF8));
         lbVsvselT->setText(QApplication::translate("WEstatorV", "VSVSEL", 0, QApplication::UnicodeUTF8));
+        lbVsvsel->setId(QApplication::translate("WEstatorV", "p_Fix32_THISNODE_VSVSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVsvsel->setText(QString());
         lbVsvbT->setText(QApplication::translate("WEstatorV", "VSVB", 0, QApplication::UnicodeUTF8));
         lbVsvOhmsU->setText(QApplication::translate("WEstatorV", "OHMS", 0, QApplication::UnicodeUTF8));

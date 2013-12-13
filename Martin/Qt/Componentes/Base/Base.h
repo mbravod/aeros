@@ -15,12 +15,13 @@ class Base : public QWidget
     Q_PROPERTY(QString id READ getId WRITE setId )
     //Para este caso el tipo nos epecifica como se debe comportar el widget
     Q_PROPERTY(int tipo READ getTipo WRITE setTipo)
-    //Q_PROPERTY (bool isUpdateable READ isUpdateable WRITE setUpdateable)
+    Q_PROPERTY (bool isUpdateable READ isUpdateable WRITE setUpdateable)
 
-    //Simulando el comportamiento de la sharedMemory (valores que devulve)
-    Q_PROPERTY(double valueF READ getValueF WRITE setValueF)
+
 
     Q_PROPERTY(int value READ getValue WRITE setValue)
+
+
 
     //Solo para cuestiones de prueba (es recomendable borrar las dos lineas anteriores)
 
@@ -31,14 +32,14 @@ public:
     int getTipo();
     int getIndice();
     int getValue();
-    double getValueF()const{
-        return valueF;
-    }
+
+
+
     void setId(QString id);
     void setIndice(int indice);
     void setTipo(int tipo);
     void setValue(int value);
-    void setValueF(double valueF);
+
     //Metodo para inicializar la sharedMemory
     void setShrdMem(HTTPRequest *s);
     //Metodo para acceder a los elementos de la SharedMemory
@@ -53,6 +54,7 @@ protected:
     //Variables protegidas
     QString id;
     int tipo;
+    double presicion;
     int indice;
     bool m_isUpdateable;
     int value;

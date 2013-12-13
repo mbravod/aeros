@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpurgav.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:43 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -124,7 +124,7 @@ public:
         lbVbvOhmsT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbVbvdmdT = new QLabel(WPurgaV);
         lbVbvdmdT->setObjectName(QString::fromUtf8("lbVbvdmdT"));
-        lbVbvdmdT->setGeometry(QRect(20, 30, 46, 13));
+        lbVbvdmdT->setGeometry(QRect(5, 30, 61, 20));
         lbVbvdmdT->setFont(font);
         lbVbvdmdT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         lbVbvdmd = new WLabel(WPurgaV);
@@ -193,8 +193,10 @@ public:
     {
         WPurgaV->setWindowTitle(QApplication::translate("WPurgaV", "Form", 0, QApplication::UnicodeUTF8));
         lbVbvBT->setText(QApplication::translate("WPurgaV", "VBVB", 0, QApplication::UnicodeUTF8));
+        lbVbvsel->setId(QApplication::translate("WPurgaV", "p_Fix32_THISNODE_VBVSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVbvsel->setText(QString());
         lbVbvaU->setText(QApplication::translate("WPurgaV", "%", 0, QApplication::UnicodeUTF8));
+        lbVbvB->setId(QApplication::translate("WPurgaV", "p_Fix32_THISNODE_VBVB_F_CV", 0, QApplication::UnicodeUTF8));
         lbVbvB->setText(QString());
         lbVbvMa->setText(QString());
         lbVbvdmdU->setText(QApplication::translate("WPurgaV", "%", 0, QApplication::UnicodeUTF8));
@@ -206,8 +208,10 @@ public:
         lbVbvMaT->setText(QApplication::translate("WPurgaV", "VBVMA", 0, QApplication::UnicodeUTF8));
         lbVbvOhmsT->setText(QApplication::translate("WPurgaV", "VBVOHMS", 0, QApplication::UnicodeUTF8));
         lbVbvdmdT->setText(QApplication::translate("WPurgaV", "VBVDMD", 0, QApplication::UnicodeUTF8));
+        lbVbvdmd->setId(QApplication::translate("WPurgaV", "p_Fix32_THISNODE_VBVDMD_F_CV", 0, QApplication::UnicodeUTF8));
         lbVbvdmd->setText(QString());
         lbVbvaT->setText(QApplication::translate("WPurgaV", "VBVA", 0, QApplication::UnicodeUTF8));
+        lbVbva->setId(QApplication::translate("WPurgaV", "p_Fix32_THISNODE_VBVA_F_CV", 0, QApplication::UnicodeUTF8));
         lbVbva->setText(QString());
         lbVbvMaU->setText(QApplication::translate("WPurgaV", "MA", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wdiariodatos.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:44 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -158,7 +158,9 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_DATALOG.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        leAlto->setId(QApplication::translate("WDiarioDatos", "p_Fix32_THISNODE_D_BUFFULL_F_CV", 0, QApplication::UnicodeUTF8));
         leAlto->setText(QString());
+        leInicio->setId(QApplication::translate("WDiarioDatos", "p_Fix32_THISNODE_D_COLLECT_F_CV", 0, QApplication::UnicodeUTF8));
         leInicio->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi

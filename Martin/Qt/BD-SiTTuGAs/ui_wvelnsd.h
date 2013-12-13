@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvelnsd.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:42 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -112,10 +112,12 @@ public:
     {
         WVelNSD->setWindowTitle(QApplication::translate("WVelNSD", "WVelNSD", 0, QApplication::UnicodeUTF8));
         lbNSDT_1->setText(QApplication::translate("WVelNSD", "SE6812", 0, QApplication::UnicodeUTF8));
-        lbNSDT_2->setText(QApplication::translate("WVelNSD", "SE6812", 0, QApplication::UnicodeUTF8));
+        lbNSDT_2->setText(QApplication::translate("WVelNSD", "SE6813", 0, QApplication::UnicodeUTF8));
+        lbNSD_1->setId(QApplication::translate("WVelNSD", "p_Fix32_THISNODE_SE6812_F_CV", 0, QApplication::UnicodeUTF8));
         lbNSD_1->setText(QApplication::translate("WVelNSD", "00.00", 0, QApplication::UnicodeUTF8));
         lbNSDU_1->setText(QApplication::translate("WVelNSD", "RPM", 0, QApplication::UnicodeUTF8));
         lbNSDU_2->setText(QApplication::translate("WVelNSD", "RPM", 0, QApplication::UnicodeUTF8));
+        lbNSD_2->setId(QApplication::translate("WVelNSD", "p_Fix32_THISNODE_SE6813_F_CV", 0, QApplication::UnicodeUTF8));
         lbNSD_2->setText(QApplication::translate("WVelNSD", "00.00", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
         btCerrar->setText(QApplication::translate("WVelNSD", "VELOCIDAD NSD", 0, QApplication::UnicodeUTF8));

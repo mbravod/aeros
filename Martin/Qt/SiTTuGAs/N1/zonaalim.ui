@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="WLabel" name="lbFondo">
+  <widget class="QLabel" name="lbFondo">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -75,14 +75,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_4">
@@ -94,14 +94,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="QPushButton" name="btRelay1">
@@ -129,14 +129,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_2">
@@ -148,14 +148,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_6">
@@ -167,14 +167,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_3">
@@ -186,14 +186,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="ind_1">
@@ -205,14 +205,14 @@
      <height>36</height>
     </rect>
    </property>
-   <property name="Value">
-    <number>0</number>
-   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
    <property name="OnColor">
     <enum>AWMultiObject::Green</enum>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
    </property>
   </widget>
   <widget class="QPushButton" name="btSincA">
@@ -385,7 +385,7 @@ ENERGIZAR</string>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="WLabel" name="lbkvan">
+   <widget class="QLabel" name="lbkvan">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -398,7 +398,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvanT">
+   <widget class="QLabel" name="lbkvanT">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -411,7 +411,7 @@ ENERGIZAR</string>
      <string>KV  AN</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkban_2">
+   <widget class="QLabel" name="lbkban_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -424,7 +424,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbnT">
+   <widget class="QLabel" name="lbkvbnT">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -437,7 +437,7 @@ ENERGIZAR</string>
      <string>KV  BN</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbcT">
+   <widget class="QLabel" name="lbkvbcT">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -450,7 +450,7 @@ ENERGIZAR</string>
      <string>KV  BC</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvcn">
+   <widget class="QLabel" name="lbkvcn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -463,7 +463,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbc">
+   <widget class="QLabel" name="lbkvbc">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -476,7 +476,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvcnT">
+   <widget class="QLabel" name="lbkvcnT">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -502,7 +502,7 @@ ENERGIZAR</string>
      <string>MW</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPScT">
+   <widget class="QLabel" name="lbAMPScT">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -515,7 +515,7 @@ ENERGIZAR</string>
      <string>AMPS C</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbampsa">
+   <widget class="QLabel" name="lbampsa">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -528,7 +528,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSc">
+   <widget class="QLabel" name="lbAMPSc">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -541,7 +541,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbampsaT">
+   <widget class="QLabel" name="lbampsaT">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -554,7 +554,7 @@ ENERGIZAR</string>
      <string>AMPS A</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSb">
+   <widget class="QLabel" name="lbAMPSb">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -580,7 +580,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSbT">
+   <widget class="QLabel" name="lbAMPSbT">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -606,7 +606,7 @@ ENERGIZAR</string>
      <string>HZ</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbfpT">
+   <widget class="QLabel" name="lbfpT">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -684,7 +684,7 @@ ENERGIZAR</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbfp">
+   <widget class="QLabel" name="lbfp">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -764,7 +764,7 @@ ENERGIZAR</string>
 SUBESTACIÒN</string>
    </property>
   </widget>
-  <widget class="WLabel" name="lbFronT">
+  <widget class="QLabel" name="lbFronT">
    <property name="geometry">
     <rect>
      <x>77</x>
@@ -1579,7 +1579,7 @@ T21A</string>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="WLabel" name="lbkvan_2">
+   <widget class="QLabel" name="lbkvan_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1592,7 +1592,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvanT_2">
+   <widget class="QLabel" name="lbkvanT_2">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -1605,7 +1605,7 @@ T21A</string>
      <string>KV  AN</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkban_3">
+   <widget class="QLabel" name="lbkban_3">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1618,7 +1618,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbnT_2">
+   <widget class="QLabel" name="lbkvbnT_2">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -1631,7 +1631,7 @@ T21A</string>
      <string>KV  BN</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbcT_2">
+   <widget class="QLabel" name="lbkvbcT_2">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -1644,7 +1644,7 @@ T21A</string>
      <string>KV  BC</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvcn_2">
+   <widget class="QLabel" name="lbkvcn_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1657,7 +1657,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvbc_2">
+   <widget class="QLabel" name="lbkvbc_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1670,7 +1670,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbkvcnT_2">
+   <widget class="QLabel" name="lbkvcnT_2">
     <property name="geometry">
      <rect>
       <x>76</x>
@@ -1709,7 +1709,7 @@ T21A</string>
      <string>AMPS C</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbampsa_2">
+   <widget class="QLabel" name="lbampsa_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1722,7 +1722,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSc_2">
+   <widget class="QLabel" name="lbAMPSc_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1735,7 +1735,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbampsaT_2">
+   <widget class="QLabel" name="lbampsaT_2">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -1748,7 +1748,7 @@ T21A</string>
      <string>AMPS A</string>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSb_2">
+   <widget class="QLabel" name="lbAMPSb_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1774,7 +1774,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbAMPSbT_2">
+   <widget class="QLabel" name="lbAMPSbT_2">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -1878,7 +1878,7 @@ T21A</string>
      <string/>
     </property>
    </widget>
-   <widget class="WLabel" name="lbfp_2">
+   <widget class="QLabel" name="lbfp_2">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -1891,6 +1891,146 @@ T21A</string>
      <string/>
     </property>
    </widget>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_1">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>84</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_2">
+   <property name="geometry">
+    <rect>
+     <x>732</x>
+     <y>84</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_03">
+   <property name="geometry">
+    <rect>
+     <x>387</x>
+     <y>163</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_04">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>164</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_5">
+   <property name="geometry">
+    <rect>
+     <x>283</x>
+     <y>303</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_06">
+   <property name="geometry">
+    <rect>
+     <x>626</x>
+     <y>303</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_07">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>474</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

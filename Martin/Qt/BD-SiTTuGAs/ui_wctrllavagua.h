@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrllavagua.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:44 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -206,7 +206,9 @@ public:
 "FUERA DE LINEA", 0, QApplication::UnicodeUTF8));
         btDeLineaHab->setText(QApplication::translate("WCtrlLavAgua", "HABILITAR", 0, QApplication::UnicodeUTF8));
         btDeLineaDes->setText(QApplication::translate("WCtrlLavAgua", "DESHABILITAR", 0, QApplication::UnicodeUTF8));
+        lbDeLinea->setId(QApplication::translate("WCtrlLavAgua", "p_Fix32_NODENAME_WW_ENBL_F_CV", 0, QApplication::UnicodeUTF8));
         lbDeLinea->setText(QApplication::translate("WCtrlLavAgua", "DESHABILIRTADO", 0, QApplication::UnicodeUTF8));
+        lbEnLinea->setId(QApplication::translate("WCtrlLavAgua", "p_Fix32_NODENAME_ONLINE_EN_F_CV", 0, QApplication::UnicodeUTF8));
         lbEnLinea->setText(QApplication::translate("WCtrlLavAgua", "DESHABILIRTADO", 0, QApplication::UnicodeUTF8));
         btEnLineaHab->setText(QApplication::translate("WCtrlLavAgua", "HABILITAR", 0, QApplication::UnicodeUTF8));
         lbFueraEnLineaT->setText(QApplication::translate("WCtrlLavAgua", "HABILITAR LAV C/ AGUA\n"

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wctrlarranque.ui'
 **
-** Created: Wed 11. Dec 20:17:15 2013
+** Created: Thu 12. Dec 21:16:44 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -171,7 +171,9 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">FP_STAR.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        leArranque->setId(QApplication::translate("WCtrlArranque", "p_Fix32_NODENAME_START_FDBK_F_CV", 0, QApplication::UnicodeUTF8));
         leArranque->setText(QString());
+        leDetecion->setId(QApplication::translate("WCtrlArranque", "p_Fix32_NODENAME_STOP_FDBK_F_CV", 0, QApplication::UnicodeUTF8));
         leDetecion->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi

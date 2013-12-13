@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wstg8bld.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:42 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -152,7 +152,7 @@ public:
 "background-color: rgba(255, 255, 255, 0);"));
         lbSTGBT_6 = new QLabel(WSTG8BLD);
         lbSTGBT_6->setObjectName(QString::fromUtf8("lbSTGBT_6"));
-        lbSTGBT_6->setGeometry(QRect(30, 120, 52, 20));
+        lbSTGBT_6->setGeometry(QRect(1, 120, 81, 20));
         lbSTGBT_6->setFont(font);
         lbSTGBT_6->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
         lbSTGBT_6->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
@@ -207,16 +207,20 @@ public:
     {
         WSTG8BLD->setWindowTitle(QApplication::translate("WSTG8BLD", "WSTG8BLD", 0, QApplication::UnicodeUTF8));
         lbSTGBT_1->setText(QApplication::translate("WSTG8BLD", "ST8DMD", 0, QApplication::UnicodeUTF8));
+        lbSTGB_1->setId(QApplication::translate("WSTG8BLD", "p_Fix32_THISNODE_ST8DMD_F_CV", 0, QApplication::UnicodeUTF8));
         lbSTGB_1->setText(QApplication::translate("WSTG8BLD", "9.70", 0, QApplication::UnicodeUTF8));
         lbSTGBU_1->setText(QApplication::translate("WSTG8BLD", "%", 0, QApplication::UnicodeUTF8));
         lbSTGBU_2->setText(QApplication::translate("WSTG8BLD", "%", 0, QApplication::UnicodeUTF8));
         lbSTGBT_2->setText(QApplication::translate("WSTG8BLD", "ST8SEL", 0, QApplication::UnicodeUTF8));
+        lbSTGB_2->setId(QApplication::translate("WSTG8BLD", "p_Fix32_THISNODE_ST8SEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbSTGB_2->setText(QApplication::translate("WSTG8BLD", "99.10", 0, QApplication::UnicodeUTF8));
         lbSTGBU_3->setText(QApplication::translate("WSTG8BLD", "%", 0, QApplication::UnicodeUTF8));
+        lbSTGB_3->setId(QApplication::translate("WSTG8BLD", "p_Fix32_THISNODE_ST8A_F_CV", 0, QApplication::UnicodeUTF8));
         lbSTGB_3->setText(QApplication::translate("WSTG8BLD", "98.60", 0, QApplication::UnicodeUTF8));
         lbSTGBT_3->setText(QApplication::translate("WSTG8BLD", "ST8A", 0, QApplication::UnicodeUTF8));
         lbSTGBU_4->setText(QApplication::translate("WSTG8BLD", "%", 0, QApplication::UnicodeUTF8));
         lbSTGBT_4->setText(QApplication::translate("WSTG8BLD", "ST8B", 0, QApplication::UnicodeUTF8));
+        lbSTGB_4->setId(QApplication::translate("WSTG8BLD", "p_Fix32_THISNODE_ST8B_F_CV", 0, QApplication::UnicodeUTF8));
         lbSTGB_4->setText(QApplication::translate("WSTG8BLD", "99.60", 0, QApplication::UnicodeUTF8));
         lbSTGBT_5->setText(QApplication::translate("WSTG8BLD", "ST8MA", 0, QApplication::UnicodeUTF8));
         lbSTGB_5->setText(QApplication::translate("WSTG8BLD", "10.00", 0, QApplication::UnicodeUTF8));

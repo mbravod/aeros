@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wvoltctrl.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:41 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -153,6 +153,7 @@ public:
         btDisminuir->setText(QApplication::translate("WVoltCtrl", "DISMINIUIR", 0, QApplication::UnicodeUTF8));
         btCerrar->setText(QApplication::translate("WVoltCtrl", "CERRAR", 0, QApplication::UnicodeUTF8));
         btCerrar->setShortcut(QString());
+        leRetroa->setId(QApplication::translate("WVoltCtrl", "p_Fix32_NODENAME_BVX_F_CV", 0, QApplication::UnicodeUTF8));
         leRetroa->setText(QString());
         lbIP->setText(QApplication::translate("WVoltCtrl", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wrotorturb.ui'
 **
-** Created: Wed 11. Dec 20:17:14 2013
+** Created: Thu 12. Dec 21:16:43 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -364,10 +364,13 @@ public:
         lbVelT->setText(QApplication::translate("WRotorTurb", "VEL PT", 0, QApplication::UnicodeUTF8));
         lbRefT->setText(QApplication::translate("WRotorTurb", "REFERENCIA", 0, QApplication::UnicodeUTF8));
         lbEmicionT->setText(QApplication::translate("WRotorTurb", "EMICION", 0, QApplication::UnicodeUTF8));
+        lbVel->setId(QApplication::translate("WRotorTurb", "p_Fix32_NODENAME_NSDSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVel->setText(QApplication::translate("WRotorTurb", "0000", 0, QApplication::UnicodeUTF8));
         lbVelU->setText(QString());
+        lbRef->setId(QApplication::translate("WRotorTurb", "p_Fix32_THISNODE_NSD_2ND_REF_F_CV", 0, QApplication::UnicodeUTF8));
         lbRef->setText(QApplication::translate("WRotorTurb", "0000", 0, QApplication::UnicodeUTF8));
         lbRefU->setText(QString());
+        lbEmicion->setId(QApplication::translate("WRotorTurb", "p_Fix32_NODENAME_NSDPRX_F_CV", 0, QApplication::UnicodeUTF8));
         lbEmicion->setText(QApplication::translate("WRotorTurb", "0000", 0, QApplication::UnicodeUTF8));
         lbEmicionU->setText(QString());
         lbIP->setText(QApplication::translate("WRotorTurb", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -375,7 +378,9 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_LPSPD.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        leOper->setId(QApplication::translate("WRotorTurb", "p_Fix32_NODENAME_ISOCH_F_CV", 0, QApplication::UnicodeUTF8));
         leOper->setText(QString());
+        leCntr->setId(QApplication::translate("WRotorTurb", "p_Fix32_NODENAME_CNTRL_REG_F_CV", 0, QApplication::UnicodeUTF8));
         leCntr->setText(QString());
         lbFondo->setText(QString());
     } // retranslateUi

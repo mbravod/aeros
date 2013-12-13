@@ -7,6 +7,8 @@ WLabel::WLabel(QWidget *parent) :
     etiqueta = new QLabel(this);
     m_presicion = 0;
     tipo = -1;
+    m_presicion = 0;
+    valueF = 0.0;
 }
 
 WLabel::~WLabel()
@@ -24,6 +26,12 @@ void WLabel::setFont(QFont opt)
 {   //Guardamos las modificaciones de la etiqueta
     this->estilo = opt;
     etiqueta->setFont(estilo);
+    update();
+}
+
+void WLabel::setValueF(double valueF)
+{
+    this->valueF = valueF;
     update();
 }
 

@@ -35,11 +35,6 @@ void Base::setValue(int value)
     update();
 }
 
-void Base::setValueF(double valueF)
-{
-    this->valueF = valueF;
-    update();
-}
 
 void Base::Update()
 {

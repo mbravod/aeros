@@ -27,6 +27,8 @@ class WLabel : public Base
     //Opciones para configurar en los estados de la animacion (solo dos estados permitidos)
     Q_PROPERTY(wEdoColorFondo2 Fondo_B READ getWEdoColorFondo2 WRITE setWEdoColorFondo2)
 
+    //Simulando el comportamiento de la sharedMemory (valores que devulve)
+    Q_PROPERTY(double valueF READ getValueF WRITE setValueF)
 
     //Propiedades para la alineación
     Q_ENUMS(wAlignment)
@@ -55,7 +57,11 @@ public:
 
     WLabel(QWidget *parent = 0);
     ~WLabel();
+    void setValueF(double valueF);
 
+    double getValueF()const{
+        return valueF;
+    }
     void setPresicion(int i);
     int getPresicion()const{return m_presicion;}
 
@@ -98,7 +104,7 @@ private:
     //Etiqueta que instancia dentro del widget para incorporar el texto
     QLabel *etiqueta;
     wAlignment alineacion;
-
+    double valueF;
     int m_presicion;
     QFont estilo;
 
