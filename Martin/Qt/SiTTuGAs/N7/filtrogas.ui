@@ -238,7 +238,7 @@ NATURAL</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_1">
+  <widget class="WLineEdit" name="leAlarma_1">
    <property name="geometry">
     <rect>
      <x>194</x>
@@ -251,8 +251,14 @@ NATURAL</string>
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082A_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_2">
+  <widget class="WLineEdit" name="leAlarma_2">
    <property name="geometry">
     <rect>
      <x>194</x>
@@ -265,8 +271,14 @@ color: rgb(128, 128, 128);</string>
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082B_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_5">
+  <widget class="WLineEdit" name="leAlarma_5">
    <property name="geometry">
     <rect>
      <x>673</x>
@@ -279,8 +291,14 @@ color: rgb(128, 128, 128);</string>
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082C_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_6">
+  <widget class="WLineEdit" name="leAlarma_6">
    <property name="geometry">
     <rect>
      <x>673</x>
@@ -293,8 +311,14 @@ color: rgb(128, 128, 128);</string>
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082D_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_4">
+  <widget class="WLineEdit" name="leAlarma_4">
    <property name="geometry">
     <rect>
      <x>412</x>
@@ -307,8 +331,14 @@ color: rgb(128, 128, 128);</string>
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_DPISH_082_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlarma_3">
+  <widget class="WLineEdit" name="leAlarma_3">
    <property name="geometry">
     <rect>
      <x>412</x>
@@ -320,6 +350,12 @@ color: rgb(128, 128, 128);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 0, 0);
 color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_DPISHH_082_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="btImpr">
@@ -459,6 +495,13 @@ color: rgb(128, 128, 128);</string>
    </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLineEdit</class>
+   <extends>QWidget</extends>
+   <header>wlineedit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../Resources.qrc"/>
  </resources>

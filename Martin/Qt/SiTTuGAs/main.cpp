@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         delete splash;
         return a.exit();
     }
-
+/*
     if(s.m_firstSettings.mode==Settings::Consola){
         {
             PassWDialog *pw = new PassWDialog();
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    else {
+    else {*/
         //qDebug("Iniciando Modo Operador");
         splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
         //Proporciona acceso a informacion de la pantalla en los sistemas multi-cabeza
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 
 ///
 
-    }
+  //  }
 
     return a.exec();
 }

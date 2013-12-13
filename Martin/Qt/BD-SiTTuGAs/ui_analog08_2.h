@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'analog08_2.ui'
 **
-** Created: Thu 12. Dec 21:16:48 2013
+** Created: Fri 13. Dec 14:43:58 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

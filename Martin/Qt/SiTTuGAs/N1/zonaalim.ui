@@ -75,6 +75,9 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_I202G_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -93,6 +96,9 @@
      <width>39</width>
      <height>36</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSC_52_1T21A_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -129,6 +135,9 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSC_52_2T21A_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -147,6 +156,9 @@
      <width>39</width>
      <height>36</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_K229_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -167,6 +179,9 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSC_52AUXG1A_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -186,6 +201,9 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSC502AUXG1A_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
    </property>
@@ -204,6 +222,9 @@
      <width>39</width>
      <height>36</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_I201G_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SQUARE</enum>
@@ -385,7 +406,7 @@ ENERGIZAR</string>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="QLabel" name="lbkvan">
+   <widget class="WLabel" name="lbkvan">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -393,6 +414,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V02A_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -411,7 +435,7 @@ ENERGIZAR</string>
      <string>KV  AN</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkban_2">
+   <widget class="WLabel" name="lbkban_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -419,6 +443,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V02B_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -450,7 +477,7 @@ ENERGIZAR</string>
      <string>KV  BC</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkvcn">
+   <widget class="WLabel" name="lbkvcn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -459,11 +486,14 @@ ENERGIZAR</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V02C_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkvbc">
+   <widget class="WLabel" name="lbkvbc">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -471,6 +501,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V02BC_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -515,7 +548,7 @@ ENERGIZAR</string>
      <string>AMPS C</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbampsa">
+   <widget class="WLabel" name="lbampsa">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -524,11 +557,14 @@ ENERGIZAR</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J02A_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbAMPSc">
+   <widget class="WLabel" name="lbAMPSc">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -536,6 +572,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J02C_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -554,7 +593,7 @@ ENERGIZAR</string>
      <string>AMPS A</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbAMPSb">
+   <widget class="WLabel" name="lbAMPSb">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -563,11 +602,14 @@ ENERGIZAR</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J02B_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbHw">
+   <widget class="WLabel" name="lbHw">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -575,6 +617,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_W02_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -632,7 +677,7 @@ ENERGIZAR</string>
      <string>MVAR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lvmvar">
+   <widget class="WLabel" name="lvmvar">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -640,6 +685,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_X02_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -658,7 +706,7 @@ ENERGIZAR</string>
      <string>MVA</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbhz">
+   <widget class="WLabel" name="lbhz">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -667,24 +715,30 @@ ENERGIZAR</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_F02_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbmva">
+   <widget class="WLabel" name="lbmva">
     <property name="geometry">
      <rect>
       <x>284</x>
       <y>12</y>
       <width>46</width>
-      <height>13</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_P02_F_CV</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbfp">
+   <widget class="WLabel" name="lbfp">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -692,6 +746,9 @@ ENERGIZAR</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_FP02_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1579,7 +1636,7 @@ T21A</string>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="QLabel" name="lbkvan_2">
+   <widget class="WLabel" name="lbkvan_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1587,6 +1644,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V03A_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1605,7 +1665,7 @@ T21A</string>
      <string>KV  AN</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkban_3">
+   <widget class="WLabel" name="lbkban_3">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1613,6 +1673,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V03B_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1644,7 +1707,7 @@ T21A</string>
      <string>KV  BC</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkvcn_2">
+   <widget class="WLabel" name="lbkvcn_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1653,11 +1716,14 @@ T21A</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V03C_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbkvbc_2">
+   <widget class="WLabel" name="lbkvbc_2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1665,6 +1731,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_V03AB_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1709,7 +1778,7 @@ T21A</string>
      <string>AMPS C</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbampsa_2">
+   <widget class="WLabel" name="lbampsa_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1718,11 +1787,14 @@ T21A</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J03A_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbAMPSc_2">
+   <widget class="WLabel" name="lbAMPSc_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1730,6 +1802,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J03C_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1748,7 +1823,7 @@ T21A</string>
      <string>AMPS A</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbAMPSb_2">
+   <widget class="WLabel" name="lbAMPSb_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1757,11 +1832,14 @@ T21A</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_J03B_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbHw_2">
+   <widget class="WLabel" name="lbHw_2">
     <property name="geometry">
      <rect>
       <x>144</x>
@@ -1769,6 +1847,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_W03_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1826,7 +1907,7 @@ T21A</string>
      <string>MVAR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lvmvar_2">
+   <widget class="WLabel" name="lvmvar_2">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -1834,6 +1915,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_X03_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -1852,7 +1936,7 @@ T21A</string>
      <string>MVA</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbhz_2">
+   <widget class="WLabel" name="lbhz_2">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -1861,11 +1945,14 @@ T21A</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_F03_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbmva_2">
+   <widget class="WLabel" name="lbmva_2">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -1874,11 +1961,14 @@ T21A</string>
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_P03_F_CV</string>
+    </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="lbfp_2">
+   <widget class="WLabel" name="lbfp_2">
     <property name="geometry">
      <rect>
       <x>284</x>
@@ -1886,6 +1976,9 @@ T21A</string>
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_FP03_F_CV</string>
     </property>
     <property name="text">
      <string/>
@@ -2032,6 +2125,466 @@ T21A</string>
      <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
    </property>
   </widget>
+  <widget class="WLabel" name="lbkvbc_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>368</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_V01C_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbkvcn_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>355</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_V01B_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbkban_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>349</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_V02B_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbkvcnT_3">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>367</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>KV  CN</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbkvan_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>345</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_V01A_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbkvbnT_3">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>355</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>KV  BN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbkvbcT_3">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>378</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>KV  BC</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbkvanT_3">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>342</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>KV  AN</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbampsa_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_V01BC_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbampsaT_3">
+   <property name="geometry">
+    <rect>
+     <x>78</x>
+     <y>390</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AMPS A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAMPSbT_3">
+   <property name="geometry">
+    <rect>
+     <x>78</x>
+     <y>400</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AMPS B</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbAMPSb_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_J01A_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbAMPSc_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>340</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_J01C_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbHwT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>352</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MW</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbHw_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>352</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_W01_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbAMPScT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>340</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AMPS C</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lvmvar_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>365</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_X01_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbhz_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>400</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_F01_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbhzT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>400</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HZ</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbmva_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>375</y>
+     <width>46</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_P01_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbmvaT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>375</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MVA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lvmvarT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>362</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MVAR</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbfp_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>390</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_FP01_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbfpT_3">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>390</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FP</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbAMPSb_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>402</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_J01B_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>ind_3</zorder>
+  <zorder>btnEmergente_07</zorder>
+  <zorder>ind_6</zorder>
+  <zorder>btnEmergente_06</zorder>
+  <zorder>ind_2</zorder>
+  <zorder>btnEmergente_5</zorder>
+  <zorder>ind_5</zorder>
+  <zorder>btnEmergente_04</zorder>
+  <zorder>ind_4</zorder>
+  <zorder>btnEmergente_03</zorder>
+  <zorder>ind_7</zorder>
+  <zorder>btnEmergente_2</zorder>
+  <zorder>ind_1</zorder>
+  <zorder>btnEmergente_1</zorder>
+  <zorder>btRelay1</zorder>
+  <zorder>btSincA</zorder>
+  <zorder>btDesA</zorder>
+  <zorder>btSincB</zorder>
+  <zorder>btDesB</zorder>
+  <zorder>btTransDes</zorder>
+  <zorder>btTransEner</zorder>
+  <zorder>lbZonaT</zorder>
+  <zorder>frame</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>lbladoSubT</zorder>
+  <zorder>lbFronT</zorder>
+  <zorder>lbOperT</zorder>
+  <zorder>lbLadoPlaT</zorder>
+  <zorder>lbT221aT</zorder>
+  <zorder>lbT221cT</zorder>
+  <zorder>lbEnfriaT</zorder>
+  <zorder>lbCalenT</zorder>
+  <zorder>lbCompres</zorder>
+  <zorder>lbResT</zorder>
+  <zorder>lbBomT</zorder>
+  <zorder>label_88</zorder>
+  <zorder>lbServT</zorder>
+  <zorder>lb928AT</zorder>
+  <zorder>label_91</zorder>
+  <zorder>label_92</zorder>
+  <zorder>label_93</zorder>
+  <zorder>label_94</zorder>
+  <zorder>label_95</zorder>
+  <zorder>label_96</zorder>
+  <zorder>label_97</zorder>
+  <zorder>label_98</zorder>
+  <zorder>label_99</zorder>
+  <zorder>label_100</zorder>
+  <zorder>lb928CT</zorder>
+  <zorder>label_102</zorder>
+  <zorder>label_103</zorder>
+  <zorder>label_104</zorder>
+  <zorder>lbZona416T</zorder>
+  <zorder>label_106</zorder>
+  <zorder>label_107</zorder>
+  <zorder>label_108</zorder>
+  <zorder>lbMotCom</zorder>
+  <zorder>label_110</zorder>
+  <zorder>label_111</zorder>
+  <zorder>label_112</zorder>
+  <zorder>label_113</zorder>
+  <zorder>label_114</zorder>
+  <zorder>label_115</zorder>
+  <zorder>label_116</zorder>
+  <zorder>lbBarras23kvT</zorder>
+  <zorder>label_118</zorder>
+  <zorder>label_119</zorder>
+  <zorder>pushButton_8</zorder>
+  <zorder>frame_4</zorder>
+  <zorder>lbkvbc_3</zorder>
+  <zorder>lbkvcn_3</zorder>
+  <zorder>lbkban_4</zorder>
+  <zorder>lbkvcnT_3</zorder>
+  <zorder>lbkvan_3</zorder>
+  <zorder>lbkvbnT_3</zorder>
+  <zorder>lbkvbcT_3</zorder>
+  <zorder>lbkvanT_3</zorder>
+  <zorder>lbampsa_3</zorder>
+  <zorder>lbampsaT_3</zorder>
+  <zorder>lbAMPSbT_3</zorder>
+  <zorder>lbAMPSb_3</zorder>
+  <zorder>lbAMPSc_3</zorder>
+  <zorder>lbHwT_3</zorder>
+  <zorder>lbHw_3</zorder>
+  <zorder>lbAMPScT_3</zorder>
+  <zorder>lvmvar_3</zorder>
+  <zorder>lbhz_3</zorder>
+  <zorder>lbhzT_3</zorder>
+  <zorder>lbmva_3</zorder>
+  <zorder>lbmvaT_3</zorder>
+  <zorder>lvmvarT_3</zorder>
+  <zorder>lbfp_3</zorder>
+  <zorder>lbfpT_3</zorder>
+  <zorder>lbAMPSb_4</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
@@ -2039,6 +2592,11 @@ T21A</string>
    <class>AWMultiObject</class>
    <extends>QWidget</extends>
    <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
   </customwidget>
  </customwidgets>
  <resources>

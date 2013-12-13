@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enfriador.ui'
 **
-** Created: Thu 12. Dec 21:16:51 2013
+** Created: Fri 13. Dec 16:39:29 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,6 +20,8 @@
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlabel.h"
+#include "wlineedit.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,7 +34,6 @@ public:
     QPushButton *btDesPla;
     QPushButton *btEnfr;
     QPushButton *btCalent;
-    QLabel *lbAlarma;
     QLabel *lbPm100a;
     QLabel *lbPm100b;
     QLabel *lbT390;
@@ -50,7 +51,9 @@ public:
     QCommandLinkButton *btnlbAlarma;
     QCommandLinkButton *btnlbAlarma_2;
     QCommandLinkButton *btnlbAlarma_3;
-    QLabel *lbAlarma_2;
+    WLabel *wLabel;
+    WLineEdit *wLineEdit;
+    WLineEdit *wLineEdit_2;
 
     void setupUi(QWidget *ENFRIADOR)
     {
@@ -96,12 +99,6 @@ public:
         btCalent->setGeometry(QRect(511, 564, 80, 32));
         btCalent->setFont(font1);
         btCalent->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
-        lbAlarma = new QLabel(ENFRIADOR);
-        lbAlarma->setObjectName(QString::fromUtf8("lbAlarma"));
-        lbAlarma->setGeometry(QRect(79, 81, 97, 16));
-        lbAlarma->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
-"color: rgb(128, 128, 128);"));
-        lbAlarma->setAlignment(Qt::AlignCenter);
         lbPm100a = new QLabel(ENFRIADOR);
         lbPm100a->setObjectName(QString::fromUtf8("lbPm100a"));
         lbPm100a->setGeometry(QRect(188, 563, 61, 16));
@@ -172,7 +169,7 @@ public:
         lbSumiT->setAlignment(Qt::AlignCenter);
         btnlbAlarma = new QCommandLinkButton(ENFRIADOR);
         btnlbAlarma->setObjectName(QString::fromUtf8("btnlbAlarma"));
-        btnlbAlarma->setGeometry(QRect(79, 81, 97, 16));
+        btnlbAlarma->setGeometry(QRect(80, 80, 97, 16));
         btnlbAlarma->setStyleSheet(QString::fromUtf8(""));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/Resources/PNG/Extras/transparente.svg"), QSize(), QIcon::Normal, QIcon::Off);
@@ -187,19 +184,26 @@ public:
         btnlbAlarma_3->setGeometry(QRect(80, 100, 97, 16));
         btnlbAlarma_3->setStyleSheet(QString::fromUtf8(""));
         btnlbAlarma_3->setIcon(icon);
-        lbAlarma_2 = new QLabel(ENFRIADOR);
-        lbAlarma_2->setObjectName(QString::fromUtf8("lbAlarma_2"));
-        lbAlarma_2->setGeometry(QRect(80, 100, 97, 16));
-        lbAlarma_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
-"color: rgb(128, 128, 128);"));
-        lbAlarma_2->setAlignment(Qt::AlignCenter);
+        wLabel = new WLabel(ENFRIADOR);
+        wLabel->setObjectName(QString::fromUtf8("wLabel"));
+        wLabel->setGeometry(QRect(780, 578, 61, 21));
+        wLineEdit = new WLineEdit(ENFRIADOR);
+        wLineEdit->setObjectName(QString::fromUtf8("wLineEdit"));
+        wLineEdit->setGeometry(QRect(78, 80, 100, 18));
+        wLineEdit->setProperty("Fondo_Inicial", QVariant(WLineEdit::Rojo));
+        wLineEdit_2 = new WLineEdit(ENFRIADOR);
+        wLineEdit_2->setObjectName(QString::fromUtf8("wLineEdit_2"));
+        wLineEdit_2->setGeometry(QRect(78, 100, 100, 18));
         lbFondo->raise();
+        wLineEdit_2->raise();
+        wLineEdit->raise();
+        btnlbAlarma_3->raise();
+        btnlbAlarma->raise();
         lbEnfT->raise();
         btHabPla->raise();
         btDesPla->raise();
         btEnfr->raise();
         btCalent->raise();
-        lbAlarma->raise();
         lbPm100a->raise();
         lbPm100b->raise();
         lbT390->raise();
@@ -214,10 +218,8 @@ public:
         lbRetorT->raise();
         lbConexionT->raise();
         lbSumiT->raise();
-        btnlbAlarma->raise();
         btnlbAlarma_2->raise();
-        lbAlarma_2->raise();
-        btnlbAlarma_3->raise();
+        wLabel->raise();
 
         retranslateUi(ENFRIADOR);
 
@@ -237,7 +239,6 @@ public:
 "ENFRIADOR", 0, QApplication::UnicodeUTF8));
         btCalent->setText(QApplication::translate("ENFRIADOR", "MODO\n"
 "CALENTADOR", 0, QApplication::UnicodeUTF8));
-        lbAlarma->setText(QString());
         lbPm100a->setText(QApplication::translate("ENFRIADOR", "PM - 100A", 0, QApplication::UnicodeUTF8));
         lbPm100b->setText(QApplication::translate("ENFRIADOR", "PM - 100B", 0, QApplication::UnicodeUTF8));
         lbT390->setText(QApplication::translate("ENFRIADOR", "T - 390  ", 0, QApplication::UnicodeUTF8));
@@ -257,7 +258,9 @@ public:
         btnlbAlarma->setText(QString());
         btnlbAlarma_2->setText(QString());
         btnlbAlarma_3->setText(QString());
-        lbAlarma_2->setText(QString());
+        wLabel->setId(QApplication::translate("ENFRIADOR", "p_Fix32_NODE_INPUT_TY_177B_F_CV", 0, QApplication::UnicodeUTF8));
+        wLineEdit->setId(QApplication::translate("ENFRIADOR", "p_Fix32_NODE_YSA_220_A_Tag", 0, QApplication::UnicodeUTF8));
+        wLineEdit_2->setId(QApplication::translate("ENFRIADOR", "p_Fix32_NODE_YSA_177_A_Tag", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

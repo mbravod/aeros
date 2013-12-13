@@ -1199,6 +1199,8 @@ void SiTTuGAs::Connections()
     connect(this->menu,SIGNAL(ActivaVista(int)),this,SLOT(ViewBOP(int)));
     connect(ui->btn_Back_2,SIGNAL(clicked()),this,SLOT(PrevWin()));
     connect(ui->btn_Fwd_2,SIGNAL(clicked()),this,SLOT(NextWin()));
+    connect(ui->btn_Ack,SIGNAL(clicked()),this,SLOT(ViewMenu()));
+
 }
 
 void SiTTuGAs::selectWindow(int n, int opt)
@@ -1290,6 +1292,10 @@ void SiTTuGAs::ViewMenu()
     ChangeWin(ID_MENU);
     //Tambien podemos hacerlo de esta manera
     //ui->mdiArea->setActiveSubWindow(lst.first());
+    //ocultamos la barra de menu de BOP y mostramos las demas
+    ui->TitleBar->show();
+    ui->ButtonBar->show();
+    ui->ButtonBarBOP->hide();
 }
 
 void SiTTuGAs::ViewMain()
@@ -1345,8 +1351,6 @@ void SiTTuGAs::ViewBOP(int id)
     ui->TitleBar->hide();
     ui->ButtonBar->hide();
     ui->ButtonBarBOP->show();
-    //()<< "Entramos en BOP:" << id;
-
 }
 
 SiTTuGAs::~SiTTuGAs()

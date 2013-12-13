@@ -81,20 +81,23 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="lbts208cT">
+   <widget class="WLabel" name="lbts208cT">
     <property name="geometry">
      <rect>
       <x>11</x>
       <y>103</y>
-      <width>46</width>
-      <height>13</height>
+      <width>41</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208C_F_CV</string>
     </property>
     <property name="text">
      <string>ALARMA SISTEMA DE DETECCIÒN DE INCENDIO</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbts208AT">
+   <widget class="WLabel" name="lbts208AT">
     <property name="geometry">
      <rect>
       <x>11</x>
@@ -103,11 +106,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208A_F_CV</string>
+    </property>
     <property name="text">
      <string>YS_208A</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbts208bT">
+   <widget class="WLabel" name="lbts208bT">
     <property name="geometry">
      <rect>
       <x>11</x>
@@ -115,6 +121,9 @@
       <width>46</width>
       <height>13</height>
      </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208B_F_CV</string>
     </property>
     <property name="text">
      <string>YS_208B</string>
@@ -206,28 +215,6 @@ color: rgb(0, 0, 0);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lePatin_2">
-    <property name="geometry">
-     <rect>
-      <x>94</x>
-      <y>50</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lealarma_1">
     <property name="geometry">
      <rect>
@@ -274,8 +261,8 @@ color: rgb(192, 192, 192);</string>
    <widget class="QCommandLinkButton" name="btnleAlarma_02">
     <property name="geometry">
      <rect>
-      <x>95</x>
-      <y>54</y>
+      <x>100</x>
+      <y>50</y>
       <width>110</width>
       <height>17</height>
      </rect>
@@ -291,6 +278,34 @@ color: rgb(192, 192, 192);</string>
       <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
     </property>
    </widget>
+   <widget class="WLabel" name="lbts208AT_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>55</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_PIT_208_PV_REAL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>????</string>
+    </property>
+   </widget>
+   <zorder>lbts208AT_2</zorder>
+   <zorder>lbPatinT</zorder>
+   <zorder>lbts208cT</zorder>
+   <zorder>lbts208AT</zorder>
+   <zorder>lbts208bT</zorder>
+   <zorder>lbAlarIncT</zorder>
+   <zorder>lbComMarcAT</zorder>
+   <zorder>lbComMarcBT</zorder>
+   <zorder>lePatin_1</zorder>
+   <zorder>lealarma_1</zorder>
+   <zorder>btnleAlarma_01</zorder>
+   <zorder>btnleAlarma_02</zorder>
   </widget>
   <widget class="QLabel" name="lbSisGasT">
    <property name="geometry">
@@ -1570,7 +1585,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string>NITROGEN</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_11">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_11">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1579,6 +1594,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_11_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1586,14 +1607,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_3">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_3">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1602,6 +1617,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_3_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1609,14 +1630,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_10">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_10">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1625,6 +1640,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_10_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1632,14 +1653,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_5">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_5">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1648,6 +1663,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_5_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1655,14 +1676,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_9">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_9">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1671,6 +1686,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_9_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1678,14 +1699,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_7">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_7">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1694,6 +1709,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_7_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1701,14 +1722,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_1">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_1">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1717,6 +1732,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_1_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1724,14 +1745,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_2">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_2">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1740,6 +1755,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_2_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1747,14 +1768,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_6">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_6">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1763,6 +1778,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_6_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1770,14 +1791,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_4">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_4">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1786,6 +1801,12 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_4_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -1793,14 +1814,8 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_8">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_8">
     <property name="geometry">
      <rect>
       <x>352</x>
@@ -1809,18 +1824,18 @@ background-color: rgba(255, 255, 255, 0);</string>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_8_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
-    </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_92">
@@ -2263,15 +2278,21 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string>%</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_14">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_14">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>48</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_14_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2279,22 +2300,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_15">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_15">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>62</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_15_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2302,22 +2326,22 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_20">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_20">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>139</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2325,22 +2349,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_17">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_17">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>93</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_17_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2348,22 +2375,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_16">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_16">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>78</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_16_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2371,22 +2401,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_13">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_13">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>32</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_13_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2394,22 +2427,22 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_19">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_19">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>123</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2417,22 +2450,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_12">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_12">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>17</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_12_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2440,22 +2476,22 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_21">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_21">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>154</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2463,22 +2499,25 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="lbGAS_CHROMOVal_18">
+   <widget class="WLabel" name="lbGAS_CHROMOVal_18">
     <property name="geometry">
      <rect>
-      <x>903</x>
+      <x>902</x>
       <y>107</y>
       <width>50</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_18_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>9</pointsize>
@@ -2486,17 +2525,14 @@ background-color: rgba(255, 255, 255, 0);</string>
       <bold>true</bold>
      </font>
     </property>
-    <property name="text">
-     <string>00.00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lbGAS_CHROMOU_21">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>154</y>
       <width>60</width>
       <height>16</height>
@@ -2519,7 +2555,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_15">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>62</y>
       <width>60</width>
       <height>16</height>
@@ -2542,7 +2578,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_13">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>32</y>
       <width>60</width>
       <height>16</height>
@@ -2565,7 +2601,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_14">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>48</y>
       <width>60</width>
       <height>16</height>
@@ -2588,7 +2624,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_16">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>78</y>
       <width>60</width>
       <height>16</height>
@@ -2611,7 +2647,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_17">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>93</y>
       <width>60</width>
       <height>16</height>
@@ -2634,7 +2670,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_12">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>17</y>
       <width>60</width>
       <height>16</height>
@@ -2657,7 +2693,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_20">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>139</y>
       <width>60</width>
       <height>16</height>
@@ -2680,7 +2716,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_19">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>123</y>
       <width>60</width>
       <height>16</height>
@@ -2703,7 +2739,7 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="lbGAS_CHROMOU_18">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>952</x>
       <y>107</y>
       <width>60</width>
       <height>16</height>
@@ -3356,6 +3392,11 @@ GAS</string>
    <class>AWMultiObject</class>
    <extends>QWidget</extends>
    <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
   </customwidget>
  </customwidgets>
  <resources>

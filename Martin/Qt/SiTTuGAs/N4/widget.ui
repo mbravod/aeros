@@ -364,7 +364,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="lbNox">
+    <widget class="WLabel" name="lbNox">
      <property name="geometry">
       <rect>
        <x>14</x>
@@ -373,16 +373,19 @@
        <height>20</height>
       </rect>
      </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_NOX_PPM_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
      <property name="font">
       <font>
        <pointsize>9</pointsize>
       </font>
      </property>
-     <property name="text">
-      <string>????</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
      </property>
     </widget>
    </widget>
@@ -467,6 +470,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_NOX_CORR_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_17">
     <property name="geometry">
@@ -547,6 +574,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_NOX_LBS_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_30">
     <property name="geometry">
@@ -595,6 +646,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_NOX_LBMM_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_33">
     <property name="geometry">
@@ -661,25 +736,28 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="lbCo">
+    <widget class="WLabel" name="lbNox_2">
      <property name="geometry">
       <rect>
-       <x>14</x>
+       <x>10</x>
        <y>0</y>
        <width>111</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_CO_PPM_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
      </property>
      <property name="font">
       <font>
        <pointsize>9</pointsize>
       </font>
      </property>
-     <property name="text">
-      <string>????</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
      </property>
     </widget>
    </widget>
@@ -865,6 +943,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_CO_LBMM_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_95">
     <property name="geometry">
@@ -881,6 +983,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_CO_LBS_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_96">
     <property name="geometry">
@@ -897,6 +1023,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_CO_CORR_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_97">
     <property name="geometry">
@@ -995,25 +1145,28 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="lbO2">
+    <widget class="WLabel" name="lbNox_3">
      <property name="geometry">
       <rect>
-       <x>14</x>
+       <x>10</x>
        <y>0</y>
        <width>111</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_O2_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
      </property>
      <property name="font">
       <font>
        <pointsize>9</pointsize>
       </font>
      </property>
-     <property name="text">
-      <string>????</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
      </property>
     </widget>
    </widget>
@@ -1162,6 +1315,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_HHV_GAS_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_181">
     <property name="geometry">
@@ -1178,6 +1355,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_FUEL_FD_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_182">
     <property name="geometry">
@@ -1194,6 +1395,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_EO_HEAT_INPUT_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_183">
     <property name="geometry">
@@ -1210,6 +1435,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_ERO_INCAL_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_184">
     <property name="geometry">
@@ -1226,6 +1475,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_ERO_CEM_TROUBLE_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_185">
     <property name="geometry">
@@ -1242,6 +1515,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_ERO_CEM_MAINT_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_186">
     <property name="geometry">
@@ -1258,6 +1555,30 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="WLabel" name="lbNox_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_NODE_CEMS_ERO_CAL_FAIL_F_CV</string>
+     </property>
+     <property name="text">
+      <string>????</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Centro</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_187">
     <property name="geometry">
@@ -1755,6 +2076,13 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../Resources.qrc"/>
  </resources>

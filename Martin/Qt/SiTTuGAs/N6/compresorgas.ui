@@ -44,7 +44,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCompGasT">
+  <widget class="WLabel" name="lbCompGasT">
    <property name="geometry">
     <rect>
      <x>402</x>
@@ -53,6 +53,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="text">
+    <string>COMPRESOR DE GAS</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>11</pointsize>
@@ -60,14 +63,8 @@
      <bold>true</bold>
     </font>
    </property>
-   <property name="text">
-    <string>COMPRESOR DE GAS</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbCommAlmrT">
+  <widget class="WLabel" name="lbCommAlmrT">
    <property name="geometry">
     <rect>
      <x>19</x>
@@ -80,7 +77,7 @@
     <string>GC_B_COMM_ALMR</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCommSdT">
+  <widget class="WLabel" name="lbCommSdT">
    <property name="geometry">
     <rect>
      <x>19</x>
@@ -93,7 +90,7 @@
     <string>GC_B_COMM_SD</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbZSO3101T">
+  <widget class="WLabel" name="lbZSO3101T">
    <property name="geometry">
     <rect>
      <x>19</x>
@@ -106,7 +103,7 @@
     <string>GC_B_ZSO_3101</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbZSO2102T">
+  <widget class="WLabel" name="lbZSO2102T">
    <property name="geometry">
     <rect>
      <x>19</x>
@@ -119,7 +116,7 @@
     <string>GC_B_ZSO_2102</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbZSO2101T">
+  <widget class="WLabel" name="lbZSO2101T">
    <property name="geometry">
     <rect>
      <x>19</x>
@@ -132,7 +129,7 @@
     <string>GC_B_ZSO_2101</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbEdoAlarmT">
+  <widget class="WLineEdit" name="lbEdoAlarmT">
    <property name="geometry">
     <rect>
      <x>158</x>
@@ -144,11 +141,17 @@
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_COMM_ALRM_A_ALMEXT2</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="text">
     <string>ESTADO DE ALARMAS</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbEdoParosT">
+  <widget class="WLineEdit" name="lbEdoParosT">
    <property name="geometry">
     <rect>
      <x>158</x>
@@ -160,11 +163,17 @@
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_COMM_SD_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="text">
     <string>ESTADO DE PAROS</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbCompMarchaT">
+  <widget class="WLineEdit" name="lbCompMarchaT">
    <property name="geometry">
     <rect>
      <x>158</x>
@@ -176,11 +185,17 @@
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_ZSO_3101_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="text">
     <string>COMPRESOR EN MARCHA</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbVentMarchaT">
+  <widget class="WLineEdit" name="lbVentMarchaT">
    <property name="geometry">
     <rect>
      <x>158</x>
@@ -192,11 +207,17 @@
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_ZSO_2102_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="text">
     <string>VENTILADOR EN MARCHA</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbBombaLubT">
+  <widget class="WLineEdit" name="lbBombaLubT">
    <property name="geometry">
     <rect>
      <x>158</x>
@@ -208,11 +229,17 @@
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_ZSO_2101_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="text">
     <string>BONBA DE LUBRICACION EN MARCHA</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbPI1101T">
+  <widget class="WLabel" name="lbPI1101T">
    <property name="geometry">
     <rect>
      <x>52</x>
@@ -221,19 +248,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PI_1101</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_PI_1101</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1101">
+  <widget class="WLabel" name="lbPI1101">
    <property name="geometry">
     <rect>
      <x>83</x>
@@ -242,14 +266,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PI_1101_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI_1102">
+  <widget class="WLabel" name="lbTI_1102">
    <property name="geometry">
     <rect>
      <x>254</x>
@@ -258,14 +282,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_TI_1102_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI_1102T">
+  <widget class="WLabel" name="lbTI_1102T">
    <property name="geometry">
     <rect>
      <x>225</x>
@@ -274,19 +298,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_TI_1102</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_TI_1102</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI_1105">
+  <widget class="WLabel" name="lbTI_1105">
    <property name="geometry">
     <rect>
      <x>281</x>
@@ -295,14 +316,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_TI_1105_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI_1105T">
+  <widget class="WLabel" name="lbTI_1105T">
    <property name="geometry">
     <rect>
      <x>251</x>
@@ -311,19 +332,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_TI_1105</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_TI_1105</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1102">
+  <widget class="WLabel" name="lbPI1102">
    <property name="geometry">
     <rect>
      <x>113</x>
@@ -332,14 +350,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PI_1102_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1102T">
+  <widget class="WLabel" name="lbPI1102T">
    <property name="geometry">
     <rect>
      <x>82</x>
@@ -348,19 +366,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PI_1102</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_PI_1102</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1105">
+  <widget class="WLabel" name="lbPI1105">
    <property name="geometry">
     <rect>
      <x>277</x>
@@ -369,14 +384,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PI_1105_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1105T">
+  <widget class="WLabel" name="lbPI1105T">
    <property name="geometry">
     <rect>
      <x>247</x>
@@ -385,19 +400,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PI_1105</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_PI_1105</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1106">
+  <widget class="WLabel" name="lbLI1106">
    <property name="geometry">
     <rect>
      <x>117</x>
@@ -406,14 +418,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_LI_1106_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1106T">
+  <widget class="WLabel" name="lbLI1106T">
    <property name="geometry">
     <rect>
      <x>87</x>
@@ -422,19 +434,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_LI_1106</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_LI_1106</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1201">
+  <widget class="WLabel" name="lbTI1201">
    <property name="geometry">
     <rect>
      <x>649</x>
@@ -443,14 +452,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_TI_1201_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1201T">
+  <widget class="WLabel" name="lbTI1201T">
    <property name="geometry">
     <rect>
      <x>619</x>
@@ -459,19 +468,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_TI_1201</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_TI_1201</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1204">
+  <widget class="WLabel" name="lbTI1204">
    <property name="geometry">
     <rect>
      <x>675</x>
@@ -480,14 +486,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_TI_1204_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1204T">
+  <widget class="WLabel" name="lbTI1204T">
    <property name="geometry">
     <rect>
      <x>646</x>
@@ -496,19 +502,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_TI_1204</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_TI_1204</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1205">
+  <widget class="WLabel" name="lbLI1205">
    <property name="geometry">
     <rect>
      <x>512</x>
@@ -517,14 +520,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_LI_1205_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1205T">
+  <widget class="WLabel" name="lbLI1205T">
    <property name="geometry">
     <rect>
      <x>481</x>
@@ -533,19 +536,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_LI_1205</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_LI_1205</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1204">
+  <widget class="WLabel" name="lbPI1204">
    <property name="geometry">
     <rect>
      <x>671</x>
@@ -554,14 +554,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PI_1204_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1204T">
+  <widget class="WLabel" name="lbPI1204T">
    <property name="geometry">
     <rect>
      <x>642</x>
@@ -570,19 +570,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PI_1204</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_PI_1204</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbEntGasT">
+  <widget class="WLabel" name="lbEntGasT">
    <property name="geometry">
     <rect>
      <x>1</x>
@@ -591,17 +588,14 @@
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>6</pointsize>
-    </font>
-   </property>
    <property name="text">
     <string>ENTRADA DE
  GAS</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QPushButton" name="btDescription">
@@ -625,7 +619,7 @@
     <string>DESCRIPTIONS</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbS100T">
+  <widget class="WLabel" name="lbS100T">
    <property name="geometry">
     <rect>
      <x>194</x>
@@ -634,20 +628,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>S-100</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>S-100</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbB100T">
+  <widget class="WLabel" name="lbB100T">
    <property name="geometry">
     <rect>
      <x>355</x>
@@ -656,20 +647,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>B-100</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>B-100</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbC100T">
+  <widget class="WLabel" name="lbC100T">
    <property name="geometry">
     <rect>
      <x>357</x>
@@ -678,20 +666,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>C-100</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>C-100</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbB200T">
+  <widget class="WLabel" name="lbB200T">
    <property name="geometry">
     <rect>
      <x>355</x>
@@ -700,20 +685,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>B-200</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>B-200</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbS200T">
+  <widget class="WLabel" name="lbS200T">
    <property name="geometry">
     <rect>
      <x>592</x>
@@ -722,20 +704,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>S-200</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>S-200</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbM200T">
+  <widget class="WLabel" name="lbM200T">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -744,20 +723,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>M-200</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>M-200</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbB210T">
+  <widget class="WLabel" name="lbB210T">
    <property name="geometry">
     <rect>
      <x>752</x>
@@ -766,20 +742,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>B-210</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>B-210</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbC200T">
+  <widget class="WLabel" name="lbC200T">
    <property name="geometry">
     <rect>
      <x>755</x>
@@ -788,20 +761,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>C-200</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>C-200</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbB300T">
+  <widget class="WLabel" name="lbB300T">
    <property name="geometry">
     <rect>
      <x>752</x>
@@ -810,20 +780,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>B-300</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>B-300</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbF200T">
+  <widget class="WLabel" name="lbF200T">
    <property name="geometry">
     <rect>
      <x>931</x>
@@ -832,20 +799,17 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="text">
+    <string>F-200</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
      <underline>true</underline>
     </font>
    </property>
-   <property name="text">
-    <string>F-200</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1305">
+  <widget class="WLabel" name="lbTI1305">
    <property name="geometry">
     <rect>
      <x>837</x>
@@ -854,14 +818,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_TI_1305_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbTI1305T">
+  <widget class="WLabel" name="lbTI1305T">
    <property name="geometry">
     <rect>
      <x>807</x>
@@ -870,19 +834,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_TI_1305</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_TI_1305</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1308">
+  <widget class="WLabel" name="lbLI1308">
    <property name="geometry">
     <rect>
      <x>837</x>
@@ -891,14 +852,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_LI_1308_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1308T">
+  <widget class="WLabel" name="lbLI1308T">
    <property name="geometry">
     <rect>
      <x>806</x>
@@ -907,19 +868,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_LI_1308</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_LI_1308</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1310">
+  <widget class="WLabel" name="lbLI1310">
    <property name="geometry">
     <rect>
      <x>837</x>
@@ -928,14 +886,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_LI_1310_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbLI1310T">
+  <widget class="WLabel" name="lbLI1310T">
    <property name="geometry">
     <rect>
      <x>806</x>
@@ -944,19 +902,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_LI_1310</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_LI_1310</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPDI1309">
+  <widget class="WLabel" name="lbPDI1309">
    <property name="geometry">
     <rect>
      <x>837</x>
@@ -965,14 +920,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PDI_1309_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPDI1309T">
+  <widget class="WLabel" name="lbPDI1309T">
    <property name="geometry">
     <rect>
      <x>805</x>
@@ -981,19 +936,16 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PDI_1309</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>GC_B_PDI_1309</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbSalGasT">
+  <widget class="WLabel" name="lbSalGasT">
    <property name="geometry">
     <rect>
      <x>950</x>
@@ -1002,20 +954,17 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="text">
+    <string>SALIDA DE
+ GAS</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>6</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string>SALIDA DE
- GAS</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1306">
+  <widget class="WLabel" name="lbPI1306">
    <property name="geometry">
     <rect>
      <x>944</x>
@@ -1024,14 +973,14 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_PI_1306_F_CV</string>
+   </property>
    <property name="text">
     <string>????</string>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
   </widget>
-  <widget class="QLabel" name="lbPI1306T">
+  <widget class="WLabel" name="lbPI1306T">
    <property name="geometry">
     <rect>
      <x>914</x>
@@ -1040,16 +989,13 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="text">
+    <string>GC_B_PI_1306</string>
+   </property>
    <property name="font">
     <font>
      <pointsize>7</pointsize>
     </font>
-   </property>
-   <property name="text">
-    <string>GC_B_PI_1306</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="btImpPant">
@@ -1091,7 +1037,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QLabel" name="lbMotorT">
+   <widget class="WLabel" name="lbMotorT">
     <property name="geometry">
      <rect>
       <x>86</x>
@@ -1103,11 +1049,8 @@
     <property name="text">
      <string>MOTOR</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbPI2103T">
+   <widget class="WLabel" name="lbPI2103T">
     <property name="geometry">
      <rect>
       <x>79</x>
@@ -1116,19 +1059,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_PI_2103</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_PI_2103</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbPI2103">
+   <widget class="WLabel" name="lbPI2103">
     <property name="geometry">
      <rect>
       <x>109</x>
@@ -1137,14 +1077,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_PI_2103_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbVI2103T">
+   <widget class="WLabel" name="lbVI2103T">
     <property name="geometry">
      <rect>
       <x>79</x>
@@ -1153,19 +1093,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_VI_2103</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_VI_2103</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbVI2103">
+   <widget class="WLabel" name="lbVI2103">
     <property name="geometry">
      <rect>
       <x>109</x>
@@ -1174,14 +1111,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_VI_2103_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbVI3101T">
+   <widget class="WLabel" name="lbVI3101T">
     <property name="geometry">
      <rect>
       <x>79</x>
@@ -1190,19 +1127,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_VI_3101</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_VI_3101</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbVI3101">
+   <widget class="WLabel" name="lbVI3101">
     <property name="geometry">
      <rect>
       <x>109</x>
@@ -1211,14 +1145,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_VI_3101_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3113T">
+   <widget class="WLabel" name="lbTI3113T">
     <property name="geometry">
      <rect>
       <x>79</x>
@@ -1227,19 +1161,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_TI_3113</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_TI_3113</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3113">
+   <widget class="WLabel" name="lbTI3113">
     <property name="geometry">
      <rect>
       <x>109</x>
@@ -1248,14 +1179,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_TI_3113_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbCompresorT">
+   <widget class="WLabel" name="lbCompresorT">
     <property name="geometry">
      <rect>
       <x>234</x>
@@ -1267,11 +1198,8 @@
     <property name="text">
      <string>COMPRESOR</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI2102T">
+   <widget class="WLabel" name="lbTI2102T">
     <property name="geometry">
      <rect>
       <x>227</x>
@@ -1280,19 +1208,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_TI_2102</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_TI_2102</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI2102">
+   <widget class="WLabel" name="lbTI2102">
     <property name="geometry">
      <rect>
       <x>256</x>
@@ -1301,14 +1226,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_TI_2102_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3111AT">
+   <widget class="WLabel" name="lbTI3111AT">
     <property name="geometry">
      <rect>
       <x>225</x>
@@ -1317,19 +1242,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_TI_3111A</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_TI_3111A</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3111">
+   <widget class="WLabel" name="lbTI3111">
     <property name="geometry">
      <rect>
       <x>256</x>
@@ -1338,14 +1260,14 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_TI_3111A_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3112AT">
+   <widget class="WLabel" name="lbTI3112AT">
     <property name="geometry">
      <rect>
       <x>225</x>
@@ -1354,19 +1276,16 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GC_B_TI_3112A</string>
+    </property>
     <property name="font">
      <font>
       <pointsize>7</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>GC_B_TI_3112A</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="lbTI3112">
+   <widget class="WLabel" name="lbTI3112">
     <property name="geometry">
      <rect>
       <x>256</x>
@@ -1375,15 +1294,15 @@
       <height>13</height>
      </rect>
     </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GC_B_TI_3112A_F_CV</string>
+    </property>
     <property name="text">
      <string>????</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
   </widget>
-  <widget class="QLineEdit" name="leAlam">
+  <widget class="WLineEdit" name="leAlam">
    <property name="geometry">
     <rect>
      <x>453</x>
@@ -1395,38 +1314,56 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_GC_B_VI_3120_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlam2">
+  <widget class="WLineEdit" name="leAlam2">
    <property name="geometry">
     <rect>
-     <x>398</x>
+     <x>390</x>
      <y>597</y>
      <width>99</width>
-     <height>33</height>
+     <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSA_FM_1_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="leAlam3">
+  <widget class="WLineEdit" name="leAlam3">
    <property name="geometry">
     <rect>
      <x>523</x>
      <y>597</y>
      <width>99</width>
-     <height>33</height>
+     <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 0, 0);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSA_CM_1_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
   <widget class="QCommandLinkButton" name="btnleAlam2">
    <property name="geometry">
     <rect>
-     <x>398</x>
-     <y>598</y>
+     <x>390</x>
+     <y>597</y>
      <width>99</width>
      <height>33</height>
     </rect>
@@ -1445,7 +1382,7 @@
   <widget class="QCommandLinkButton" name="btnleAlam">
    <property name="geometry">
     <rect>
-     <x>453</x>
+     <x>452</x>
      <y>557</y>
      <width>100</width>
      <height>16</height>
@@ -1465,8 +1402,8 @@
   <widget class="QCommandLinkButton" name="btnleAlam3">
    <property name="geometry">
     <rect>
-     <x>523</x>
-     <y>598</y>
+     <x>522</x>
+     <y>597</y>
      <width>99</width>
      <height>33</height>
     </rect>
@@ -1482,7 +1419,122 @@
      <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
    </property>
   </widget>
+  <widget class="WLineEdit" name="leAlam3_2">
+   <property name="geometry">
+    <rect>
+     <x>523</x>
+     <y>615</y>
+     <width>99</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSA_PM_1_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlam2_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>615</y>
+     <width>99</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_YSA_FM_2_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>lbCompGasT</zorder>
+  <zorder>lbCommAlmrT</zorder>
+  <zorder>lbCommSdT</zorder>
+  <zorder>lbZSO3101T</zorder>
+  <zorder>lbZSO2102T</zorder>
+  <zorder>lbZSO2101T</zorder>
+  <zorder>lbEdoAlarmT</zorder>
+  <zorder>lbEdoParosT</zorder>
+  <zorder>lbCompMarchaT</zorder>
+  <zorder>lbVentMarchaT</zorder>
+  <zorder>lbBombaLubT</zorder>
+  <zorder>lbPI1101T</zorder>
+  <zorder>lbPI1101</zorder>
+  <zorder>lbTI_1102</zorder>
+  <zorder>lbTI_1102T</zorder>
+  <zorder>lbTI_1105</zorder>
+  <zorder>lbTI_1105T</zorder>
+  <zorder>lbPI1102</zorder>
+  <zorder>lbPI1102T</zorder>
+  <zorder>lbPI1105</zorder>
+  <zorder>lbPI1105T</zorder>
+  <zorder>lbLI1106</zorder>
+  <zorder>lbLI1106T</zorder>
+  <zorder>lbTI1201</zorder>
+  <zorder>lbTI1201T</zorder>
+  <zorder>lbTI1204</zorder>
+  <zorder>lbTI1204T</zorder>
+  <zorder>lbLI1205</zorder>
+  <zorder>lbLI1205T</zorder>
+  <zorder>lbPI1204</zorder>
+  <zorder>lbPI1204T</zorder>
+  <zorder>lbEntGasT</zorder>
+  <zorder>btDescription</zorder>
+  <zorder>lbS100T</zorder>
+  <zorder>lbB100T</zorder>
+  <zorder>lbC100T</zorder>
+  <zorder>lbB200T</zorder>
+  <zorder>lbS200T</zorder>
+  <zorder>lbM200T</zorder>
+  <zorder>lbB210T</zorder>
+  <zorder>lbC200T</zorder>
+  <zorder>lbB300T</zorder>
+  <zorder>lbF200T</zorder>
+  <zorder>lbTI1305</zorder>
+  <zorder>lbTI1305T</zorder>
+  <zorder>lbLI1308</zorder>
+  <zorder>lbLI1308T</zorder>
+  <zorder>lbLI1310</zorder>
+  <zorder>lbLI1310T</zorder>
+  <zorder>lbPDI1309</zorder>
+  <zorder>lbPDI1309T</zorder>
+  <zorder>lbSalGasT</zorder>
+  <zorder>lbPI1306</zorder>
+  <zorder>lbPI1306T</zorder>
+  <zorder>btImpPant</zorder>
+  <zorder>frame</zorder>
+  <zorder>leAlam</zorder>
+  <zorder>leAlam2</zorder>
+  <zorder>leAlam3</zorder>
+  <zorder>btnleAlam</zorder>
+  <zorder>leAlam3_2</zorder>
+  <zorder>leAlam2_2</zorder>
+  <zorder>btnleAlam3</zorder>
+  <zorder>btnleAlam2</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLineEdit</class>
+   <extends>QWidget</extends>
+   <header>wlineedit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../Resources.qrc"/>
  </resources>

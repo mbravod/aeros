@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'sisaguares.ui'
 **
-** Created: Thu 12. Dec 21:16:51 2013
+** Created: Fri 13. Dec 14:58:20 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,6 +20,7 @@
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlineedit.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -51,6 +52,10 @@ public:
     QCommandLinkButton *btnEmergente_2;
     QCommandLinkButton *btnEmergente_3;
     QCommandLinkButton *btnEmergente_4;
+    WLineEdit *wLineEdit;
+    WLineEdit *wLineEdit_2;
+    WLineEdit *wLineEdit_3;
+    WLineEdit *wLineEdit_4;
 
     void setupUi(QWidget *SisAguaRes)
     {
@@ -196,6 +201,51 @@ public:
         btnEmergente_4->setGeometry(QRect(907, 450, 100, 19));
         btnEmergente_4->setStyleSheet(QString::fromUtf8(""));
         btnEmergente_4->setIcon(icon);
+        wLineEdit = new WLineEdit(SisAguaRes);
+        wLineEdit->setObjectName(QString::fromUtf8("wLineEdit"));
+        wLineEdit->setGeometry(QRect(27, 430, 98, 20));
+        wLineEdit->setProperty("Fondo_Inicial", QVariant(WLineEdit::Rojo));
+        wLineEdit_2 = new WLineEdit(SisAguaRes);
+        wLineEdit_2->setObjectName(QString::fromUtf8("wLineEdit_2"));
+        wLineEdit_2->setGeometry(QRect(27, 450, 98, 20));
+        wLineEdit_3 = new WLineEdit(SisAguaRes);
+        wLineEdit_3->setObjectName(QString::fromUtf8("wLineEdit_3"));
+        wLineEdit_3->setGeometry(QRect(908, 450, 98, 20));
+        wLineEdit_3->setProperty("Fondo_Inicial", QVariant(WLineEdit::Rojo));
+        wLineEdit_3->setProperty("Fondo_A", QVariant(WLineEdit::A_SinColor));
+        wLineEdit_4 = new WLineEdit(SisAguaRes);
+        wLineEdit_4->setObjectName(QString::fromUtf8("wLineEdit_4"));
+        wLineEdit_4->setGeometry(QRect(908, 430, 98, 20));
+        wLineEdit_4->setProperty("Fondo_Inicial", QVariant(WLineEdit::Rojo));
+        btnEmergente_2->raise();
+        label->raise();
+        lbSistAguaResT->raise();
+        lbDes082T->raise();
+        lbDes220T->raise();
+        lbDes177T->raise();
+        lbDes178T->raise();
+        lbDesSk192T_2->raise();
+        lbDes009T->raise();
+        lbDes1004T->raise();
+        lbDes079T->raise();
+        lbDesGTGT->raise();
+        lbDesGTG2T->raise();
+        leAlarm1->raise();
+        leAlarm2->raise();
+        lbTannRecResiT->raise();
+        btImpPant->raise();
+        lbT267T->raise();
+        leAlarm4->raise();
+        leAlarm3->raise();
+        lbTannRecAguaResiT->raise();
+        lbT268T->raise();
+        btnEmergente_1->raise();
+        btnEmergente_3->raise();
+        btnEmergente_4->raise();
+        wLineEdit->raise();
+        wLineEdit_2->raise();
+        wLineEdit_3->raise();
+        wLineEdit_4->raise();
 
         retranslateUi(SisAguaRes);
 
@@ -238,6 +288,12 @@ public:
         btnEmergente_2->setText(QString());
         btnEmergente_3->setText(QString());
         btnEmergente_4->setText(QString());
+        wLineEdit->setId(QApplication::translate("SisAguaRes", "p_Fix32_NODE_LSH_267B_A_Tag", 0, QApplication::UnicodeUTF8));
+        wLineEdit_2->setId(QApplication::translate("SisAguaRes", "p_Fix32_NODE_LSH_267A_A_Tag", 0, QApplication::UnicodeUTF8));
+        wLineEdit_3->setId(QApplication::translate("SisAguaRes", "p_Fix32_NODE_LSH_268A_A_Tag", 0, QApplication::UnicodeUTF8));
+        wLineEdit_3->setText(QString());
+        wLineEdit_3->setText_B(QString());
+        wLineEdit_4->setId(QApplication::translate("SisAguaRes", "p_Fix32_NODE_LSH_268B_A_Tag", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
