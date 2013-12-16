@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
         delete splash;
         return a.exit();
     }
-/*
-    if(s.m_firstSettings.mode==Settings::Consola){
+
+   /*if(s.m_firstSettings.mode==Settings::Consola){
         {
             PassWDialog *pw = new PassWDialog();
             splash->finish(pw);
@@ -77,12 +77,15 @@ int main(int argc, char *argv[])
         splash->finish(w);
         //Iteramos hasta desplegar todas las GUI de SiTTuGAs
         foreach(SiTTuGAs *W, list){
-            W->showFullScreen();
+            //Las pantallas mantienen un tamaño de  1024 X 662 por lo que para presentar la interfaz adecuadamente la pantalla debe tener la misma resolución
+            //W->showFullScreen();
+            //temporalmete utilizaremos solo el desplegado normal de la pantalla para cada instancia generada
+            W->show();
         }
 
-///
 
-  //  }
+
+    //}
 
     return a.exec();
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'filtrogas.ui'
 **
-** Created: Fri 13. Dec 14:43:59 2013
+** Created: Fri 13. Dec 19:34:25 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,9 +17,9 @@
 #include <QtGui/QCommandLinkButton>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
+#include "wlineedit.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -37,12 +37,12 @@ public:
     QLabel *lbBOP082;
     QLabel *lbGasIzqT;
     QLabel *lbGasderT;
-    QLineEdit *leAlarma_1;
-    QLineEdit *leAlarma_2;
-    QLineEdit *leAlarma_5;
-    QLineEdit *leAlarma_6;
-    QLineEdit *leAlarma_4;
-    QLineEdit *leAlarma_3;
+    WLineEdit *leAlarma_1;
+    WLineEdit *leAlarma_2;
+    WLineEdit *leAlarma_5;
+    WLineEdit *leAlarma_6;
+    WLineEdit *leAlarma_4;
+    WLineEdit *leAlarma_3;
     QPushButton *btImpr;
     QCommandLinkButton *btnleAlarma_1;
     QCommandLinkButton *btnleAlarma_2;
@@ -114,32 +114,32 @@ public:
         lbGasderT->setGeometry(QRect(855, 105, 51, 31));
         lbGasderT->setFont(font2);
         lbGasderT->setAlignment(Qt::AlignCenter);
-        leAlarma_1 = new QLineEdit(filtroGas);
+        leAlarma_1 = new WLineEdit(filtroGas);
         leAlarma_1->setObjectName(QString::fromUtf8("leAlarma_1"));
         leAlarma_1->setGeometry(QRect(194, 290, 100, 20));
         leAlarma_1->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
-        leAlarma_2 = new QLineEdit(filtroGas);
+        leAlarma_2 = new WLineEdit(filtroGas);
         leAlarma_2->setObjectName(QString::fromUtf8("leAlarma_2"));
         leAlarma_2->setGeometry(QRect(194, 380, 100, 20));
         leAlarma_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
-        leAlarma_5 = new QLineEdit(filtroGas);
+        leAlarma_5 = new WLineEdit(filtroGas);
         leAlarma_5->setObjectName(QString::fromUtf8("leAlarma_5"));
         leAlarma_5->setGeometry(QRect(673, 290, 100, 20));
         leAlarma_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
-        leAlarma_6 = new QLineEdit(filtroGas);
+        leAlarma_6 = new WLineEdit(filtroGas);
         leAlarma_6->setObjectName(QString::fromUtf8("leAlarma_6"));
         leAlarma_6->setGeometry(QRect(673, 380, 100, 20));
         leAlarma_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
-        leAlarma_4 = new QLineEdit(filtroGas);
+        leAlarma_4 = new WLineEdit(filtroGas);
         leAlarma_4->setObjectName(QString::fromUtf8("leAlarma_4"));
         leAlarma_4->setGeometry(QRect(412, 208, 100, 20));
         leAlarma_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
 "color: rgb(128, 128, 128);"));
-        leAlarma_3 = new QLineEdit(filtroGas);
+        leAlarma_3 = new WLineEdit(filtroGas);
         leAlarma_3->setObjectName(QString::fromUtf8("leAlarma_3"));
         leAlarma_3->setGeometry(QRect(412, 180, 100, 20));
         leAlarma_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
@@ -202,6 +202,18 @@ public:
 "NATURAL", 0, QApplication::UnicodeUTF8));
         lbGasderT->setText(QApplication::translate("filtroGas", "GAS\n"
 "NATURAL", 0, QApplication::UnicodeUTF8));
+        leAlarma_1->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_LSH_082A_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_1->setText(QString());
+        leAlarma_2->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_LSH_082B_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_2->setText(QString());
+        leAlarma_5->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_LSH_082C_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_5->setText(QString());
+        leAlarma_6->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_LSH_082D_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_6->setText(QString());
+        leAlarma_4->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_DPISH_082_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_4->setText(QString());
+        leAlarma_3->setId(QApplication::translate("filtroGas", "p_Fix32_NODE_DPISHH_082_A_Tag", 0, QApplication::UnicodeUTF8));
+        leAlarma_3->setText(QString());
         btImpr->setText(QApplication::translate("filtroGas", "IMP PANT", 0, QApplication::UnicodeUTF8));
         btnleAlarma_1->setText(QString());
         btnleAlarma_2->setText(QString());

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'sisgascomb.ui'
 **
-** Created: Fri 13. Dec 16:39:29 2013
+** Created: Fri 13. Dec 19:34:25 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -220,7 +220,7 @@ public:
         lbPatinT->setAlignment(Qt::AlignCenter);
         lbts208cT = new WLabel(frame);
         lbts208cT->setObjectName(QString::fromUtf8("lbts208cT"));
-        lbts208cT->setGeometry(QRect(11, 103, 46, 13));
+        lbts208cT->setGeometry(QRect(11, 103, 41, 16));
         lbts208AT = new WLabel(frame);
         lbts208AT->setObjectName(QString::fromUtf8("lbts208AT"));
         lbts208AT->setGeometry(QRect(11, 79, 46, 13));
