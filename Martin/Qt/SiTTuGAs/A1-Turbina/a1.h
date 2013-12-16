@@ -73,6 +73,7 @@ class A1 : public Pantallas
 
     public:
         explicit A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
+        void cerrarVentanasEmergentes();
         ~A1();
 
 

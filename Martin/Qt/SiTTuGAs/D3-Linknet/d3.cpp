@@ -28,6 +28,34 @@ D3::D3(SiTTuGAs *siTTuGAs, HTTPRequest *shrdMem) :
     setMouseTracking( false );
 }
 
+void D3::cerrarVentanEmergente()
+{
+    for(int i=0; i<5; i++){
+        if(ctrVen[i] == true){
+            switch(i){
+                case analog04:
+                                eAnalog04->~N3N18();
+                                break;
+                case analog08:
+                                eAnalog08->~N3N39();
+                                break;
+                case analog08_2:
+                                eAnalog08_2->~N3N40();
+                                break;
+                case analog16:
+                                eAnalog16->~N3N41();
+                                break;
+                case analog16_2:
+                                eAnalog16_2->~N3N42();
+                                break;
+            }
+            ctrVen[i] = false;
+        }
+    }
+    Id = -1;
+    venActual = -1;
+}
+
 D3::~D3()
 {
     delete ui;
@@ -100,6 +128,7 @@ void D3::cerrarVentana(int i)
                         break;
 
     }
+    ctrVen [i] = false;
 }
 void D3::sltSeleccionarVentana(int id)
 {

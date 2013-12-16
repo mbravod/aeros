@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'n3n18.ui'
 **
-** Created: Fri 13. Dec 19:34:25 2013
+** Created: Mon 16. Dec 13:53:15 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -218,10 +218,10 @@ public:
         lbNum_4->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbFondo = new QLabel(N3N18);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
-        lbFondo->setGeometry(QRect(0, 0, 485, 251));
-        lbFondo->setMinimumSize(QSize(485, 251));
-        lbFondo->setMaximumSize(QSize(485, 251));
+        lbFondo->setGeometry(QRect(0, 0, 485, 209));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbTit_2 = new WLabel(N3N18);
         lbTit_2->setObjectName(QString::fromUtf8("lbTit_2"));
         lbTit_2->setGeometry(QRect(40, 70, 340, 16));

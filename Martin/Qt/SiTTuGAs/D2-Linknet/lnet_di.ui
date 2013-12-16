@@ -1805,23 +1805,17 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>485</width>
-     <height>421</height>
+     <height>425</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>485</width>
-     <height>421</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>485</width>
-     <height>421</height>
-    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>

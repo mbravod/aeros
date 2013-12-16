@@ -28,7 +28,6 @@ D1::D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
 
     Id = -1;
     venActual = -1;
-    qDebug()<< "Ultima posicion de ctrVen: "<<ctrVen[11];
     //Evitamos que se de seguimiento al raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );
 }
@@ -36,6 +35,53 @@ D1::D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
 D1::~D1()
 {
     delete ui;
+}
+
+void D1::cerrarVentanasEmergentes()
+{
+    for(int i=0; i<11; i++){
+        if(ctrVen[i] == true){
+            switch(i){
+                case analog04:
+                            eAnalog04->~Analog04();
+                            break;
+                case analog08:
+                            eAnalog08->~Analog08();
+                            break;
+                case analog08_2:
+                            eAnalog08_2->~Analog08_2();
+                            break;
+                case analog16:
+                            eAnalog16->~Analog16();
+                            break;
+                case analog16_2:
+                            eAnalog16_2->~Analog16_2();
+                            break;
+                case analog16_3:
+                            eAnalog16_3->~Analog16_3();
+                            break;
+                case analog24:
+                            eAnalog24->~Analog24();
+                            break;
+                case analog24_s2:
+                            eAnalog24_s2->~Analog24_S2();
+                            break;
+                case digital16:
+                            eDigital16->~Digital16();
+                            break;
+                case digital24:
+                            eDigital24->~Digital24();
+                            break;
+                case digital24_2:
+                            eDigital24_2->~Digital24_2();
+                            break;
+
+            }
+            ctrVen[i] = false;
+        }
+    }
+    Id = -1;
+    venActual = -1;
 }
 
 

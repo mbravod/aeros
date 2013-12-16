@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digital24_2.ui'
 **
-** Created: Fri 13. Dec 19:34:24 2013
+** Created: Mon 16. Dec 13:53:15 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -510,6 +510,8 @@ public:
         lbFondo->setMinimumSize(QSize(485, 590));
         lbFondo->setMaximumSize(QSize(485, 590));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbUni_7 = new WLabel(panel1);
         lbUni_7->setObjectName(QString::fromUtf8("lbUni_7"));
         lbUni_7->setGeometry(QRect(420, 173, 51, 16));

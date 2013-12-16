@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'analog24.ui'
 **
-** Created: Fri 13. Dec 19:34:22 2013
+** Created: Mon 16. Dec 13:53:15 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -337,10 +337,10 @@ public:
         lbAI_12->setProperty("Alineacion", QVariant(WLabel::Derecha));
         lbFondo = new QLabel(panel1);
         lbFondo->setObjectName(QString::fromUtf8("lbFondo"));
-        lbFondo->setGeometry(QRect(0, 0, 485, 590));
-        lbFondo->setMinimumSize(QSize(485, 590));
-        lbFondo->setMaximumSize(QSize(485, 590));
+        lbFondo->setGeometry(QRect(0, 0, 485, 587));
         lbFondo->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo->setFrameShape(QFrame::Box);
+        lbFondo->setFrameShadow(QFrame::Sunken);
         lbNumAI_23 = new WLabel(panel1);
         lbNumAI_23->setObjectName(QString::fromUtf8("lbNumAI_23"));
         lbNumAI_23->setGeometry(QRect(10, 495, 21, 16));

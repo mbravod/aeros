@@ -45,6 +45,7 @@ class D1 : public Pantallas
 public:
     explicit D1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
     ~D1();
+    void cerrarVentanasEmergentes();
     void setLbInd_1(QString s);
     void setLbInd_2(QString s);
     void setLbInd_3(QString s);
@@ -117,15 +118,15 @@ private:
     //Consideramos todas las subventanas emergentes
     Analog04 *eAnalog04;
     Analog08 *eAnalog08;
-     Analog08_2  *eAnalog08_2;
-     Analog16 *eAnalog16;
-     Analog16_2 *eAnalog16_2;
-     Analog16_3 *eAnalog16_3;
-     Analog24 *eAnalog24;
-     Analog24_S2 *eAnalog24_s2;
-     Digital16 *eDigital16;
-     Digital24 *eDigital24;
-     Digital24_2 *eDigital24_2;
+    Analog08_2  *eAnalog08_2;
+    Analog16 *eAnalog16;
+    Analog16_2 *eAnalog16_2;
+    Analog16_3 *eAnalog16_3;
+    Analog24 *eAnalog24;
+    Analog24_S2 *eAnalog24_s2;
+    Digital16 *eDigital16;
+    Digital24 *eDigital24;
+    Digital24_2 *eDigital24_2;
 
 
 protected:

@@ -49,6 +49,7 @@ void SiTTuGAs::ChangeWin(int n)
         case ID_A1:
                     if(lst.at(n)->widget() != NULL){
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
+                        a1->cerrarVentanasEmergentes();
                         a1->setUpdateableChildrenList();
                         // *** Verificar que hace el metodo Update *(al parecer uno es implementado por la herencia a la clase "pantallas")
                         a1->update();
@@ -579,6 +580,7 @@ void SiTTuGAs::ChangeWin(int n)
                     break;
         case ID_D1:
                     if(lst.at(n)->widget() != NULL){
+                        d1->cerrarVentanasEmergentes();
                         d1->setUpdateableChildrenList();
                         d1->update();
                         ui->lbTitle->setText(d1->getTitle());
@@ -602,6 +604,7 @@ void SiTTuGAs::ChangeWin(int n)
         case ID_D2:
                     if(lst.at(n)->widget() != NULL){
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
+                        d2->cerrarVentanasEmergentes();
                         d2->setUpdateableChildrenList();
                         d2->update();
                         ui->lbTitle->setText(d2->getTitle());
@@ -625,6 +628,7 @@ void SiTTuGAs::ChangeWin(int n)
         case ID_D3:
                     if(lst.at(n)->widget() != NULL){
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
+                        d3->cerrarVentanEmergente();
                         d3->setUpdateableChildrenList();
                         d3->update();
                         ui->lbTitle->setText(d3->getTitle());

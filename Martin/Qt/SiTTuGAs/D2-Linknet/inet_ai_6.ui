@@ -1808,6 +1808,12 @@ background-color: rgb(74, 110, 195);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
    <property name="text">
     <string/>
    </property>

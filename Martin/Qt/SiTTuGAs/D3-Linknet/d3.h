@@ -27,6 +27,7 @@ class D3 : public Pantallas
     
 public:
     explicit D3(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
+    void cerrarVentanEmergente();
     ~D3();
 
 public slots:

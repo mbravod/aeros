@@ -72,6 +72,7 @@ class D2 : public Pantallas
     
 public:
     explicit D2(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
+    void cerrarVentanasEmergentes();
     ~D2();
 
 public slots:

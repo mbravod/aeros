@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digital16.ui'
 **
-** Created: Fri 13. Dec 19:34:22 2013
+** Created: Mon 16. Dec 13:53:15 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -2103,6 +2103,8 @@ public:
         lbFondo_4->setMinimumSize(QSize(485, 425));
         lbFondo_4->setMaximumSize(QSize(485, 425));
         lbFondo_4->setStyleSheet(QString::fromUtf8("background-color: rgb(128, 128, 128);"));
+        lbFondo_4->setFrameShape(QFrame::Box);
+        lbFondo_4->setFrameShadow(QFrame::Sunken);
         lbDOU_59 = new WLabel(panel4);
         lbDOU_59->setObjectName(QString::fromUtf8("lbDOU_59"));
         lbDOU_59->setGeometry(QRect(428, 230, 51, 20));

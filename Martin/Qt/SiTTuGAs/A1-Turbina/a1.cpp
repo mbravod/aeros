@@ -66,6 +66,99 @@ A1::A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
 
 }
 
+void A1::cerrarVentanasEmergentes()
+{
+    for(int i=0; i<25; i++){
+        if(ctrVen[i] == true){
+            //Si es una ventana creada y es la ventana activa 'rescatamos' su id
+            switch(i){
+                case wapagemer:
+                                eWApagEmer->~WApagEmer();
+                                break;
+                case wbalancei:
+                                eWBalanceI->~WBalanceI();
+                                break;
+                case wcdpbld:
+                                eWCDPBLD->~WCDPBLD();
+                                break;
+                case wcrakctrl:
+                                eWCrakCtrl->~WCrakCtrl();
+                                break;
+                case wctrlapagado:
+                                eWCtrlApagado->~WCtrlApagado();
+                                break;
+                case wctrlarranque:
+                                eWCtrlArranque->~WCtrlArranque();
+                                break;
+                case wctrlcarga:
+                                eWCtrlCarga->~WCtrlCarga();
+                                break;
+                case wctrllavagua:
+                                eWCtrlLavAgua->~WCtrlLavAgua();
+                                break;
+                case wdiariodatos:
+                                eWDiarioDatos->~WDiarioDatos();
+                                break;
+                case westatorv:
+                                eWEstatorV->~WEstatorV();
+                                break;
+                case wnivel2:
+                                eWNivel2->~WNivel2();
+                                break;
+                case wpresbalance:
+                                eWPresBalance->~WPresBalance();
+                                break;
+                case wprescompb:
+                                eWPresCompB->~WPresCompB();
+                                break;
+                case wpresdescc:
+                                eWPresDescC->~WPresDescC();
+                                break;
+                case wpurgav:
+                                eWPurgaV->~WPurgaV();
+                                break;
+                case wrotorturb:
+                                eWRotorTurb->~WRotorTurb();
+                                break;
+                case wstg8bld:
+                                eWSTG8BLD->~WSTG8BLD();
+                                break;
+                case wtempadm:
+                                eWTempADM->~WTempADM();
+                                break;
+                case wtempcompa1:
+                                eWTempCompA1->~WTempCompA1();
+                                break;
+                case wtempcompa2:
+                                eWTempCompA2->~WTempCompA2();
+                                break;
+                case wtempcompb:
+                                eWTempCompB->~WTempCompB();
+                                break;
+                case wtempespera:
+                                eWTempEspera->~WTempEspera();
+                                break;
+                case wveln25:
+                                eWVelN25->~WVelN25();
+                                break;
+                case wvelnsd:
+                                eWVelNSD->~WVelNSD();
+                                break;
+                case wvigb:
+                                eWVIGB->~WVIGB();
+                                break;
+                case wvoltctrl:
+                                eWVoltCtrl->~WVoltCtrl();
+                                break;
+            }
+            ctrVen[i] = false;
+        }
+    }
+    venActualSuperior = -1;
+    venActualInferior = -1;
+
+}
+
 A1::~A1()
 {
     delete ui;
@@ -73,7 +166,7 @@ A1::~A1()
     //Asignar a ctrVen[ <position> ] = false, despues de destruir la ventana emergente
     //de acuerdo a su "position" en el contenedor
     //Por ahora esto es valido
-    for(int i=0; i<26; i++){
+    for(int i=0; i<25; i++){
         if(ctrVen[i] == true){
             //Si es una ventana creada y es la ventana activa 'rescatamos' su id
             switch(i){

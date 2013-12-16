@@ -47,6 +47,103 @@ D2::D2(SiTTuGAs *siTTuGAs, HTTPRequest *shrdMem) :
 
 }
 
+void D2::cerrarVentanasEmergentes()
+{
+    for(int i=0; i<25; i++){
+        if(ctrVen[i] == true){
+            switch(i){
+                case _AI_10:
+                            v_inet_AI_10->~Inet_AI_10();
+                            break;
+                case _AI_11:
+                            v_inet_AI_11->~Inet_AI_11();
+                            break;
+                case _AI_12:
+                            v_inet_AI_12->~Inet_AI_12();
+                            break;
+                case _AI_13:
+                            v_inet_AI_13->~Inet_AI_13();
+                            break;
+                case _AI_14:
+                            v_inet_AI_14->~Inet_AI_14();
+                            break;
+                case _AI_15:
+                            v_inet_AI_15->~Inet_AI_15();
+                            break;
+                case _AI_16:
+                            v_inet_AI_16->~Inet_AI_16();
+                            break;
+                case _AI_17:
+                            v_inet_AI_17->~Inet_AI_17();
+                            break;
+                case _AI_18:
+                            v_inet_AI_18->~Inet_AI_18();
+                            break;
+                case _AI_19:
+                            v_inet_AI_19->~Inet_AI_19();
+                            break;
+                case _AI_6:
+                            v_inet_AI_6->~Inet_AI_6();
+                            break;
+                case _DI_4:
+                            v_inet_DI_4->~Inet_DI_4();
+                            break;
+                case _DI_5:
+                            v_inet_DI_5->~Inet_DI_5();
+                            break;
+                case _AI8:
+                            v_lnet_AI8->~LNET_AI8();
+                            break;
+                case _AI9:
+                            v_lnet_AI9->~LNET_AI9();
+                            break;/*
+                case wpresdescc:
+                            eWPresDescC->~WPresDescC();
+                            break;
+                case wpurgav:
+                            eWPurgaV->~WPurgaV();
+                            break;
+                case wrotorturb:
+                            eWRotorTurb->~WRotorTurb();
+                            break;
+                case wstg8bld:
+                            eWSTG8BLD->~WSTG8BLD();
+                            break;
+                case wtempadm:
+                            eWTempADM->~WTempADM();
+                            break;
+                case wtempcompa1:
+                            eWTempCompA1->~WTempCompA1();
+                            break;
+                case wtempcompa2:
+                            eWTempCompA2->~WTempCompA2();
+                            break;
+                case wtempcompb:
+                            eWTempCompB->~WTempCompB();
+                            break;
+                case wtempespera:
+                            eWTempEspera->~WTempEspera();
+                            break;
+                case wveln25:
+                            eWVelN25->~WVelN25();
+                            break;
+                case wvelnsd:
+                            eWVelNSD->~WVelNSD();
+                            break;
+                case wvigb:
+                            eWVIGB->~WVIGB();
+                            break;
+                case wvoltctrl:
+                            eWVoltCtrl->~WVoltCtrl();
+                            break;*/
+            }
+            ctrVen[i] = false;
+        }
+    }
+    venActual = -1;
+
+}
+
 D2::~D2()
 {
     delete ui;
