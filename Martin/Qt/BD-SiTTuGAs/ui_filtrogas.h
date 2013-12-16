@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'filtrogas.ui'
 **
-** Created: Fri 13. Dec 19:34:25 2013
+** Created: Mon 16. Dec 15:49:38 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

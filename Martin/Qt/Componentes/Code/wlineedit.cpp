@@ -17,8 +17,7 @@ WLineEdit::WLineEdit(QWidget *parent) :
     fondoN = -1;
     fondoInicial = -1;
 
-    edo.setColor(QPalette::Window, Qt::red);
-    etiqueta->setPalette(edo);
+
 
 }
 
@@ -103,6 +102,8 @@ void WLineEdit::setWAlignment(WLineEdit::wAlignment al)
 
 void WLineEdit::setText_B(const QString txtName)
 {
+    edo.setColor(QPalette::Window, Qt::transparent);
+    etiqueta->setPalette(edo);
     this->txtB = txtName;
     //Activamos la etiqueta para que ocupe todo el espacio del widgetd
     etiqueta->setMaximumSize(width(),height());
@@ -113,6 +114,8 @@ void WLineEdit::setText_B(const QString txtName)
 
 void WLineEdit::setText(const QString txtName)
 {
+    edo.setColor(QPalette::Window, Qt::transparent);
+    etiqueta->setPalette(edo);
     txtA = txtName;
     etiqueta->setText(txtName);
     //Activamos la etiqueta para que ocupe todo el espacio del widgetd
@@ -198,7 +201,7 @@ void WLineEdit::wPaintEvent()
 {
     QPainter p(this);
     p.setRenderHint(QPainter::Antialiasing,true);
-
+    QPen pen = p.pen();
     /*Depediendo del tipo es el comportamiento de la etiqueta*/
     switch(tipo){//Nos encontramos en el caso widget estatico
 
@@ -207,6 +210,9 @@ void WLineEdit::wPaintEvent()
                     if(animacion){
                         setAnimacion(false);
                     }
+                    pen.setColor(QColor(136,136,136));
+                    p.setPen(pen);
+
                     switch(fondoInicial){
 
                         case 1://Color rojo
@@ -236,6 +242,8 @@ void WLineEdit::wPaintEvent()
 
 
             case 1:
+                    pen.setColor(QColor(136,136,136));
+                    p.setPen(pen);
                     //Iniciamos con el caso negativo equivalente a la propiedad Fondo A
                     if(!fondoCambio){
                         switch(fondoI){
@@ -294,6 +302,8 @@ void WLineEdit::wPaintEvent()
                     tipo = -1;
 
     }
+
+
     p.drawRect(0,0,width(),height());
 
 }
