@@ -1,8 +1,9 @@
 ###########
 # QT
 ###########
-.user
-./BD-Components/
-./BD-SiTTuGAs/
-./BD-Widgets/
-./BD-WidgetsSiTTuGAs/
+*.user
+./BD-Components/*.*
+./BD-SiTTuGAs/*.*
+./BD-Widgets/*.*
+./BD-WidgetsSiTTuGAs/*.*
+*.obj
