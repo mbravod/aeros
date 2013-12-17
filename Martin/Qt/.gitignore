@@ -2,7 +2,7 @@
 # QT
 ###########
 .user
-BD-Components
-BD-SiTTuGAs
-BD-Widgets
-BD-WidgetsSiTTuGAs
+./BD-Components/
+./BD-SiTTuGAs/
+./BD-Widgets/
+./BD-WidgetsSiTTuGAs/

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'wcheckboxplugin.h'
 **
-** Created: Thu 12. Dec 20:38:44 2013
+** Created: Mon 16. Dec 20:18:21 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
