@@ -2,12 +2,6 @@
 #include  <QSplashScreen>
 #include "Sittugas/sittugas.h"
 #include <QDesktopWidget>
-#include "Settings/settings.h"
-
-#include "Console/IConsole/console.h"
-#include "Console/Login/passwdialog.h"
-
-#include "BitaC/bitac.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,13 +14,6 @@ int main(int argc, char *argv[])
     Qt::Alignment bottomLeft = Qt::AlignLeft | Qt::AlignBottom;
 
     splash->showMessage(QObject::tr("Cargando Ajustes..."), bottomLeft, Qt::white);
-
-    Settings s;
-    if(!s.loadFirstSettings()){
-        splash->close();
-        delete splash;
-        return a.exit();
-    }
 
    /*if(s.m_firstSettings.mode==Settings::Consola){
         {
@@ -54,10 +41,10 @@ int main(int argc, char *argv[])
         //variable auxiliar para la instancia de cada interfaz
         SiTTuGAs *w;
         //Gestion de la bitacora
-        BitaC::user = "Operador";
-        BitaC::creatBTC();
-        BitaC::escribeBTC("Operador listo y conectado");
-        BitaC::foto = "Foto definida desde la Consola del Instructor.";
+//        BitaC::user = "Operador";
+//        BitaC::creatBTC();
+//        BitaC::escribeBTC("Operador listo y conectado");
+//        BitaC::foto = "Foto definida desde la Consola del Instructor.";
 
 ///Initial loading of SVG takes lot of time, Horchazke loads all interfaces, need to be changed
 

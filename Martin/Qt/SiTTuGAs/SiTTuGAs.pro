@@ -55,36 +55,10 @@ SOURCES += main.cpp\
     B4-Arrancador_Hidraulico/arrancadorhidraulico.cpp \
     B14-Sistema_Lavado_Agua/lavado_compresor.cpp \
     B2-Sistema_Lubricacion_Generador/lubricacion_generador.cpp \
-    Modelos/sistema_aire_instrumentos.cpp \
-    Modelos/sistema_electrico.cpp \
     B11-Carcaza_Generador/b11.cpp \
     B6-Sistema_Combustible/sitematoroumout.cpp \
     C4-Vibraciones/sistema_vibraciones.cpp \
-    Modelos/aire_ventilacion_combustion.cpp \
     B3-Sistema_Lubricacion_Turbina/sistema_lubricante_turbina_2.cpp \
-    Settings/settings.cpp \
-    Console/IConsole/console.cpp \
-    Console/Base/toolbar.cpp \
-    Console/Base/toolb.cpp \
-    Settings/modsel.cpp \
-    Console/Login/passwdialog.cpp \
-    Console/Login/login.cpp \
-    BitaC/bitac.cpp \
-    Console/ParametrosDeSimulacion/parametrossimulacion.cpp \
-    Console/Tablas/tablas.cpp \
-    Console/PInternos/parametrosinternos.cpp \
-    Console/Fallas/fallas.cpp \
-    Console/Monitoreo/monitoreov.cpp \
-    Console/GrupoCurvas/grupocurves.cpp \
-    Console/GrupoVariables/grupovars.cpp \
-    Console/BitacoraI/bitacorai.cpp \
-    Console/BitacoraO/bitacorao.cpp \
-    Console/CIniciales/condicionesiniciales.cpp \
-    Console/CIClass/cin.cpp \
-    Console/CIEdit/ci_edit.cpp \
-    Console/Reproducir/retroceder.cpp \
-    Console/CIHistorial/ci_historial.cpp \
-    Console/MConfiguracion/configuraciondemodelos.cpp \
     header.cpp \
     D1-Micronet/d1.cpp \
     D1-Micronet/digital16.cpp \
@@ -229,37 +203,10 @@ HEADERS  += Sittugas/sittugas.h \
     B4-Arrancador_Hidraulico/arrancadorhidraulico.h \
     B14-Sistema_Lavado_Agua/lavado_compresor.h \
     B2-Sistema_Lubricacion_Generador/lubricacion_generador.h \
-    Modelos/sistema_aire_instrumentos.h \
-    Modelos/sistema_electrico.h \
     B11-Carcaza_Generador/b11.h \
     B6-Sistema_Combustible/sitematoroumout.h \
     C4-Vibraciones/sistema_vibraciones.h \
-    Modelos/aire_ventilacion_combustion.h \
     B3-Sistema_Lubricacion_Turbina/sistema_lubricante_turbina_2.h \
-    Settings/settings.h \
-    Settings/Paths.h \
-    Console/IConsole/console.h \
-    Console/Base/toolbar.h \
-    Console/Base/toolb.h \
-    Settings/modsel.h \
-    Console/Login/passwdialog.h \
-    Console/Login/login.h \
-    BitaC/bitac.h \
-    Console/ParametrosDeSimulacion/parametrossimulacion.h \
-    Console/Tablas/tablas.h \
-    Console/PInternos/parametrosinternos.h \
-    Console/Fallas/fallas.h \
-    Console/Monitoreo/monitoreov.h \
-    Console/GrupoCurvas/grupocurves.h \
-    Console/GrupoVariables/grupovars.h \
-    Console/BitacoraI/bitacorai.h \
-    Console/BitacoraO/bitacorao.h \
-    Console/CIniciales/condicionesiniciales.h \
-    Console/CIClass/cin.h \
-    Console/CIEdit/ci_edit.h \
-    Console/Reproducir/retroceder.h \
-    Console/CIHistorial/ci_historial.h \
-    Console/MConfiguracion/configuraciondemodelos.h \
     header.h \
     D1-Micronet/d1.h \
     D1-Micronet/digital16.h \
@@ -403,30 +350,10 @@ FORMS    += \
     B4-Arrancador_Hidraulico/arrancadorhidraulico.ui \
     B14-Sistema_Lavado_Agua/lavado_compresor.ui \
     B2-Sistema_Lubricacion_Generador/lubricacion_generador.ui \
-    Modelos/sistema_aire_instrumentos.ui \
-    Modelos/sistema_electrico.ui \
     B11-Carcaza_Generador/b11.ui \
     B6-Sistema_Combustible/sitematoroumout.ui \
     C4-Vibraciones/sistema_vibraciones.ui \
-    Modelos/aire_ventilacion_combustion.ui \
     B3-Sistema_Lubricacion_Turbina/sistema_lubricante_turbina_2.ui \
-    Console/IConsole/console.ui \
-    Settings/modsel.ui \
-    Console/Login/passwdialog.ui \
-    Console/ParametrosDeSimulacion/parametrossimulacion.ui \
-    Console/Tablas/tablas.ui \
-    Console/PInternos/parametrosinternos.ui \
-    Console/Fallas/fallas.ui \
-    Console/Monitoreo/monitoreov.ui \
-    Console/GrupoCurvas/grupocurves.ui \
-    Console/GrupoVariables/grupovars.ui \
-    Console/BitacoraI/bitacorai.ui \
-    Console/BitacoraO/bitacorao.ui \
-    Console/CIniciales/condicionesiniciales.ui \
-    Console/CIEdit/ci_edit.ui \
-    Console/Reproducir/retroceder.ui \
-    Console/CIHistorial/ci_historial.ui \
-    Console/MConfiguracion/configuraciondemodelos.ui \
     header.ui \
     D1-Micronet/d1.ui \
     D1-Micronet/digital16.ui \
