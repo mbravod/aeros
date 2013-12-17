@@ -1,60 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Resources/Console/1.png</file>
-        <file>Resources/Console/a_a_0.png</file>
-        <file>Resources/Console/a_a_1.png</file>
-        <file>Resources/Console/a_a_2.png</file>
-        <file>Resources/Console/a_a_3.png</file>
-        <file>Resources/Console/a_a_4.png</file>
-        <file>Resources/Console/a_a_5.png</file>
-        <file>Resources/Console/a_a_6.png</file>
-        <file>Resources/Console/a_a_7.png</file>
-        <file>Resources/Console/a_a_8.png</file>
-        <file>Resources/Console/a_a_9.png</file>
-        <file>Resources/Console/a_a_10.png</file>
-        <file>Resources/Console/a_a_11.png</file>
-        <file>Resources/Console/a_a_12.png</file>
-        <file>Resources/Console/a_b_1.png</file>
-        <file>Resources/Console/a_b_2.png</file>
-        <file>Resources/Console/a_b_2_1.png</file>
-        <file>Resources/Console/a_b_2_2.png</file>
-        <file>Resources/Console/a_b_3.png</file>
-        <file>Resources/Console/a_c_1.png</file>
-        <file>Resources/Console/a_c_2.png</file>
-        <file>Resources/Console/a_c_3.png</file>
-        <file>Resources/Console/a_c_4.png</file>
-        <file>Resources/Console/a_d_1.png</file>
-        <file>Resources/Console/a_d_2.png</file>
-        <file>Resources/Console/a_d_3.png</file>
-        <file>Resources/Console/a_e_1.png</file>
-        <file>Resources/Console/a_e_2.png</file>
-        <file>Resources/Console/a_f_1.png</file>
-        <file>Resources/Console/a_f_2.png</file>
-        <file>Resources/Console/aaa.png</file>
-        <file>Resources/Console/Folder-Doc-+_256.png</file>
-        <file>Resources/Console/t_a_1.png</file>
-        <file>Resources/Console/t_a_2.png</file>
-        <file>Resources/Console/t_a_3.png</file>
-        <file>Resources/Console/t_a_4.png</file>
-        <file>Resources/Console/t_a_5.png</file>
-        <file>Resources/Console/t_a_6.png</file>
-        <file>Resources/Console/ToolBar.png</file>
-        <file>Resources/Console/usr_add.png</file>
-        <file>Resources/Console/usr_del.png</file>
-        <file>Resources/Console/usr_edit.png</file>
-        <file>Resources/Console/usr_th_add.png</file>
-        <file>Resources/Console/usr_th_add_bn.png</file>
-        <file>Resources/Console/usr_th_del.png</file>
-        <file>Resources/Console/usr_th_del_bn.png</file>
-        <file>Resources/Console/usr_th_edit.png</file>
-        <file>Resources/Console/usr_th_edit_bn.png</file>
-        <file>Resources/Console/usr_th_edt.png</file>
-        <file>Resources/Console/usr_th_edt_bn.png</file>
-        <file>Resources/Console/usr_th_login.png</file>
-        <file>Resources/Console/usr_th_login_bn.png</file>
-        <file>Resources/Console/usr_user.png</file>
-        <file>Resources/Console/usr_users.png</file>
-        <file>Resources/Console/usr_users_2.png</file>
         <file>Resources/PNG/A1.png</file>
         <file>Resources/PNG/A2.png</file>
         <file>Resources/PNG/B1.png</file>
@@ -87,5 +32,15 @@
         <file>Resources/PNG/N7.png</file>
         <file>Resources/PNG/N8.png</file>
         <file>Resources/PNG/Extras/transparente.svg</file>
+        <file>Resources/Consola/about.png</file>
+        <file>Resources/Consola/config.png</file>
+        <file>Resources/Consola/console.png</file>
+        <file>Resources/Consola/exit.png</file>
+        <file>Resources/Consola/hmi.png</file>
+        <file>Resources/Consola/ico.png</file>
+        <file>Resources/Consola/pause.png</file>
+        <file>Resources/Consola/play.png</file>
+        <file>Resources/Consola/rew.png</file>
+        <file>Resources/Consola/stop.png</file>
     </qresource>
 </RCC>

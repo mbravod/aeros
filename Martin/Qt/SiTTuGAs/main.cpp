@@ -2,6 +2,7 @@
 #include  <QSplashScreen>
 #include "Sittugas/sittugas.h"
 #include <QDesktopWidget>
+#include "Consola/console.h"
 
 int main(int argc, char *argv[])
 {
@@ -69,6 +70,9 @@ int main(int argc, char *argv[])
             //temporalmete utilizaremos solo el desplegado normal de la pantalla para cada instancia generada
             W->show();
         }
+
+        Console console;
+        console.show();
 
 
 

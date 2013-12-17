@@ -179,7 +179,8 @@ SOURCES += main.cpp\
     D3-Linknet/n3n18.cpp \
     SharedMemory/sqlite.cpp \
     SharedMemory/httprequest.cpp \
-    SharedMemory/config.cpp
+    SharedMemory/config.cpp \
+    Consola/console.cpp
 
 HEADERS  += Sittugas/sittugas.h \
     A1-Turbina/a1.h \
@@ -327,7 +328,8 @@ HEADERS  += Sittugas/sittugas.h \
     D3-Linknet/n3n18.h \
     SharedMemory/sqlite.h \
     SharedMemory/httprequest.h \
-    SharedMemory/config.h
+    SharedMemory/config.h \
+    Consola/console.h
 
 FORMS    += \
     Sittugas/sittugas.ui \
