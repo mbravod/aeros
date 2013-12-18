@@ -38,9 +38,10 @@ int main(int argc, char *argv[])
         //Proporciona acceso a informacion de la pantalla en los sistemas multi-cabeza
         QDesktopWidget *m = QApplication::desktop();
         //Lista de instancias a las interfaces
-        QList <SiTTuGAs *> list;
+        QList <Console *> list;
         //variable auxiliar para la instancia de cada interfaz
-        SiTTuGAs *w;
+//        SiTTuGAs *w;
+        Console *w;
         //Gestion de la bitacora
 //        BitaC::user = "Operador";
 //        BitaC::creatBTC();
@@ -53,7 +54,7 @@ int main(int argc, char *argv[])
         for(int i=0; i<m->screenCount(); i++)
         {
             //Creamos el gestor de las interfaces *(se cargan todas las interfaces)
-            w = new SiTTuGAs();
+            w = new Console();
             //lista que contiene referencias a todos los gestores creados
             list.push_front(w);
             //Devuelve la geometria disponible por la pantalla
@@ -64,15 +65,15 @@ int main(int argc, char *argv[])
         //Terminamos splash
         splash->finish(w);
         //Iteramos hasta desplegar todas las GUI de SiTTuGAs
-        foreach(SiTTuGAs *W, list){
+        foreach(Console *W, list){
             //Las pantallas mantienen un tamaño de  1024 X 662 por lo que para presentar la interfaz adecuadamente la pantalla debe tener la misma resolución
             //W->showFullScreen();
             //temporalmete utilizaremos solo el desplegado normal de la pantalla para cada instancia generada
             W->show();
         }
 
-        Console console;
-        console.show();
+//        Console console;
+//        console.show();
 
 
 

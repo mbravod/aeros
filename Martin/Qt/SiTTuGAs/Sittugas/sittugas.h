@@ -57,6 +57,9 @@
 #include "N7/filtrogas.h"
 #include "N8/sistaguacontrain.h"
 
+#include "SharedMemory/httprequest.h"
+#include "SharedMemory/config.h"
+
 
 //Identificador de la interfaz
 #define ID_MENU 0
@@ -124,7 +127,7 @@ class SiTTuGAs  : public QWidget
     Q_OBJECT
 
     public:
-        explicit SiTTuGAs(QWidget *parent = 0);
+        explicit SiTTuGAs(Config *conf, HTTPRequest *http = 0, QWidget *parent = 0);
         ~SiTTuGAs();
         void Connections();
 
@@ -156,6 +159,7 @@ signals:
 
 protected:
         HTTPRequest *m_shrdMem;
+        Config *conf;
 
     private:
         Ui::SiTTuGAs *ui;

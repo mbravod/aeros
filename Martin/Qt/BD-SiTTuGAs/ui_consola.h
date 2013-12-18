@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'consola.ui'
 **
-** Created: Tue 17. Dec 02:39:55 2013
+** Created: Tue 17. Dec 11:48:52 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -15,50 +15,34 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QHeaderView>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenuBar>
-#include <QtGui/QStatusBar>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Consola
+class Ui_Form
 {
 public:
-    QWidget *centralwidget;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *Consola)
+    void setupUi(QWidget *Form)
     {
-        if (Consola->objectName().isEmpty())
-            Consola->setObjectName(QString::fromUtf8("Consola"));
-        Consola->resize(350, 100);
-        centralwidget = new QWidget(Consola);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        Consola->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(Consola);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 350, 21));
-        Consola->setMenuBar(menubar);
-        statusbar = new QStatusBar(Consola);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        Consola->setStatusBar(statusbar);
+        if (Form->objectName().isEmpty())
+            Form->setObjectName(QString::fromUtf8("Form"));
+        Form->resize(844, 129);
 
-        retranslateUi(Consola);
+        retranslateUi(Form);
 
-        QMetaObject::connectSlotsByName(Consola);
+        QMetaObject::connectSlotsByName(Form);
     } // setupUi
 
-    void retranslateUi(QMainWindow *Consola)
+    void retranslateUi(QWidget *Form)
     {
-        Consola->setWindowTitle(QApplication::translate("Consola", "MainWindow", 0, QApplication::UnicodeUTF8));
+        Form->setWindowTitle(QApplication::translate("Form", "Form", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Consola: public Ui_Consola {};
+    class Form: public Ui_Form {};
 } // namespace Ui
 
 QT_END_NAMESPACE

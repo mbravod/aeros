@@ -42,5 +42,6 @@
         <file>Resources/Consola/play.png</file>
         <file>Resources/Consola/rew.png</file>
         <file>Resources/Consola/stop.png</file>
+        <file>Resources/Consola/fwd.png</file>
     </qresource>
 </RCC>

@@ -22,14 +22,12 @@ class Pantallas : public QWidget
     protected:
         QString title;
         QString clave;
-
-    protected slots:
-//        void Update();
-
-private:
         HTTPRequest *m_shrdMem;
         SiTTuGAs *m_SiTTuGAs;
         QList<AWidget *> allAWWidget;
+
+    protected slots:
+//        void Update();
 };
 
 #endif // PANTALLAS_H
