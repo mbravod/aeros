@@ -185,9 +185,13 @@ Config * SQLite::getConfig()
 
         h = new Config();
         h->setMode(query.value(2).toInt());
-        h->setProtocolo(query.value(3).toString());
-        h->setServer(query.value(4).toString());
-        h->setAsp(query.value(5).toString());
+//        qDebug()<<"Mode: "<<h->getMode();
+        h->setProtocolo(query.value(2).toString());
+//        qDebug()<<"Protocolo: "<<h->getProtocolo();
+        h->setServer(query.value(3).toString());
+//        qDebug()<<"Server: "<<h->getServer();
+        h->setAsp(query.value(4).toString());
+//        qDebug()<<"ASP: "<<h->getAsp();
         found = true;
     }
 

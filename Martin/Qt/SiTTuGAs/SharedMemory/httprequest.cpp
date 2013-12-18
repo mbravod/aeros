@@ -19,6 +19,9 @@ HTTPRequest::HTTPRequest(Config *conf, QWidget *parent)
         server = "127.0.0.1";
         aspPage = "onlinesthie.aspx";
     }
+    qDebug()<<"Protocolo: "<<protocolo;
+    qDebug()<<"server: "<<server;
+    qDebug()<<"aspPage: "<<aspPage;
 
     replyOK = false;
     consultando = false;
@@ -47,42 +50,7 @@ void HTTPRequest::setPage(QString page)
 }
 
 // Funciones propias de la SharedMemory
-QString HTTPRequest::GetValor(int indice, bool entero)
-{
-//    ready = false;
-    QString tipo = "int";
-
-    if(entero)
-        tipo = "float";
-
-    QUrl url = QString("%1%2/%3?session=%4&RW=r&type=%5&var=%6&value=45&complete=FALSE").arg(protocolo).arg(server).arg(aspPage).arg(session).arg(tipo).arg(indice);
-    url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
-    qDebug()<<"URL: "<<url;
-
-//    QUrl postData;
-    url.addQueryItem("session", QString("%1").arg(session));
-    url.addQueryItem("RW", "r");
-    if(entero)
-        url.addQueryItem("type", "int");
-    else
-        url.addQueryItem("type", "float");
-    url.addQueryItem("var", "23");
-    url.addQueryItem("value", "43.1416");
-    url.addQueryItem("complete", "TRUE");//*/
-    qDebug()<<"URL: "<<url;
-    QNetworkRequest request(url);
-    request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
-    //networkManager->post(request, postData.encodedQuery());
-    QByteArray dataGil;
-    dataGil.append(url.toString());
-    qDebug()<<"Data Gil: "<<dataGil;
-
-    reply = qnam.post(QNetworkRequest(url),url.encodedQuery());
-    connect(reply, SIGNAL(finished()), this, SLOT(HTTPFinished()));
-    connect(reply, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
-    return 0;
-}
-/*void HTTPRequest::GetValor()
+void HTTPRequest::GetValor()
 {
     qDebug()<<"GetValor() "<<consultando;
     if(consultando)
@@ -116,7 +84,7 @@ QString HTTPRequest::GetValor(int indice, bool entero)
     reply = qnam.post(QNetworkRequest(url),url.encodedQuery());
     connect(reply, SIGNAL(finished()), this, SLOT(HTTPFinished()));
     connect(reply, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
-}//*/
+}
 
 float HTTPRequest::getF(int pos)
 {

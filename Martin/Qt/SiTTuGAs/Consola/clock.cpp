@@ -123,7 +123,7 @@ void Clock::ResetTime()
 void Clock::Funcionando()
 {
     // Consultamos la shrdMem
-    shrdMem->GetValor(13, true);
+    shrdMem->GetValor();
     unsigned int seg, min, hor;
     unsigned int t1, t2, t3;
     // Aumentamos los segundos

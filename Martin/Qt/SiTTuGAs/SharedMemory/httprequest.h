@@ -26,8 +26,7 @@ class HTTPRequest : QWidget
 
         // Métodos propios para SharedMemory
         // Entrega en QString el valor indicado por un indice
-        QString GetValor(int indice, bool entero);
-        //        void GetValor();
+        void GetValor();
         static int session;// = 0;
 
         // Obtiene valor flotante
