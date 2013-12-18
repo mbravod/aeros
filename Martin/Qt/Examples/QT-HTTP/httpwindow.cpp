@@ -181,7 +181,10 @@ void HttpWindow::httpFinished()
     progressDialog->hide();
     file->flush();
     file->close();
-encode_Base64((QByteArray) "Prueba de decodificacion/cod");
+	QString AP="Prueba de decodificacion/cod";
+QByteArray AP_B((const char*) (AP.toLatin1()), AP.size());
+
+encode_Base64(AP_B);
 decode_Base64(Memory_64);  //resultado en Memory_HEX
     QVariant redirectionTarget = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
     if (reply->error())
