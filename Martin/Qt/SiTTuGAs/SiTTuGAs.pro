@@ -7,11 +7,11 @@ TEMPLATE = app
 INCLUDEPATH += ../awidgets/awidgets
 INCLUDEPATH += ../awidgets/bases
 
-INCLUDEPATH += ../Widgets_SiTTuGAs/Base
-INCLUDEPATH += ../Widgets_SiTTuGAs/Header
-
 INCLUDEPATH += ../Componentes/Base
 INCLUDEPATH += ../Componentes/Header
+
+INCLUDEPATH += ../Widgets_SiTTuGAs/Base
+INCLUDEPATH += ../Widgets_SiTTuGAs/Header
 
 win32-g++:{
 LIBS += ../BD-Widgets/libawidgets.a
