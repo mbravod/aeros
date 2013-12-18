@@ -10,6 +10,7 @@
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
 #include "SharedMemory/config.h"
+#include "SharedMemory/sqlite.h"
 
 class HTTPRequest : QWidget
 {
@@ -27,7 +28,7 @@ class HTTPRequest : QWidget
         // Métodos propios para SharedMemory
         // Entrega en QString el valor indicado por un indice
         void GetValor();
-        static int session;// = 0;
+        static QString session;// = 0;
 
         // Obtiene valor flotante
         float getF(int pos);
@@ -48,6 +49,7 @@ class HTTPRequest : QWidget
     private slots:
         // Slots para la lectura
         void HTTPFinished();
+        void HTTPFinishedR();
         void HTTPReadyRead();
 
     private:
@@ -55,12 +57,16 @@ class HTTPRequest : QWidget
         QString server;// = "127.0.0.1";
         QString aspPage;// = "onlinesthie.aspx";
         QNetworkReply *reply;
+        QNetworkReply *replyR;
         QNetworkAccessManager qnam;
         bool replyOK;
         bool consultando;
         QString valorRS;
         QMutex mutex;
         Config *config;
+        int *arrI;
+        float *arrF;
+        QByteArray decode;
 };
 
 #endif // HTTPREQUEST_H

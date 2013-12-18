@@ -1,6 +1,6 @@
 #include "httprequest.h"
 
-int HTTPRequest::session = 1;
+QString HTTPRequest::session = "1";
 
 // Inicializaciones de variables
 HTTPRequest::HTTPRequest(Config *conf, QWidget *parent)
@@ -52,22 +52,18 @@ void HTTPRequest::setPage(QString page)
 // Funciones propias de la SharedMemory
 void HTTPRequest::GetValor()
 {
-    qDebug()<<"GetValor() "<<consultando;
     if(consultando)
         return;
 
     consultando = true;
-    qDebug()<<consultando;
 
     replyOK = false;
-    QString tipo = "int";
 
     QUrl url;
     url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
     qDebug()<<"URL: "<<url;
 
-//    QUrl postData;
-    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("session", session);
     url.addQueryItem("RW", "r");
     url.addQueryItem("type", "int");
     url.addQueryItem("var", "23");
@@ -86,14 +82,9 @@ void HTTPRequest::GetValor()
     connect(reply, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
 }
 
-float HTTPRequest::getF(int pos)
-{
-    return -1;
-}
-
 void HTTPRequest::HTTPReadyRead()
 {
-    qDebug()<<"Listo para leer";
+//    qDebug()<<"Listo para leer";
 
 }
 
@@ -101,8 +92,6 @@ void HTTPRequest::HTTPFinished()
 {
     qDebug()<<"Termina la respuesta";
     valorRS = reply->readAll();
-    qDebug()<<"Valor Leído: "<<valorRS;
-//    qDebug()<<QString::compare(valorRS, "Unloaded Memory", Qt::CaseSensitive);
     if(QString::compare(valorRS, "Unloaded Memory", Qt::CaseSensitive) == 0)
     {
         qDebug()<<"La memoria no se ha cargado...";
@@ -122,18 +111,16 @@ void HTTPRequest::HTTPFinished()
     {
         qDebug()<<"Valor Leido: "<<valorRS;
         // Transformamos la respuesta en flujos de Bytes
-/*        QByteArray text = QByteArray::fromBase64(valorRS);
-//        qDebug()<<">>> "<<text.data();
-        float *arrF = (float *)&text;
-        int *arrI = (int *)&text;
+        QByteArray AP_B((const char*) (valorRS.toLatin1()), valorRS.size());
+        decode = QByteArray::fromBase64(AP_B);
+        arrF = (float *)&decode;
+        arrI = (int *)&decode;
 
         qDebug()<<"Emitiendo señal: "<<arrF[23];
         qDebug()<<"Emitiendo señal: "<<arrI[23];
-*/
         emit Refresh();
     }
 
-    qDebug()<<"Cambiando valor...";
     consultando = false;
     disconnect(this, SLOT(HTTPReadyRead()));
     disconnect(this, SLOT(HTTPFinished()));
@@ -146,19 +133,79 @@ HTTPRequest::~HTTPRequest()
 
 int HTTPRequest::getI(int pos)
 {
-    return -1;
+    if(0 <= pos)
+        return arrI[pos];
+    else
+        return -1;
+}
+
+float HTTPRequest::getF(int pos)
+{
+    if(0 <= pos)
+        return arrF[pos];
+    else
+        return -1;
 }
 
 int HTTPRequest::getVar(QString var)
 {
-    return -1;
+    return SQLite::BuscarVal(var);;
 }
 
 void HTTPRequest::setF(float val, int pos)
 {
+    QUrl url;
+    url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
+    qDebug()<<"URL: "<<url;
+
+    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("RW", "w");
+    url.addQueryItem("type", "float");
+    url.addQueryItem("var", QString::number(pos));
+    url.addQueryItem("value", QString::number(val));
+    url.addQueryItem("complete", "FALSE");//
+    qDebug()<<"URL: "<<url;
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
+    //networkManager->post(request, postData.encodedQuery());
+    QByteArray dataGil;
+    dataGil.append(url.toString());
+    qDebug()<<"Data Gil: "<<dataGil;
+
+    replyR = qnam.post(QNetworkRequest(url),url.encodedQuery());
+    connect(replyR, SIGNAL(finished()), this, SLOT(HTTPFinishedR()));
+    connect(replyR, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
 }
 
 void HTTPRequest::setI(int val, int pos)
 {
+    QUrl url;
+    url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
+    qDebug()<<"URL: "<<url;
+
+    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("RW", "w");
+    url.addQueryItem("type", "int");
+    url.addQueryItem("var", QString::number(pos));
+    url.addQueryItem("value", QString::number(val));
+    url.addQueryItem("complete", "FALSE");//
+    qDebug()<<"URL: "<<url;
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
+    //networkManager->post(request, postData.encodedQuery());
+    QByteArray dataGil;
+    dataGil.append(url.toString());
+    qDebug()<<"Data Gil: "<<dataGil;
+
+    replyR = qnam.post(QNetworkRequest(url),url.encodedQuery());
+    connect(replyR, SIGNAL(finished()), this, SLOT(HTTPFinishedR()));
+    connect(replyR, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
 }
 
+void HTTPRequest::HTTPFinishedR()
+{
+    // No hago nada...
+    qDebug()<<replyR->readAll();
+    disconnect(this, SLOT(HTTPReadyRead()));
+    disconnect(this, SLOT(HTTPFinishedR()));
+}
