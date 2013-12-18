@@ -3,12 +3,25 @@
 int HTTPRequest::session = 1;
 
 // Inicializaciones de variables
-HTTPRequest::HTTPRequest()
+HTTPRequest::HTTPRequest(Config *conf, QWidget *parent)
 {
-    protocolo = "http://";
-    server = "127.0.0.1";
-    aspPage = "onlinesthie.aspx";
-    ready = false;
+    qDebug()<<"La configuracion es: "<< conf;
+    this->config = conf;
+    if(this->config != NULL)
+    {
+        protocolo = config->getProtocolo();
+        server = config->getServer();
+        aspPage = config->getAsp();
+    }
+    else
+    {
+        protocolo = "http://";
+        server = "127.0.0.1";
+        aspPage = "onlinesthie.aspx";
+    }
+
+    replyOK = false;
+    consultando = false;
 }
 
 // Setters y Getters
@@ -36,7 +49,7 @@ void HTTPRequest::setPage(QString page)
 // Funciones propias de la SharedMemory
 QString HTTPRequest::GetValor(int indice, bool entero)
 {
-    ready = false;
+//    ready = false;
     QString tipo = "int";
 
     if(entero)
@@ -55,7 +68,7 @@ QString HTTPRequest::GetValor(int indice, bool entero)
         url.addQueryItem("type", "float");
     url.addQueryItem("var", "23");
     url.addQueryItem("value", "43.1416");
-    url.addQueryItem("complete", "FALSE");//*/
+    url.addQueryItem("complete", "TRUE");//*/
     qDebug()<<"URL: "<<url;
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
@@ -67,16 +80,43 @@ QString HTTPRequest::GetValor(int indice, bool entero)
     reply = qnam.post(QNetworkRequest(url),url.encodedQuery());
     connect(reply, SIGNAL(finished()), this, SLOT(HTTPFinished()));
     connect(reply, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
-
-/*    while(!ready)
-    {
-        Sleep();
-        qDebug()<<"Esperando...";
-    }*/
-
-    qDebug()<<valorRS;
-    return valorRS;
+    return 0;
 }
+/*void HTTPRequest::GetValor()
+{
+    qDebug()<<"GetValor() "<<consultando;
+    if(consultando)
+        return;
+
+    consultando = true;
+    qDebug()<<consultando;
+
+    replyOK = false;
+    QString tipo = "int";
+
+    QUrl url;
+    url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
+    qDebug()<<"URL: "<<url;
+
+//    QUrl postData;
+    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("RW", "r");
+    url.addQueryItem("type", "int");
+    url.addQueryItem("var", "23");
+    url.addQueryItem("value", "43.1416");
+    url.addQueryItem("complete", "TRUE");//
+    qDebug()<<"URL: "<<url;
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader,  "application/x-www-form-urlencoded");
+    //networkManager->post(request, postData.encodedQuery());
+    QByteArray dataGil;
+    dataGil.append(url.toString());
+    qDebug()<<"Data Gil: "<<dataGil;
+
+    reply = qnam.post(QNetworkRequest(url),url.encodedQuery());
+    connect(reply, SIGNAL(finished()), this, SLOT(HTTPFinished()));
+    connect(reply, SIGNAL(readyRead()),this, SLOT(HTTPReadyRead()));
+}//*/
 
 float HTTPRequest::getF(int pos)
 {
@@ -98,13 +138,37 @@ void HTTPRequest::HTTPFinished()
     if(QString::compare(valorRS, "Unloaded Memory", Qt::CaseSensitive) == 0)
     {
         qDebug()<<"La memoria no se ha cargado...";
+        replyOK = false;
     }
     else if(valorRS.startsWith("<!DOCTYPE html", Qt::CaseInsensitive))
     {
         qDebug()<<"Respuesta inesperada del servidor";
+        replyOK = false;
+    }
+    else
+    {
+        replyOK = true;
     }
 
-    ready = true;
+    if(replyOK)
+    {
+        qDebug()<<"Valor Leido: "<<valorRS;
+        // Transformamos la respuesta en flujos de Bytes
+/*        QByteArray text = QByteArray::fromBase64(valorRS);
+//        qDebug()<<">>> "<<text.data();
+        float *arrF = (float *)&text;
+        int *arrI = (int *)&text;
+
+        qDebug()<<"Emitiendo señal: "<<arrF[23];
+        qDebug()<<"Emitiendo señal: "<<arrI[23];
+*/
+        emit Refresh();
+    }
+
+    qDebug()<<"Cambiando valor...";
+    consultando = false;
+    disconnect(this, SLOT(HTTPReadyRead()));
+    disconnect(this, SLOT(HTTPFinished()));
 }
 
 HTTPRequest::~HTTPRequest()

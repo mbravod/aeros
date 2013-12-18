@@ -15,7 +15,7 @@ class Clock : public QWidget
     Q_OBJECT
 
     public:
-        explicit Clock(QWidget *parent = 0);
+        explicit Clock(HTTPRequest *http, QWidget *parent = 0);
         ~Clock();
         void ChangeColor(int color);
         void setHour(unsigned int nsegs);

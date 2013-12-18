@@ -9,13 +9,14 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
+#include "SharedMemory/config.h"
 
 class HTTPRequest : QWidget
 {
     Q_OBJECT
 
     public:
-        HTTPRequest();
+        HTTPRequest(Config *conf, QWidget *parent = 0);
         ~HTTPRequest();
 
         // Setter's y Getter's
@@ -26,6 +27,7 @@ class HTTPRequest : QWidget
         // Métodos propios para SharedMemory
         // Entrega en QString el valor indicado por un indice
         QString GetValor(int indice, bool entero);
+        //        void GetValor();
         static int session;// = 0;
 
         // Obtiene valor flotante
@@ -55,9 +57,11 @@ class HTTPRequest : QWidget
         QString aspPage;// = "onlinesthie.aspx";
         QNetworkReply *reply;
         QNetworkAccessManager qnam;
-        bool ready;
+        bool replyOK;
+        bool consultando;
         QString valorRS;
         QMutex mutex;
+        Config *config;
 };
 
 #endif // HTTPREQUEST_H

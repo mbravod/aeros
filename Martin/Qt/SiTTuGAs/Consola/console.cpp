@@ -1,11 +1,21 @@
 #include "console.h"
 #include "ui_console.h"
 
-Console::Console(QWidget *parent) :
+Console::Console(Config *conf, HTTPRequest *http, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Console)
 {
     ui->setupUi(this);
+
+    this->config = conf;
+    if(http == NULL)
+    {
+        this->http = new HTTPRequest(this->config, this);
+    }
+    else
+    {
+        this->http = http;
+    }
 
     setWindowTitle(tr("SiTTuGAs - Consola de instrucción"));
     this->setWindowIcon(QIcon(":/Resources/Consola/ico.png"));
@@ -22,18 +32,13 @@ Console::Console(QWidget *parent) :
 
     reproduciendo = false;
 
-
-
-
-    reloj->show();
-
 }
 
 QToolBar * Console::CreaToolBar()
 {
     QToolBar * toolbar = new QToolBar("Barra de Menues", this);
 
-    reloj = new Clock(this);
+    reloj = new Clock(this->http, this);
 
     // Creamos las acciones
     actExit = new QAction(QIcon(":/Resources/Consola/exit.png"), tr("Salir"), this);
@@ -140,7 +145,7 @@ void Console::Stop()
 
 void Console::CreaIHM()
 {
-    SiTTuGAs *ihm = new SiTTuGAs(NULL);
+    SiTTuGAs *ihm = new SiTTuGAs(this->config, this->http);
     lst.push_front(ihm);
     ihm->show();
 }

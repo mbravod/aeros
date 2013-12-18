@@ -23,12 +23,12 @@ SiTTuGAs::SiTTuGAs(Config *conf, HTTPRequest *http, QWidget *parent) :
     setAttribute(Qt::WA_DeleteOnClose);
 
     //Un solo objeto para todas las interfaces, corroborar que no se requiera una instancia para cada interfaz!
+    this->conf = conf;
     if(http == NULL)
-        m_shrdMem = new HTTPRequest();
+        m_shrdMem = new HTTPRequest(this->conf,this);
     else
         m_shrdMem = http;
 
-    this->conf = conf;
 
     //Estructura para reservar espacio en memoria de cada HMI a crear *(considerando el menu)
     for(int i=0; i<(ID_N8+1); i++)

@@ -7,6 +7,7 @@
 #include <QGridLayout>
 #include "clock.h"
 #include "Sittugas/sittugas.h"
+#include "SharedMemory/config.h"
 #include <QList>
 
 namespace Ui {
@@ -18,7 +19,7 @@ class Console : public QWidget
     Q_OBJECT
     
     public:
-        explicit Console(QWidget *parent = 0);
+        explicit Console(Config *conf, HTTPRequest *http = 0, QWidget *parent = 0);
         ~Console();
 
     private:
@@ -38,6 +39,8 @@ class Console : public QWidget
         QAction *actAdmin;
         QAction *actAbout;
         bool reproduciendo;
+        Config *config;
+        HTTPRequest *http;
 
         // Funciones
         QToolBar * CreaToolBar();

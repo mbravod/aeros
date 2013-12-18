@@ -1,14 +1,14 @@
 #include "clock.h"
 #include "ui_clock.h"
 
-Clock::Clock(QWidget *parent) :
+Clock::Clock(HTTPRequest *http, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Clock)
 {
     ui->setupUi(this);
+    this->shrdMem = http;
 
     animado = false;
-    shrdMem = NULL;
     timer = new QTimer(this);
     timer->setInterval(1000);
     connect(timer, SIGNAL(timeout()), this, SLOT(Funcionando()));
@@ -122,6 +122,8 @@ void Clock::ResetTime()
 
 void Clock::Funcionando()
 {
+    // Consultamos la shrdMem
+    shrdMem->GetValor(13, true);
     unsigned int seg, min, hor;
     unsigned int t1, t2, t3;
     // Aumentamos los segundos

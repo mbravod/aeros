@@ -3,6 +3,8 @@
 #include "Sittugas/sittugas.h"
 #include <QDesktopWidget>
 #include "Consola/console.h"
+#include "SharedMemory/sqlite.h"
+#include "SharedMemory/httprequest.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,46 +17,38 @@ int main(int argc, char *argv[])
     Qt::Alignment bottomLeft = Qt::AlignLeft | Qt::AlignBottom;
 
     splash->showMessage(QObject::tr("Cargando Ajustes..."), bottomLeft, Qt::white);
+    splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
 
-   /*if(s.m_firstSettings.mode==Settings::Consola){
-        {
-            PassWDialog *pw = new PassWDialog();
-            splash->finish(pw);
-            if(pw->exec()){
-                qDebug("Iniciando Modo Consola");
-                splash->showMessage(QObject::tr("Creando Consola..."), bottomLeft, Qt::white);
-                Console *c = new Console(0);
-                c->user= pw->username;
-                c->show();
-            }
-            else return a.exit();
-            delete pw;
-        }
+    // Recuperamos la configuración
+    Config *config = SQLite::getConfig();
+    if(config == NULL)
+    {
+        qDebug()<<"Ha fallado la configuración...";
     }
 
-    else {*/
-        //qDebug("Iniciando Modo Operador");
-        splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
+    //Determinamos que modo es el adecuado
+    if(config->getMode() == 0)
+    {
+        // Creamos la consola
+        Console *w = new Console(config);
+        w->show();
+        splash->finish(w);
+    }
+    else
+    {
+        HTTPRequest *http = new HTTPRequest(config);
         //Proporciona acceso a informacion de la pantalla en los sistemas multi-cabeza
         QDesktopWidget *m = QApplication::desktop();
         //Lista de instancias a las interfaces
-        QList <Console *> list;
+        QList <SiTTuGAs *> list;
         //variable auxiliar para la instancia de cada interfaz
-//        SiTTuGAs *w;
-        Console *w;
-        //Gestion de la bitacora
-//        BitaC::user = "Operador";
-//        BitaC::creatBTC();
-//        BitaC::escribeBTC("Operador listo y conectado");
-//        BitaC::foto = "Foto definida desde la Consola del Instructor.";
-
-///Initial loading of SVG takes lot of time, Horchazke loads all interfaces, need to be changed
+        SiTTuGAs *w;
 
         //En base al numero de pantallas es como itera este lazo
         for(int i=0; i<m->screenCount(); i++)
         {
             //Creamos el gestor de las interfaces *(se cargan todas las interfaces)
-            w = new Console();
+            w = new SiTTuGAs(config, http);
             //lista que contiene referencias a todos los gestores creados
             list.push_front(w);
             //Devuelve la geometria disponible por la pantalla
@@ -65,19 +59,14 @@ int main(int argc, char *argv[])
         //Terminamos splash
         splash->finish(w);
         //Iteramos hasta desplegar todas las GUI de SiTTuGAs
-        foreach(Console *W, list){
+        foreach(SiTTuGAs *W, list)
+        {
             //Las pantallas mantienen un tamaño de  1024 X 662 por lo que para presentar la interfaz adecuadamente la pantalla debe tener la misma resolución
             //W->showFullScreen();
             //temporalmete utilizaremos solo el desplegado normal de la pantalla para cada instancia generada
             W->show();
         }
-
-//        Console console;
-//        console.show();
-
-
-
-    //}
+    }
 
     return a.exec();
 }

@@ -4,7 +4,7 @@ SQLite::SQLite()
 {
 }
 
-QString SQLite::BDName = "C:/SiTTuGAs/config/sittugas.bd";
+QString SQLite::BDName = "C:/SiTTuGAs/sittugas.bd";
 
 bool SQLite::IniciaBD()
 {
@@ -175,11 +175,13 @@ Config * SQLite::getConfig()
 
     QSqlQuery query = dbA.exec(strc);
 
-    Config *h;
+    Config *h = NULL;
     while (query.next())
     {
         if(h != NULL)
+        {
             delete h;
+        }
 
         h = new Config();
         h->setMode(query.value(2).toInt());
@@ -192,7 +194,10 @@ Config * SQLite::getConfig()
     dbA.close();
 
     if(!found)
+    {
+        qDebug()<<"Archivo no encontrado";
         return NULL;
+    }
 
     return h;
 }
