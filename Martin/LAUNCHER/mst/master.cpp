@@ -324,6 +324,7 @@ typedef struct MyData {
 
 int main0()
 {
+	int OFFSET_MEMINT=4;
 	//arranca APP_01
 	APP_01_LOAD(GLOBAL_INSTANCE);
 	APP_02_LOAD(GLOBAL_INSTANCE);
@@ -351,7 +352,7 @@ int main0()
 		for (i=0;i<20;i++)
 		{
 			old_TIME=timeGetTime();
-			edo = GetSMemI0(500);
+			edo = GetSMemI0(500-OFFSET_MEMINT);
 			if (edo != 0)
 			{
 				APP_01_EXECUTE (0);
@@ -368,7 +369,7 @@ int main0()
 		}
 		end_TIME=timeGetTime();
 		j++;
-		printf("%d %d\n",j,end_TIME-start_TIME);
+		printf("%d %d %i\n",j,end_TIME-start_TIME,edo);
 	}
 	
 	printf("service ready");

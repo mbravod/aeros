@@ -87,7 +87,9 @@ void HTTPRequest::HTTPReadyRead()
 //    qDebug()<<"Listo para leer";
 
 }
-
+char mem[32000*4];
+float  memf[32000];
+int memi[32000];
 void HTTPRequest::HTTPFinished()
 {
     qDebug()<<"Termina la respuesta";
@@ -109,15 +111,27 @@ void HTTPRequest::HTTPFinished()
 
     if(replyOK)
     {
-        qDebug()<<"Valor Leido: "<<valorRS;
+       // qDebug()<<"Valor Leido: "<<valorRS;
         // Transformamos la respuesta en flujos de Bytes
         QByteArray AP_B((const char*) (valorRS.toLatin1()), valorRS.size());
-        decode = QByteArray::fromBase64(AP_B);
-        arrF = (float *)&decode;
-        arrI = (int *)&decode;
+        qDebug()<< "Valor Inter: "<<AP_B.data();
+        qDebug()<< "Valor Procesado l: "<<AP_B.length();
+        decode =  QByteArray::fromBase64(AP_B);
+        qDebug()<< "Valor Procesado l: "<<decode.length();
+        qDebug()<< "Valor Procesado: "<<decode.data();
+int i;
+        for (i=0;i<decode.length();i++){
+            mem[i]=  decode[i];
+        }
+       int cd=(int )&mem;
 
-        qDebug()<<"Emitiendo señal: "<<arrF[23];
-        qDebug()<<"Emitiendo señal: "<<arrI[23];
+       for (i=0;i<decode.length()/4;i++){
+           memf[i]=  *(float *)((int)((cd)+(i<<2)));
+             memi[i]=  *(int *)((int)((cd)+(i<<2)));
+       }
+
+       qDebug()<<"Emitiendo señal: "<<memf[23];
+       qDebug()<<"Emitiendo señal: "<<memi[23];
         emit Refresh();
     }
 
@@ -134,7 +148,7 @@ HTTPRequest::~HTTPRequest()
 int HTTPRequest::getI(int pos)
 {
     if(0 <= pos)
-        return arrI[pos];
+        return * arrI[pos];
     else
         return -1;
 }
@@ -142,7 +156,7 @@ int HTTPRequest::getI(int pos)
 float HTTPRequest::getF(int pos)
 {
     if(0 <= pos)
-        return arrF[pos];
+        return * arrF[pos];
     else
         return -1;
 }

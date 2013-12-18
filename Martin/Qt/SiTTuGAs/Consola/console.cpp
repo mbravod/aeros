@@ -115,14 +115,18 @@ void Console::Rewind()
 
 void Console::PlayPause()
 {
+    http->setI(1,499);
     if(reproduciendo)
     {
+        // Le decimos a la memoria que pare
+        http->setI(0,500);
         reloj->ActivarClock(false);
         reproduciendo = false;
         actPlay->setIcon(QIcon(":/Resources/Consola/play.png"));
     }
     else
     {
+        http->setI(1,500);
         reloj->ActivarClock(true);
         reproduciendo = true;
         // Cambiamos el íco de la acción
@@ -137,6 +141,7 @@ void Console::Foward()
 
 void Console::Stop()
 {
+    http->setI(0,499);
     reloj->ActivarClock(false);
     reproduciendo = false;
     actPlay->setIcon(QIcon(":/Resources/Consola/play.png"));

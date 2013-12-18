@@ -64,8 +64,8 @@ class HTTPRequest : QWidget
         QString valorRS;
         QMutex mutex;
         Config *config;
-        int *arrI;
-        float *arrF;
+        int *arrI[24000];
+        float *arrF[24000];
         QByteArray decode;
 };
 
