@@ -158,7 +158,7 @@ void HTTPRequest::setF(float val, int pos)
     url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
     qDebug()<<"URL: "<<url;
 
-    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("session", session);
     url.addQueryItem("RW", "w");
     url.addQueryItem("type", "float");
     url.addQueryItem("var", QString::number(pos));
@@ -183,7 +183,7 @@ void HTTPRequest::setI(int val, int pos)
     url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
     qDebug()<<"URL: "<<url;
 
-    url.addQueryItem("session", QString("%1").arg(session));
+    url.addQueryItem("session", session);
     url.addQueryItem("RW", "w");
     url.addQueryItem("type", "int");
     url.addQueryItem("var", QString::number(pos));
