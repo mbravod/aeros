@@ -115,23 +115,24 @@ void HTTPRequest::HTTPFinished()
         // Transformamos la respuesta en flujos de Bytes
         QByteArray AP_B((const char*) (valorRS.toLatin1()), valorRS.size());
         qDebug()<< "Valor Inter: "<<AP_B.data();
-        qDebug()<< "Valor Procesado l: "<<AP_B.length();
+        qDebug()<< "AP_B.lenght(): "<<AP_B.length();
         decode =  QByteArray::fromBase64(AP_B);
         qDebug()<< "Valor Procesado l: "<<decode.length();
         qDebug()<< "Valor Procesado: "<<decode.data();
-int i;
-        for (i=0;i<decode.length();i++){
+        int i;
+        for (i=0;i<decode.length();i++)
+        {
             mem[i]=  decode[i];
         }
+
        int cd=(int )&mem;
 
-       for (i=0;i<decode.length()/4;i++){
+       for (i=0;i<decode.length()/4;i++)
+       {
            memf[i]=  *(float *)((int)((cd)+(i<<2)));
-             memi[i]=  *(int *)((int)((cd)+(i<<2)));
+           memi[i]=  *(int *)((int)((cd)+(i<<2)));
        }
 
-       qDebug()<<"Emitiendo señal: "<<memf[23];
-       qDebug()<<"Emitiendo señal: "<<memi[23];
         emit Refresh();
     }
 
