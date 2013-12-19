@@ -1,0 +1,46 @@
+Primera nota: compiamos el proyecto qwt-6.1.0  a C:
+
+agregar a las variables de entorno
+
+C:\Qwt-6.0.1\lib\;
+C:\qwt-6.1.0\include\ # NO ES NECESARIO
+
+inicio\todos los programas\QtSDK\Desktop\4.7.4 (MSVC 2008)
+
+ejecutar (Segunda nota: en esta parte depende de la instalación de cada maquina y el lenguaje del sitema)
+C:\"Program Files (x86)\Microsoft Visual Studio 9.0"\VC\bin\vcvars32
+
+
+moverte a la carpeta 
+
+cd C:\qwt-6.1.0
+
+compilar
+
+C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\qmake.exe qwt.pro
+
+compilar
+
+C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\nmake
+o
+C:\QtSDK\QtCreator\bin\jom   //SOLO SI NO FUNCIONA NMAKE
+
+instalar 
+C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\nmake install
+o
+C:\QtSDK\QtCreator\bin\jom install //SOLO SI NO FUNCIONA NMAKE
+
+hacer variable de usuario
+
+QT_PLUGIN_PATH
+C:\qwt-6.1.0\plugins
+QMAKEFEATURES
+C:\qwt-6.1.0\features
+
+ejecutar//NO FUNCIONA
+C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\qmake.exe -set	QMAKEFEATURES C:\qwt-6.1.0\features
+
+
+
+
+(No se especifica en que momento copiar el .dll del proyecto, como Gilberto me habia explicado)
