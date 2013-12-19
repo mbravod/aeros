@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c5.ui'
 **
-** Created: Thu 19. Dec 02:34:06 2013
+** Created: Thu 19. Dec 14:36:09 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -1020,13 +1020,13 @@ public:
         lbWF36DMD->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbWF36DMDU = new WLabel(frame_9);
         lbWF36DMDU->setObjectName(QString::fromUtf8("lbWF36DMDU"));
-        lbWF36DMDU->setGeometry(QRect(155, 35, 45, 13));
+        lbWF36DMDU->setGeometry(QRect(159, 35, 37, 13));
         lbWF36DMDU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbWF36DMDU->setFont(font);
         lbWF36DMDU->setProperty("Alineacion", QVariant(WLabel::Centro));
         lbWF36ACU = new WLabel(frame_9);
         lbWF36ACU->setObjectName(QString::fromUtf8("lbWF36ACU"));
-        lbWF36ACU->setGeometry(QRect(155, 56, 45, 13));
+        lbWF36ACU->setGeometry(QRect(159, 56, 37, 13));
         lbWF36ACU->setProperty("Fondo_Inicial", QVariant(WLabel::Sin_color));
         lbWF36ACU->setFont(font);
         lbWF36ACU->setProperty("Alineacion", QVariant(WLabel::Centro));

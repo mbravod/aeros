@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
     splash->showMessage(QObject::tr("Cargando Ajustes..."), bottomLeft, Qt::white);
     splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
 
+//    SQLite sl;
+//    sl.VaciarTxtBD("C:/ptrs.csv");
+
     // Recuperamos la configuración
     Config *config = SQLite::getConfig();
     if(config == NULL)

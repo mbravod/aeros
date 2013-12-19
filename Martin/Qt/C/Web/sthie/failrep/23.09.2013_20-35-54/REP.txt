@@ -1,0 +1,11 @@
+------------REPORTE DE FALLA------------
+Version del Sistema: 6.2.9200 () 0x100-0x1
+0124D9B6 ((Nom Mod no disponible)): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+56D21B5C (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+56D38F8A (mscorwks): (Nom Arch no disponible): (Nom Fun no disponible, CLR?)
+56E09962 (mscorwks): (Nom Arch no disponible): CorExeMain
+56E09B1A (mscorwks): (Nom Arch no disponible): CorExeMain
+56E09C3E (mscorwks): (Nom Arch no disponible): CorExeMain
+
+*****DESCRIPCION DEL ERROR****** 
+EXCEPTION_ACCESS_VIOLATION

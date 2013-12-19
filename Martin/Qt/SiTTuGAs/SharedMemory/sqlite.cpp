@@ -65,7 +65,7 @@ bool SQLite::VaciarTxtBD(QString ruta)
     for(int i = 0; i < listaPtrs.size(); i++)
     {
         strTemp = listaPtrs.at(i);
-        varsval = strTemp.split(QString(";"));
+        varsval = strTemp.split(QString(","));
         QString str = "insert into 'punteros' ('var', 'value') values ('" + varsval.at(0) + "', " + varsval.at(1) + ");";
         qDebug()<<str;
         dbA.exec(str);

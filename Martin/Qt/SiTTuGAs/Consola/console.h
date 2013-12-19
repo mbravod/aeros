@@ -9,6 +9,7 @@
 #include "Sittugas/sittugas.h"
 #include "SharedMemory/config.h"
 #include <QList>
+//#include "webbrowser.h"
 
 namespace Ui {
 class Console;
@@ -45,6 +46,7 @@ class Console : public QWidget
         // Funciones
         QToolBar * CreaToolBar();
         QList <SiTTuGAs *> lst;
+
 
     public slots:
         void Rewind();
