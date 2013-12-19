@@ -46,9 +46,9 @@ protected void Page_Load(object sender, EventArgs e)
 
             string sql = "INSERT INTO FOTOS (usuario, nombre, descripcion, data, date) VALUES ('" + var_user + "','" + var_scene_name + "', '" + var_comments + "', '" + var_data + "', '" + System.DateTime.Now.ToString() + "');";
             SqlCommand cmd = new SqlCommand(sql, Conn);
-//            SqlDataReader sqlReader = cmd.ExecuteReader();
-//            sqlReader.Close();
-            cmd.Dispose();
+            SqlDataReader sqlReader = cmd.ExecuteReader();
+            sqlReader.Close();
+//            cmd.Dispose();
             Conn.Close();
         }
         catch (Exception c)

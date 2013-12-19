@@ -16,11 +16,9 @@
         <table>
             <tr>
             <td><asp:Button ID="Button2" runat="server" onclick="btnRegresar" Text="Cancelar" /></td>
-            <td><asp:Button ID="Button3" runat="server" onclick="btnRegresar" Text="Salvar" /></td>
+            <td><asp:Button ID="Button3" runat="server" onclick="btnRegresar" Text="Cargar" /></td>
             </tr>
          </table>
-        <br />
-          <asp:Button ID="Button1" runat="server" onclick="btnRegresar" Text="Regresar" />
     </div>
     </form>
 </body>
