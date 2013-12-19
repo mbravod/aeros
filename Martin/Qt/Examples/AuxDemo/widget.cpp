@@ -21,7 +21,7 @@ void Widget::OpenDialog(QString title)
     QString str = "INTERNOS ";
     // Rutina para abrir el diálogo auxiliar
     str.append(title);
-    dialog = new HMDialog(this, title, 0);
+    dialog = new HMDialog(this, title, 1);
     dialog->setWindowTitle(str);
     dialog->open();
 }

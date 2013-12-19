@@ -181,7 +181,8 @@ SOURCES += main.cpp\
     SharedMemory/httprequest.cpp \
     SharedMemory/config.cpp \
     Consola/console.cpp \
-    Consola/clock.cpp
+    Consola/clock.cpp \
+    HMDialog/hmdialog.cpp
 
 HEADERS  += Sittugas/sittugas.h \
     A1-Turbina/a1.h \
@@ -331,7 +332,8 @@ HEADERS  += Sittugas/sittugas.h \
     SharedMemory/httprequest.h \
     SharedMemory/config.h \
     Consola/console.h \
-    Consola/clock.h
+    Consola/clock.h \
+    HMDialog/hmdialog.h
 
 FORMS    += \
     Sittugas/sittugas.ui \
@@ -477,7 +479,8 @@ FORMS    += \
     D3-Linknet/n3n39.ui \
     D3-Linknet/n3n18.ui \
     Consola/console.ui \
-    Consola/clock.ui
+    Consola/clock.ui \
+    HMDialog/hmdialog.ui
 
 RESOURCES += \
     Resources.qrc \
