@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempespera.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -156,7 +156,7 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_SMI_TM.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#ffffff;\">FP_SML_TM.grf</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         leRetro->setId(QApplication::translate("WTempEspera", "p_Fix32_NODENAME_SML_TM_FB_F_CV", 0, QApplication::UnicodeUTF8));
         leRetro->setText(QApplication::translate("WTempEspera", "0", 0, QApplication::UnicodeUTF8));
         leDemanda->setId(QApplication::translate("WTempEspera", "p_Fix32_NODENAME_SML_TM_Z_F_CV", 0, QApplication::UnicodeUTF8));

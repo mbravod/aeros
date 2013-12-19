@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b3.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -1293,7 +1293,7 @@ public:
         lb_VST_Unit_6_2->setFont(font1);
         lbIMGFondo = new QLabel(B3);
         lbIMGFondo->setObjectName(QString::fromUtf8("lbIMGFondo"));
-        lbIMGFondo->setGeometry(QRect(0, 22, 1024, 662));
+        lbIMGFondo->setGeometry(QRect(0, 0, 1024, 662));
         lbIMGFondo->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
 ""));
@@ -1321,6 +1321,7 @@ public:
         aValS_0->setObjectName(QString::fromUtf8("aValS_0"));
         aValS_0->setGeometry(QRect(597, 585, 50, 45));
         aValS_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        aValS_0->setTipo(0);
         aValS_0->setOrientation(AWMultEstateWidget::Degree90);
         aValS_0->setElementType(AWMultiObject::VALSIMP3);
         aValS_0->setOffColor(AWMultiObject::Blue);
@@ -1328,6 +1329,7 @@ public:
         aValS_1->setObjectName(QString::fromUtf8("aValS_1"));
         aValS_1->setGeometry(QRect(430, 445, 50, 45));
         aValS_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        aValS_1->setTipo(0);
         aValS_1->setOrientation(AWMultEstateWidget::Degree90);
         aValS_1->setElementType(AWMultiObject::VALSIMP3);
         aValS_1->setOffColor(AWMultiObject::Blue);
@@ -1335,6 +1337,7 @@ public:
         aValS_2->setObjectName(QString::fromUtf8("aValS_2"));
         aValS_2->setGeometry(QRect(505, 442, 50, 45));
         aValS_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        aValS_2->setTipo(0);
         aValS_2->setOrientation(AWMultEstateWidget::Degree270);
         aValS_2->setElementType(AWMultiObject::VALSIMP3);
         aValS_2->setOffColor(AWMultiObject::Blue);
@@ -1342,6 +1345,7 @@ public:
         aValS_3->setObjectName(QString::fromUtf8("aValS_3"));
         aValS_3->setGeometry(QRect(-1, 521, 50, 45));
         aValS_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        aValS_3->setTipo(0);
         aValS_3->setOrientation(AWMultEstateWidget::Degree270);
         aValS_3->setElementType(AWMultiObject::VALSIMP3);
         aValS_3->setOffColor(AWMultiObject::Blue);
@@ -1349,6 +1353,7 @@ public:
         aValS_4->setObjectName(QString::fromUtf8("aValS_4"));
         aValS_4->setGeometry(QRect(673, 585, 50, 45));
         aValS_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        aValS_4->setTipo(0);
         aValS_4->setOrientation(AWMultEstateWidget::Degree270);
         aValS_4->setElementType(AWMultiObject::VALSIMP3);
         aValS_4->setOffColor(AWMultiObject::Blue);
@@ -1438,14 +1443,13 @@ public:
         label_7->setProperty("pixmap", QVariant(QPixmap(QString::fromUtf8(":/Resources/PNG/B1/flecha_blanca_abajo.png"))));
         aWMultiObject = new AWMultiObject(B3);
         aWMultiObject->setObjectName(QString::fromUtf8("aWMultiObject"));
-        aWMultiObject->setGeometry(QRect(60, 285, 51, 51));
+        aWMultiObject->setGeometry(QRect(50, 285, 51, 51));
         aWMultiObject->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         aWMultiObject->setElementType(AWMultiObject::SPRING);
         aIndicador_0 = new AInstrumentIndicator(B3);
         aIndicador_0->setObjectName(QString::fromUtf8("aIndicador_0"));
         aIndicador_0->setGeometry(QRect(170, 150, 70, 70));
         aIndicador_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_0->setValue(-1);
         aIndicador_0->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_0->setProperty("Value", QVariant(2));
         aIndicador_1 = new AInstrumentIndicator(B3);
@@ -1459,21 +1463,19 @@ public:
         aIndicador_2->setObjectName(QString::fromUtf8("aIndicador_2"));
         aIndicador_2->setGeometry(QRect(67, 357, 70, 70));
         aIndicador_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_2->setValue(-1);
         aIndicador_2->setOrientation(AWMultEstateWidget::Degree0);
         aIndicador_2->setProperty("Value", QVariant(2));
         aIndicador_3 = new AInstrumentIndicator(B3);
         aIndicador_3->setObjectName(QString::fromUtf8("aIndicador_3"));
         aIndicador_3->setGeometry(QRect(67, 400, 70, 70));
         aIndicador_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_3->setValue(-1);
         aIndicador_3->setOrientation(AWMultEstateWidget::Degree0);
         aIndicador_3->setProperty("Value", QVariant(2));
         aIndicador_4 = new AInstrumentIndicator(B3);
         aIndicador_4->setObjectName(QString::fromUtf8("aIndicador_4"));
         aIndicador_4->setGeometry(QRect(52, 313, 70, 70));
         aIndicador_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_4->setValue(-1);
+        aIndicador_4->setTipo(0);
         aIndicador_4->setOrientation(AWMultEstateWidget::Degree180);
         aIndicador_4->setProperty("Value", QVariant(3));
         aIndicador_5 = new AInstrumentIndicator(B3);
@@ -1501,7 +1503,6 @@ public:
         aIndicador_9->setObjectName(QString::fromUtf8("aIndicador_9"));
         aIndicador_9->setGeometry(QRect(665, 375, 70, 70));
         aIndicador_9->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_9->setValue(-1);
         aIndicador_9->setOrientation(AWMultEstateWidget::Degree270);
         aIndicador_9->setProperty("Value", QVariant(2));
         aIndicador_10 = new AInstrumentIndicator(B3);
@@ -1536,21 +1537,21 @@ public:
         aIndicador_14->setObjectName(QString::fromUtf8("aIndicador_14"));
         aIndicador_14->setGeometry(QRect(260, 572, 70, 70));
         aIndicador_14->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_14->setValue(-1);
+        aIndicador_14->setTipo(0);
         aIndicador_14->setOrientation(AWMultEstateWidget::Degree270);
         aIndicador_14->setProperty("Value", QVariant(2));
         aIndicador_15 = new AInstrumentIndicator(B3);
         aIndicador_15->setObjectName(QString::fromUtf8("aIndicador_15"));
         aIndicador_15->setGeometry(QRect(857, 490, 70, 70));
         aIndicador_15->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_15->setValue(-1);
+        aIndicador_15->setTipo(0);
         aIndicador_15->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_15->setProperty("Value", QVariant(2));
         aIndicador_16 = new AInstrumentIndicator(B3);
         aIndicador_16->setObjectName(QString::fromUtf8("aIndicador_16"));
         aIndicador_16->setGeometry(QRect(865, 300, 70, 70));
         aIndicador_16->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_16->setValue(-1);
+        aIndicador_16->setTipo(0);
         aIndicador_16->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_16->setProperty("Value", QVariant(2));
         aIndicador_17 = new AInstrumentIndicator(B3);
@@ -1622,7 +1623,7 @@ public:
         lb_B3_14->setFont(font);
         lbU_0 = new WLabel(B3);
         lbU_0->setObjectName(QString::fromUtf8("lbU_0"));
-        lbU_0->setGeometry(QRect(164, 415, 141, 20));
+        lbU_0->setGeometry(QRect(220, 415, 31, 20));
         lbU_0->setLayoutDirection(Qt::LeftToRight);
         lbU_0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1631,7 +1632,7 @@ public:
         lbU_0->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_1 = new WLabel(B3);
         lbU_1->setObjectName(QString::fromUtf8("lbU_1"));
-        lbU_1->setGeometry(QRect(245, 415, 141, 20));
+        lbU_1->setGeometry(QRect(320, 415, 41, 20));
         lbU_1->setLayoutDirection(Qt::LeftToRight);
         lbU_1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1640,7 +1641,7 @@ public:
         lbU_1->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_2 = new WLabel(B3);
         lbU_2->setObjectName(QString::fromUtf8("lbU_2"));
-        lbU_2->setGeometry(QRect(592, 432, 141, 20));
+        lbU_2->setGeometry(QRect(650, 432, 31, 20));
         lbU_2->setLayoutDirection(Qt::LeftToRight);
         lbU_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1649,7 +1650,7 @@ public:
         lbU_2->setProperty("Alineacion", QVariant(WLabel::Izquierda));
         lbU_3 = new WLabel(B3);
         lbU_3->setObjectName(QString::fromUtf8("lbU_3"));
-        lbU_3->setGeometry(QRect(210, 430, 141, 20));
+        lbU_3->setGeometry(QRect(280, 430, 31, 20));
         lbU_3->setLayoutDirection(Qt::LeftToRight);
         lbU_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1690,7 +1691,7 @@ public:
         lbUni_1->setFont(font);
         lbVal_2 = new WLabel(B3);
         lbVal_2->setObjectName(QString::fromUtf8("lbVal_2"));
-        lbVal_2->setGeometry(QRect(192, 415, 31, 20));
+        lbVal_2->setGeometry(QRect(180, 415, 31, 20));
         lbVal_2->setLayoutDirection(Qt::LeftToRight);
         lbVal_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1717,7 +1718,7 @@ public:
         lbVal_4->setProperty("Alineacion", QVariant(WLabel::Derecha));
         lbVal_5 = new WLabel(B3);
         lbVal_5->setObjectName(QString::fromUtf8("lbVal_5"));
-        lbVal_5->setGeometry(QRect(620, 432, 31, 20));
+        lbVal_5->setGeometry(QRect(610, 432, 31, 20));
         lbVal_5->setLayoutDirection(Qt::LeftToRight);
         lbVal_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -1728,7 +1729,7 @@ public:
         aIndicador_18->setObjectName(QString::fromUtf8("aIndicador_18"));
         aIndicador_18->setGeometry(QRect(260, 440, 70, 70));
         aIndicador_18->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        aIndicador_18->setValue(-1);
+        aIndicador_18->setTipo(0);
         aIndicador_18->setOrientation(AWMultEstateWidget::Degree90);
         aIndicador_18->setProperty("Value", QVariant(2));
         aIndicador_19 = new AInstrumentIndicator(B3);
@@ -1863,65 +1864,103 @@ public:
         lb_Esc_3_13->setText(QApplication::translate("B3", "200", 0, QApplication::UnicodeUTF8));
         lb_Esc_3_14->setText(QApplication::translate("B3", "300", 0, QApplication::UnicodeUTF8));
         lb_Esc_3_15->setText(QApplication::translate("B3", "400", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_5_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TGBDSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_5_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_5_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_6_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TGBESEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_6_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_6_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_6_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE078_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_6_1->setText(QApplication::translate("B3", "TE-6142 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_6_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE078_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_6_2->setText(QApplication::translate("B3", "TGBE", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_6_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6142B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_6_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_6_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_7_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TLUBSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_7_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_7_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_7_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE084_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_7_1->setText(QApplication::translate("B3", "TE-6128 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_7_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE084_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_7_2->setText(QApplication::translate("B3", "TLUB", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_7_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_7_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6128A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_7_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_7_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6128B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_7_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_7_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_1_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TAGBSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_1_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_1_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_1_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE083_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_1_1->setText(QApplication::translate("B3", "TE-6123 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_1_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE083_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_1_2->setText(QApplication::translate("B3", "TAGB", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_1_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6123A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_1_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_1_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_1_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TEE6123B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_1_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_1_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_2_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TGBASEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_2_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_2_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_2_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE074_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_2_1->setText(QApplication::translate("B3", "TE-6124 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_2_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_DM_CORE019_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_2_2->setText(QApplication::translate("B3", "TGBA", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_2_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6124A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_2_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_2_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_2_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6124B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_2_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_2_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_3_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TGBBSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_3_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_3_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_3_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE075_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_3_1->setText(QApplication::translate("B3", "TE-6125 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_3_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE075_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_3_2->setText(QApplication::translate("B3", "TGBB", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_3_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6125A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_3_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_3_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_3_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6125B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_3_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_3_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_4_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TGBCSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_4_1->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_4_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_4_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE076_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_4_1->setText(QApplication::translate("B3", "TE-6168 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_4_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE076_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_4_2->setText(QApplication::translate("B3", "TGBC", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_4_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6186A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_4_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_4_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_4_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6186B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_4_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_4_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_5_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE077_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_5_1->setText(QApplication::translate("B3", "TE-6141 A/B", 0, QApplication::UnicodeUTF8));
+        lb_VST_5_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_CORE077_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_5_2->setText(QApplication::translate("B3", "TGBD", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_5_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6141A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_5_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_5_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_5_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6141B_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_5_3->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_5_3->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lb_VST_Lect_6_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6142A_F_CV", 0, QApplication::UnicodeUTF8));
         lb_VST_Lect_6_2->setText(QApplication::translate("B3", "0", 0, QApplication::UnicodeUTF8));
         lb_VST_Unit_6_2->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbIMGFondo->setText(QString());
         btnIMPPant->setText(QApplication::translate("B3", "IMP PANT", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("B3", "    UNIT3", 0, QApplication::UnicodeUTF8));
+        aVal_0->setId(QApplication::translate("B3", "p_Fix32_THISNODE_SOV6185_F_CV", 0, QApplication::UnicodeUTF8));
+        aInter_0->setId(QApplication::translate("B3", "p_Fix32_THISNODE_MOT6135_F_CV", 0, QApplication::UnicodeUTF8));
+        aINTER_0->setId(QApplication::translate("B3", "p_Fix32_THISNODE_MOT6090_F_CV", 0, QApplication::UnicodeUTF8));
         lbTanque_0->setText(QString());
         lbTanque_1->setText(QString());
         lb_B3_2->setText(QApplication::translate("B3", "RECIPIENTE DE ACEITE", 0, QApplication::UnicodeUTF8));
@@ -1931,6 +1970,7 @@ public:
         lb_B3_6->setText(QApplication::translate("B3", "SUCCI\303\223N DE BOMBA", 0, QApplication::UnicodeUTF8));
         lb_B3_7->setText(QApplication::translate("B3", "VER HORAS DE OPER. EN PANTALLA B1", 0, QApplication::UnicodeUTF8));
         label_7->setText(QString());
+        aWMultiObject->setId(QApplication::translate("B3", "p_Fix32_THISNODE_HE6104_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_0->setId(QApplication::translate("B3", "p_Fix32_THISNODE_ALM_MSTR078_F_CV", 0, QApplication::UnicodeUTF8));
         aIndicador_0->setProperty("UpLabel", QVariant(QApplication::translate("B3", "TSL", 0, QApplication::UnicodeUTF8)));
         aIndicador_0->setProperty("DownLabel", QVariant(QApplication::translate("B3", "6113", 0, QApplication::UnicodeUTF8)));
@@ -1989,13 +2029,19 @@ public:
         lbU_1->setText(QApplication::translate("B3", "PSIG", 0, QApplication::UnicodeUTF8));
         lbU_2->setText(QApplication::translate("B3", "PSIG", 0, QApplication::UnicodeUTF8));
         lbU_3->setText(QApplication::translate("B3", "PSIG", 0, QApplication::UnicodeUTF8));
+        lbVal_0->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TEE6128A_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_0->setText(QApplication::translate("B3", "70", 0, QApplication::UnicodeUTF8));
+        lbVal_1->setId(QApplication::translate("B3", "p_Fix32_THISNODE_TE6128B_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_1->setText(QApplication::translate("B3", "71", 0, QApplication::UnicodeUTF8));
         lbUni_0->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbUni_1->setText(QApplication::translate("B3", "\302\272F", 0, QApplication::UnicodeUTF8));
+        lbVal_2->setId(QApplication::translate("B3", "p_Fix32_THISNODE_PT6121A_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_2->setText(QApplication::translate("B3", "00", 0, QApplication::UnicodeUTF8));
+        lbVal_3->setId(QApplication::translate("B3", "p_Fix32_THISNODE_PLUBSEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_3->setText(QApplication::translate("B3", "00", 0, QApplication::UnicodeUTF8));
+        lbVal_4->setId(QApplication::translate("B3", "p_Fix32_THISNODE_PT6121B_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_4->setText(QApplication::translate("B3", "00", 0, QApplication::UnicodeUTF8));
+        lbVal_5->setId(QApplication::translate("B3", "p_Fix32_THISNODE_PT6122_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_5->setText(QApplication::translate("B3", "0.3", 0, QApplication::UnicodeUTF8));
         aIndicador_18->setProperty("UpLabel", QVariant(QApplication::translate("B3", "MOT", 0, QApplication::UnicodeUTF8)));
         aIndicador_18->setProperty("DownLabel", QVariant(QApplication::translate("B3", "68326B", 0, QApplication::UnicodeUTF8)));

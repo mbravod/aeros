@@ -65,6 +65,9 @@
      <height>81</height>
     </rect>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT6031_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::BOMBATD</enum>
    </property>
@@ -84,8 +87,8 @@
      <height>61</height>
     </rect>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -118,9 +121,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR389_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -149,9 +149,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR133_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -176,9 +173,6 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR306_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -211,9 +205,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR390_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -240,10 +231,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>P_Fix32_THISNODE_ALM_MSTR287_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
+    <string>p_Fix32_THISNODE_ALM_MSTR236_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -270,9 +258,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR236_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -297,9 +282,6 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR231_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -331,9 +313,6 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR314_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -369,9 +348,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR020_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -405,9 +381,6 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR075_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -443,9 +416,6 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR315_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -473,9 +443,6 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR230_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -822,6 +789,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MW_INPUT_F_CV</string>
+   </property>
    <property name="text">
     <string>0.0</string>
    </property>
@@ -959,6 +929,9 @@ QProgressBar::chunk {
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT60021_F_CV</string>
+   </property>
    <property name="text">
     <string>20</string>
    </property>
@@ -984,6 +957,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6025_F_CV</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1037,6 +1013,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6056_F_CV</string>
+   </property>
    <property name="text">
     <string>77</string>
    </property>
@@ -1088,6 +1067,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6021_F_CV</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1141,6 +1123,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6036_F_CV</string>
+   </property>
    <property name="text">
     <string>77</string>
    </property>
@@ -1192,6 +1177,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6057_F_CV</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1245,6 +1233,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6035_F_CV</string>
+   </property>
    <property name="text">
     <string>77</string>
    </property>
@@ -1296,6 +1287,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6023_F_CV</string>
    </property>
    <property name="text">
     <string>77</string>
@@ -1349,6 +1343,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6026SEL_F_CV</string>
+   </property>
    <property name="text">
     <string>77</string>
    </property>
@@ -1401,6 +1398,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6026A_F_CV</string>
+   </property>
    <property name="text">
     <string>77</string>
    </property>
@@ -1452,6 +1452,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6026B_F_CV</string>
    </property>
    <property name="text">
     <string>77</string>

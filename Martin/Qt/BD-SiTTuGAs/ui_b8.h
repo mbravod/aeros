@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b8.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:06 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -62,8 +62,8 @@ public:
     QLabel *lbTexto_18;
     QLabel *lbTexto_19;
     QLabel *lbTexto_20;
-    Flama_SectorB *flama_SectorB;
     Flama_SectorA *flama_SectorA;
+    Flama_SectorB *flama_SectorB;
     Flama_SectorC *flama_SectorC;
     Flama_SectorD *flama_SectorD;
     Flama_SectorE *flama_SectorE;
@@ -245,18 +245,18 @@ public:
         lbTexto_20->setFont(font2);
         lbTexto_20->setStyleSheet(QString::fromUtf8("color: rgb(78,46, 28);\n"
 "background-color: rgba(255, 255, 255, 0);"));
-        flama_SectorB = new Flama_SectorB(B8);
-        flama_SectorB->setObjectName(QString::fromUtf8("flama_SectorB"));
-        flama_SectorB->setGeometry(QRect(0, 0, 1024, 662));
         flama_SectorA = new Flama_SectorA(B8);
         flama_SectorA->setObjectName(QString::fromUtf8("flama_SectorA"));
         flama_SectorA->setGeometry(QRect(0, 0, 1024, 662));
+        flama_SectorB = new Flama_SectorB(B8);
+        flama_SectorB->setObjectName(QString::fromUtf8("flama_SectorB"));
+        flama_SectorB->setGeometry(QRect(0, 0, 1024, 662));
         flama_SectorC = new Flama_SectorC(B8);
         flama_SectorC->setObjectName(QString::fromUtf8("flama_SectorC"));
         flama_SectorC->setGeometry(QRect(0, 0, 1024, 662));
         flama_SectorD = new Flama_SectorD(B8);
         flama_SectorD->setObjectName(QString::fromUtf8("flama_SectorD"));
-        flama_SectorD->setGeometry(QRect(0, 0, 1024, 667));
+        flama_SectorD->setGeometry(QRect(0, 0, 1024, 662));
         flama_SectorE = new Flama_SectorE(B8);
         flama_SectorE->setObjectName(QString::fromUtf8("flama_SectorE"));
         flama_SectorE->setGeometry(QRect(0, 0, 1024, 662));
@@ -305,8 +305,8 @@ public:
         lbTexto_18->raise();
         lbTexto_19->raise();
         lbTexto_20->raise();
-        flama_SectorB->raise();
         flama_SectorA->raise();
+        flama_SectorB->raise();
         flama_SectorC->raise();
         flama_SectorD->raise();
         flama_SectorE->raise();

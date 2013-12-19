@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempadm.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -106,11 +106,11 @@ public:
     {
         WTempADM->setWindowTitle(QApplication::translate("WTempADM", "WTempADM", 0, QApplication::UnicodeUTF8));
         lbADMT_1->setText(QApplication::translate("WTempADM", "TE6821A", 0, QApplication::UnicodeUTF8));
-        lbADM_1->setId(QApplication::translate("WTempADM", "p_Fix32_THISNODE_TE6821A_F_CV", 0, QApplication::UnicodeUTF8));
+        lbADM_1->setId(QApplication::translate("WTempADM", "p_HMI_INTER_TE6821A_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbADM_1->setText(QApplication::translate("WTempADM", "65.00", 0, QApplication::UnicodeUTF8));
         lbADMU_1->setText(QApplication::translate("WTempADM", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbADMU_2->setText(QApplication::translate("WTempADM", "\302\272F", 0, QApplication::UnicodeUTF8));
-        lbADM_2->setId(QApplication::translate("WTempADM", "p_Fix32_THISNODE_TE6821B_F_CV", 0, QApplication::UnicodeUTF8));
+        lbADM_2->setId(QApplication::translate("WTempADM", "p_HMI_INTER_TE6821B_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbADM_2->setText(QApplication::translate("WTempADM", "65.00", 0, QApplication::UnicodeUTF8));
         lbADMT_2->setText(QApplication::translate("WTempADM", "TE6821B", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());

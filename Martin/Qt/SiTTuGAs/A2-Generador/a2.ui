@@ -188,7 +188,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_BUS_VLTS2_F_CV</string>
+    <string>p_Fix32_THISNODE_AMPS_B_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -564,7 +564,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_AMPS_A_F_CV</string>
+    <string>p_Fix32_THISNODE_VA_A_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1054,7 +1054,7 @@
   <widget class="QLabel" name="lbCerrado1">
    <property name="geometry">
     <rect>
-     <x>475</x>
+     <x>490</x>
      <y>154</y>
      <width>91</width>
      <height>21</height>
@@ -1494,7 +1494,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_BUS_FREQ2_F_CV</string>
+    <string>p_Fix32_THISNODE_BUS_VA_T_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1682,7 +1682,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_AMPS_B_F_CV</string>
+    <string>p_Fix32_THISNODE_VA_B_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1792,7 +1792,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_BUS_FREQ1_F_CV</string>
+    <string>p_Fix32_THISNODE_AMPS_C_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -1904,7 +1904,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_AMPS_C_F_CV</string>
+    <string>p_Fix32_THISNODE_VA_C_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2308,7 +2308,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_BUS_VLTS1_F_CV</string>
+    <string>p_Fix32_THISNODE_AMPS_A_F_CV</string>
    </property>
    <property name="text">
     <string/>
@@ -2986,7 +2986,7 @@
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_VARHRSHI_F_CV</string>
+    <string/>
    </property>
    <property name="text">
     <string/>
@@ -3391,14 +3391,492 @@
     <string>IMP PANT</string>
    </property>
   </widget>
-  <widget class="WLabel" name="etiqueta">
+  <widget class="QLabel" name="leAmp_CU_2">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>50</y>
-     <width>321</width>
+     <x>940</x>
+     <y>90</y>
+     <width>50</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>HZ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_CT_2">
+   <property name="geometry">
+    <rect>
+     <x>668</x>
+     <y>90</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>191</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>191</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>FRECUENCIA DE BUS (52U)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="WLabel" name="leAmp_A_2">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>27</y>
+     <width>65</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_BUS_VLTS1_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="leAmp_C_2">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>89</y>
+     <width>65</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_BUS_FREQ1_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_AU_2">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>28</y>
+     <width>50</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>KVAC</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="WLabel" name="leAmp_B_2">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>58</y>
+     <width>65</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_BUS_VLTS2_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_AT_2">
+   <property name="geometry">
+    <rect>
+     <x>668</x>
+     <y>28</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>191</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>191</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>VOLTAJE DE BUS (52U)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_BU_2">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>59</y>
+     <width>50</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>KVAC</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_BT_2">
+   <property name="geometry">
+    <rect>
+     <x>648</x>
+     <y>59</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>VOLTAJE DE SERVICIO PÚB. (52U)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_CU_3">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>120</y>
+     <width>50</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>HZ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="WLabel" name="leAmp_C_3">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>119</y>
+     <width>65</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_BUS_FREQ2_F_CV</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leAmp_CT_3">
+   <property name="geometry">
+    <rect>
+     <x>608</x>
+     <y>120</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>FRECUENCIA DE SERVICIO PÚB. (52U)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="WLabel" name="wLabel">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>530</y>
+     <width>16</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VARHRSHI_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="WLabel" name="wLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>530</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_VARHRSLO_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="WLabel" name="wLabel_3">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>560</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MVHRSLO_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="WLabel" name="wLabel_4">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>560</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MVHRSHI_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
    </property>
   </widget>
   <zorder>lbBack</zorder>
@@ -3491,7 +3969,22 @@
   <zorder>leMV_AT</zorder>
   <zorder>lbUnit3</zorder>
   <zorder>btnIMPPant</zorder>
-  <zorder>etiqueta</zorder>
+  <zorder>leAmp_CU_2</zorder>
+  <zorder>leAmp_CT_2</zorder>
+  <zorder>leAmp_A_2</zorder>
+  <zorder>leAmp_C_2</zorder>
+  <zorder>leAmp_AU_2</zorder>
+  <zorder>leAmp_B_2</zorder>
+  <zorder>leAmp_AT_2</zorder>
+  <zorder>leAmp_BU_2</zorder>
+  <zorder>leAmp_BT_2</zorder>
+  <zorder>leAmp_CU_3</zorder>
+  <zorder>leAmp_C_3</zorder>
+  <zorder>leAmp_CT_3</zorder>
+  <zorder>wLabel</zorder>
+  <zorder>wLabel_2</zorder>
+  <zorder>wLabel_3</zorder>
+  <zorder>wLabel_4</zorder>
  </widget>
  <customwidgets>
   <customwidget>

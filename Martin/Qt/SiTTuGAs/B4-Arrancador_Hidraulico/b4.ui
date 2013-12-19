@@ -63,6 +63,9 @@
      <family>Verdana</family>
     </font>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT1615_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTERM</enum>
    </property>
@@ -153,6 +156,9 @@ border:0px solidblack;
       <family>Verdana</family>
      </font>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_HE1610_F_CV</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::SPRING</enum>
     </property>
@@ -195,6 +201,9 @@ border:0px solidblack;
       <family>Verdana</family>
      </font>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_MSTR005_F_CV</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
     </property>
@@ -212,6 +221,9 @@ border:0px solidblack;
      <font>
       <family>Verdana</family>
      </font>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_MSTR007_F_CV</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::CIRLED</enum>
@@ -336,8 +348,14 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::VALSIMP4</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
    </property>
   </widget>
   <widget class="AWMultiObject" name="bombatc_1">
@@ -353,6 +371,9 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT1615_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::BOMBATC</enum>
@@ -372,6 +393,9 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR005_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::BOMBATC</enum>
    </property>
@@ -389,6 +413,9 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT1615_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::REGTA</enum>
@@ -468,6 +495,9 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -494,6 +524,9 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ABRTST004_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -525,6 +558,9 @@ NIVEL DEL TANQUE - OK</string>
    <property name="intID">
     <number>0</number>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -552,6 +588,9 @@ NIVEL DEL TANQUE - OK</string>
      <family>Verdana</family>
     </font>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -578,6 +617,9 @@ NIVEL DEL TANQUE - OK</string>
     <font>
      <family>Verdana</family>
     </font>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ABRTST003_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -637,7 +679,7 @@ NIVEL DEL TANQUE - OK</string>
     </font>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR232_F_CV</string>
+    <string>p_Fix32_THISNODE_ALM_MSTR238_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -667,7 +709,7 @@ NIVEL DEL TANQUE - OK</string>
     </font>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR238_F_CV</string>
+    <string>p_Fix32_THISNODE_ALM_MSTR232_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -1028,6 +1070,9 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE1663SEL_F_CV</string>
+   </property>
    <property name="text">
     <string>83</string>
    </property>
@@ -1054,6 +1099,9 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE1663A1_F_CV</string>
+   </property>
    <property name="text">
     <string>83 </string>
    </property>
@@ -1079,6 +1127,9 @@ background-color: rgba(255, 255, 255, 0);
     <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
 </string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE1663A2_F_CV</string>
    </property>
    <property name="text">
     <string>82</string>

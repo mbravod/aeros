@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a6.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:06 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -438,59 +438,59 @@ public:
     {
         A6->setWindowTitle(QApplication::translate("A6", "Form", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
-        ledApaFun->setId(QApplication::translate("A6", "p_Fix32_THISNODE_OFF_RUN_F_CV", 0, QApplication::UnicodeUTF8));
+        ledApaFun->setId(QApplication::translate("A6", "p_Fix32_THISNODE_OFF_RUN", 0, QApplication::UnicodeUTF8));
         lbApaFunT->setText(QApplication::translate("A6", "APAGADO/FUNCIONANDO", 0, QApplication::UnicodeUTF8));
-        ledArraHid->setId(QApplication::translate("A6", "p_Fix32_THISNODE_HYD_ST_OK_F_CV", 0, QApplication::UnicodeUTF8));
+        ledArraHid->setId(QApplication::translate("A6", "p_Fix32_THISNODE_HYD_ST_OK", 0, QApplication::UnicodeUTF8));
         lbArraHidT->setText(QApplication::translate("A6", "ARRANCADOR -HID OK", 0, QApplication::UnicodeUTF8));
         lbLavConADT->setText(QApplication::translate("A6", "LAVADO CON AGUA DESACTIVADO", 0, QApplication::UnicodeUTF8));
-        ledLavConAD->setId(QApplication::translate("A6", "p_Fix32_THISNODE_WWOFF_OK_F_CV", 0, QApplication::UnicodeUTF8));
+        ledLavConAD->setId(QApplication::translate("A6", "p_Fix32_THISNODE_WWOFF_OK", 0, QApplication::UnicodeUTF8));
         lbHardMicrT->setText(QApplication::translate("A6", "HARDWARE MICRONET OK", 0, QApplication::UnicodeUTF8));
         lbHarLinkT->setText(QApplication::translate("A6", "HARDWARE LINKNET OK", 0, QApplication::UnicodeUTF8));
-        ledHarLink->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LH_OK_F_CV", 0, QApplication::UnicodeUTF8));
-        ledHardMicr->setId(QApplication::translate("A6", "p_Fix32_THISNODE_MNET_OK_F_CV", 0, QApplication::UnicodeUTF8));
+        ledHarLink->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LH_OK", 0, QApplication::UnicodeUTF8));
+        ledHardMicr->setId(QApplication::translate("A6", "p_Fix32_THISNODE_MNET_OK", 0, QApplication::UnicodeUTF8));
         lbRotNET->setText(QApplication::translate("A6", "ROTACI\303\223N NO ESTA EFECTU\303\201NDOSE", 0, QApplication::UnicodeUTF8));
-        ledRotNE->setId(QApplication::translate("A6", "p_Fix32_THISNODE_CRANK_OFF_F_CV", 0, QApplication::UnicodeUTF8));
-        ledCtrlMD->setId(QApplication::translate("A6", "p_Fix32_THISNODE_BO_MANUAL_F_CV", 0, QApplication::UnicodeUTF8));
+        ledRotNE->setId(QApplication::translate("A6", "p_Fix32_THISNODE_CRANK_OFF", 0, QApplication::UnicodeUTF8));
+        ledCtrlMD->setId(QApplication::translate("A6", "p_Fix32_THISNODE_BO_MANUAL", 0, QApplication::UnicodeUTF8));
         lbCtrlMDT->setText(QApplication::translate("A6", "CONTROL MANUAL DO DESHABILITADO", 0, QApplication::UnicodeUTF8));
-        ledMen300N25_1->setId(QApplication::translate("A6", "p_Fix32_THISNODE_N25LT300_F_CV", 0, QApplication::UnicodeUTF8));
+        ledMen300N25_1->setId(QApplication::translate("A6", "p_Fix32_THISNODE_N25LT300", 0, QApplication::UnicodeUTF8));
         lbMen300N25_1T->setText(QApplication::translate("A6", "MENOS DE 300 RPM N25", 0, QApplication::UnicodeUTF8));
-        ledCieSinM->setId(QApplication::translate("A6", "p_Fix32_THISNODE_SDNNS_OK_F_CV", 0, QApplication::UnicodeUTF8));
+        ledCieSinM->setId(QApplication::translate("A6", "p_Fix32_THISNODE_SDNNS_OK", 0, QApplication::UnicodeUTF8));
         lbCieSinMT->setText(QApplication::translate("A6", "CIERRE SIN MOTOR Y ALTO NORMAL LISTO", 0, QApplication::UnicodeUTF8));
-        ledBloqNo->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LOK_4HROFF_F_CV", 0, QApplication::UnicodeUTF8));
+        ledBloqNo->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LOK_4HROFF", 0, QApplication::UnicodeUTF8));
         lbNivTanTurT->setText(QApplication::translate("A6", "NIVEL TANQUE TURBINA OK", 0, QApplication::UnicodeUTF8));
-        ledLavAguFu->setId(QApplication::translate("A6", "p_Fix32_THISNODE_WW_NOTACTIVE_F_CV", 0, QApplication::UnicodeUTF8));
+        ledLavAguFu->setId(QApplication::translate("A6", "p_Fix32_THISNODE_WW_NOTACTIVE", 0, QApplication::UnicodeUTF8));
         lbBloqNoT->setText(QApplication::translate("A6", "BLOQUEO CUATRO HORAS NO ACTIVO", 0, QApplication::UnicodeUTF8));
         lbTempEstT->setText(QApplication::translate("A6", "TEMP ESTATOR OK", 0, QApplication::UnicodeUTF8));
         lbLavAguFuT->setText(QApplication::translate("A6", "LAVADO AGUA FUERA DE L\303\215NEA  NO ACTIVO", 0, QApplication::UnicodeUTF8));
-        ledUnidFun->setId(QApplication::translate("A6", "p_Fix32_THISNODE_RUNNING_F_CV", 0, QApplication::UnicodeUTF8));
-        ledTempAceTur->setId(QApplication::translate("A6", "p_Fix32_THISNODE_TLUB_OK_F_CV", 0, QApplication::UnicodeUTF8));
+        ledUnidFun->setId(QApplication::translate("A6", "p_Fix32_THISNODE_RUNNING", 0, QApplication::UnicodeUTF8));
+        ledTempAceTur->setId(QApplication::translate("A6", "p_Fix32_THISNODE_TLUB_OK", 0, QApplication::UnicodeUTF8));
         lbUnidFunT->setText(QApplication::translate("A6", "UNIDAD FUNCIONANDO", 0, QApplication::UnicodeUTF8));
-        ledNivTanTur->setId(QApplication::translate("A6", "p_Fix32_THISNODE_TLO_TNKLVL_F_CV", 0, QApplication::UnicodeUTF8));
-        ledTempEst->setId(QApplication::translate("A6", "p_Fix32_THISNODE_STATOR_PRM_F_CV", 0, QApplication::UnicodeUTF8));
+        ledNivTanTur->setId(QApplication::translate("A6", "p_Fix32_THISNODE_TLO_TNKLVL", 0, QApplication::UnicodeUTF8));
+        ledTempEst->setId(QApplication::translate("A6", "p_Fix32_THISNODE_STATOR_PRM", 0, QApplication::UnicodeUTF8));
         lbTempAceTurT->setText(QApplication::translate("A6", "TEMP ACEITE  LUB TURBINA OK", 0, QApplication::UnicodeUTF8));
         lbValConbT->setText(QApplication::translate("A6", "V\303\201LV CONB EN ALTO MIN", 0, QApplication::UnicodeUTF8));
         lbTempAceGenT->setText(QApplication::translate("A6", "TEMP ACEITE  LUB GEN OK", 0, QApplication::UnicodeUTF8));
-        ledValSumCer->setId(QApplication::translate("A6", "p_Fix32_THISNODE_SOV_CLSD_F_CV", 0, QApplication::UnicodeUTF8));
+        ledValSumCer->setId(QApplication::translate("A6", "p_Fix32_THISNODE_SOV_CLSD", 0, QApplication::UnicodeUTF8));
         lbCan2T->setText(QApplication::translate("A6", "CANAL 2 N4N52", 0, QApplication::UnicodeUTF8));
-        ledCan2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_GLUBTNKLVL_F_CV", 0, QApplication::UnicodeUTF8));
+        ledCan2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_GLUBTNKLVL", 0, QApplication::UnicodeUTF8));
         lbValSumCerT->setText(QApplication::translate("A6", "VALVS SUMINISTRO CERRADO VENTEO ABIERTO", 0, QApplication::UnicodeUTF8));
-        ledTempAceGen->setId(QApplication::translate("A6", "p_Fix32_THISNODE_GLUBTNKTMP_F_CV", 0, QApplication::UnicodeUTF8));
-        ledValConb->setId(QApplication::translate("A6", "p_Fix32_THISNODE_VMIN_STOP_F_CV", 0, QApplication::UnicodeUTF8));
+        ledTempAceGen->setId(QApplication::translate("A6", "p_Fix32_THISNODE_GLUBTNKTMP", 0, QApplication::UnicodeUTF8));
+        ledValConb->setId(QApplication::translate("A6", "p_Fix32_THISNODE_VMIN_STOP", 0, QApplication::UnicodeUTF8));
         lbPerRotT_2->setText(QApplication::translate("A6", "PERMISOS DE ROTACI\303\223N", 0, QApplication::UnicodeUTF8));
         lbSisT->setText(QApplication::translate("A6", "EQUIPO DEL SISYEMA DE CONTROL", 0, QApplication::UnicodeUTF8));
-        ledT2May->setId(QApplication::translate("A6", "p_Fix32_THISNODE_T2GT50_F_CV", 0, QApplication::UnicodeUTF8));
-        ledNivTan->setId(QApplication::translate("A6", "p_Fix32_THISNODE_T2GT50_F_CV", 0, QApplication::UnicodeUTF8));
-        ledLavAgua->setId(QApplication::translate("A6", "p_Fix32_THISNODE_MW_WWENBL_F_CV", 0, QApplication::UnicodeUTF8));
+        ledT2May->setId(QApplication::translate("A6", "p_Fix32_THISNODE_T2GT50", 0, QApplication::UnicodeUTF8));
+        ledNivTan->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LS6543", 0, QApplication::UnicodeUTF8));
+        ledLavAgua->setId(QApplication::translate("A6", "p_Fix32_THISNODE_MW_WWENBL", 0, QApplication::UnicodeUTF8));
         lbNivTanT->setText(QApplication::translate("A6", "NIVEL TANQUE LAV AGUA", 0, QApplication::UnicodeUTF8));
-        ledNsd->setId(QApplication::translate("A6", "p_Fix32_THISNODE_NSDGT3590_F_CV", 0, QApplication::UnicodeUTF8));
+        ledNsd->setId(QApplication::translate("A6", "p_Fix32_THISNODE_NSDGT3590", 0, QApplication::UnicodeUTF8));
         lbNsdT->setText(QApplication::translate("A6", "NSD MAYOR  A3590", 0, QApplication::UnicodeUTF8));
         lbLavAguaT->setText(QApplication::translate("A6", "LAV C/AGUA MW HABILITAR", 0, QApplication::UnicodeUTF8));
         lbT2MayT->setText(QApplication::translate("A6", "T2 MAYOR DE 50 GRAD F (10 C)", 0, QApplication::UnicodeUTF8));
-        ledMen300N25_2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_N25LT300_F_CV", 0, QApplication::UnicodeUTF8));
-        ledNivTan_2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LS6543_F_CV", 0, QApplication::UnicodeUTF8));
-        ledPerRot->setId(QApplication::translate("A6", "p_Fix32_THISNODE_C_PERM_F_CV", 0, QApplication::UnicodeUTF8));
+        ledMen300N25_2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_N25LT300", 0, QApplication::UnicodeUTF8));
+        ledNivTan_2->setId(QApplication::translate("A6", "p_Fix32_THISNODE_LS6543", 0, QApplication::UnicodeUTF8));
+        ledPerRot->setId(QApplication::translate("A6", "p_Fix32_THISNODE_C_PERM", 0, QApplication::UnicodeUTF8));
         lbNivTanT_2->setText(QApplication::translate("A6", "NIVEL TANQUE LAV AGUA", 0, QApplication::UnicodeUTF8));
-        ledT48Men->setId(QApplication::translate("A6", "p_Fix32_THISNODE_T48LT200_F_CV", 0, QApplication::UnicodeUTF8));
+        ledT48Men->setId(QApplication::translate("A6", "p_Fix32_THISNODE_T48LT200", 0, QApplication::UnicodeUTF8));
         lbT48MenT->setText(QApplication::translate("A6", "T48 MENOS 200", 0, QApplication::UnicodeUTF8));
         lbPerRotT->setText(QApplication::translate("A6", "PERMISOS ROTACI\303\223N CUMPLIDOS", 0, QApplication::UnicodeUTF8));
         lbMen300N25_2T->setText(QApplication::translate("A6", "MENOS 300 RPM N25\n"

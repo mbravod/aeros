@@ -1330,6 +1330,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBDSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1411,6 +1414,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBESEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1486,6 +1492,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE078_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6142 A/B</string>
     </property>
@@ -1518,6 +1527,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE078_F_CV</string>
     </property>
     <property name="text">
      <string>TGBE</string>
@@ -1560,6 +1572,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6142B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1642,6 +1657,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TLUBSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1717,6 +1735,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE084_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6128 A/B</string>
     </property>
@@ -1749,6 +1770,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE084_F_CV</string>
     </property>
     <property name="text">
      <string>TLUB</string>
@@ -1828,6 +1852,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6128A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -1869,6 +1896,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6128B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -1951,6 +1981,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TAGBSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2026,6 +2059,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE083_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6123 A/B</string>
     </property>
@@ -2058,6 +2094,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE083_F_CV</string>
     </property>
     <property name="text">
      <string>TAGB</string>
@@ -2100,6 +2139,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6123A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2181,6 +2223,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TEE6123B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2266,6 +2311,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBASEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2341,6 +2389,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE074_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6124 A/B</string>
     </property>
@@ -2373,6 +2424,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_DM_CORE019_F_CV</string>
     </property>
     <property name="text">
      <string>TGBA</string>
@@ -2415,6 +2469,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6124A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2496,6 +2553,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6124B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2581,6 +2641,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBBSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2656,6 +2719,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE075_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6125 A/B</string>
     </property>
@@ -2688,6 +2754,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE075_F_CV</string>
     </property>
     <property name="text">
      <string>TGBB</string>
@@ -2730,6 +2799,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6125A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2811,6 +2883,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6125B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -2896,6 +2971,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBCSEL_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -2971,6 +3049,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE076_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6168 A/B</string>
     </property>
@@ -3003,6 +3084,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE076_F_CV</string>
     </property>
     <property name="text">
      <string>TGBC</string>
@@ -3045,6 +3129,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6186A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3127,6 +3214,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6186B_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3205,6 +3295,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE077_F_CV</string>
+    </property>
     <property name="text">
      <string>TE-6141 A/B</string>
     </property>
@@ -3237,6 +3330,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_ALM_CORE077_F_CV</string>
     </property>
     <property name="text">
      <string>TGBD</string>
@@ -3279,6 +3375,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6141A_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3360,6 +3459,9 @@ QProgressBar::chunk {
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6141B_F_CV</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -3445,6 +3547,9 @@ QProgressBar::chunk {
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 </string>
     </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6142A_F_CV</string>
+    </property>
     <property name="text">
      <string>0</string>
     </property>
@@ -3503,7 +3608,7 @@ QProgressBar::chunk {
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>22</y>
+     <y>0</y>
      <width>1024</width>
      <height>662</height>
     </rect>
@@ -3577,6 +3682,9 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SOV6185_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::VALCUAD2</enum>
    </property>
@@ -3595,6 +3703,9 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -3618,6 +3729,9 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -3639,6 +3753,9 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -3662,6 +3779,9 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -3683,6 +3803,9 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -3706,6 +3829,9 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT6135_F_CV</string>
+   </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTERM</enum>
    </property>
@@ -3724,6 +3850,9 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT6090_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::INTER</enum>
@@ -3965,7 +4094,7 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="AWMultiObject" name="aWMultiObject">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>50</x>
      <y>285</y>
      <width>51</width>
      <height>51</height>
@@ -3973,6 +4102,9 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_HE6104_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SPRING</enum>
@@ -3992,9 +4124,6 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR078_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4055,9 +4184,6 @@ background-color: rgba(255, 255, 255, 0);
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_CORE084_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4086,9 +4212,6 @@ background-color: rgba(255, 255, 255, 0);
    <property name="id">
     <string>P_Fix32_THISNODE_ALM_MSTR365_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -4114,8 +4237,8 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -4237,9 +4360,6 @@ background-color: rgba(255, 255, 255, 0);
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR074_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4390,8 +4510,8 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -4418,8 +4538,8 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4446,8 +4566,8 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -4705,9 +4825,9 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbU_0">
    <property name="geometry">
     <rect>
-     <x>164</x>
+     <x>220</x>
      <y>415</y>
-     <width>141</width>
+     <width>31</width>
      <height>20</height>
     </rect>
    </property>
@@ -4736,9 +4856,9 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbU_1">
    <property name="geometry">
     <rect>
-     <x>245</x>
+     <x>320</x>
      <y>415</y>
-     <width>141</width>
+     <width>41</width>
      <height>20</height>
     </rect>
    </property>
@@ -4767,9 +4887,9 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbU_2">
    <property name="geometry">
     <rect>
-     <x>592</x>
+     <x>650</x>
      <y>432</y>
-     <width>141</width>
+     <width>31</width>
      <height>20</height>
     </rect>
    </property>
@@ -4798,9 +4918,9 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbU_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>280</x>
      <y>430</y>
-     <width>141</width>
+     <width>31</width>
      <height>20</height>
     </rect>
    </property>
@@ -4843,6 +4963,9 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TEE6128A_F_CV</string>
+   </property>
    <property name="text">
     <string>70</string>
    </property>
@@ -4870,6 +4993,9 @@ background-color: rgba(255, 255, 255, 0);
     <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
 </string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_TE6128B_F_CV</string>
    </property>
    <property name="text">
     <string>71</string>
@@ -4941,7 +5067,7 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbVal_2">
    <property name="geometry">
     <rect>
-     <x>192</x>
+     <x>180</x>
      <y>415</y>
      <width>31</width>
      <height>20</height>
@@ -4954,6 +5080,9 @@ background-color: rgba(255, 255, 255, 0);
     <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
 </string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6121A_F_CV</string>
    </property>
    <property name="text">
     <string>00</string>
@@ -4986,6 +5115,9 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PLUBSEL_F_CV</string>
+   </property>
    <property name="text">
     <string>00</string>
    </property>
@@ -5017,6 +5149,9 @@ background-color: rgba(255, 255, 255, 0);
 background-color: rgba(255, 255, 255, 0);
 </string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6121B_F_CV</string>
+   </property>
    <property name="text">
     <string>00</string>
    </property>
@@ -5034,7 +5169,7 @@ background-color: rgba(255, 255, 255, 0);
   <widget class="WLabel" name="lbVal_5">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>432</y>
      <width>31</width>
      <height>20</height>
@@ -5047,6 +5182,9 @@ background-color: rgba(255, 255, 255, 0);
     <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
 </string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6122_F_CV</string>
    </property>
    <property name="text">
     <string>0.3</string>
@@ -5074,8 +5212,8 @@ background-color: rgba(255, 255, 255, 0);
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>

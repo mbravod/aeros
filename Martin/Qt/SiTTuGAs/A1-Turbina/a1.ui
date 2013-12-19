@@ -589,7 +589,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>16</x>
       <y>26</y>
-      <width>53</width>
+      <width>71</width>
       <height>25</height>
      </rect>
     </property>
@@ -607,7 +607,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>118</x>
       <y>26</y>
-      <width>53</width>
+      <width>71</width>
       <height>25</height>
      </rect>
     </property>
@@ -625,7 +625,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>66</x>
       <y>2</y>
-      <width>53</width>
+      <width>91</width>
       <height>25</height>
      </rect>
     </property>
@@ -650,6 +650,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_B_FORCE_SOV6249_B_FORCE_B_FORCE</string>
+    </property>
     <property name="indice">
      <number>-7</number>
     </property>
@@ -669,6 +672,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_B_FORCE_SOV6204_B_FORCE_B_FORCE</string>
+    </property>
    </widget>
    <widget class="AWMultiObject" name="aWMultiObject_3">
     <property name="geometry">
@@ -681,6 +687,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="id">
+     <string>p_B_FORCE_SOV6208_B_FORCE_B_FORCE</string>
     </property>
     <property name="Orientation">
      <enum>AWMultEstateWidget::Degree270</enum>
@@ -704,6 +713,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_HMI_INTER_EMDVR3_CALC_PLUS_A_OUT_1</string>
+    </property>
    </widget>
    <widget class="AWMultiObject" name="aWMultiObject_5">
     <property name="geometry">
@@ -716,6 +728,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="id">
+     <string>p_HMI_INTER_EMDVR1_CALC_PLUS_A_OUT_1</string>
     </property>
    </widget>
    <widget class="AWMultiObject" name="aWMultiObject_6">
@@ -730,6 +745,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_HMI_INTER_EMDVR2_CALC_PLUS_A_OUT_1</string>
+    </property>
    </widget>
    <widget class="AWMultiObject" name="aWMultiObject_7">
     <property name="geometry">
@@ -742,6 +760,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="id">
+     <string>p_A2_A03_ACT_ST8DVR_ACT_CTRL_AVG_POS</string>
     </property>
     <property name="ElementType">
      <enum>AWMultiObject::BOMBATE</enum>
@@ -759,6 +780,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_A2_A03_ACT_CDPDVR_ACT_CTRL_AVG_POS</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::BOMBATE</enum>
     </property>
@@ -768,7 +792,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>272</x>
       <y>44</y>
-      <width>163</width>
+      <width>167</width>
       <height>27</height>
      </rect>
     </property>
@@ -870,7 +894,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>320</x>
       <y>74</y>
-      <width>163</width>
+      <width>167</width>
       <height>27</height>
      </rect>
     </property>
@@ -1079,6 +1103,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_N3N39_BI_AVRINAUTO</string>
+    </property>
     <property name="LabelText" stdset="0">
      <string>AUTO</string>
     </property>
@@ -1125,6 +1152,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_HMI_INTER_WX_CALC_PLUS_A_OUT_1</string>
+    </property>
     <property name="LabelText" stdset="0">
      <string/>
     </property>
@@ -1150,6 +1180,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="id">
+     <string>p_GEN_VARS_T_A_NAME_A_NAME</string>
     </property>
     <property name="LabelText" stdset="0">
      <string/>
@@ -1177,6 +1210,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_GEN_PF_T_A_NAME_A_NAME</string>
+    </property>
     <property name="LabelText" stdset="0">
      <string/>
     </property>
@@ -1203,6 +1239,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_GEN_FREQ_A_NAME_A_NAME</string>
+    </property>
     <property name="LabelText" stdset="0">
      <string/>
     </property>
@@ -1219,7 +1258,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>228</x>
       <y>16</y>
-      <width>163</width>
+      <width>167</width>
       <height>27</height>
      </rect>
     </property>
@@ -1411,6 +1450,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_A1_A09_ACT_TBVDVR_ACT_CTRL_AVG_POS</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::BOMBATE</enum>
     </property>
@@ -1544,198 +1586,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </font>
     </property>
    </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_10">
-    <property name="geometry">
-     <rect>
-      <x>334</x>
-      <y>166</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_11">
-    <property name="geometry">
-     <rect>
-      <x>334</x>
-      <y>194</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_12">
-    <property name="geometry">
-     <rect>
-      <x>334</x>
-      <y>224</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_13">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>162</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_14">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>170</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_15">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>210</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_16">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>220</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_17">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>190</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_18">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>200</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_19">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>180</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_20">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>230</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_21">
-    <property name="geometry">
-     <rect>
-      <x>382</x>
-      <y>240</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
    <widget class="AWMultiObject" name="aWMultiObject_22">
     <property name="geometry">
      <rect>
@@ -1748,232 +1598,11 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="isUpdateable" stdset="0">
      <bool>true</bool>
     </property>
+    <property name="id">
+     <string>p_HYD_STRT_MOT1615_B_NAME</string>
+    </property>
     <property name="ElementType">
      <enum>AWMultiObject::TELEM</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_23">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>260</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_24">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>134</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_25">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>250</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_26">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>144</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_27">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>154</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_28">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>164</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_29">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>240</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_30">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>174</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_31">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>202</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_32">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>212</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_33">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>194</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_34">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>184</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_35">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>222</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="aWMultiObject_36">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>230</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="isUpdateable" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::CIRLINE</enum>
     </property>
    </widget>
    <widget class="QFrame" name="Compresor_LP_2">
@@ -2127,6 +1756,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_WF36DMD_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -2231,6 +1863,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_TGSSEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -2337,6 +1972,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_PGSSEL_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -2441,6 +2079,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_WFMAX_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -2685,6 +2326,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_N25_TRF_1X_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -2722,6 +2366,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_P25SEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -2799,6 +2446,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_T25SEL_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -2869,6 +2519,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_T3SEL_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -2938,6 +2591,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_PS3SEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -3011,6 +2667,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_N25_CRF_1X_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -3302,6 +2961,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_R_N25REF_N25REF_A_NAME_A_NAME</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -3413,6 +3075,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_N25SEL_A_NAME_A_NAME</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -3482,6 +3147,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_IFACE_CORE_Z_THROTTLE_A_NAME_A_NAME</string>
      </property>
      <property name="Font">
       <font>
@@ -3594,6 +3262,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_NSDSEL_A_NAME_A_NAME</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -3663,6 +3334,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_IFACE_CORE_Z_NSDREF_A_NAME_A_NAME</string>
      </property>
      <property name="Font">
       <font>
@@ -3969,6 +3643,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_NSD_TRF_1X_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -4003,6 +3680,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_P0SEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -4118,6 +3798,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_T2SEL_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -4187,6 +3870,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_T48SEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Value">
       <double>0.000000000000000</double>
@@ -4305,6 +3991,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
+     <property name="id">
+      <string>p_HMI_INTER_P48SEL_CALC_PLUS_A_OUT_1</string>
+     </property>
      <property name="Font">
       <font>
        <pointsize>9</pointsize>
@@ -4377,6 +4066,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_NSD_CRF_1X_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -4517,6 +4209,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_HMI_INTER_PTBSEL_CALC_PLUS_A_OUT_1</string>
      </property>
      <property name="Font">
       <font>
@@ -5163,32 +4858,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       </font>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_98">
-     <property name="geometry">
-      <rect>
-       <x>168</x>
-       <y>32</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_99">
      <property name="geometry">
       <rect>
@@ -5203,6 +4872,9 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
+     </property>
+     <property name="id">
+      <string>p_ENGMODE_ENGMODE_A_NAME_A_NAME</string>
      </property>
      <property name="LabelText" stdset="0">
       <string/>
@@ -5230,31 +4902,8 @@ alternate-background-color: rgb(255, 0, 0);</string>
      <property name="isUpdateable" stdset="0">
       <bool>true</bool>
      </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_101">
-     <property name="geometry">
-      <rect>
-       <x>168</x>
-       <y>112</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
+     <property name="id">
+      <string>p_S_BRNDMDG_BRNDMDR_A_NAME</string>
      </property>
      <property name="LabelText" stdset="0">
       <string/>
@@ -5633,38 +5282,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignLeft</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_110">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>68</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_111">
      <property name="geometry">
       <rect>
@@ -5694,38 +5311,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_112">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>88</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_113">
      <property name="geometry">
       <rect>
@@ -5753,38 +5338,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="Alignment">
       <enum>AUpTextLabel::AlignRight</enum>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_114">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>106</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
      </property>
     </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_115">
@@ -5845,70 +5398,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_117">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>126</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_118">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>144</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_119">
      <property name="geometry">
       <rect>
@@ -5938,38 +5427,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_120">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>162</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_121">
      <property name="geometry">
       <rect>
@@ -5997,38 +5454,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="Alignment">
       <enum>AUpTextLabel::AlignRight</enum>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_122">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>180</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
      </property>
     </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_123">
@@ -6121,38 +5546,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_126">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>216</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_127">
      <property name="geometry">
       <rect>
@@ -6180,38 +5573,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="Alignment">
       <enum>AUpTextLabel::AlignRight</enum>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_128">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>234</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
      </property>
     </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_129">
@@ -6243,38 +5604,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_130">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>254</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_131">
      <property name="geometry">
       <rect>
@@ -6302,38 +5631,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="Alignment">
       <enum>AUpTextLabel::AlignRight</enum>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_132">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>272</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
      </property>
     </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_133">
@@ -6365,38 +5662,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_134">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>290</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_135">
      <property name="geometry">
       <rect>
@@ -6424,38 +5689,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
      </property>
      <property name="Alignment">
       <enum>AUpTextLabel::AlignRight</enum>
-     </property>
-    </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_136">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>308</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
      </property>
     </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_137">
@@ -6487,38 +5720,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="AUpTextLabel" name="leGEN_AVR_138">
-     <property name="geometry">
-      <rect>
-       <x>208</x>
-       <y>328</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="isUpdateable" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="LabelText" stdset="0">
-      <string/>
-     </property>
-     <property name="Font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="Presicion">
-      <number>1</number>
-     </property>
-    </widget>
     <widget class="AUpTextLabel" name="leGEN_AVR_139">
      <property name="geometry">
       <rect>
@@ -6548,26 +5749,927 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <enum>AUpTextLabel::AlignRight</enum>
      </property>
     </widget>
-    <widget class="QCommandLinkButton" name="btCroSec">
+    <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>281</width>
-       <height>341</height>
+       <x>208</x>
+       <y>50</y>
+       <width>71</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>    :      :     </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>198</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel">
+     <property name="geometry">
+      <rect>
+       <x>212</x>
+       <y>200</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_GLUB_PSTTM_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>200</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_GLUB_PSTTM_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_TIMERS_PRG_HRS_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_TIMERS_PRG_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_5">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_TIMERS_PRG_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string/>
      </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>:/Resources/PNG/Extras/transparente.png</normaloff>:/Resources/PNG/Extras/transparente.png</iconset>
+    </widget>
+    <widget class="WLabel" name="wLabel_6">
+     <property name="geometry">
+      <rect>
+       <x>212</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_ENCL_PRGTM_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
      </property>
     </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>88</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_8">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>87</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_FUEL_SYS_PRGTM_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>87</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_FUEL_SYS_PRGTM_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>107</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_10">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>105</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SEC_TIMER_WARMUP_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_11">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>105</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SEC_TIMER_WARMUP_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>125</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_12">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>124</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SEC_TIMER_HISPD_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_13">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>124</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SEC_TIMER_HISPD_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>143</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_14">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>142</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_STI_2_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_15">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>142</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_STI_2_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>161</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_16">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>159</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_DM_M_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_17">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>159</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_DM_S_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>180</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :      :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_18">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTCLDN_HR_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_19">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTCLDN_M_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>216</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_7">
+     <property name="geometry">
+      <rect>
+       <x>212</x>
+       <y>218</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_CD_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_20">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>218</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_CD_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>234</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_21">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>235</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_CDC_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_22">
+     <property name="geometry">
+      <rect>
+       <x>244</x>
+       <y>235</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_CDC_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>252</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_23">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>251</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTVENT_S_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_24">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>251</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTVENT_M_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_25">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>269</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTVNGT_M_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_26">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>269</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTVNGT_S_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>270</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>290</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_27">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>289</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_TEN_CLRMIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_28">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>289</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SFC_TIMER_TEN_CLRSEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_29">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_VENT_PSTCLDN_S_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>308</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_30">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>309</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SHUTDOWN_FRLOK_HOUR_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_31">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>309</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SHUTDOWN_FRLOK_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>326</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       :</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_32">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>327</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_NEVADA_CH_FL_MIN_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_33">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>327</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_NEVADA_CH_FL_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_34">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>309</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_SHUTDOWN_FRLOK_SEC_A_NAME_A_NAME</string>
+     </property>
+     <property name="tipo">
+      <number>0</number>
+     </property>
+     <property name="valueF">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <zorder>frame_15</zorder>
+    <zorder>leGEN_AVR_107</zorder>
+    <zorder>leGEN_AVR_108</zorder>
+    <zorder>leGEN_AVR_109</zorder>
+    <zorder>leGEN_AVR_111</zorder>
+    <zorder>leGEN_AVR_113</zorder>
+    <zorder>leGEN_AVR_115</zorder>
+    <zorder>leGEN_AVR_116</zorder>
+    <zorder>leGEN_AVR_119</zorder>
+    <zorder>leGEN_AVR_121</zorder>
+    <zorder>leGEN_AVR_123</zorder>
+    <zorder>leGEN_AVR_124</zorder>
+    <zorder>leGEN_AVR_125</zorder>
+    <zorder>leGEN_AVR_127</zorder>
+    <zorder>leGEN_AVR_129</zorder>
+    <zorder>leGEN_AVR_131</zorder>
+    <zorder>leGEN_AVR_133</zorder>
+    <zorder>leGEN_AVR_135</zorder>
+    <zorder>leGEN_AVR_137</zorder>
+    <zorder>leGEN_AVR_139</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>wLabel</zorder>
+    <zorder>wLabel_2</zorder>
+    <zorder>wLabel_3</zorder>
+    <zorder>wLabel_4</zorder>
+    <zorder>wLabel_5</zorder>
+    <zorder>label_3</zorder>
+    <zorder>wLabel_6</zorder>
+    <zorder>label_4</zorder>
+    <zorder>wLabel_8</zorder>
+    <zorder>wLabel_9</zorder>
+    <zorder>label_5</zorder>
+    <zorder>wLabel_10</zorder>
+    <zorder>wLabel_11</zorder>
+    <zorder>label_6</zorder>
+    <zorder>wLabel_12</zorder>
+    <zorder>wLabel_13</zorder>
+    <zorder>label_7</zorder>
+    <zorder>wLabel_14</zorder>
+    <zorder>wLabel_15</zorder>
+    <zorder>label_8</zorder>
+    <zorder>wLabel_16</zorder>
+    <zorder>wLabel_17</zorder>
+    <zorder>label_9</zorder>
+    <zorder>wLabel_18</zorder>
+    <zorder>wLabel_19</zorder>
+    <zorder>label_10</zorder>
+    <zorder>wLabel_7</zorder>
+    <zorder>wLabel_20</zorder>
+    <zorder>label_11</zorder>
+    <zorder>wLabel_21</zorder>
+    <zorder>wLabel_22</zorder>
+    <zorder>label_12</zorder>
+    <zorder>wLabel_23</zorder>
+    <zorder>wLabel_24</zorder>
+    <zorder>label_14</zorder>
+    <zorder>wLabel_25</zorder>
+    <zorder>wLabel_26</zorder>
+    <zorder>label_15</zorder>
+    <zorder>wLabel_27</zorder>
+    <zorder>wLabel_28</zorder>
+    <zorder>wLabel_29</zorder>
+    <zorder>label_16</zorder>
+    <zorder>wLabel_30</zorder>
+    <zorder>wLabel_31</zorder>
+    <zorder>label_17</zorder>
+    <zorder>wLabel_32</zorder>
+    <zorder>wLabel_33</zorder>
+    <zorder>wLabel_34</zorder>
    </widget>
    <widget class="QLabel" name="BackGround">
     <property name="geometry">
@@ -6598,54 +6700,6 @@ alternate-background-color: rgb(255, 0, 0);</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="a_Flama_1">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>130</y>
-      <width>81</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::FLAME</enum>
-    </property>
-    <property name="OnColor">
-     <enum>AWMultiObject::Red</enum>
-    </property>
-    <property name="OffColor">
-     <enum>AWMultiObject::Red</enum>
-    </property>
-    <property name="Value" stdset="0">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="a_Flama2">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>170</y>
-      <width>81</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::FLAME</enum>
-    </property>
-   </widget>
-   <widget class="AWMultiObject" name="a_Flama3">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>210</y>
-      <width>81</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="ElementType">
-     <enum>AWMultiObject::FLAME</enum>
     </property>
    </widget>
    <widget class="QCommandLinkButton" name="btGenerador">
@@ -6732,7 +6786,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>167</y>
+      <y>160</y>
       <width>21</width>
       <height>81</height>
      </rect>
@@ -6751,7 +6805,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
    <widget class="QCommandLinkButton" name="btVSV">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>385</x>
       <y>160</y>
       <width>21</width>
       <height>101</height>
@@ -6808,6 +6862,85 @@ alternate-background-color: rgb(255, 0, 0);</string>
       <normaloff>:/Resources/PNG/Extras/transparente.png</normaloff>:/Resources/PNG/Extras/transparente.png</iconset>
     </property>
    </widget>
+   <widget class="WLabel" name="lbPorcentajeArrancadorDemanda">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>290</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="Presicion">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btCroSec">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>310</y>
+      <width>281</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/Resources/PNG/Extras/transparente.png</normaloff>:/Resources/PNG/Extras/transparente.png</iconset>
+    </property>
+   </widget>
+   <widget class="wElemento_E" name="w_Elemento_E">
+    <property name="geometry">
+     <rect>
+      <x>498</x>
+      <y>150</y>
+      <width>71</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="wElementos_B" name="w_Elementos_B">
+    <property name="geometry">
+     <rect>
+      <x>254</x>
+      <y>140</y>
+      <width>16</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="wElemento_C" name="w_Elemento_C">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>163</y>
+      <width>8</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="wElemento_D" name="w_Elemento_D">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>16</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>BackGround</zorder>
    <zorder>Contro_Turbina</zorder>
    <zorder>btnImprScr</zorder>
@@ -6847,33 +6980,7 @@ alternate-background-color: rgb(255, 0, 0);</string>
    <zorder>leGEN_AVR_13</zorder>
    <zorder>leGEN_AVR_14</zorder>
    <zorder>leGEN_AVR_15</zorder>
-   <zorder>aWMultiObject_10</zorder>
-   <zorder>aWMultiObject_11</zorder>
-   <zorder>aWMultiObject_12</zorder>
-   <zorder>aWMultiObject_13</zorder>
-   <zorder>aWMultiObject_14</zorder>
-   <zorder>aWMultiObject_15</zorder>
-   <zorder>aWMultiObject_16</zorder>
-   <zorder>aWMultiObject_17</zorder>
-   <zorder>aWMultiObject_18</zorder>
-   <zorder>aWMultiObject_19</zorder>
-   <zorder>aWMultiObject_20</zorder>
-   <zorder>aWMultiObject_21</zorder>
    <zorder>aWMultiObject_22</zorder>
-   <zorder>aWMultiObject_23</zorder>
-   <zorder>aWMultiObject_24</zorder>
-   <zorder>aWMultiObject_25</zorder>
-   <zorder>aWMultiObject_26</zorder>
-   <zorder>aWMultiObject_27</zorder>
-   <zorder>aWMultiObject_28</zorder>
-   <zorder>aWMultiObject_29</zorder>
-   <zorder>aWMultiObject_30</zorder>
-   <zorder>aWMultiObject_31</zorder>
-   <zorder>aWMultiObject_32</zorder>
-   <zorder>aWMultiObject_33</zorder>
-   <zorder>aWMultiObject_34</zorder>
-   <zorder>aWMultiObject_35</zorder>
-   <zorder>aWMultiObject_36</zorder>
    <zorder>Compresor_LP_2</zorder>
    <zorder>DatosDelCombust</zorder>
    <zorder>DatosDelCombust_2</zorder>
@@ -6881,17 +6988,20 @@ alternate-background-color: rgb(255, 0, 0);</string>
    <zorder>Compresor_LP_3</zorder>
    <zorder>Compresor_LP_5</zorder>
    <zorder>Compresor_LP_7</zorder>
-   <zorder>a_Flama_1</zorder>
-   <zorder>a_Flama2</zorder>
-   <zorder>a_Flama3</zorder>
    <zorder>btGenerador</zorder>
    <zorder>btST8</zorder>
    <zorder>btCDP</zorder>
-   <zorder>btIGV</zorder>
-   <zorder>btVBV</zorder>
-   <zorder>btVSV</zorder>
    <zorder>btArraHid</zorder>
    <zorder>btTBV</zorder>
+   <zorder>lbPorcentajeArrancadorDemanda</zorder>
+   <zorder>btCroSec</zorder>
+   <zorder>w_Elemento_E</zorder>
+   <zorder>w_Elementos_B</zorder>
+   <zorder>btIGV</zorder>
+   <zorder>w_Elemento_C</zorder>
+   <zorder>btVBV</zorder>
+   <zorder>w_Elemento_D</zorder>
+   <zorder>btVSV</zorder>
   </widget>
   <widget class="QLabel" name="lbUnit3">
    <property name="geometry">
@@ -6926,6 +7036,31 @@ alternate-background-color: rgb(255, 0, 0);</string>
    <class>AWMultiObject</class>
    <extends>QWidget</extends>
    <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>wElementos_B</class>
+   <extends>QWidget</extends>
+   <header>welementos_b.h</header>
+  </customwidget>
+  <customwidget>
+   <class>wElemento_C</class>
+   <extends>QWidget</extends>
+   <header>welemento_c.h</header>
+  </customwidget>
+  <customwidget>
+   <class>wElemento_D</class>
+   <extends>QWidget</extends>
+   <header>welemento_d.h</header>
+  </customwidget>
+  <customwidget>
+   <class>wElemento_E</class>
+   <extends>QWidget</extends>
+   <header>welemento_e.h</header>
   </customwidget>
  </customwidgets>
  <resources>

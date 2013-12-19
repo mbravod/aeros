@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b2.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -104,7 +104,7 @@ public:
         indBomAlj = new AInstrumentIndicator(B2);
         indBomAlj->setObjectName(QString::fromUtf8("indBomAlj"));
         indBomAlj->setGeometry(QRect(240, 413, 61, 61));
-        indBomAlj->setValue(-1);
+        indBomAlj->setTipo(0);
         indBomAlj->setOrientation(AWMultEstateWidget::Degree90);
         indBomAlj->setProperty("Value", QVariant(2));
         ind95F = new AInstrumentIndicator(B2);
@@ -112,20 +112,17 @@ public:
         ind95F->setGeometry(QRect(466, 330, 61, 61));
         ind95F->setIntID(-1);
         ind95F->setProperty("isUpdateable", QVariant(false));
-        ind95F->setValue(-1);
         ind95F->setOrientation(AWMultEstateWidget::Degree0);
         ind95F->setProperty("LineAngle", QVariant(118));
         ind95F->setProperty("Value", QVariant(2));
         ind20Psig = new AInstrumentIndicator(B2);
         ind20Psig->setObjectName(QString::fromUtf8("ind20Psig"));
         ind20Psig->setGeometry(QRect(205, 138, 61, 61));
-        ind20Psig->setValue(-1);
         ind20Psig->setOrientation(AWMultEstateWidget::Degree180);
         ind20Psig->setProperty("Value", QVariant(2));
         ind77f = new AInstrumentIndicator(B2);
         ind77f->setObjectName(QString::fromUtf8("ind77f"));
         ind77f->setGeometry(QRect(442, 119, 61, 61));
-        ind77f->setValue(-1);
         ind77f->setOrientation(AWMultEstateWidget::Degree0);
         ind77f->setProperty("Value", QVariant(2));
         ind93f = new AInstrumentIndicator(B2);
@@ -133,26 +130,22 @@ public:
         ind93f->setGeometry(QRect(472, 510, 61, 61));
         ind93f->setIntID(-1);
         ind93f->setProperty("isUpdateable", QVariant(false));
-        ind93f->setValue(-1);
         ind93f->setOrientation(AWMultEstateWidget::Degree0);
         ind93f->setProperty("LineAngle", QVariant(-111));
         ind93f->setProperty("Value", QVariant(2));
         ind0_4psig = new AInstrumentIndicator(B2);
         ind0_4psig->setObjectName(QString::fromUtf8("ind0_4psig"));
         ind0_4psig->setGeometry(QRect(618, 60, 61, 61));
-        ind0_4psig->setValue(-1);
         ind0_4psig->setOrientation(AWMultEstateWidget::Degree90);
         ind0_4psig->setProperty("Value", QVariant(2));
         ind1_7psig = new AInstrumentIndicator(B2);
         ind1_7psig->setObjectName(QString::fromUtf8("ind1_7psig"));
         ind1_7psig->setGeometry(QRect(698, 60, 61, 61));
-        ind1_7psig->setValue(-1);
         ind1_7psig->setOrientation(AWMultEstateWidget::Degree90);
         ind1_7psig->setProperty("Value", QVariant(2));
         indCierGraD = new AInstrumentIndicator(B2);
         indCierGraD->setObjectName(QString::fromUtf8("indCierGraD"));
         indCierGraD->setGeometry(QRect(687, 193, 61, 61));
-        indCierGraD->setValue(-1);
         indCierGraD->setOrientation(AWMultEstateWidget::Degree90);
         indCierGraD->setProperty("Value", QVariant(2));
         ind97f = new AInstrumentIndicator(B2);
@@ -160,7 +153,6 @@ public:
         ind97f->setGeometry(QRect(637, 510, 61, 61));
         ind97f->setIntID(-1);
         ind97f->setProperty("isUpdateable", QVariant(false));
-        ind97f->setValue(-1);
         ind97f->setOrientation(AWMultEstateWidget::Degree180);
         ind97f->setProperty("LineAngle", QVariant(0));
         ind97f->setProperty("Value", QVariant(2));
@@ -169,7 +161,6 @@ public:
         indExtImp101f->setGeometry(QRect(668, 423, 61, 61));
         indExtImp101f->setIntID(-1);
         indExtImp101f->setProperty("isUpdateable", QVariant(false));
-        indExtImp101f->setValue(-1);
         indExtImp101f->setOrientation(AWMultEstateWidget::Degree180);
         indExtImp101f->setProperty("LineAngle", QVariant(1));
         indExtImp101f->setProperty("Value", QVariant(2));
@@ -178,7 +169,6 @@ public:
         indExtImp95f->setGeometry(QRect(355, 423, 61, 61));
         indExtImp95f->setIntID(-1);
         indExtImp95f->setProperty("isUpdateable", QVariant(false));
-        indExtImp95f->setValue(-1);
         indExtImp95f->setOrientation(AWMultEstateWidget::Degree0);
         indExtImp95f->setProperty("LineAngle", QVariant(1));
         indExtImp95f->setProperty("Value", QVariant(2));
@@ -187,14 +177,12 @@ public:
         ind87f->setGeometry(QRect(375, 511, 61, 61));
         ind87f->setIntID(-1);
         ind87f->setProperty("isUpdateable", QVariant(false));
-        ind87f->setValue(-1);
         ind87f->setOrientation(AWMultEstateWidget::Degree0);
         ind87f->setProperty("LineAngle", QVariant(0));
         ind87f->setProperty("Value", QVariant(2));
         indCierGraI = new AInstrumentIndicator(B2);
         indCierGraI->setObjectName(QString::fromUtf8("indCierGraI"));
         indCierGraI->setGeometry(QRect(385, 194, 61, 61));
-        indCierGraI->setValue(-1);
         indCierGraI->setOrientation(AWMultEstateWidget::Degree90);
         indCierGraI->setProperty("Value", QVariant(2));
         lbSumAceT = new WLabel(B2);
@@ -496,6 +484,7 @@ public:
     {
         B2->setWindowTitle(QApplication::translate("B2", "Form", 0, QApplication::UnicodeUTF8));
         lbBack->setText(QString());
+        bombaAlj->setId(QApplication::translate("B2", "p_Fix32_THISNODE_MOT6031_F_CV", 0, QApplication::UnicodeUTF8));
         indBomAlj->setProperty("UpLabel", QVariant(QApplication::translate("B2", "MOT", 0, QApplication::UnicodeUTF8)));
         indBomAlj->setProperty("DownLabel", QVariant(QApplication::translate("B2", "6031", 0, QApplication::UnicodeUTF8)));
         ind95F->setId(QApplication::translate("B2", "p_Fix32_THISNODE_ALM_MSTR389_F_CV", 0, QApplication::UnicodeUTF8));
@@ -510,7 +499,7 @@ public:
         ind93f->setId(QApplication::translate("B2", "p_Fix32_THISNODE_ALM_MSTR390_F_CV", 0, QApplication::UnicodeUTF8));
         ind93f->setProperty("UpLabel", QVariant(QApplication::translate("B2", "TE", 0, QApplication::UnicodeUTF8)));
         ind93f->setProperty("DownLabel", QVariant(QApplication::translate("B2", "6057", 0, QApplication::UnicodeUTF8)));
-        ind0_4psig->setId(QApplication::translate("B2", "P_Fix32_THISNODE_ALM_MSTR287_F_CV", 0, QApplication::UnicodeUTF8));
+        ind0_4psig->setId(QApplication::translate("B2", "p_Fix32_THISNODE_ALM_MSTR236_F_CV", 0, QApplication::UnicodeUTF8));
         ind0_4psig->setProperty("UpLabel", QVariant(QApplication::translate("B2", "PT", 0, QApplication::UnicodeUTF8)));
         ind0_4psig->setProperty("DownLabel", QVariant(QApplication::translate("B2", "6026A", 0, QApplication::UnicodeUTF8)));
         ind1_7psig->setId(QApplication::translate("B2", "p_Fix32_THISNODE_ALM_MSTR236_F_CV", 0, QApplication::UnicodeUTF8));
@@ -549,28 +538,40 @@ public:
         lbExtExc101fT->setText(QApplication::translate("B2", "EXTREMO  EXCITADOR", 0, QApplication::UnicodeUTF8));
         lbGenT->setText(QApplication::translate("B2", "GENERADOR", 0, QApplication::UnicodeUTF8));
         lbGenU->setText(QApplication::translate("B2", "MW", 0, QApplication::UnicodeUTF8));
+        lbGen->setId(QApplication::translate("B2", "p_Fix32_THISNODE_MW_INPUT_F_CV", 0, QApplication::UnicodeUTF8));
         lbGen->setText(QApplication::translate("B2", "0.0", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("B2", "    UNIT3", 0, QApplication::UnicodeUTF8));
         btnIMPPant->setText(QApplication::translate("B2", "IMP PANT", 0, QApplication::UnicodeUTF8));
+        lbPsig->setId(QApplication::translate("B2", "p_Fix32_THISNODE_PT60021_F_CV", 0, QApplication::UnicodeUTF8));
         lbPsig->setText(QApplication::translate("B2", "20", 0, QApplication::UnicodeUTF8));
+        lbVal->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6025_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_2->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_2->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6056_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_2->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_3->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_3->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6021_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_3->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_4->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_4->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6036_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_4->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_5->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_5->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6057_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_5->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_6->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_6->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6035_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_6->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_7->setText(QApplication::translate("B2", "\302\260F", 0, QApplication::UnicodeUTF8));
+        lbVal_7->setId(QApplication::translate("B2", "p_Fix32_THISNODE_TE6023_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_7->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_8->setText(QApplication::translate("B2", "PSIG", 0, QApplication::UnicodeUTF8));
+        lbVal_8->setId(QApplication::translate("B2", "p_Fix32_THISNODE_PT6026SEL_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_8->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_9->setText(QApplication::translate("B2", "PSIG", 0, QApplication::UnicodeUTF8));
+        lbVal_9->setId(QApplication::translate("B2", "p_Fix32_THISNODE_PT6026A_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_9->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
         lbUnidad_10->setText(QApplication::translate("B2", "PSIG", 0, QApplication::UnicodeUTF8));
+        lbVal_10->setId(QApplication::translate("B2", "p_Fix32_THISNODE_PT6026B_F_CV", 0, QApplication::UnicodeUTF8));
         lbVal_10->setText(QApplication::translate("B2", "77", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

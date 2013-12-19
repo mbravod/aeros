@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6821A_F_CV</string>
+    <string>p_HMI_INTER_TE6821A_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>65.00</string>
@@ -128,7 +128,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6821B_F_CV</string>
+    <string>p_HMI_INTER_TE6821B_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>65.00</string>

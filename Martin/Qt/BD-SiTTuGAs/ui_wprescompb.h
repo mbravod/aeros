@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wprescompb.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -112,11 +112,11 @@ public:
     {
         WPresCompB->setWindowTitle(QApplication::translate("WPresCompB", "WPresCompB", 0, QApplication::UnicodeUTF8));
         lbP25T_1->setText(QApplication::translate("WPresCompB", "PT6859A", 0, QApplication::UnicodeUTF8));
-        lbP25_1->setId(QApplication::translate("WPresCompB", "p_Fix32_THISNODE_PT6859A_F_CV", 0, QApplication::UnicodeUTF8));
+        lbP25_1->setId(QApplication::translate("WPresCompB", "p_HMI_INTER_PT6859A_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbP25_1->setText(QApplication::translate("WPresCompB", "11.50", 0, QApplication::UnicodeUTF8));
         lbP25U_1->setText(QApplication::translate("WPresCompB", "PSIA", 0, QApplication::UnicodeUTF8));
         lbP25U_2->setText(QApplication::translate("WPresCompB", "PSIA", 0, QApplication::UnicodeUTF8));
-        lbP25_2->setId(QApplication::translate("WPresCompB", "p_Fix32_THISNODE_PT6859B_F_CV", 0, QApplication::UnicodeUTF8));
+        lbP25_2->setId(QApplication::translate("WPresCompB", "p_HMI_INTER_PT6859B_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbP25_2->setText(QApplication::translate("WPresCompB", "11.30", 0, QApplication::UnicodeUTF8));
         lbP25T_2->setText(QApplication::translate("WPresCompB", "PT6859B", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());

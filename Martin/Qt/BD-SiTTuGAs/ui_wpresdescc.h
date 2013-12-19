@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpresdescc.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -112,11 +112,11 @@ public:
     {
         WPresDescC->setWindowTitle(QApplication::translate("WPresDescC", "WPresDescC", 0, QApplication::UnicodeUTF8));
         lbDESCT_1->setText(QApplication::translate("WPresDescC", "PT6804", 0, QApplication::UnicodeUTF8));
-        lbDESC_1->setId(QApplication::translate("WPresDescC", "p_Fix32_THISNODE_PT6804_F_CV", 0, QApplication::UnicodeUTF8));
+        lbDESC_1->setId(QApplication::translate("WPresDescC", "p_HMI_INTER_PT6804_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbDESC_1->setText(QApplication::translate("WPresDescC", "10.90", 0, QApplication::UnicodeUTF8));
         lbDESCU_1->setText(QApplication::translate("WPresDescC", "PSIA", 0, QApplication::UnicodeUTF8));
         lbDESCU_2->setText(QApplication::translate("WPresDescC", "PSIA", 0, QApplication::UnicodeUTF8));
-        lbDESC_2->setId(QApplication::translate("WPresDescC", "p_Fix32_THISNODE_PT6814_F_CV", 0, QApplication::UnicodeUTF8));
+        lbDESC_2->setId(QApplication::translate("WPresDescC", "p_HMI_INTER_PT6814_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbDESC_2->setText(QApplication::translate("WPresDescC", "11.30", 0, QApplication::UnicodeUTF8));
         lbDESCT_2->setText(QApplication::translate("WPresDescC", "PT6814", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());

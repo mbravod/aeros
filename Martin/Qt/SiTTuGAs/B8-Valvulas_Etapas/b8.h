@@ -20,10 +20,11 @@ public:
 private:
     Ui::B8 *ui;
     Header *header;
+    int contadorPrueba;
 
 public slots:
     void comenzarAnimacion();
-    void detenerAnimacion();
+
 };
 
 #endif // B8_H

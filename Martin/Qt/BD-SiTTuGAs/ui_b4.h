@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'b4.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -181,7 +181,9 @@ public:
         aWMultiObject_5->setObjectName(QString::fromUtf8("aWMultiObject_5"));
         aWMultiObject_5->setGeometry(QRect(507, 156, 82, 41));
         aWMultiObject_5->setFont(font);
+        aWMultiObject_5->setTipo(0);
         aWMultiObject_5->setElementType(AWMultiObject::VALSIMP4);
+        aWMultiObject_5->setOffColor(AWMultiObject::Blue);
         bombatc_1 = new AWMultiObject(B4);
         bombatc_1->setObjectName(QString::fromUtf8("bombatc_1"));
         bombatc_1->setGeometry(QRect(383, 165, 110, 110));
@@ -213,6 +215,7 @@ public:
         infDos->setObjectName(QString::fromUtf8("infDos"));
         infDos->setGeometry(QRect(9, 567, 61, 61));
         infDos->setFont(font);
+        infDos->setValue(0);
         infDos->setOrientation(AWMultEstateWidget::Degree0);
         infDos->setProperty("Value", QVariant(2));
         infTres = new AInstrumentIndicator(B4);
@@ -226,12 +229,14 @@ public:
         infOcho->setGeometry(QRect(578, 134, 61, 61));
         infOcho->setFont(font);
         infOcho->setIntID(0);
+        infOcho->setValue(0);
         infOcho->setOrientation(AWMultEstateWidget::Degree180);
         infOcho->setProperty("Value", QVariant(2));
         infCinco = new AInstrumentIndicator(B4);
         infCinco->setObjectName(QString::fromUtf8("infCinco"));
         infCinco->setGeometry(QRect(411, 136, 61, 61));
         infCinco->setFont(font);
+        infCinco->setValue(0);
         infCinco->setOrientation(AWMultEstateWidget::Degree90);
         infCinco->setProperty("Value", QVariant(2));
         infSeis = new AInstrumentIndicator(B4);
@@ -386,12 +391,19 @@ public:
     {
         B4->setWindowTitle(QApplication::translate("B4", "Form", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
+        interm->setId(QApplication::translate("B4", "p_Fix32_THISNODE_MOT1615_F_CV", 0, QApplication::UnicodeUTF8));
         progressBar->setFormat(QString());
+        resorte->setId(QApplication::translate("B4", "p_Fix32_THISNODE_HE1610_F_CV", 0, QApplication::UnicodeUTF8));
+        ledAceiTemp->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
+        ledAceiNiv->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR007_F_CV", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("B4", "ENCLAVAMIENTOS DE SISTEMA HIDR", 0, QApplication::UnicodeUTF8));
         lbAceiTempT->setText(QApplication::translate("B4", "ACEITE HIDR. DE ARRANQUE\n"
 "TEMP DEL TANQUE - OK", 0, QApplication::UnicodeUTF8));
         lbAceiNivT->setText(QApplication::translate("B4", "ACEITE HIDR. DE ARRANQUE\n"
 "NIVEL DEL TANQUE - OK", 0, QApplication::UnicodeUTF8));
+        bombatc_1->setId(QApplication::translate("B4", "p_Fix32_THISNODE_MOT1615_F_CV", 0, QApplication::UnicodeUTF8));
+        bombatc_2->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
+        regta->setId(QApplication::translate("B4", "p_Fix32_THISNODE_MOT1615_F_CV", 0, QApplication::UnicodeUTF8));
         infCuatro->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR005_F_CV", 0, QApplication::UnicodeUTF8));
         infCuatro->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TLS", 0, QApplication::UnicodeUTF8)));
         infCuatro->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1603", 0, QApplication::UnicodeUTF8)));
@@ -400,21 +412,23 @@ public:
         infUno->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1601", 0, QApplication::UnicodeUTF8)));
         infDos->setProperty("UpLabel", QVariant(QApplication::translate("B4", "HE", 0, QApplication::UnicodeUTF8)));
         infDos->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1610", 0, QApplication::UnicodeUTF8)));
+        infTres->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ABRTST004_F_CV", 0, QApplication::UnicodeUTF8));
         infTres->setProperty("UpLabel", QVariant(QApplication::translate("B4", "PDSHH", 0, QApplication::UnicodeUTF8)));
         infTres->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1600", 0, QApplication::UnicodeUTF8)));
         infOcho->setProperty("UpLabel", QVariant(QApplication::translate("B4", "SOV", 0, QApplication::UnicodeUTF8)));
         infOcho->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1619", 0, QApplication::UnicodeUTF8)));
         infCinco->setProperty("UpLabel", QVariant(QApplication::translate("B4", "MOT", 0, QApplication::UnicodeUTF8)));
         infCinco->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1615", 0, QApplication::UnicodeUTF8)));
+        infSeis->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ABRTST003_F_CV", 0, QApplication::UnicodeUTF8));
         infSeis->setProperty("UpLabel", QVariant(QApplication::translate("B4", "PSLL", 0, QApplication::UnicodeUTF8)));
         infSeis->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1605", 0, QApplication::UnicodeUTF8)));
         infSiete->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR006_F_CV", 0, QApplication::UnicodeUTF8));
         infSiete->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TSH", 0, QApplication::UnicodeUTF8)));
         infSiete->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1602", 0, QApplication::UnicodeUTF8)));
-        inf82f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR232_F_CV", 0, QApplication::UnicodeUTF8));
+        inf82f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR238_F_CV", 0, QApplication::UnicodeUTF8));
         inf82f->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TE", 0, QApplication::UnicodeUTF8)));
         inf82f->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1663A1", 0, QApplication::UnicodeUTF8)));
-        ind83f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR238_F_CV", 0, QApplication::UnicodeUTF8));
+        ind83f->setId(QApplication::translate("B4", "p_Fix32_THISNODE_ALM_MSTR232_F_CV", 0, QApplication::UnicodeUTF8));
         ind83f->setProperty("UpLabel", QVariant(QApplication::translate("B4", "TE", 0, QApplication::UnicodeUTF8)));
         ind83f->setProperty("DownLabel", QVariant(QApplication::translate("B4", "1663A2", 0, QApplication::UnicodeUTF8)));
         lbInterT->setText(QApplication::translate("B4", "INTERCAMBIADOR DE CALOR", 0, QApplication::UnicodeUTF8));
@@ -431,8 +445,11 @@ public:
         label_15->setText(QApplication::translate("B4", "%", 0, QApplication::UnicodeUTF8));
         lbUnit3->setText(QApplication::translate("B4", "    UNIT3", 0, QApplication::UnicodeUTF8));
         btnIMPPant->setText(QApplication::translate("B4", "IMP PANT", 0, QApplication::UnicodeUTF8));
+        lb83fT_3->setId(QApplication::translate("B4", "p_Fix32_THISNODE_TE1663SEL_F_CV", 0, QApplication::UnicodeUTF8));
         lb83fT_3->setText(QApplication::translate("B4", "83", 0, QApplication::UnicodeUTF8));
+        lb83fT_4->setId(QApplication::translate("B4", "p_Fix32_THISNODE_TE1663A1_F_CV", 0, QApplication::UnicodeUTF8));
         lb83fT_4->setText(QApplication::translate("B4", "83 ", 0, QApplication::UnicodeUTF8));
+        lb82f_2->setId(QApplication::translate("B4", "p_Fix32_THISNODE_TE1663A2_F_CV", 0, QApplication::UnicodeUTF8));
         lb82f_2->setText(QApplication::translate("B4", "82", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

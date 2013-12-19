@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wpresbalance.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -112,12 +112,12 @@ public:
     {
         WPresBalance->setWindowTitle(QApplication::translate("WPresBalance", "WPresBalance", 0, QApplication::UnicodeUTF8));
         lbBALIT_1->setText(QApplication::translate("WPresBalance", "PT6861A", 0, QApplication::UnicodeUTF8));
-        lbBALI_1->setId(QApplication::translate("WPresBalance", "p_Fix32_THISNODE_PT6861A_F_CV", 0, QApplication::UnicodeUTF8));
+        lbBALI_1->setId(QApplication::translate("WPresBalance", "p_HMI_INTER_PT6831A_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbBALI_1->setText(QApplication::translate("WPresBalance", "11.30", 0, QApplication::UnicodeUTF8));
         lbBALIU_1->setText(QApplication::translate("WPresBalance", "PSIA", 0, QApplication::UnicodeUTF8));
         lbBALIU_2->setText(QApplication::translate("WPresBalance", "PSIA", 0, QApplication::UnicodeUTF8));
         lbBALIT_2->setText(QApplication::translate("WPresBalance", "PT6861B", 0, QApplication::UnicodeUTF8));
-        lbBALI_2->setId(QApplication::translate("WPresBalance", "p_Fix32_THISNODE_PT6861B_F_CV", 0, QApplication::UnicodeUTF8));
+        lbBALI_2->setId(QApplication::translate("WPresBalance", "p_HMI_INTER_PT6861B_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbBALI_2->setText(QApplication::translate("WPresBalance", "11.60", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
         btCerrar->setText(QApplication::translate("WPresBalance", "PRES BALANCE IMPULSO", 0, QApplication::UnicodeUTF8));

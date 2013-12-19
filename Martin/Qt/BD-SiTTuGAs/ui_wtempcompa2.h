@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wtempcompa2.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -156,20 +156,20 @@ public:
     {
         WTempCompA2->setWindowTitle(QApplication::translate("WTempCompA2", "WTempCompA2", 0, QApplication::UnicodeUTF8));
         lbCOMA2T_1->setText(QApplication::translate("WTempCompA2", "TE6838A1", 0, QApplication::UnicodeUTF8));
-        lbCOMA2_1->setId(QApplication::translate("WTempCompA2", "p_Fix32_THISNODE_TE6838A1_F_CV", 0, QApplication::UnicodeUTF8));
+        lbCOMA2_1->setId(QApplication::translate("WTempCompA2", "p_HMI_INTER_TE6838A1_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbCOMA2_1->setText(QApplication::translate("WTempCompA2", "87.00", 0, QApplication::UnicodeUTF8));
         lbCOMA2U_1->setText(QApplication::translate("WTempCompA2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbCOMA2U_2->setText(QApplication::translate("WTempCompA2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbCOMA2T_2->setText(QApplication::translate("WTempCompA2", "TE6838A2", 0, QApplication::UnicodeUTF8));
-        lbCOMA2_2->setId(QApplication::translate("WTempCompA2", "p_Fix32_THISNODE_TE6838A2_F_CV", 0, QApplication::UnicodeUTF8));
+        lbCOMA2_2->setId(QApplication::translate("WTempCompA2", "p_HMI_INTER_TE6838A2_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbCOMA2_2->setText(QApplication::translate("WTempCompA2", "87.00", 0, QApplication::UnicodeUTF8));
         lbCOMA2T_3->setText(QApplication::translate("WTempCompA2", "TE6838B1", 0, QApplication::UnicodeUTF8));
-        lbCOMA2_3->setId(QApplication::translate("WTempCompA2", "p_Fix32_THISNODE_TE6838B1_F_CV", 0, QApplication::UnicodeUTF8));
+        lbCOMA2_3->setId(QApplication::translate("WTempCompA2", "p_HMI_INTER_TE6838B1_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbCOMA2_3->setText(QApplication::translate("WTempCompA2", "84.00", 0, QApplication::UnicodeUTF8));
         lbCOMA2U_3->setText(QApplication::translate("WTempCompA2", "\302\272F", 0, QApplication::UnicodeUTF8));
         lbCOMA2T_4->setText(QApplication::translate("WTempCompA2", "TE6838B2", 0, QApplication::UnicodeUTF8));
         lbCOMA2U_4->setText(QApplication::translate("WTempCompA2", "\302\272F", 0, QApplication::UnicodeUTF8));
-        lbCOMA2_4->setId(QApplication::translate("WTempCompA2", "p_Fix32_THISNODE_TE6838B2_F_CV", 0, QApplication::UnicodeUTF8));
+        lbCOMA2_4->setId(QApplication::translate("WTempCompA2", "p_HMI_INTER_TE6838B2_CALC_PLUS_A_OUT_1", 0, QApplication::UnicodeUTF8));
         lbCOMA2_4->setText(QApplication::translate("WTempCompA2", "83.00", 0, QApplication::UnicodeUTF8));
         lbFondo->setText(QString());
         btCerrar->setText(QApplication::translate("WTempCompA2", "TEMP COMPRESOR DE A", 0, QApplication::UnicodeUTF8));

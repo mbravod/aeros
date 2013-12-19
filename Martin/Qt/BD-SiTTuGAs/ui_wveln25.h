@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'wveln25.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -120,9 +120,9 @@ public:
         WVelN25->setWindowTitle(QApplication::translate("WVelN25", "WVelN25", 0, QApplication::UnicodeUTF8));
         lbN25T_1->setText(QApplication::translate("WVelN25", "SE6800", 0, QApplication::UnicodeUTF8));
         lbN25T_2->setText(QApplication::translate("WVelN25", "SE6801", 0, QApplication::UnicodeUTF8));
-        lbN25_2->setId(QApplication::translate("WVelN25", "p_Fix32_THISNODE_SE6801_F_CV", 0, QApplication::UnicodeUTF8));
+        lbN25_2->setId(QApplication::translate("WVelN25", "p_A1_A04_MPU_SE6801_AI_MPU_MONITOR", 0, QApplication::UnicodeUTF8));
         lbN25_2->setText(QApplication::translate("WVelN25", "00.00", 0, QApplication::UnicodeUTF8));
-        lbN25_1->setId(QApplication::translate("WVelN25", "p_Fix32_THISNODE_SE6800_F_CV", 0, QApplication::UnicodeUTF8));
+        lbN25_1->setId(QApplication::translate("WVelN25", "p_A1_A04_MPU_SE6800_AI_MPU_MONITOR", 0, QApplication::UnicodeUTF8));
         lbN25_1->setText(QApplication::translate("WVelN25", "00.00", 0, QApplication::UnicodeUTF8));
         lbN25U_1->setText(QApplication::translate("WVelN25", "RPM", 0, QApplication::UnicodeUTF8));
         lbN25U_2->setText(QApplication::translate("WVelN25", "RPM", 0, QApplication::UnicodeUTF8));

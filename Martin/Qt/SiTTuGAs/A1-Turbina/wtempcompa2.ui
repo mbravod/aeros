@@ -65,7 +65,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6838A1_F_CV</string>
+    <string>p_HMI_INTER_TE6838A1_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>87.00</string>
@@ -167,7 +167,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6838A2_F_CV</string>
+    <string>p_HMI_INTER_TE6838A2_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>87.00</string>
@@ -221,7 +221,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6838B1_F_CV</string>
+    <string>p_HMI_INTER_TE6838B1_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>84.00</string>
@@ -323,7 +323,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6838B2_F_CV</string>
+    <string>p_HMI_INTER_TE6838B2_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>83.00</string>

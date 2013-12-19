@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6843_F_CV</string>
+    <string>p_HMI_INTER_TE6843_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>106.00</string>
@@ -107,7 +107,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6844_F_CV</string>
+    <string>p_HMI_INTER_TE6844_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>98.00</string>
@@ -218,7 +218,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6845_F_CV</string>
+    <string>p_HMI_INTER_TE6845_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>91.00</string>
@@ -287,7 +287,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6846_F_CV</string>
+    <string>p_HMI_INTER_TE6846_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>92.00</string>
@@ -335,7 +335,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6847_F_CV</string>
+    <string>p_HMI_INTER_TE6847_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>88.00</string>
@@ -425,7 +425,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6848_F_CV</string>
+    <string>p_HMI_INTER_TE6848_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>90.00</string>
@@ -494,7 +494,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6849_F_CV</string>
+    <string>p_HMI_INTER_TE6849_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>95.00</string>
@@ -542,7 +542,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_TE6850_F_CV</string>
+    <string>p_HMI_INTER_TE6850_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>105.00</string>

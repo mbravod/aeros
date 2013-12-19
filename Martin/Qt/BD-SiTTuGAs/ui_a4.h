@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a4.ui'
 **
-** Created: Tue 17. Dec 13:46:50 2013
+** Created: Thu 19. Dec 02:34:05 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,6 +20,7 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 #include "wcheckbox.h"
+#include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -41,9 +42,9 @@ public:
     QLabel *lbPas1_2T;
     WCheckBox *cbDesacel;
     QLabel *lbEdo1_2;
-    QLabel *lbCronCicloHrs;
     QLabel *label_3;
-    QLabel *lbCronCicloMin;
+    WLabel *wLabel;
+    WLabel *wLabel_2;
     QFrame *frame_9;
     QFrame *frame_10;
     QLabel *lbApaT;
@@ -51,7 +52,7 @@ public:
     QLabel *lbEdo2_1;
     WCheckBox *cbEsperarNuc;
     WCheckBox *cbIniciar;
-    QLabel *lbIniciarCrono;
+    WLabel *wLabel_3;
     QFrame *frame_11;
     QFrame *frame_12;
     QLabel *lbApaET;
@@ -69,9 +70,9 @@ public:
     WCheckBox *cbEsperarN25;
     WCheckBox *cbListo;
     WCheckBox *cbEsperarXn25;
-    QLabel *lbHrs;
     QLabel *label_4;
-    QLabel *lbMin;
+    WLabel *wLabel_4;
+    WLabel *wLabel_5;
     QLabel *lbBack;
     QLabel *lbUnit3;
 
@@ -193,24 +194,20 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         lbEdo1_2->setPalette(palette3);
         lbEdo1_2->setFont(font2);
-        lbCronCicloHrs = new QLabel(frame_7);
-        lbCronCicloHrs->setObjectName(QString::fromUtf8("lbCronCicloHrs"));
-        lbCronCicloHrs->setGeometry(QRect(265, 90, 26, 31));
-        QFont font3;
-        font3.setBold(true);
-        font3.setWeight(75);
-        lbCronCicloHrs->setFont(font3);
-        lbCronCicloHrs->setAlignment(Qt::AlignCenter);
         label_3 = new QLabel(frame_7);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(294, 90, 12, 31));
+        QFont font3;
+        font3.setBold(true);
+        font3.setWeight(75);
         label_3->setFont(font3);
         label_3->setAlignment(Qt::AlignCenter);
-        lbCronCicloMin = new QLabel(frame_7);
-        lbCronCicloMin->setObjectName(QString::fromUtf8("lbCronCicloMin"));
-        lbCronCicloMin->setGeometry(QRect(310, 90, 26, 31));
-        lbCronCicloMin->setFont(font3);
-        lbCronCicloMin->setAlignment(Qt::AlignCenter);
+        wLabel = new WLabel(frame_7);
+        wLabel->setObjectName(QString::fromUtf8("wLabel"));
+        wLabel->setGeometry(QRect(270, 100, 16, 16));
+        wLabel_2 = new WLabel(frame_7);
+        wLabel_2->setObjectName(QString::fromUtf8("wLabel_2"));
+        wLabel_2->setGeometry(QRect(300, 100, 16, 16));
         frame_9 = new QFrame(frame);
         frame_9->setObjectName(QString::fromUtf8("frame_9"));
         frame_9->setGeometry(QRect(342, 50, 339, 541));
@@ -256,11 +253,9 @@ public:
         cbIniciar->setGeometry(QRect(20, 70, 281, 16));
         cbIniciar->setFont(font2);
         cbIniciar->setProperty("iconSize", QVariant(QSize(24, 24)));
-        lbIniciarCrono = new QLabel(frame_9);
-        lbIniciarCrono->setObjectName(QString::fromUtf8("lbIniciarCrono"));
-        lbIniciarCrono->setGeometry(QRect(300, 60, 26, 31));
-        lbIniciarCrono->setFont(font3);
-        lbIniciarCrono->setAlignment(Qt::AlignCenter);
+        wLabel_3 = new WLabel(frame_9);
+        wLabel_3->setObjectName(QString::fromUtf8("wLabel_3"));
+        wLabel_3->setGeometry(QRect(290, 70, 16, 16));
         frame_11 = new QFrame(frame);
         frame_11->setObjectName(QString::fromUtf8("frame_11"));
         frame_11->setGeometry(QRect(680, 50, 339, 541));
@@ -369,21 +364,17 @@ public:
         font4.setWeight(75);
         cbEsperarXn25->setFont(font4);
         cbEsperarXn25->setProperty("iconSize", QVariant(QSize(24, 24)));
-        lbHrs = new QLabel(frame_11);
-        lbHrs->setObjectName(QString::fromUtf8("lbHrs"));
-        lbHrs->setGeometry(QRect(265, 320, 26, 31));
-        lbHrs->setFont(font3);
-        lbHrs->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(frame_11);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(294, 320, 12, 31));
         label_4->setFont(font3);
         label_4->setAlignment(Qt::AlignCenter);
-        lbMin = new QLabel(frame_11);
-        lbMin->setObjectName(QString::fromUtf8("lbMin"));
-        lbMin->setGeometry(QRect(310, 320, 26, 31));
-        lbMin->setFont(font3);
-        lbMin->setAlignment(Qt::AlignCenter);
+        wLabel_4 = new WLabel(frame_11);
+        wLabel_4->setObjectName(QString::fromUtf8("wLabel_4"));
+        wLabel_4->setGeometry(QRect(280, 330, 16, 16));
+        wLabel_5 = new WLabel(frame_11);
+        wLabel_5->setObjectName(QString::fromUtf8("wLabel_5"));
+        wLabel_5->setGeometry(QRect(310, 330, 16, 16));
         lbBack = new QLabel(frame);
         lbBack->setObjectName(QString::fromUtf8("lbBack"));
         lbBack->setGeometry(QRect(0, 0, 1024, 662));
@@ -414,53 +405,53 @@ public:
         lbPrdT->setText(QApplication::translate("A4", "PARADA NORMAL", 0, QApplication::UnicodeUTF8));
         lbPas1_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo1_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbRampa->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
+        cbRampa->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_1", 0, QApplication::UnicodeUTF8));
         cbRampa->setText(QApplication::translate("A4", "RAMPA NPT A CARGA MIN", 0, QApplication::UnicodeUTF8));
-        cbInteruptor->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_3_F_CV", 0, QApplication::UnicodeUTF8));
+        cbInteruptor->setId(QApplication::translate("A4", "p_Fix32_THISNODE_NORM_STP_3", 0, QApplication::UnicodeUTF8));
         cbInteruptor->setText(QApplication::translate("A4", "INTERRUPTOR ABIERTO", 0, QApplication::UnicodeUTF8));
-        cbCronCiclo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CD_CYCT_ON_F_CV", 0, QApplication::UnicodeUTF8));
+        cbCronCiclo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CD_CYCT_ON", 0, QApplication::UnicodeUTF8));
         cbCronCiclo->setText(QApplication::translate("A4", "CRON CICLO ENFRIAMIENTO ACTIVO", 0, QApplication::UnicodeUTF8));
         lbsecT->setText(QApplication::translate("A4", "SECUENCIA DESACEL A MIN", 0, QApplication::UnicodeUTF8));
         lbPas1_2T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        cbDesacel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_DECELMIN_F_CV", 0, QApplication::UnicodeUTF8));
+        cbDesacel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_DECELMIN", 0, QApplication::UnicodeUTF8));
         cbDesacel->setText(QApplication::translate("A4", "DESACEL A CARGA MIN ACTIVO", 0, QApplication::UnicodeUTF8));
         lbEdo1_2->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        lbCronCicloHrs->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("A4", ":", 0, QApplication::UnicodeUTF8));
-        lbCronCicloMin->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
+        wLabel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CD_MIN_F_CV", 0, QApplication::UnicodeUTF8));
+        wLabel_2->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CD_SEC_F_CV", 0, QApplication::UnicodeUTF8));
         lbApaT->setText(QApplication::translate("A4", "APAGADO CON PASO A RALENT\303\215", 0, QApplication::UnicodeUTF8));
         lbPas2_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo2_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbEsperarNuc->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_1_F_CV", 0, QApplication::UnicodeUTF8));
+        cbEsperarNuc->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_1", 0, QApplication::UnicodeUTF8));
         cbEsperarNuc->setText(QApplication::translate("A4", "ESPERAR N\303\232CLEO RALENT\303\215", 0, QApplication::UnicodeUTF8));
-        cbIniciar->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_2_F_CV", 0, QApplication::UnicodeUTF8));
+        cbIniciar->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_SEQ_2", 0, QApplication::UnicodeUTF8));
         cbIniciar->setText(QApplication::translate("A4", "INICIAR CRONO DE 10 SEG A REESTAB", 0, QApplication::UnicodeUTF8));
-        lbIniciarCrono->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
+        wLabel_3->setId(QApplication::translate("A4", "p_Fix32_THISNODE_STI_1_SEC_F_CV", 0, QApplication::UnicodeUTF8));
         lbApaET->setText(QApplication::translate("A4", "APAGADO DE EMERGENCIA", 0, QApplication::UnicodeUTF8));
         lbImpT->setText(QApplication::translate("A4", "IMPULSI\303\223N", 0, QApplication::UnicodeUTF8));
-        cbEsperarVel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_2_F_CV", 0, QApplication::UnicodeUTF8));
+        cbEsperarVel->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_2", 0, QApplication::UnicodeUTF8));
         cbEsperarVel->setText(QApplication::translate("A4", "ESPERAR QUE VEL BAJE ANTES DE MOTOR", 0, QApplication::UnicodeUTF8));
         lbPas3_1T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        cbApagado->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
+        cbApagado->setId(QApplication::translate("A4", "p_Fix32_THISNODE_ES_STP_1", 0, QApplication::UnicodeUTF8));
         cbApagado->setText(QApplication::translate("A4", "APAGADO DE EMERGENCIA", 0, QApplication::UnicodeUTF8));
         lbEdo3_1->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
         lbPas3_2T->setText(QApplication::translate("A4", "PASO DE SECUENCIA", 0, QApplication::UnicodeUTF8));
-        checkBox_19->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_2_F_CV", 0, QApplication::UnicodeUTF8));
+        checkBox_19->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_2", 0, QApplication::UnicodeUTF8));
         checkBox_19->setText(QApplication::translate("A4", "ACTIVAR ARRANQUE HIDR\303\201ULICO", 0, QApplication::UnicodeUTF8));
         lbEdo3_2->setText(QApplication::translate("A4", "ESTADO", 0, QApplication::UnicodeUTF8));
-        cbEsperarIni->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_5_F_CV", 0, QApplication::UnicodeUTF8));
+        cbEsperarIni->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_5", 0, QApplication::UnicodeUTF8));
         cbEsperarIni->setText(QApplication::translate("A4", "INICIAR CRONO ROTACI\303\223N ENFR", 0, QApplication::UnicodeUTF8));
-        cbSelec->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_3_F_CV", 0, QApplication::UnicodeUTF8));
+        cbSelec->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_3", 0, QApplication::UnicodeUTF8));
         cbSelec->setText(QApplication::translate("A4", "SELEC ALTA VELOCIDAD", 0, QApplication::UnicodeUTF8));
-        cbEsperarN25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_1_F_CV", 0, QApplication::UnicodeUTF8));
+        cbEsperarN25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_1", 0, QApplication::UnicodeUTF8));
         cbEsperarN25->setText(QApplication::translate("A4", "ESPERAR QUE N25 ABAJO DE 300 RPM", 0, QApplication::UnicodeUTF8));
-        cbListo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_6_F_CV", 0, QApplication::UnicodeUTF8));
+        cbListo->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_6", 0, QApplication::UnicodeUTF8));
         cbListo->setText(QApplication::translate("A4", "LISTO PARA ARRANQUE CALIENTE", 0, QApplication::UnicodeUTF8));
-        cbEsperarXn25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_4_F_CV", 0, QApplication::UnicodeUTF8));
+        cbEsperarXn25->setId(QApplication::translate("A4", "p_Fix32_THISNODE_MTR_STP_4", 0, QApplication::UnicodeUTF8));
         cbEsperarXn25->setText(QApplication::translate("A4", "ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM", 0, QApplication::UnicodeUTF8));
-        lbHrs->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("A4", ":", 0, QApplication::UnicodeUTF8));
-        lbMin->setText(QApplication::translate("A4", "60", 0, QApplication::UnicodeUTF8));
+        wLabel_4->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CDC_MIN_F_CV", 0, QApplication::UnicodeUTF8));
+        wLabel_5->setId(QApplication::translate("A4", "p_Fix32_THISNODE_CDC_SEC_F_CV", 0, QApplication::UnicodeUTF8));
         lbBack->setText(QString());
         lbUnit3->setText(QApplication::translate("A4", "    UNIT3", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

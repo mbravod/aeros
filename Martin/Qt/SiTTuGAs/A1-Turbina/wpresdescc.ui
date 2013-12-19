@@ -65,7 +65,7 @@
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_PT6804_F_CV</string>
+    <string>p_HMI_INTER_PT6804_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>10.90</string>
@@ -142,7 +142,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <string notr="true">background-color: rgb(128, 128, 128);</string>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_PT6814_F_CV</string>
+    <string>p_HMI_INTER_PT6814_CALC_PLUS_A_OUT_1</string>
    </property>
    <property name="text">
     <string>11.30</string>

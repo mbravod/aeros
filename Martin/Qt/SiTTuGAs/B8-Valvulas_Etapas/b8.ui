@@ -634,7 +634,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <string>SUMINISTRO DE GAS AUXILIAR</string>
    </property>
   </widget>
-  <widget class="Flama_SectorB" name="flama_SectorB">
+  <widget class="Flama_SectorA" name="flama_SectorA">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -644,7 +644,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     </rect>
    </property>
   </widget>
-  <widget class="Flama_SectorA" name="flama_SectorA">
+  <widget class="Flama_SectorB" name="flama_SectorB">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -670,7 +670,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>667</height>
+     <height>662</height>
     </rect>
    </property>
   </widget>
@@ -778,8 +778,8 @@ background-color: rgba(255, 255, 255, 0);</string>
   <zorder>lbTexto_18</zorder>
   <zorder>lbTexto_19</zorder>
   <zorder>lbTexto_20</zorder>
-  <zorder>flama_SectorB</zorder>
   <zorder>flama_SectorA</zorder>
+  <zorder>flama_SectorB</zorder>
   <zorder>flama_SectorC</zorder>
   <zorder>flama_SectorD</zorder>
   <zorder>flama_SectorE</zorder>

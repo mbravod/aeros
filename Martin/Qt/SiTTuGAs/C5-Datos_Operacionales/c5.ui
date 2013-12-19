@@ -3286,9 +3286,9 @@
    <widget class="WLabel" name="lbWF36DMDU">
     <property name="geometry">
      <rect>
-      <x>155</x>
+      <x>159</x>
       <y>35</y>
-      <width>45</width>
+      <width>37</width>
       <height>13</height>
      </rect>
     </property>
@@ -3312,9 +3312,9 @@
    <widget class="WLabel" name="lbWF36ACU">
     <property name="geometry">
      <rect>
-      <x>155</x>
+      <x>159</x>
       <y>56</y>
-      <width>45</width>
+      <width>37</width>
       <height>13</height>
      </rect>
     </property>

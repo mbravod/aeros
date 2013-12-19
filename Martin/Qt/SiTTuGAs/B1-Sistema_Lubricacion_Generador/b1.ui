@@ -37,8 +37,8 @@
      <height>65</height>
     </rect>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -50,7 +50,7 @@
     <string>68326B</string>
    </property>
    <property name="Value" stdset="0">
-    <number>2</number>
+    <number>0</number>
    </property>
   </widget>
   <widget class="AWMultiObject" name="aBomba_1">
@@ -61,6 +61,9 @@
      <width>101</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT6033_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::BOMBATB</enum>
@@ -204,6 +207,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6017_F_CV</string>
+   </property>
    <property name="text">
     <string>0.0</string>
    </property>
@@ -249,10 +255,10 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_NOT Fix32_THISNODE_MOT6033_F_CV</string>
+    <string>null</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -277,10 +283,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR282_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
+    <string>p_Fix32_THISNODE_ALM_MSTR234_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -305,7 +308,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR278_F_CV</string>
+    <string>p_Fix32_THISNODE_ALM_MSTR284_F_CV</string>
    </property>
    <property name="value">
     <number>-1</number>
@@ -332,8 +335,8 @@ color: rgb(255, 255, 255);</string>
      <height>61</height>
     </rect>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
@@ -358,10 +361,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_UNIT1_PS3EST_F_CV</string>
-   </property>
-   <property name="value">
-    <number>-1</number>
+    <string>p_Fix32_THISNODE_ALM_MSTR130_F_CV</string>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -386,10 +386,10 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_ALM_MSTR219_F_CV</string>
+    <string>p_Fix32_THISNODE_SDNGEN015_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -516,6 +516,9 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
    </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6016_F_CV</string>
+   </property>
    <property name="text">
     <string>0.0</string>
    </property>
@@ -635,9 +638,6 @@ color: rgb(255, 255, 255);</string>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR015_F_CV</string>
    </property>
-   <property name="value">
-    <number>-1</number>
-   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -660,8 +660,8 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -685,8 +685,8 @@ color: rgb(255, 255, 255);</string>
      <height>65</height>
     </rect>
    </property>
-   <property name="value">
-    <number>-1</number>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -836,15 +836,18 @@ color: rgb(220, 220, 0);</string>
    <widget class="WLabel" name="lbVAL_8">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>240</x>
       <y>28</y>
-      <width>51</width>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFB_HR_F_CV</string>
     </property>
     <property name="text">
      <string>6495.5</string>
@@ -860,15 +863,18 @@ color: rgb(255, 255, 255);</string>
    <widget class="WLabel" name="lbVAL_9">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>42</y>
-      <width>51</width>
+      <x>240</x>
+      <y>40</y>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFA_HR_F_CV</string>
     </property>
     <property name="text">
      <string>5082.1</string>
@@ -929,6 +935,60 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
    </widget>
+   <widget class="WLabel" name="lbVAL_10">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFA_MIN_F_CV</string>
+    </property>
+    <property name="text">
+     <string>5082.1</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_11">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>28</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFB_MIN_F_CV</string>
+    </property>
+    <property name="text">
+     <string>6495.5</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
   </widget>
   <widget class="WLabel" name="lbUnidad_3">
    <property name="geometry">
@@ -966,6 +1026,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISMODE_LT6045_F_CV</string>
    </property>
    <property name="text">
     <string>81.9</string>
@@ -1011,6 +1074,9 @@ color: rgb(255, 255, 255);</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -1030,6 +1096,9 @@ color: rgb(255, 255, 255);</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree270</enum>
    </property>
@@ -1048,6 +1117,9 @@ color: rgb(255, 255, 255);</string>
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -1278,11 +1350,14 @@ QProgressBar::chunk {
   <widget class="AWMultiObject" name="aWMultiObject_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>560</y>
-     <width>31</width>
-     <height>31</height>
+     <x>70</x>
+     <y>540</y>
+     <width>71</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_HE6005_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SPRING</enum>
@@ -1291,11 +1366,14 @@ QProgressBar::chunk {
   <widget class="AWMultiObject" name="aWMultiObject_3">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>590</y>
-     <width>31</width>
-     <height>31</height>
+     <x>70</x>
+     <y>580</y>
+     <width>71</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_HE6005_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::SPRING</enum>
@@ -1435,6 +1513,9 @@ QProgressBar::chunk {
      <width>101</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
    </property>
    <property name="ElementType">
     <enum>AWMultiObject::BOMBATB</enum>

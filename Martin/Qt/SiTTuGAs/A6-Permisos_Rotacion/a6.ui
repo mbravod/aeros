@@ -102,7 +102,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_OFF_RUN_F_CV</string>
+      <string>p_Fix32_THISNODE_OFF_RUN</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -138,7 +138,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_HYD_ST_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_HYD_ST_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -194,7 +194,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_WWOFF_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_WWOFF_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -250,7 +250,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_LH_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_LH_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -266,7 +266,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MNET_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_MNET_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -302,7 +302,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_CRANK_OFF_F_CV</string>
+      <string>p_Fix32_THISNODE_CRANK_OFF</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -318,7 +318,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_BO_MANUAL_F_CV</string>
+      <string>p_Fix32_THISNODE_BO_MANUAL</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -354,7 +354,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_N25LT300_F_CV</string>
+      <string>p_Fix32_THISNODE_N25LT300</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -390,7 +390,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_SDNNS_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_SDNNS_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -426,7 +426,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_LOK_4HROFF_F_CV</string>
+      <string>p_Fix32_THISNODE_LOK_4HROFF</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -462,7 +462,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_WW_NOTACTIVE_F_CV</string>
+      <string>p_Fix32_THISNODE_WW_NOTACTIVE</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -538,7 +538,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_RUNNING_F_CV</string>
+      <string>p_Fix32_THISNODE_RUNNING</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -554,7 +554,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_TLUB_OK_F_CV</string>
+      <string>p_Fix32_THISNODE_TLUB_OK</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -590,7 +590,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_TLO_TNKLVL_F_CV</string>
+      <string>p_Fix32_THISNODE_TLO_TNKLVL</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -606,7 +606,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_STATOR_PRM_F_CV</string>
+      <string>p_Fix32_THISNODE_STATOR_PRM</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -682,7 +682,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_SOV_CLSD_F_CV</string>
+      <string>p_Fix32_THISNODE_SOV_CLSD</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -718,7 +718,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_GLUBTNKLVL_F_CV</string>
+      <string>p_Fix32_THISNODE_GLUBTNKLVL</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -754,7 +754,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_GLUBTNKTMP_F_CV</string>
+      <string>p_Fix32_THISNODE_GLUBTNKTMP</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -770,7 +770,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_VMIN_STOP_F_CV</string>
+      <string>p_Fix32_THISNODE_VMIN_STOP</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -886,7 +886,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_T2GT50_F_CV</string>
+      <string>p_Fix32_THISNODE_T2GT50</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -902,7 +902,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_T2GT50_F_CV</string>
+      <string>p_Fix32_THISNODE_LS6543</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -918,7 +918,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MW_WWENBL_F_CV</string>
+      <string>p_Fix32_THISNODE_MW_WWENBL</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -954,7 +954,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_NSDGT3590_F_CV</string>
+      <string>p_Fix32_THISNODE_NSDGT3590</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -1030,7 +1030,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_N25LT300_F_CV</string>
+      <string>p_Fix32_THISNODE_N25LT300</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -1046,7 +1046,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_LS6543_F_CV</string>
+      <string>p_Fix32_THISNODE_LS6543</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -1062,7 +1062,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_C_PERM_F_CV</string>
+      <string>p_Fix32_THISNODE_C_PERM</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>
@@ -1098,7 +1098,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_T48LT200_F_CV</string>
+      <string>p_Fix32_THISNODE_T48LT200</string>
      </property>
      <property name="ElementType">
       <enum>AWMultiObject::CIRLED</enum>

@@ -86,7 +86,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_SE6812_F_CV</string>
+    <string>p_A1_A04_MPU_SE6812_AI_MPU_MONITOR</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>
@@ -164,7 +164,7 @@
     </rect>
    </property>
    <property name="id">
-    <string>p_Fix32_THISNODE_SE6813_F_CV</string>
+    <string>p_A1_A04_MPU_SE6813_AI_MPU_MONITOR</string>
    </property>
    <property name="Fondo_Inicial" stdset="0">
     <enum>WLabel::Sin_color</enum>

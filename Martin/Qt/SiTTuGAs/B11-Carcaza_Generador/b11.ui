@@ -104,6 +104,9 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR352_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -134,6 +137,9 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR351_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -169,6 +175,9 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR369_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -199,6 +208,9 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR350_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -231,6 +243,9 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR364_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
    </property>
@@ -261,6 +276,9 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR354_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>
@@ -293,6 +311,9 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR345_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -318,6 +339,9 @@
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>MOT</string>
    </property>
@@ -336,6 +360,9 @@
      <width>71</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -362,6 +389,9 @@
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR062_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -386,6 +416,9 @@
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR059_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
@@ -626,6 +659,9 @@ p, li { white-space: pre-wrap; }
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR142_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -651,6 +687,9 @@ p, li { white-space: pre-wrap; }
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
    </property>
@@ -672,6 +711,9 @@ p, li { white-space: pre-wrap; }
      <width>71</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree180</enum>
@@ -701,6 +743,9 @@ p, li { white-space: pre-wrap; }
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR356_F_CV</string>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree0</enum>
    </property>
@@ -726,6 +771,9 @@ p, li { white-space: pre-wrap; }
      <height>61</height>
     </rect>
    </property>
+   <property name="value">
+    <number>0</number>
+   </property>
    <property name="UpLabel" stdset="0">
     <string>HE</string>
    </property>
@@ -750,6 +798,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="id">
     <string>p_Fix32_THISNODE_ALM_MSTR324_F_CV</string>
+   </property>
+   <property name="value">
+    <number>0</number>
    </property>
    <property name="Orientation">
     <enum>AWMultEstateWidget::Degree90</enum>

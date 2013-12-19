@@ -250,7 +250,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_NORM_STP_1_F_CV</string>
+      <string>p_Fix32_THISNODE_NORM_STP_1</string>
      </property>
      <property name="text">
       <string>RAMPA NPT A CARGA MIN</string>
@@ -279,7 +279,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_NORM_STP_3_F_CV</string>
+      <string>p_Fix32_THISNODE_NORM_STP_3</string>
      </property>
      <property name="text">
       <string>INTERRUPTOR ABIERTO</string>
@@ -308,7 +308,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_CD_CYCT_ON_F_CV</string>
+      <string>p_Fix32_THISNODE_CD_CYCT_ON</string>
      </property>
      <property name="text">
       <string>CRON CICLO ENFRIAMIENTO ACTIVO</string>
@@ -436,7 +436,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_DECELMIN_F_CV</string>
+      <string>p_Fix32_THISNODE_DECELMIN</string>
      </property>
      <property name="text">
       <string>DESACEL A CARGA MIN ACTIVO</string>
@@ -512,28 +512,6 @@
       <string>ESTADO</string>
      </property>
     </widget>
-    <widget class="QLabel" name="lbCronCicloHrs">
-     <property name="geometry">
-      <rect>
-       <x>265</x>
-       <y>90</y>
-       <width>26</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>60</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
@@ -556,26 +534,30 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="lbCronCicloMin">
+    <widget class="WLabel" name="wLabel">
      <property name="geometry">
       <rect>
-       <x>310</x>
-       <y>90</y>
-       <width>26</width>
-       <height>31</height>
+       <x>270</x>
+       <y>100</y>
+       <width>16</width>
+       <height>16</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CD_MIN_F_CV</string>
      </property>
-     <property name="text">
-      <string>60</string>
+    </widget>
+    <widget class="WLabel" name="wLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CD_SEC_F_CV</string>
      </property>
     </widget>
    </widget>
@@ -763,7 +745,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_STI_SEQ_1_F_CV</string>
+      <string>p_Fix32_THISNODE_STI_SEQ_1</string>
      </property>
      <property name="text">
       <string>ESPERAR NÚCLEO RALENTÍ</string>
@@ -792,7 +774,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_STI_SEQ_2_F_CV</string>
+      <string>p_Fix32_THISNODE_STI_SEQ_2</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO DE 10 SEG A REESTAB</string>
@@ -811,26 +793,17 @@
       </size>
      </property>
     </widget>
-    <widget class="QLabel" name="lbIniciarCrono">
+    <widget class="WLabel" name="wLabel_3">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>60</y>
-       <width>26</width>
-       <height>31</height>
+       <x>290</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>60</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STI_1_SEC_F_CV</string>
      </property>
     </widget>
    </widget>
@@ -946,7 +919,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_ES_STP_2_F_CV</string>
+      <string>p_Fix32_THISNODE_ES_STP_2</string>
      </property>
      <property name="text">
       <string>ESPERAR QUE VEL BAJE ANTES DE MOTOR</string>
@@ -1032,7 +1005,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_ES_STP_1_F_CV</string>
+      <string>p_Fix32_THISNODE_ES_STP_1</string>
      </property>
      <property name="text">
       <string>APAGADO DE EMERGENCIA</string>
@@ -1175,7 +1148,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_2_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_2</string>
      </property>
      <property name="text">
       <string>ACTIVAR ARRANQUE HIDRÁULICO</string>
@@ -1261,7 +1234,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_5_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_5</string>
      </property>
      <property name="text">
       <string>INICIAR CRONO ROTACIÓN ENFR</string>
@@ -1290,7 +1263,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_3_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_3</string>
      </property>
      <property name="text">
       <string>SELEC ALTA VELOCIDAD</string>
@@ -1319,7 +1292,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_1_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_1</string>
      </property>
      <property name="text">
       <string>ESPERAR QUE N25 ABAJO DE 300 RPM</string>
@@ -1348,7 +1321,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_6_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_6</string>
      </property>
      <property name="text">
       <string>LISTO PARA ARRANQUE CALIENTE</string>
@@ -1377,7 +1350,7 @@
       </rect>
      </property>
      <property name="id">
-      <string>p_Fix32_THISNODE_MTR_STP_4_F_CV</string>
+      <string>p_Fix32_THISNODE_MTR_STP_4</string>
      </property>
      <property name="text">
       <string>ESPERAR PARA QUE VEL XN25 SUPERE 1700 RPM</string>
@@ -1394,28 +1367,6 @@
        <width>24</width>
        <height>24</height>
       </size>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lbHrs">
-     <property name="geometry">
-      <rect>
-       <x>265</x>
-       <y>320</y>
-       <width>26</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>60</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
@@ -1440,26 +1391,30 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="lbMin">
+    <widget class="WLabel" name="wLabel_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>330</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDC_MIN_F_CV</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="wLabel_5">
      <property name="geometry">
       <rect>
        <x>310</x>
-       <y>320</y>
-       <width>26</width>
-       <height>31</height>
+       <y>330</y>
+       <width>16</width>
+       <height>16</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>60</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CDC_SEC_F_CV</string>
      </property>
     </widget>
    </widget>
@@ -1526,6 +1481,11 @@
    <class>WCheckBox</class>
    <extends>QWidget</extends>
    <header>wcheckbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
   </customwidget>
  </customwidgets>
  <resources>
