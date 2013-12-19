@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
 
 //    SQLite sl;
+//    sl.IniciaBD();
 //    sl.VaciarTxtBD("C:/ptrs.csv");
 
     // Recuperamos la configuración
