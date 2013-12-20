@@ -57,7 +57,9 @@ HEADERS += \
     welemento_hplugin.h \
     welementos_bplugin.h \
     widgetssittugas.h \
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+   ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+   ../../SiTTuGAs/SharedMemory/config.h
 
 SOURCES += \
     wventiladorplugin.cpp \
@@ -86,7 +88,9 @@ SOURCES += \
     welementos_bplugin.cpp \
     widgetssittugas.cpp \
     wventiladorplugin.cpp \
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
 
 
 RESOURCES += \

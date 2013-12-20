@@ -33,7 +33,9 @@ SOURCES += \
     auptextlabel.cpp \
     awmultiobject.cpp \
     awanalogiclevel.cpp \
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
 
 HEADERS += \
     ../awidgets/aled.h \
@@ -42,7 +44,9 @@ HEADERS += \
     ../awidgets/auptextlabel.h \
     ../awidgets/awmultiobject.h \
     ../awidgets/awanalogiclevel.h \
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+   ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+   ../../SiTTuGAs/SharedMemory/config.h
 
 RESOURCES += \
     aresources.qrc

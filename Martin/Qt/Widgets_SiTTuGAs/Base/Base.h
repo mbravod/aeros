@@ -4,7 +4,12 @@
 #include <QWidget>
 #include <QString>
 
-//Posiblemente cambiar esta referencia una vez que se defina el nombre
+//Si el sistema no funciona con estos widgets probar con la siguiente
+//directiva del preprocesador
+
+//Tal vez hay que incluir esta referencia (si existe algún problema de "comunicación" con los widgets)
+//#include "../SiTTuGAs/SharedMemory/config.h"
+
 #include "../../SiTTuGAs/SharedMemory/httprequest.h"
 
 class Base : public QWidget

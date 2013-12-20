@@ -51,7 +51,10 @@ SOURCES += \
     welemento_h.cpp\
     welementos_b.cpp\
     wventilador.cpp\
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
+
 
 HEADERS += \
     ../Header/flama_anexom.h\
@@ -78,6 +81,8 @@ HEADERS += \
     ../Header/welemento_h.h\
     ../Header/welementos_b.h\
     ../Header/wventilador.h\
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+   ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+   ../../SiTTuGAs/SharedMemory/config.h
 RESOURCES += \
     icons.qrc

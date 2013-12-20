@@ -41,7 +41,10 @@ HEADERS += \
     auptextlabelplugin.h \
     awmultiobjectplugin.h \
     awanalogiclevelplugin.h \
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+   ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+   ../../SiTTuGAs/SharedMemory/config.h
+
 SOURCES += \
     awidgetscollection.cpp \
     aledplugin.cpp \
@@ -50,7 +53,10 @@ SOURCES += \
     auptextlabelplugin.cpp \
     awmultiobjectplugin.cpp \
     awanalogiclevelplugin.cpp \
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
+
 
 
 RESOURCES += \

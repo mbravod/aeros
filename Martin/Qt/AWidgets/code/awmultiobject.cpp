@@ -45,17 +45,20 @@ void AWMultiObject::AWPaintEvent(){
 
     QString s;
     s=eTypeList[m_eType];
-
-    switch(value){
-        case 0:
-            s.append(eColorList[m_OffColor]); //Color verde
-            break;
-        case 1:
-            s.append(eColorList[m_OnColor]); //Color rojo
-            break;
-        default:
-            s.append("Black");//No se sabe "Negro"
-            break;
+    if(tipo != -1){
+        s.append(eColorList[m_OffColor]); //Color verde
+    }else{
+        switch(value){
+            case 0:
+                s.append(eColorList[m_OffColor]); //Color verde
+                break;
+            case 1:
+                s.append(eColorList[m_OnColor]); //Color rojo
+                break;
+            default:
+                s.append("Black");//No se sabe "Negro"
+                break;
+        }
     }
 
     float a = side-(2*OFFSET);
@@ -108,10 +111,10 @@ bool AWMultiObject::loadSvgFile(QString filePath){
         delete m_SVGrenderer;
     m_SVGrenderer = new QSvgRenderer(this);
     i=m_SVGrenderer->load(filePath);
-    /*if(!i)
+    if(!i)
         qDebug("%s::loadSvgFile %s no cargado",strID(),qPrintable(filePath));
     else
-        qDebug("%s::loadSvgFile %s cargado",strID(),qPrintable(filePath));*/
+        qDebug("%s::loadSvgFile %s cargado",strID(),qPrintable(filePath));
     update();
     return i;
 }

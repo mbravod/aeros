@@ -1,14 +1,21 @@
-#ifndef BASE_H
-#define BASE_H
+#ifndef BASECOMPONENTES_H
+#define BASECOMPONENTES_H
 
 #include <QWidget>
 #include <QString>
 
-//Posiblemente cambiar esta referencia una vez que se defina el nombre
-#include "SharedMemory/httprequest.h"
+//Si el sistema no funciona con estos widgets probar con la siguiente
+//directiva del preprocesador
+
+//Tal vez hay que incluir esta referencia (si existe algún problema de "comunicación" con los widgets)
+//#include "../SiTTuGAs/SharedMemory/config.h"
+
+#include "../../SiTTuGAs/SharedMemory/httprequest.h"
 
 
-class Base : public QWidget
+
+
+class BaseComponentes : public QWidget
 {
     Q_OBJECT
     //Macro para declarar propiedades de la clase inherentes a QOBJECT()
@@ -26,7 +33,7 @@ class Base : public QWidget
     //Solo para cuestiones de prueba (es recomendable borrar las dos lineas anteriores)
 
 public:
-    explicit Base(QWidget *parent = 0);
+    explicit BaseComponentes(QWidget *parent = 0);
     //Metodos setters y getters
     QString getId();
     int getTipo();

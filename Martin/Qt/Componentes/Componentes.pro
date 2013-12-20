@@ -1,5 +1,5 @@
 TEMPLATE    = subdirs
 CONFIG     += ordered
-SUBDIRS     =  Base\
+SUBDIRS     =  BaseComponentes\
                Code \
                Plugins

@@ -1,6 +1,6 @@
-#include "Base.h"
+#include "BaseComponentes.h"
 
-Base::Base(QWidget *parent) :
+BaseComponentes::BaseComponentes(QWidget *parent) :
     QWidget(parent)
 {
     //Inicializamos variables
@@ -12,71 +12,71 @@ Base::Base(QWidget *parent) :
     valueF = -1.0;
 }
 
-void Base::setShrdMem(HTTPRequest *s)
+void BaseComponentes::setShrdMem(HTTPRequest *s)
 {
     this->m_ShrdMem = s;
     //Por implementar y definir comportamiento
 }
 
-void Base::setUpdateable(bool u)
+void BaseComponentes::setUpdateable(bool u)
 {
     this->m_isUpdateable = u;
     update();
 }
 
-void Base::setTipo(int estado){
+void BaseComponentes::setTipo(int estado){
     this->tipo = estado;
     update();
 }
 
-void Base::setValue(int value)
+void BaseComponentes::setValue(int value)
 {
     this->value = value;
     update();
 }
 
 
-void Base::Update()
+void BaseComponentes::Update()
 {
     //Estas funciones se reimplementan en cada widget
 }
 
-void Base::paintEvent(QPaintEvent *)
+void BaseComponentes::paintEvent(QPaintEvent *)
 {
     wPaintEvent();
 }
 
-void Base::wPaintEvent()
+void BaseComponentes::wPaintEvent()
 {
     //Sin codigo se reimplementa en widget checkBox *(es quien lo utiliza)
 }
 
-int Base::getTipo(){
+int BaseComponentes::getTipo(){
     return (this->tipo);
 }
 
-int Base::getIndice()
+int BaseComponentes::getIndice()
 {
     return (this->indice);
 }
 
-int Base::getValue()
+int BaseComponentes::getValue()
 {
     return (this->value);
 }
 
 
-void Base::setId(QString id){
+void BaseComponentes::setId(QString id){
     this->id = id;
     update();
 }
 
-void Base::setIndice(int indice)
+void BaseComponentes::setIndice(int indice)
 {
     this->indice = indice;
     update();
 }
 
-QString Base::getId(){
+QString BaseComponentes::getId(){
     return (this->id);
 }

@@ -5,7 +5,6 @@
 #include <QtGui>
 #include <QObject>
 #include "awidget.h"
-#include "Base.h"
 
 class HTTPRequest;
 class SiTTuGAs;
@@ -23,13 +22,14 @@ class Pantallas : public QWidget
     protected:
         QString title;
         QString clave;
-        HTTPRequest *m_shrdMem;
-        SiTTuGAs *m_SiTTuGAs;
-        QList<AWidget *> allAWWidget;
-        QList<Base *> allComponents;
 
     protected slots:
 //        void Update();
+
+private:
+        HTTPRequest *m_shrdMem;
+        SiTTuGAs *m_SiTTuGAs;
+        QList<AWidget *> allAWWidget;
 };
 
 #endif // PANTALLAS_H

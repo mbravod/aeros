@@ -4,7 +4,8 @@
 #include <QWidget>
 
 #include "../SharedMemory/httprequest.h"
-
+//#include "SharedMemory/shrdmem.h"   //or "shrdmem.h"
+//#include "shrdmem.h"
 
 class AWidget : public QWidget
 {

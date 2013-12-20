@@ -46,26 +46,32 @@ void AInstrumentIndicator::AWPaintEvent(){
     pen.setColor(QColor(0,0,0));
     pen.setWidthF(1.0);
     p.setPen(pen);
+    if(tipo != -1){
+        //Hay indicadores de este tipo que solo se presentan de color blanco (sin id asignado)
+        p.setBrush(m_colorList.at(2));
 
-    switch(value){
-        case 0://Caso normal - validamos que este dentro del rango de seleccion
-                 if(normal>=0 && normal<=7){
-                    p.setBrush(m_colorList.at(normal));
-                }
-                else{
+    }else{
+
+        switch(value){
+            case 0://Caso normal - validamos que este dentro del rango de seleccion
+                     if(normal>=0 && normal<=7){
+                        p.setBrush(m_colorList.at(normal));
+                    }
+                    else{
+                        p.setBrush(m_colorList.at(7));
+                    }
+                    break;
+            case 1://Caso alarma - validamos que este dentro del rango de seleccion
+                 if(alarma>=0 && alarma<=7){
+                        p.setBrush(m_colorList.at(alarma));
+                    }
+                    else{
+                        p.setBrush(m_colorList.at(7));
+                    }
+                    break;
+            default://Consideramos un estado más para prevenir posibles cambios
                     p.setBrush(m_colorList.at(7));
-                }
-                break;
-        case 1://Caso alarma - validamos que este dentro del rango de seleccion
-                if(alarma>=0 && alarma<=7){
-                    p.setBrush(m_colorList.at(alarma));
-                }
-                else{
-                    p.setBrush(m_colorList.at(7));
-                }
-                break;
-        default://Consideramos un estado más para prevenir posibles cambios
-                p.setBrush(m_colorList.at(7));
+        }
     }
     /*if(m_value>=0 && m_value<=6)
         p.setBrush(m_colorList.at(m_value));

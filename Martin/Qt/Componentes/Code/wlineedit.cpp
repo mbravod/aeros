@@ -1,7 +1,7 @@
 #include "wlineedit.h"
 
 WLineEdit::WLineEdit(QWidget *parent) :
-    Base(parent)
+    BaseComponentes(parent)
 {
     //Instancia del contador de la animacion y conexion
     timer = new QTimer(this);

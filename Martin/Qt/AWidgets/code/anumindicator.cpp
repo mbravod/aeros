@@ -75,10 +75,10 @@ bool ANumIndicator::loadSvgFile(QString filePath){
         delete m_SVGrenderer;
     m_SVGrenderer = new QSvgRenderer(this);
     i=m_SVGrenderer->load(filePath);
-    /*if(!i)
+    if(!i)
         qDebug("%s::loadSvgFile %s no cargado",strID(),qPrintable(filePath));
     else
-        qDebug("%s::loadSvgFile %s cargado",strID(),qPrintable(filePath));*/
+        qDebug("%s::loadSvgFile %s cargado",strID(),qPrintable(filePath));
     update();
     return i;
 }

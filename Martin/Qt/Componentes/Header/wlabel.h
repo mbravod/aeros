@@ -1,12 +1,12 @@
 #ifndef WLABEL_H
 #define WLABEL_H
 
-#include "Base.h"
+#include "BaseComponentes.h"
 #include <QString>
 #include <QLabel>
 #include <QFont>
 
-class WLabel : public Base
+class WLabel : public BaseComponentes
 {
     Q_OBJECT
 

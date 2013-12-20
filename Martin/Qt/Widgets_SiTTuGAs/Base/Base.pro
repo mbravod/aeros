@@ -15,9 +15,14 @@ INSTALLS += staticlib
 
 HEADERS += \
     Base.h  \
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+   ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+   ../../SiTTuGAs/SharedMemory/config.h
 
 
 SOURCES += \
     Base.cpp\
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
+

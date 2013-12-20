@@ -9,8 +9,8 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
-#include "SharedMemory/config.h"
-#include "SharedMemory/sqlite.h"
+#include "config.h"
+#include "sqlite.h"
 
 class HTTPRequest : QWidget
 {

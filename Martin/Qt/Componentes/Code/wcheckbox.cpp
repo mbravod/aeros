@@ -1,7 +1,7 @@
 #include "wcheckbox.h"
 
 WCheckBox::WCheckBox(QWidget *parent) :
-    Base(parent)
+    BaseComponentes(parent)
 {
     //Constructor (inicializamos variables)
 

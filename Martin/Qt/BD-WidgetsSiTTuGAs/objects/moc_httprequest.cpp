@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'httprequest.h'
 **
-** Created: Mon 16. Dec 20:19:16 2013
+** Created: Fri 20. Dec 00:01:33 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_HTTPRequest[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -36,13 +36,14 @@ static const uint qt_meta_data_HTTPRequest[] = {
  // slots: signature, parameters, type, tag, flags
       23,   12,   12,   12, 0x08,
       38,   12,   12,   12, 0x08,
+      54,   12,   12,   12, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_HTTPRequest[] = {
     "HTTPRequest\0\0Refresh()\0HTTPFinished()\0"
-    "HTTPReadyRead()\0"
+    "HTTPFinishedR()\0HTTPReadyRead()\0"
 };
 
 const QMetaObject HTTPRequest::staticMetaObject = {
@@ -76,10 +77,11 @@ int HTTPRequest::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         switch (_id) {
         case 0: Refresh(); break;
         case 1: HTTPFinished(); break;
-        case 2: HTTPReadyRead(); break;
+        case 2: HTTPFinishedR(); break;
+        case 3: HTTPReadyRead(); break;
         default: ;
         }
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

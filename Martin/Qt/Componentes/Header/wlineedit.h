@@ -1,7 +1,7 @@
 #ifndef WLINEEDIT_H
 #define WLINEEDIT_H
 
-#include "Base.h"
+#include "BaseComponentes.h"
 #include <QTimer>
 #include <QFont>
 #include <QLabel>
@@ -10,7 +10,7 @@
 #include <QDebug>
 
 //Etiquetas de alarma
-class WLineEdit : public Base
+class WLineEdit : public BaseComponentes
 {
     Q_OBJECT
 

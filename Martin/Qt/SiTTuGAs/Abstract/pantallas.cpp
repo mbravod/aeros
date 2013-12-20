@@ -35,31 +35,15 @@ void Pantallas::setUpdateableChildrenList()
 {
 
     allAWWidget = this->findChildren<AWidget *>();
-    allComponents = this->findChildren<Base *>();
 
     int i;
-    for(i = 0; i < allAWWidget.size(); i++)
-    {
-        if(allAWWidget.at(i)->isUpdateable())
-        {
+    for(i=0;i<allAWWidget.size();i++){
+
+        if(allAWWidget.at(i)->isUpdateable()){
             allAWWidget.at(i)->setShrdMem(this->m_shrdMem);
         }
-        else
-        {
+        else{
             allAWWidget.removeAt(i);
-            i--;
-        }
-    }
-
-    for(i = 0; i < allComponents.size(); i++)
-    {
-        if(allComponents.at(i)->isUpdateable())
-        {
-            allComponents.at(i)->setShrdMem(this->m_shrdMem);
-        }
-        else
-        {
-            allComponents.removeAt(i);
             i--;
         }
     }

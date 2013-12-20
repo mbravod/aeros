@@ -1,7 +1,7 @@
 #include "wlabel.h"
 
 WLabel::WLabel(QWidget *parent) :
-    Base(parent)
+    BaseComponentes(parent)
 {
     //Instancia de la etiqueta que anexamos al widget
     etiqueta = new QLabel(this);

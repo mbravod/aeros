@@ -4,10 +4,10 @@
 #include <QPainter>
 #include <QPen>
 #include <QString>
-#include "Base.h"
+#include "BaseComponentes.h"
 
 
-class WCheckBox : public Base
+class WCheckBox : public BaseComponentes
 {
     Q_OBJECT
     Q_PROPERTY(QString text READ getText WRITE setText)

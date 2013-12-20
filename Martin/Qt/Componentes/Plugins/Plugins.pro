@@ -2,23 +2,23 @@ QT+= svg network sql
 
 
 INCLUDEPATH += ../Header
-INCLUDEPATH +=  ../Base
+INCLUDEPATH +=  ../BaseComponentes
 INCLUDEPATH += ../../SiTTuGAs/SharedMemory
 INCLUDEPATH += ../../SiTTuGAs/Sittugas
 
 win32-g++:{
         POST_TARGETDEPS += ../libHeader.a
         LIBS += ../libHeader.a
-        POST_TARGETDEPS += ../libBase.a
-        LIBS += ../libBase.a
+        POST_TARGETDEPS += ../libBaseComponentes.a
+        LIBS += ../libBaseComponentes.a
 }
 
 
 win32-msvc*:{
         POST_TARGETDEPS += ../Header.lib
         LIBS += ../Header.lib
-        POST_TARGETDEPS += ../Base.lib
-        LIBS += ../Base.lib
+        POST_TARGETDEPS += ../BaseComponentes.lib
+        LIBS += ../BaseComponentes.lib
 
 }
 
@@ -38,14 +38,18 @@ HEADERS += \
     wcheckboxplugin.h \
     wlabelplugin.h \
     wlineeditplugin.h \
-    ../../SiTTuGAs/SharedMemory/httprequest.h
+    ../../SiTTuGAs/SharedMemory/httprequest.h \
+   ../../SiTTuGAs/SharedMemory/sqlite.h \
+    ../../SiTTuGAs/SharedMemory/config.h
 
 SOURCES += \
     componentes.cpp \
     wcheckboxplugin.cpp \
     wlineeditplugin.cpp \
     wlabelplugin.cpp \
-    ../../SiTTuGAs/SharedMemory/httprequest.cpp
+    ../../SiTTuGAs/SharedMemory/httprequest.cpp \
+    ../../SiTTuGAs/SharedMemory/sqlite.cpp \
+    ../../SiTTuGAs/SharedMemory/config.cpp
 
 
 RESOURCES += \

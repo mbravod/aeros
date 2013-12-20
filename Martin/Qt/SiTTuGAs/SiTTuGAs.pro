@@ -7,7 +7,7 @@ TEMPLATE = app
 INCLUDEPATH += ../awidgets/awidgets
 INCLUDEPATH += ../awidgets/bases
 
-INCLUDEPATH += ../Componentes/Base
+INCLUDEPATH += ../Componentes/BaseComponentes
 INCLUDEPATH += ../Componentes/Header
 
 INCLUDEPATH += ../Widgets_SiTTuGAs/Base
@@ -23,7 +23,7 @@ LIBS += ../BD-Widgets/awidgets.lib
 LIBS += ../BD-Widgets/bases.lib
 
 #Librerias de los nuevos elementos de la interfaz
-LIBS += ../BD-Componentes/Base.lib
+LIBS += ../BD-Componentes/BaseComponentes.lib
 LIBS += ../BD-Componentes/Header.lib
 
 #Elementos de los sectores para las flamas
