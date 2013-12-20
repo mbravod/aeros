@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'e1.ui'
 **
-** Created: Thu 19. Dec 17:48:59 2013
+** Created: Fri 20. Dec 07:05:54 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -78,7 +78,6 @@ public:
     WLabel *label_46;
     WLabel *label_47;
     QFrame *frame_3;
-    QwtPlot *qwtPlot_2;
     WLabel *label_48;
     WLabel *label_49;
     WLabel *label_50;
@@ -413,9 +412,6 @@ public:
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(192, 192, 192);"));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
-        qwtPlot_2 = new QwtPlot(frame_3);
-        qwtPlot_2->setObjectName(QString::fromUtf8("qwtPlot_2"));
-        qwtPlot_2->setGeometry(QRect(13, 33, 971, 151));
         label_48 = new WLabel(frame_3);
         label_48->setObjectName(QString::fromUtf8("label_48"));
         label_48->setGeometry(QRect(5, 194, 51, 16));

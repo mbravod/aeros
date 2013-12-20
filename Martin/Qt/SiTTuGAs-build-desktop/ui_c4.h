@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c4.ui'
 **
-** Created: Thu 19. Dec 17:48:56 2013
+** Created: Fri 20. Dec 07:05:52 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,7 +20,6 @@
 #include <QtGui/QProgressBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
-#include "qwt_scale_widget.h"
 #include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
@@ -172,9 +171,6 @@ public:
     WLabel *lbEscala_31;
     WLabel *lbEscala_32;
     WLabel *lbEscala_33;
-    QwtScaleWidget *ScaleWidget;
-    QwtScaleWidget *ScaleWidget_2;
-    QwtScaleWidget *ScaleWidget_3;
 
     void setupUi(QWidget *C4)
     {
@@ -1462,15 +1458,6 @@ public:
 "color: rgb(255, 255, 255);"));
         lbEscala_33->setFont(font3);
         lbEscala_33->setProperty("Alineacion", QVariant(WLabel::Derecha));
-        ScaleWidget = new QwtScaleWidget(frAux_4);
-        ScaleWidget->setObjectName(QString::fromUtf8("ScaleWidget"));
-        ScaleWidget->setGeometry(QRect(29, 11, 18, 307));
-        ScaleWidget_2 = new QwtScaleWidget(frAux_4);
-        ScaleWidget_2->setObjectName(QString::fromUtf8("ScaleWidget_2"));
-        ScaleWidget_2->setGeometry(QRect(360, 10, 18, 307));
-        ScaleWidget_3 = new QwtScaleWidget(frAux_4);
-        ScaleWidget_3->setObjectName(QString::fromUtf8("ScaleWidget_3"));
-        ScaleWidget_3->setGeometry(QRect(690, 10, 18, 307));
         pgbar->raise();
         pgbar_2->raise();
         pgbar_3->raise();
@@ -1547,9 +1534,6 @@ public:
         lbEscala_7->raise();
         lbEscala_10->raise();
         lbEscala_4->raise();
-        ScaleWidget->raise();
-        ScaleWidget_2->raise();
-        ScaleWidget_3->raise();
         label->raise();
         frAux->raise();
         frTitulo_9->raise();

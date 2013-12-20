@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'c3.ui'
 **
-** Created: Thu 19. Dec 17:48:58 2013
+** Created: Fri 20. Dec 07:05:54 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,7 +20,6 @@
 #include <QtGui/QProgressBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
-#include "qwt_scale_widget.h"
 #include "wlabel.h"
 
 QT_BEGIN_NAMESPACE
@@ -104,7 +103,6 @@ public:
     WLabel *lbVal_16;
     WLabel *lbVal_17;
     WLabel *lbVal_18;
-    QwtScaleWidget *ScaleWidget;
     QLabel *label_2;
 
     void setupUi(QWidget *C3)
@@ -777,14 +775,10 @@ public:
 "color: rgb(255, 255, 255);"));
         lbVal_18->setFont(font3);
         lbVal_18->setProperty("Alineacion", QVariant(WLabel::Derecha));
-        ScaleWidget = new QwtScaleWidget(C3);
-        ScaleWidget->setObjectName(QString::fromUtf8("ScaleWidget"));
-        ScaleWidget->setGeometry(QRect(160, 210, 60, 381));
         label_2 = new QLabel(C3);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(186, 200, 21, 391));
         label->raise();
-        ScaleWidget->raise();
         label_2->raise();
         btnIMPPant->raise();
         lbUnit3->raise();
