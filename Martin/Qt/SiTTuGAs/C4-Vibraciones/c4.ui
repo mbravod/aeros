@@ -4129,36 +4129,6 @@ color: rgb(255, 255, 255);</string>
      <enum>WLabel::Derecha</enum>
     </property>
    </widget>
-   <widget class="QwtScaleWidget" name="ScaleWidget">
-    <property name="geometry">
-     <rect>
-      <x>29</x>
-      <y>11</y>
-      <width>18</width>
-      <height>307</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QwtScaleWidget" name="ScaleWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>10</y>
-      <width>18</width>
-      <height>307</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QwtScaleWidget" name="ScaleWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>10</y>
-      <width>18</width>
-      <height>307</height>
-     </rect>
-    </property>
-   </widget>
    <zorder>pgbar</zorder>
    <zorder>pgbar_2</zorder>
    <zorder>pgbar_3</zorder>
@@ -4235,9 +4205,6 @@ color: rgb(255, 255, 255);</string>
    <zorder>lbEscala_7</zorder>
    <zorder>lbEscala_10</zorder>
    <zorder>lbEscala_4</zorder>
-   <zorder>ScaleWidget</zorder>
-   <zorder>ScaleWidget_2</zorder>
-   <zorder>ScaleWidget_3</zorder>
   </widget>
   <zorder>label</zorder>
   <zorder>frAux</zorder>
@@ -4273,11 +4240,6 @@ color: rgb(255, 255, 255);</string>
    <class>WLabel</class>
    <extends>QWidget</extends>
    <header>wlabel.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QwtScaleWidget</class>
-   <extends>QWidget</extends>
-   <header>qwt_scale_widget.h</header>
   </customwidget>
  </customwidgets>
  <resources>

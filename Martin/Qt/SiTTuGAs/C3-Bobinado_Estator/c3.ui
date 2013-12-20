@@ -2074,16 +2074,6 @@ color: rgb(255, 255, 255);</string>
     <enum>WLabel::Derecha</enum>
    </property>
   </widget>
-  <widget class="QwtScaleWidget" name="ScaleWidget">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>210</y>
-     <width>60</width>
-     <height>381</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -2098,7 +2088,6 @@ color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>ScaleWidget</zorder>
   <zorder>label_2</zorder>
   <zorder>btnIMPPant</zorder>
   <zorder>lbUnit3</zorder>
@@ -2124,11 +2113,6 @@ color: rgb(255, 255, 255);</string>
    <class>WLabel</class>
    <extends>QWidget</extends>
    <header>wlabel.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QwtScaleWidget</class>
-   <extends>QWidget</extends>
-   <header>qwt_scale_widget.h</header>
   </customwidget>
  </customwidgets>
  <resources>

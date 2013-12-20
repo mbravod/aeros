@@ -1026,16 +1026,6 @@ color: rgb(255, 0, 127);</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QwtPlot" name="qwtPlot_2">
-     <property name="geometry">
-      <rect>
-       <x>13</x>
-       <y>33</y>
-       <width>971</width>
-       <height>151</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="WLabel" name="label_48">
      <property name="geometry">
       <rect>
@@ -2078,7 +2068,7 @@ color: rgb(255, 0, 127);</string>
  <customwidgets>
   <customwidget>
    <class>WLabel</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>wlabel.h</header>
   </customwidget>
   <customwidget>
