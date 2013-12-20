@@ -88,8 +88,11 @@ void AWMultiObject::setOffColor(EColors c){
 
 void AWMultiObject::Update()
 {
-    if(m_ShrdMem == NULL)
+    if(m_ShrdMem == NULL){
+        qDebug()<< "Memoria NULL";
         return;
+    }
+
     if(!isUpdateable())  //Verificar metodo para saber si
         return;                // la ventana que contiene el widget es "visible" (para el usuario)
     if(indice < 0){
@@ -99,6 +102,7 @@ void AWMultiObject::Update()
         }
     }
     //Logica para definir atributos y comportamiento del widget
+
     value = m_ShrdMem->getI(indice);
     update();
 

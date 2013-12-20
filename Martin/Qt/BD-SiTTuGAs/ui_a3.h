@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'a3.ui'
 **
-** Created: Thu 19. Dec 23:58:03 2013
+** Created: Fri 20. Dec 03:27:25 2013
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

@@ -71,7 +71,7 @@ bool SQLite::VaciarTxtBD(QString ruta)
         dbA.exec(str);
     }
     dbA.close();
-
+    qDebug()<<"Fin de carga de datos..";
     return true;
 }
 

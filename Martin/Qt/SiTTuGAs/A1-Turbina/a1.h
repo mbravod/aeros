@@ -33,6 +33,7 @@
 #include <QPoint>
 #include <QMouseEvent>
 #include <QDebug>
+#include <QTimer>
 #include <QString>
 
 //Definimos identificadores de cada ventana emergente
@@ -74,10 +75,12 @@ class A1 : public Pantallas
     public:
         explicit A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem);
         void cerrarVentanasEmergentes();
+        QTimer *opt;
         ~A1();
 
 
     public slots:
+        void prueba();
         void sltWApagEmer();
         void sltWBalanceI();
         void sltWCDPBLD();

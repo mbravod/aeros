@@ -80,18 +80,20 @@ void Clock::DrawHor(int s)
     else
         ui->lbHours->setText(QString::number(s));
 }
-
+int clockStatus = 0;
 void Clock::ActivarClock(bool b)
 {
     animado = true;
     if(b)
     {
         ChangeColor(1);
+        clockStatus = 0;
         timer->start();
     }
     else
     {
-        timer->stop();
+        //timer->stop();
+        clockStatus = 1;
         ChangeColor(2);
     }
 }
@@ -127,7 +129,9 @@ void Clock::Funcionando()
     unsigned int seg, min, hor;
     unsigned int t1, t2, t3;
     // Aumentamos los segundos
-    this->segs = this->segs + 1;
+    if(clockStatus == 0){
+        this->segs = this->segs + 1;
+    }
     // Calculamos la hora...
     seg = this->segs%60;
     t1 = this->segs - seg;

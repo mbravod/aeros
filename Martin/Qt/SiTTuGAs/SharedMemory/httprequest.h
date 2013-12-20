@@ -19,7 +19,9 @@ class HTTPRequest : QWidget
     public:
         HTTPRequest(Config *conf, QWidget *parent = 0);
         ~HTTPRequest();
-
+        char mem[32000*4];
+        float  memf[32000];
+        int memi[32000];
         // Setter's y Getter's
         void setProtocolo(bool secure);
         void setServer(QString serverN);
@@ -29,7 +31,7 @@ class HTTPRequest : QWidget
         // Entrega en QString el valor indicado por un indice
         void GetValor();
         static QString session;// = 0;
-
+        int eliminarVariable;
         // Obtiene valor flotante
         float getF(int pos);
         // Obtiene valor entero
@@ -67,6 +69,8 @@ class HTTPRequest : QWidget
         int *arrI[24000];
         float *arrF[24000];
         QByteArray decode;
+
+
 };
 
 #endif // HTTPREQUEST_H

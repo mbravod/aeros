@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
     splash->showMessage(QObject::tr("Cargando Ajustes..."), bottomLeft, Qt::white);
     splash->showMessage(QObject::tr("Creando Interfaces..."), bottomLeft, Qt::white);
 
-//    SQLite sl;
-//    sl.IniciaBD();
-//    sl.VaciarTxtBD("C:/ptrs.csv");
+    //SQLite sl;
+    //sl.IniciaBD();
+    //sl.VaciarTxtBD("C:/ptrs.csv");
 
     // Recuperamos la configuración
     Config *config = SQLite::getConfig();
@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
         {
             //Creamos el gestor de las interfaces *(se cargan todas las interfaces)
             w = new SiTTuGAs(config, http);
+
             //lista que contiene referencias a todos los gestores creados
             list.push_front(w);
             //Devuelve la geometria disponible por la pantalla

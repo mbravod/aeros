@@ -16,16 +16,24 @@ A1::A1(SiTTuGAs *siTTuGAs,HTTPRequest *shrdMem) :
     Id = -1;
     ui->setupUi(this);
 
+
+    ui->aWMultiObject->setShrdMem(shrdMem);
+
     //Evitamos que se de seguimiento al raton, solo interesan los eventos al dar click izquierdo
     setMouseTracking( false );
     this->title = "GENERAL TURBINA PRINCIPAL";
     this->clave= "A1";
 
+    opt =new QTimer(this);
+
+    connect(opt,SIGNAL(timeout()),this,SLOT(prueba()));
 
     //Inicializamos control de las ventanas emergentes superiores
     venActualSuperior = -1;
     venActualInferior = -1;
 
+
+    opt->start(250);
     /*10/10/13*/
     connect(ui->btnGEN_N25,SIGNAL(clicked()),this,SLOT(sltWVelN25()));
     connect(ui->btn_GEN_AVR,SIGNAL(clicked()),this,SLOT(sltWVelNSD()));
@@ -251,6 +259,13 @@ A1::~A1()
             }
         }
     }
+}
+
+void A1::prueba()
+{
+
+    ui->aWMultiObject->Update();
+    //qDebug()<<ui->aWMultiObject->getValue();
 }
 
 

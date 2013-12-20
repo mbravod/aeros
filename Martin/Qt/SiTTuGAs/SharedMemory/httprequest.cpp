@@ -10,18 +10,20 @@ HTTPRequest::HTTPRequest(Config *conf, QWidget *parent)
     if(this->config != NULL)
     {
         protocolo = config->getProtocolo();
-        server = config->getServer();
+        //server = config->getServer();
+        server = "192.168.0.14";
         aspPage = config->getAsp();
     }
     else
     {
         protocolo = "http://";
-        server = "127.0.0.1";
+        server = "192.168.0.14";
         aspPage = "onlinesthie.aspx";
     }
     qDebug()<<"Protocolo: "<<protocolo;
     qDebug()<<"server: "<<server;
     qDebug()<<"aspPage: "<<aspPage;
+
 
     replyOK = false;
     consultando = false;
@@ -62,7 +64,7 @@ void HTTPRequest::GetValor()
     QUrl url;
     url = QString("%1%2/%3").arg(protocolo).arg(server).arg(aspPage);
     qDebug()<<"URL: "<<url;
-
+    eliminarVariable = 0;
     url.addQueryItem("session", session);
     url.addQueryItem("RW", "r");
     url.addQueryItem("type", "int");
@@ -87,9 +89,7 @@ void HTTPRequest::HTTPReadyRead()
 //    qDebug()<<"Listo para leer";
 
 }
-char mem[32000*4];
-float  memf[32000];
-int memi[32000];
+
 void HTTPRequest::HTTPFinished()
 {
     qDebug()<<"Termina la respuesta";
@@ -114,11 +114,11 @@ void HTTPRequest::HTTPFinished()
        // qDebug()<<"Valor Leido: "<<valorRS;
         // Transformamos la respuesta en flujos de Bytes
         QByteArray AP_B((const char*) (valorRS.toLatin1()), valorRS.size());
-        qDebug()<< "Valor Inter: "<<AP_B.data();
-        qDebug()<< "AP_B.lenght(): "<<AP_B.length();
+        //qDebug()<< "Valor Inter: "<<AP_B.data();
+       // qDebug()<< "AP_B.lenght(): "<<AP_B.length();
         decode =  QByteArray::fromBase64(AP_B);
-        qDebug()<< "Valor Procesado l: "<<decode.length();
-        qDebug()<< "Valor Procesado: "<<decode.data();
+       qDebug()<< "Valor Procesado l: "<<decode.length();
+        //qDebug()<< "Valor Procesado: "<<decode.data();
         int i;
         for (i=0;i<decode.length();i++)
         {
@@ -129,8 +129,8 @@ void HTTPRequest::HTTPFinished()
 
        for (i=0;i<decode.length()/4;i++)
        {
-           memf[i]=  *(float *)((int)((cd)+(i<<2)));
-           memi[i]=  *(int *)((int)((cd)+(i<<2)));
+           HTTPRequest::memf[i]=  *(float *)((int)((cd)+(i<<2)));
+           HTTPRequest::memi[i]=  *(int *)((int)((cd)+(i<<2)));
        }
 
         emit Refresh();
@@ -148,16 +148,22 @@ HTTPRequest::~HTTPRequest()
 
 int HTTPRequest::getI(int pos)
 {
-    if(0 <= pos)
-        return * arrI[pos];
+
+
+    if(0 <= pos){
+        return HTTPRequest::memi[pos];
+        //return *arrI[pos];
+    }
     else
         return -1;
+
 }
 
 float HTTPRequest::getF(int pos)
 {
     if(0 <= pos)
-        return * arrF[pos];
+        return HTTPRequest::memf[pos];
+        //return * arrF[pos];
     else
         return -1;
 }

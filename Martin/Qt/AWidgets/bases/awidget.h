@@ -3,7 +3,8 @@
 
 #include <QWidget>
 
-#include "../SharedMemory/httprequest.h"
+#include "../../SiTTuGAs/SharedMemory/httprequest.h"
+
 //#include "SharedMemory/shrdmem.h"   //or "shrdmem.h"
 //#include "shrdmem.h"
 

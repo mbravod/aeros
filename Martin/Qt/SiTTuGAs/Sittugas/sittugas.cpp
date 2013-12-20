@@ -24,10 +24,12 @@ SiTTuGAs::SiTTuGAs(Config *conf, HTTPRequest *http, QWidget *parent) :
 
     //Un solo objeto para todas las interfaces, corroborar que no se requiera una instancia para cada interfaz!
     this->conf = conf;
-    if(http == NULL)
+    if(http == NULL){
         m_shrdMem = new HTTPRequest(this->conf,this);
-    else
+    }
+    else{
         m_shrdMem = http;
+    }
 
 
     //Estructura para reservar espacio en memoria de cada HMI a crear *(considerando el menu)
@@ -57,6 +59,7 @@ void SiTTuGAs::ChangeWin(int n)
                     if(lst.at(n)->widget() != NULL){
                         //Actualizamos los componentes atomicos *(los heredados por la clase "pantallas")
                         a1->cerrarVentanasEmergentes();
+
                         a1->setUpdateableChildrenList();
                         // *** Verificar que hace el metodo Update *(al parecer uno es implementado por la herencia a la clase "pantallas")
                         a1->update();
