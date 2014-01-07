@@ -154,8 +154,50 @@ void HttpWindow::cancelDownload()
 
 QByteArray Memory_HEX;
 QByteArray Memory_64;
+int base64value(int ch){
+
+	int d;
+
+	if (ch >= 'A' && ch <= 'Z')
+	    d = ch - 'A';
+	else if (ch >= 'a' && ch <= 'z')
+	    d = ch - 'a' + 26;
+	else if (ch >= '0' && ch <= '9')
+	    d = ch - '0' + 52;
+	else if (ch == '+')
+	    d = 62;
+	else if (ch == '/')
+	    d = 63;
+	else
+	    d = -1;
+return d;
+}
+QByteArray fromBase64(const QByteArray &base64)
+{
+    unsigned int buf = 0;
+    int nbits = 0;
+    QByteArray tmp((base64.size() / 4) * 3, Qt::Uninitialized);
+
+    int offset = 0;
+	int j;
+    for (int i = 0; i < base64.size(); i=i+4) {
+	
+int a0 = base64value(base64.at(i));
+int a1 = base64value(base64.at(i+1));
+int a2 = base64value(base64.at(i+2));
+int a3 = base64value(base64.at(i+3));
+
+tmp[j]=(a0<<2)|(a1>>4);
+tmp[j+1]=(a1<<4)|(a2>>4);
+tmp[j+2]=(a2<<6)|(a3);
+j=j+3;
+	}
+    return tmp;
+}
+
 void decode_Base64(QByteArray Data){
-Memory_HEX = QByteArray::fromBase64(Data);
+Memory_HEX= QByteArray::fromBase64(Data);
+//Memory_HEX = fromBase64(Data);
 }
 
 void encode_Base64(QByteArray Data){
@@ -181,11 +223,23 @@ void HttpWindow::httpFinished()
     progressDialog->hide();
     file->flush();
     file->close();
-	QString AP="Prueba de decodificacion/cod";
+	QString AP="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM3MoEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLIblB";
 QByteArray AP_B((const char*) (AP.toLatin1()), AP.size());
 
 encode_Base64(AP_B);
-decode_Base64(Memory_64);  //resultado en Memory_HEX
+decode_Base64((QByteArray)("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM3MoEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLIblB"));
+char mem1[32000*4];
+float *mem[32000];
+int i;
+for (i=0;i<Memory_HEX.length();i++){
+mem1[i]=Memory_HEX[i];
+}
+int *c =(int *)&mem1;
+
+mem[0]=(float *) c;
+
+float a=*(mem[10]);
+//decode_Base64(Memory_64);  //resultado en Memory_HEX
     QVariant redirectionTarget = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
     if (reply->error())
     {
