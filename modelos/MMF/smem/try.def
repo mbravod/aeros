@@ -1,0 +1,4 @@
+LIBRARY	"mmf"
+EXPORTS   
+    GetFloatvb   @1   
+    GetIntvb     @2 

@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>E1</class>
+ <widget class="QWidget" name="E1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(227, 227, 228);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>1016</width>
+      <height>316</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>356</x>
+       <y>3</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>RESTABLECER</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>456</x>
+       <y>3</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>MINUTO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>557</x>
+       <y>3</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>10 MINUTO</string>
+     </property>
+    </widget>
+    <widget class="QwtPlot" name="qwtPlot">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>34</y>
+       <width>971</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>54</x>
+       <y>12</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TIEMPO REAL</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>194</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>194</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>194</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>194</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>RPM</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>194</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>VALOR SELECCIONADO N25</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>207</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>VALOR SELECCIONADO N2D</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>207</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>207</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>RPM</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>207</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>207</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>T48SEL</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>220</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>220</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>220</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>220</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>234</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>T3SEL</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>234</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>234</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>234</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>234</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>247</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>T25SEL</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>247</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>247</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>247</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>247</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>262</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>CONVERCION DE PRES</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>262</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>262</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>262</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>262</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>275</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>SELECCION DE PRES</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>275</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>275</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>275</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>275</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>288</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>CONVERCIÓN DE PRES</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>288</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>288</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>288</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>288</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>328</x>
+       <y>300</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPCION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>300</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>VALOR</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>300</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>RANGO</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>300</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>UNIDADES</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>327</y>
+      <width>1016</width>
+      <height>329</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="WLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>194</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>194</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>194</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_51">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>194</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>RPM</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_52">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>194</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_53">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>207</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_54">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>207</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_55">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>207</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>RPM</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_56">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>207</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_57">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>207</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_58">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_59">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>220</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_60">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>220</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_61">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>220</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_62">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>220</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>234</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_64">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>234</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_65">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>234</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_66">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>234</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>234</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_68">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>247</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_69">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>247</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>247</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_71">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>247</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_72">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>247</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 255, 0);
+color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>DEG F/C</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_73">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>262</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_74">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>262</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_75">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>262</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_76">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>262</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_77">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>262</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_78">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>275</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_79">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>275</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_80">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>275</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_81">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>275</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_82">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>275</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_83">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>288</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPTION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_84">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>288</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>PSIA/BARA</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_85">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>288</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;NO DATA&gt;</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_86">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>288</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>100.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_87">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>288</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1000.00</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_88">
+     <property name="geometry">
+      <rect>
+       <x>328</x>
+       <y>300</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>DESCRIPCION</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_89">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>300</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>VALOR</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_90">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>300</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>RANGO</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_91">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>300</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>UNIDADES</string>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>463</x>
+       <y>1</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>HORA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>364</x>
+       <y>1</y>
+       <width>96</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>RESTABLECER</string>
+     </property>
+    </widget>
+    <widget class="WLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>58</x>
+       <y>5</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HISTÓRICO</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>1</y>
+       <width>96</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(28, 12, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;&lt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>1</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>FECHA FINAL</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>1</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(28, 12, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>564</x>
+       <y>1</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DIA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>878</x>
+       <y>1</y>
+       <width>99</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(28, 12, 255);</string>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>771</x>
+       <y>1</y>
+       <width>96</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(28, 12, 255);</string>
+     </property>
+     <property name="text">
+      <string>&gt;&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends></extends>
+   <header>wlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="svg9493" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" sodipodi:docbase="/datas/Projs/Cliparts Stocker/led" sodipodi:docname="led_circle_blue.svg" sodipodi:version="0.32" inkscape:export-xdpi="90.000000" inkscape:export-ydpi="90.000000" inkscape:version="0.42" inkscape:export-filename="/datas/Projs/Cliparts Stocker/led/led_circle_blue.png" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<metadata>
+	
+		<rdf:RDF  xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<cc:Work  rdf:about="">
+			<dc:title>LED Circle (Blue)</dc:title>
+			<dc:description>jean.victor.balin@gmail.com</dc:description>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>led</rdf:li>
+					<rdf:li>shape</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<dc:publisher>
+				<cc:Agent  rdf:about="http://www.openclipart.org/">
+					<dc:title>Open Clip Art Library</dc:title>
+				</cc:Agent>
+			</dc:publisher>
+			<dc:creator>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:creator>
+			<dc:rights>
+				<cc:Agent>
+					<dc:title>Jean-Victor Balin</dc:title>
+				</cc:Agent>
+			</dc:rights>
+			<dc:date>2005-08-21</dc:date>
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<cc:license  rdf:resource="http://web.resource.org/cc/PublicDomain"></cc:license>
+			<dc:language>en</dc:language>
+		</cc:Work>
+		<cc:License  rdf:about="http://web.resource.org/cc/PublicDomain">
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Reproduction"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/Distribution"></cc:permits>
+			<cc:permits  rdf:resource="http://web.resource.org/cc/DerivativeWorks"></cc:permits>
+		</cc:License>
+	</rdf:RDF>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  x="544.948" y="-10.272" width="264.297" height="62.958" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="cirline">
+	<g id="cirlineRed">
+		<circle fill="#FF0019" cx="13.184" cy="25" r="10.166"/>
+		<rect x="23.6" y="32.416" fill="#FF0019" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineGreen">
+		<circle fill="#00FF00" cx="63.851" cy="25" r="10.166"/>
+		<rect x="74.268" y="32.416" fill="#00FF00" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineBlue">
+		<circle fill="#0000FF" cx="112.184" cy="25" r="10.166"/>
+		<rect x="122.601" y="32.416" fill="#0000FF" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineWhite">
+		<circle fill="#FFFFFF" cx="171.85" cy="25" r="10.166"/>
+		<rect x="182.267" y="32.416" fill="#FFFFFF" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineGrey">
+		<circle fill="#848484" cx="233.517" cy="25" r="10.166"/>
+		<rect x="243.934" y="32.416" fill="#848484" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineBlack">
+		<circle fill="#020202" cx="226.825" cy="65.626" r="10.166"/>
+		<rect x="237.241" y="73.042" fill="#020202" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineOrange">
+		<circle fill="#FF7D03" cx="170.935" cy="65.626" r="10.166"/>
+		<rect x="181.352" y="73.042" fill="#FF7D03" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineBrown">
+		<circle fill="#724806" cx="118.688" cy="67.626" r="10.166"/>
+		<rect x="129.105" y="75.042" fill="#724806" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlinePurple">
+		<circle fill="#FF00FF" cx="68.85" cy="67.626" r="10.166"/>
+		<rect x="79.267" y="75.042" fill="#FF00FF" width="23.382" height="2.75"/>
+	</g>
+	<g id="cirlineYellow">
+		<circle fill="#FFFF00" cx="13.184" cy="67.626" r="10.165"/>
+		<rect x="23.601" y="75.042" fill="#FFFF00" width="23.381" height="2.75"/>
+	</g>
+</g>
+</svg>

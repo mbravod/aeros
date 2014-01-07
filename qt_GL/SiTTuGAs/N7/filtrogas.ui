@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filtroGas</class>
+ <widget class="QWidget" name="filtroGas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbfondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/N7.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFiltroGasT">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>9</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>FILTRO DE GAS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVenteoT">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>30</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>VENTEO DE GAS NATURAL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbfilGasNatT">
+   <property name="geometry">
+    <rect>
+     <x>223</x>
+     <y>108</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>FILTRO DE GAS NATURAL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFilGasIzqT">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>500</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>FILTRO DE GAS COMBUSTIBLE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbFilGasDerT">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>500</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>FILTRO DE GAS COMBUSTIBLE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbfv082IT">
+   <property name="geometry">
+    <rect>
+     <x>322</x>
+     <y>479</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FV082 - 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbfv082I2">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>479</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FV082 - 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbBOP082">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>88</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BOP - 082</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbGasIzqT">
+   <property name="geometry">
+    <rect>
+     <x>67</x>
+     <y>523</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GAS
+NATURAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbGasderT">
+   <property name="geometry">
+    <rect>
+     <x>855</x>
+     <y>105</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GAS
+NATURAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_1">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082A_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_2">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>380</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082B_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_5">
+   <property name="geometry">
+    <rect>
+     <x>673</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082C_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_6">
+   <property name="geometry">
+    <rect>
+     <x>673</x>
+     <y>380</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_082D_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_4">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>208</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_DPISH_082_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="leAlarma_3">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>180</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_DPISHH_082_A_Tag</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btImpr">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>135</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_1">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>180</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_2">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>208</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_3">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_4">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>380</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_5">
+   <property name="geometry">
+    <rect>
+     <x>673</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_6">
+   <property name="geometry">
+    <rect>
+     <x>673</x>
+     <y>380</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLineEdit</class>
+   <extends>QWidget</extends>
+   <header>wlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

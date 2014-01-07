@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>B1</class>
+ <widget class="QWidget" name="B1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(154, 154, 154);</string>
+  </property>
+  <widget class="AInstrumentIndicator" name="aIndicador_1">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>30</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>MOT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>68326B</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aBomba_1">
+   <property name="geometry">
+    <rect>
+     <x>163</x>
+     <y>355</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_MOT6033_F_CV</string>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::BOMBATB</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Brown</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMP">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>633</y>
+     <width>135</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="WLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>650</y>
+     <width>161</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(198, 198, 198);</string>
+   </property>
+   <property name="text">
+    <string>UNIT3</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frTitulo_9">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>649</y>
+     <width>189</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_1">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>315</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>PSIG</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUnidad_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>270</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>PSIG</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_3">
+   <property name="geometry">
+    <rect>
+     <x>327</x>
+     <y>270</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6017_F_CV</string>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_5">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>130</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>SUMINISTRO LUB</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_2">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>310</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>null</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>MOT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6033</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR234_F_CV</string>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6016</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_6">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>280</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR284_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree180</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6017</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_8">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>165</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree270</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>MOT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>68326A</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_11">
+   <property name="geometry">
+    <rect>
+     <x>715</x>
+     <y>207</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR130_F_CV</string>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree0</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>PDSH</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6015</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_12">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>443</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_SDNGEN015_F_CV</string>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree180</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>LT</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6045</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbGenerador">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>330</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>BOMBA MECÁNICA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_14">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>30</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR033_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>XSH</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>68327B</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_15">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>165</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR032_F_CV</string>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree270</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>XSH</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>68327A</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aWMultiObject">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>48</y>
+     <width>331</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::INTER</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Red</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_12">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>315</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_PT6016_F_CV</string>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbGenerador_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>430</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>BOMBA PRINCIPAL DE LA CA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_13">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>270</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DESAGÜE ACEITE DEL GEN</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_14">
+   <property name="geometry">
+    <rect>
+     <x>825</x>
+     <y>237</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DESAGÜE P/FLUIDO</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_15">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>250</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DE ELEVACIÓN</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_4">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>500</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_ALM_MSTR015_F_CV</string>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>TSL</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6020</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_5">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>540</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>HE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6043</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="AInstrumentIndicator" name="aIndicador_7">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>579</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="UpLabel" stdset="0">
+    <string>HE</string>
+   </property>
+   <property name="DownLabel" stdset="0">
+    <string>6005</string>
+   </property>
+   <property name="Value" stdset="0">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_9">
+   <property name="geometry">
+    <rect>
+     <x>315</x>
+     <y>50</y>
+     <width>300</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(221, 221, 221);
+background-color: none;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QFrame" name="frTitulo_10">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>1</y>
+      <width>295</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QPushButton" name="btnVenGEN">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>3</y>
+       <width>19</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbGenerador_3">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>5</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SELECCIÓN VENT REFRIG</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>26</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>VENT B EN ESPERA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(220, 220, 0);</string>
+    </property>
+    <property name="text">
+     <string>VENT A EN SERVICIO</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_8">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>28</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFB_HR_F_CV</string>
+    </property>
+    <property name="text">
+     <string>6495.5</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_9">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>40</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFA_HR_F_CV</string>
+    </property>
+    <property name="text">
+     <string>5082.1</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbUnidad_4">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>27</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>HRS OP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbUnidad_5">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>45</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>HRS OP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_10">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFA_MIN_F_CV</string>
+    </property>
+    <property name="text">
+     <string>5082.1</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVAL_11">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>28</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FFB_MIN_F_CV</string>
+    </property>
+    <property name="text">
+     <string>6495.5</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="WLabel" name="lbUnidad_3">
+   <property name="geometry">
+    <rect>
+     <x>897</x>
+     <y>488</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_4">
+   <property name="geometry">
+    <rect>
+     <x>855</x>
+     <y>488</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISMODE_LT6045_F_CV</string>
+   </property>
+   <property name="text">
+    <string>81.9</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbVAL_18">
+   <property name="geometry">
+    <rect>
+     <x>545</x>
+     <y>270</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>SEPARADOR AIRE/ACEITE</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aVAL_4">
+   <property name="geometry">
+    <rect>
+     <x>365</x>
+     <y>140</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree270</enum>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALSIMP3</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aVAL_3">
+   <property name="geometry">
+    <rect>
+     <x>755</x>
+     <y>140</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree270</enum>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALSIMP3</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aVAL_2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>140</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="tipo">
+    <number>0</number>
+   </property>
+   <property name="Orientation">
+    <enum>AWMultEstateWidget::Degree90</enum>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::VALSIMP3</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Blue</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTexto_19">
+   <property name="geometry">
+    <rect>
+     <x>655</x>
+     <y>380</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>RESPIRADERO</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTexto_20">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>390</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>DE TANQUE</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbTexto_21">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>400</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>A LA ATMÓSFERA</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_10">
+   <property name="geometry">
+    <rect>
+     <x>759</x>
+     <y>395</y>
+     <width>251</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(221, 221, 221);
+background-color: none;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="WLabel" name="lbVAL_16">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>VERIF CRONÓ BOM PRINCIPAL : 0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_11">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>423</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(221, 221, 221);
+background-color: none;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="WLabel" name="lbVAL_17">
+    <property name="geometry">
+     <rect>
+      <x>43</x>
+      <y>0</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>MOT6033 HRS OP 150.9</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="WLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>834</x>
+     <y>647</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>524</y>
+     <width>726</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+ border: 1px solid black;
+ padding: 0px;
+ background: rgb(215, 215, 215);
+ }
+
+QProgressBar::chunk {
+ background: rgb(186,77, 13);
+ border: 0px solid black;
+ }</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aWMultiObject_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>540</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_HE6005_F_CV</string>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SPRING</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aWMultiObject_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>580</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_HE6005_F_CV</string>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::SPRING</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>270</y>
+     <width>21</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap" stdset="0">
+    <pixmap>../Resources/PNG/B1/flechadiagonal_arriba.png</pixmap>
+   </property>
+  </widget>
+  <widget class="WLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>423</y>
+     <width>21</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap" stdset="0">
+    <pixmap>../Resources/PNG/B1/flechadiagonal_arriba.png</pixmap>
+   </property>
+  </widget>
+  <widget class="WLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>732</x>
+     <y>182</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap" stdset="0">
+    <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
+   </property>
+  </widget>
+  <widget class="WLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>731</x>
+     <y>98</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap" stdset="0">
+    <pixmap>../Resources/PNG/B1/cuadro.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>524</y>
+     <width>726</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+ border: 1px solid black;
+ padding: 0px;
+ background: rgb(215, 215, 215);
+ }
+
+QProgressBar::chunk {
+ background: rgb(186,77, 13);
+ border: 0px solid black;
+ }</string>
+   </property>
+   <property name="value">
+    <number>100</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbIMGFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/B1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="aBomba_2">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>328</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::BOMBATB</enum>
+   </property>
+   <property name="OnColor">
+    <enum>AWMultiObject::Brown</enum>
+   </property>
+   <property name="OffColor">
+    <enum>AWMultiObject::Green</enum>
+   </property>
+  </widget>
+  <zorder>lbIMGFondo</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>progressBar_2</zorder>
+  <zorder>aIndicador_1</zorder>
+  <zorder>frTitulo_9</zorder>
+  <zorder>label</zorder>
+  <zorder>lbVAL_1</zorder>
+  <zorder>lbUnidad_2</zorder>
+  <zorder>lbVAL_3</zorder>
+  <zorder>lbVAL_5</zorder>
+  <zorder>aIndicador_2</zorder>
+  <zorder>aBomba_1</zorder>
+  <zorder>aIndicador_3</zorder>
+  <zorder>aIndicador_6</zorder>
+  <zorder>aIndicador_8</zorder>
+  <zorder>aIndicador_11</zorder>
+  <zorder>aIndicador_12</zorder>
+  <zorder>lbGenerador</zorder>
+  <zorder>aIndicador_14</zorder>
+  <zorder>aIndicador_15</zorder>
+  <zorder>aWMultiObject</zorder>
+  <zorder>lbVAL_12</zorder>
+  <zorder>lbGenerador_2</zorder>
+  <zorder>lbVAL_13</zorder>
+  <zorder>lbVAL_14</zorder>
+  <zorder>lbVAL_15</zorder>
+  <zorder>aIndicador_4</zorder>
+  <zorder>aIndicador_5</zorder>
+  <zorder>aIndicador_7</zorder>
+  <zorder>btnIMP</zorder>
+  <zorder>frame_9</zorder>
+  <zorder>lbUnidad_3</zorder>
+  <zorder>lbVAL_4</zorder>
+  <zorder>lbVAL_18</zorder>
+  <zorder>aVAL_4</zorder>
+  <zorder>aVAL_3</zorder>
+  <zorder>aVAL_2</zorder>
+  <zorder>lbTexto_19</zorder>
+  <zorder>lbTexto_20</zorder>
+  <zorder>lbTexto_21</zorder>
+  <zorder>frame_10</zorder>
+  <zorder>frame_11</zorder>
+  <zorder>lbUnit3</zorder>
+  <zorder>aWMultiObject_2</zorder>
+  <zorder>aWMultiObject_3</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>aBomba_2</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AInstrumentIndicator</class>
+   <extends>QWidget</extends>
+   <header>ainstrumentindicator.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

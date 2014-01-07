@@ -1,0 +1,6074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>D5</class>
+ <widget class="QWidget" name="D5">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(154, 154, 154);</string>
+  </property>
+  <widget class="QFrame" name="Supervision_Turbina">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>340</width>
+     <height>478</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>2</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supervisión Turbina</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_17">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>260</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48G - Sensor G Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48G">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>260</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6849_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48G">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>260</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_16">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>243</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48F - Sensor F Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48F">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>243</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6848_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48F">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>243</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_18">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>275</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48H - Sensor H Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48H">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>275</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6850_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48H">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>275</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_19">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>290</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48SPRD - Difrn. Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48SPRD">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>290</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T48SPRD_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48SPRD">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>290</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_21">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>322</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PTBSEL - Pres. Balance Impulso</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_PTBSEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>320</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PTBSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_PTBSEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>320</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_20">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>307</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>P48 - Pres. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_P48">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>307</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6860_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_P48">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>307</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_22">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>338</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>VBVSEL - Pos. Válvula Purga Variab.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_VBVSEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>338</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VBVSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_VBVSEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>338</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_23">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>353</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>VSVSEL - Pos. Aleta Estator Variab.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_VSVSEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>353</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_VSVSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_VSVSEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>353</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_24">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>370</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>TBVSEL - Pos. Válvula Balance Impulso</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_TBVSEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>370</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TBVSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_TBVSEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>370</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_25">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>385</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>WF36DMD - Dem. Flujo Comb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_WF36DMD">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>385</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_WF36DMD_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_WF36DMD">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>385</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Lbs/Hr</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_26">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>402</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Indice Regulador de Control</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_irc">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>402</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_CNTRL_REG_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_irc">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>402</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_27">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>448</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PX36SEL - Pres. Dinámica Acústica</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_PX36SEL">
+    <property name="geometry">
+     <rect>
+      <x>234</x>
+      <y>448</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PX36SEL_M_F_CV </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_PX36SEL">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>448</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSID</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_01">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>24</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>N25SEL - Velocidad del Rotor de AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_N25SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>24</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_N25SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_N25SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>24</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>RPM</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_02">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>39</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>NSDSEL - Velocidad del Rotor de AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_NSDSEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>39</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_NSDSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_NSDSEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>39</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>RPM</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_04">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>69</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>P0SEL - Pres. Estat. Admis.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_P0SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>69</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_P0SEL_F_CV </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_P0SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>69</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_03">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>54</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T2SEL - Temp. Admis. Compr. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T2SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>54</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T2SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T2SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>54</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_5">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>101</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>P25SEL - Pres. Entra. Compr. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_P25SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>101</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_P25SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_P25SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>101</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_4">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>85</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T25SEL - Temp. Entra. Compr. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T25SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>85</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T25SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T25SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>85</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_PS3SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>133</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PS3SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_8">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>133</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PS3SEL - Pres. Desc. Compr. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_PS3SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>133</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_9">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>117</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T3SEL - Temp. Desc. Compr. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T3SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>117</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T3SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T3SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>117</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_10">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>150</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48SEL - Temp. Prom. Entrad. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48SEL">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>150</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_T48SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48SEL">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>150</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_11">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>165</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48A - Sensor A Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48A">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>165</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6843_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48A">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>165</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_12">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>181</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48B - Sensor B Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48B">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>181</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6844_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48B">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>181</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_14">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>212</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48D - Sensor D Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48D">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>212</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48D">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>212</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6846_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_13">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>197</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48C - Sensor C Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48C">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>197</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6845_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48C">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>197</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_15">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>228</y>
+      <width>215</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>T48E - Sensor E Temp. Admis. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Lect_T48E">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>228</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6847_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Unit_T48E">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>228</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_10">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>478</y>
+     <width>340</width>
+     <height>185</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_11">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vibración Turbina</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_45">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>27</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>HP_CRF - Vib. Bast. Tras Compr. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_HP_CRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>27</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6876B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_HP_CRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>27</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_LP_CRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>58</y>
+      <width>50</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6876A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_LP_CRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>58</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_47">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>58</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>LP_CRF - Vib. Bast. Tras Compr. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_46">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>42</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>HP_TRF - Vib. Bast. Tras Turb. AP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_HP_TRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>42</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6877B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_HP_TRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>42</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_50">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>106</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>TRF - Vib. Banda ancha Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_TRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>106</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6877WB_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_TRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>106</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_48">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>73</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>LP_TRF - Vib. Bast. Tras Turb. BP</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_LP_TRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>73</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6877A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_LP_TRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>73</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_49">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>CRF - Vib. Banda Ancha Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Lect_CRF">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>90</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_XE6876WB_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbVT_Unit_CRF">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>90</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>In/S</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_5">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>0</y>
+     <width>340</width>
+     <height>255</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lubricación de la Turbina</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_3">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>39</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Suministro Lub. Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSLT">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>39</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TLUBSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSLT">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>39</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_2">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>24</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Pres. Suministro Lub. Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_PSLT">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>24</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PLUBSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_PSLT">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>24</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIG</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_28">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>54</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Ace. Recu. AGB Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TARAGBT">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>54</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TAGBSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TARAGBT">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>54</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_29">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>69</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Sumid. A Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSA">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>69</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBASEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSA">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>69</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_30">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>85</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Sumid. B Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSB">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>85</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBBSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSB">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>85</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_32">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>117</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Sumid. D Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSD">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>117</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBDSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSD">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>117</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_31">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>101</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Sumid. C Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSC">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>101</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBCSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSC">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>101</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_33">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>133</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Sumid. E Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_TSE">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>133</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGBESEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_TSE">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>133</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_34">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>150</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Pres. Recup. Aceite Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_PRAT">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>150</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6122_F_CV </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_PRAT">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>150</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIG</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_35">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>165</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Detector Viruta Sumid. TGB/A Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_DVSTGBA">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>165</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MCD6865_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_DVSTGBA">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>165</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>OHM</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_37">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>197</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Detector Viruta Sumid. Comp. Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_DVSComp">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>197</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MCD6870_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_DVSComp">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>197</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>OHM</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Lect_DVSB">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>181</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MCD6866_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbLT_Unit_DVSB">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>181</y>
+      <width>40</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>OHM</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_36">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>181</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Detector Viruta Sumid. B Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Supervision_Turbina_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>253</y>
+     <width>340</width>
+     <height>410</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_12">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Combustible de Gas</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_63">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>210</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2IA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2IA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>210</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62137A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2IA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>210</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_64">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>226</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2IB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2IB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>226</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62137B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2IB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>226</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1OA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>241</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62139A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_65">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>241</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1OA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1OA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>241</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_66">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>258</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1OB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1OB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>258</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62139B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1OB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>258</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_67">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>273</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2OA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2OA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>273</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62136A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2OA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>273</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_68">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>290</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2OB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2OB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>290</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62136B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2OB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>290</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_TSGC">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>321</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TGSSEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_72">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>321</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Suministro Gas Comb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_TSGC">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>321</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>ºF</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_69">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>305</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Pres. Suministro Gas Comb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_PSGC">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>305</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT6227_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_PSGC">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>305</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIG</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_52">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>38</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GMVPSEL - Pos. Val. Medición Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVPSEL">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>38</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62108SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVPSEL">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>38</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_51">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>22</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>GMVPDMD - Val. Medición Dem. Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVPDMD">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>22</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVPDMD_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVPDMD">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>20</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_53">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>54</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GMVIDMD - Val. Medición Dem. Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVIDMD">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>54</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVIDMD_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVIDMD">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>54</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_56">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>101</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GMVOSEL - Pos. Val. Medición Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVOSEL">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>101</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62109SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVOSEL">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>101</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_54">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>69</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GMVISEL - Pos. Val. Medición Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVISEL">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>69</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_FCV62107SEL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVISEL">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>69</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_55">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>84</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GMVODMD - Val. Medición Dem. Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GMVODMD">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>84</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_GMVODMD_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GMVODMD">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>84</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_58">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>131</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1PB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1PB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>131</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62141B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1PB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>131</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_57">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>116</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1PA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1PA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>116</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62141A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1PA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>116</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_59">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>148</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2PA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2PA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>148</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62138A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2PA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>148</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_60">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>162</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP2PB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP2PB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>162</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62138B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP2PB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>162</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_61">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>179</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1IA - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1IA">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>179</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62140A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1IA">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>179</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Unit_GP1IB">
+    <property name="geometry">
+     <rect>
+      <x>301</x>
+      <y>195</y>
+      <width>31</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_62">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>195</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>GP1IB - Pilot P1 Presion Gas</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCG_Lect_GP1IB">
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>195</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_PT62140B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_8">
+   <property name="geometry">
+    <rect>
+     <x>679</x>
+     <y>0</y>
+     <width>346</width>
+     <height>353</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_9">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Carcaza Turbina</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_38">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>34</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Pres. ABS (P0) Admis. Compr.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_PABSAC">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>34</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_AIRAVERAGE_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_PABSAC">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>32</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>PSIA</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_39">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>50</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Prom. Admis. Filtro Aire</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TPAFA">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>50</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6454_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TPAFA">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>50</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_40">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>70</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Admis. Carc. Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TACT">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>70</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6401_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TACT">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>70</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_41">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>90</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Comb. Air. Sec. B (TE6499)</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TE6499">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>90</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6499_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TE6499">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>90</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_42">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>110</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Comb. Air. Sec. A (TE6450)</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TE6450">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>110</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE6450_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TE6450">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>110</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_43">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>130</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Air. Vent. Sec. A (TE64071)</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TE64071">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>130</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE64071_F_CV </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TE64071">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>130</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_44">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>150</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Temp. Air. Vent. Sec. B (TE64072)</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Lect_TE64072">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>150</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_TE64072_F_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbCT_Unit_TE64072">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>150</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>°F</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_13">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>352</y>
+     <width>346</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 234, 234);
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QFrame" name="frame_14">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>338</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="WLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>334</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ESTADO MOTOR</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_70">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>34</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Vent. A Carcasa Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbEM_Lect_VentA">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>34</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6417_A_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbEM_Unit_VentA">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>32</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbST_Descr_71">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>50</y>
+      <width>225</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Vent. B Carcasa Turb.</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbEM_Lect_VentB">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>50</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="id">
+     <string>p_Fix32_THISNODE_MOT6418_A_CV</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbEM_Unit_VentB">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>58</y>
+      <width>40</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/BackGround.png</pixmap>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>647</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Izquierda</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>Supervision_Turbina</zorder>
+  <zorder>frame_10</zorder>
+  <zorder>frame_5</zorder>
+  <zorder>Supervision_Turbina_2</zorder>
+  <zorder>frame_8</zorder>
+  <zorder>frame_13</zorder>
+  <zorder>lbUnit3</zorder>
+  <zorder>btnIMPPant</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

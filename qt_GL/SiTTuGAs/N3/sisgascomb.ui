@@ -1,0 +1,3406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SisGasComb</class>
+ <widget class="QWidget" name="SisGasComb">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/N3.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>66</y>
+     <width>301</width>
+     <height>146</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbPatinT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-1</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PATIN DEL COMPRESOR DE AIRE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbts208cT">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>103</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208C_F_CV</string>
+    </property>
+    <property name="text">
+     <string>ALARMA SISTEMA DE DETECCIÒN DE INCENDIO</string>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbts208AT">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>79</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208A_F_CV</string>
+    </property>
+    <property name="text">
+     <string>YS_208A</string>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbts208bT">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>91</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_YS_208B_F_CV</string>
+    </property>
+    <property name="text">
+     <string>YS_208B</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbAlarIncT">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>103</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>ALARMA SISTEMA DE DETECCIÒN DE INCENDIO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbComMarcAT">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>79</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>COMPRESOR DEAIRE A EN MARCHA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbComMarcBT">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>91</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>COMPRESOR DEAIRE B EN MARCHA</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lePatin_1">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>24</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lealarma_1">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>125</y>
+      <width>98</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(192, 192, 192);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btnleAlarma_01">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>25</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../Resources.qrc">
+      <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btnleAlarma_02">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../Resources.qrc">
+      <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbts208AT_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>55</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_PIT_208_PV_REAL_F_CV</string>
+    </property>
+    <property name="text">
+     <string>????</string>
+    </property>
+   </widget>
+   <zorder>lbts208AT_2</zorder>
+   <zorder>lbPatinT</zorder>
+   <zorder>lbts208cT</zorder>
+   <zorder>lbts208AT</zorder>
+   <zorder>lbts208bT</zorder>
+   <zorder>lbAlarIncT</zorder>
+   <zorder>lbComMarcAT</zorder>
+   <zorder>lbComMarcBT</zorder>
+   <zorder>lePatin_1</zorder>
+   <zorder>lealarma_1</zorder>
+   <zorder>btnleAlarma_01</zorder>
+   <zorder>btnleAlarma_02</zorder>
+  </widget>
+  <widget class="QLabel" name="lbSisGasT">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>3</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>SISTEMA DE GAS COMBUSTIBLE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbBotT">
+   <property name="geometry">
+    <rect>
+     <x>775</x>
+     <y>148</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>BOTON DE DISPARO
+DEL GAS COMBUSTIBLE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbPatinCompT">
+   <property name="geometry">
+    <rect>
+     <x>339</x>
+     <y>87</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>PATIN DEL COMPRESOR
+DE GAS COMBUSTIBLE </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbsk079">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>83</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>SK - 079</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>206</y>
+     <width>132</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="lbEnfComb">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ENFRIADOR DE 
+GAS COMBUSTIBLE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSk080T">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>6</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>SK - 080</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>1011</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="lbGAS_CHROMO_1">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>17</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_2">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>32</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_3">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>48</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>62</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_8">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>123</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_7">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>107</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_6">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>93</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_5">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>78</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_11">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>170</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_9">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>139</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_9</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_10">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>154</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_21">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>154</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_21</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_14">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>48</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_14</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_19">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>123</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_19</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_13">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>32</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_13</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_16">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>78</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_12">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>17</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_15">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>62</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_15</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_17">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>93</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_17</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_18">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>107</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_18</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMO_20">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>139</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAS_CHROMO_20</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>3</y>
+      <width>1004</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CROMATOGRAFOS DE GAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_11">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>170</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_3">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>48</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_8">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>123</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_2">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>32</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_5">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>78</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_1">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>17</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_4">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>62</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_6">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>93</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_7">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>107</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_9">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>139</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMole_10">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>154</y>
+      <width>38</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MOLE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_11">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>170</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_10">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>154</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_3">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>48</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_5">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>78</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_9">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>139</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_7">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>107</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_1">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>17</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_2">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>32</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_6">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>93</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_4">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>62</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_8">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>123</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_70">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>170</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ETHANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_71">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>48</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>I-BUTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_72">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>154</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CO2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_73">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>78</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>NEOPENTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_74">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>139</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>METHANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_75">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>107</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>n-PETANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_76">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>17</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>C6(N-EXANE)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_77">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>32</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PROPANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_78">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>93</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>i-PETANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_79">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>62</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>N-BUTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_80">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>123</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>NITROGEN</string>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_11">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>170</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_11_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_3">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>48</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_3_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_10">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>154</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_10_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_5">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>78</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_5_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_9">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>139</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_9_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_7">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>107</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_7_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_1">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>17</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_1_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_2">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>32</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_2_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_6">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>93</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_6_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_4">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>62</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_4_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_8">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>123</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_8_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_92">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>170</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ETHANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_93">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>32</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PROPANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_12">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>17</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_95">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>93</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>i-PETANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_17">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>93</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_13">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>32</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_15">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>62</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_99">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>62</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>N-BUTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_21">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>154</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_101">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>48</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>I-BUTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_19">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>123</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_103">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>123</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>NITROGEN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_22">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>170</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_14">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>48</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_106">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>154</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CO2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_16">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>78</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_108">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>78</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>NEOPENTANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_20">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>139</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_110">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>17</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>C6(N-EXANE)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_111">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>107</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>n-PETANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_112">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>139</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>METHANE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOPor_18">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>107</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_14">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>48</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_14_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_15">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>62</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_15_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_20">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>139</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_17">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>93</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_17_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_16">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>78</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_16_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_13">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>32</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_13_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_19">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>123</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_12">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>17</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_12_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_21">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>154</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbGAS_CHROMOVal_18">
+    <property name="geometry">
+     <rect>
+      <x>902</x>
+      <y>107</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="id">
+     <string>p_Fix32_NODE_GAS_CHROMO_18_F_CV</string>
+    </property>
+    <property name="text">
+     <string>00.00</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_21">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>154</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_15">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>62</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_13">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>32</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_14">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>48</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_16">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>78</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_17">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>93</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_12">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>17</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KCAL/m3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_20">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>139</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_19">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>123</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ºC</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGAS_CHROMOU_18">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>107</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_135">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>48</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO SUPERIOR ACTUAL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_136">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>62</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO INFERIOR BASE SECO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_137">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>139</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FACTOR DE COMPRESIBILIDAD</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_138">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>93</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO INFERIOR BASE SATURADO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_139">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>78</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO INFERIOR BASE SATURADO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_140">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>32</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO SUPERIOR BASE SATURADO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_141">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>123</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>VALOR DE TEMPERATURA DE REFERENCIA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_142">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>17</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PODER CALORIFICO SUPERIOR BASE SECO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_143">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>154</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CONCENTRACIÒN TOTAL NO NORMALIZADA</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_144">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>107</y>
+      <width>263</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>DENSIDAD RELATIVACORREGIDA DEL GAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>564</x>
+     <y>351</y>
+     <width>132</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="lbFilGasT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FILTRO
+DE GAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbsk082T">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>6</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>SK - 082</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbVenT">
+   <property name="geometry">
+    <rect>
+     <x>207</x>
+     <y>236</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VENTEO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbVenT_2">
+   <property name="geometry">
+    <rect>
+     <x>801</x>
+     <y>274</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VENTEO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbResidT">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>223</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>RESIDUOS
+ACEITOSOS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbEntraT">
+   <property name="geometry">
+    <rect>
+     <x>939</x>
+     <y>376</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTREGA DE
+GAS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbEntraT_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>379</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTREGA DE
+ GAS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbxy106bT">
+   <property name="geometry">
+    <rect>
+     <x>198</x>
+     <y>278</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XY-106B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbXy106aT">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>404</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XY-106A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbXy107b">
+   <property name="geometry">
+    <rect>
+     <x>793</x>
+     <y>313</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XY-107B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbXy107aT">
+   <property name="geometry">
+    <rect>
+     <x>766</x>
+     <y>405</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XY-107A</string>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="led_4">
+   <property name="geometry">
+    <rect>
+     <x>845</x>
+     <y>308</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::CIRLED</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="led_3">
+   <property name="geometry">
+    <rect>
+     <x>773</x>
+     <y>380</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::CIRLED</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="led_1">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>381</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::CIRLED</enum>
+   </property>
+  </widget>
+  <widget class="AWMultiObject" name="led_2">
+   <property name="geometry">
+    <rect>
+     <x>251</x>
+     <y>272</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="ElementType">
+    <enum>AWMultiObject::CIRLED</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btImpr">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>135</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_1">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>190</y>
+     <width>98</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_03">
+   <property name="geometry">
+    <rect>
+     <x>254</x>
+     <y>275</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_4">
+   <property name="geometry">
+    <rect>
+     <x>776</x>
+     <y>382</y>
+     <width>20</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_04">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>384</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnDisparo">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>70</y>
+     <width>111</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnleAlarma_9">
+   <property name="geometry">
+    <rect>
+     <x>848</x>
+     <y>311</y>
+     <width>20</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

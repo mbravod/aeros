@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>A6</class>
+ <widget class="QWidget" name="A6">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>662</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/BackGround.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>681</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>343</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="AWMultiObject" name="ledApaFun">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>347</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_OFF_RUN</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbApaFunT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>350</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>APAGADO/FUNCIONANDO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledArraHid">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>38</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_HYD_ST_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbArraHidT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>38</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ARRANCADOR -HID OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLavConADT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>59</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LAVADO CON AGUA DESACTIVADO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledLavConAD">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>58</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WWOFF_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbHardMicrT">
+     <property name="geometry">
+      <rect>
+       <x>46</x>
+       <y>448</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>HARDWARE MICRONET OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbHarLinkT">
+     <property name="geometry">
+      <rect>
+       <x>46</x>
+       <y>467</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>HARDWARE LINKNET OK</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledHarLink">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>465</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_LH_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledHardMicr">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>445</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MNET_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbRotNET">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>79</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ROTACIÓN NO ESTA EFECTUÁNDOSE</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledRotNE">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>76</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_CRANK_OFF</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledCtrlMD">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>96</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_BO_MANUAL</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCtrlMDT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>98</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>CONTROL MANUAL DO DESHABILITADO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledMen300N25_1">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>116</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N25LT300</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMen300N25_1T">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>117</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>MENOS DE 300 RPM N25</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledCieSinM">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>135</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_SDNNS_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCieSinMT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>137</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>CIERRE SIN MOTOR Y ALTO NORMAL LISTO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledBloqNo">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>173</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_LOK_4HROFF</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbNivTanTurT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>156</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>NIVEL TANQUE TURBINA OK</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledLavAguFu">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>211</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_WW_NOTACTIVE</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbBloqNoT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>175</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>BLOQUEO CUATRO HORAS NO ACTIVO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTempEstT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>233</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>TEMP ESTATOR OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLavAguFuT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>215</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LAVADO AGUA FUERA DE LÍNEA  NO ACTIVO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledUnidFun">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>191</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_RUNNING</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledTempAceTur">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>250</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TLUB_OK</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbUnidFunT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>195</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>UNIDAD FUNCIONANDO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledNivTanTur">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>153</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_TLO_TNKLVL</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledTempEst">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>231</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_STATOR_PRM</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTempAceTurT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>253</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>TEMP ACEITE  LUB TURBINA OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbValConbT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>272</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>VÁLV CONB EN ALTO MIN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTempAceGenT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>292</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>TEMP ACEITE  LUB GEN OK</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledValSumCer">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>328</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_SOV_CLSD</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCan2T">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>312</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>CANAL 2 N4N52</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledCan2">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>308</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GLUBTNKLVL</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbValSumCerT">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>331</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>VALVS SUMINISTRO CERRADO VENTEO ABIERTO</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledTempAceGen">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>289</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_GLUBTNKTMP</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledValConb">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>269</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_VMIN_STOP</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>5</y>
+       <width>336</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <widget class="QLabel" name="lbPerRotT_2">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>3</y>
+        <width>323</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PERMISOS DE ROTACIÓN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>420</y>
+       <width>336</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <widget class="QLabel" name="lbSisT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>3</y>
+        <width>323</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>EQUIPO DEL SISYEMA DE CONTROL</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>341</x>
+      <y>0</y>
+      <width>341</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="AWMultiObject" name="ledT2May">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>77</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T2GT50</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledNivTan">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>97</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_LS6543</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledLavAgua">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>40</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_MW_WWENBL</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbNivTanT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>101</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>NIVEL TANQUE LAV AGUA</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledNsd">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>58</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_NSDGT3590</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbNsdT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>63</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>NSD MAYOR  A3590</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLavAguaT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>43</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LAV C/AGUA MW HABILITAR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbT2MayT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>82</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>T2 MAYOR DE 50 GRAD F (10 C)</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledMen300N25_2">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>369</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_N25LT300</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledNivTan_2">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>388</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_LS6543</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledPerRot">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>330</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_C_PERM</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbNivTanT_2">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>391</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>NIVEL TANQUE LAV AGUA</string>
+     </property>
+    </widget>
+    <widget class="AWMultiObject" name="ledT48Men">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>349</y>
+       <width>31</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="id">
+      <string>p_Fix32_THISNODE_T48LT200</string>
+     </property>
+     <property name="ElementType">
+      <enum>AWMultiObject::CIRLED</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbT48MenT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>353</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>T48 MENOS 200</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPerRotT">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>333</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PERMISOS ROTACIÓN CUMPLIDOS</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMen300N25_2T">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>372</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>MENOS 300 RPM N25
+</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_6">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>5</y>
+       <width>334</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <widget class="QLabel" name="lbPerLavEnLinT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>3</y>
+        <width>323</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>PERMISOS DE LAVADO CON AGUA EN LINEA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_7">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>302</y>
+       <width>334</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(192, 192, 192);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <widget class="QLabel" name="lbPerLavDeLinT">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>4</y>
+        <width>323</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PERMISOS LAVADO CON AGUA FUERA DE LINEA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbUniNoT">
+   <property name="geometry">
+    <rect>
+     <x>163</x>
+     <y>50</y>
+     <width>361</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>UNIDAD NO ESTÁ LISTA PARA ROTACIÓN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>528</x>
+     <y>50</y>
+     <width>431</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>UNIDAD NO ESTÁ LISTA PARA LAVADO CON AGUA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbUnit3">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>648</y>
+     <width>190</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(175, 175, 175);</string>
+   </property>
+   <property name="text">
+    <string>    UNIT3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIMPPant">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>632</y>
+     <width>134</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANT</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AWMultiObject</class>
+   <extends>QWidget</extends>
+   <header>awmultiobject.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

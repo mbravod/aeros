@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WCDPBLD</class>
+ <widget class="QWidget" name="WCDPBLD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>175</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>175</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WCDPBLD</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="WLabel" name="lbCDPBT_1">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>32</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPDMD</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_1">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>32</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_CDPDMD_F_CV</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>0.00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_1">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>32</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBT_2">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>45</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPSEL</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_2">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>45</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_2">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>45</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_CDPSEL_F_CV</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>99.80</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_3">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBT_3">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>60</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_3">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>60</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_CDPA_F_CV</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>99.80</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_4">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>75</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_4">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>75</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_THISNODE_CDPB_F_CV</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>99.80</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBT_4">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>75</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPB</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_5">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>105</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>MA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBT_5">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>105</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPMA</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_5">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>105</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>10.00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBT_6">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>120</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>CDPHM</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Derecha</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPB_6">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>120</y>
+     <width>35</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>10.00</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="Alineacion" stdset="0">
+    <enum>WLabel::Centro</enum>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbCDPBU_6">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>120</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLabel::Sin_color</enum>
+   </property>
+   <property name="text">
+    <string>OHMS</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="WLabel" name="lbFondo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>175</width>
+     <height>1502</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 128, 128);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btCerrar">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>173</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(192, 192, 192);</string>
+   </property>
+   <property name="text">
+    <string>CDP BLD</string>
+   </property>
+  </widget>
+  <zorder>lbFondo</zorder>
+  <zorder>lbCDPBT_1</zorder>
+  <zorder>lbCDPB_1</zorder>
+  <zorder>lbCDPBU_1</zorder>
+  <zorder>lbCDPBT_2</zorder>
+  <zorder>lbCDPBU_2</zorder>
+  <zorder>lbCDPB_2</zorder>
+  <zorder>lbCDPBU_3</zorder>
+  <zorder>lbCDPBT_3</zorder>
+  <zorder>lbCDPB_3</zorder>
+  <zorder>lbCDPBU_4</zorder>
+  <zorder>lbCDPB_4</zorder>
+  <zorder>lbCDPBT_4</zorder>
+  <zorder>lbCDPBU_5</zorder>
+  <zorder>lbCDPBT_5</zorder>
+  <zorder>lbCDPB_5</zorder>
+  <zorder>lbCDPBT_6</zorder>
+  <zorder>lbCDPB_6</zorder>
+  <zorder>lbCDPBU_6</zorder>
+  <zorder>btCerrar</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

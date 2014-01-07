@@ -1,0 +1,7667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Digital16</class>
+ <widget class="QWidget" name="Digital16">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>485</width>
+    <height>425</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>485</width>
+    <height>425</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Digital16</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(128, 128, 128);</string>
+  </property>
+  <widget class="QFrame" name="panel1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>356</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="WLabel" name="lbDOU_17">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>340</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_17">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>340</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_18">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>170</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_17">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>130</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_18">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>265</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>12</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_19">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>50</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_19">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>230</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_18">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>130</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_17">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>265</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12 - CONT VALV MED COMB LIQ CIERRE/REEST</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_19">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>210</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_20">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>90</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_21">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>247</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_20">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>190</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_21">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>150</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_20">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>90</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_18">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>247</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>11 - CONT VALV MED GAS COMB CIERRE/REEST</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_19">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_21">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>300</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>14</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_20">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>340</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_22">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>247</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_22">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>210</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_23">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>230</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_24">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>283</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_22">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>70</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_22">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>14 - SIRENA</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_23">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>05 - VALV AIRE ENFRIA POST CIERRE</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_23">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>283</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_25">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>90</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_24">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>265</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_26">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>70</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_24">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_25">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_23">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>247</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>11</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_24">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>17</y>
+      <width>485</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_26">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10 - VALV DESAGÜE COMBUSTOR</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_25">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>70</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_26">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>320</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>15</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_27">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>170</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_28">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>265</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frBarraT_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(43, 71, 134, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <widget class="WLabel" name="lbDig16T_2">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>0</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(73, 105, 160);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;DIGITAL16.grf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>5</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbDOT_27">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>01 - RESUMEN CIERRES TURBINA-GENERADOR</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_25">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>110</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OPN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_26">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>150</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_28">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>04 - VALV CIERRE GAS COMB (CORRIENTE ABA)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_27">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_29">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>300</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFondo_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_27">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>CLSD</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_30">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>110</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_31">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>50</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_28">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>150</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_29">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_30">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>320</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15 - CONTROL INTERRUPTOR DE CIRCUITO</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_28">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>190</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_29">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>282</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>13</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_31">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>02 - POWER SYSTEM STABILIZER ON</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_32">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>320</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_29">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>300</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_30">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>320</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_30">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>170</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbSloDO_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>22</y>
+      <width>385</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SLOT-  A108  - DO</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_31">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>340</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>16</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_31">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>T:OPEN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_32">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>210</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_32">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>283</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>13 - INY AGUA NOX CIERRE/REESTAB VÁLVULA</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_32">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>110</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <zorder>lbFondo_2</zorder>
+   <zorder>lbDOU_17</zorder>
+   <zorder>lbDO_17</zorder>
+   <zorder>lbDOU_18</zorder>
+   <zorder>lbNumDO_17</zorder>
+   <zorder>lbNumDO_18</zorder>
+   <zorder>lbDOU_19</zorder>
+   <zorder>lbNumDO_19</zorder>
+   <zorder>lbDO_18</zorder>
+   <zorder>lbDOT_17</zorder>
+   <zorder>lbDO_19</zorder>
+   <zorder>lbDOU_20</zorder>
+   <zorder>lbDOU_21</zorder>
+   <zorder>lbDO_20</zorder>
+   <zorder>lbDO_21</zorder>
+   <zorder>lbNumDO_20</zorder>
+   <zorder>lbDOT_18</zorder>
+   <zorder>lbDOT_19</zorder>
+   <zorder>lbNumDO_21</zorder>
+   <zorder>lbDOT_20</zorder>
+   <zorder>lbDO_22</zorder>
+   <zorder>lbNumDO_22</zorder>
+   <zorder>lbDO_23</zorder>
+   <zorder>lbDOT_21</zorder>
+   <zorder>lbDO_24</zorder>
+   <zorder>lbDOU_22</zorder>
+   <zorder>lbDOT_22</zorder>
+   <zorder>lbDOT_23</zorder>
+   <zorder>lbDOU_23</zorder>
+   <zorder>lbDO_25</zorder>
+   <zorder>lbDOU_24</zorder>
+   <zorder>lbDO_26</zorder>
+   <zorder>lbDOT_24</zorder>
+   <zorder>lbDOT_25</zorder>
+   <zorder>lbNumDO_23</zorder>
+   <zorder>lbNumDO_24</zorder>
+   <zorder>frame_4</zorder>
+   <zorder>lbDOT_26</zorder>
+   <zorder>lbNumDO_25</zorder>
+   <zorder>lbNumDO_26</zorder>
+   <zorder>lbDO_27</zorder>
+   <zorder>lbDO_28</zorder>
+   <zorder>frBarraT_2</zorder>
+   <zorder>lbDOT_27</zorder>
+   <zorder>lbDOU_25</zorder>
+   <zorder>lbDOU_26</zorder>
+   <zorder>lbDOT_28</zorder>
+   <zorder>lbNumDO_27</zorder>
+   <zorder>lbDO_29</zorder>
+   <zorder>lbDOU_27</zorder>
+   <zorder>lbDO_30</zorder>
+   <zorder>lbDO_31</zorder>
+   <zorder>lbNumDO_28</zorder>
+   <zorder>lbDOT_29</zorder>
+   <zorder>lbDOT_30</zorder>
+   <zorder>lbDOU_28</zorder>
+   <zorder>lbNumDO_29</zorder>
+   <zorder>lbDOT_31</zorder>
+   <zorder>lbDO_32</zorder>
+   <zorder>lbDOU_29</zorder>
+   <zorder>lbDOU_30</zorder>
+   <zorder>lbNumDO_30</zorder>
+   <zorder>lbSloDO_2</zorder>
+   <zorder>lbNumDO_31</zorder>
+   <zorder>lbDOU_31</zorder>
+   <zorder>lbDOU_32</zorder>
+   <zorder>lbDOT_32</zorder>
+   <zorder>lbNumDO_32</zorder>
+  </widget>
+  <widget class="QFrame" name="panel2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="WLabel" name="lbDOU_16">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>340</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_16">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>340</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_7">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>170</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_5">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>130</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>21</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_12">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>265</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>28</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_1">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>50</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_10">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>230</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>26</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_5">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>130</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_12">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>265</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>28- AUMENT VOLT CON REMOTO SERIAL ESPEC
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_9">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>210</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_3">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>90</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_11">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>247</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_8">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>190</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_6">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>150</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_3">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>90</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>19</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_11">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>247</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>27- EXITACIÓN PROM ENCENDIDO
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_8">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>24- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_14">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>300</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>30</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_16">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>340</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>32- (REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_11">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>247</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_9">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>210</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>25</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_10">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>230</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_9">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>25- (REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_13">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>283</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_2">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>70</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_14">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>30- CONTROL SALA VAR
+ </string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>21- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_13">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>283</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_3">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>90</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_12">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>265</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_2">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>70</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>23- INICIAR SISTEMA COMB
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>22- ENCENDEDOR(BE6818 &amp; BE6817)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_11">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>247</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>27</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_8">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>24</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>17</y>
+      <width>485</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>26- REESTAB VOLTAJE REGULADOR
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>70</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>18</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_15">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>320</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>31</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_7">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>170</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_12">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>265</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frBarraT">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(43, 71, 134, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <widget class="WLabel" name="lbDig16T">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>0</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(73, 105, 160);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;DIGITAL16.grf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>5</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbDOT_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>17- INHIBIR MONT VIBR ABAJO AP RALETI
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_4">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>110</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OPN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_6">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>150</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>20- RESTABLECER SISTEMA(VIB/ESD BUS)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_1">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>17</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_14">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>300</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFondo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_10">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>CLSD</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_4">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>110</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_1">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>50</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_6">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>150</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>22</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>19- MULTIPLICAR ACTIV SISTEMA VIBRACIÓN 
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_15">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>320</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>31- HABILITAR SINCRONIZADOR
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_8">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>190</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_13">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>282</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>29</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>18- INHIBIR MONT VIBR ABAJO BP RALETI
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_15">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>320</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_14">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>300</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_15">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>320</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_7">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>170</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>23</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbSloDO">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>22</y>
+      <width>385</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SLOT-  A108  - DO</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_16">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>340</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>32</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_5">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>T:OPEN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_9">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>210</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_13">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>283</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>29- DISMIN VOLT CON REMOTO SERIAL ESPEC
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_4">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>110</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>20</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <zorder>lbFondo</zorder>
+   <zorder>lbDOU_16</zorder>
+   <zorder>lbDO_16</zorder>
+   <zorder>lbDOU_7</zorder>
+   <zorder>lbNumDO_5</zorder>
+   <zorder>lbNumDO_12</zorder>
+   <zorder>lbDOU_1</zorder>
+   <zorder>lbNumDO_10</zorder>
+   <zorder>lbDO_5</zorder>
+   <zorder>lbDOT_12</zorder>
+   <zorder>lbDO_9</zorder>
+   <zorder>lbDOU_3</zorder>
+   <zorder>lbDOU_11</zorder>
+   <zorder>lbDO_8</zorder>
+   <zorder>lbDO_6</zorder>
+   <zorder>lbNumDO_3</zorder>
+   <zorder>lbDOT_11</zorder>
+   <zorder>lbDOT_8</zorder>
+   <zorder>lbNumDO_14</zorder>
+   <zorder>lbDOT_16</zorder>
+   <zorder>lbDO_11</zorder>
+   <zorder>lbNumDO_9</zorder>
+   <zorder>lbDO_10</zorder>
+   <zorder>lbDOT_9</zorder>
+   <zorder>lbDO_13</zorder>
+   <zorder>lbDOU_2</zorder>
+   <zorder>lbDOT_14</zorder>
+   <zorder>lbDOT_5</zorder>
+   <zorder>lbDOU_13</zorder>
+   <zorder>lbDO_3</zorder>
+   <zorder>lbDOU_12</zorder>
+   <zorder>lbDO_2</zorder>
+   <zorder>lbDOT_7</zorder>
+   <zorder>lbDOT_6</zorder>
+   <zorder>lbNumDO_11</zorder>
+   <zorder>lbNumDO_8</zorder>
+   <zorder>frame_3</zorder>
+   <zorder>lbDOT_10</zorder>
+   <zorder>lbNumDO_2</zorder>
+   <zorder>lbNumDO_15</zorder>
+   <zorder>lbDO_7</zorder>
+   <zorder>lbDO_12</zorder>
+   <zorder>frBarraT</zorder>
+   <zorder>lbDOT_1</zorder>
+   <zorder>lbDOU_4</zorder>
+   <zorder>lbDOU_6</zorder>
+   <zorder>lbDOT_4</zorder>
+   <zorder>lbNumDO_1</zorder>
+   <zorder>lbDO_14</zorder>
+   <zorder>lbDOU_10</zorder>
+   <zorder>lbDO_4</zorder>
+   <zorder>lbDO_1</zorder>
+   <zorder>lbNumDO_6</zorder>
+   <zorder>lbDOT_3</zorder>
+   <zorder>lbDOT_15</zorder>
+   <zorder>lbDOU_8</zorder>
+   <zorder>lbNumDO_13</zorder>
+   <zorder>lbDOT_2</zorder>
+   <zorder>lbDO_15</zorder>
+   <zorder>lbDOU_14</zorder>
+   <zorder>lbDOU_15</zorder>
+   <zorder>lbNumDO_7</zorder>
+   <zorder>lbSloDO</zorder>
+   <zorder>lbNumDO_16</zorder>
+   <zorder>lbDOU_5</zorder>
+   <zorder>lbDOU_9</zorder>
+   <zorder>lbDOT_13</zorder>
+   <zorder>lbNumDO_4</zorder>
+  </widget>
+  <widget class="QFrame" name="panel3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>362</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="WLabel" name="lbDOU_33">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>340</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_33">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>340</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_34">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>170</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_33">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>130</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>37</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_34">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>265</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>44</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_35">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>50</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_35">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>230</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>42</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_34">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>130</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_33">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>265</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>44- CALENT TANQUE ACEITE LUB TURBINA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_35">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>210</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_36">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>90</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_37">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>247</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_36">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>190</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_37">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>150</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_36">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>90</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>35</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_34">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>247</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>43- SEPARADOR  AIRE/ACEITE LUB TURBINA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_35">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>40- BOMBA DE SUMINISTRO LAV AGUA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_37">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>300</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>46</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_36">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>340</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>48- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_38">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>247</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_38">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>210</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>41</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_39">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>230</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_37">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>41- HABILITAR CALENTADOR LAV AGUA 
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_40">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>283</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_38">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>70</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_38">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>46- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_39">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>37- GEN
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_39">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>283</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_41">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>90</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_40">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>265</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_42">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>70</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_40">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>39- BOMBA ARRANQUE HIDRÁULICO
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_41">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>38-VEN  A CARCASA  TURB
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_39">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>247</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>43</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_40">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>40</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>17</y>
+      <width>485</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_42">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>42- INICIAR CALENT DEPÓSITO ACEITE HID PATÍN
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_41">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>70</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>34</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_42">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>320</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>47</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_43">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>170</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_44">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>265</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frBarraT_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(43, 71, 134, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <widget class="WLabel" name="lbDig16T_3">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>0</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(73, 105, 160);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;DIGITAL16.grf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>5</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbDOT_43">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>33- CALENTADOR TANQUE ACEITE GEN/GB &quot;A&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_41">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>110</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OPN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_42">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>150</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_44">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>36-SEPARADOR HACEITE AIRE LUB GEN/GB N° 1 
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_43">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>33</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_45">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>300</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFondo_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_43">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>CLSD</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_46">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>110</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_47">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>50</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_44">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>150</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>38</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_45">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>35- BOMBA AC TANQUE ACEITE LUB GEN
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_46">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>320</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>47- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_44">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>190</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_45">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>282</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>45</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_47">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>34- VENT CARCASA GEN/GB &quot;A&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_48">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>320</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_45">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>300</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_46">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>320</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_46">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>170</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>39</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbSloDO_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>22</y>
+      <width>385</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SLOT-  A108  - DO</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_47">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>340</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>48</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_47">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>T:OPEN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_48">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>210</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_48">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>283</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>45- CALENT TANQUE LUB GEN/GB &quot;B&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_48">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>110</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>36</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <zorder>lbFondo_3</zorder>
+   <zorder>lbDOU_33</zorder>
+   <zorder>lbDO_33</zorder>
+   <zorder>lbDOU_34</zorder>
+   <zorder>lbNumDO_33</zorder>
+   <zorder>lbNumDO_34</zorder>
+   <zorder>lbDOU_35</zorder>
+   <zorder>lbNumDO_35</zorder>
+   <zorder>lbDO_34</zorder>
+   <zorder>lbDOT_33</zorder>
+   <zorder>lbDO_35</zorder>
+   <zorder>lbDOU_36</zorder>
+   <zorder>lbDOU_37</zorder>
+   <zorder>lbDO_36</zorder>
+   <zorder>lbDO_37</zorder>
+   <zorder>lbNumDO_36</zorder>
+   <zorder>lbDOT_34</zorder>
+   <zorder>lbDOT_35</zorder>
+   <zorder>lbNumDO_37</zorder>
+   <zorder>lbDOT_36</zorder>
+   <zorder>lbDO_38</zorder>
+   <zorder>lbNumDO_38</zorder>
+   <zorder>lbDO_39</zorder>
+   <zorder>lbDOT_37</zorder>
+   <zorder>lbDO_40</zorder>
+   <zorder>lbDOU_38</zorder>
+   <zorder>lbDOT_38</zorder>
+   <zorder>lbDOT_39</zorder>
+   <zorder>lbDOU_39</zorder>
+   <zorder>lbDO_41</zorder>
+   <zorder>lbDOU_40</zorder>
+   <zorder>lbDO_42</zorder>
+   <zorder>lbDOT_40</zorder>
+   <zorder>lbDOT_41</zorder>
+   <zorder>lbNumDO_39</zorder>
+   <zorder>lbNumDO_40</zorder>
+   <zorder>frame_6</zorder>
+   <zorder>lbDOT_42</zorder>
+   <zorder>lbNumDO_41</zorder>
+   <zorder>lbNumDO_42</zorder>
+   <zorder>lbDO_43</zorder>
+   <zorder>lbDO_44</zorder>
+   <zorder>frBarraT_3</zorder>
+   <zorder>lbDOT_43</zorder>
+   <zorder>lbDOU_41</zorder>
+   <zorder>lbDOU_42</zorder>
+   <zorder>lbDOT_44</zorder>
+   <zorder>lbNumDO_43</zorder>
+   <zorder>lbDO_45</zorder>
+   <zorder>lbDOU_43</zorder>
+   <zorder>lbDO_46</zorder>
+   <zorder>lbDO_47</zorder>
+   <zorder>lbNumDO_44</zorder>
+   <zorder>lbDOT_45</zorder>
+   <zorder>lbDOT_46</zorder>
+   <zorder>lbDOU_44</zorder>
+   <zorder>lbNumDO_45</zorder>
+   <zorder>lbDOT_47</zorder>
+   <zorder>lbDO_48</zorder>
+   <zorder>lbDOU_45</zorder>
+   <zorder>lbDOU_46</zorder>
+   <zorder>lbNumDO_46</zorder>
+   <zorder>lbSloDO_3</zorder>
+   <zorder>lbNumDO_47</zorder>
+   <zorder>lbDOU_47</zorder>
+   <zorder>lbDOU_48</zorder>
+   <zorder>lbDOT_48</zorder>
+   <zorder>lbNumDO_48</zorder>
+  </widget>
+  <widget class="QFrame" name="panel4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>362</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="WLabel" name="lbDOU_49">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>340</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_49">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>340</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_50">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>170</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_49">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>130</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>53</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_50">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>265</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>60</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_51">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>50</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_51">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>230</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>58</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_50">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>130</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_49">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>265</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>60- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_51">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>210</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_52">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>90</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_53">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>247</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_52">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>190</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_53">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>150</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_52">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>90</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>51</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_50">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>247</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>59- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_51">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>56- VALV SUMINISTRO AGUA LAV AGUA FUERA LÍNEA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_53">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>300</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>62</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_52">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>340</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>64- (REFACCIÓN)</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_54">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>247</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_54">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>210</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>57</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_55">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>230</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_53">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>57- VALV PURGA AIRE LAV AGUA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_56">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>283</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_54">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>70</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_54">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>62- VENT REFRIG ACEITE LUB GEN/GB &quot;A2&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_55">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>53- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_55">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>283</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_57">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>90</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_56">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>265</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_58">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>70</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_56">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>55- VALV SUMINISTRO AGUA LAV AGUA EN LÍNEA
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_57">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>54- VENT CARCASA TURB B
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_55">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>247</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>59</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_56">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>56</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>17</y>
+      <width>485</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_58">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>58- BOMBA LEVANTE DE ACEITE  D/GEN
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_57">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>70</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>50</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_58">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>320</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>63</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_59">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>170</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_60">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>265</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frBarraT_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(43, 71, 134, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <widget class="WLabel" name="lbDig16T_4">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>0</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(73, 105, 160);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:5pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;DIGITAL16.grf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>5</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="Alineacion" stdset="0">
+      <enum>WLabel::Izquierda</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="WLabel" name="lbDOT_59">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>49- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_57">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>110</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OPN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_58">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>150</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_60">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>52- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_59">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>49</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_61">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>300</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFondo_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>485</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>485</width>
+      <height>425</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 128, 128);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_59">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>CLSD</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_62">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>110</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_63">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>50</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_60">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>150</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>54</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_61">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>51- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_62">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>320</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>63- VENT REFRIG ACEITE LUB GEN/GB &quot;A1&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_60">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>190</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_61">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>282</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>61</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_63">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>50- VENT CARCASA GEN/GB &quot;B&quot;
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDO_64">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>320</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Derecha</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_61">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>300</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>NACT</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_62">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>320</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>ENBL</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_62">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>170</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>55</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbSloDO_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>22</y>
+      <width>385</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>SLOT-  A108  - DO</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_63">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>340</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>64</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_63">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>130</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>T:OPEN</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOU_64">
+    <property name="geometry">
+     <rect>
+      <x>428</x>
+      <y>210</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbDOT_64">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>283</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>61- (REFACCIÓN)
+</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <widget class="WLabel" name="lbNumDO_64">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>110</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 232, 232);</string>
+    </property>
+    <property name="text">
+     <string>52</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="Alineacion" stdset="0">
+     <enum>WLabel::Izquierda</enum>
+    </property>
+   </widget>
+   <zorder>lbFondo_4</zorder>
+   <zorder>lbDOU_49</zorder>
+   <zorder>lbDO_49</zorder>
+   <zorder>lbDOU_50</zorder>
+   <zorder>lbNumDO_49</zorder>
+   <zorder>lbNumDO_50</zorder>
+   <zorder>lbDOU_51</zorder>
+   <zorder>lbNumDO_51</zorder>
+   <zorder>lbDO_50</zorder>
+   <zorder>lbDOT_49</zorder>
+   <zorder>lbDO_51</zorder>
+   <zorder>lbDOU_52</zorder>
+   <zorder>lbDOU_53</zorder>
+   <zorder>lbDO_52</zorder>
+   <zorder>lbDO_53</zorder>
+   <zorder>lbNumDO_52</zorder>
+   <zorder>lbDOT_50</zorder>
+   <zorder>lbDOT_51</zorder>
+   <zorder>lbNumDO_53</zorder>
+   <zorder>lbDOT_52</zorder>
+   <zorder>lbDO_54</zorder>
+   <zorder>lbNumDO_54</zorder>
+   <zorder>lbDO_55</zorder>
+   <zorder>lbDOT_53</zorder>
+   <zorder>lbDO_56</zorder>
+   <zorder>lbDOU_54</zorder>
+   <zorder>lbDOT_54</zorder>
+   <zorder>lbDOT_55</zorder>
+   <zorder>lbDOU_55</zorder>
+   <zorder>lbDO_57</zorder>
+   <zorder>lbDOU_56</zorder>
+   <zorder>lbDO_58</zorder>
+   <zorder>lbDOT_56</zorder>
+   <zorder>lbDOT_57</zorder>
+   <zorder>lbNumDO_55</zorder>
+   <zorder>lbNumDO_56</zorder>
+   <zorder>frame_7</zorder>
+   <zorder>lbDOT_58</zorder>
+   <zorder>lbNumDO_57</zorder>
+   <zorder>lbNumDO_58</zorder>
+   <zorder>lbDO_59</zorder>
+   <zorder>lbDO_60</zorder>
+   <zorder>frBarraT_4</zorder>
+   <zorder>lbDOT_59</zorder>
+   <zorder>lbDOU_57</zorder>
+   <zorder>lbDOU_58</zorder>
+   <zorder>lbDOT_60</zorder>
+   <zorder>lbNumDO_59</zorder>
+   <zorder>lbDO_61</zorder>
+   <zorder>lbDOU_59</zorder>
+   <zorder>lbDO_62</zorder>
+   <zorder>lbDO_63</zorder>
+   <zorder>lbNumDO_60</zorder>
+   <zorder>lbDOT_61</zorder>
+   <zorder>lbDOT_62</zorder>
+   <zorder>lbDOU_60</zorder>
+   <zorder>lbNumDO_61</zorder>
+   <zorder>lbDOT_63</zorder>
+   <zorder>lbDO_64</zorder>
+   <zorder>lbDOU_61</zorder>
+   <zorder>lbDOU_62</zorder>
+   <zorder>lbNumDO_62</zorder>
+   <zorder>lbSloDO_4</zorder>
+   <zorder>lbNumDO_63</zorder>
+   <zorder>lbDOU_63</zorder>
+   <zorder>lbDOU_64</zorder>
+   <zorder>lbDOT_64</zorder>
+   <zorder>lbNumDO_64</zorder>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>355</y>
+     <width>486</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btnProx_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(212, 208, 200);</string>
+    </property>
+    <property name="text">
+     <string>PRÓX &gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCerrar_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(212, 208, 200);</string>
+    </property>
+    <property name="text">
+     <string>CERRAR</string>
+    </property>
+   </widget>
+   <zorder>btnCerrar_2</zorder>
+   <zorder>btnProx_2</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WLabel</class>
+   <extends>QWidget</extends>
+   <header>wlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/PNG/A1.png</file>
+        <file>Resources/PNG/A2.png</file>
+        <file>Resources/PNG/B1.png</file>
+        <file>Resources/PNG/B2.png</file>
+        <file>Resources/PNG/B3.png</file>
+        <file>Resources/PNG/B4.png</file>
+        <file>Resources/PNG/B5.png</file>
+        <file>Resources/PNG/B6.png</file>
+        <file>Resources/PNG/B7.png</file>
+        <file>Resources/PNG/B9.png</file>
+        <file>Resources/PNG/B11.png</file>
+        <file>Resources/PNG/B12.png</file>
+        <file>Resources/PNG/B14.png</file>
+        <file>Resources/PNG/BackGround.png</file>
+        <file>Resources/PNG/C1.png</file>
+        <file>Resources/PNG/C2.png</file>
+        <file>Resources/PNG/D1.png</file>
+        <file>Resources/PNG/D2.png</file>
+        <file>Resources/PNG/D3.png</file>
+        <file>Resources/PNG/D8.png</file>
+        <file>Resources/logo.png</file>
+        <file>Resources/cfesplash.png</file>
+        <file>Resources/PNG/Extras/A2_abierto.png</file>
+        <file>Resources/PNG/Extras/A2_cerrado.png</file>
+        <file>Resources/PNG/N1.png</file>
+        <file>Resources/PNG/N2.png</file>
+        <file>Resources/PNG/N3.png</file>
+        <file>Resources/PNG/N5.png</file>
+        <file>Resources/PNG/N6.png</file>
+        <file>Resources/PNG/N7.png</file>
+        <file>Resources/PNG/N8.png</file>
+        <file>Resources/PNG/Extras/transparente.svg</file>
+        <file>Resources/Consola/about.png</file>
+        <file>Resources/Consola/config.png</file>
+        <file>Resources/Consola/console.png</file>
+        <file>Resources/Consola/exit.png</file>
+        <file>Resources/Consola/hmi.png</file>
+        <file>Resources/Consola/ico.png</file>
+        <file>Resources/Consola/pause.png</file>
+        <file>Resources/Consola/play.png</file>
+        <file>Resources/Consola/rew.png</file>
+        <file>Resources/Consola/stop.png</file>
+        <file>Resources/Consola/fwd.png</file>
+    </qresource>
+</RCC>

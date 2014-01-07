@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SisAguaRes</class>
+ <widget class="QWidget" name="SisAguaRes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>662</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Resources.qrc">:/Resources/PNG/N2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbSistAguaResT">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>4</y>
+     <width>246</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SISTEMA DE AGUA RESIDUAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes082T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>96</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 082</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes220T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>124</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 220</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes177T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>152</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 177</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes178T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 178</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesSk192T_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>206</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ SK - 192</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes009T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>235</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 009</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes1004T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>262</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 1004</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDes079T">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>288</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ 079</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesGTGT">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>317</y>
+     <width>54</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ GTG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbDesGTG2T">
+   <property name="geometry">
+    <rect>
+     <x>859</x>
+     <y>317</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DESDE
+ GTG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leAlarm1">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>430</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+border-color: rgb(0, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leAlarm2">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>450</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);
+border-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTannRecResiT">
+   <property name="geometry">
+    <rect>
+     <x>101</x>
+     <y>528</y>
+     <width>127</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TANQUE DE
+ RECOLLECCION RESIDUAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btImpPant">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>634</y>
+     <width>133</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(212, 208, 200);</string>
+   </property>
+   <property name="text">
+    <string>IMP PANTALLA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbT267T">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>518</y>
+     <width>41</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="text">
+    <string>T-267</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leAlarm4">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>450</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(128, 128, 128);
+border-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leAlarm3">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>430</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+border-color: rgb(0, 0, 0);
+color: rgb(128, 128, 128);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTannRecAguaResiT">
+   <property name="geometry">
+    <rect>
+     <x>809</x>
+     <y>528</y>
+     <width>132</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TANQUE DE RECOLLECCION
+ DE AGUA RESIDUAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbT268T">
+   <property name="geometry">
+    <rect>
+     <x>846</x>
+     <y>517</y>
+     <width>41</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="text">
+    <string>T-268</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_1">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>430</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_2">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>451</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_3">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>430</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnEmergente_4">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>450</y>
+     <width>100</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../Resources.qrc">
+     <normaloff>:/Resources/PNG/Extras/transparente.svg</normaloff>:/Resources/PNG/Extras/transparente.svg</iconset>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="wLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>430</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_267B_A_Tag</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLineEdit::Rojo</enum>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="wLineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>450</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_267A_A_Tag</string>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="wLineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>908</x>
+     <y>450</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_268A_A_Tag</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLineEdit::Rojo</enum>
+   </property>
+   <property name="Fondo_A" stdset="0">
+    <enum>WLineEdit::A_SinColor</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="text_B">
+    <string/>
+   </property>
+  </widget>
+  <widget class="WLineEdit" name="wLineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>908</x>
+     <y>430</y>
+     <width>98</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="id">
+    <string>p_Fix32_NODE_LSH_268B_A_Tag</string>
+   </property>
+   <property name="Fondo_Inicial" stdset="0">
+    <enum>WLineEdit::Rojo</enum>
+   </property>
+  </widget>
+  <zorder>btnEmergente_2</zorder>
+  <zorder>label</zorder>
+  <zorder>lbSistAguaResT</zorder>
+  <zorder>lbDes082T</zorder>
+  <zorder>lbDes220T</zorder>
+  <zorder>lbDes177T</zorder>
+  <zorder>lbDes178T</zorder>
+  <zorder>lbDesSk192T_2</zorder>
+  <zorder>lbDes009T</zorder>
+  <zorder>lbDes1004T</zorder>
+  <zorder>lbDes079T</zorder>
+  <zorder>lbDesGTGT</zorder>
+  <zorder>lbDesGTG2T</zorder>
+  <zorder>leAlarm1</zorder>
+  <zorder>leAlarm2</zorder>
+  <zorder>lbTannRecResiT</zorder>
+  <zorder>btImpPant</zorder>
+  <zorder>lbT267T</zorder>
+  <zorder>leAlarm4</zorder>
+  <zorder>leAlarm3</zorder>
+  <zorder>lbTannRecAguaResiT</zorder>
+  <zorder>lbT268T</zorder>
+  <zorder>btnEmergente_1</zorder>
+  <zorder>btnEmergente_3</zorder>
+  <zorder>btnEmergente_4</zorder>
+  <zorder>wLineEdit</zorder>
+  <zorder>wLineEdit_2</zorder>
+  <zorder>wLineEdit_3</zorder>
+  <zorder>wLineEdit_4</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WLineEdit</class>
+   <extends>QWidget</extends>
+   <header>wlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
