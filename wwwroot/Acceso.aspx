@@ -13,7 +13,7 @@
     protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
     {
 
-        //Membership.CreateUser("meaw", "pass","5539299335@itelcel.com"); 
+     //   Membership.CreateUser("meaw", "pass","5539299335@itelcel.com"); 
         if (Membership.ValidateUser(Login1.UserName, Login1.Password))
         {
             e.Authenticated = true;
