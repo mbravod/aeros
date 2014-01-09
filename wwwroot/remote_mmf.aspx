@@ -228,6 +228,9 @@ protected void Page_Load(object sender, EventArgs e)
                         try
                         {
                             string base64String = System.Convert.ToBase64String(binaryData, 0, binaryData.Length);
+
+                            base64String = base64String.Replace('+', '-'); base64String = base64String.Replace('/', '_'); base64String = base64String.Replace('=', '~');
+          
                             resp = resp + "\r\n\"STATUS\":\"OK\"";
                             resp = resp + "\r\n\"RESPONSE_TYPE\":\"DUMP\"";
                             resp = resp + "\r\n\"CONTENT\":\"" + base64String + "\"";

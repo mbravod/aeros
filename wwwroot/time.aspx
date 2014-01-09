@@ -101,12 +101,8 @@ protected void Page_Load(object sender, EventArgs e)
     {
 
         string original = hash;
-
-     
         using (Aes myAes = Aes.Create())
         {
-
-
             string IVB64 = System.Convert.ToBase64String(myAes.IV, 0, myAes.IV.Length);
             IVB64 = IVB64.Replace('+', '-'); IVB64 = IVB64.Replace('/', '_'); IVB64 = IVB64.Replace('=', '~');
             resp = resp + "\r\n\"IV\":" + "\"" + IVB64 + "\",";
