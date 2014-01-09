@@ -59,11 +59,43 @@
         return plaintext;
 
     }
-    
+    static byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV)
+    {
+
+        if (plainText == null || plainText.Length <= 0)
+            throw new ArgumentNullException("plainText");
+        if (Key == null || Key.Length <= 0)
+            throw new ArgumentNullException("Key");
+        if (IV == null || IV.Length <= 0)
+            throw new ArgumentNullException("Key");
+        byte[] encrypted;
+        using (Aes aesAlg = Aes.Create())
+        {
+            aesAlg.Key = Key;
+            aesAlg.IV = IV;
+
+            ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+
+            using (MemoryStream msEncrypt = new MemoryStream())
+            {
+                using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                {
+                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                    {
+                        swEncrypt.Write(plainText);
+                    }
+                    encrypted = msEncrypt.ToArray();
+                }
+            }
+        }
+        return encrypted;
+
+    }
 protected void Page_Load(object sender, EventArgs e)
 {
-
-
+   
+    Response.ContentType = "text/plain";
+    string pre_resp;
     string[] x = new string[10];
     x[0] = Request.QueryString["session"];
     x[1] = Request.QueryString["RW"];
@@ -113,7 +145,7 @@ protected void Page_Load(object sender, EventArgs e)
     }
     catch (Exception e1)
     {
-        Response.Write("SECURITY=\"UNSIGNED MESSAGE\"");
+        pre_resp="\"SECURITY\":\"UNSIGNED MESSAGE\"";
     }
     int allowed=0;
     if (decoded == hash_url)
@@ -124,78 +156,58 @@ protected void Page_Load(object sender, EventArgs e)
         TimeSpan span = current - dt1970;
         int NOW = (int)span.TotalSeconds;
         int DIF = (Math.Abs(NOW - Nounce4));
-        if (DIF < 60)
+        if (DIF < 10)
         {
-            Response.Write("SECURITY=\"VALIDATED\"");
+             pre_resp="\"SECURITY\":\"VALIDATED\"";
              allowed=1;
         }
         else
         {
-            Response.Write("SECURITY=\"EXPIRED SIGNATURE\"");
+              pre_resp="\"SECURITY\":\"EXPIRED SIGNATURE\"";
 
         }
     }
     else{
-        Response.Write("SECURITY=\"INVALID SIGNATURE\"");
+         pre_resp="\"SECURITY\":\"INVALID SIGNATURE\"";
 
     }
-    Response.Write("\r\n");
-    
-    if (allowed==0){
-        Response.End();
-    }
-    
-    int varPos = Convert.ToInt32(x[2]);// x[3];
-    int int_value = 0;
-    float float_value = 0;
-    string value_type = x[3].ToUpper();
+    string md5 = "";
+    string resp = pre_resp;
+    string security = "";
+    if (allowed == 1)
+    {
 
-    string var_upload = Request.Form["var_upload"];
-    string var_type_upload = Request.Form["var_type_upload"];
-    string var_type_value = Request.Form["var_type_value"];
 
-    Response.ContentType = "text/plain";
-    
-    if (!(String.IsNullOrEmpty(var_upload)))
-    {
-          Response.Write("Received POST DATA");
-          Response.Write("\n");
-        Response.Write(var_upload);
-        Response.Write("\n");
-            Response.Write(var_type_upload);
-            Response.Write("\n");
-            Response.Write(var_type_value);
-            Response.Write("\n");
-    }
-    
-    try
-    {
-         int_value = Convert.ToInt32(x[4]);// x[3];
-    }
-    catch (System.FormatException e2)
-    {
-    }
-    try
-    {
-         float_value = (float)Convert.ToDouble(x[4]);// x[3];
-    }
-    catch (System.FormatException e3)
-    {
-            }
-            
-    string rw_Operation = x[1].ToUpper();
- 
-    
-    long offset = 0x00000000;
-    long length = 0x00031000;
-    string MAP="PROCESS_INTEROP_MEM_";
-        MAP=MAP+ x[0] ;
-    // Create the memory-mapped file. 
-//Global\\
-    try
-    {
-        using (var mmf = MemoryMappedFile.OpenExisting(MAP, MemoryMappedFileRights.ReadWrite, System.IO.HandleInheritability.None)) //length, System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite))
-        { 
+        int varPos = Convert.ToInt32(x[2]);// x[3];
+        int int_value = 0;
+        float float_value = 0;
+        string value_type = x[3].ToUpper();
+
+        
+      
+
+        try
+        { int_value = Convert.ToInt32(x[4]);  }
+        catch (System.FormatException e2) { }
+        try
+        { float_value = (float)Convert.ToDouble(x[4]);}
+        catch (System.FormatException e3) { }
+
+        string rw_Operation = x[1].ToUpper();
+
+
+        long offset = 0x00000000;
+        long length = 24 * 1024 * 4;
+        string MAP = "PROCESS_INTEROP_MEM_";
+        MAP = MAP + x[0];
+        // Create the memory-mapped file. 
+        //Global\\
+
+        
+        try
+        {
+            using (var mmf = MemoryMappedFile.OpenExisting(MAP, MemoryMappedFileRights.ReadWrite, System.IO.HandleInheritability.None)) //length, System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite))
+            {
                 using (var accessor = mmf.CreateViewAccessor(offset, length))
                 {
                     int integerSize = Marshal.SizeOf(typeof(int));
@@ -206,80 +218,123 @@ protected void Page_Load(object sender, EventArgs e)
 
                     int charSize = Marshal.SizeOf(typeof(char));
                     byte[] binaryData;
-                    char charValue ;
-                    
+                    char charValue;
+
                     if (x[5] == "TRUE")
                     {
-                        binaryData = new Byte[16000];
+                        binaryData = new Byte[length];
 
                         accessor.ReadArray(0, binaryData, 0, binaryData.Length);
-                            try
-                            {
-                              string  base64String = System.Convert.ToBase64String(binaryData,    0,  binaryData.Length);
-                              Response.Write("STATUS=\"OK\"");
-                              Response.Write("\r\nRESPONSE_TYPE=\"DUMP\"");
-                              Response.Write("\r\nCONTENT=\"" + base64String + "\"");
-                                 using (MD5 md5Hash = MD5.Create())
-                                {
-                                 string hash = GetMd5Hash(md5Hash, base64String);
-                                 Response.Write("\r\nMD5=\"" + hash + "\"");
-                                }
-                            }
-                            catch (System.ArgumentNullException)
-                            {
-                                Response.Write("Binary data array is null.");
-                            }
-                       
+                        try
+                        {
+                            string base64String = System.Convert.ToBase64String(binaryData, 0, binaryData.Length);
+                            resp = resp + "\r\n\"STATUS\":\"OK\"";
+                            resp = resp + "\r\n\"RESPONSE_TYPE\":\"DUMP\"";
+                            resp = resp + "\r\n\"CONTENT\":\"" + base64String + "\"";
+                        }
+                        catch (System.ArgumentNullException)
+                        {
+                            resp = resp + "\r\n\"STATUS\":\"Error Retrieving MMF\"";
+                        }
+
                     }
                     else if (rw_Operation == "R")
                     {
                         if (value_type == "INT")
                         {
                             accessor.Read(varPos * integerSize, out integerValue);
-                            Response.Write(integerValue.ToString());
+                            resp = resp + "\r\n\"STATUS\":\"OK\"";
+                            resp = resp + "\r\n\"RESPONSE_TYPE\":\"VALUE_INT\"";
+                            resp = resp + "\r\n\"CONTENT\":\"" + integerValue.ToString() + "\"";
                         }
                         else if (value_type == "FLOAT")
                         {
                             accessor.Read(varPos * floatSize, out floatValue);
-                            Response.Write(floatValue.ToString());
+                            resp = resp + "\r\n\"STATUS\";\"OK\"";
+                            resp = resp + "\r\n\"RESPONSE_TYPE\":\"VALUE_FLOAT\"";
+                            resp = resp + "\r\n\"CONTENT\":\"" + floatValue.ToString() + "\"";
                         }
                         else
                         {
-                            Response.Write("Unknown value Format");
+                            resp = resp + "\r\n\"STATUS\":\"Unknown Value Format\"";
                         }
                     }
 
-                    else   if (rw_Operation == "W")
+                    else if (rw_Operation == "W")
                     {
                         if (value_type == "INT")
                         {
                             accessor.Write(varPos * integerSize, ref  integerValue);
-                            Response.Write("WINT");
+
+                            resp = resp + "\r\n\"STATUS\":\"OK\"";
+                            resp = resp + "\r\n\"RESPONSE_TYPE\":\"VALUE_INT_WRITE\"";
+                            resp = resp + "\r\n\"CONTENT\":\"" + "1" + "\"";
+
                         }
                         else if (value_type == "FLOAT")
                         {
                             accessor.Write(varPos * floatSize, ref  floatValue);
-                            Response.Write("WFLOAT");
+                            resp = resp + "\r\n\"STATUS\":\"OK\"";
+                            resp = resp + "\r\n\"RESPONSE_TYPE\":\"VALUE_FLOAT_WRITE\"";
+                            resp = resp + "\r\n\"CONTENT\":\"" + "1" + "\"";
                         }
                         else
                         {
-                            Response.Write("Unknown value Format");
+                            resp = resp + "\r\n\"STATUS\":\"Unknown Value Format[WRITE]\"";
                         }
                     }
                     else
                     {
-                        Response.Write("Unknown RW command");
+                        resp = resp + "\r\n\"STATUS\":\"Unknown RW command\"";
                     }
 
                 }
             }
+        }
+        catch (FileNotFoundException e1)
+        {
+
+           resp = resp + "\r\n\"STATUS\":\"Unloaded Memory\"";
+        }
+            using (MD5 md5Hash = MD5.Create())
+            {
+                md5 = GetMd5Hash(md5Hash, resp);
+                resp = resp + "\r\n\"MD5\":\"" + md5 + "\"";
+            }
+
+            byte[] key2;
+            key = new byte[32];
+            string strkey2 = "l3MYTtoJEPUIBsLQTEJsRcmaWuRfmmi0";  //la clave es en funcion de la sesion
+            key2 = System.Text.Encoding.ASCII.GetBytes(strkey2);
             
-       
-    } catch (FileNotFoundException e1)
-{
-   
-             Response.Write("STATUS=\"Unloaded Memory\"");
+            try
+            {
+                using (Aes myAes = Aes.Create())
+                {
+
+
+                    string IVB64 = System.Convert.ToBase64String(myAes.IV, 0, myAes.IV.Length);
+                    IVB64 = IVB64.Replace('+', '-'); IVB64 = IVB64.Replace('/', '_'); IVB64 = IVB64.Replace('=', '~');
+                    security = "\r\n\"IV\":\"" + IVB64 + "\"";
+                    byte[] encrypted = EncryptStringToBytes_Aes(md5, key2, myAes.IV);
+                    string MSGB64 = System.Convert.ToBase64String(encrypted, 0, encrypted.Length);
+                    MSGB64 = MSGB64.Replace('+', '-'); MSGB64 = MSGB64.Replace('/', '_'); MSGB64 = MSGB64.Replace('=', '~');
+                    security = security + "\r\n\"SIGNATURE\":\"" + MSGB64 + "\"";
+                }
+
+            }
+            catch (Exception e2)
+            {
+                security = security + "\r\n\"IV=\"" + "AAA\"";
+                security = security + "\r\n\"SIGNATURE\":\"" + "AAA\"";
+            }
+
+          
+
+        
     }
+
+    Response.Write("{\r\n"  + resp + security + "\r\n}");
 
 }
       
